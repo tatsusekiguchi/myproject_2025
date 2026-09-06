@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script>
+		(function(d) {
+			var config = {
+					kitId: 'hla5pnl',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function() {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function() {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="contactComplete">
+	<!-- ▽header▽-->
+	<header class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="logo"><a href="#"><img src="../image/common/header_logo.png" alt=""></a></div>
+				<div class="headTitle">
+					<h1>輝く舞台をデザインする サロン設計・開業サポート</h1>
+				</div>
+			</div>
+			<div class="headItem">
+				<div class="insta"><a href="https://www.instagram.com/atelierou_design?igsh=MTZsdGNvZTFkbHJpOQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">INSTAGRAM</a></div>
+				<div class="contact"><a href="#section__contact"><span>お問い合わせ</span></a></div>
+			</div>
+		</div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="contactComplete">
+		<div id="section__contact">
+			<div class="secWrap02">
+				<div class="contactContainer">
+					<div class="secTtl">
+						<h2>THANK<br>YOU</h2>
+					</div>
+					<div class="topComplete">
+						<p>送信完了</p>
+					</div>
+					<div class="txt">
+						<p>この度はお問い合わせいただきありがとうございます。<br>いただいた内容を確認後、お返事までに通常1週間ほどお時間をいただいております。<br>少々お待ちください。</p>
+					</div>
+					<div class="btnToTop"><a href=""><span>Back to top</span></a></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer class="footer">
+		<div class="topPanel">
+			<div class="logo"><img src="../image/common/footer_logo.png" alt=""></div>
+			<div class="headItem">
+				<div class="insta"><a href="https://www.instagram.com/atelierou_design?igsh=MTZsdGNvZTFkbHJpOQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">INSTAGRAM</a></div>
+				<div class="contact"><a href="#section__contact"><span>お問い合わせ</span></a></div>
+			</div>
+		</div>
+		<div class="mvPanel">
+			<div class="mv"><img src="../image/common/footer_mv.png" alt=""></div>
+			<div class="mvLogo"><img src="../image/common/footer_mv_logo.png" alt=""></div>
+		</div>
+		<div class="bottomPanel">
+			<div class="navigationBox">
+				<ul>
+					<li><a href="#section__concept">⚫︎ コンセプト</a></li>
+					<li><a href="#section__points">⚫︎ OUの特徴</a></li>
+				</ul>
+				<ul>
+					<li><a href="#section__voice">⚫︎ お客様の声</a></li>
+					<li><a href="#section__flow">⚫︎ プロジェクトの流れ</a></li>
+				</ul>
+			</div>
+			<div class="copyBox">
+				<div class="info">
+					<p>[ 運営会社 ]　株式会社 光工芸</p>
+					<p>〒454-0041 愛知県名古屋市中川区八神町3-8</p>
+				</div>
+				<div class="copy">
+					<p>Copyright &copy; ATELIER OU</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- △footer△-->
+</body>
+
+</html>

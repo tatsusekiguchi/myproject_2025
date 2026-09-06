@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .header .logo {
+    width: 120px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 60px;
+    z-index: 998;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 0;
+  }
+  .navBox .navList {
+    border-top: 1px solid #34363d;
+  }
+  .navBox .navList > .ul > .li {
+    padding: 10px 20px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    border-top: 1px solid #34363d;
+  }
+  .navBox .navList > .ul > .li a {
+    display: block;
+  }
+  .navBox .navList > .ul .pulldown {
+    pointer-events: none;
+  }
+  .navBox .navList > .ul .servicePanel {
+    display: block !important;
+  }
+  .navBox .navList > .ul .servicePanel .serviceWrap {
+    padding: 10px 1em;
+  }
+  .navBox .navList > .ul .servicePanel .serviceWrap .left {
+    display: none;
+  }
+  .navBox .navList > .ul .servicePanel .serviceWrap .right .list .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .navBox .navList > .ul .servicePanel .serviceWrap .right .list .ul .li .ul {
+    padding: 10px 0 0 1em;
+  }
+  .navBox .navList > .ul .servicePanel .serviceWrap .right .list .ul a {
+    text-decoration: underline;
+  }
+  .navBox .navItem {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #90ceee;
+    background: #1c95d4;
+  }
+  .navBox .navItem .contact {
+    width: 50%;
+  }
+  .navBox .navItem .contact a {
+    display: block;
+  }
+  .navBox .navItem .contact a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .navBox .navItem .contact a p {
+    display: inline-block;
+    padding: 10px 0 10px 40px;
+    color: #ffffff;
+    background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/nav_mail.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+  .navBox .navItem .sns {
+    width: 50%;
+    padding: 10px;
+    background: #0e82be;
+  }
+  .navBox .navItem .sns .ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .navBox .navItem .sns .ul .li {
+    width: 40px;
+  }
+  .navBox .navItem .sns .ul .li a {
+    display: block;
+  }
+  .navBox .navItem .copy {
+    width: 100%;
+    padding: 10px;
+  }
+  .navBox .navItem .copy p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+    padding: 0;
+  }
+
+  .pageKvPanel {
+    height: 180px;
+  }
+  .pageKvPanel .pageKvTitle {
+    padding: 10px 70px;
+    background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/page_kv_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .pageKvPanel .pageKvTitle p {
+    font-size: 26px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    font-size: 18px;
+  }
+  .pageKvPanel .pageKvTitle--type02 {
+    background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/page_kv_icon_02.png) left center no-repeat;
+    background-size: 65px auto;
+  }
+  .pageKvPanel .pageKvTitle--type03 {
+    background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/page_kv_icon.png) left center no-repeat, url(https://s-8233964.smooooth.jp/system_panel/uploads/images/page_kv_icon_02.png) right center no-repeat;
+    background-size: 50px auto, 65px auto;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .sub {
+    font-size: 16px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .contactItem {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .footer .footContact .contactItem .btnTel {
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+  .footer .footContact .contactItem .btnTel a {
+    font-size: 20px;
+  }
+  .footer .footContact .contactItem .btnContact {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer .footContact .contactItem .btnContact a {
+    font-size: 18px;
+  }
+  .footer .footContact .pagetop {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    width: 40px;
+  }
+}

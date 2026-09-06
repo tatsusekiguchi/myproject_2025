@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script>
+		(function(d) {
+			var config = {
+					kitId: 'jyl2ibs',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function() {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function() {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<!-- title-->
+	<title>なごや遊花幼稚園</title>
+</head>
+
+<body class="page">
+	<!-- ▽header▽-->
+	<header class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="logo logoNormal"><a href="../"><img src="../image/common/header_logo.png" alt=""></a></div>
+				<div class="logo logoWhite"><a href="../"><img src="../image/common/header_logo_white.png" alt=""></a></div>
+				<p class="poppins">Nagoya yuuka<br>kodomoen</p>
+			</div>
+			<div class="navBox">
+				<div class="navList">
+					<ul>
+						<li><a href="../about/">園について</a></li>
+						<li><a href="../newslist/">お知らせ</a></li>
+						<li class="current"><a href="../guide/">入園案内</a></li>
+						<li><a href="../visit/">見学案内</a></li>
+						<li><a href="../support/">0歳からの子育てサポート</a></li>
+						<li><a href="../entry/">見学申し込み</a></li>
+						<li><a href="../recruit/">採用情報</a></li>
+					</ul>
+				</div>
+				<div class="bnrList">
+					<ul>
+						<li><a href="" download><img src="../image/common/nav_bnr_guide.png" alt=""></a></li>
+						<li><a href="" download><img src="../image/common/nav_bnr_recruit.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger"><span></span><span></span></div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="support">
+		<div class="topContainer">
+			<div class="topKv"><img class="switch" src="../image/support/top_kv_pc.png" alt=""></div>
+			<div class="topTitle">
+				<h1>０歳児からの<br>子育てサポート</h1>
+			</div>
+		</div>
+		<div class="topMessageBox">
+			<div class="box"><img class="switch" src="../image/support/top_message_house_pc.png" alt=""></div>
+		</div>
+		<div class="topTxtBox">
+			<div class="txt">
+				<p>就学前のお子さまと保護者さまに、親子一緒に園での時間を楽しんでいただける機会をご用意しています。<br>先生やお友だちとのふれあい、遊びや活動を通して、園の温かな雰囲気や子どもたちの笑顔をぜひ感じてください。<br>園生活や入園についてのご質問・ご相談もお気軽にしていただけます。<br>当園では、満3歳からの入園も受け入れております。お子さまの成長に寄り添いながら、安心して園生活をスタートできるようサポートしています。<br>まずは園の雰囲気を知っていただけたら嬉しいです。</p>
+			</div>
+		</div>
+		<div class="pagingList">
+			<ul>
+				<li>
+					<div class="btnMore btnMorePink btnPager btnPagerPink"><a href="#section__classroom">
+							<div>
+								<p>満3歳からの入園</p>
+							</div>
+						</a></div>
+				</li>
+				<li>
+					<div class="btnMore btnMoreBlue btnPager btnPagerBlue"><a href="#section__library">
+							<div>
+								<p>おもちゃ図書館</p>
+							</div>
+						</a></div>
+				</li>
+				<li>
+					<div class="btnMore btnMoreGreen btnPager btnPagerGreen"><a href="#section__square">
+							<div>
+								<p>チビッコひろば</p>
+							</div>
+						</a></div>
+				</li>
+			</ul>
+		</div>
+		<div id="section__classroom">
+			<div class="topPanel">
+				<div class="circle"><img src="../image/support/classroom_top_circle.png" alt=""></div>
+				<div class="txtBox">
+					<div class="inner">
+						<div class="secTtl">
+							<h2>満3歳からの入園</h2>
+						</div>
+						<dl>
+							<dt>満3歳から始める、ゆったり園生活</dt>
+							<dd>3歳の誕生日を迎えたお子さまを対象に、遊花幼稚園では入園していたく事が出来ます。<br>ゆっくりと過ごせる環境の中、先生やお友だちとの関わりを通して、社会性や生活リズムを自然に育みます。園生活に向けたスムーズなステップとして、子どもたちも保護者の方も安心して過ごせる環境です。</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="photo"><img class="switch" src="../image/support/classroom_top_photo_pc.png" alt=""></div>
+			</div>
+			<div class="overviewPanel">
+				<div class="sectionTtl">
+					<h3>概要</h3><span>がいよう</span>
+				</div>
+				<div class="overviewTable">
+					<table>
+						<tbody>
+							<tr>
+								<th>対象児</th>
+								<td>満3歳（誕生月の翌月より参加可能）</td>
+							</tr>
+							<tr>
+								<th>開催日時</th>
+								<td>月〜金　0：00〜0：00</td>
+							</tr>
+							<tr>
+								<th>費用</th>
+								<td>0000円/月</td>
+							</tr>
+							<tr>
+								<th>定員</th>
+								<td>0名</td>
+							</tr>
+							<tr>
+								<th>持ち物</th>
+								<td>テキストが入ります</td>
+							</tr>
+							<tr>
+								<th>注意事項</th>
+								<td>テキストが入ります</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="schedulePanel">
+				<div class="sectionTtl">
+					<h3>園児の1日</h3><span>えんじのいちにち</span>
+				</div>
+				<div class="secContainer">
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="photo"><img src="../image/support/schedule_photo_01.png" alt=""></div>
+							<div class="txtBox">
+								<div class="timeBox poppins">
+									<p>AM 7:30~</p>
+								</div>
+								<div class="txt">
+									<p>開園<br>順次登園<br>検温・視診</p>
+								</div>
+							</div>
+						</div>
+						<div class="secBox">
+							<div class="photo"><img src="../image/support/schedule_photo_02.png" alt=""></div>
+							<div class="txtBox">
+								<div class="timeBox poppins">
+									<p>AM 9:00~</p>
+								</div>
+								<div class="txt">
+									<p>開園<br>順次登園<br>検温・視診</p>
+								</div>
+							</div>
+						</div>
+						<div class="secBox">
+							<div class="photo"><img src="../image/support/schedule_photo_03.png" alt=""></div>
+							<div class="txtBox">
+								<div class="timeBox poppins">
+									<p>AM 7:30~</p>
+								</div>
+								<div class="txt">
+									<p>開園<br>順次登園<br>検温・視診</p>
+								</div>
+							</div>
+						</div>
+						<div class="secBox">
+							<div class="photo"><img src="../image/support/schedule_photo_04.png" alt=""></div>
+							<div class="txtBox">
+								<div class="timeBox poppins">
+									<p>AM 9:00~</p>
+								</div>
+								<div class="txt">
+									<p>開園<br>順次登園<br>検温・視診</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bnrEntry">
+						<div class="photo"><img class="switch" src="../image/support/bnr_entry_pc.png" alt=""></div>
+						<div class="txtBox">
+							<dl>
+								<dt class="poppins">- ENTRY -</dt>
+								<dd>
+									<p>満3歳のお子さまの<br class="spBreak">お申し込みはこちらから</p>
+									<div class="btnMore btnMoreBlueDeep"><a href="">
+											<div>
+												<p>見学予約</p>
+											</div>
+										</a></div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section__library">
+			<div class="topPanel">
+				<div class="circle"><img src="../image/support/library_top_circle.png" alt=""></div>
+				<div class="txtBox">
+					<div class="inner">
+						<div class="secTtl">
+							<h2>おもちゃ図書館</h2>
+						</div>
+						<dl>
+							<dt>親子で自由に遊べる「おもちゃ図書館」</dt>
+							<dd>幼稚園を地域の皆さまに開放する「おもちゃ図書館」では、親子で安心して遊べる空間をご提供しています。年齢に合わせたおもちゃをそろえ、絵本や手遊びも楽しめるほっとできる場所です。<br>開催日は決まり次第、ホームページやお知らせ欄でご案内しています。</dd>
+						</dl>
+						<div class="btnMore btnMoreBlueDeep"><a href="">
+								<div>
+									<p>詳しくはこちら</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="photo"><img class="switch" src="../image/support/library_top_photo_pc.png" alt=""></div>
+			</div>
+			<div class="btnSchedule btnPaging"><a href="#monthlySchedule">
+					<p>今月の開催スケジュール</p>
+				</a></div>
+			<div class="photoList">
+				<div class="photo"><img class="switch" src="../image/support/library_photo_list_sp.png" alt=""></div>
+				<div class="logo"><img class="switch" src="../image/support/library_photo_list_logo.png" alt=""></div>
+			</div>
+		</div>
+		<div id="section__square">
+			<div class="topPanel">
+				<div class="circle"><img src="../image/support/square_top_circle.png" alt=""></div>
+				<div class="txtBox">
+					<div class="inner">
+						<div class="secTtl">
+							<h2>チビッコひろば</h2>
+						</div>
+						<dl>
+							<dt>はじめの一歩は「チビッコひろば」から</dt>
+							<dd>未就園児とその保護者を対象にした「チビッコひろば」では、季節のあそびや親子ふれあい活動を楽しんでいただけます。<br>はじめて幼稚園に来る方でも安心して参加できるよう、スタッフが丁寧にサポートいたします。<br>開催日時や申込方法は、下記をご覧ください。</dd>
+						</dl>
+						<div class="btnMore btnMoreBlueDeep"><a href="">
+								<div>
+									<p>詳しくはこちら</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="photo"><img class="switch" src="../image/support/square_top_photo_pc.png" alt=""></div>
+			</div>
+			<div class="overviewPanel">
+				<div class="sectionTtl">
+					<h3>概要</h3><span>がいよう</span>
+				</div>
+				<div class="overviewTable">
+					<table>
+						<tbody>
+							<tr>
+								<th>対象児</th>
+								<td>未就園児及びその保護者</td>
+							</tr>
+							<tr>
+								<th>開催日時</th>
+								<td>月に1度　水曜日開催<br>時間は10：30～12：00<br>開催日は開催スケジュールをご確認ください。</td>
+							</tr>
+							<tr>
+								<th>場所</th>
+								<td>わかば園</td>
+							</tr>
+							<tr>
+								<th>費用</th>
+								<td>無料</td>
+							</tr>
+							<tr>
+								<th>定員</th>
+								<td>１２組２４名です。（お子様１名＋親御様１名で１組）</td>
+							</tr>
+							<tr>
+								<th>申し込み方法</th>
+								<td>お電話にてお申込みください。<br>TEL： 052-482-0200</td>
+							</tr>
+							<tr>
+								<th>注意事項</th>
+								<td>テキストがはいります。</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="btnSchedule btnPaging"><a href="#monthlySchedule">
+					<p>今月の開催スケジュール</p>
+				</a></div>
+			<div class="kvSchedule">
+				<div class="kv"><img class="switch" src="../image/support/square_schedule_kv_pc.png" alt=""></div>
+				<div class="info">
+					<dl class="poppins">
+						<dt>NAGOYA YUUKA YOUCHIEN</dt>
+						<dd>9-30 SAKOU-CHO, NAKAMUTRA-KU,<br>NAGOYA-SHI, AICHI 453-0033</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="monthlySchedule" id="monthlySchedule">
+				<div class="topTtl"><span class="poppins">- SCHEDULE -</span>
+					<h3>今月の開催スケジュール</h3>
+				</div>
+				<div class="monthlyEventContainer">
+					<div class="monthlyEventPanel">
+						<div class="monthHeader">
+							<div class="monthHeader__left">
+								<p><em>8</em><span>月</span></p>
+							</div>
+							<div class="monthHeader__right">
+								<p>AUG</p>
+								<p>2025</p>
+							</div>
+						</div>
+						<div class="eventType">
+							<ul>
+								<li class="blue">おもちゃ図書館</li>
+								<li class="green">チビッコひろば</li>
+							</ul>
+						</div>
+						<div class="calendarPanel">
+							<table class="calendar__table">
+								<thead>
+									<tr>
+										<th>日</th>
+										<th>月</th>
+										<th>火</th>
+										<th>水</th>
+										<th>木</th>
+										<th>金</th>
+										<th>土</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="is-empty"></td>
+										<td class="is-empty"></td>
+										<td>
+											<div class="calendar__date">1</div>
+										</td>
+										<td>
+											<div class="calendar__date">2</div>
+										</td>
+										<td>
+											<div class="calendar__date">3</div>
+											<div class="timeBox">
+												<div class="event blue">13:00〜16:00</div>
+												<div class="event green">13:00〜16:00</div>
+											</div>
+										</td>
+										<td>
+											<div class="calendar__date">4</div>
+										</td>
+										<td>
+											<div class="calendar__date">5</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="calendar__date">6</div>
+										</td>
+										<td>
+											<div class="calendar__date">7</div>
+										</td>
+										<td>
+											<div class="calendar__date">8</div>
+										</td>
+										<td>
+											<div class="calendar__date">9</div>
+										</td>
+										<td>
+											<div class="calendar__date">10</div>
+										</td>
+										<td>
+											<div class="calendar__date">11</div>
+										</td>
+										<td>
+											<div class="calendar__date">12</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="calendar__date">13</div>
+										</td>
+										<td>
+											<div class="calendar__date">14</div>
+										</td>
+										<td>
+											<div class="calendar__date">15</div>
+											<div class="timeBox ">
+												<div class="event blue">13:00〜16:00</div>
+												<div class="event green">昼のみ</div>
+											</div>
+										</td>
+										<td>
+											<div class="calendar__date">16</div>
+										</td>
+										<td>
+											<div class="calendar__date">17</div>
+										</td>
+										<td>
+											<div class="calendar__date">18</div>
+										</td>
+										<td>
+											<div class="calendar__date">19</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="calendar__date">20</div>
+										</td>
+										<td>
+											<div class="calendar__date">21</div>
+										</td>
+										<td>
+											<div class="calendar__date">22</div>
+										</td>
+										<td>
+											<div class="calendar__date">23</div>
+										</td>
+										<td>
+											<div class="calendar__date">24</div>
+										</td>
+										<td>
+											<div class="calendar__date">25</div>
+										</td>
+										<td>
+											<div class="calendar__date">26</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="calendar__date">27</div>
+											<div class="timeBox">
+												<div class="event blue">午前中のみ</div>
+												<div class="event green">13:00〜16:00</div>
+											</div>
+										</td>
+										<td>
+											<div class="calendar__date">28</div>
+										</td>
+										<td>
+											<div class="calendar__date">29</div>
+										</td>
+										<td>
+											<div class="calendar__date">30</div>
+										</td>
+										<td>
+											<div class="calendar__date">31</div>
+										</td>
+										<td class="is-empty"></td>
+										<td class="is-empty"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="calendarNav">
+						<div class="prev">
+							<img src="../image/support/calendar_prev.png" alt="">
+						</div>
+						<div class="next">
+							<img src="../image/support/calendar_next.png" alt="">
+						</div>
+					</div>
+					<div class="spBalloonText">
+						<div class="spBalloonText__inner">
+							<p>日付タップで<br>時間を確認</p>
+						</div>
+					</div>
+				</div>
+				<script>
+					document.addEventListener("DOMContentLoaded", function() {
+						const panels = document.querySelectorAll(".monthlyEventPanel");
+						const prevBtn = document.querySelector(".calendarNav .prev");
+						const nextBtn = document.querySelector(".calendarNav .next");
+						const spBalloon = document.querySelector(".spBalloonText");
+						let currentIndex = 0;
+
+						function showPanel(index) {
+							panels.forEach((p, i) => {
+								p.style.display = (i === index) ? "block" : "none";
+							});
+							prevBtn.style.display = (index === 0) ? "none" : "block";
+							nextBtn.style.display = (index === panels.length - 1) ? "none" : "block";
+						}
+
+						prevBtn.addEventListener("click", function() {
+							if (currentIndex > 0) {
+								currentIndex--;
+								showPanel(currentIndex);
+							}
+						});
+
+						nextBtn.addEventListener("click", function() {
+							if (currentIndex < panels.length - 1) {
+								currentIndex++;
+								showPanel(currentIndex);
+							}
+						});
+
+						// 初期表示
+						showPanel(currentIndex);
+
+						if (window.matchMedia("(max-width: 1140px)").matches) {
+							if (spBalloon) {
+								spBalloon.addEventListener("click", function() {
+									spBalloon.style.display = "none";
+								});
+							}
+
+							document.addEventListener("click", function(e) {
+								const td = e.target.closest("td");
+								const activeBox = document.querySelector(".timeBox.active");
+
+								if (td && td.querySelector(".timeBox")) {
+									const box = td.querySelector(".timeBox");
+									if (activeBox && activeBox !== box) {
+										activeBox.classList.remove("active");
+									}
+									box.classList.toggle("active");
+								} else {
+									if (activeBox) activeBox.classList.remove("active");
+								}
+							});
+						}
+					});
+				</script>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer class="footer">
+		<div class="footContact">
+			<div class="contactContainer">
+				<div class="slidePanel">
+					<div class="slideBox">
+						<ul>
+							<li><img src="../image/common/footer_contact_list_01.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_02.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_03.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_04.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="slideBox right slideBox--sp">
+						<ul>
+							<li><img src="../image/common/footer_contact_list_01.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_02.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_03.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_04.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contactPanel">
+					<div class="contactItem">
+						<dl>
+							<dt class="green">見学申し込み</dt>
+							<dd>
+								<div class="txt">
+									<p>入園を検討している方は見学に来ませんか？<br>なごや遊花こども園をぜひ見に来てください。</p>
+								</div>
+								<div class="btnMore btnMoreGreen"><a href="">
+										<div>
+											<p>くわしく見る</p>
+										</div>
+									</a></div>
+							</dd>
+						</dl>
+					</div>
+					<div class="contactItem">
+						<dl>
+							<dt class="pink">お問い合わせ</dt>
+							<dd>
+								<div class="txt">
+									<p>お問い合わせやご意見ございましたら<br>お気軽にご相談ください</p>
+								</div>
+								<div class="btnMore btnMorePink"><a href="tel:0524820200">
+										<div>
+											<p>052-482-0200</p>
+										</div>
+									</a></div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="footBox">
+				<div class="logo"><img src="../image/common/footer_logo.png" alt=""></div>
+				<div class="footNav">
+					<ul>
+						<li><a href="">園について</a></li>
+						<li><a href="">お知らせ</a></li>
+						<li><a href="">入園案内</a></li>
+						<li><a href="">見学案内</a></li>
+						<li><a href="">0歳からの子育てサポート</a></li>
+						<li><a href="">見学申し込み</a></li>
+						<li><a href="">採用情報</a></li>
+						<li><a href="">お問い合わせ</a></li>
+					</ul>
+				</div>
+				<div class="txtBox">
+					<div class="txt">
+						<p>〒453-0033　名古屋市中村区栄生町９-３０</p>
+						<div class="tel"><a href="tel:0524820200">TEL：052-482-0200</a></div>
+						<div class="fax"><a href="#">FAX：052-482-5960</a></div>
+					</div>
+				</div>
+				<div class="copy">
+					<dl class="poppins">
+						<dt>NAGOYA YUUKA YOUCHIEN</dt>
+						<dd>
+							<p>COPYRIGHT &copy; NAGOYA YUUKA YOUCHIEN <br />ALL RIGHTS RESERVED.</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- △footer△-->
+</body>
+
+</html>

@@ -1,0 +1,547 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Shippori Mincho", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #454545;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  background: #fffff7;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #454545;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1140px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header .headWrap {
+  position: relative;
+}
+.header .headWrap .headTtl {
+  position: fixed;
+  top: 60px;
+  left: 75px;
+  display: inline-block;
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-size: clamp(16px, 1.2vw, 20px);
+  z-index: 999;
+}
+.header .headWrap .leftIcon {
+  position: fixed;
+  top: 55px;
+  left: 75px;
+  width: 20px;
+  height: 44px;
+  z-index: 999;
+}
+.header .headWrap .rightIcon {
+  position: fixed;
+  top: 60px;
+  right: 75px;
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  width: 5%;
+  height: 22px;
+  z-index: 999;
+}
+.header.topHeader .headWrap .headTtl {
+  color: #ffffff;
+}
+.header.topHeader .headWrap .leftIcon {
+  cursor: pointer;
+  background: url("../image/common/header_nav_open_01.png") left center no-repeat;
+  background-size: 100% auto;
+}
+.header.topHeader .headWrap .rightIcon {
+  cursor: pointer;
+  background: url("../image/common/header_icon_right_01.png") left center no-repeat;
+  background-size: 100% auto;
+}
+.header.pageHeader .headWrap .headTtl, .header.changeHeader .headWrap .headTtl {
+  color: #454545;
+}
+.header.pageHeader .headWrap .leftIcon, .header.changeHeader .headWrap .leftIcon {
+  cursor: pointer;
+  background: url("../image/common/header_nav_open_02.png") left center no-repeat;
+  background-size: 100% auto;
+}
+.header.pageHeader .headWrap .rightIcon, .header.changeHeader .headWrap .rightIcon {
+  cursor: pointer;
+  background: url("../image/common/header_icon_right_02.png") left center no-repeat;
+  background-size: 100% auto;
+}
+
+.fixedNavBox ul li a {
+  display: block;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 1140px) {
+  .fixedNavBox {
+    position: fixed;
+    bottom: 10%;
+    right: 75px;
+    z-index: 999;
+  }
+  .fixedNavBox ul li + li {
+    margin: 40px 0 0;
+  }
+  .fixedNavBox ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75px;
+    max-height: 230px;
+    width: 5vw;
+    height: 23vh;
+    font-size: clamp(13px, 1vw, 16px);
+    writing-mode: vertical-lr;
+    border-radius: 40px;
+    background: white;
+  }
+
+  .topHeader .fixedNavBox ul li a {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 75px 40px 40px;
+  z-index: 1000;
+  background: #e1c5be;
+}
+.navBox .navHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBox .navHead .leftIcon {
+  width: 5%;
+  max-width: 110px;
+  min-width: 70px;
+  cursor: pointer;
+}
+.navBox .navHead .rightIcon {
+  max-width: 100px;
+  min-width: 60px;
+  width: 5%;
+  cursor: pointer;
+}
+.navBox .navBody {
+  padding: 0 clamp(80px, 1vw, 120px);
+}
+.navBox .navContainer {
+  max-width: 1540px;
+  margin: 0 auto;
+}
+.navBox .navContainer .leftPanel .navList ul li + li {
+  margin: 40px 0 0;
+}
+.navBox .navContainer .leftPanel .navList ul li a {
+  display: inline-block;
+}
+.navBox .navContainer .leftPanel .navList ul li a em {
+  margin: 0 15px 0 0;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 34px;
+  font-size: clamp(20px, 1.5vw, 34px);
+}
+.navBox .navContainer .leftPanel .navList ul li a span {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-size: 14px;
+  font-size: clamp(11px, 1vw, 14px);
+}
+.navBox .navContainer .rightPanel .navList ul li a {
+  display: block;
+}
+.navBox .navContainer .rightPanel .bottomBox {
+  margin: auto 0 0;
+}
+.navBox .navContainer .rightPanel .bottomBox .logo {
+  max-width: 240px;
+  width: 20%;
+}
+.navBox .navContainer .rightPanel .bottomBox .info .txt {
+  margin: 0 0 40px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: clamp(11px, 1vw, 14px);
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox .copy {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 14px;
+  font-size: clamp(11px, 1vw, 14px);
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox .privacy {
+  display: inline-block;
+  font-size: 12px;
+  font-size: clamp(10px, 1vw, 12px);
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox .privacy a {
+  display: inline-block;
+}
+@media (min-width: 1140px) {
+  .navBox .navBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px);
+  }
+  .navBox .navContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBox .navContainer .leftPane {
+    width: 27%;
+  }
+  .navBox .navContainer .rightPanel {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+  }
+  .navBox .navContainer .rightPanel .navList ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .navBox .navContainer .rightPanel .navList ul li {
+    width: calc(50% - 20px);
+  }
+  .navBox .navContainer .rightPanel .bottomBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .navBox .navContainer .rightPanel .bottomBox .info {
+    flex: 1;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.secWrap {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 200px 55px 0;
+}
+.footer .footContact .contactList {
+  max-width: 1334px;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer .footContact .contactList ul li + li {
+  margin: 70px 0 0;
+}
+.footer .footContact .contactList ul li a {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footContact .contactList ul li .photo {
+  overflow: hidden;
+  border-radius: 250px;
+}
+.footer .footContact .contactList ul li .photo img {
+  transition: 0.6s;
+}
+.footer .footContact .contactList ul li .txtBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.footer .footContact .contactList ul li .txtBox .ttlBox {
+  margin: 0 0 40px;
+}
+.footer .footContact .contactList ul li .txtBox .ttlBox .ttl01 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 70px;
+  font-size: clamp(50px, 4vw, 70px);
+}
+.footer .footContact .contactList ul li .txtBox .ttlBox .ttl02 {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-size: 26px;
+  font-size: clamp(20px, 1.2vw, 26px);
+}
+.footer .footContact .contactList ul li .txtBox .btnMore span {
+  display: inline-block;
+  padding: 0 60px 0 0;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 22px;
+  font-size: clamp(18px, 1.2vw, 22px);
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  background: url("../image/common/btn_more_arrow_01_white.png") right 5px center no-repeat;
+  background-size: 26px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1140px) {
+  .footer .footContact .contactList ul li a:hover {
+    opacity: 1;
+  }
+  .footer .footContact .contactList ul li a:hover .photo img {
+    transform: scale(1.1);
+  }
+  .footer .footContact .contactList ul li a:hover .txtBox .btnMore span {
+    background: url("../image/common/btn_more_arrow_01_white.png") right center no-repeat;
+    background-size: 26px auto;
+  }
+}
+.footer .footPanel {
+  padding: 200px 0;
+}
+.footer .footPanel .footBox {
+  max-width: 1040px;
+  width: 70%;
+  margin: 0 auto;
+}
+.footer .footPanel .infoBox01 {
+  margin: 0 0 60px;
+}
+.footer .footPanel .infoBox01 .logo {
+  width: 320px;
+  width: 25%;
+}
+.footer .footPanel .infoBox01 .txt {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: clamp(12px, 1vw, 16px);
+}
+@media (min-width: 1140px) {
+  .footer .footPanel .infoBox01 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .infoBox01 .txt {
+    width: 550px;
+  }
+}
+.footer .footPanel .infoBox02 .sns ul li {
+  display: inline-block;
+  width: 25px;
+}
+.footer .footPanel .infoBox02 .sns ul li + li {
+  margin: 0 0 0 20px;
+}
+.footer .footPanel .infoBox02 .sns ul li a {
+  display: block;
+}
+.footer .footPanel .infoBox02 .copyBox {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+}
+.footer .footPanel .infoBox02 .copyBox .copy {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 14px;
+  font-size: clamp(12px, 1vw, 14px);
+}
+.footer .footPanel .infoBox02 .copyBox .privacy {
+  display: inline-block;
+  font-size: 12px;
+  font-size: clamp(10px, 1vw, 12px);
+}
+.footer .footPanel .infoBox02 .copyBox .privacy a {
+  display: inline-block;
+}
+@media (min-width: 1140px) {
+  .footer .footPanel .infoBox02 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .infoBox02 .copyBox {
+    width: 550px;
+  }
+}
+.footer.footBg {
+  background: #ffece5;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

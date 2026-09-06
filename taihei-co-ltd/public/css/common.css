@@ -1,0 +1,386 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.futura {
+  font-family: Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .logo {
+    width: 70px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    width: calc(100% - 110px);
+  }
+  .navBox .navList .ul {
+    margin: 0 0 0 -20px;
+    text-align: right;
+  }
+  .navBox .navList .ul .li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+  }
+  .navBox .navList .ul .li.spBreak {
+    display: none;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+    font-size: clamp(13px, 1.2vw, 16px);
+  }
+  .navBox .navList .ul .contact {
+    width: 15%;
+    max-width: 160px;
+  }
+  .navBox .navList .ul .contact a {
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #97ae51;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageTitlePanel {
+  padding: 170px 20px 60px;
+  background: #e3e6ea;
+}
+.pageTitlePanel .pageTitle {
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 50px;
+  text-align: center;
+}
+.pageSecTtlBox .pageSecTtl {
+  padding: 0 0 25px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  font-size: 34px;
+  color: #97ae51;
+  background: url(https://taihei-co-ltd.com/system_panel/uploads/images/page_sec_ttl_line.png) center bottom no-repeat;
+  background-size: 120px auto;
+}
+.pageSecTtlBox.white .pageSecTtl {
+  color: #ffffff;
+  background: url(https://taihei-co-ltd.com/system_panel/uploads/images/page_sec_ttl_line_white.png) center bottom no-repeat;
+  background-size: 120px auto;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore a {
+  display: inline-block;
+  padding: 5px 40px 5px 0;
+  background: url(https://taihei-co-ltd.com/system_panel/uploads/images/btn_more_arrow.png) right center no-repeat;
+  background-size: 30px auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 60px 0;
+  background: #f4f6f8;
+}
+.footer .footContact .secBox .left .secTtlBox {
+  margin: 0 0 30px;
+}
+.footer .footContact .secBox .left .secTtlBox .sub {
+  font-size: 34px;
+}
+.footer .footContact .secBox .left .secTtlBox .secTt {
+  margin: 5px 0 0;
+}
+.footer .footContact .secBox .right .tel {
+  margin: 0 0 20px;
+}
+.footer .footContact .secBox .right .tel a {
+  display: inline-block;
+}
+.footer .footContact .secBox .right .tel a p {
+  display: inline;
+  font-size: 20px;
+}
+.footer .footContact .secBox .right .tel a .em {
+  font-size: 30px;
+}
+.footer .footContact .secBox .right .btnContact {
+  display: inline-block;
+}
+.footer .footContact .secBox .right .btnContact a {
+  display: block;
+  width: 180px;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #97ae51;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer .footContact .secBox .right {
+    text-align: right;
+  }
+}
+.footer .footPanel {
+  position: relative;
+  padding: 60px 0 20px;
+  color: #ffffff;
+  background: #97ae51;
+}
+.footer .footPanel .pagetop {
+  position: absolute;
+  top: 50px;
+  right: 5%;
+  width: 50px;
+  cursor: pointer;
+}
+.footer .footPanel .footBox .left .logo {
+  width: 100px;
+}
+.footer .footPanel .footBox .left .txtBox .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .footPanel .footBox .left .txtBox .snsBox {
+  margin: 15px 0 0;
+}
+.footer .footPanel .footBox .left .txtBox .snsBox .sns {
+  display: inline-block;
+  width: 30px;
+}
+.footer .footPanel .footBox .left .txtBox .snsBox .sns a {
+  display: block;
+}
+.footer .footPanel .footBox .right .footNav .ul .li + .li {
+  margin: 20px 0 0;
+}
+.footer .footPanel .footBox .right .footNav .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  color: #ffffff;
+  background: url(https://taihei-co-ltd.com/system_panel/uploads/images/footer_nav_arrow.png) left center no-repeat;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .footBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .footBox .left {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .footer .footPanel .footBox .left .txtBox {
+    width: calc(100% - 140px);
+  }
+  .footer .footPanel .footBox .right {
+    width: 40%;
+  }
+}
+.footer .footPanel .copy {
+  margin: 60px 0 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

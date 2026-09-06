@@ -1,0 +1,161 @@
+// ▽メイン▽
+main#product
+    .mvContainer
+        .mv
+            img(src=(root_path || '') + "image/product/product_top_mv_pc.png", class="switch" alt="")
+        .mvTitle
+            .secTtlBox
+                .secTtl
+                    h1 Product
+                .sub
+                    p ホームケア商品
+    #section__product
+        .productList
+            ul
+                li
+                    .photo
+                        img(src=(root_path || '') + "image/product/product_img_1_1_pc.png" alt="")
+                    .infoBox
+                        .ttlBox
+                            .left
+                                .ttl01
+                                    p CLEANSING GEL
+                                .ttl02
+                                    p クレンジングジェル
+                            .price
+                                p
+                                    span Net.150mL /
+                                    em 5,500yen
+                        .txt
+                            p ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。
+                    .button.itemModalOpen(data-modal-id="modal1")
+                        p View Detail
+                li
+                    .photo
+                        img(src=(root_path || '') + "image/product/product_img_1_1_pc.png" alt="")
+                    .infoBox
+                        .ttlBox
+                            .left
+                                .ttl01
+                                    p CLEANSING GEL
+                                .ttl02
+                                    p クレンジングジェル
+                            .price
+                                p
+                                    span Net.150mL /
+                                    em 5,500yen
+                        .txt
+                            p ミントがさわやかに香る洗顔ウォッシュ。<br>アミノ酸系※1洗浄成分が高配合された洗顔料です。たっぷりの泡で、大人の肌をいたわり不要な角質や皮脂を洗い流し、肌のトーンアップ※2を促します。
+                    .button
+                        p View Detail
+                li
+                    .photo
+                        img(src=(root_path || '') + "image/product/product_img_1_1_pc.png" alt="")
+                    .infoBox
+                        .ttlBox
+                            .left
+                                .ttl01
+                                    p CLEANSING GEL
+                                .ttl02
+                                    p クレンジングジェル
+                            .price
+                                p
+                                    span Net.150mL /
+                                    em 5,500yen
+                        .txt
+                            p ９種類の植物エキス※1と植物幹細胞※2を配合した化粧水です。<br>角質層のすみずみまで水分を行きわたらせ、ハリや潤いのある肌に整え、輝きに満ちた肌印象へと導きます。<br>また、ヒアルロン酸※3によりしっかりと水分をキープします。
+                    .button
+                        p View Detail
+                li
+                    .photo
+                        img(src=(root_path || '') + "image/product/product_img_1_1_pc.png" alt="")
+                    .infoBox
+                        .ttlBox
+                            .left
+                                .ttl01
+                                    p CLEANSING GEL
+                                .ttl02
+                                    p クレンジングジェル
+                            .price
+                                p
+                                    span Net.150mL /
+                                    em 5,500yen
+                        .txt
+                            p ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。
+                    .button
+                        p View Detail
+                li
+                    .photo
+                        img(src=(root_path || '') + "image/product/product_img_1_1_pc.png" alt="")
+                    .infoBox
+                        .ttlBox
+                            .left
+                                .ttl01
+                                    p CLEANSING GEL
+                                .ttl02
+                                    p クレンジングジェル
+                            .price
+                                p
+                                    span Net.150mL /
+                                    em 5,500yen
+                        .txt
+                            p ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。
+                    .button
+                        p View Detail
+        .itemModalOverlay.overlay
+            .itemModalContainer
+                .itemModal(data-modal="modal1")
+                    .modalBox
+                        .modalBoxInner
+                            .photoBox
+                                .photo
+                                    img(src=(root_path || '') + "image/product/product_img_1_1_pc.png", class="switch" alt="")
+                                .photo
+                                    img(src=(root_path || '') + "image/product/product_img_1_2_pc.png", class="switch" alt="")
+                            .infoBox
+                                .ttlBox
+                                    .left
+                                        .ttl01
+                                            p CLEANSING GEL
+                                        .ttl02
+                                            p クレンジングジェル
+                                    .price
+                                        p
+                                            span Net.150mL /
+                                            em 5,500yen
+                                .txt
+                                    p ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。
+                                    .aside
+                                        p [※1] ライム果汁、オレンジ果汁、レモン果汁、ナツメ果実エキス、リンゴ果実エキス、 サンザシエキス、グレープフルーツ果実エキス、ヨモギ葉エキス、アロエベラエキス [※2] 肌印象を明るくする
+                            .howtoPanel
+                                dl.accord
+                                    dt ご使用方法
+                                    dd
+                                        .inner
+                                            //- .icon
+                                            //-     img(src=(root_path || '') + "image/product/accord_minus.png", alt="")
+                                            .box
+                                                .txt
+                                                    p ご使用方法説明文
+                                dl.accord
+                                    dt 成分
+                                    dd
+                                        .inner
+                                            //- .icon
+                                            //-     img(src=(root_path || '') + "image/product/accord_minus.png", alt="")
+                                            .box
+                                                .txt
+                                                    p 水、グリセリン、ヤシ油脂肪酸PEG-7グリセリル、DPG、エタノール、1,2-ヘキサンジオール、異性化糖、加水分解ローヤルゼリータンパク、ライム果汁、オレンジ果汁、レモン果汁、ナツメ果実エキス、リンゴ果実エキス、サンザシエキス、グレープフルーツ果実エキス、ヨモギ葉エキス、アロエベラ葉エキス、グリチルリチン酸2K、アラントイン、オレンジ果皮油、ローマカミツレ花油、BG、（アクリレーツ/アクリル酸アルキル（C10-30））クロスポリマー、ペンチレングリコール、水酸化K、フェノキシエタノール
+                            .buttonPurchase
+                                a(href="#", target="_blank", rel="noopener") 購入する
+                            .photoPanel
+                                .ttl
+                                    p クレンジングジェルご使用方法
+                                .photo
+                                    img(src=(root_path || '') + "image/product/product_modal_mv_01.png", alt="")
+                            .modalCloseBtm
+                                .modalClose
+                                    p Close Page
+                        .modalClose
+                            p Close Page
+// △メイン△

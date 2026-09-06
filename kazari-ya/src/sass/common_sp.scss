@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .pageMainTtlBox {
+    .secWrap {
+      padding: 20px 20px 10px;
+    }
+    .pageMainTtl {
+      font-size: 24px;
+    }
+    .sub {
+      font-size: 14px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    .pageSecTtl {
+      font-size: 24px;
+    }
+    .sub {
+      font-size: 14px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0 60px;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 24px;
+      }
+      .ul {
+        margin: 0 0 20px;
+        .li {
+          a {
+            padding: 0 0 0 35px;
+            font-size: 24px;
+          }
+          .tel01 {
+            background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_01.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+          .tel02 {
+            background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_02.png)
+              left center no-repeat;
+            background-size: 30px auto;
+          }
+        }
+      }
+    }
+    .footBlog {
+      .secWrap {
+        padding: 60px 20px;
+      }
+      .secPanel {
+        margin: 0 auto 40px;
+        .blogList {
+          .webgene-blog {
+            .webgene-item {
+              a {
+                padding: 15px 50px 15px 15px;
+                background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                  right 15px center no-repeat;
+                background-size: 20px auto;
+                .time {
+                  margin: 0 0 5px;
+                }
+                .title {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 15px;
+      .logo {
+        width: 110px;
+        margin: 0 0 15px;
+      }
+      .txt {
+        margin: 0 0 40px;
+      }
+    }
+  }
+}

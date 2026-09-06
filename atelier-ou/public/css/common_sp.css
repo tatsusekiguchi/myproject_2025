@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+.spBreak {
+  display: block;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  padding: 20px;
+}
+.header .headWrap .logoBox .logo {
+  max-width: 118px;
+  width: 118px;
+  margin: 0;
+}
+.header .headWrap .logoBox .headTitle {
+  display: none;
+}
+.header .headWrap .headItem {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.header .headWrap .headItem .insta {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px 0 0;
+  padding: 0;
+  border-bottom: none;
+}
+.header .headWrap .headItem .insta a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 0;
+  background: url("../image/common/header_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.header .headWrap .headItem .contact {
+  width: 150px;
+  max-width: 150px;
+}
+.header .headWrap .headItem .contact a {
+  padding: 12px 15px;
+  font-size: 13px;
+}
+.header .headWrap .headItem .contact a span {
+  padding: 0 20px 0 0;
+  background: url("../image/common/header_contact_arrow.png") right center no-repeat;
+  background-size: 15px auto;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 40px 20px;
+}
+.footer .topPanel {
+  margin: 0 auto 30px;
+  padding: 0;
+}
+.footer .topPanel .logo {
+  width: 65px;
+  max-width: 65px;
+}
+.footer .topPanel .headItem {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.footer .topPanel .headItem .insta {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px 0 0;
+  padding: 0;
+  border-bottom: none;
+}
+.footer .topPanel .headItem .insta a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 0;
+  background: url("../image/common/footer_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .topPanel .headItem .contact {
+  width: 150px;
+  max-width: 150px;
+}
+.footer .topPanel .headItem .contact a {
+  padding: 12px 15px;
+  font-size: 13px;
+}
+.footer .topPanel .headItem .contact a span {
+  padding: 0 20px 0 0;
+  background: url("../image/common/footer_contact_arrow.png") right center no-repeat;
+  background-size: 15px auto;
+}
+.footer .mvPanel .mv {
+  position: relative;
+  height: 170px;
+}
+.footer .mvPanel .mv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer .mvPanel .mvLogo {
+  width: 190px;
+  max-width: 190px;
+  height: 30px;
+}
+.footer .bottomPanel {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+.footer .bottomPanel .navigationBox {
+  display: block;
+}
+.footer .bottomPanel .navigationBox ul + ul {
+  margin: 10px 0 0;
+}
+.footer .bottomPanel .navigationBox ul li + li {
+  margin: 10px 0 0;
+}
+.footer .bottomPanel .navigationBox ul li a {
+  font-size: 14px;
+}
+.footer .bottomPanel .copyBox {
+  display: block;
+  margin: 25px 0 0;
+}
+.footer .bottomPanel .info {
+  font-size: 12px;
+}
+.footer .bottomPanel .copy {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 8px;
+}

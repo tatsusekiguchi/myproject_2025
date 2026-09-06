@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    width: 50px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 8px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -8px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 60px;
+    z-index: 999;
+    background: white;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 69px;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .navBox .navList {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+  }
+  .navBox .navList .ul {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li {
+    text-align: left;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 1px solid #cccccc;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul a.spHidden {
+    display: none;
+  }
+  .navBox .navList .ul .contact a {
+    color: #ffffff;
+    background: #97ae51;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 69px 0 0;
+  }
+
+  .pageTitlePanel {
+    padding: 30px 20px 30px;
+  }
+  .pageTitlePanel .pageTitle {
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    padding: 0 0 20px;
+    font-size: 20px;
+    background: url(https://taihei-co-ltd.com/system_panel/uploads/images/page_sec_ttl_line.png) center bottom no-repeat;
+    background-size: 90px auto;
+  }
+  .pageSecTtlBox.white .pageSecTtl {
+    background: url(https://taihei-co-ltd.com/system_panel/uploads/images/page_sec_ttl_line_white.png) center bottom no-repeat;
+    background-size: 90px auto;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 40px 0;
+  }
+  .footer .footContact .secBox .left {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .secBox .left .secTtlBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .secBox .left .secTtlBox .sub {
+    font-size: 24px;
+  }
+  .footer .footContact .secBox .left .secTtlBox .secTt {
+    margin: 3px 0 0;
+  }
+  .footer .footContact .secBox .right .tel {
+    margin: 0 0 15px;
+  }
+  .footer .footContact .secBox .right .tel a p {
+    font-size: 16px;
+  }
+  .footer .footContact .secBox .right .tel a .em {
+    font-size: 24px;
+  }
+  .footer .footContact .secBox .right .btnContact {
+    display: inline-block;
+  }
+  .footer .footContact .secBox .right .btnContact a {
+    display: block;
+    width: 180px;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #97ae51;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .footer .footContact .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer .footContact .secBox .right {
+    text-align: right;
+  }
+}
+@media (max-width: 1024px) {
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 40px;
+  }
+  .footer .footPanel .footBox {
+    text-align: left;
+  }
+  .footer .footPanel .footBox .left .logo {
+    width: 80px;
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .footBox .right {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    margin: 50px 0 0;
+    text-align: center;
+  }
+}

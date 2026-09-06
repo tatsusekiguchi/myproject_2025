@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+	min-width: 0;
+	font-size: 14px;
+}
+a:hover {
+	text-decoration: none;
+}
+/*改行*/
+.pcBreak {
+	display: none;
+}
+.spBreak {
+	display: block;
+}
+/*spのみ表示*/
+.pcHidden {
+	display: block;
+}
+.spHidden {
+	display: none;
+}
+#sideBtn {
+	display: none;
+}
+.topicPath {
+	display: none;
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+    background: #ffffff;
+
+    .headBox {
+
+    	.logo {
+			width: 140px;
+
+			a {
+				display: block;
+			}
+
+		}
+
+    }
+
+    .headContact {
+    	display: none;
+    }
+
+	#menuBtn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 44px;
+		height: 24px;
+		z-index: 9999;
+		cursor: pointer;
+
+		span {
+			display: block;
+			position: absolute;
+			right: 0;
+			width: 100%;
+			height: 1px;
+			z-index: 9999;
+			background: #000;
+			transition: all .4s;
+		}
+
+		span:nth-child(1) {
+			top: 0;
+		}
+
+		span:nth-child(2) {
+			top: 12px;
+		}
+
+		span:nth-child(3) {
+			top: 24px;
+		}
+
+	}
+
+	#menuBtn.active {
+		width: 40px;
+		height: 40px;
+
+		span:nth-child(1) {
+			top: 16px;
+			-webkit-transform: rotate(-45deg);
+    		transform: rotate(-45deg);
+		}
+
+		span:nth-child(2) {
+			right: -50%;
+		    opacity: 0;
+		    -webkit-animation: active-menu-bar02 .8s forwards;
+		    animation: active-menu-bar02 1s forwards;
+		}
+
+		span:nth-child(3) {
+			top: 16px;
+			-webkit-transform: rotate(45deg);
+    		transform: rotate(45deg);
+		}
+
+	}
+
+	@-webkit-keyframes active-menu-bar02 {
+        100% { height: 0; }
+    }
+    @keyframes active-menu-bar02 {
+        100% { height: 0; }
+    }
+
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+nav {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 100px 20px 20px;
+	z-index: 999;
+	background: rgba(255,255,255,1);
+	
+	ul {
+		max-width: 280px;
+		margin: 0 auto;
+
+		li {
+			letter-spacing: 0.1em;
+
+			+ li {
+				margin-top: 20px;
+			}
+
+			a {
+				display: block;
+			}
+
+			em {
+				display: block;
+				font-size: 18px;
+			}
+
+			span {
+				font-weight: bold;
+				color: #008475;
+			}
+
+		}
+
+	}
+
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+	margin: 58px 0 0;
+}
+
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+.kv {
+	position: relative;
+	height: 390px;
+
+	.ttlBox {
+		position: absolute;
+		left: 20px;
+		bottom: -70px;
+		font-size: 30px;
+		z-index: 1;
+
+		h1 {
+			span {
+	        	display: block;
+	        	font-size: 28px;
+	        	color: #d4ab37;
+	        }
+
+	        em {
+	        	font-size: 30px;
+	        }
+		}
+
+	}
+
+	.imgBox {
+		height: 390px;
+	}
+
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+footer {
+
+	.footBox {
+		padding: 30px 10px;
+		text-align: center;
+
+		.info {
+			float: none;
+			margin-bottom: 40px;
+
+			.logo {
+				display: inline-block;
+				width: 140px;
+				margin-bottom: 20px;
+			}
+
+			p {
+				line-height: 2;
+			}
+
+		}
+
+		.recruit {
+			float: none;
+			padding: 0;
+
+			a {
+				display: inline-block;
+				width: 220px;
+				padding: 20px 10px;
+			}
+
+			dl {
+
+				dt {
+					font-size: 18px;
+				}
+
+				dd {
+					font-size: 18px;
+				}
+
+			}
+
+		}
+
+	}
+
+}

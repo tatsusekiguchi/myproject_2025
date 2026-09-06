@@ -1,0 +1,40 @@
+// ▽header▽
+header.header
+    .headWrap
+        .logoBox
+            .logo.logoNormal
+                a(href=(root_path || ''))
+                    img(src=(root_path || '') + "image/common/header_logo.png", alt="")
+            .logo.logoWhite
+                a(href=(root_path || ''))
+                    img(src=(root_path || '') + "image/common/header_logo_white.png", alt="")
+            p.poppins Nagoya yuuka<br>kodomoen
+        .navBox
+            .navList
+                ul
+                    li
+                        a(href=(root_path || '') + "about/") 園について
+                    li
+                        a(href=(root_path || '') + "newslist/") お知らせ
+                    li.current
+                        a(href=(root_path || '') + "guide/") 入園案内
+                    li
+                        a(href=(root_path || '') + "visit/") 見学案内
+                    li
+                        a(href=(root_path || '') + "support/") 0歳からの子育てサポート
+                    li
+                        a(href=(root_path || '') + "entry/") 見学申し込み
+                    li
+                        a(href=(root_path || '') + "recruit/") 採用情報
+            .bnrList
+                ul
+                    li
+                        a(href="" download)
+                            img(src=(root_path || '') + "image/common/nav_bnr_guide.png", alt="")
+                    li
+                        a(href="" download)
+                            img(src=(root_path || '') + "image/common/nav_bnr_recruit.png", alt="")
+    .hamburger
+        span
+        span
+// △header△

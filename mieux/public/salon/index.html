@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script>
+		(function(d) {
+			var config = {
+					kitId: 'fmx6ynq',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function() {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function() {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="salon">
+	<!-- ▽header▽-->
+	<header class="header">
+		<div class="headWrap">
+			<div class="headTtl">
+				<p>ファンデーションで隠さない <br class="spBreak">よりよい、自分へ。</p>
+			</div>
+			<div class="leftIcon navOpen"></div><a class="rightIcon" href=""></a>
+		</div>
+		<div class="navBox">
+			<div class="navHead">
+				<div class="leftIcon navClose"><img src="../image/common/nav_close.png" alt=""></div>
+				<div class="rightIcon navClose"><a href=""><img src="../image/common/header_icon_right_01.png" alt=""></a></div>
+			</div>
+			<div class="navBody">
+				<div class="navContainer">
+					<div class="leftPanel">
+						<div class="navList">
+							<ul>
+								<li><a href="#section__concept"><em>Concept</em><span>コンセプト</span></a></li>
+								<li><a href="#section__commitment"><em>Commitments</em><span>サロンのこだわり</span></a></li>
+								<li><a href=""><em>Salon List</em><span>全国のサロン一覧</span></a></li>
+								<li><a href=""><em>Menu</em><span>メニュー</span></a></li>
+								<li><a href=""><em>Flow</em><span>施術の流れ</span></a></li>
+								<li><a href=""><em>Program</em><span>mieuxの肌質改善プログラム</span></a></li>
+								<li><a href=""><em>Company</em><span>会社概要</span></a></li>
+								<li><a href=""><em>FAQ</em><span>よくある質問</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="rightPanel">
+						<div class="navList">
+							<ul>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_01_pc.png" alt=""></a></li>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_02_pc.png" alt=""></a></li>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_03_pc.png" alt=""></a></li>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_04_pc.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="bottomBox">
+							<div class="logo"><img src="../image/common/nav_logo.png" alt=""></div>
+							<div class="info">
+								<div class="txt">
+									<p>Being beautiful creates smiles.<br>Through beauty, we enable our clients to feel happiness and confidence<br>not only from the outside. but also from the inside.<br>We will continue to be a group of artists who can provide such an experience.</p>
+								</div>
+								<div class="copyBox">
+									<div class="copy">
+										<p>Copyright &copy; YORI Co., Ltd all rights reserved.</p>
+									</div>
+									<div class="privacy"><a href="">プライバシーポリシー</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fixedNavBox">
+			<ul>
+				<li><a href="">Salon List</a></li>
+				<li><a href="">Online Store</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="salon">
+		<div class="mvContainer">
+			<div class="mv"><img class="switch" src="../image/salon/salon_top_mv_pc.png" alt=""></div>
+			<div class="mvTitle">
+				<h1>Sakae Main Store</h1>
+			</div>
+		</div>
+		<div class="bgWhite" id="section__staff">
+			<div class="secWrap">
+				<div class="secTtlBox">
+					<div class="secTtl">
+						<h2>Staff</h2>
+					</div>
+					<div class="sub">
+						<p>栄本店スタッフ</p>
+					</div>
+				</div>
+			</div>
+			<div class="staffContainer">
+				<div class="staffSliderList">
+					<div class="staffSliderBox">
+						<div class="photoBox">
+							<div class="photo"><img src="../image/salon/staff_photo_01.png" alt=""></div>
+							<div class="name staffModalOpen" data-modal-id="modal1">
+								<p>Obinata Natsumi</p>
+							</div>
+						</div>
+						<div class="infoBox">
+							<div class="ttlPc">
+								<div class="left">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+								<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+							</div>
+							<div class="ttlSp">
+								<div class="box">
+									<div class="left">
+										<p>Obinata Natsumi</p>
+									</div>
+									<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+								</div>
+								<div class="ttl">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>元美容部員だったこともあり、デパコス・メイク大好きです。ご希望であればエステ後にメイクすることも可能です。また、アニメや漫画も最近ハマっているので同じ趣味の方はぜひお話しましょう。</p>
+							</div>
+							<div class="more staffModalOpen" data-modal-id="modal1">
+								<p>Read More</p>
+							</div>
+						</div>
+					</div>
+					<div class="staffSliderBox">
+						<div class="photoBox">
+							<div class="photo"><img src="../image/salon/staff_photo_01.png" alt=""></div>
+							<div class="name">
+								<p>Obinata Natsumi</p>
+							</div>
+						</div>
+						<div class="infoBox">
+							<div class="ttlPc">
+								<div class="left">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+								<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+							</div>
+							<div class="ttlSp">
+								<div class="box">
+									<div class="left">
+										<p>Obinata Natsumi</p>
+									</div>
+									<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+								</div>
+								<div class="ttl">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>元美容部員だったこともあり、デパコス・メイク大好きです。</p>
+							</div>
+							<div class="more">
+								<p>Read More</p>
+							</div>
+						</div>
+					</div>
+					<div class="staffSliderBox">
+						<div class="photoBox">
+							<div class="photo"><img src="../image/salon/staff_photo_01.png" alt=""></div>
+							<div class="name">
+								<p>Obinata Natsumi</p>
+							</div>
+						</div>
+						<div class="infoBox">
+							<div class="ttlPc">
+								<div class="left">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+								<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+							</div>
+							<div class="ttlSp">
+								<div class="box">
+									<div class="left">
+										<p>Obinata Natsumi</p>
+									</div>
+									<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+								</div>
+								<div class="ttl">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>元美容部員だったこともあり、デパコス・メイク大好きです。ご希望であればエステ後にメイクすることも可能です。また、アニメや漫画も最近ハマっているので同じ趣味の方はぜひお話しましょう。</p>
+							</div>
+							<div class="more">
+								<p>Read More</p>
+							</div>
+						</div>
+					</div>
+					<div class="staffSliderBox">
+						<div class="photoBox">
+							<div class="photo"><img src="../image/salon/staff_photo_01.png" alt=""></div>
+							<div class="name">
+								<p>Obinata Natsumi</p>
+							</div>
+						</div>
+						<div class="infoBox">
+							<div class="ttlPc">
+								<div class="left">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+								<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+							</div>
+							<div class="ttlSp">
+								<div class="box">
+									<div class="left">
+										<p>Obinata Natsumi</p>
+									</div>
+									<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+								</div>
+								<div class="ttl">
+									<p>お客様に寄り添った施術を心がけています</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>元美容部員だったこともあり、デパコス・メイク大好きです。ご希望であればエステ後にメイクすることも可能です。また、アニメや漫画も最近ハマっているので同じ趣味の方はぜひお話しましょう。</p>
+							</div>
+							<div class="more">
+								<p>Read More</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="staffItemOverlay overlay"></div>
+				<div class="itemModalContainer">
+					<div class="staffItemModal" data-modal="modal1">
+						<div class="modalBox">
+							<div class="modalBoxInner">
+								<div class="photoBox photoBox--pc">
+									<div class="photo"><img src="../image/salon/staff_modal_img_01_pc.png" alt=""></div>
+									<div class="photo"><img src="../image/salon/staff_modal_img_02_pc.png" alt=""></div>
+								</div>
+								<div class="photoBox photoBox--sp">
+									<div class="photo"><img src="../image/salon/staff_modal_img_01_sp.png" alt=""></div>
+									<div class="photo"><img src="../image/salon/staff_modal_img_02_sp.png" alt=""></div>
+								</div>
+								<div class="infoBox">
+									<div class="ttlBox">
+										<div class="left">
+											<div class="name01">
+												<p>Obinata Natsumi</p>
+											</div>
+											<div class="name02">
+												<p>オビナタ ナツミ</p>
+											</div>
+										</div>
+										<div class="right"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/staff_instagram.png" alt=""></a></div>
+									</div>
+									<dl>
+										<dt>お客様に寄り添った施術を心がけています</dt>
+										<dd>元美容部員だったこともあり、デパコス・メイク大好きです。ご希望であればエステ後にメイクすることも可能です。<br>また、アニメや漫画も最近ハマっているので同じ趣味の方はぜひお話しましょう。</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="modalClose">
+								<p>Close Profile</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bgWhite" id="section__menu">
+			<div class="secWrap">
+				<div class="secContainer">
+					<div class="leftPanel">
+						<div class="secTtlBox">
+							<div class="secTtl">
+								<h2>Menu</h2>
+							</div>
+							<div class="sub">
+								<p>メニュー</p>
+							</div>
+						</div>
+						<div class="photoBox">
+							<div class="photo"><img src="../image/top/menu_photo_01.png" alt=""></div>
+							<div class="photo"><img src="../image/top/menu_photo_02.png" alt=""></div>
+							<div class="photo"><img src="../image/top/menu_photo_03.png" alt=""></div>
+							<div class="photo"><img src="../image/top/menu_photo_04.png" alt=""></div>
+							<div class="photo"><img src="../image/top/menu_photo_05.png" alt=""></div>
+							<div class="photo"><img src="../image/top/menu_photo_06.png" alt=""></div>
+							<div class="photo"><img src="../image/top/menu_photo_07.png" alt=""></div>
+						</div>
+					</div>
+					<div class="rightPanel">
+						<div class="secBox">
+							<div class="ttl">
+								<p>Special Care Course</p>
+							</div>
+							<dl>
+								<dt>スペシャルケアコース</dt>
+								<dd>毛穴の角質ケア後、生プラセンタを肌の奥まで届け、<br>深層から肌質改善を目指すコースです。</dd>
+							</dl>
+						</div>
+						<div class="secBox">
+							<div class="ttl">
+								<p>Whitening course for firmness and luster</p>
+							</div>
+							<dl>
+								<dt>ハリ艶美白コース</dt>
+								<dd>毛穴の角質ケアを行った後、白玉パックで保湿し、<br>肌の艶とトーンアップを図るコースです。</dd>
+							</dl>
+						</div>
+						<div class="secBox">
+							<div class="ttl">
+								<p>Relax Premium Course</p>
+							</div>
+							<dl>
+								<dt>リラックスプレミアムコース</dt>
+								<dd>スペシャルケアコースに小顔マッサージを組み合わせた、<br>リラックス効果の高いコースです。</dd>
+							</dl>
+						</div>
+						<div class="secBox">
+							<div class="ttl">
+								<p>Student Discount U24 Highly Moisturizing Course</p>
+							</div>
+							<dl>
+								<dt>学割U24<br>高保湿コース</dt>
+								<dd>24歳以下の学生の方を対象にした、<br>高保湿ケアを行うコースです。</dd>
+							</dl>
+						</div>
+						<div class="secBox">
+							<div class="ttl">
+								<p>Student Discount U24 Special Care Course</p>
+							</div>
+							<dl>
+								<dt>学割U24<br>スペシャルケアコース</dt>
+								<dd>24歳以下の学生の方を対象にした、<br>スペシャルケアを提供するコースです。</dd>
+							</dl>
+						</div>
+						<div class="secBox">
+							<div class="ttl">
+								<p>Men Only Poorest Course</p>
+							</div>
+							<dl>
+								<dt>男性限定<br>ポアレスコース</dt>
+								<dd>男性の方を対象に、<br>毛穴の汚れや開きをケアするコースです。</dd>
+							</dl>
+						</div>
+						<div class="secBox">
+							<div class="ttl">
+								<p>Men Only Poorest Course</p>
+							</div>
+							<dl>
+								<dt>男性限定<br>スペシャルケアコース</dt>
+								<dd>男性の方を対象に、<br>スペシャルケアを提供するコースです。</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="pager">
+					<ul>
+						<li class="prev"><img src="../image/top/menu_prev.png" alt=""></li>
+						<li class="next"><img src="../image/top/menu_next.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="section__mv"><img src="../image/salon/salon_page_mv.png" alt=""></div>
+		<div class="bgWhite" id="section__detail">
+			<div class="detailContainer">
+				<div class="secWrap">
+					<div class="detailPanel">
+						<div class="inner">
+							<div class="topBox">
+								<div class="shopName">
+									<p>mieux 栄本店</p>
+								</div>
+								<div class="sns">
+									<ul>
+										<li><a href="#" target="_blank" rel="noopener"><img src="../image/salon/sns_instagram.png" alt=""></a></li>
+										<li><a href="#" target="_blank" rel="noopener"><img src="../image/salon/sns_line.png" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="infoBox">
+								<dl>
+									<dt>Address</dt>
+									<dd>
+										<p>〒460-0008 愛知県名古屋市中区栄３-25-39サカエサウススクエア1D</p>
+										<div class="accessBox">
+											<div class="access">
+												<p>アクセス【地下鉄名城線】矢場町駅5番出口から徒歩5分</p>
+											</div>
+											<div class="mapLink"><a href="#" target="_blank" rel="noopener"><img src="../image/salon/map_link.png" alt=""></a></div>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Open</dt>
+									<dd>10：00-20：00（最終受付19：00）</dd>
+								</dl>
+								<dl>
+									<dt>Close</dt>
+									<dd>なし</dd>
+								</dl>
+							</div>
+							<div class="mapPanel">
+								<div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.697602009354!2d136.9045998!3d35.1641617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003714183c60a0d%3A0x1a9a5f88e8197b28!2zbWlldXgg5qCE5pys5bqXIOODn-ODpeODvA!5e0!3m2!1sja!2sjp!4v1749552478314!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+							</div>
+							<div class="enAddress">
+								<p>Sakae South Square 1D, 3-25-39 Sakae, Naka-ku,<br>Nagoya City, Aichi</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer class="footer">
+		<div class="footContact">
+			<div class="secWrap">
+				<div class="contactList">
+					<ul>
+						<li><a href="#" target="_blank" rel="noopener">
+								<div class="photo"><img class="switch" src="../image/common/footer_bnr_reserve_pc.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>Reserve</p>
+										</div>
+										<div class="ttl02">
+											<p>栄本店のご予約はこちら</p>
+										</div>
+									</div>
+									<div class="btnMore"><span>VIEW MORE</span></div>
+								</div>
+							</a></li>
+						<li><a href="">
+								<div class="photo"><img class="switch" src="../image/common/footer_bnr_franchise_pc.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>Franchise</p>
+										</div>
+										<div class="ttl02">
+											<p>FCオーナー募集中</p>
+										</div>
+									</div>
+									<div class="btnMore"><span>VIEW MORE</span></div>
+								</div>
+							</a></li>
+						<li><a href="">
+								<div class="photo"><img class="switch" src="../image/common/footer_bnr_contact_pc.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>Contact</p>
+										</div>
+										<div class="ttl02">
+											<p>お問い合わせはこちら</p>
+										</div>
+									</div>
+									<div class="btnMore"><span>VIEW MORE</span></div>
+								</div>
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="footBox">
+					<div class="infoBox01">
+						<div class="logo"><img src="../image/common/footer_logo.png" alt=""></div>
+						<div class="txt">
+							<p>Being beautiful creates smiles.<br>Through beauty, we enable our clients to feel happiness and confidence<br>not only from the outside. but also from the inside.<br>We will continue to be a group of artists who can provide such an experience.</p>
+						</div>
+					</div>
+					<div class="infoBox02">
+						<div class="sns">
+							<ul>
+								<li><a href="#" target="_blank" rel="noopener"><img src="../image/common/footer_sns_instagram.png" alt=""></a></li>
+								<li><a href="#" target="_blank" rel="noopener"><img src="../image/common/footer_sns_line.png" alt=""></a></li>
+								<li><a href="#" target="_blank" rel="noopener"><img src="../image/common/footer_sns_twitter.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="copyBox">
+							<div class="copy">
+								<p>Copyright &copy; YORI Co., Ltd all rights reserved.</p>
+							</div>
+							<div class="privacy"><a href="">プライバシーポリシー</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footMv"><img class="switch" src="../image/common/footer_btm_mv_pc.png" alt=""></div>
+	</footer>
+	<!-- △footer△-->
+</body>
+
+</html>

@@ -1,0 +1,1120 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvPanel .kvWrap {
+    width: 100%;
+  }
+  .topMain .topKvPanel .topKv {
+    position: relative;
+    height: 400px;
+  }
+  .topMain .topKvPanel .kvTtl {
+    top: 120px;
+    bottom: auto;
+  }
+  .topMain .topKvPanel .kvTtl h1 {
+    padding: 0.3em 0.5em;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  .topMain .topKvPanel .kvItemBox {
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .topMain .topKvPanel .kvItemBox .kvItem {
+    width: calc(50% - 5px);
+  }
+  .topMain .topKvPanel .kvItemBox .kvItem + .kvItem {
+    margin: 0;
+  }
+  .topMain .topKvPanel .kvItemBox .kvItem a {
+    padding: 3px;
+  }
+  .topMain .topKvPanel .kvItemBox .kvItem a div {
+    min-height: 80px;
+    padding: 15px 10px;
+  }
+  .topMain .topKvPanel .kvItemBox .kvItem a div p {
+    font-size: 16px;
+  }
+  .topMain .topKvPanel .kvItemBox .kvItem a div .span {
+    font-size: 10px;
+  }
+  .topMain .topSection {
+    margin: 0 0 60px;
+  }
+  .topMain .topSection .secPanel {
+    padding: 60px 0;
+  }
+  .topMain .topSection .logo {
+    position: static;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .topMain .topSection .secTtl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .topMain .topSection .txt {
+    margin: 0 0 30px;
+  }
+  .topMain .sec01 .dl {
+    padding: 40px 20px;
+  }
+  .topMain .sec01 .dl .dt {
+    font-size: 22px;
+  }
+  .topMain .sec01 .ul {
+    text-align: left;
+  }
+  .topMain .sec01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .topMain .sec01 .mv {
+    margin: 0 0 10px;
+  }
+  .topMain .sec01 .photo {
+    position: relative;
+    height: 300px;
+  }
+  .topMain .sec01 .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec02 {
+    padding: 60px 0;
+  }
+  .topMain .sec02 .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .topMain .sec03 {
+    padding: 60px 0;
+  }
+  .topMain .sec03 .secBox .ttlBox .pageSecTtlBox {
+    text-align: center;
+  }
+  .topMain .sec03 .secBox .newsListBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .sec03 .secBox .newsListBox .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .topMain .sec03 .btnMore02 {
+    margin: 40px auto 0;
+  }
+  .topMain .sec04 {
+    padding: 60px 0;
+  }
+  .topMain .sec04 .secContainer .txtBox {
+    padding: 20px 15px 0 60px;
+  }
+  .topMain .sec04 .secContainer .txtBox .txt {
+    margin: 0 0 30px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .featureMain .sectionContainer {
+    padding: 20px 20px 80px;
+  }
+  .featureMain .sectionContainer .section {
+    padding: 50px 0;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/feature_wave_bg.png) center bottom no-repeat;
+    background-size: 600px auto;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox .secTtl .numBox .num {
+    width: 50px;
+    height: 65px;
+    margin: 0 15px 0 0;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox .secTtl .numBox .num .span {
+    font-size: 10px;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox .secTtl .numBox .num .em {
+    font-size: 20px;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox .secTtl .ttl {
+    padding: 5px 0 0;
+    font-size: 20px;
+  }
+  .featureMain .sectionContainer .secContainer .txtBox .secTtl .ttl h2 {
+    line-height: 1.5;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain .sectionContainer {
+    padding: 50px 0 80px;
+  }
+  .serviceMain .sectionContainer .pageLinkList {
+    max-width: 360px;
+    margin: 0 auto 60px;
+  }
+  .serviceMain .sectionContainer .pageLinkList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .serviceMain .sectionContainer .pageLinkList .ul .li .inner p {
+    font-size: 16px;
+  }
+  .serviceMain .sectionContainer .section + .section {
+    margin: 80px 0 0;
+  }
+  .serviceMain .sectionContainer .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .serviceMain .sectionContainer .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .serviceMain .sectionContainer .secContainer .txtBox .secTtl .ttl {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .serviceMain .sectionContainer .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .serviceMain .sectionContainer .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .serviceMain .sectionContainer .checkContainer {
+    margin: 80px 0 0;
+  }
+  .serviceMain .sectionContainer .checkContainer .checkPanel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+  }
+  .serviceMain .sectionContainer .checkContainer .checkPanel .ttl {
+    top: -20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+  .serviceMain .sectionContainer .checkContainer .checkPanel .secBox {
+    max-width: 500px;
+  }
+  .serviceMain .sectionContainer .checkContainer .checkPanel .secBox .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .serviceMain .sectionContainer .checkContainer .checkPanel .secBox .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .serviceMain .slidePanel {
+    padding: 50px 0 0;
+  }
+  .serviceMain .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	seafood
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .seafoodMain .sec01 {
+    padding: 50px 0 80px;
+  }
+  .seafoodMain .sec01 .section + .section {
+    margin: 60px 0 0;
+  }
+  .seafoodMain .sec01 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .seafoodMain .sec01 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .seafoodMain .sec01 .secContainer .txtBox .secTtl .ttl {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .seafoodMain .sec01 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .seafoodMain .sec01 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .seafoodMain .sec01 .slidePanel {
+    padding: 50px 0 0;
+  }
+  .seafoodMain .sec01 .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .seafoodMain .sec02 {
+    padding: 0 20px 60px;
+  }
+  .seafoodMain .sec02 .secContainer .photo {
+    position: relative;
+    height: 350px;
+  }
+  .seafoodMain .sec02 .secContainer .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .seafoodMain .sec02 .secContainer .secPanel .ttl {
+    margin: 0 0 15px;
+    font-size: 24px;
+  }
+  .seafoodMain .sec02 .secContainer .secPanel .txt {
+    margin: 0 0 30px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	processing
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .processingMain .topSection {
+    padding: 50px 0 60px;
+  }
+  .processingMain .topSection .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .processingMain .topSection .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .processingMain .topSection .secContainer .txtBox .secTtl .ttl {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/processing_sec_ttl_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .processingMain .topSection .secContainer .txtBox .secTtl .ttl h2 {
+    line-height: 1.5;
+  }
+  .processingMain .topSection .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .processingMain .topSection .checkContainer {
+    margin: 80px 0 0;
+  }
+  .processingMain .topSection .checkContainer .checkPanel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+  }
+  .processingMain .topSection .checkContainer .checkPanel .ttl {
+    top: -20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+  .processingMain .topSection .checkContainer .checkPanel .secBox {
+    max-width: 500px;
+  }
+  .processingMain .topSection .checkContainer .checkPanel .secBox .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .processingMain .topSection .checkContainer .checkPanel .secBox .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .processingMain .sec01 {
+    padding: 0 0 60px;
+  }
+  .processingMain .sec01 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .processingMain .sec01 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .processingMain .sec01 .secContainer .txtBox .secTtl .ttl {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/processing_sec_ttl_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .processingMain .sec01 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .processingMain .sec01 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .processingMain .sec02 {
+    padding: 0 0 60px;
+  }
+  .processingMain .sec02 .topTxt {
+    margin: 0 0 30px;
+  }
+  .processingMain .sec02 .listBox .ul {
+    gap: 20px 10px;
+  }
+  .processingMain .sec02 .listBox .ul .li {
+    width: calc(50% - 10px);
+  }
+  .processingMain .sec03 {
+    padding: 0 0 60px;
+  }
+  .processingMain .sec03 .listBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .processingMain .sec03 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .processingMain .sec03 .listBox .ul .ttl {
+    margin: 15px 0 10px;
+    padding: 0 0 0 60px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/processing_sec_ttl_icon.png) left top 10px no-repeat;
+    background-size: 50px auto;
+  }
+  .processingMain .sec03 .listBox .ul .ttl .em {
+    font-size: 24px;
+  }
+  .processingMain .sec03 .listBox .ul .ttl .span {
+    font-size: 16px;
+  }
+  .processingMain .sec04 {
+    padding: 0 0 60px;
+  }
+  .processingMain .sec04 .secBox {
+    padding: 20px;
+  }
+  .processingMain .sec04 .secBox .ttl {
+    margin: 15px 0 10px;
+    padding: 2px 0 2px 50px;
+    font-size: 20px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/processing_sec_ttl_icon.png) left top 10px no-repeat;
+    background-size: 40px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	transaction
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transactionMain .sec01 {
+    padding: 50px 0 60px;
+  }
+  .transactionMain .sec01 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .transactionMain .sec01 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .transactionMain .sec01 .secContainer .txtBox .secTtl .ttl {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/processing_sec_ttl_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .transactionMain .sec01 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .transactionMain .sec01 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .transactionMain .sec01 .checkContainer {
+    margin: 80px 0 0;
+  }
+  .transactionMain .sec01 .checkContainer .checkPanel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+  }
+  .transactionMain .sec01 .checkContainer .checkPanel .ttl {
+    top: -20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+  .transactionMain .sec01 .checkContainer .checkPanel .secBox {
+    max-width: 500px;
+  }
+  .transactionMain .sec01 .checkContainer .checkPanel .secBox .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .transactionMain .sec01 .checkContainer .checkPanel .secBox .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .transactionMain .slidePanel {
+    padding: 50px 0 0;
+  }
+  .transactionMain .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .transactionMain .sec02 {
+    padding: 0 0 60px;
+  }
+  .transactionMain .sec02 .section {
+    padding: 50px 20px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/feature_wave_bg.png) center bottom no-repeat;
+    background-size: 600px auto;
+  }
+  .transactionMain .sec02 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .transactionMain .sec02 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+  }
+  .transactionMain .sec02 .secContainer .txtBox .secTtl .numBox .num {
+    width: 50px;
+    height: 65px;
+    margin: 0 15px 0 0;
+  }
+  .transactionMain .sec02 .secContainer .txtBox .secTtl .numBox .num .span {
+    font-size: 10px;
+  }
+  .transactionMain .sec02 .secContainer .txtBox .secTtl .numBox .num .em {
+    font-size: 20px;
+  }
+  .transactionMain .sec02 .secContainer .txtBox .secTtl .ttl {
+    padding: 5px 0 0;
+    font-size: 20px;
+  }
+  .transactionMain .sec02 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .transactionMain .sec03 {
+    padding: 0 0 60px;
+  }
+  .transactionMain .sec03 .section + .section {
+    margin: 60px 0 0;
+  }
+  .transactionMain .sec03 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .transactionMain .sec03 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px 60px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .transactionMain .sec03 .secContainer .txtBox .secTtl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+  }
+  .transactionMain .sec03 .secContainer .txtBox .secTtl .ttl {
+    font-size: 20px;
+    color: #033a7d;
+  }
+  .transactionMain .sec03 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .transactionMain .sec03 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .transactionMain .sec04 {
+    padding: 0 20px 60px;
+  }
+  .transactionMain .sec04 .secContainer {
+    padding: 40px 0;
+  }
+  .transactionMain .sec04 .secBoxList {
+    max-width: 600px;
+  }
+  .transactionMain .sec04 .secBoxList .secBox + .secBox {
+    margin: 50px 0 0;
+  }
+  .transactionMain .sec04 .secBoxList .secBox .ttl {
+    margin: 0 0 15px;
+    padding: 0 0 0 50px;
+    font-size: 24px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/transaction_sec04_icon.png) left center no-repeat;
+    background-size: 40px auto;
+  }
+  .transactionMain .sec04 .secBoxList .secBox .list {
+    text-align: left;
+  }
+  .transactionMain .sec04 .secBoxList .secBox .list .ul .li {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .transactionMain .sec04 .secBoxList .secBox .list .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .transactionMain .sec04 .secBoxList .secBox .list .ul .li {
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 1024px) {
+  .transactionMain .sec05 {
+    padding: 0 0 60px;
+  }
+  .transactionMain .sec05 .section + .section {
+    margin: 60px 0 0;
+  }
+  .transactionMain .sec05 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .transactionMain .sec05 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px 60px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .transactionMain .sec05 .secContainer .txtBox .secTtl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+  }
+  .transactionMain .sec05 .secContainer .txtBox .secTtl .ttl {
+    font-size: 20px;
+    color: #033a7d;
+  }
+  .transactionMain .sec05 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .transactionMain .sec05 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain .sec01 {
+    padding: 50px 0 80px;
+  }
+  .recruitMain .sec01 .section + .section {
+    margin: 60px 0 0;
+  }
+  .recruitMain .sec01 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .recruitMain .sec01 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .recruitMain .sec01 .secContainer .txtBox .secTtl .ttl {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_icon.png) left center no-repeat;
+    background-size: 50px auto;
+  }
+  .recruitMain .sec01 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .recruitMain .sec01 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .recruitMain .slidePanel {
+    padding: 50px 0 0;
+  }
+  .recruitMain .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .recruitMain .sec02 {
+    padding: 0 20px 60px;
+  }
+  .recruitMain .sec02 .secContainer {
+    padding: 40px 0;
+  }
+  .recruitMain .sec02 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .recruitMain .sec02 .listBox .ul .ttl {
+    margin: 15px 0 10px;
+    font-size: 18px;
+  }
+  .recruitMain .sec03 {
+    padding: 0 0 60px;
+  }
+  .recruitMain .sec03 .tabPanel .tabList .ul .li {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .recruitMain .sec03 .tabPanel .tabList .ul .li + .li {
+    margin: 10px auto 0;
+  }
+  .recruitMain .sec03 .tabPanel .tabItem .dl {
+    display: block;
+  }
+  .recruitMain .sec03 .tabPanel .tabItem .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .recruitMain .sec03 .tabPanel .tabItem .dl .dt {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .recruitMain .sec03 .tabPanel .tabItem .dl .dd {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .recruitMain .sec04 {
+    padding: 0 0 60px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .sec01 {
+    padding: 50px 0 80px;
+  }
+  .companyMain .sec01 .secContainer .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .sec01 .secContainer .txtBox .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/service_ttl_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .companyMain .sec01 .secContainer .txtBox .secTtl .ttl {
+    font-size: 20px;
+    color: #033a7d;
+  }
+  .companyMain .sec01 .secContainer .txtBox .secTtl .ttl h3 {
+    line-height: 1.5;
+  }
+  .companyMain .sec01 .secContainer .txtBox .subTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .companyMain .sec02 {
+    padding: 0 0 60px;
+  }
+  .companyMain .sec02 .infoBox .dl {
+    display: block;
+  }
+  .companyMain .sec02 .infoBox .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .companyMain .sec02 .infoBox .dl .dt {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .companyMain .sec02 .infoBox .dl .dd {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .companyMain .sec03 {
+    padding: 0 0 60px;
+  }
+  .companyMain .sec03 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .sec03 .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .companyMain .sec03 .secBox .txtBox .txt {
+    margin: 0 0 15px;
+  }
+  .companyMain .sec03 .secBox .txtBox .infoBox .dl {
+    display: block;
+  }
+  .companyMain .sec03 .secBox .txtBox .infoBox .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .companyMain .sec03 .secBox .txtBox .infoBox .dl .dt {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .companyMain .sec03 .secBox .txtBox .infoBox .dl .dd {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .companyMain .sec03 .mapPanel {
+    padding: 50px 20px 0;
+  }
+  .companyMain .slidePanel {
+    padding: 50px 0 0;
+  }
+  .companyMain .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .companyMain .sec04 {
+    padding: 0 0 60px;
+  }
+  .companyMain .sec04 .pageSecTtlBox {
+    text-align: center;
+  }
+  .companyMain .sec04 .ttl {
+    font-size: 20px;
+  }
+  .companyMain .sec04 .txt {
+    width: 100%;
+  }
+  .companyMain .sec04 .img {
+    position: static;
+    width: 260px;
+    margin: 20px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .topSection {
+    padding: 60px 0;
+  }
+  .contactMain .topSection .secTtl {
+    padding: 0 0 10px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/contact_top_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .contactMain .topSection .secTtl .ttl {
+    max-width: 900px;
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    color: #033a7d;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/processing_sec_ttl_icon.png) left top 5px no-repeat;
+    background-size: 50px auto;
+  }
+  .contactMain .topSection .secTtl .ttl p + p {
+    text-align: left;
+  }
+  .contactMain .topSection .checkContainer {
+    margin: 80px 0 0;
+  }
+  .contactMain .topSection .checkContainer .checkPanel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+  }
+  .contactMain .topSection .checkContainer .checkPanel .ttl {
+    position: relative;
+    top: -20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+  .contactMain .topSection .checkContainer .checkPanel .secBox {
+    max-width: 500px;
+  }
+  .contactMain .topSection .checkContainer .checkPanel .secBox .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .contactMain .topSection .checkContainer .checkPanel .secBox .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .contactMain .sec01 {
+    padding: 0 20px 60px;
+  }
+  .contactMain .sec01 .secContainer {
+    padding: 40px 0;
+  }
+  .contactMain .sec01 .pageSecTtlBox {
+    text-align: center;
+  }
+  .contactMain .sec02 {
+    padding: 0 0 60px;
+  }
+  .contactMain .sec02 .pageSecTtlBox {
+    text-align: center;
+  }
+  .contactMain .sec02 .telBox {
+    margin: 0 0 50px;
+    text-align: center;
+  }
+  .contactMain .sec02 .telBox a {
+    font-size: 30px;
+  }
+  .contactMain .sec02 .telBox a::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url(https://s-9888160.smooooth.jp/system_panel/uploads/images/contact_icon_tel.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .contactMain .sec02 .lineBox .leftBox {
+    padding: 20px;
+  }
+  .contactMain .sec02 .lineBox .leftBox .em {
+    font-size: 30px;
+  }
+  .contactMain .sec02 .lineBox .leftBox .span {
+    font-size: 13px;
+  }
+  .contactMain .sec02 .lineBox .rightBox {
+    padding: 20px 40px;
+    text-align: center;
+  }
+  .contactMain .sec02 .lineBox .rightBox .box .qr {
+    width: 100px;
+    margin: 0 auto 10px;
+  }
+  .contactMain .sec02 .lineBox .rightBox .box .txt {
+    display: inline-block;
+    text-align: left;
+  }
+  .contactMain .sec02 .lineBox .rightBox .box .txt br {
+    display: none;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt::before {
+    width: 100%;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .otherTtl {
+    padding: 20px 10px 5px;
+  }
+  .formMain .contactForm .formBox .otherRadio .dt {
+    text-align: left;
+  }
+  .formMain .contactForm .formBox .radioList01 {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadPanel {
+    padding: 20px 0;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .mainContainer {
+    padding: 40px 20px 0;
+  }
+  .newsMain .blogSection {
+    padding: 20px 0 60px;
+  }
+  .newsMain .catePanel {
+    max-width: 220px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .pageSecTtlBox {
+    text-align: center;
+  }
+  .newsMain .catePanel .pageSecTtlBox .pageSecTtl {
+    font-size: 36px;
+  }
+  .newsMain .catePanel .webgene-item {
+    margin: 10px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 60px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .thumb-item.slider .li > div {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 100%;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .thumb-item.slider .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slick-prev {
+    left: -20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slick-next {
+    right: -20px;
+  }
+  .newsMain .blogPanel--detail .btnBackBox {
+    margin: 50px 0 0;
+  }
+  .newsMain .blogPanel--detail .btnBack {
+    width: 180px;
+  }
+}

@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+			box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html, body {
+	// overflow-x: hidden;
+	width:100%;
+	height: 100%;
+}
+body {
+	position: relative;
+	overflow-x:hidden;
+	font-family:  'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック', sans-serif;
+	line-height: 1.5;
+	color: #414141;
+	font-size: 16px;
+	background-color: #ffffff;
+}
+
+/*リンク */
+a {
+	color: #414141;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/* 画像幅 */
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+.spBreak {
+	display: none;
+}
+
+@media (min-width: 1025px) {
+
+	a {
+		transition:0.6s;
+	}
+
+	a:hover {
+		opacity: 0.6;
+	}
+
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		z-index: 999;
+		background: #ffffff;
+
+		.headBox {
+			overflow: hidden;
+			max-width: 1220px;
+			margin: 0 auto;
+			padding: 15px 10px;
+
+			.logo {
+				float: left;
+				width: 20%;
+				max-width: 240px;
+
+				a {
+					display: block;
+				}
+
+			}
+
+		}
+
+		.headContact {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: table;
+			max-width: 360px;
+			width: 20%;
+			height: 100px;
+			padding: 0 10px;
+			font-weight: bold;
+			color: #ffffff;
+			text-align: center;
+			background: #81c2bb;
+
+			div {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			span {
+				display: inline-block;
+				padding-left: 30px;
+				background: url("../image/common/icon_mail.png") left center no-repeat;
+			}
+
+		}
+
+		#menuBtn {
+			display: none;
+		}
+
+	}
+
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+
+	nav {
+		float: right;
+		padding: 15px 240px 0 0;
+
+		ul {
+
+			li {
+				display: inline-block;
+
+				+ li {
+					margin-left: 40px;
+				}
+
+				a {
+					display: block;
+					text-align: center;
+				}
+
+				em {
+					display: block;
+					font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+					font-size: 18px;
+					font-weight: bold;
+				}
+
+				span {
+					font-size: 13px;
+					font-weight: bold;
+					color: #008475;
+				}
+
+			}
+
+			.contact {
+				display: none;
+			}
+
+		}
+
+	}
+
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+	overflow: hidden;
+	margin: 100px 0 0;
+}
+
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+
+	.kv {
+		display: table;
+		width: 100%;
+		height: 780px;
+
+		.ttlBox {
+			display: table-cell;
+			width: 200px;
+			vertical-align: middle;
+
+			h1 {
+				min-height: 400px;
+				margin: 0 auto;
+				font-size: 40px;
+				-webkit-writing-mode: vertical-rl;
+		      	-ms-writing-mode: tb-rl;
+		        writing-mode: vertical-rl;
+
+		        span {
+		        	display: block;
+		        	font-size: 32px;
+		        	color: #d4ab37;
+		        }
+
+		        em {
+		        	font-size: 36px;
+		        }
+
+			}
+
+		}
+
+		.imgBox {
+			display: table-cell;
+		}
+
+	}
+
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+footer {
+	background: #f9f9f9;
+
+	.footBox {
+		overflow: hidden;
+		max-width: 1220px;
+		margin: 0 auto;
+		padding: 40px 10px;
+
+		.info {
+			float: left;
+
+			.logo {
+				width: 290px;
+				margin-bottom: 40px;
+			}
+
+			p {
+				line-height: 2;
+			}
+
+		}
+
+		.recruit {
+			float: right;
+			padding: 40px 0 0;
+
+			a {
+				display: block;
+				width: 290px;
+				padding: 20px;
+				cursor: pointer;
+				background: url("../image/common/footer_recruit_arrow.png") right 10px center no-repeat #81c2bb;
+			}
+
+			dl {
+
+				dt {
+					margin-bottom: 10px;
+					font-size: 20px;
+					color: #edea42;
+				}
+
+				dd {
+					font-size: 20px;
+					color: #ffffff;
+				}
+
+			}
+
+		}
+
+	}
+
+	.copy {
+		padding: 10px;
+		color: #ffffff;
+		text-align: center;
+		background: #008475;
+	}
+
+}

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: kozuka-mincho-pr6n, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 14px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1140px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 60px 0;
+  padding: clamp(30px, 3vw, 60px) 60px 0;
+  z-index: 999;
+}
+.header .headWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headWrap .logoBox {
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 0;
+}
+.header .headWrap .logoBox .logo {
+  max-width: 220px;
+  width: 35%;
+  margin: 0 30px 0 0;
+}
+.header .headWrap .logoBox .logo a {
+  display: block;
+}
+.header .headWrap .logoBox .headTitle {
+  font-size: clamp(13px, 1vw, 20px);
+  color: #ffffff;
+}
+.header .headWrap .headItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 35%;
+}
+.header .headWrap .headItem .insta {
+  margin: 0 60px 0 0;
+  padding: 0 0 3px;
+  border-bottom: 1px solid #ffffff;
+}
+.header .headWrap .headItem .insta a {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background: url("../image/common/header_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.header .headWrap .headItem .contact {
+  max-width: 300px;
+  width: 50%;
+}
+.header .headWrap .headItem .contact a {
+  display: block;
+  padding: 20px 15px;
+  padding: clamp(15px, 1vw, 20px) clamp(10px, 1vw, 15px);
+  font-size: 20px;
+  font-size: clamp(13px, 1vw, 20px);
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #000000;
+  background: #3a4339;
+}
+.header .headWrap .headItem .contact a span {
+  display: inline-block;
+  padding: 0 25px 0 0;
+  background: url("../image/common/header_contact_arrow.png") right center no-repeat;
+  background-size: 20px auto;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+}
+
+.secWrap {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.secWrap01 {
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.secWrap02 {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 80px 40px 30px;
+  color: #ffffff;
+  background: #383e40;
+}
+.footer .topPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1820px;
+  margin: 0 auto 60px;
+  padding: 0 60px;
+}
+.footer .topPanel .logo {
+  width: 12%;
+  max-width: 150px;
+}
+.footer .topPanel .headItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 35%;
+}
+.footer .topPanel .headItem .insta {
+  margin: 0 50px 0 0;
+  padding: 0 0 3px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer .topPanel .headItem .insta a {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background: url("../image/common/footer_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .topPanel .headItem .contact {
+  max-width: 230px;
+  width: 50%;
+}
+.footer .topPanel .headItem .contact a {
+  display: block;
+  padding: 13px 15px;
+  padding: clamp(10px, 0.6vw, 13px) clamp(12px, 0.6vw, 15px);
+  font-size: 20px;
+  font-size: clamp(13px, 0.1vw, 20px);
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+.footer .topPanel .headItem .contact a span {
+  display: inline-block;
+  padding: 0 25px 0 0;
+  background: url("../image/common/footer_contact_arrow.png") right center no-repeat;
+  background-size: 20px auto;
+}
+.footer .mvPanel {
+  position: relative;
+}
+.footer .mvPanel .mv {
+  position: relative;
+  height: 410px;
+}
+.footer .mvPanel .mv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer .mvPanel .mvLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 460px;
+  width: 25%;
+  height: 58px;
+  margin: auto;
+}
+.footer .bottomPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 60px;
+}
+.footer .bottomPanel .navigationBox {
+  display: flex;
+}
+.footer .bottomPanel .navigationBox ul + ul {
+  margin: 0 0 0 40px;
+}
+.footer .bottomPanel .navigationBox ul li + li {
+  margin: 10px 0 0;
+}
+.footer .bottomPanel .navigationBox ul li a {
+  display: inline-block;
+  font-size: 16px;
+  font-size: clamp(14px, 1vw, 16px);
+  color: #ffffff;
+}
+.footer .bottomPanel .copyBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 500px;
+}
+.footer .bottomPanel .info {
+  font-size: clamp(12px, 1vw, 14px);
+  line-height: 1.7;
+}
+.footer .bottomPanel .copy {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: clamp(12px, 1vw, 14px);
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,542 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+@keyframes zoom-fade {
+  0% {
+    /*transform: scale(1.05);*/
+    transform: scale(1);
+  }
+  100% {
+    /*transform: scale(1);*/
+    transform: scale(1.05);
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5% 0;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+    transition: 0.6s;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .logoBox {
+    position: relative;
+    width: 25%;
+  }
+  .header .logoBox .title {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 13px;
+    white-space: noWrap;
+    z-index: 1;
+  }
+  .header .logoBox .logo {
+    max-width: 280px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .navBox {
+    width: 70%;
+  }
+  .header .hamburger {
+    display: none;
+  }
+  .header.topHeader:not(.fixed) {
+    color: #ffffff;
+    background: none;
+  }
+  .header.topHeader:not(.fixed) a {
+    color: #ffffff;
+  }
+  .header.topHeader:not(.fixed) .navBox .navList > .ul > .li.contact a p {
+    color: #000000;
+    background: #ffffff;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox .navList > .ul {
+    display: flex;
+  }
+  .navBox .navList > .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14.2857142857%;
+  }
+  .navBox .navList > .ul > .li > a,
+.navBox .navList > .ul > .li > .pulldown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    font-size: clamp(11px, 1vw, 13px);
+    text-align: center;
+  }
+  .navBox .navList > .ul > .li.recruit {
+    border-left: 0;
+  }
+  .navBox .navList > .ul > .li.recruit a {
+    color: #ffffff;
+    background: #1cba80;
+  }
+  .navBox .navList > .ul > .li.contact {
+    border-left: 0;
+  }
+  .navBox .navList > .ul > .li.contact a div {
+    width: 100%;
+  }
+  .navBox .navList > .ul > .li.contact a p {
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 60px;
+    left: -10px;
+    width: 180px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid #000000;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + .li {
+    border-top: 1px solid #000000;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #000000;
+  }
+  .navBox .navList .pulldownBox:hover {
+    overflow: visible;
+  }
+  .navBox .navList .pulldownBox:hover .subList {
+    top: 80px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageMain {
+  background: #ecf5f8;
+}
+.pageMain + .footer {
+  background: #ecf5f8;
+}
+
+.pageKvPanel {
+  padding: 150px 20px 100px;
+  background: #ffffff;
+}
+.pageKvPanel .pageKvTitle {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.pageKvPanel .pageKvTitle h1 {
+  font-size: 40px;
+}
+.pageKvPanel .pageKvTitle p {
+  color: #1b6ba3;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 30px;
+}
+.pageSecTtlBox .sub {
+  padding: 0 0 0 25px;
+  color: #1b6ba3;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.pageSecTtlBox .pageSecTtl {
+  margin: 5px 0 0;
+  font-size: 34px;
+}
+.pageSecTtlBox span {
+  color: #20a9df;
+}
+.pageSecTtlBox em {
+  color: #1b6ba3;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.videoBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 50%;
+}
+.videoBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.btnMore a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center no-repeat #ffffff;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+}
+
+.btnContact a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.btnContact a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) center no-repeat #ecf5f8;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .btnContact a:hover:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  z-index: -1;
+  background: #ecf5f8;
+}
+.footer .footContact {
+  margin: 0 0 50px;
+  padding: 60px 20px;
+  border-radius: 4px;
+  background: #1b6ba3;
+}
+.footer .footContact .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer .footContact .left .pageSecTtlBox {
+  margin: 0;
+}
+.footer .footContact .left .pageSecTtlBox .sub,
+.footer .footContact .left .pageSecTtlBox .pageSecTtl {
+  color: #ffffff;
+}
+.footer .footContact .right .itemBox {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.footer .footContact .right .telFax a {
+  display: inline-block;
+}
+.footer .footContact .right .telFax a .span {
+  display: inline-block;
+}
+.footer .footContact .right .telFax a .em {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.footer .footContact .right .telFax + p {
+  margin: 10px 0 0;
+}
+.footer .footContact .right .ttl {
+  padding: 20px 0 10px;
+  font-size: 20px;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footContact .left {
+    width: 25%;
+  }
+  .footer .footContact .right {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .footer .footContact .right > * {
+    width: 48%;
+  }
+}
+.footer .footPanel {
+  padding: 0 0 60px;
+}
+.footer .footPanel .left .logo {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.footer .footPanel .left .telFax a {
+  display: inline-block;
+}
+.footer .footPanel .left .sns {
+  margin: 30px 0 0;
+}
+.footer .footPanel .left .sns .ul .li {
+  display: inline-block;
+  width: 30px;
+  margin: 0 15px 0 0;
+}
+.footer .footPanel .right {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footPanel .right .footNav {
+  width: 45%;
+}
+.footer .footPanel .right .footNav .ttl {
+  margin: 0 0 20px;
+  padding: 10px 0 0;
+}
+.footer .footPanel .right .footNav .ul .li + .li {
+  margin: 10px 0 0;
+}
+.footer .footPanel .right .footNav .ul .li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0 10px 40px;
+}
+.footer .footPanel .right .footNav .ul .li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) center no-repeat #ffffff;
+  background-size: 10px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .left {
+    width: 40%;
+  }
+  .footer .footPanel .right {
+    width: 50%;
+  }
+}
+.footer .copy {
+  padding: 5px 0;
+  color: #ffffff;
+  text-align: right;
+  background: #1b6ba3;
+}

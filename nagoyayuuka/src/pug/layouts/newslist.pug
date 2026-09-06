@@ -1,0 +1,95 @@
+// ▽メイン▽
+main#news
+	.topContainer
+		.topKv
+			img(src=(root_path || '') + "image/news/top_kv_pc.png", class="switch" alt="")
+		.topTitle
+			h1 園からのお知らせ
+			span えんからのおしらせ
+	.blogContainer
+		.catePanel
+			dl
+				dt Category
+				dd
+					ul
+						li
+							a(href="").recruit 採用情報
+						li
+							a(href="").lunch 給食だより
+						li
+							a(href="").info 情報公開
+		.blogListPanel
+			.infoList
+				.listItem
+					a(href="").recruit
+						.inner
+							.circle
+								p 新着
+							.photo
+								img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+							.cate
+								p 採用情報
+							.title
+								p 令和７年度採用<br>保育士、園見学募集中！
+				.listItem
+					a(href="").lunch
+						.inner
+							.circle
+								p 07.30
+							.photo
+								img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+							.cate
+								p 給食だより
+							.title
+								p 8月の給食だより
+				.listItem
+					a(href="").info
+						.inner
+							.circle
+								p 04.28
+							.photo
+								img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+							.cate
+								p 情報公開
+							.title
+								p 第15回開催<br>なごや遊花こども園運動会
+				.listItem
+					a(href="").recruit
+						.inner
+							.circle
+								p 新着
+							.photo
+								img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+							.cate
+								p 採用情報
+							.title
+								p 令和７年度採用<br>保育士、園見学募集中！
+				.listItem
+					a(href="").lunch
+						.inner
+							.circle
+								p 07.30
+							.photo
+								img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+							.cate
+								p 給食だより
+							.title
+								p 8月の給食だより
+				.listItem
+					a(href="").info
+						.inner
+							.circle
+								p 04.28
+							.photo
+								img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+							.cate
+								p 情報公開
+							.title
+								p 第15回開催<br>なごや遊花こども園運動会
+			.list__pagination
+				ul.pagination
+					li.previous
+						a(href='')
+					li.next
+						a(href='')
+// △メイン△

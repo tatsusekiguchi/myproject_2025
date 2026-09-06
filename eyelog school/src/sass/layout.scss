@@ -1,0 +1,1036 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: url("../image/top/top_kv_pc.png") center no-repeat;
+    background-size: cover;
+    .topKvTitle {
+      position: relative;
+      padding: 80px 0 0;
+      .topTxt {
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .logo {
+        max-width: 815px;
+        margin: 0 auto 30px;
+      }
+      .title {
+        max-width: 515px;
+        margin: 0 auto;
+      }
+    }
+    .topKvEntry {
+      position: absolute;
+      right: 30px;
+      bottom: 40%;
+      a {
+        display: block;
+        background: #15ff42;
+      }
+      em {
+        font-family: $enFont;
+        letter-spacing: 0.1em;
+      }
+      span {
+        letter-spacing: 0.05em;
+      }
+    }
+    @media (min-width: 1140px) {
+      .topKvEntry {
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 300px;
+        }
+        em {
+          margin: 0 0 30px;
+          font-size: 28px;
+          writing-mode: vertical-lr;
+        }
+        span {
+          writing-mode: vertical-lr;
+        }
+      }
+    }
+    .kvScroll {
+      position: absolute;
+      left: 70px;
+      bottom: 170px;
+      width: 25px;
+      padding: 190px 0 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 2px;
+        height: 150px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 2px;
+        height: 150px;
+        margin: 0 auto;
+        background: #ffffff;
+        animation: scroll 2s infinite;
+      }
+      .scrollTxt {
+        font-family: $enFont;
+        font-size: 18px;
+        color: #ffffff;
+        writing-mode: vertical-lr;
+      }
+    }
+    .textPanel {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      width: 100%;
+      height: 88px;
+      background: #000000;
+      overflow: hidden;
+      .loopWrap {
+        display: flex;
+      }
+      .loopText {
+        padding: 0 10px;
+        font-size: 20px;
+        font-style: italic;
+        color: #fff;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+      }
+      .loopText01 {
+        animation: loop 16s -8s linear infinite;
+      }
+      .loopText02 {
+        animation: loop2 16s linear infinite;
+      }
+    }
+    .slidePanel {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #000000;
+      .slideTxt {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 88px;
+          li {
+            width: 60%;
+            margin: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  #section {
+    &__about {
+      padding: 190px 0;
+      color: #ffffff;
+      text-align: center;
+      background: #777777;
+      .slidePanel {
+        position: relative;
+        > .secTtl {
+          display: none;
+        }
+        .slideBox {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+              width: calc(100% / 6);
+              margin: 0 7px;
+            }
+          }
+        }
+      }
+      .txtPanel {
+        .txtBox {
+          padding: 0 20px;
+        }
+        .secTtl {
+          margin: 0 0 50px;
+          font-family: $enFont;
+          font-size: 60px;
+          letter-spacing: 0.1em;
+          h2 {
+            line-height: 1;
+          }
+        }
+        .txt01 {
+          font-size: 28px;
+          line-height: 1.7;
+          letter-spacing: 0.1em;
+        }
+        .txt02 {
+          margin: 40px 0 0;
+          line-height: 2;
+          letter-spacing: 0.05em;
+        }
+        .txt03 {
+          margin: 60px 0 0;
+          letter-spacing: 0.05em;
+        }
+      }
+      @media (min-width: 1140px) {
+        .slidePanel {
+          min-height: 400px;
+          .slideBox {
+            ul {
+              li {
+                position: relative;
+                height: 450px;
+                img {
+                  @include cover-image;
+                }
+              }
+            }
+          }
+        }
+        .txtPanel {
+          .txtBox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-width: 1070px;
+            height: 100%;
+            margin: 0 auto;
+            z-index: 1;
+            background: #777777;
+          }
+        }
+      }
+    }
+    &__photo {
+      @media (min-width: 1140px) {
+        .photoBox {
+          display: flex;
+          flex-direction: row-reverse;
+          .photo {
+            width: 50%;
+          }
+        }
+      }
+    }
+    &__problem {
+      position: relative;
+      padding: 60px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 530px;
+        z-index: -1;
+        background: #faff81;
+      }
+      .problemContainer {
+        .problemMvBox {
+          position: relative;
+          .title {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            right: 0;
+            max-width: 670px;
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+        .problemTxtBox {
+          position: relative;
+          padding: 100px 20px;
+          background: #777777;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 85px;
+            height: 85px;
+            z-index: 1;
+            background: url("../image/top/problem_tri.png") no-repeat;
+            background-size: 100% auto;
+          }
+          .inner {
+            max-width: 680px;
+            margin: 0 auto;
+          }
+          .title {
+            max-width: 460px;
+            margin: 0 0 60px;
+          }
+          .checkList {
+            ul {
+              border-top: 1px solid #ffffff;
+              li {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ffffff;
+                .left {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  width: 85px;
+                  min-height: 90px;
+                  border-right: 1px solid #ffffff;
+                  .check {
+                    width: 35px;
+                  }
+                }
+                .right {
+                  width: calc(100% - 85px);
+                  padding: 10px 30px;
+                  font-size: 20px;
+                  color: #ffffff;
+                  letter-spacing: 0.1em;
+                }
+              }
+            }
+          }
+          .message {
+            max-width: 650px;
+            margin: 70px 0 0;
+          }
+        }
+      }
+      @media (min-width: 1140px) {
+        .problemContainer {
+          display: flex;
+          flex-direction: row-reverse;
+          .problemMvBox {
+            width: 50%;
+            .mv {
+              position: relative;
+              min-height: 890px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+          .problemTxtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    &__point {
+      position: relative;
+      padding: 90px 60px 90px 160px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        background: url("../image/top/point_sec_bg.png") no-repeat;
+        background-size: cover;
+      }
+      .secBoxList {
+        .secBox {
+          + .secBox {
+            margin: 40px 0 0;
+          }
+          .txtBox {
+            padding: 20px 0;
+            border-top: 1px solid #000000;
+            .point {
+              display: inline-block;
+              margin: 0 0 60px;
+              padding: 2px 4px;
+              font-family: $enFont;
+              font-size: 20px;
+              line-height: 1;
+              color: #ffffff;
+              background: #000000;
+            }
+            .txt {
+              font-size: 20px;
+              letter-spacing: 0.1em;
+            }
+          }
+        }
+        @media (min-width: 1140px) {
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            .photo {
+              position: relative;
+              width: 50%;
+              height: 400px;
+              img {
+                @include cover-image;
+              }
+            }
+            .txtBox {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+    &__curriculum {
+      position: relative;
+      padding: 120px 120px 190px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 480px);
+        z-index: -1;
+        background: url("../image/top/curriculum_sec_bg.png") no-repeat;
+        background-size: cover;
+      }
+      .secTtlBox {
+        position: absolute;
+        top: 120px;
+        left: -30px;
+        display: flex;
+        .secTtl {
+          font-family: $enFont;
+          font-size: 100px;
+          letter-spacing: 0.05em;
+          writing-mode: vertical-lr;
+          h2 {
+            line-height: 1;
+          }
+        }
+        .sub {
+          padding: 15px 0 0 10px;
+          letter-spacing: 0.1em;
+          writing-mode: vertical-lr;
+        }
+      }
+      .topTxt {
+        margin: 0 0 100px;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+      .secPanelList {
+      }
+      .secPanel {
+        background: #faff81;
+        + .secPanel {
+          margin: 55px 0 0;
+        }
+        .pHead {
+          position: relative;
+          padding: 30px 50px;
+          border-bottom: 1px solid #c6c6c6;
+          .num {
+            position: absolute;
+            top: -20px;
+            right: -100px;
+            font-family: $enFont;
+            font-size: 90px;
+            line-height: 1;
+          }
+          .pTtl {
+            font-size: 35px;
+            letter-spacing: 0.1em;
+          }
+        }
+        .pBody {
+          position: relative;
+          padding: 30px 50px;
+          .ttlEn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            font-family: $enFont;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            writing-mode: vertical-lr;
+          }
+          .ttl {
+            margin: 0 0 40px;
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 0.1em;
+            text-decoration: underline;
+          }
+          .box {
+            dl {
+              letter-spacing: 0.1em;
+              dt {
+                margin: 0 0 15px;
+              }
+              dd {
+                line-height: 2;
+              }
+            }
+          }
+          @media (min-width: 1140px) {
+            .box {
+              display: flex;
+              dl {
+                + dl {
+                  margin: 0 0 0 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .copy {
+        margin: 100px 0 0;
+        font-family: $enFont;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+    }
+    &__teacher {
+      position: relative;
+      padding: 0 60px;
+      background: #000000;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: calc(100% - 480px);
+        background: url("../image/top/teacher_sec_bg_01.png") no-repeat;
+        background-size: cover;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: calc(100% - 480px);
+        background: url("../image/top/teacher_sec_bg_02.png") no-repeat;
+        background-size: cover;
+      }
+      .teacherContainer {
+        padding: 200px 50px 150px;
+        color: #ffffff;
+        background: #777777;
+        .secTtlBox {
+          margin: 0 0 100px;
+          .secTtl {
+            font-family: $enFont;
+            font-size: 60px;
+            letter-spacing: 0.1em;
+          }
+          .sub {
+            font-size: 25px;
+            letter-spacing: 0.1em;
+            em {
+              font-family: $enFont;
+              font-size: 40px;
+            }
+          }
+        }
+        @media (min-width: 1140px) {
+          .secTtlBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+      .teacherListContainer {
+        margin: 0 0 120px;
+      }
+      .teacherListPanel {
+        + .teacherListPanel {
+          margin: 70px 0 0;
+        }
+        .pTtl {
+          margin: 0 0 40px;
+          padding: 0 0 15px;
+          font-size: 35px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          border-bottom: 2px solid #ffffff;
+        }
+        .teacherList {
+          &--01 {
+            padding: 30px 0 0;
+            @media (min-width: 1140px) {
+              ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -50px 0 0 -70px;
+                li {
+                  position: relative;
+                  width: calc((100% / 3) - 70px);
+                  margin: 50px 0 0 70px;
+                }
+              }
+            }
+          }
+          &--02 {
+            padding: 50px 0 0;
+            @media (min-width: 1140px) {
+              .col3 {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -100px 0 0 -70px;
+                li {
+                  position: relative;
+                  width: calc((100% / 3) - 70px);
+                  margin: 100px 0 0 70px;
+                }
+              }
+            }
+          }
+          &--multi {
+            @media (min-width: 1140px) {
+              display: flex;
+              justify-content: space-between;
+              gap: 70px;
+              margin: 100px 0 0;
+              .col1 {
+                width: calc((100% / 3) - 47px);
+                li {
+                  position: relative;
+                }
+              }
+              .col2 {
+                display: flex;
+                justify-content: space-between;
+                gap: 70px;
+                width: calc(100% - (100% / 3) - 30px);
+                li {
+                  position: relative;
+                  width: calc((100% / 2) - 35px);
+                }
+              }
+            }
+          }
+          ul {
+            .area {
+              position: absolute;
+              top: -50px;
+              left: 0;
+              font-size: 25px;
+              letter-spacing: 0.1em;
+            }
+            .name {
+              position: absolute;
+              top: 0;
+              left: -25px;
+              font-family: $enFont;
+              font-size: 14px;
+              letter-spacing: 0.1em;
+              writing-mode: vertical-lr;
+            }
+            dl {
+              padding: 30px 0 0;
+              text-align: center;
+              letter-spacing: 0.1em;
+              dt {
+                margin: 0 0 10px;
+                font-size: 14px;
+              }
+              dd {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+      .morePanel {
+        .txtBox {
+          .ttl01 {
+            margin: 0 0 10px;
+            font-family: $enFont;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+          }
+          .ttl02 {
+            margin: 0 0 10px;
+            font-size: 30px;
+            letter-spacing: 0.1em;
+          }
+          .txt {
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+      @media (min-width: 1140px) {
+        .morePanel {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .photo {
+            width: 50%;
+          }
+          .txtBox {
+            width: 45%;
+          }
+        }
+      }
+    }
+    &__case {
+      background: #000000;
+      .titlePanel {
+        padding: 180px 20px 60px;
+        text-align: center;
+        .secTtlBox {
+          color: #ffffff;
+          .secTtl {
+            font-family: $enFont;
+            font-size: 50px;
+            letter-spacing: 0.1em;
+          }
+          .sub {
+            font-size: 20px;
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+      .casePanel {
+        .secBox {
+          .left {
+            background: #faff81;
+            dl {
+              font-family: $enFont;
+              letter-spacing: 0.1em;
+              dt {
+                font-size: 40px;
+              }
+              dd {
+              }
+            }
+          }
+          .center {
+          }
+          .right {
+            letter-spacing: 0.1em;
+            background: #faff81;
+          }
+        }
+      }
+      .casePanel01 {
+        background: url("../image/top/case_bg_01.png") center no-repeat;
+        background-size: cover;
+      }
+      .casePanel02 {
+        background: url("../image/top/case_bg_02.png") center no-repeat;
+        background-size: cover;
+      }
+      .casePanel03 {
+        background: url("../image/top/case_bg_03.png") center no-repeat;
+        background-size: cover;
+      }
+      @media (min-width: 1140px) {
+        .caseContainer {
+          overflow: auto;
+          scroll-snap-type: y mandatory;
+          height: calc(100vh - 345px);
+          min-height: 500px;
+        }
+        .casePanel {
+          scroll-snap-align: start;
+          height: calc(100vh - 345px);
+          min-height: 500px;
+          .secBox {
+            display: flex;
+            align-items: center;
+            .left {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 35%;
+              min-height: 240px;
+              padding: 15px 20px;
+              dl {
+                display: flex;
+                align-items: center;
+                dt {
+                  margin: 0 30px 0 0;
+                }
+              }
+            }
+            .center {
+              width: 30%;
+            }
+            .right {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 35%;
+              min-height: 240px;
+              padding: 15px 20px;
+              font-size: clamp(20px, 1vw, 25px);
+            }
+          }
+        }
+      }
+    }
+    &__info {
+      padding: 60px;
+      .infoSection {
+        padding: 120px 20px;
+        color: #ffffff;
+        text-align: center;
+        background: url("../image/top/info_sec_bg_pc.png") center no-repeat;
+        background-size: cover;
+      }
+      .secTtlBox {
+        position: relative;
+        margin: 0 0 60px;
+        padding: 0 0 40px;
+        color: #ffffff;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100px;
+          height: 2px;
+          margin: 0 auto;
+          background: #ffffff;
+        }
+        .secTtl {
+          font-family: $enFont;
+          font-size: 70px;
+          letter-spacing: 0.1em;
+        }
+        .sub {
+          font-size: 20px;
+          letter-spacing: 0.1em;
+        }
+      }
+      .txt {
+        margin: 0 0 60px;
+        letter-spacing: 0.1em;
+      }
+      .link {
+        a {
+          display: block;
+          width: 130px;
+          margin: 0 auto 15px;
+        }
+        p {
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    &__follow {
+      padding: 100px 60px 120px;
+      color: #ffffff;
+      background: #777777;
+      .secBox {
+        .txtBox {
+          .secTtlBox {
+            position: relative;
+            margin: 0 0 50px;
+            .secTtl {
+              font-family: $enFont;
+              font-size: 70px;
+              letter-spacing: 0.1em;
+            }
+            .sub {
+              font-size: 20px;
+              letter-spacing: 0.1em;
+            }
+          }
+          .txt01 {
+            margin: 0 0 50px;
+            letter-spacing: 0.1em;
+          }
+          .txt02 {
+            font-family: $enFont;
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+      @media (min-width: 1140px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .txtBox {
+            width: 48%;
+            padding: 0 15px 0 100px;
+          }
+          .photo {
+            width: 50%;
+          }
+        }
+      }
+    }
+    &__recommend {
+      position: relative;
+      background: #777777;
+      padding: 0 60px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: #000000;
+      }
+      .recommendContainer {
+        position: relative;
+        .recommendMvBox {
+          position: relative;
+          .title {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            right: 0;
+            max-width: 500px;
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+        .recommendTxtBox {
+          position: relative;
+          padding: 100px 20px;
+          background: #faff81;
+          .inner {
+            position: relative;
+            max-width: 680px;
+            margin: 0 auto;
+          }
+          .overview {
+            position: absolute;
+            top: -60px;
+            right: 0;
+            font-family: $enFont;
+            letter-spacing: 0.1em;
+            writing-mode: vertical-lr;
+          }
+          .title {
+            max-width: 480px;
+            margin: 0 0 60px;
+          }
+          .checkList {
+            ul {
+              border-top: 1px solid #000000;
+              li {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #000000;
+                .left {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  width: 85px;
+                  min-height: 90px;
+                  border-right: 1px solid #000000;
+                  .check {
+                    width: 35px;
+                  }
+                }
+                .right {
+                  width: calc(100% - 85px);
+                  padding: 10px 20px;
+                  font-size: 20px;
+                  letter-spacing: 0.1em;
+                }
+              }
+            }
+          }
+          .btnEntry {
+            margin: 60px 0 0;
+            a {
+              display: block;
+              padding: 25px 10px;
+              color: #ffffff;
+              text-align: center;
+              letter-spacing: 0.1em;
+              background: #000000;
+              em {
+                display: inline-block;
+                margin: 0 25px 0 0;
+                font-family: $enFont;
+                font-size: 28px;
+                vertical-align: middle;
+              }
+              span {
+                display: inline-block;
+                font-size: 14px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1140px) {
+        .recommendContainer {
+          display: flex;
+          align-items: center;
+          background: #faff81;
+          .recommendMvBox {
+            width: 50%;
+            .mv {
+              position: relative;
+              min-height: 890px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+          .recommendTxtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

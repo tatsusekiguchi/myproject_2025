@@ -1,0 +1,632 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvContainer {
+    padding: 0 0 20px 20px;
+  }
+  .topMain .topKvContainer .topKvPanel {
+    height: 350px;
+    padding: 20px;
+  }
+  .topMain .topKvContainer .topKvPanel::before {
+    left: -20px;
+    bottom: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  .topMain .topKvContainer .topKvPanel .kvTitleBox h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+  }
+  .topMain .topKvContainer .topKvPanel .kvTitleBox .txt {
+    font-size: 14px;
+  }
+  .topMain .sec01 {
+    padding: 40px 0 80px;
+  }
+  .topMain .sec01 .secWrap {
+    padding: 60px 20px;
+    background: url(https://s-9951061.smooooth.jp/system_panel/uploads/images/top_sec01_top_map.png) left top no-repeat;
+    background-size: 90% auto;
+  }
+  .topMain .sec01 .secContainer01 {
+    margin: 0 0 120px;
+  }
+  .topMain .sec01 .secContainer01 .secPanel {
+    display: block;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox {
+    width: 100%;
+    padding: 0;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox .ttlBox {
+    margin: 0 0 15px;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox .ttlBox .ttl p {
+    font-size: 20px;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox .photoBox {
+    margin: 50px 0 0;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox .photoBox .photo01 {
+    max-width: 300px;
+    margin: 0 auto 10px;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox .photoBox .photo02 {
+    max-width: 300px;
+    margin: 0 auto 10px;
+  }
+  .topMain .sec01 .secContainer01 .secPanel .secBox .photoBox .photo03 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .topMain .sec01 .secContainer02 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .sec01 .secContainer02 .headTtl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .topMain .sec01 .secContainer02 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .topMain .sec01 .messageContainer {
+    padding: 0 0 0 20px;
+  }
+  .topMain .sec01 .messageContainer .messagePanel {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .topMain .sec01 .messageContainer .messagePanel .messageBox {
+    text-align: center;
+  }
+  .topMain .sec01 .messageContainer .messagePanel .messageBox .message p {
+    font-size: 20px;
+  }
+  .topMain .secTtlBox {
+    margin: 0 0 40px;
+  }
+  .topMain .secTtlBox .secTtl {
+    font-size: 24px;
+  }
+  .topMain .sec02 {
+    padding: 60px 0;
+  }
+  .topMain .sec02::before {
+    width: 90%;
+  }
+  .topMain .sec02 .secPanel01 {
+    margin: 0 0 60px;
+  }
+  .topMain .sec02 .secPanel01 .photoBox::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  .topMain .sec02 .secPanel01 .txtBox {
+    padding: 20px 0 0;
+  }
+  .topMain .sec02 .secPanel01 .txtBox .pTtl {
+    margin: 0 0 40px;
+  }
+  .topMain .sec02 .secPanel01 .txtBox .pTtl .service {
+    max-width: 250px;
+  }
+  .topMain .sec02 .secPanel01 .txtBox .pTtl .ttl {
+    bottom: -15px;
+    font-size: 24px;
+  }
+  .topMain .sec02 .secPanel01 .txtBox .txt {
+    margin: 0 0 30px;
+  }
+  .topMain .sec02 .secPanel02 .photoBox::before {
+    left: -20px;
+    bottom: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  .topMain .sec02 .secPanel02 .txtBox {
+    padding: 20px 0 0;
+  }
+  .topMain .sec02 .secPanel02 .txtBox .pTtl {
+    margin: 0 0 40px;
+  }
+  .topMain .sec02 .secPanel02 .txtBox .pTtl .service {
+    max-width: 250px;
+  }
+  .topMain .sec02 .secPanel02 .txtBox .pTtl .ttl {
+    bottom: -15px;
+    font-size: 24px;
+  }
+  .topMain .sec02 .secPanel02 .txtBox .txt {
+    margin: 0 0 30px;
+  }
+  .topMain .sec03 {
+    padding: 60px 0;
+  }
+  .topMain .sec03 .secPanel .blogListPanel {
+    padding: 30px 0 0;
+  }
+  .topMain .sec03 .secPanel .blogListPanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 30px 0 0;
+  }
+  .topMain .sec04 {
+    padding: 60px 0;
+  }
+  .topMain .sec04::before {
+    width: 90%;
+  }
+  .topMain .sec04 .secPanel {
+    display: block;
+    text-align: left;
+  }
+  .topMain .sec04 .infoBox {
+    width: 100%;
+    max-width: 780px;
+    text-align: left;
+  }
+  .topMain .sec04 .infoBox .dl .dt {
+    width: 80px;
+  }
+  .topMain .sec04 .infoBox .dl .dd {
+    width: calc(100% - 85px);
+    padding: 10px 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain .topSection {
+    padding: 60px 0;
+  }
+  .serviceMain .topSection .ttlBox {
+    margin: 0 0 15px;
+  }
+  .serviceMain .topSection .ttlBox .ttl p {
+    font-size: 24px;
+  }
+  .serviceMain .topSection .txt {
+    margin: 0 0 20px;
+  }
+  .serviceMain .topSection .list .ul {
+    gap: 5px;
+  }
+  .serviceMain .topSection .list .ul .li {
+    width: calc(50% - 5px);
+    height: 60px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .serviceMain .secReason {
+    padding: 60px 0;
+  }
+  .serviceMain .secReason::before {
+    width: 90%;
+    height: 90%;
+  }
+  .serviceMain .secReason .secTtlBox {
+    margin: 0 0 40px;
+  }
+  .serviceMain .secReason .secTtlBox .secTtl {
+    font-size: 24px;
+  }
+  .serviceMain .secReason .secContainer01 {
+    margin: 0 0 60px;
+  }
+  .serviceMain .secReason .secContainer01 .secBox + .secBox {
+    margin: 30px 0 0;
+  }
+  .serviceMain .secReason .secContainer01 .secBox .ttlBox {
+    margin: 0 0 5px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #44537f;
+  }
+  .serviceMain .secReason .secContainer01 .secBox .ttlBox .reason {
+    max-width: 250px;
+  }
+  .serviceMain .secReason .secContainer01 .secBox .ttlBox .ttl {
+    margin: -15px 0 0;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .serviceMain .secReason .secContainer01 .secBox .txtBox {
+    padding: 10px 0;
+  }
+  .serviceMain .secReason .secContainer02 .examplePanel {
+    margin: 0 0 40px;
+  }
+  .serviceMain .secReason .secContainer02 .examplePanel .pTtl {
+    font-size: 20px;
+  }
+  .serviceMain .secReason .secContainer02 .examplePanel .listBox01 .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .serviceMain .secReason .secContainer02 .examplePanel .listBox01 .ul .dl .dt {
+    font-size: 18px;
+  }
+  .serviceMain .secReason .secContainer02 .examplePanel .listBox01 .ul .dl .dd {
+    padding: 15px 15px;
+  }
+  .serviceMain .secReason .secContainer02 .logoBox .logo {
+    max-width: 280px;
+    margin: 0 auto 20px;
+  }
+  .serviceMain .secReason .secContainer02 .logoBox .ttl {
+    font-size: 20px;
+  }
+  .serviceMain .pagingSection .section + .section {
+    margin: 60px 0 0;
+  }
+  .serviceMain .pagingSection .secTtlBox {
+    margin: 0 0 40px;
+  }
+  .serviceMain .pagingSection .secTtlBox .secTtl {
+    font-size: 24px;
+  }
+  .serviceMain .pagingSection .topPanel {
+    margin: 0 0 60px;
+  }
+  .serviceMain .pagingSection .topPanel .txtBox {
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 50px 20px 50px 0;
+  }
+  .serviceMain .pagingSection .topPanel .txtBox .ttl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .serviceMain .pagingSection .topPanel .txtBox .txt {
+    width: 100%;
+    max-width: 720px;
+  }
+  .serviceMain .pagingSection .targetPanel {
+    margin: 0 0 50px;
+  }
+  .serviceMain .pagingSection .targetPanel .dl .dt {
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+  .serviceMain .pagingSection .targetPanel .dl .dd {
+    padding: 20px 20px;
+    border-radius: 0 0 10px 10px;
+  }
+  .serviceMain .pagingSection .targetPanel .dl .dd .ul .li {
+    padding: 0 0 0 30px;
+    background: url(https://s-9951061.smooooth.jp/system_panel/uploads/images/service_list_check.png) left center no-repeat;
+    background-size: 22px auto;
+  }
+  .serviceMain .pagingSection .targetPanel .dl .dd .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .serviceMain .pagingSection .solutionPanel {
+    margin: 0 0 50px;
+  }
+  .serviceMain .pagingSection .solutionPanel .pTtl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .serviceMain .pagingSection .solutionPanel .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .serviceMain .pagingSection .solutionPanel .listBox .ul .photo {
+    margin: 0 0 15px;
+  }
+  .serviceMain .pagingSection .solutionPanel .listBox .ul .dl .dt {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  .serviceMain .pagingSection .casePanel .pTtl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .serviceMain .pagingSection .casePanel .subTtl {
+    font-size: 18px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox01 .box01 {
+    margin: 0 0 10px;
+    padding: 15px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox01 .box01 .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox01 .box02 {
+    padding: 15px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox01 .box02 .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox02 {
+    padding: 15px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox02 .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox03 {
+    padding: 15px;
+  }
+  .serviceMain .pagingSection .casePanel .caseBox03 .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .topSection {
+    padding: 60px 0 30px;
+  }
+  .contactMain .topSection .ttlBox .ttl p {
+    font-size: 18px;
+  }
+  .contactMain .secTtlBox {
+    margin: 0 0 40px;
+  }
+  .contactMain .secTtlBox .secTtl {
+    font-size: 24px;
+  }
+  .contactMain .sec01 .telBox {
+    max-width: 400px;
+  }
+  .contactMain .sec01 .telBox .tel a .em {
+    font-size: 24px;
+  }
+  .contactMain .sec01 .telBox > p {
+    font-size: 12px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .form .checkList .ul {
+    padding: 0;
+  }
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl::before {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    min-width: 0;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: none;
+  }
+  .formMain .contactForm .formBox .radioBox {
+    padding: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .datePanel {
+    display: block;
+    font-size: 14px;
+  }
+  .formMain .contactForm .formBox .datePanel + .datePanel {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .datePanel > * {
+    padding: 0 0 5px;
+  }
+  .formMain .contactForm .formBox .datePanel input {
+    width: 60px;
+  }
+  .formMain .contactForm .formBox .datePanel .selectBox {
+    width: 60px;
+  }
+  .formMain .contactForm .formBox .datePanel .dateTtl {
+    margin: 0 10px 0 0;
+  }
+  .formMain .contactForm .formBox .datePanel .dateTxt {
+    margin: 0 5px;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+  blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain .catePanel {
+    padding: 0 0 40px;
+  }
+  .blogMain .catePanel .webgene-blog .webgene-item {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px;
+  }
+  .blogMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -10px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(50% - 10px);
+    margin: 40px 0 0 10px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 0;
+    margin: 0 0 10px;
+    padding: 0 0 80%;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .title {
+    min-height: 0;
+    margin: 0;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .more p {
+    padding: 5px 0;
+    font-size: 12px;
+    background: url(https://s-9891413.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 2px center no-repeat;
+    background-size: 15px auto;
+  }
+  .blogMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item.slider .li > div {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 100%;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item.slider .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slick-prev {
+    left: -20px;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slick-next {
+    right: -20px;
+  }
+  .blogMain .blogPanel--detail .btnBackBox {
+    margin: 50px 0 0;
+  }
+  .blogMain .blogPanel--detail .btnBack {
+    margin: 40px auto 0;
+  }
+}

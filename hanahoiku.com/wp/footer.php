@@ -1,0 +1,1 @@
+<?php include('/home/hanahoiku/www/parts/footer.php'); ?>

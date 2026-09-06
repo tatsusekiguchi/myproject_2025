@@ -1,0 +1,1719 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+#header_slider .item1 .catch{
+	display: none;
+}
+body.home #header.active #menu_button span {
+    background: #fff!important;
+}
+body.home #header.active {
+    background: transparent!important;
+	transition: 0.5s;
+}
+body.home #header.active:hover{
+	background: #A39994!important;
+}
+.pc .header_fix #header {
+    box-shadow: 0 0 0px 0px rgb(0 0 0 / 10%);
+}
+body{
+/* 	    background: #e2d6d0; */
+	background: #F2DFD8;
+}
+.title{
+	width: 1200px;
+	margin: 0 auto;
+}
+p{
+	font-size: 0.95rem!important;
+font-family: '游ゴシック Medium', sans-serif;
+	color: #484848!Important;
+}
+.tcd-pb-row{
+	background: transparent!important;
+}
+.mobile_footer_menu{
+	display: none;
+}
+@media screen and (max-width: 1024px){
+.title {
+    width: 100%;
+    margin: 50px auto 0;
+}
+
+
+
+p{
+	font-size: 0.8rem!important;
+}
+}
+@media screen and (max-width: 1024px){
+#header_logo img{
+	margin: 1% 2%!important;
+}
+}
+
+h2.rich_font_type3{
+	margin-top: 0!Important;
+	font-size: 2.0rem!important;
+}
+/* ブログ矢印 */
+.index_post_slider .carousel_arrow.prev_item {
+    left: -70px;
+    background-color: #A49994;
+    border-radius: 50px;
+}
+.index_post_slider .carousel_arrow.next_item {
+    right: -70px;
+    background-color: #A49994;
+    border-radius: 50px;
+}
+.carousel_arrow.prev_item:before {
+    color: #fff;
+}
+.carousel_arrow.next_item:before {
+    color: #fff;
+}
+
+/* ボタン */
+.index_post_slider.num3 .link_button a {
+    border-radius: 5px;
+}
+
+/* ブログアーカイブ上部スペース */
+.index_post_slider {
+    padding: 30px 0!important;
+}
+/* ブログアーカイブ上部スペース */
+
+/* googlefont */
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
+.sp_br{
+	display: none;
+}
+@media screen and (max-width: 1024px){
+	.sp_br{
+	display: block;
+}
+	.header_fix_mobile #header {
+    box-shadow: 0 0 0px 0px rgb(0 0 0 / 10%)!Important;
+/* 		background-color: #A39994!important; */
+	}
+body.home #header.animate #header_logo {
+    background-color: transparent!important;
+}
+#header {
+    background: transparent!important;
+}
+body.admin-bar.header_fix_mobile #header {
+    background: transparent!important;
+}
+#menu_button span {
+    background: #fff!Important;
+}
+	body.home #header.active:hover{
+    background: #fff!Important;
+	}
+}
+/* fv */
+.header_fv{
+	position: absolute;
+	left: calc( 50% - 25%);
+	top: 25%;
+	z-index: 100;
+	width: 50%;
+	text-align: center;
+	color: #fff;
+	font-family: serif;
+    letter-spacing: 5px;
+}
+.header_fv img{
+	width: 40%;
+	margin: 5% auto;
+}
+.header_fv h1{
+	    line-height: 2.0rem;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+@media screen and (max-width: 1024px){
+.header_fv {
+    left: calc( 50% - 50%);
+	top: 35%;
+    width: 100%;
+}
+.header_fv img {
+    width: 50%;
+    margin: 5% auto;
+}
+
+
+}
+
+/* fv */
+
+/* section共通部分 */
+.section_inner{
+	width: 1100px;
+	margin: 0 auto;
+}
+.section_inner h2,.section_inner2 h2{
+	text-align: center;
+	color: #A49994;
+	font-size: 2.8rem!important;
+	position: relative;
+/* 	font-family: 'Neuton', serif; */
+	font-family: Optima;
+}
+.section_inner h2::after,.section_inner2 h2::after{
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    content: "";
+    top: 3.8rem;
+    left: calc( 50% - 40px);
+    background-color: #A49994;
+}
+.section_inner h2 span,.section_inner2 h2 span{
+	font-size: 1.2rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #484848;
+}
+@media screen and (max-width: 1024px){
+	.section_inner{
+	width: 90%;
+	margin: 0 auto;
+}
+.section_inner h2,.section_inner2 h2 {
+	font-size: 2.0rem!important;
+    line-height: 2.0;
+}
+.section_inner h2 span,.section_inner2 h2 span {
+    font-size: 1.2rem;
+    line-height: 1.5!important;
+	display: block;
+}
+.section_inner h2::after,.section_inner2 h2::after{
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    content: "";
+    top: 3.3rem;
+    left: calc( 50% - 40px);
+}
+}
+/* section_inner */
+
+/* flex */
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+.box {
+    margin-top: 20px;
+}
+.box_img{
+	width: 35%;
+	position: relative;
+}
+.box_img img{
+	    box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
+}
+.box_img::before{
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    content: "";
+    background-color: #F8E5CF;
+    top: -50px;
+    left: -60px;
+    z-index: -1;
+}
+.box_img::after{
+    position: absolute;
+    width: 380px;
+    height: 180px;
+    content: "";
+    background-color: #dec1b1;
+    bottom: -40px;
+    right: -80px;
+    z-index: -1;
+}
+.box_img img{
+	width: 100%;
+}
+.box_text{
+	width: 55%;
+    line-height: 2.0rem;
+    font-family: serif;
+}
+.box_text a{
+	color: #050505!important;
+	position: relative;
+    padding-left: 100px;
+    margin-top: 30px;
+    display: inline-block;
+			font-weight: bold;
+	font-size: 0.9rem;
+}
+.box_text a::after {
+position: absolute;
+left: 100px;
+content: '';
+width: 50%;
+height: 4px;
+background: #ffc9c5;
+bottom: -1px; 
+transform: scale(0, 1);
+transform-origin: left top;
+transition: transform 0.5s;
+}
+.box_text a:hover::after {
+transform: scale(1, 1);
+}
+.box_text a::before{
+	position: absolute;
+	width: 80px;
+	height: 1px;
+	content: "";
+	left: 0;
+	top: 50%;
+	background: #050505;
+}
+@media screen and (max-width: 1024px){
+	.box_img{
+	width: 100%;
+	position: relative;
+}
+.box_text {
+    width: 100%;
+    line-height: 2.8rem;
+    font-family: serif;
+    font-size: 1.0rem;
+    margin-top: 5%;
+}
+.box_text a::before {
+    position: absolute;
+    width: 50px;
+	}
+.box_text a {
+    padding-left: 60px;
+	}
+}
+
+
+
+/* about */
+.section_inner{
+	position: relative;
+}
+#about .section_inner::before{
+	position: absolute;
+	content: "";
+	background-color: #F8E5CF;
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	top: 0;
+	right: -200px;
+	z-index: -2;
+	display: none;
+}
+@media screen and (max-width: 1024px){
+#about .section_inner::before {
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    top: 600px;
+    right: -100px;
+    z-index: -2;
+}
+}
+
+
+/* problem */
+.problem_area{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.problem_list{
+	width: 75%;
+    margin-top: 2%;
+}
+.problem_person{
+	width: 25%;
+}
+.problem_person img{
+	width: 100%;
+}
+.problem_list ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 0!important;
+}
+.problem_list ul li{
+	width: 43%;
+	list-style: none;
+	position: relative;
+    padding-left: 40px;
+    margin-top: 4px;
+    font-size: 1.05rem;
+}
+.problem_list ul li::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/check.png);
+	background-size: cover;
+    width: 23px;
+    height: 23px;
+    top: 4px;
+	left: 0;
+}
+#problem .section_inner::before {
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    top: 40px;
+    left: -180px;
+    z-index: -2;
+	display: none;
+}
+
+
+@media screen and (max-width: 1024px){
+	.problem_list {
+    width: 100%;
+    margin-top: 2%;
+}
+.problem_list ul li {
+    width: 100%;
+    padding-left: 40px;
+    margin-top: 11px;
+}
+.problem_person {
+    width: 70%;
+    margin: 0 auto;
+}
+}
+
+
+/* program */
+
+
+/* reason */
+#reason .logo_bg {
+    position: absolute;
+    content: "";
+    background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/logo_bg-scaled.webp);
+    width: 800px;
+    height: 200px;
+    top: 1200px;
+    left: -200px;
+    z-index: -5;
+    background-size: cover;
+}
+.reason_box{
+    width: 90%;
+    flex-direction: row-reverse;
+    margin: 120px auto;
+}
+.reason_box h3 {
+    width: 100%;
+    position: relative;
+    padding-left: 60px;
+    font-size: 2.0rem!important;
+	color: #464646;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+.reason_box h3::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 5px;
+    background-color: #F8E5CF;
+    bottom: -12px;
+    left: 0;
+}
+
+.no1::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/12/1.png);
+	background-size: cover;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 60px;
+}
+.no2::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/12/2.png);
+	background-size: cover;
+    bottom: 0;
+    left: 0;
+    width: 52px;
+    height: 56px;
+}
+.no3::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/12/3.png);
+	background-size: cover;
+    bottom: -4px;
+	left: 0;
+    width: 50px;
+    height: 56px;
+}
+.no4::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/12/4.png);
+	background-size: cover;
+    bottom: 0px;
+    left: 0;
+    width: 55px;
+    height: 58px;
+}
+.no5::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/12/5.png);
+	background-size: cover;
+    bottom: -1px;
+    left: 0;
+    width: 49px;
+    height: 56px;
+}
+.no6::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/12/6.png);
+	background-size: cover;
+    bottom: 0px;
+    left: 0;
+    width: 52px;
+    height: 55px;
+}
+.reason_img{
+	width: 30%;
+}
+.reason_img img{
+	    box-shadow: 11px 13px 27px 6px rgb(0 0 0 / 8%);
+}
+.reason_text{
+	width: 50%;
+	font-family: serif;
+    line-height: 3.0rem;
+	    margin-top: 2%;
+}
+.img_pattern1,.img_pattern2{
+	position: relative;
+}
+.img_pattern1::before{
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 250px;
+    height: 150px;
+    top: -50px;
+    left: -70px;
+    z-index: -2;
+}
+.img_pattern2::before{
+    position: absolute;
+    content: "";
+    background-color: #ffc9c5;
+    width: 250px;
+    height: 150px;
+    top: -50px;
+    left: -70px;
+    z-index: -2;
+}
+.img_pattern1::after,.img_pattern2::after{
+    position: absolute;
+    content: "";
+    background-color: #dec1b1;
+    width: 310px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+    z-index: -2;
+}
+@media screen and (max-width: 1024px){
+.logo_bg {
+/*     width: 540px;
+    height: 130px;
+    top: 1700px;
+    left: -200px; */
+	display: none;
+}
+.reason_box {
+    width: 100%;
+    margin: 70px auto;
+}
+.reason_img {
+    width: 100%;
+    margin-top: 10%;
+}
+	.reason_img img{
+		width: 100%;
+	}
+.reason_text {
+    width: 100%;
+    font-family: serif;
+    line-height: 2.4rem;
+    margin-top: 9%;
+}
+.reason_box h3 {
+    padding-left: 50px;
+    font-size: 1.3rem!important;
+}
+.no1::before,.no2::before,.no3::before,.no4::before,.no5::before,.no6::before{
+		width: 30px;
+		height: 44px;
+}
+	.no1::before{
+		bottom: 0px;
+	}
+	.no2::before{
+		bottom: 0px;
+		    width: 37px;
+    height: 40px;
+	}
+.no3::before{
+	    bottom: 0px;
+    width: 35px;
+    height: 40px;
+	}
+	.no4::before{
+		    width: 43px;
+    height: 45px;
+	}
+		.no5::before{
+    width: 39px;
+    height: 44px;
+	}
+		.no6::before{
+    width: 42px;
+    height: 44px;
+	}
+.img_pattern1::before {
+    width: 250px;
+    height: 150px;
+    top: -20px;
+    left: -20px;
+}
+.img_pattern2::before {
+    width: 250px;
+    height: 150px;
+    top: -20px;
+    left: -20px;
+}
+.img_pattern1::after, .img_pattern2::after {
+    width: 310px;
+    height: 200px;
+    bottom: -20px;
+    right: -20px;
+}
+}
+
+
+/* product */
+#product{
+/* 	background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/product_bg-scaled.webp); */
+	background-size: cover;
+	padding: 50px 0;
+}
+.product_box_area{
+justify-content: flex-start!important;
+}
+.product_box {
+    width: 23%;
+    margin: 2% 1%;
+}
+.product_box_img img{
+	width: 100%;
+}
+.product_box_text {
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+/* ecボタン */
+.ec_btn{
+	width: 280px;
+	height: 60px;
+	margin: 30px auto 0;
+	background-color: #E7EFEE;
+	text-align: center;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+.ec_btn a{
+	display: inline-block;
+	line-height: 60px;
+	width: 100%;
+	position: relative;
+    padding-left: 12px;
+	color: #000!important;
+}
+.ec_btn a::before{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/アセット-1@4x-scaled.webp);
+	width: 38px;
+	height: 31px;
+	top: 14px;
+	left: 40px;
+	background-size: cover;
+}
+.ec_btn:hover{
+	background-color: #dec1b1;
+}
+@media screen and (max-width: 1024px){
+#product {
+    padding: 20px 0;
+}
+	.product_box {
+    width: 85%;
+    margin: 4% auto;
+}
+}
+
+/* greeting */
+#greeting .box .box_img{
+	width: 25%;
+    margin: 0 auto;
+}
+#greeting .box .box_img::before,#greeting .box .box_img::after{
+	display: none;
+}
+#greeting .box .box_text .owner{
+	position: relative;
+	padding-left: 3%;
+	width: 40%;
+} 
+#greeting .box .box_text .owner::before{
+	position: absolute;
+	content: "";
+	background-color: #F8E5CF;
+	width: 70px;
+	height: 70px;
+	top: 0;
+	left: 0;
+	border-radius: 80px;
+	z-index: -5;
+} 
+@media screen and (max-width: 1024px){
+	#greeting .box .box_img {
+    width: 100%;
+    margin: 0 auto;
+}
+#greeting .box .box_text .owner {
+    position: relative;
+    padding-left: 3%;
+    width: 70%;
+}
+
+}
+
+#greeting .logo_bg {
+    position: absolute;
+    content: "";
+    background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/logo_bg-scaled.webp);
+    width: 800px;
+    height: 200px;
+    top: 100px;
+    left: -200px;
+    z-index: -5;
+    background-size: cover;
+}
+
+/* reserve */
+.reserve_area {
+	width: 100%;
+}
+.reserve_box{
+	position: relative;
+	width: 40%;
+	margin: 3% auto;
+	overflow: hidden;
+	color: #fff!important;
+	padding: 8% 2%;
+    font-family: serif;
+}
+.reserve_box p{
+	font-size: 0.9rem!important;
+	margin: 0 0 0 0!important;
+	color: #fff!important;
+}
+.reserve_box h3{
+	margin-top: 0!important;
+	margin-bottom: 5%!important;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+.reserve_box a{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.tenpo_img{
+	position: absolute;
+	background-size: cover;
+	z-index: -2;
+	width: 111%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.tenpo_img img{
+	width: 100%;
+}
+.reserve_box:hover .tenpo_img img{
+	transition: 0.5s;
+	transform: scale(1.1, 1.1);
+}
+.reserve_box::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+.reserve_box::after{
+	position: absolute;
+	content: "";
+	background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/hpb-3.webp);
+	background-size: cover;
+    width: 90px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+}
+#reserve{
+	position: relative;
+}
+#reserve::before{
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    top: 100px;
+    right: -200px;
+    z-index: -2;
+	display: none;
+}
+#reserve::after{
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 400px;
+    height: 400px;
+    border-radius: 300px;
+    top: 600px;
+    left: -150px;
+    z-index: -5;
+	display: none;
+}
+
+@media screen and (max-width: 1024px){
+#reserve::before {
+    width: 450px;
+    height: 450px;
+}
+	.reserve_box {
+    width: 100%;
+    margin: 0% auto;
+	padding: 15% 2%;
+	}
+}
+
+
+/* アクセス情報 */
+.access_box{
+	width: 90%;
+	margin: 60px auto 0;
+}
+.access_map{
+	width: 45%;
+}
+.access_text_1,.access_text_2{
+	width: 50%;
+	font-family: serif;
+}
+.access_text_1 p,.access_text_2 p{
+	font-size: 0.85rem;
+}
+.access_text_1 a,.access_text_2 a{
+	color: #000!important;
+	text-decoration: underline;
+}
+.access_text_1 h3,.access_text_2 h3{
+	position: relative;
+	padding-left: 5%;
+	width: 40%;
+    font-family: 'Noto Sans JP', sans-serif;
+} 
+.access_text_1 h3::before{
+	position: absolute;
+	content: "";
+	background-color: #F8E5CF;
+	width: 50px;
+	height: 50px;
+	top: -8px;
+	left: -8px;
+	border-radius: 80px;
+	z-index: -5;
+} 
+.access_text_1 h3::after{
+	    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #F8E5CF;
+    bottom: -5px;
+    left: 20px;
+}
+.access_text_2 h3::before{
+	position: absolute;
+	content: "";
+	background-color: #ffc9c5;
+	width: 50px;
+	height: 50px;
+	top: -8px;
+	left: -8px;
+	border-radius: 80px;
+	z-index: -5;
+} 
+.access_text_2 h3::after{
+	    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #F8E5CF;
+    bottom: -5px;
+    left: 20px;
+}
+@media screen and (max-width: 1024px){
+	.access_box{
+	width: 100%;
+	margin: 60px auto 0;
+}
+.access_map{
+	width: 100%;
+}
+.access_text_1,.access_text_2{
+	width: 100%;
+	font-family: serif;
+	margin-top: 5%;
+}
+}
+
+
+/* instagram */
+.instagram_inner{
+	width: 1000px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 1024px){
+	.instagram_inner{
+	width: 100%;
+	margin: 0 auto;
+}
+}
+
+
+/* footer */
+footer{
+	width: 100%;
+	padding: 200px 0;
+}
+footer{
+	width: 100%;
+	margin-top: 200px;
+	padding: 50px 0;
+	background-color: #D1BEB2;
+    position: relative;
+}
+.footer_flex{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer_left{
+	width: 40%;
+}
+.footer_left img{
+	width: 25%;
+	margin-left: 3%;
+}
+.footer_menu{
+	margin: 2% 5%;
+}
+.footer_menu ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer_menu li{
+	width: 45%;
+	margin-top: 6.5%;
+	font-size: 1.2rem;
+	font-family: serif;
+}
+.footer_menu li a{
+	color: #fff!important;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+.footer_menu li a:hover{
+	color: #F8E5CF!important;
+}
+.footer_right{
+	width: 60%;
+}
+.footer_link_content {
+		position: relative;
+    width: 47%;
+    height: 130px;
+    margin: 5% 0 0;
+	border: 1px solid ;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.footer_link_content img{
+	    position: absolute;
+    top: 0;
+    left: 0;
+	    z-index: 0;
+	width: 100%;
+}
+.footer_link_content a{
+	position: absolute;
+	width: 100%;
+	line-height: 130px;
+	color: #fff!Important;
+	z-index: 5;
+	left: 0;
+}
+.footer_link_content::before{
+	content: "";
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -5;
+}
+.footer_link_content:hover{
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 1024px){
+	.footer_logo img{
+		width: 30%;
+	}
+	.footer_left{
+	width: 100%;
+}
+.footer_right{
+	width: 100%;
+}
+.footer_link_content {
+    position: relative;
+    width: 48%;
+	}
+.footer_link_content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+}
+.footer_menu li {
+    width: 45%;
+    padding: 3% 0px;
+}
+.footer_menu {
+    margin: 2% 0%;
+}
+.footer_logo img {
+    width: 40%;
+    margin-left: 0;
+}
+.footer_link_content a {
+    position: absolute;
+    width: 100%;
+    line-height: 150px;
+    color: #fff!Important;
+    z-index: 5;
+    left: 0;
+}
+	.footer_link_content a:hover{
+		opacity: 0.8;
+	}
+
+
+
+}
+@media screen and (max-width: 700px){
+	.footer_logo img{
+		width: 40%;
+	}
+.footer_link_content {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+	.footer_left{
+	width: 100%;
+}
+.footer_right{
+	width: 100%;
+}
+
+
+}
+
+/* 下層ページ */
+#about_pg,#relationship,#structure,#pore{
+margin-bottom: 200px!important;
+}
+@media screen and (max-width: 1024px){
+	#about_pg,#relationship,#structure{
+margin-bottom: 100px!important;
+}
+}
+#page_header .title {
+    opacity: 1;
+    display: block;
+    position: relative;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+@media screen and (max-width: 1024px){
+	.title h1{
+    font-size: 0.7rem;
+    width: 97%;
+    margin: 0 auto 1.5%;
+	}
+}
+/* programページ */
+.box2{
+	flex-direction: row-reverse;
+	margin-top: 50px;
+}
+.box3{
+	width: 90%;
+	margin: 0 auto;
+}
+.box4area{
+	margin-top: 13%;
+}
+.box4{
+	width: 90%;
+	margin: -6% auto 0;
+	flex-direction: row-reverse;
+}
+.box_img2 {
+    width: 40%;
+    position: relative;
+}
+.box_img2 img{
+	width: 100%;
+}
+.box_img3,.box_img4{
+    width: 40%;
+    position: relative;
+}
+.box_img3 img,.box_img4 img{
+	width: 100%;
+}
+.tcd-pb-row.row5 .tcd-pb-col.col1 .tcd-pb-widget.widget1 {
+    margin-bottom: 30px;
+    padding-bottom: 90px;
+}
+#about_pg .logo_bg {
+    position: absolute;
+    content: "";
+    background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/logo_bg-scaled.webp);
+    width: 450px;
+    height: 150px;
+    top: 0px;
+    right: 0px;
+    z-index: -5;
+    background-size: cover;
+}
+#structure h3.h3_1, #structure h3.h3_2,#pore h3.h3_1, #pore h3.h3_2 {
+    position: relative;
+    padding-left: 2%;
+    width: 40%;
+	font-family: serif;
+	margin-top: 100px;
+	    font-family: 'Noto Sans JP', sans-serif;
+	    color: #484848;
+}
+#structure h3.h3_1::before,#pore h3.h3_1::before {
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 50px;
+    height: 50px;
+    top: -8px;
+    left: -8px;
+    border-radius: 80px;
+    z-index: -5;
+}
+#structure h3.h3_1::after,#pore h3.h3_1::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #E7EFEE;
+    bottom: -5px;
+    left: 20px;
+}
+#structure h3.h3_2::before,#pore h3.h3_2::before {
+    position: absolute;
+    content: "";
+    background-color: #ffc9c5;
+    width: 50px;
+    height: 50px;
+    top: -8px;
+    left: -8px;
+    border-radius: 80px;
+    z-index: -5;
+}
+#structure h3.h3_2::after,#pore h3.h3_2::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #F8E5CF;
+    bottom: -5px;
+    left: 20px;
+}
+#structure h4,#pore h4{
+	width: 100%;
+    margin: 40px 0 30px;
+	font-family: serif;
+	position: relative;
+	    font-size: 1.5rem!important;
+	    font-family: 'Noto Sans JP', sans-serif;
+	color: #484848;
+}
+#structure h4::after,#pore h4::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    background-color: #F8E5CF;
+    bottom: -5px;
+    left: 0px;
+}
+#pore .box_img2::after{
+    position: absolute;
+    width: 380px;
+    height: 280px;
+    content: "";
+    background-color: #F8E5CF;
+    bottom: -40px;
+    right: -50px;
+    z-index: -1;
+}
+#pore .box_img3::after{
+    position: absolute;
+    width: 380px;
+    height: 280px;
+    content: "";
+    background-color: #F8E5CF;
+    bottom: -40px;
+    left: -50px;
+    z-index: -1;
+}
+#pore h5{
+	width: 100%;
+	margin: 50px 0 30px;
+	position: relative;
+	padding-left: 4%;
+	    font-family: 'Noto Sans JP', sans-serif;
+	color: #484848;
+}
+#pore h5::after{
+    position: absolute;
+    content: "";
+    background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/check.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    top: 1px;
+    left: 0;
+}
+.keana_senjyo_kouka{
+	width: 100%;
+/* 	background: url(https://mieux-cosme.com/wp-content/uploads/2023/04/IMG_0366.webp); */
+	background-size: cover;
+	  position: relative;
+  z-index: 1;
+	margin-top: 8%;
+    padding: 3% 0 5%;
+}
+.keana_senjyo_kouka::after{
+/*   content: ""; */
+  position: absolute;
+    z-index: -1;
+	width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.5;
+}
+.keana_senjyo_kouka h4{
+	text-align: center;
+}
+.kouka{
+    width: 38%;
+    background-color: #fef2e5;
+    margin: 2% 0px;
+    padding: 3% 5%;
+}
+.kouka h5{
+    margin: 10px 0 30px!important;
+    font-family: serif;
+    position: relative;
+    padding-left: 8%!important;
+    font-size: 1.5rem!important;
+}
+@media screen and (max-width: 768px){
+.keana_senjyo_kouka {
+    padding: 1% 0 10%;
+}
+	.kouka {
+    width: 100%;
+    background-color: #fef2e5;
+    margin: 2% 0px;
+    padding: 5% 3%;
+}
+.kouka h5 {
+    margin: 10px 0 10px!important;
+    font-family: serif;
+    position: relative;
+    padding-left: 11%!important;
+    font-size: 1.2rem!important;
+}
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+#about_pg, #relationship, #structure, #pore {
+    margin-bottom: 100px!important;
+}
+#main_contents {
+    padding: 0 0% 40px!important;
+}
+	.box_img2 {
+    width: 100%;
+    position: relative;
+}
+#structure h3.h3_1, #structure h3.h3_2,#pore h3.h3_1, #pore h3.h3_2 {
+    padding-left: 0%;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.13rem;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+#structure h3.h3_1::before,#pore h3.h3_1::before {
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 50px;
+    height: 50px;
+    top: -8px;
+    left: -17px;
+    border-radius: 80px;
+    z-index: -5;
+}
+#structure h3.h3_2::before,#pore h3.h3_2::before {
+    position: absolute;
+    content: "";
+    background-color: #ffc9c5;
+    width: 50px;
+    height: 50px;
+    top: -8px;
+    left: -17px;
+    border-radius: 80px;
+    z-index: -5;
+}
+.box3 {
+    width: 100%;
+    margin: 0 auto;
+}
+.box_img3 {
+    width: 100%;
+    position: relative;
+}
+#structure h4,#pore h4 {
+    width: 100%;
+    margin: 40px 0 20px;
+	    font-family: 'Noto Sans JP', sans-serif;
+	}
+.box4area {
+    margin-top: 5%;
+}
+.box4 {
+    width: 100%;
+    margin: -5% auto 0;
+}
+#pore h5 {
+    width: 100%;
+    margin: 50px 0 0px;
+    padding-left: 10%;
+}
+.box_img4 {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+#pore h5::after {
+    width: 23px;
+    height: 23px;
+    top: 0px;
+	}
+}
+
+.section_inner2{
+	width: 900px;
+	margin: 5% auto 0;
+}
+@media screen and (max-width: 1024px){
+	.section_inner2{
+	width: 90%;
+	margin: 5% auto 0;
+}
+}
+.product_introduction{
+	margin-bottom: 10%;
+}
+.product_img{
+	width: 100%;
+}
+.product_img img{
+	width: 50%;
+	margin: 0;
+}
+.product_introduction_text{
+	margin-top: 3%;
+}
+.product_introduction_text h3{
+	position: relative;
+    font-size: 1.3rem!important;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    padding-left: 15px;
+	    font-family: 'Noto Sans JP', sans-serif;
+}
+.product_introduction_text h3::before {
+    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 50px;
+    height: 50px;
+    top: -8px;
+    left: -8px;
+    border-radius: 80px;
+    z-index: -5;
+}
+.product_introduction h4{
+	font-size: 1.1rem!important;
+	position: relative;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.product_introduction h4::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #ffc9c5;
+    bottom: -5px;
+    left: 0px;
+}
+.product_btn{
+	margin-top: 5%;
+}
+.product_btn a{
+	color: #050505!important;
+	position: relative;
+	transition: 0.5s;
+}
+.product_btn a:hover{
+		color: #a39994!important;
+}
+.product_btn a::before{
+	 position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -20px;
+	border-radius: 80px;
+    z-index: -5;
+		transition: 0.5s;
+}
+.product_btn a:hover::before{
+		    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    left: -20px;
+	border-radius: 80px;
+    z-index: -5;
+}
+@media screen and (max-width: 1024px){
+.product_introduction{
+	margin-bottom: 15%;
+}
+	.product_introduction_text h3 {
+    font-size: 1.0rem!important;
+	}
+}
+
+/* メニューページ */
+#menu{
+	position: relative;
+}
+#menu .logo_bg{
+    position: absolute;
+    content: "";
+    background: url(https://mieux-cosme.com/wp-content/uploads/2023/03/logo_bg-scaled.webp);
+    width: 800px;
+    height: 200px;
+    top: 0px;
+    right: -200px;
+    z-index: -5;
+    background-size: cover;
+}
+.price_bg_box{
+	width: 100%;
+	margin-top: 8%;
+}
+.price_bg_box h3{
+	width: 100%;
+	margin-bottom: 0!important;
+	position: relative;
+}
+.price_tt {
+    width: 44%;
+    margin-top: 0%;
+    padding: 3%!important;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+.price_nm {
+    width: 44%;
+    text-align: right;
+    margin-top: 0%;
+    font-weight: bold;
+    padding: 3%!important;
+    border-bottom: 1px solid;
+}
+.price_bg_box .h3_1:before{
+	    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: -20px;
+    border-radius: 80px;
+    z-index: -5;
+}
+.price_bg_box .h3_2:before{
+	    position: absolute;
+    content: "";
+    background-color: #F8E5CF;
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: -20px;
+	border-radius: 80px;
+    z-index: -5;
+}
+@media screen and (max-width: 1024px){
+.price_bg_box {
+    width: 100%;
+    margin-top: 14%;
+}
+	.price_tt {
+    width: 60%;
+    margin-top: 3%;
+}
+.price_nm {
+    width: 28%;
+    margin-top: 3%;
+	}
+}
+
+/* introduction */
+.introduction_box_img{
+	width: 32.5%;
+}
+@media screen and (max-width: 1024px){
+	.sp_none{
+		display: none;
+	}
+	.introduction_box_img {
+    width: 48%;
+}
+}
+
+.main_description{
+	margin-top: 5%;
+}
+
+
+/* コンタクトフォーム */
+.franchise_text_p{
+	text-align: center;
+	width: 100%;
+	margin: 2% auto;
+}
+.franchise_text_p p span{
+	color: #ff0000;
+}
+.form_area {
+	width: 90%;
+	margin: 0 auto;
+    padding: 1% 0;
+}
+.wpcf7 {
+    width: 80%!important;
+    margin: 0 auto !important;
+}
+.form_item{
+	width: 100%;
+	margin-top: 2%;
+}
+.form_item_left{
+	width: 30%;
+}
+.form_item_right{
+	width: 65%;
+}
+.form_item_left p span{
+	color: #ff0000;
+}
+.pol_text {
+    width: 90%;
+    margin: 20px auto;
+    padding: 2.5%;
+    height: 150px;
+    background-color: #ffffff;
+    overflow: scroll;
+    border: 1px solid #f0f0f0;
+}
+@media screen and (max-width: 1024px){
+	.wpcf7 {
+    width: 100%!important;
+    margin: 0 auto !important;
+}
+.form_item_left {
+    width: 100%;
+}
+.form_item_right {
+    width: 100%;
+}
+.form_area {
+    width: 100%;
+    margin: 0 auto;
+}
+.form_item {
+    margin-top: 5%;
+}
+.franchise_text_p {
+    margin: 8% auto 2%;
+}
+}
+
+@media screen and (max-width: 1024px){
+/* フッターメニュー */
+.mobile_footer_menu{
+	width: 100%;
+	display: flex!important;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+	.mobile_footer_menu_product{
+		width: 50%;
+		    height: 60px;
+		text-align: center;
+		background-color: #A49994;
+	}
+	.mobile_footer_menu_agency{
+		width: 50%;
+		    height: 60px;
+		text-align: center;
+		background-color: #A49994;
+	}
+	.mobile_footer_menu_product a{
+		position: relative;
+		color: #fff!important;
+    display: inline-block;
+    line-height: 60px;
+    width: 100%;
+    padding-left: 10%;
+	}
+	.mobile_footer_menu_product a:before{
+    content: "";
+    background: url(/wp-content/themes/mieux/img/footer_logo2_1.svg);
+    background-size: cover;
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 10px;
+    left: 6%;
+	}
+	.mobile_footer_menu_agency a{
+		position: relative;
+		color: #fff!important;
+    display: inline-block;
+    line-height: 60px;
+    width: 100%;
+    padding-left: 7%;
+	}
+	.mobile_footer_menu_agency a:before{
+    content: "";
+    background: url(/wp-content/themes/mieux/img/footer_logo.svg);
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    top: 12px;
+    left: 17%;
+	}
+}

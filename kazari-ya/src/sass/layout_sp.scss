@@ -1,0 +1,505 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      padding: 5px;
+      .topKv {
+        height: 400px;
+      }
+      .kvTitleBox {
+        position: absolute;
+        right: 15px;
+        bottom: 20px;
+        width: calc(100% - 20px);
+        max-width: 360px;
+        padding: 20px;
+        h1 {
+          display: none;
+        }
+        .kvTitle {
+          margin: 0 0 10px;
+          .ttl {
+            p {
+              display: inline;
+              font-size: 24px;
+              line-height: 1.3;
+            }
+          }
+        }
+      }
+    }
+    .topNavPanel {
+      display: none;
+    }
+    .sec01 {
+      padding: 60px 0;
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            margin: 15px 0 0;
+            .dt {
+              font-size: 20px;
+            }
+            .dd {
+              .more {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slideSection {
+      padding: 50px 20px 50px 0;
+      .slidePanel {
+        width: 100%;
+        .slideBox {
+          .ul {
+            .li {
+              width: calc(100% / 2);
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 30px 0 60px;
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      .secContainer {
+        padding: 60px 20px;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .list {
+            margin: 0 0 20px;
+            .ul {
+              .li {
+                a {
+                  padding: 15px;
+                  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                    right 15px center no-repeat;
+                  background-size: 20px auto;
+                  p {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+          }
+          .info {
+            .dl {
+              .dt {
+                width: 85px;
+              }
+              + .dl {
+                margin: 5px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	commitment
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .commitmentMain {
+    .sec01 {
+      padding: 40px 0;
+      .secContainer {
+        .secPanel {
+          margin: 0 0 20px;
+          .secBox {
+            .ttl01 {
+              margin: 0 0 20px;
+              font-size: 30px;
+            }
+            .ttl02 {
+              margin: 0 0 20px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 40px 0;
+      .listBox {
+        .ul {
+          .li {
+            padding: 20px;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .ttl02 {
+            font-size: 20px;
+            text-align: center;
+          }
+          .icon01 {
+            width: 80px;
+            margin: 0 auto 30px;
+          }
+          .icon02 {
+            width: 60px;
+            margin: 0 auto 30px;
+          }
+          .icon03 {
+            width: 50px;
+            margin: 0 auto 30px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 40px 0;
+      .casePanel {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .sec01 {
+      padding: 40px 0;
+      .secContainer01 {
+        margin: 0 0 30px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        .txtBox {
+          padding: 5px;
+          .txt {
+            padding: 20px;
+          }
+        }
+      }
+      .secContainer02 {
+        .txtBox {
+          margin: 0 0 20px;
+        }
+        .chartPanel {
+          .chartBox {
+            max-width: 400px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 40px 0;
+      .listBox {
+        .ul {
+          .li {
+            padding: 20px;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .ttl02 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 40px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	area
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .areaMain {
+    .sec01 {
+      padding: 40px 0;
+      .topBox {
+        margin: 0 0 40px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .secContainer {
+        .secPanel {
+          + .secPanel {
+            margin: 30px 0 0;
+          }
+          .pTtl {
+            h3 {
+              font-size: 18px;
+            }
+          }
+          .areaBox {
+            .dl {
+              line-height: 1.7;
+              + .dl {
+                border-top: none;
+              }
+              .dt {
+                padding: 15px;
+              }
+              .dd {
+                padding: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .shopMain {
+    .sec01 {
+      padding: 40px 0;
+      .txt {
+        margin: 0 0 20px;
+      }
+    }
+    .sec02 {
+      padding: 40px 0;
+      .txtBox {
+        padding: 20px;
+      }
+    }
+    .sec03 {
+      padding: 40px 0;
+      .infoBox {
+        .dl {
+          .dt {
+            padding: 10px 20px;
+            font-size: 16px;
+          }
+          .dd {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 60px 0;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 2);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 40px 0;
+      .infoBox {
+        .dl {
+          .dt {
+            padding: 10px 20px;
+            font-size: 16px;
+          }
+          .dd {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+    .mapContainer {
+      margin: 60px 0 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 40px 0;
+      .topList {
+        max-width: 400px;
+        margin: 0 auto 40px;
+        .ul {
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+      .secBox {
+        .ttl {
+          font-size: 24px;
+        }
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+      .contact {
+        max-width: 330px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            a {
+              padding: 0 0 0 35px;
+              font-size: 24px;
+            }
+            .tel01 {
+              background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_01.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+            .tel02 {
+              background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_02.png)
+                left center no-repeat;
+              background-size: 30px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .blogSection {
+      padding: 40px 0;
+    }
+    .catePanel {
+      max-width: 220px;
+      margin: 0 auto 40px;
+      .webgene-item {
+        margin: 5px 0 0;
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            a {
+              padding: 15px 50px 15px 15px;
+              background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                right 15px center no-repeat;
+              background-size: 20px auto;
+              .time {
+                margin: 0 0 5px;
+              }
+              .title {
+              }
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+          .thumb-item {
+            &.slider {
+              .li {
+                > div {
+                  overflow: hidden;
+                  position: relative;
+                  padding: 0 0 100%;
+                }
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+          .slick-prev {
+            left: -20px;
+          }
+          .slick-next {
+            right: -20px;
+          }
+        }
+        .btnBackBox {
+          margin: 40px 0 0;
+        }
+      }
+    }
+  }
+}

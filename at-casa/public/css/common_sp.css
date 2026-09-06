@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    padding: 10px 20px;
+  }
+  .header .logoBox {
+    padding: 0;
+  }
+  .header .logoBox .ttl {
+    display: none;
+  }
+  .header .logoBox .logo {
+    width: 100px;
+  }
+  .header .headItem {
+    display: none;
+  }
+  .header .hamburger {
+    top: 0;
+  }
+  .header .hamburger.is-open .span {
+    background: #ffffff;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 50px 20px 60px;
+  }
+  .navBox .navContainer {
+    height: auto;
+  }
+  .navBox .navPanel01 {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .navBox .navPanel01 .leftBox {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .navBox .navPanel01 .leftBox .logoBox {
+    width: 240px;
+    margin: 0 0 40px;
+  }
+  .navBox .navPanel01 .leftBox .logoBox .logo {
+    width: 100px;
+  }
+  .navBox .navPanel01 .leftBox .info .txt + .txt {
+    margin: 20px 0 0;
+  }
+  .navBox .navPanel01 .rightBox {
+    width: 100%;
+  }
+  .navBox .navPanel01 .rightBox .navList {
+    display: block;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul {
+    width: 100%;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul .subList {
+    padding: 15px 0 15px 15px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    display: block;
+  }
+  .pageKvPanel .titleBox {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 0 20px;
+    z-index: 1;
+  }
+  .pageKvPanel .titleBox .kvTitle p {
+    color: #ffffff;
+  }
+  .pageKvPanel .titleBox .kvTitle h1 {
+    font-size: 26px;
+    color: #ffffff;
+  }
+  .pageKvPanel .titleBox .logo {
+    position: static;
+    width: 100px;
+    padding: 5px;
+    background: #ffffff;
+  }
+  .pageKvPanel .pageKv {
+    width: 100%;
+    height: 250px;
+  }
+
+  .pageMain {
+    margin: 43px 0 0;
+  }
+
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 26px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .mv {
+    height: 300px;
+  }
+  .footer .footContact {
+    margin: -60px 0 50px;
+  }
+  .footer .footContact .secContainer {
+    padding: 30px 20px;
+  }
+  .footer .footContact .secContainer .secBox {
+    max-width: 800px;
+  }
+  .footer .footContact .secContainer .secBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .secContainer .secBox .ttlBox .ttl02 {
+    font-size: 24px;
+  }
+  .footer .footContact .secContainer .secBox .txtBox .btnContact {
+    max-width: 230px;
+  }
+  .footer .footContact .secContainer .secBox .txtBox .btnContact a {
+    display: block;
+    padding: 0 40px 0 0;
+    color: #ffffff;
+    background: url(https://andone-architect.com/system_panel/uploads/images/footer_contact_arrow.png) right center no-repeat;
+    background-size: 50px auto;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    bottom: 200px;
+    right: 20px;
+    width: 40px;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .footer .footPanel .logoBox {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .logoBox .logo {
+    width: 100px;
+  }
+  .footer .footPanel .txt {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .sns a {
+    width: 30px;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+  }
+}
+/*   モーダルウインドウ
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .modalBoxWrap {
+    padding: 50px 10px;
+  }
+
+  .modalContent {
+    max-width: 580px;
+  }
+  .modalContent .mdlBody {
+    padding: 20px;
+  }
+  .modalContent .mdlBody .dl .dt {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .modalContent .mdlClose {
+    position: static;
+  }
+}

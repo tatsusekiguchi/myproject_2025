@@ -1,0 +1,581 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .kvWrap {
+        width: calc(100% - 80px);
+      }
+      .topKv {
+        position: relative;
+        height: 400px;
+      }
+      .kvTtl {
+        bottom: 50px;
+        h1 {
+          padding: 0.3em 0.5em;
+          font-size: 20px;
+          line-height: 1.7;
+          + p {
+            padding: 0.4em 1em;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secPanel {
+        .leftBox {
+          margin: 0 0 40px;
+          .btnMore {
+            margin: 50px 0 0;
+          }
+        }
+        .rightBox {
+          .webgene-blog {
+            display: flex;
+            margin: 0 0 0 -10px;
+            .webgene-item {
+              width: calc((100% / 4) - 10px);
+              margin: 0 0 0 10px;
+              .photo {
+                position: relative;
+                height: 0;
+                margin: 0 0 10px;
+                padding: 0 0 150%;
+                img {
+                  @include cover-image;
+                }
+              }
+              .title {
+                min-height: 0;
+                margin: 0;
+              }
+              .more {
+                p {
+                  padding: 5px 0;
+                  font-size: 12px;
+                  background: url(https://andone-architect.com/system_panel/uploads/images/btn_more_arrow.png)
+                    right 2px center no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 60px;
+      .secContainer {
+        .txtBox {
+          padding: 30px 20px 0;
+          .txt {
+            margin: 0 0 60px;
+            p + p {
+              margin: 30px 0 0;
+            }
+          }
+          .more {
+            max-width: 260px;
+            p {
+              display: block;
+              padding: 10px 0;
+              font-family: "游ゴシック Medium", "Yu Gothic Medium",
+                "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+                "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana",
+                sans-serif;
+              border-bottom: 1px solid #222c38;
+              background: url(https://andone-architect.com/system_panel/uploads/images/btn_more_arrow.png)
+                right 5px center no-repeat;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secContainer {
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            .photoBox {
+              width: 48%;
+            }
+            .txtBox {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 0 0 60px;
+      .secContainer {
+        .photoBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 0 0 40px;
+          .photo01 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            max-width: 100%;
+            width: 45%;
+          }
+          .photo02 {
+            position: static;
+            max-width: 100%;
+            width: 65%;
+          }
+        }
+        .txtBox {
+          padding: 30px 20px 0;
+          .txt {
+            margin: 0 0 60px;
+            p + p {
+              margin: 30px 0 0;
+            }
+          }
+          .more {
+            max-width: 260px;
+            p {
+              display: block;
+              padding: 10px 0;
+              font-family: "游ゴシック Medium", "Yu Gothic Medium",
+                "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+                "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana",
+                sans-serif;
+              border-bottom: 1px solid #222c38;
+              background: url(https://andone-architect.com/system_panel/uploads/images/btn_more_arrow.png)
+                right 5px center no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .fixedPhotoPanel {
+      height: auto;
+      background: none;
+      .photo {
+        display: block;
+      }
+    }
+    .sec04 {
+      padding: 60px 0 40px;
+      .secBox {
+        .rightBox {
+          .infoBox {
+            .dl {
+              .dt {
+                padding: 15px 10px;
+              }
+              .dd {
+                padding: 15px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .conceptMain {
+    .sec01 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .secBox {
+        + .secBox {
+          margin: 40px 0 0;
+        }
+        .leftBox {
+          margin: 0 0 20px;
+          padding: 0 0 20px;
+          border-bottom: 1px solid #313131;
+          .ttl03 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 40px 0;
+    }
+    .sec03 {
+      padding: 40px 0;
+      .secContainer {
+        .secPanel {
+          + .secPanel {
+            margin: 20px 0 0;
+          }
+        }
+        .secBox {
+          padding: 20px;
+          .ttlBox {
+            margin: 0 0 10px;
+            .ttl {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 40px 0;
+      .secPanel {
+        .leftBox {
+          margin: 0 0 40px;
+          .btnMore {
+            margin: 50px 0 0;
+          }
+        }
+        .rightBox {
+          .photoBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 0 40px;
+            .photo01 {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              max-width: 100%;
+              width: 45%;
+            }
+            .photo02 {
+              position: static;
+              max-width: 100%;
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .telPanel {
+        max-width: 600px;
+        margin: 100px auto 0;
+        padding: 20px;
+        a {
+          .span {
+            font-size: 20px;
+          }
+          .em {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 0;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	works
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .worksMain {
+    .worksSection {
+      .blogPanel {
+        &--list {
+          .webgene-blog {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -40px 0 0 -10px;
+            .webgene-item {
+              width: calc((100% / 4) - 10px);
+              margin: 40px 0 0 10px;
+              .photo {
+                position: relative;
+                height: 0;
+                margin: 0 0 10px;
+                padding: 0 0 150%;
+                img {
+                  @include cover-image;
+                }
+              }
+              .title {
+                min-height: 0;
+                margin: 0;
+              }
+              .more {
+                p {
+                  padding: 5px 0;
+                  font-size: 12px;
+                  background: url(https://andone-architect.com/system_panel/uploads/images/btn_more_arrow.png)
+                    right 2px center no-repeat;
+                }
+              }
+            }
+          }
+          .webgene-pagination {
+            margin: 60px auto 0;
+          }
+        }
+        &--detail {
+          .webgene-blog {
+            .ttlBox {
+              font-size: 16px;
+            }
+            .slickSlide {
+              margin: 0 0 40px;
+              .slider {
+                .li {
+                  > div {
+                    padding: 0 0 70%;
+                  }
+                }
+              }
+            }
+            .thumb-item {
+              &.slider {
+                .li {
+                  > div {
+                    overflow: hidden;
+                    position: relative;
+                    padding: 0 0 100%;
+                  }
+                  img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+            .slick-prev {
+              left: -20px;
+            }
+            .slick-next {
+              right: -20px;
+            }
+          }
+          .btnBackBox {
+            margin: 50px 0 0;
+          }
+          .btnBack {
+            margin: 40px auto 0;
+          }
+        }
+      }
+    }
+  }
+}

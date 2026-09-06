@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    .photoBox {
+    }
+    .titleBox {
+      .pageKvTitleBox {
+        padding: 30px 20px;
+        background: url(https://s-9937637.smooooth.jp/system_panel/uploads/images/page_kv_logo.png)
+          right center no-repeat;
+        background-size: auto 100%;
+        .pageKvTitle {
+          font-size: 28px;
+        }
+        .sub {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .pageSecTtlBox {
+    .sub {
+      font-size: 16px;
+    }
+    .pageSecTtl {
+      font-size: 24px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0 80px;
+      .secTtl {
+        margin: 0 0 15px;
+        p {
+          font-size: 15px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+      }
+      .contactItem {
+        .itemBox {
+          + .itemBox {
+            margin: 40px 0 0;
+          }
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+          .tel {
+            a {
+              font-size: 26px;
+            }
+          }
+          .btnContact {
+            max-width: 260px;
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 20px;
+      .logo {
+        max-width: 150px;
+        margin: 0 0 20px;
+      }
+      .logo + .ttl {
+        font-size: 20px;
+      }
+      .co2Panel {
+        .inner {
+          display: block;
+        }
+        .co2Logo {
+          width: 150px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          width: 100%;
+          .ttl {
+            font-size: 20px;
+          }
+        }
+      }
+      .copy {
+        margin: 30px 0 0;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+}

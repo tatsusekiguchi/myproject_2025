@@ -1,0 +1,465 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  //font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  letter-spacing: 0.1em;
+  background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/main_bg.png);
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/main_bg.png);
+    .headWrap {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1840px;
+      margin: 0 auto;
+    }
+    .logo {
+      max-width: 300px;
+      width: 15%;
+      a {
+        display: block;
+      }
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+}
+.sideNav {
+  position: fixed;
+  top: 15%;
+  right: 0;
+  width: 40px;
+  z-index: 999;
+  a {
+    display: block;
+    padding: 10px;
+    color: #e7e5d6;
+    background: #7a6941;
+    div {
+      padding: 25px 0 0;
+      background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/side_nav_icon.png)
+        center top no-repeat;
+      background-size: 25px auto;
+      p {
+        line-height: 1.3;
+        writing-mode: vertical-lr;
+      }
+    }
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    align-items: flex-end;
+    width: 84%;
+    padding: 15px 0 0;
+    .navList {
+      width: calc(100% - 300px);
+      padding: 0 30px 0 0;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      .ul {
+        display: flex;
+        justify-content: flex-end;
+        > .li {
+          overflow: hidden;
+          position: relative;
+          padding: 25px 0 10px;
+          text-align: center;
+          background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/header_nav_icon.png)
+            center top no-repeat;
+          background-size: 25px auto;
+          + .li {
+            margin: 0 0 0 2%;
+          }
+          > * {
+            padding: 0 5px 5px;
+          }
+          > a {
+            display: inline-block;
+            text-align: center;
+          }
+        }
+        .linkTxt {
+          position: relative;
+        }
+        .pulldown:hover {
+          overflow: visible;
+          .subList {
+            top: 50px;
+            height: auto;
+            opacity: 1;
+            z-index: 9999;
+          }
+        }
+      }
+      .subList {
+        position: absolute;
+        top: 10px;
+        left: -55px;
+        width: 180px;
+        height: 0;
+        padding: 0 20px !important;
+        opacity: 0;
+        z-index: -1;
+        border-radius: 4px;
+        border: 1px solid #000000;
+        background: #ecebe6;
+        transition: 0.6s;
+        .li + .li {
+          border-top: 1px solid #000000;
+        }
+        .li a {
+          display: block;
+          padding: 8px 5px;
+          text-align: center;
+          p {
+            position: relative;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .navItem {
+      position: relative;
+      top: -10px;
+      width: 260px;
+      .contactBox {
+        text-align: center;
+        .btnContact {
+          width: 160px;
+          margin: 0 auto;
+          a {
+            display: block;
+            padding: 7px;
+            font-size: 14px;
+            border-radius: 30px;
+            border: 1px solid #000000;
+            background: #e3e1d3;
+            &:hover {
+              opacity: 1;
+              color: #e3e1d3;
+              background: #000000;
+            }
+          }
+        }
+        > p {
+          margin: 5px 0 0;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 96px 0 0;
+}
+.pageKvPanel {
+  .kvTitle {
+    padding: 30px 0 10px;
+    font-size: 40px;
+  }
+}
+.pageSecTtlBox {
+  margin: 0 0 40px;
+  .sub {
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 0 0 0 30px;
+    color: #a6391c;
+    background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+      left center no-repeat;
+    background-size: 25px auto;
+  }
+  .pageSecTtl {
+    font-size: 30px;
+  }
+}
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  width: 200px;
+  a {
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    background: #efebe8;
+    &:hover {
+      opacity: 1;
+      color: #efebe8;
+      background: #000000;
+    }
+  }
+}
+.btnMore02 {
+  width: 200px;
+  a {
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    color: #efebe8;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #efebe8;
+    background: url(url(https://s-8482452.smooooth.jp/system_panel/uploads/images/service_sec_bg_black.png));
+    &:hover {
+      opacity: 1;
+      color: #000000;
+      background: #efebe8;
+    }
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    padding: 60px 0;
+    color: #efebe8;
+    background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png);
+    .pageSecTtlBox {
+      text-align: center;
+      .sub {
+        color: #e7a492;
+      }
+    }
+    .txt {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+    .secBox {
+      max-width: 780px;
+      margin: 0 auto;
+      .leftBox {
+        .telBox {
+          + .telBox {
+            margin: 5px 0 0;
+          }
+          a {
+            display: inline-block;
+            margin: 0 20px 0 0;
+            padding: 0 0 0 30px;
+            font-size: 30px;
+            color: #efebe8;
+            background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+          > p {
+            display: inline-block;
+          }
+        }
+      }
+      .rightBox {
+        .btnMail {
+          margin: 0 0 20px;
+          a {
+            p {
+              display: inline-block;
+              padding: 0 0 0 20px;
+              background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png)
+                left center no-repeat;
+              background-size: 14px auto;
+            }
+          }
+        }
+        .btnLine {
+          a {
+            p {
+              display: inline-block;
+              padding: 0 0 0 25px;
+              background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/footer_contact_line.png)
+                left center no-repeat;
+              background-size: 18px auto;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .footPanel {
+    padding: 80px 0 0;
+    .logo01 {
+      max-width: 300px;
+      margin: 0 0 30px;
+    }
+    .logo02 {
+      margin: 0 0 30px;
+      font-size: 30px;
+    }
+    .txtBox {
+      .dl {
+        line-height: 2;
+        + .dl {
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+  .footMv {
+    height: 900px;
+    background: url(https://s-8482452.smooooth.jp/system_panel/uploads/images/footer_mv.png)
+      no-repeat;
+    background-size: cover;
+    .secWrap {
+      position: relative;
+      height: 100%;
+    }
+    .copy {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      color: #efebe8;
+    }
+  }
+}

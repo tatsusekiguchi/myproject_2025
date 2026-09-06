@@ -1,0 +1,1119 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      .topKvPanel {
+        .topKvBox {
+          .topKv {
+            height: 200px;
+          }
+          .linkLabel {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 15px 20px;
+            font-size: 14px;
+          }
+          &:nth-child(odd) {
+            .linkLabel {
+              text-align: right;
+            }
+          }
+          &:nth-child(even) {
+            .linkLabel {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .secTtlBox {
+      margin: 0 0 40px;
+      .sub {
+        font-size: 24px;
+      }
+      .secTt {
+        margin: 3px 0 0;
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secBox {
+        .leftBox {
+          margin: 0 0 30px;
+        }
+        .rightBox {
+          .webgene-blog {
+            .webgene-item {
+              + .webgene-item {
+                margin: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .txt {
+        margin: 0 0 30px;
+      }
+      .list {
+        .ul {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          max-width: 500px;
+          overflow-x: auto;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 50%;
+            background: #97ae51;
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 5px;
+              line-height: 1;
+              font-size: 14px;
+            }
+            .dd {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .section {
+        + .section {
+          margin: 50px 0 0;
+        }
+        .photoContainer {
+          .photoPanel {
+            max-width: 750px;
+            .photoBox {
+              .num {
+                position: absolute;
+                top: -40px;
+                right: 20px;
+                font-size: 60px;
+              }
+            }
+          }
+        }
+        .txtContainer {
+          .txtPanel {
+            max-width: 770px;
+            padding: 20px 0;
+            .txtBox {
+              .ttl {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 40px 0 60px;
+      .sectionList {
+        .section {
+          .secBox {
+            max-width: 600px;
+            height: auto;
+            padding: 60px 20px;
+            .dl {
+              .dt {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 0 0 60px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	welfare
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .welfareMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      .txtContainer {
+        .txtBox {
+          max-width: 770px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+      .aboutContainer {
+        margin: 30px auto 0;
+        padding: 30px 20px;
+        .dl {
+          max-width: 600px;
+          .dt {
+            margin: 0 0 20px;
+            p {
+              padding: 0 30px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .photoList {
+        margin: 0 0 50px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .photo {
+            margin: 0 0 15px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .examplePanel {
+        .ttl {
+          margin: 0 auto 30px;
+          p {
+            padding: 0 30px;
+            font-size: 20px;
+          }
+        }
+        .list {
+          .ul {
+            .li {
+              padding: 0 0 30px;
+              &:not(:last-child) {
+                background: url(https://taihei-co-ltd.com/system_panel/uploads/images/welfare_sec02_list_arrow_sp.png)
+                  center bottom no-repeat;
+                background-size: 20px auto;
+              }
+              + .li {
+                margin: 20px 0 0;
+              }
+              .box {
+                font-size: 16px;
+                + p {
+                  margin: 5px 0 0;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .name {
+            .em {
+              margin: 0 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .pricePanel {
+        .dl {
+          .dt {
+            padding: 20px;
+          }
+          .dd {
+            padding: 20px;
+            border-top: 1px solid #000000;
+          }
+        }
+      }
+    }
+    .secBnr {
+      padding: 60px 0;
+      .bnrPanel {
+        max-width: 650px;
+        .bnrBox {
+          padding: 30px 20px;
+        }
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+        }
+        .telTxt {
+          margin: 0 0 10px;
+        }
+        .tel {
+          a {
+            p {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	construction
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .constructionMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      .txtContainer {
+        .txtBox {
+          max-width: 770px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secContainer01 {
+        padding: 60px 0;
+        .list {
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            .photo {
+              margin: 0 0 15px;
+            }
+            .dl {
+              .dt {
+                margin: 0 0 20px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      .secContainer02 {
+        padding: 60px 0;
+        .aboutContainer {
+          margin: 0 auto;
+          padding: 30px 20px;
+          .dl {
+            max-width: 600px;
+            .dt {
+              margin: 0 0 20px;
+              p {
+                padding: 0 30px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	sales
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .salesMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      .txtContainer {
+        .txtBox {
+          max-width: 770px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secContainer01 {
+        padding: 60px 0;
+        .section {
+          + .section {
+            margin: 50px 0 0;
+          }
+          .photoContainer {
+            .photoPanel {
+              max-width: 750px;
+              .photoBox {
+                .num {
+                  position: absolute;
+                  top: -40px;
+                  left: 20px;
+                  font-size: 60px;
+                }
+              }
+            }
+          }
+          .txtContainer {
+            .txtPanel {
+              max-width: 770px;
+              .txtBox {
+                .ttl {
+                  padding: 5px 20px;
+                  font-size: 20px;
+                }
+                .txt {
+                  padding: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .secContainer02 {
+        padding: 60px 0;
+        .aboutContainer {
+          margin: 0 auto;
+          padding: 30px 20px;
+          .dl {
+            max-width: 600px;
+            .dt {
+              margin: 0 0 20px;
+              p {
+                padding: 0 30px;
+                font-size: 20px;
+              }
+            }
+            .dd {
+              .ttl {
+                margin: 0 0 25px;
+                font-size: 18px;
+              }
+              .secBox {
+                .txtBox {
+                  padding: 20px 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transportMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      .txtContainer {
+        .txtBox {
+          max-width: 770px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secContainer01 {
+        padding: 60px 0;
+        .section {
+          + .section {
+            margin: 50px 0 0;
+          }
+          .photoContainer {
+            .photoPanel {
+              max-width: 750px;
+              .photoBox {
+                .num {
+                  position: absolute;
+                  top: -40px;
+                  left: 20px;
+                  font-size: 60px;
+                }
+              }
+            }
+          }
+          .txtContainer {
+            .txtPanel {
+              max-width: 770px;
+              .txtBox {
+                .ttl {
+                  padding: 5px 20px;
+                  font-size: 20px;
+                }
+                .txt {
+                  padding: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secBoxList {
+        margin: 0 0 60px;
+        .secBox {
+          + .secBox {
+            margin: 60px 0 0;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              width: 100%;
+              h3 {
+                padding: 0 20px;
+                font-size: 20px;
+              }
+            }
+            .box {
+              margin: 20px 0 0;
+              padding: 20px;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            .photo {
+              width: 50%;
+            }
+            .txtBox {
+              position: relative;
+              width: 50%;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -100px;
+                width: 100px;
+                height: 100%;
+                background: #f4f6f8;
+              }
+              .txt {
+                min-height: 280px;
+              }
+            }
+          }
+        }
+      }
+      .message {
+        p {
+          padding: 0 60px;
+          font-size: 20px;
+          background: url(https://taihei-co-ltd.com/system_panel/uploads/images/transport_sec03_slash_01.png)
+              left center no-repeat,
+            url(https://taihei-co-ltd.com/system_panel/uploads/images/transport_sec03_slash_02.png)
+              right center no-repeat;
+          background-size: 40px auto, 40px auto;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .sec01 {
+      padding: 60px 0;
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 20px;
+      }
+      .secBox {
+        .photoBox {
+          max-width: 300px;
+          margin: 0 auto;
+          .name {
+            .em {
+              margin: 0 0 0 15px;
+              font-size: 20px;
+            }
+          }
+        }
+        .txtBox {
+          padding: 30px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      &:after {
+        bottom: -55px;
+        width: 100px;
+        height: 55px;
+      }
+      .list {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .photo {
+            margin: 0 0 15px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .topTtl {
+        margin: 0 0 30px;
+        font-size: 20px;
+      }
+      .subTtl {
+        max-width: 340px;
+        margin: 0 0 30px;
+        h4 {
+          padding: 0 20px 0 0;
+          font-size: 20px;
+        }
+      }
+      .section {
+        + .section {
+          margin: 50px 0 0;
+        }
+        .secTtl {
+          padding: 10px 20px;
+          font-size: 20px;
+        }
+        .photoList {
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            .photo {
+              margin: 0 0 15px;
+            }
+            .dl {
+              .dt {
+                margin: 0 0 15px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0 0;
+      .tabList {
+        .ul {
+          gap: 10px 5px;
+          .li {
+            width: calc((100% / 2) - 5px);
+            font-size: 14px;
+          }
+        }
+      }
+      .tabItemBox {
+        padding: 40px 0 80px;
+      }
+      .infoBox {
+        .dl {
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            padding: 5px;
+          }
+          .dd {
+            padding: 10px 5px;
+          }
+        }
+      }
+      .contactSection {
+        padding: 60px 0 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .form {
+        .checkList {
+          .ul {
+            padding: 0;
+          }
+        }
+      }
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+          &::before {
+            display: none;
+          }
+          &.line {
+            .dt {
+              padding: 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+
+            .span {
+              width: auto;
+              min-width: 0;
+              margin-right: 10px;
+              padding: 0;
+              font-size: 16px;
+              text-align: left;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-bottom: none;
+          }
+        }
+        .radioBox {
+          padding: 0;
+        }
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 60px 0;
+    }
+    .sec02 {
+      padding: 60px 0;
+      .infoBox {
+        margin: 0 0 40px;
+        .dl {
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            padding: 5px;
+          }
+          .dd {
+            padding: 10px 5px;
+          }
+        }
+      }
+      .listBox {
+        padding: 0 0 60px;
+        .list {
+          + .list {
+            margin: 20px 0 0;
+          }
+          .ul {
+            .li {
+              + .li {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topSection {
+      padding: 50px 0;
+      .secPanel {
+        width: 100%;
+        padding: 15px;
+      }
+      .secBox {
+        .logoBox {
+          margin: 0 0 20px;
+          .logo {
+            max-width: 600px;
+            margin: 0 auto;
+          }
+        }
+        .txtBox {
+          .list {
+            margin: 0 0 10px;
+            .ul {
+              .li {
+                padding: 0 20px;
+                p {
+                  padding: 15px 0 15px 30px;
+                  background: url(https://taihei-co-ltd.com/system_panel/uploads/images/contact_top_check.png)
+                    left center no-repeat;
+                  background-size: 20px auto;
+                }
+              }
+            }
+          }
+          .message {
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 50px 0;
+      .telPanel {
+        .tel {
+          a {
+            p {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+        .aside {
+          font-size: 12px;
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .catePanel {
+      padding: 40px 0;
+      .webgene-blog {
+        .webgene-item {
+          display: block;
+          width: 180px;
+          margin: 0 auto 20px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -10px;
+          .webgene-item {
+            width: calc((100% / 2) - 10px);
+            margin: 40px 0 0 10px;
+            .photo {
+              position: relative;
+              height: 0;
+              margin: 0 0 10px;
+              padding: 0 0 80%;
+              img {
+                @include cover-image;
+              }
+            }
+            .title {
+              min-height: 0;
+              margin: 0;
+            }
+            .more {
+              p {
+                padding: 5px 20px 0 0;
+                font-size: 12px;
+                background: url(https://taihei-co-ltd.com/system_panel/uploads/images/blog_list_arrow.png)
+                  right center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+          .thumb-item {
+            &.slider {
+              .li {
+                > div {
+                  overflow: hidden;
+                  position: relative;
+                  padding: 0 0 100%;
+                }
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+          .slick-prev {
+            left: -20px;
+          }
+          .slick-next {
+            right: -20px;
+          }
+        }
+        .btnBackBox {
+          margin: 50px 0 0;
+        }
+        .btnBack {
+          margin: 40px auto 0;
+        }
+      }
+    }
+  }
+}

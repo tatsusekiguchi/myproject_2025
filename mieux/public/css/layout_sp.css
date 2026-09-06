@@ -1,0 +1,1450 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topMvWrapper {
+  height: 300vh;
+  background: #ffede5;
+}
+#top .topMvContainer {
+  justify-content: center;
+  height: 100vh;
+  padding: 7% 20px 0;
+}
+#top .topMvContainer .topMvPanel {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 70%;
+  margin: 0 auto;
+}
+#top .topMvContainer .mvListBox {
+  position: relative;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+#top .topMvContainer .mvListBox .slideList {
+  position: relative;
+  padding: 0 0 calc(100% + 40px);
+}
+#top .topMvContainer .mvListBox .slideList .slideBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding: 0 0 100%;
+}
+#top .topMvContainer .mvListBox .slideList .slideBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top .topMvContainer .mvTitleBox {
+  position: static;
+  width: auto;
+  margin: 40px 0 0;
+}
+#top .topMvContainer .mvTitleBox .mvTitle {
+  width: 60%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+#top .topMvContainer .mvScroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  margin: 0 auto;
+  font-size: 10px;
+  text-align: center;
+}
+#top .topMvContainer .mvScroll::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 45px;
+  margin: 0 auto;
+}
+#top .topMvContainer .mvScroll::after {
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-height: 45px;
+}
+#top #section__concept {
+  margin: 74px 0 0;
+  padding: 70px 0;
+}
+#top #section__concept::before {
+  top: -74px;
+  height: 74px;
+}
+#top #section__concept .secTtlBox {
+  margin: 0 0 50px;
+}
+#top #section__concept .secTtlBox .sub {
+  margin: 0 0 30px;
+  font-size: 15px;
+}
+#top #section__concept .secTtlBox .secTtl {
+  font-size: 24px;
+}
+#top #section__concept .txt {
+  font-size: 12px;
+}
+#top #section__concept .txt p + p {
+  margin: 25px 0 0;
+}
+#top #section__commitment .secContainer01 {
+  padding: 70px 0 60px;
+  background: #ffede5;
+}
+#top #section__commitment .secContainer01 .topTtl {
+  width: calc(100% + 20px);
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 15px;
+}
+#top #section__commitment .secContainer01 .topBox {
+  margin: 0 0 50px;
+}
+#top #section__commitment .secContainer01 .topBox .ttl {
+  font-size: 24px;
+}
+#top #section__commitment .secContainer01 .topBox .txt {
+  margin: 30px 0 0;
+}
+#top #section__commitment .secContainer01 .slidePanel {
+  margin: 0 0 50px;
+}
+#top #section__commitment .secContainer01 .slidePanel .slideBox ul li {
+  width: 50%;
+}
+#top #section__commitment .secContainer01 .introPanel {
+  margin: 0 0 70px;
+}
+#top #section__commitment .secContainer01 .introPanel .secBox dl {
+  padding: 0 20px 20px 20px;
+}
+#top #section__commitment .secContainer01 .introPanel .secBox dl dt {
+  margin: 0 0 40px;
+}
+#top #section__commitment .secContainer01 .introPanel .secBox dl dt span {
+  margin: 0 0 15px;
+  font-size: 15px;
+}
+#top #section__commitment .secContainer01 .introPanel .secBox dl dt em {
+  font-size: 18px;
+}
+#top #section__commitment .secContainer01 .introPanel .secBox dl dd {
+  line-height: 2;
+}
+#top #section__commitment .secContainer01 .introPanel .buttonBox {
+  width: 85px;
+  max-width: 85px;
+  margin: 10px auto 0;
+}
+#top #section__commitment .secContainer01 .introPanel .buttonBox ul {
+  display: flex;
+  justify-content: space-between;
+}
+#top #section__commitment .secContainer01 .introPanel .buttonBox ul li {
+  width: 30px;
+}
+#top #section__commitment .secContainer01 .introPanel .buttonBox ul li + li {
+  margin: 0;
+}
+#top #section__commitment .secContainer01 .introPanel .buttonPc {
+  display: none;
+}
+#top #section__commitment .secContainer01 .btnMore {
+  width: 100%;
+  max-width: 335px;
+}
+#top #section__commitment .secContainer01 .btnMore a {
+  height: 60px;
+  border-radius: 30px;
+}
+#top #section__commitment .secContainer01 .btnMore a span {
+  padding: 0 45px 0 0;
+  font-size: 18px;
+  background: url("../image/common/btn_more_arrow_01.png") right center no-repeat;
+  background-size: 25px auto;
+}
+#top #section__commitment .secContainer01 .btnMore + p {
+  margin: 10px 0 0;
+}
+#top #section__commitment .secContainer02 {
+  padding: 0 0 130px;
+}
+#top #section__commitment .secContainer02::before {
+  height: 95%;
+}
+#top #section__commitment .secContainer02 .secPanel {
+  max-width: 450px;
+  margin: 0 auto;
+}
+#top #section__commitment .secContainer02 .secPanel .leftBox {
+  margin: 0 0 35px;
+}
+#top #section__commitment .secContainer02 .secPanel .leftBox ul .list02 {
+  margin: -70px 0 0;
+}
+#top #section__commitment .secContainer02 .secPanel .leftBox ul .photo01 {
+  width: 55%;
+  max-width: 420px;
+  min-width: 210px;
+}
+#top #section__commitment .secContainer02 .secPanel .leftBox ul .photo02 {
+  width: 55%;
+  max-width: 420px;
+  min-width: 210px;
+}
+#top #section__commitment .secContainer02 .secPanel .rightBox ul {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#top #section__commitment .secContainer02 .secPanel .rightBox ul .list03 {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  max-width: 155px;
+  z-index: 1;
+}
+#top #section__commitment .secContainer02 .secPanel .rightBox ul .list04 {
+  position: relative;
+  max-width: 185px;
+  margin: 0 auto;
+  z-index: 2;
+}
+#top #section__commitment .secContainer02 .secPanel .rightBox ul .list05 {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  max-width: 120px;
+  z-index: 3;
+}
+#top #section__commitment .secContainer03 {
+  padding: 0;
+}
+#top #section__commitment .secContainer03 .topTtl {
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 15px;
+}
+#top #section__commitment .secContainer03 .topBox .ttl {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+#top #section__commitment .secContainer03 .topBox .txt {
+  margin: 30px 0 0;
+}
+#top #section__commitment .secContainer03 .topBox .display {
+  overflow-y: auto;
+  margin: 10px 0 0;
+  padding: 0 20px 0 0;
+  height: 120px;
+  font-size: 11px;
+}
+#top #section__menu {
+  padding: 60px 0 50px;
+}
+#top #section__menu .secContainer .leftPanel {
+  margin: 0 0 25px;
+}
+#top #section__menu .secContainer .leftPanel .secTtlBox {
+  margin: 0 0 20px;
+}
+#top #section__menu .secContainer .leftPanel .secTtlBox .secTtl {
+  margin: 0 15px 0 0;
+  font-size: 30px;
+}
+#top #section__menu .secContainer .leftPanel .secTtlBox .sub {
+  font-size: 12px;
+}
+#top #section__menu .secContainer .leftPanel .photoBox .photo {
+  display: none;
+}
+#top #section__menu .secContainer .leftPanel .photoBox .photo.is-active {
+  display: block;
+}
+#top #section__menu .secContainer .rightPanel .secBox .ttl {
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 15px;
+}
+#top #section__menu .secContainer .rightPanel .secBox dl dt {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#top #section__menu .pager {
+  margin: 45px 0 0;
+}
+#top #section__menu .pager ul {
+  display: flex;
+  justify-content: space-between;
+}
+#top #section__menu .pager ul li {
+  width: 30px;
+  cursor: pointer;
+}
+#top #section__menu .pager .inactive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+#top #section__flow {
+  padding: 80px 0 0;
+  background: #e8c3b0;
+}
+#top #section__flow .topBox {
+  padding: 0 0 40px;
+}
+#top #section__flow .topBox .secTtlBox .secTtl {
+  margin: 0 15px 0 0;
+  font-size: 30px;
+}
+#top #section__flow .topBox .secTtlBox .sub {
+  font-size: 12px;
+}
+#top #section__flow .topBox .topPager {
+  display: none;
+}
+#top #section__flow .flowSliderList .flowSliderBox .ttlHead {
+  padding: 10px;
+}
+#top #section__flow .flowSliderList .flowSliderBox .ttlHead em {
+  font-size: 18px;
+}
+#top #section__flow .flowSliderList .flowSliderBox .ttlHead span {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+}
+#top #section__flow .flowSliderList .flowSliderBox .cntBody {
+  padding: 30px 15px;
+}
+#top #section__flow .flowSliderList .flowSliderBox .cntBody .photo {
+  max-width: 235px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+#top #section__flow .flowSliderList .flowSliderBox .cntBody dl {
+  width: 100%;
+}
+#top #section__flow .flowSliderList .flowSliderBox .cntBody dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+#top #section__flow .flowSliderList .flowSliderBox .cntBody dl dd {
+  min-height: 66px;
+}
+#top #section__flow .spPager {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 20px 50px;
+  z-index: 1;
+  background: #f7ebd9;
+}
+#top #section__flow .spPager ul {
+  display: flex;
+  align-items: center;
+}
+#top #section__flow .spPager ul .prev,
+#top #section__flow .spPager ul .next {
+  width: 26px;
+  cursor: pointer;
+}
+#top #section__flow .spPager ul .prev {
+  margin: 0 20px 0 0;
+}
+#top #section__flow .spPager ul .next {
+  margin: 0 0 0 20px;
+}
+#top #section__flow .spPager ul .count {
+  min-width: 20px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 15px;
+}
+#top #section__flow .spPager ul .slash {
+  position: relative;
+  width: 1px;
+  margin: 0 15px;
+}
+#top #section__flow .spPager ul .slash::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 17px;
+  margin: auto;
+  background: #454545;
+}
+#top #section__flow .spPager .inactive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+#top #section__program {
+  overflow: hidden;
+  padding: 85px 0 0;
+  background: #e1c5be;
+}
+#top #section__program .secTtlBox {
+  margin: 0 0 30px;
+}
+#top #section__program .secTtlBox .secTtl {
+  margin: 0 15px 0 0;
+  font-size: 30px;
+}
+#top #section__program .secTtlBox .sub {
+  font-size: 12px;
+}
+#top #section__program .topTxt {
+  margin: 0 0 40px;
+  font-size: 15px;
+}
+#top #section__program .listBox {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto 80px;
+}
+#top #section__program .listBox ul li + li {
+  margin: 30px 0 0;
+}
+#top #section__program .listBox ul .ttl {
+  padding: 15px 20px;
+  font-size: 18px;
+}
+#top #section__program .listBox ul .photo {
+  margin: 0 0 25px;
+  padding: 0 20px;
+}
+#top #section__program .listBox ul .step {
+  max-width: 70px;
+  margin: 0 auto 20px;
+  padding: 3px 5px;
+}
+#top #section__program .listBox ul dl {
+  padding: 0 20px 25px;
+}
+#top #section__program .listBox ul dl dt {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#top #section__program .listBox ul dl dd {
+  max-width: 480px;
+}
+#top #section__program .productContainer {
+  margin: 0 -20px;
+  padding: 80px 20px 90px;
+  background: url("../image/top/product_cnt_bg_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top #section__program .productContainer .headTtl {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+#top #section__program .productContainer .productPanel {
+  padding: 60px 20px;
+}
+#top #section__program .productContainer .productPanel .ttlBox {
+  margin: 0 0 20px;
+}
+#top #section__program .productContainer .productPanel .ttlBox .ttl01 {
+  font-size: 30px;
+}
+#top #section__program .productContainer .productPanel .ttlBox .ttl02 {
+  font-size: 18px;
+}
+#top #section__program .productContainer .productPanel .btnMore a {
+  padding: 0 30px 0 0;
+  font-size: 15px;
+  background: url("../image/common/btn_more_arrow_01_white.png") right center no-repeat;
+  background-size: 20px auto;
+}
+#top #section__company {
+  padding: 80px 0;
+}
+#top #section__company .secTtlBox {
+  margin: 0 0 30px;
+}
+#top #section__company .secTtlBox .secTtl {
+  margin: 0 15px 0 0;
+  font-size: 30px;
+}
+#top #section__company .secTtlBox .sub {
+  font-size: 12px;
+}
+#top #section__company .photoBox {
+  max-width: 660px;
+  margin: 0 auto 50px;
+}
+#top #section__company .txtBox .inner {
+  padding: 0;
+}
+#top #section__company .txtBox .subTtl {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+#top #section__company .txtBox .txt {
+  margin: 0 0 35px;
+  font-size: 14px;
+}
+#top #section__company .txtBox .btnMorePc {
+  display: none;
+}
+#top #section__company .txtBox .btnMoreSp a {
+  padding: 8px 40px 8px 0;
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-size: 13px;
+  background: url("../image/common/btn_more_arrow_01.png") right center no-repeat;
+  background-size: 30px auto;
+}
+#top #section__faq {
+  padding: 60px 0;
+}
+#top #section__faq .secTtlBox {
+  margin: 0 0 30px;
+}
+#top #section__faq .secTtlBox .secTtl {
+  margin: 0 15px 0 0;
+  font-size: 30px;
+}
+#top #section__faq .secTtlBox .sub {
+  font-size: 12px;
+}
+#top #section__faq .txtBox dl + dl {
+  margin: 10px 0 0;
+}
+#top #section__faq .txtBox dl dt {
+  display: flex;
+  padding: 15px 30px 15px 20px;
+  font-size: 12px;
+  background: url("../image/common/accord_plus.png") right 20px center no-repeat #ffffff;
+  background-size: 10px auto;
+}
+#top #section__faq .txtBox dl dt.active {
+  background: url("../image/common/accord_minus.png") right 20px center no-repeat #ffffff;
+  background-size: 10px auto;
+}
+#top #section__faq .txtBox dl dt span {
+  margin: 0 10px 0 0;
+}
+#top #section__faq .txtBox dl dd {
+  padding: 15px 20px 30px;
+  font-size: 12px;
+}
+#top #section__faq .txtBox dl dd .box span {
+  margin: 0 10px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	salonList
+///////////////////////////////////////////////////////////*/
+#salonList {
+  padding: 0;
+}
+#salonList .topContainer {
+  padding: 110px 0 50px;
+}
+#salonList .topContainer .secTtlBox {
+  display: block;
+  margin: 0 0 30px;
+}
+#salonList .topContainer .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#salonList .topContainer .secTtlBox .sub {
+  font-size: 12px;
+}
+#salonList .listContainer {
+  padding: 0 0 40px;
+}
+#salonList .listContainer .listBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px 16px;
+}
+#salonList .listContainer .listBox ul li {
+  width: calc(50% - 8px);
+}
+#salonList .listContainer .listBox .photoBox .photo a {
+  padding: 0 0 85%;
+}
+#salonList .listContainer .listBox .photoBox .nameBox {
+  display: inline-block;
+  max-width: 90%;
+  padding: 5px 10px;
+  background: white;
+}
+#salonList .listContainer .listBox .photoBox .nameBox .name01 {
+  margin: 0;
+  font-size: 12px;
+}
+#salonList .listContainer .listBox .photoBox .nameBox .name02 {
+  font-size: 10px;
+}
+#salonList .listContainer .listBox .infoBox {
+  padding: 15px 0 0;
+}
+#salonList .listContainer .listBox .infoBox .info .address {
+  min-height: 30px;
+  font-size: 10px;
+}
+#salonList .listContainer .listBox .infoBox .info .tel {
+  font-size: 12px;
+}
+#salonList .listContainer .listBox .infoBox .buttonItems .button + .button {
+  margin: 15px 0 0;
+}
+#salonList .listContainer .listBox .infoBox .buttonItems .button a {
+  display: block;
+  padding: 3px 0;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #454545;
+  background: url("../image/common/btn_more_arrow_01.png") right center no-repeat;
+  background-size: 14px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	salon
+///////////////////////////////////////////////////////////*/
+#salon .mvContainer .mv {
+  position: relative;
+  height: 100svh;
+}
+#salon .mvContainer .mv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#salon .mvContainer .mvTitle {
+  padding: 0;
+}
+#salon .mvContainer .mvTitle h1 {
+  padding: 35% 0 0;
+  align-items: center;
+  font-size: 30px;
+}
+#salon #section__staff {
+  padding: 50px 0 60px;
+}
+#salon #section__staff .secTtlBox {
+  display: block;
+  margin: 0 0 30px;
+}
+#salon #section__staff .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#salon #section__staff .secTtlBox .sub {
+  font-size: 12px;
+}
+#salon #section__staff .staffSliderList {
+  padding: 0 5px;
+}
+#salon #section__staff .staffSliderList .staffSliderBox {
+  margin: 0 15px;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .photoBox .name {
+  opacity: 0;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox {
+  padding: 20px 0 0;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .ttlPc {
+  display: none;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .ttlSp {
+  display: block;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .ttlSp .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .ttlSp .box .left {
+  width: calc(100% - 20px);
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 15px;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .ttlSp .box .right {
+  width: 13px;
+  max-width: 13px;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .ttlSp .ttl {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .comment {
+  display: none;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .more {
+  margin: 15px 0 0;
+}
+#salon #section__staff .staffSliderList .staffSliderBox .infoBox .more p {
+  padding: 0 20px 0 0;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  background: url("../image/common/btn_more_arrow_01.png") right center no-repeat;
+  background-size: 11px auto;
+}
+#salon #section__menu {
+  padding: 0 0 50px;
+}
+#salon #section__menu .secContainer .leftPanel {
+  margin: 0 0 25px;
+}
+#salon #section__menu .secContainer .leftPanel .secTtlBox {
+  margin: 0 0 20px;
+}
+#salon #section__menu .secContainer .leftPanel .secTtlBox .secTtl {
+  margin: 0 15px 0 0;
+  font-size: 30px;
+}
+#salon #section__menu .secContainer .leftPanel .secTtlBox .sub {
+  font-size: 12px;
+}
+#salon #section__menu .secContainer .leftPanel .photoBox .photo {
+  display: none;
+}
+#salon #section__menu .secContainer .leftPanel .photoBox .photo.is-active {
+  display: block;
+}
+#salon #section__menu .secContainer .rightPanel .secBox .ttl {
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 15px;
+}
+#salon #section__menu .secContainer .rightPanel .secBox dl dt {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#salon #section__menu .pager {
+  margin: 45px 0 0;
+}
+#salon #section__menu .pager ul {
+  display: flex;
+  justify-content: space-between;
+}
+#salon #section__menu .pager ul li {
+  width: 30px;
+  cursor: pointer;
+}
+#salon #section__menu .pager .inactive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+#salon #section__detail {
+  padding: 50px 0 80px;
+}
+#salon #section__detail .detailPanel .topBox {
+  margin: 0 0 20px;
+}
+#salon #section__detail .detailPanel .topBox .shopName {
+  font-size: 20px;
+}
+#salon #section__detail .detailPanel .topBox .sns ul li {
+  width: 20px;
+}
+#salon #section__detail .detailPanel .topBox .sns ul li + li {
+  margin: 0 0 0 10px;
+}
+#salon #section__detail .detailPanel .infoBox dl {
+  padding: 20px 0;
+}
+#salon #section__detail .detailPanel .infoBox dl dt {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+#salon #section__detail .detailPanel .infoBox dl dd {
+  font-size: 12px;
+}
+#salon #section__detail .detailPanel .infoBox .accessBox {
+  margin: 10px 0 0;
+}
+#salon #section__detail .detailPanel .infoBox .accessBox .access p {
+  padding: 0 4px;
+}
+#salon #section__detail .detailPanel .infoBox .accessBox .mapLink {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  max-width: 85px;
+  width: 85px;
+}
+#salon #section__detail .detailPanel .mapPanel {
+  margin: 10px 0 0;
+}
+#salon #section__detail .detailPanel .enAddress {
+  margin: 30px 0 0;
+  font-size: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+#product .mvContainer .mv {
+  position: relative;
+  height: 100svh;
+}
+#product .mvContainer .mv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#product .mvContainer .mvTitle {
+  padding: 0 20px;
+}
+#product .mvContainer .mvTitle .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#product .mvContainer .mvTitle .secTtlBox .sub {
+  font-size: 12px;
+}
+#product #section__product {
+  padding: 40px 0 60px;
+}
+#product #section__product .productList ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#product #section__product .productList ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 20px;
+}
+#product #section__product .productList ul li:nth-child(2n) {
+  border-right: none;
+}
+#product #section__product .productList ul li:nth-child(n+3) {
+  border-top: none;
+}
+#product #section__product .productList .infoBox {
+  margin: 10px 0 0;
+}
+#product #section__product .productList .infoBox .ttlBox {
+  margin: 0 0 10px;
+  text-align: center;
+}
+#product #section__product .productList .infoBox .ttlBox .ttl01 {
+  font-size: 15px;
+}
+#product #section__product .productList .infoBox .ttlBox .ttl02 {
+  font-size: 10px;
+}
+#product #section__product .productList .infoBox .ttlBox .price span {
+  font-size: 10px;
+}
+#product #section__product .productList .infoBox .ttlBox .price em {
+  font-size: 12px;
+}
+#product #section__product .productList .infoBox .txt {
+  display: none;
+}
+#product #section__product .productList .button {
+  max-width: 150px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+/* --------------------------------------------------
+	modal
+-------------------------------------------------- */
+.staffItemModal {
+  align-items: center;
+  padding: 20px;
+}
+.staffItemModal .modalBox {
+  width: 100%;
+  max-height: calc(100vh - 80px);
+  padding: 50px 20px 50px;
+}
+.staffItemModal .photoBox .photo + .photo {
+  margin: 15px 0 0;
+}
+.staffItemModal .photoBox--pc {
+  display: none;
+}
+.staffItemModal .infoBox {
+  margin: 20px 0 0;
+}
+.staffItemModal .infoBox .ttlBox .left {
+  width: calc(100% - 25px);
+}
+.staffItemModal .infoBox .ttlBox .left .name01 {
+  margin: 0;
+  font-size: 17px;
+}
+.staffItemModal .infoBox .ttlBox .left .name02 {
+  display: none;
+}
+.staffItemModal .infoBox .ttlBox .right {
+  width: 18px;
+  max-width: 18px;
+}
+.staffItemModal .infoBox dl {
+  margin: 20px 0 0;
+}
+.staffItemModal .infoBox dl dt {
+  margin: 0 0 20px;
+  font-size: 13px;
+}
+.staffItemModal .infoBox dl dd {
+  font-size: 10px;
+}
+
+.itemModal {
+  padding: 20px;
+}
+.itemModal .modalBox {
+  width: 100%;
+  max-height: calc(100vh - 80px);
+  padding: 50px 20px 50px;
+}
+.itemModal .photoBox .photo + .photo {
+  margin: 10px 0 0;
+}
+.itemModal .infoBox {
+  margin: 20px 0 0;
+}
+.itemModal .infoBox .ttlBox {
+  margin: 0 0 10px;
+}
+.itemModal .infoBox .ttlBox .ttl01 {
+  font-size: 18px;
+}
+.itemModal .infoBox .ttlBox .ttl02 {
+  font-size: 12px;
+}
+.itemModal .infoBox .ttlBox .price {
+  text-align: right;
+}
+.itemModal .infoBox .ttlBox .price span {
+  font-size: 12px;
+}
+.itemModal .infoBox .ttlBox .price em {
+  font-size: 14px;
+}
+.itemModal .infoBox .txt {
+  font-size: 11px;
+}
+.itemModal .infoBox .aside {
+  margin: 20px 0 0;
+}
+.itemModal .howtoPanel {
+  margin: 25px 0 0;
+}
+.itemModal .howtoPanel dl {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+}
+.itemModal .howtoPanel dl + dl dt {
+  border-top: none;
+}
+.itemModal .howtoPanel dl dt {
+  padding: 12px 10px 12px 35px;
+  font-size: 13px;
+  background: url("../image/product/accord_plus.png") left 5px center no-repeat;
+  background-size: 15px auto;
+}
+.itemModal .howtoPanel dl dt.active {
+  background: url("../image/product/accord_minus.png") left 5px center no-repeat;
+  background-size: 15px auto;
+}
+.itemModal .howtoPanel dl dd .inner {
+  padding: 0 0 0 35px;
+}
+.itemModal .howtoPanel dl dd .ttl {
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+.itemModal .howtoPanel dl dd .txt {
+  font-size: 11px;
+}
+.itemModal .buttonPurchase {
+  max-width: 295px;
+  width: 100%;
+  margin: 25px auto 0;
+}
+.itemModal .buttonPurchase a {
+  padding: clamp(15px, 1vw, 20px) 10px;
+  font-size: 13px;
+}
+.itemModal .photoPanel {
+  margin: 30px 0 0;
+}
+.itemModal .photoPanel .ttl {
+  margin: 0 0 10px;
+  font-size: 10px;
+}
+.itemModal .modalCloseBtm {
+  margin: 30px 0 0;
+}
+.itemModal .modalCloseBtm .modalClose {
+  font-size: 12px;
+}
+
+.modalBox > .modalClose {
+  top: 20px;
+  left: 20px;
+  padding: 0 0 0 30px;
+  font-size: 12px;
+  background: url("../image/common/modal_close.png") left center no-repeat;
+  background-size: 15px auto;
+}
+
+.modalScroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 125px;
+  height: 115px;
+  margin: auto;
+  z-index: 99;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#company .mvContainer .mv {
+  position: relative;
+  height: 100svh;
+}
+#company .mvContainer .mv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#company .mvContainer .mvTitle {
+  padding: 0 20px;
+}
+#company .mvContainer .mvTitle .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#company .mvContainer .mvTitle .secTtlBox .sub {
+  font-size: 12px;
+}
+#company #section__message {
+  padding: 50px 0 100px;
+  border-radius: 0 0 45px 45px;
+}
+#company #section__message .secContainer {
+  min-height: 0;
+}
+#company #section__message .secPanel {
+  padding: 80px 0 120px;
+}
+#company #section__message .secPanel .ttlBox {
+  margin: 0 0 35px;
+}
+#company #section__message .secPanel .ttlBox .ttl01 {
+  margin: 0 0 30px;
+  font-size: 14px;
+}
+#company #section__message .secPanel .ttlBox .ttl02 {
+  font-size: 19px;
+}
+#company #section__message .secPanel .txtBox .txt {
+  line-height: 2;
+}
+#company #section__message .secPanel .txtBox .txt p {
+  font-size: 11px;
+}
+#company #section__message .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+#company #section__message .secPanel dl {
+  margin: 50px 0 0;
+}
+#company #section__message .secPanel dl dt {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+#company #section__message .secPanel dl dd {
+  font-size: 12px;
+}
+@media (min-width: 1140px) {
+  #company #section__message .secPanel {
+    width: 55%;
+    max-width: 795px;
+  }
+  #company #section__message .photo01 {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: 40%;
+    max-width: 700px;
+  }
+  #company #section__message .photo02 {
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    width: 35%;
+    max-width: 615px;
+  }
+}
+#company #section__history {
+  padding: 60px 0;
+}
+#company #section__history .secTtlBox {
+  display: block;
+  margin: 0 0 30px;
+}
+#company #section__history .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#company #section__history .secTtlBox .sub {
+  font-size: 12px;
+}
+#company #section__history .introPanel .secBox dl dt {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+#company #section__history .introPanel .secBox dl dd ul {
+  margin: 20px 0 0;
+  font-size: 13px;
+}
+#company #section__history .introPanel .secBox dl dd ul li span {
+  width: 40px;
+}
+#company #section__history .introPanel .buttonBox {
+  width: 85px;
+  max-width: 85px;
+  margin: 30px auto 0;
+  padding: 0;
+}
+#company #section__history .introPanel .buttonBox ul {
+  display: flex;
+  justify-content: space-between;
+}
+#company #section__history .introPanel .buttonBox ul li {
+  width: 30px;
+}
+#company #section__history .introPanel .buttonBox ul li + li {
+  margin: 0;
+}
+#company #section__history .introPanel .buttonPc {
+  display: none;
+}
+#company #section__company {
+  padding: 0 0 60px;
+}
+#company #section__company .secTtlBox {
+  display: block;
+  margin: 0 0 30px;
+}
+#company #section__company .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#company #section__company .secTtlBox .sub {
+  font-size: 12px;
+}
+#company #section__company .secContainer {
+  padding: 0 20px;
+}
+#company #section__company .secContainer .secPanel .txtBox {
+  margin: 30px 0 0;
+}
+#company #section__company .secContainer .secPanel .txtBox .infoBox {
+  font-size: 12px;
+}
+#company #section__company .secContainer .secPanel .txtBox .infoBox dl {
+  padding: 15px 0;
+}
+#company #section__company .secContainer .secPanel .txtBox .infoBox dl dt {
+  width: 150px;
+}
+#company #section__company .secContainer .secPanel .txtBox .infoBox dl dd {
+  width: calc(100% - 150px);
+}
+#company #section__salon {
+  padding: 50px 0 0;
+}
+#company #section__salon .secTtlBox {
+  display: block;
+  margin: 0 0 40px;
+}
+#company #section__salon .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#company #section__salon .secTtlBox .sub {
+  font-size: 12px;
+}
+#company #section__salon .slidePanel + .slidePanel {
+  margin: 20px 0 0;
+}
+#company #section__salon .slidePanel .slideBox ul,
+#company #section__salon .slidePanel .slideBoxReverse ul {
+  display: flex;
+}
+#company #section__salon .slidePanel .slideBox ul li,
+#company #section__salon .slidePanel .slideBoxReverse ul li {
+  width: 50%;
+  margin: 0 8px;
+  text-align: center;
+}
+#company #section__salon .slidePanel .slideBox ul .nameBox,
+#company #section__salon .slidePanel .slideBoxReverse ul .nameBox {
+  display: block;
+  width: 70%;
+  min-width: 135px;
+  max-width: 260px;
+  padding: 10px;
+  line-height: 1.3;
+  background: white;
+}
+#company #section__salon .slidePanel .slideBox ul .nameBox .name01,
+#company #section__salon .slidePanel .slideBoxReverse ul .nameBox .name01 {
+  margin: 0;
+  font-size: 12px;
+}
+#company #section__salon .slidePanel .slideBox ul .nameBox .name02,
+#company #section__salon .slidePanel .slideBoxReverse ul .nameBox .name02 {
+  font-size: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact #section__contact,
+#contactConfirm #section__contact {
+  padding: 80px 0 70px;
+}
+#contact #section__contact .contactContainer .secTtlBox,
+#contactConfirm #section__contact .contactContainer .secTtlBox {
+  margin: 0 0 50px;
+}
+#contact #section__contact .contactContainer .secTtlBox .secTtl,
+#contactConfirm #section__contact .contactContainer .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+#contact #section__contact .contactContainer .secTtlBox .sub,
+#contactConfirm #section__contact .contactContainer .secTtlBox .sub {
+  font-size: 12px;
+}
+
+#contactConfirm .formConfirm dl {
+  display: block;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+#contactConfirm .formConfirm dl > * {
+  padding: 0;
+}
+#contactConfirm .formConfirm dl dt {
+  width: 100%;
+  margin: 0 0 5px;
+}
+#contactConfirm .formConfirm dl dd {
+  width: 100%;
+}
+#contactConfirm .formConfirm .submitButton {
+  flex-direction: column;
+  max-width: 330px;
+  margin: 0 auto;
+  padding: 30px 0 0;
+}
+#contactConfirm .formConfirm input[type=submit] {
+  order: 2;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+}
+#contactConfirm .formConfirm button.btnBack {
+  order: 1;
+  width: 100%;
+  height: 50px;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox form > dl {
+  font-size: 12px;
+}
+.formBox form > dl + dl {
+  margin: 15px 0 0;
+}
+.formBox form > dl dt {
+  margin: 0;
+}
+.formBox .radioForm dd {
+  padding: 5px 0 0;
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  font-size: 16px;
+}
+.formBox textarea {
+  height: 190px;
+  margin: 10px 0 0;
+  padding: 10px;
+  font-size: 16px;
+}
+.formBox .birthBox {
+  padding: 0 10px;
+}
+.formBox .birthBox ul li {
+  width: 70px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 15px;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 5px;
+}
+.formBox .checkItem {
+  margin: 30px 0;
+}
+.formBox .itemCheck .mwform-checkbox-field span {
+  padding-left: 15px;
+}
+.formBox form .mwform-radio-field {
+  display: block;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .privacy {
+  max-width: 205px;
+  margin: 35px auto 0;
+}
+.formBox .privacy .agreeBox {
+  height: 80px;
+  padding: 10px;
+  font-size: 10px;
+}
+.formBox .privacy .box + .box {
+  margin: 5px 0 0;
+}
+.formBox .submitButton {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.formBox .submitButton .submitTxt {
+  font-size: 14px;
+}
+.formBox .submitButton input[type=submit] {
+  height: 50px;
+  font-size: 14px;
+}
+
+#contactComplete #section__contact {
+  padding: 150px 0 80px;
+}
+#contactComplete #section__contact .contactContainer .secTtl {
+  margin: 0 0 50px;
+  font-size: 30px;
+}
+#contactComplete #section__contact .contactContainer .topComplete {
+  margin: 0 0 30px;
+  font-size: 15px;
+}
+#contactComplete #section__contact .contactContainer .ttl {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+#contactComplete #section__contact .contactContainer .txt {
+  font-size: 12px;
+}
+#contactComplete .btnToTop {
+  margin: 60px auto 0;
+}
+#contactComplete .btnToTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 200px;
+}
+#contactComplete .btnToTop a .arrow {
+  max-width: 32px;
+  width: 32px;
+  margin: 0 0 0 10px;
+}
+#contactComplete .btnToTop a span {
+  font-size: 12px;
+}
+
+/*////////////////////////////////////////////////////////////
+	privacy
+///////////////////////////////////////////////////////////*/
+#privacy #section__privacy {
+  padding: 120px 0 60px;
+}
+#privacy #section__privacy .topPanel {
+  margin: 0 0 40px;
+}
+#privacy #section__privacy .topPanel .secTtlBox {
+  margin: 0 0 15px;
+}
+#privacy #section__privacy .topPanel .secTtlBox .secTtl {
+  font-size: 18px;
+}
+#privacy #section__privacy .topPanel .txt {
+  font-size: 12px;
+}
+#privacy #section__privacy .section + .section {
+  margin: 30px 0 0;
+}
+#privacy #section__privacy .section h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+#privacy #section__privacy .section .txt {
+  font-size: 10px;
+}

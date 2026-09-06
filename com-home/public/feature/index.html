@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/split-text.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script src="../js/split-text.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<p>伊豆・伊東の高級別荘・リゾート物件なら</p>
+				<div class="logo"><a href="/">
+						<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+			</div>
+			<div class="headNav">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>ABOUT</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="propertylist">
+							<div>
+								<p>FOR SALE</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="feature">
+							<div>
+								<p>IZU AREA</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="bloglist">
+							<div>
+								<p>NEWS</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="contact">
+							<div>
+								<p>CONTACT</p>
+							</div>
+						</a></div>
+					<div class="li language">
+						<div class="em"><a href="/">
+								<div>
+									<p>JP</p>
+								</div>
+							</a></div>
+						<div class="span">
+							<p>/</p>
+						</div>
+						<div class="em"><a href="en">
+								<div>
+									<p>EN</p>
+								</div>
+							</a></div>
+						<div class="span">
+							<p>/</p>
+						</div>
+						<div class="em"><a href="zh">
+								<div>
+									<p>CN</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navInner">
+				<div class="navList">
+					<div class="dl">
+						<div class="dt"><a href="about">
+								<div>
+									<p>ABOUT</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="about">
+								<div>
+									<p>はじめての方へ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="propertylist">
+								<div>
+									<p>FOR SALE</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="propertylist">
+								<div>
+									<p>物件紹介</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="feature">
+								<div>
+									<p>IZU AREA</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="feature">
+								<div>
+									<p>伊豆の魅力</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="bloglist">
+								<div>
+									<p>NEWS</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="bloglist">
+								<div>
+									<p>お知らせ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="sell">
+								<div>
+									<p>SELL</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="sell">
+								<div>
+									<p>売りたい方へ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="company">
+								<div>
+									<p>COMPANY</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="btnContact"><a href="contact">
+						<div>
+							<p>CONTACT</p>
+						</div>
+					</a></div>
+				<div class="language">
+					<div class="em"><a href="/">
+							<div>
+								<p>JP</p>
+							</div>
+						</a></div>
+					<div class="span">
+						<p>/</p>
+					</div>
+					<div class="em"><a href="en">
+							<div>
+								<p>EN</p>
+							</div>
+						</a></div>
+					<div class="span">
+						<p>/</p>
+					</div>
+					<div class="em"><a href="zh">
+							<div>
+								<p>CN</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="snsList">
+					<div class="ul">
+						<div class="li"><a href="https://www.instagram.com/comhome0557375113/" target="_blank" rel="noopener">
+								<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_insta.png" alt=""></div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_line.png" alt=""></div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburgerBox">
+			<div class="hamburger">
+				<div class="span"></div>
+				<div class="span"></div>
+				<div class="span"></div>
+			</div>
+			<div class="hamburgerTxt">
+				<p>CLOSE</p>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="featureMain main">
+		<div class="pageTitleContainer">
+			<div class="secWrap">
+				<div class="pageTitlePanel">
+					<div class="pageTitle">
+						<p>IZU AREA</p>
+					</div>
+					<div class="subTitle">
+						<h1>伊豆の魅力</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topSection">
+			<div class="secContainer">
+				<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_top_img.png" alt=""></div>
+				<div class="txtBox">
+					<div class="inner textAnimBox">
+						<div class="ttl fadeUp">
+							<h2>自然豊かな伊豆で<br>贅沢な余白のある暮らしを。</h2>
+						</div>
+						<div class="txt">
+							<div class="paragraph fadeUp">
+								<p class="fadeUp">都心から約90分。</p>
+								<p class="fadeUp">電車に揺られているうちに、都心での仕事モードから、リラックスモードへと、</p>
+								<p class="fadeUp">ゆるやかに切り替わっていく。</p>
+								<p class="fadeUp">伊豆に着けば、海と山に抱かれ、穏やかな空気に包まれる。</p>
+								<p class="fadeUp">まずは海沿いを歩きながら、潮の香りに深呼吸をする。</p>
+								<p class="fadeUp">テラスではグラスを傾け、言葉を交わす時間そのものを味わう。</p>
+								<p class="fadeUp">伊東の温泉に浸かれば、身も心もじんわりと解きほぐされていく。</p>
+								<p class="fadeUp">ここには、余白のある暮らしがある。</p>
+								<p class="fadeUp">伊豆で過ごす時間が、忘れていた自分らしさをそっと取り戻してくれる。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="secContainer">
+					<div class="secPanel">
+						<div class="pageSecTtl white">
+							<h2>ABOUT IZU</h2>
+						</div>
+						<div class="secBox">
+							<div class="txtBox">
+								<div class="ttl">
+									<h3>都心からわずか９０分。<br>海と山に囲まれた、自然豊かな伊豆。</h3>
+								</div>
+								<div class="txt">
+									<p>COM-HOMEは、伊豆半島の東側に位置する伊東市にあります。海と山に囲まれ、豊かな自然と温泉に恵まれた街です。<br>伊豆半島はユネスコ世界ジオパークに認定されており、市内には大室山や城ヶ崎海岸をはじめとした数多くの景勝地が広がっています。自然に包まれながらも、首都圏へは新幹線で約90分とアクセスが良好で、別荘地や移住先として高い人気を誇ります。さらに、西に天城山系を望み、山に向かって開けた土地は、一年を通じて温暖な気候に恵まれています。</p>
+								</div>
+							</div>
+							<div class="map"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec01_map.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtl center">
+					<h2>VALUE</h2>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec02_img_01.png" alt=""></div>
+						<div class="txt">
+							<p>豊かな自然に囲まれた伊東市は、海と山が近く、都会の喧騒を離れて静かでゆったりとした時間を過ごすことができます。大室山や城ヶ崎海岸など、自然が作り出す美しい景観は訪れる人を魅了し、伊東オレンジビーチの明るく開けた雰囲気は南国リゾートのような開放感を与えてくれます。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec02_img_02.png" alt=""></div>
+						<div class="txt">
+							<p>年間を通して温暖な気候に恵まれている伊東市の令和元年の年平均気温は17.4℃です。12月でも最高気温が20℃前後と気温差が少なく、日照時間も長く過ごしやすいのが特徴です。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec02_img_03.png" alt=""></div>
+						<div class="txt">
+							<p>伊東市は温泉の街で、全国有数の湧出量を誇ります。江戸時代には徳川家光に湯治湯として献上された歴史もあります。昔ながらの温泉街に加え、湯巡りのできる公衆浴場や日帰り温泉も多く、街全体が温泉文化に包まれています。温泉付きの物件では、家にいながらラグジュアリーな湯浴みで日々の疲れをゆっくり癒すことができます。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec02_img_04.png" alt=""></div>
+						<div class="txt">
+							<p>伊東市は漁業が盛んな地域で、金目鯛、アジ、しらす、サザエ、伊勢海老など、海の幸を存分に楽しむことができます。魚だけでなく、野菜や肉も新鮮で、地元食材を活かしたおすすめの飲食店も数多く点在しています。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec02_img_05.png" alt=""></div>
+						<div class="txt">
+							<p>レジャーも充実しており、ダイビングのメッカである富戸や城ヶ崎、年間を通してサーフィンや海釣りを楽しめる宇佐美などがあります。また、子どもと一緒に出かけられる自然豊かな公園や動物園、水族館のほか、ハイキングやフルーツ狩りなど、幅広い年代が楽しめるスポットが揃っています。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_sec02_img_06.png" alt=""></div>
+						<div class="txt">
+							<p>都心から約90 分とアクセスが良好で、軽井沢や河口湖などの人気エリアに比べると、同じ予算でも広さやクオリティの高い物件を手に入れやすいのも魅力です。街は程よくコンパクトで、伊東駅周辺には日常の買い物に便利な商店街があり、国道沿いには大型店も多く揃っています。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03">
+			<div class="secWrap">
+				<div class="pageSecTtl center">
+					<h2>ACCESS</h2>
+				</div>
+				<div class="secBox">
+					<div class="accessImg"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/feature_access_01.png" alt=""></div>
+					<div class="txtBox">
+						<div class="box">
+							<div class="ttl">
+								<h3>首都圏から電車で約９０分</h3>
+							</div>
+							<div class="txt">
+								<p>東京駅から伊東駅までは、新幹線を利用すればおよそ90分。踊り子号を使えば乗り換えなしで移動できます。通勤にも利用可能なアクセスです。お車の場合は、東名高速道路「厚木IC」から約90分、「沼津IC」から約60分です。</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="ttl">
+								<h3>ヘリコプターで約３０分</h3>
+							</div>
+							<div class="txt">
+								<p>川奈には共用ヘリポートが設置される予定で、ヘリポート付きの物件や共用ヘリポートを利用できる物件もあります。これにより、東京駅から伊東市まで約30分で移動可能となります。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="pagetop linkBtn" data-target="main"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+			<div class="secWrap01">
+				<div class="secBox">
+					<div class="leftBox">
+						<div class="pageSecTtl white">
+							<h2>CONTACT</h2>
+						</div>
+						<div class="tel"><a href="tel:0557375113">
+								<div>
+									<p class="span">TEL.</p>
+									<p class="em">055-737-5113</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="rightBox">
+						<div class="contactTxt">
+							<div class="dl">
+								<div class="dt">
+									<p>内覧予約・ご相談</p>
+								</div>
+								<div class="dd">
+									<p> その他お問い合わせはこちら</p>
+								</div>
+							</div>
+						</div>
+						<div class="contactLink">
+							<div class="contactBtn"><a href="contact">
+									<div class="dl">
+										<div class="dt">
+											<p>MAIL FORM</p>
+										</div>
+										<div class="dd">
+											<p>メールでお問い合わせ</p>
+										</div>
+									</div>
+								</a></div>
+							<div class="contactBtn"><a href="#" target="_blank" rel="noopener">
+									<div class="dl">
+										<div class="dt">
+											<p>LINE</p>
+										</div>
+										<div class="dd">
+											<p>LINEでお問い合わせ</p>
+										</div>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="footBox">
+					<div class="leftBox">
+						<div class="logoBox">
+							<p>伊豆・伊東の高級別荘・リゾート物件なら</p>
+							<div class="logo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						</div>
+						<div class="txt">
+							<p>静岡県伊東市湯川１－７－１１</p>
+						</div>
+						<div class="snsList">
+							<div class="ul">
+								<div class="li"><a href="https://www.instagram.com/comhome0557375113/" target="_blank" rel="noopener">
+										<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_insta.png" alt=""></div>
+									</a></div>
+								<div class="li"><a href="#" target="_blank" rel="noopener">
+										<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_line.png" alt=""></div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="footNav">
+							<div class="navList">
+								<div class="dl">
+									<div class="dt"><a href="about">
+											<div>
+												<p>ABOUT</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="about">
+											<div>
+												<p>はじめての方へ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="propertylist">
+											<div>
+												<p>FOR SALE</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="propertylist">
+											<div>
+												<p>物件紹介</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="feature">
+											<div>
+												<p>IZU AREA</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="feature">
+											<div>
+												<p>伊豆の魅力</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="navList">
+								<div class="dl">
+									<div class="dt"><a href="bloglist">
+											<div>
+												<p>NEWS</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="bloglist">
+											<div>
+												<p>お知らせ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="sell">
+											<div>
+												<p>SELL</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="sell">
+											<div>
+												<p>売りたい方へ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="company">
+											<div>
+												<p>COMPANY</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="company">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btnContactBox">
+					<div class="btnContact"><a href="contact">
+							<div>
+								<p>CONTACT</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="copy">
+					<p>&copy;2025　COM-HOME有限会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

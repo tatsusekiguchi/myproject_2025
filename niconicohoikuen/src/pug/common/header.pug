@@ -1,0 +1,35 @@
+// ▽header▽
+header.header
+	.headWrap
+		.logoBox
+			.logo
+				a(href="")
+					img(src=(root_path || '') + 'image/common/header_logo_pc.png' class='switch' alt='')
+		.navBox
+			.navContainer
+				.navInner
+					.navList
+						ul.pagingList
+							li
+								a(href="#section__feature") 園の特徴
+							li
+								a(href="#section__flow") 1日の流れ
+							li
+								a(href="#section__facility") 施設紹介
+							li
+								a(href="#section__overview") アクセス
+					.navClose
+						img(src=(root_path || '') + 'image/common/nav_close.png' alt='')
+					.navItem
+						.instaLink
+							a(href="https://www.instagram.com/rokken.niconicohoikuen/", target="_blank", rel="noopener")
+								img(src=(root_path || '') + 'image/common/nav_insta.png' alt='')
+					.navFooter
+						.mv
+							img(src=(root_path || '') + 'image/common/nav_footer_bg.png' alt='')
+						dl.Outfit
+							dt Rokken niconico<br>Nursery School
+							dd 3-3, Midorimachi, <br>Sohara, Kakamigahara-shi, <br>Gifu 504-0902, Japan
+	.hamburger
+		img(src=(root_path || '') + 'image/common/header_menu.png' alt='')
+// △header△

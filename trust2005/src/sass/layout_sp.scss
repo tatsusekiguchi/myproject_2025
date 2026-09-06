@@ -1,0 +1,1197 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        height: 400px;
+      }
+      .kvTtl {
+        position: absolute;
+        left: 20px;
+        bottom: 50px;
+        .title01 {
+          max-width: 360px;
+        }
+        .title02 {
+          margin: 20px 0 0;
+          font-size: 18px;
+        }
+      }
+      .kvScroll {
+        display: none;
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secPanel {
+        .ttlBox {
+          margin: 0 0 20px;
+          .secTtlBox {
+            .sub {
+              font-size: 15px;
+            }
+            .secTtl {
+              font-size: 30px;
+            }
+          }
+        }
+        .newsBox {
+          .webgene-blog {
+            height: auto;
+            .webgene-item {
+              a {
+                display: block;
+                padding: 10px 0;
+              }
+              .time {
+                width: 100%;
+                margin: 0 0 5px;
+              }
+              .title {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .topSecTtlBox {
+      .sub {
+        font-size: 15px;
+      }
+      .secTtl {
+        font-size: 24px;
+      }
+    }
+    .sec03 {
+      .secPanel {
+        position: relative;
+        .photoBox {
+          max-width: 1100px;
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+        .txtBox {
+          position: static;
+          width: 100%;
+          max-width: 100%;
+          padding: 30px 20px;
+          .secTtl {
+            p {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 24px;
+            }
+          }
+          .txt {
+            margin: 0 0 40px;
+          }
+          .btnMore {
+            position: static;
+            margin: 0 auto;
+          }
+          .img {
+            position: static;
+            width: 80%;
+            max-width: 300px;
+            margin: 40px auto 0;
+          }
+        }
+      }
+    }
+    .listSec {
+      padding: 60px 0;
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            top: -5px;
+            left: -5px;
+            padding: 20px 20px 40px;
+            background: url(https://trust-logistics.jp/system_panel/uploads/images/top_list_sec_arrow.png)
+              right 5px bottom 5px no-repeat #ffffff;
+            background-size: 25px auto;
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      .secPanel {
+        position: relative;
+        .photoBox {
+          max-width: 1100px;
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+        .txtBox {
+          position: static;
+          width: 100%;
+          max-width: 100%;
+          padding: 30px 20px;
+          .secTtl {
+            p {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 24px;
+            }
+          }
+          .txt {
+            margin: 0 0 40px;
+          }
+          .btnMore02 {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 150px 0 60px;
+      .mvPanel {
+        .secTtl {
+          position: static;
+          width: 100%;
+          padding: 20px;
+          p {
+            font-size: 15px;
+          }
+          h2 {
+            font-size: 24px;
+          }
+        }
+      }
+      .ttlBox {
+        margin: 40px 0 20px;
+        .ttl {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      .listBox {
+        max-width: 500px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+          .dl {
+            padding: 15px;
+            background: url(https://trust-logistics.jp/system_panel/uploads/images/top_sec05_arrow.png)
+              left top no-repeat;
+            background-size: 20% auto;
+            .dt {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  feature
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .featureMain {
+    .topSection {
+      padding: 60px 0;
+      .titleBox {
+        margin: 0 0 20px;
+        .title {
+          max-width: 400px;
+        }
+        > p {
+          margin: 15px 0 0;
+          font-size: 18px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .photoBox {
+            .photo {
+              top: -5px;
+              left: -5px;
+            }
+          }
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  transport
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transportMain {
+    .sec01 {
+      .secContainer01 {
+        padding: 60px 0;
+        .secBox01 {
+          margin: 0 0 40px;
+          .chart {
+            max-width: 360px;
+            margin: 0 auto 20px;
+          }
+          .txtBox {
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+        .secBox02 {
+          margin: 0 0 40px;
+          padding: 50px 20px 20px;
+          .dl {
+            .dt {
+              p {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .secBox03 {
+          padding: 50px 20px 30px;
+          .check {
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 60px;
+          }
+          .dl {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            .dt {
+              font-size: 20px;
+            }
+            .btnMore {
+              max-width: 300px;
+              margin: 20px auto 0;
+            }
+          }
+        }
+      }
+      .secContainer02 {
+        padding: 60px 0;
+        .secBox {
+          padding: 20px;
+          .dl {
+            .dt {
+              p {
+                padding: 0 20px 0 0;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .listBox {
+          padding: 40px 0 0;
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            .dl {
+              .dt {
+                .em {
+                  font-size: 20px;
+                }
+                .span {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secBox {
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 24px;
+        }
+        .txt {
+          width: 100%;
+          margin: 0 0 30px;
+        }
+        .map {
+          position: static;
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  warehouse
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .warehouseMain {
+    .secContainer01 {
+      padding: 60px 0;
+      .secBox01 {
+        margin: 0 0 40px;
+        .photo {
+          max-width: 360px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          .ttl {
+            margin: 0 0 10px;
+            font-size: 20px;
+          }
+        }
+      }
+      .secBox02 {
+        .ttl {
+          p {
+            padding: 0 20px 0 0;
+            font-size: 20px;
+          }
+        }
+        .list {
+          padding: 20px;
+          .ul {
+            .li {
+              padding: 10px 10px;
+            }
+            .dl {
+              display: block;
+              .dt {
+                width: 100%;
+                margin: 0 0 5px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secContainer02 {
+      padding: 60px 0;
+      .secPanelList {
+        .secPanel {
+          + .secPanel {
+            margin: 40px 0 0;
+          }
+        }
+        .secBox {
+          top: -5px;
+          left: -5px;
+          .txtBox {
+            padding: 20px;
+            .ttl {
+              margin: 0 0 15px;
+              font-size: 20px;
+            }
+            .info {
+              .dl {
+                padding: 15px 0;
+                .dt {
+                  width: 90px;
+                }
+                .dd {
+                  width: calc(100% - 100px);
+                }
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .secBox {
+            display: flex;
+            .photo {
+              width: 45%;
+            }
+            .txtBox {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  trucks
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .trucksMain {
+    .sec01 {
+      padding: 60px 0;
+      .secBox02 {
+        .ttl {
+          h3 {
+            padding: 0 20px 0 0;
+            font-size: 20px;
+          }
+        }
+        .trucksTable {
+          .tr {
+            > * {
+              padding: 15px 20px;
+            }
+            .th {
+              width: 50%;
+            }
+            .td {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 50px 0 0;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 2);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .sec01 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 30px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .secPanel {
+        .pHead {
+          padding: 5px 10px;
+          .step {
+            position: relative;
+            top: -15px;
+            min-width: 50px;
+            .em {
+              font-size: 14px;
+            }
+            .span {
+              font-size: 20px;
+            }
+          }
+          .ttl {
+            margin: 0 0 0 10px;
+            font-size: 20px;
+          }
+        }
+        .pBody {
+          padding: 20px 15px;
+        }
+        .contactTtl {
+          font-size: 20px;
+        }
+        .contactItem {
+          .itemBox {
+            + .itemBox {
+              margin: 40px 0 0;
+            }
+            .ttl {
+              margin: 0 0 5px;
+              font-size: 18px;
+            }
+            .tel {
+              a {
+                font-size: 30px;
+              }
+            }
+            .btnContact {
+              max-width: 260px;
+            }
+          }
+        }
+      }
+      .arrow {
+        width: 30px;
+        margin: -4px auto 30px;
+      }
+      .secBox {
+        .txtBox {
+          padding: 0 0 20px;
+        }
+        .point {
+          .dl {
+            padding: 15px;
+            background: url(https://trust-logistics.jp/system_panel/uploads/images//flow_sec01_arrow_bg.png)
+              left top no-repeat;
+            background-size: 120px auto;
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .sec01 {
+      padding: 60px 0;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .txt {
+        p + p {
+          margin: 15px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secBox {
+        .dl {
+          top: -5px;
+          left: -5px;
+          padding: 15px;
+          .dt {
+            font-size: 20px;
+            margin: 0 0 10px;
+            padding: 0 0 5px;
+            border-bottom: 1px solid #75a996;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+        + .secBox {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .infoBox {
+        .dl {
+          display: block;
+          .dt {
+            width: 100%;
+            padding: 10px 15px;
+          }
+          .dd {
+            width: 100%;
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .sec01 {
+      padding: 60px 0;
+      .secTtl {
+        margin: 0 0 40px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .section {
+        + .section {
+          margin: 50px 0 0;
+        }
+        .secPanel {
+          .ttl {
+            padding: 10px 20px;
+            font-size: 18px;
+          }
+          .secBox {
+            padding: 20px;
+            .txtBox {
+              .txtTtl {
+                margin: 0 0 10px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .dataListBox {
+        .ul {
+          display: block;
+          max-width: 400px;
+          margin: -60px auto 0;
+          .li {
+            width: 100%;
+            margin: 60px 0 0;
+          }
+          .dl {
+            .dt {
+              position: absolute;
+              top: -30px;
+              left: -15px;
+              width: 140px;
+              height: 80px;
+              font-size: 18px;
+              font-weight: bold;
+              color: #ffffff;
+              text-indent: -1em;
+              background: url(https://trust-logistics.jp/system_panel/uploads/images/about_sec02_band.png)
+                no-repeat;
+              background-size: 100% auto;
+              p {
+                transform: rotate(-10deg);
+                -moz-transform: rotate(-10deg);
+                -webkit-transform: rotate(-10deg);
+              }
+            }
+
+            .dd {
+              padding: 30px 0 20px;
+
+              .em {
+                min-width: 0;
+                font-size: 40px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .photoBox {
+            .photo {
+              top: -5px;
+              left: -5px;
+            }
+          }
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .secBox {
+        .inner {
+          top: -5px;
+          left: -5px;
+        }
+        .txtBox {
+          padding: 20px;
+          .num {
+            position: static;
+            display: flex;
+            width: 80px;
+            height: 80px;
+            margin: 0 0 10px;
+            .span {
+              font-size: 14px;
+            }
+            .em {
+              font-size: 20px;
+            }
+          }
+          .ttl {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  voice
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .voiceMain {
+    .sec01 {
+      padding: 50px 0 80px;
+      .secBoxList {
+        padding: 0;
+      }
+      .secBox {
+        .inner {
+          top: -5px;
+          left: -5px;
+        }
+        .txtBox {
+          padding: 20px;
+          .num {
+            position: static;
+            display: flex;
+            width: 80px;
+            height: 80px;
+            margin: 0 0 10px;
+            .span {
+              font-size: 14px;
+            }
+            .em {
+              font-size: 20px;
+            }
+          }
+          .ttl {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 60px 0;
+      .logo {
+        position: static;
+        width: 140px;
+        margin: 0 auto 20px;
+      }
+      .txt {
+        margin: 0 0 30px;
+      }
+      .nameBox {
+        .em {
+          font-size: 20px;
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 0;
+      .infoBox {
+        .dl {
+          display: block;
+          .dt {
+            display: block;
+            width: 100%;
+            min-height: 0;
+            padding: 10px;
+            text-align: left;
+          }
+          .dd {
+            display: block;
+            width: 100%;
+            min-height: 0;
+            padding: 10px;
+          }
+        }
+      }
+      .mapBox {
+        margin: 60px 0 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 50px 0 80px;
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .telBox {
+        max-width: 350px;
+        .tel {
+          a {
+            p {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 26px;
+            }
+          }
+          + p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .form {
+        .checkList {
+          .ul {
+            padding: 0;
+          }
+        }
+      }
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          &::before {
+            display: none;
+          }
+          &.line {
+            .dt {
+              padding: 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+
+            .span {
+              width: auto;
+              min-width: 0;
+              margin-right: 10px;
+              padding: 0;
+              font-size: 16px;
+              text-align: left;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-bottom: none;
+          }
+        }
+        .radioBox {
+          padding: 0;
+        }
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -10px;
+          .webgene-item {
+            width: calc((100% / 2) - 10px);
+            margin: 40px 0 0 10px;
+            .photo {
+              position: relative;
+              height: 0;
+              margin: 0 0 10px;
+              padding: 0 0 80%;
+              img {
+                @include cover-image;
+              }
+            }
+            .title {
+              min-height: 0;
+              margin: 0;
+            }
+            .more {
+              p {
+                padding: 5px 0;
+                font-size: 12px;
+                background: url(https://s-9891413.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                  right 2px center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+          .thumb-item {
+            &.slider {
+              .li {
+                > div {
+                  overflow: hidden;
+                  position: relative;
+                  padding: 0 0 100%;
+                }
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+          .slick-prev {
+            left: -20px;
+          }
+          .slick-next {
+            right: -20px;
+          }
+        }
+        .btnBackBox {
+          margin: 50px 0 0;
+        }
+        .btnBack {
+          margin: 40px auto 0;
+        }
+      }
+    }
+  }
+}

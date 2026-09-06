@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #ffffff;
+    .logo {
+      width: 50px;
+      a {
+        display: block;
+      }
+    }
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 50px;
+      height: 40px;
+      z-index: 10000;
+      .span {
+        background: #000000;
+        position: absolute;
+        left: 50%;
+        width: 30px;
+        height: 3px;
+        transform: translateX(-50%);
+        transition: 0.4s;
+        &:nth-of-type(1) {
+          top: 10px;
+        }
+        &:nth-of-type(2) {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:nth-of-type(3) {
+          bottom: 10px;
+        }
+      }
+      &.is-open {
+        .span:nth-of-type(1) {
+          transform: translate(-50%, 8px) rotate(-45deg);
+        }
+        .span:nth-of-type(2) {
+          opacity: 0;
+        }
+        .span:nth-of-type(3) {
+          transform: translate(-50%, -8px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 60px;
+    z-index: 999;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0;
+    transition: 0.6s;
+    &.active {
+      top: 69px;
+      z-index: 1000;
+      opacity: 1;
+    }
+    .navList {
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      .ul {
+        font-size: 15px;
+        .li {
+          text-align: left;
+          + .li {
+            border-top: 1px solid #cccccc;
+          }
+        }
+        a {
+          display: block;
+          padding: 10px 20px;
+          &.spHidden {
+            display: none;
+          }
+        }
+        .contact {
+          a {
+            color: #ffffff;
+            background: #97ae51;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 69px 0 0;
+  }
+  .pageTitlePanel {
+    padding: 30px 20px 30px;
+    .pageTitle {
+      font-size: 24px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    .pageSecTtl {
+      padding: 0 0 20px;
+      font-size: 20px;
+      background: url(https://taihei-co-ltd.com/system_panel/uploads/images/page_sec_ttl_line.png)
+        center bottom no-repeat;
+      background-size: 90px auto;
+    }
+    &.white {
+      .pageSecTtl {
+        background: url(https://taihei-co-ltd.com/system_panel/uploads/images/page_sec_ttl_line_white.png)
+          center bottom no-repeat;
+        background-size: 90px auto;
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0;
+      .secBox {
+        .left {
+          margin: 0 0 20px;
+          .secTtlBox {
+            margin: 0 0 20px;
+            .sub {
+              font-size: 24px;
+            }
+            .secTt {
+              margin: 3px 0 0;
+            }
+          }
+        }
+        .right {
+          .tel {
+            margin: 0 0 15px;
+            a {
+              p {
+                font-size: 16px;
+              }
+              .em {
+                font-size: 24px;
+              }
+            }
+          }
+          .btnContact {
+            display: inline-block;
+            a {
+              display: block;
+              width: 180px;
+              padding: 5px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 20px;
+              background: #97ae51;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .right {
+            text-align: right;
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 20px;
+      .pagetop {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 40px;
+      }
+      .footBox {
+        text-align: left;
+        .left {
+          .logo {
+            width: 80px;
+            margin: 0 0 30px;
+          }
+        }
+        .right {
+          display: none;
+        }
+      }
+      .copy {
+        margin: 50px 0 0;
+        text-align: center;
+      }
+    }
+  }
+}

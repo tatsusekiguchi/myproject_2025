@@ -1,0 +1,400 @@
+// ▽メイン▽
+main#visit
+    .topContainer
+        .topKv
+            img(src=(root_path || '') + "image/visit/top_kv_pc.png", class="switch" alt="")
+        .secContainer
+            .moveCloudArea01
+                .moveCloud.scroll-infinity__cloud
+                    img(src=(root_path || '') + "image/common/move_cloud.png", alt="")
+            .moveCloudArea02
+                .moveCloud.scroll-infinity__cloud.delay
+                    img(src=(root_path || '') + "image/common/move_cloud.png", alt="")
+            .topPanel
+                .secBox
+                    .pTtl.green
+                        h1 見学案内
+                        span けんがくあんない
+                    .txt
+                        p なごや遊花幼稚園では、<br>入園をお考えの皆さまに園見学を受け付けています。<br>見学は指定日に限り開催いたします。<br>子どもたちの様子や園舎・園庭の雰囲気を<br>実際にご覧いただけます。<br>参加には事前に予約が必要です。<br>お子さまとご一緒の参加も歓迎いたします。
+                    .btnMore.btnMoreBlueDeep.btnPaging
+                        a(href="#section__important")
+                            div
+                                p くわしく見る
+                //- .secBox
+                //-     .pTtl.blue
+                //-         h2 概要
+                //-         span がいよう
+            //- .overviewPanel
+            //-     .overviewTable
+            //-         table
+            //-             tbody
+            //-                 tr
+            //-                     th 対象児
+            //-                     td 満3歳（誕生月の翌月より参加可能）
+            //-                 tr
+            //-                     th 開催日時
+            //-                     td 月〜金　0：00〜0：00<br>月〜金　0：00〜0：00
+            //-                 tr
+            //-                     th 費用
+            //-                     td 無料
+            //-                 tr
+            //-                     th 定員
+            //-                     td 0名
+            //-                 tr
+            //-                     th 持ち物
+            //-                     td テキストが入ります
+            //-                 tr
+            //-                     th 申し込み方法
+            //-                     td テキストが入ります
+            //-                 tr
+            //-                     th 注意事項
+            //-                     td テキストが入ります
+    #section__important
+        .secTtl
+            h2 園が大切にしていること
+            span えんがたいせつにしていること
+        .secContainer
+            .secPanel
+                .kvBox
+                    .kv
+                        img(src=(root_path || '') + "image/visit/important_photo_01_pc.png", class="switch" alt="")
+                    .circle
+                        dl
+                            dt たいせつ<br>にしていること
+                            dd 01
+                    .title
+                        h3 あそびのなかで、すくすく学ぶ
+                .txt
+                    .ttl
+                        p あそびのなかで、すくすく学ぶ
+                    p 遊びのなかには、感情・思考・工夫・表現など、子どもたちがこれから育んでいく、たくさんの“生きる力”がつまっています。成功体験も、失敗体験も、自分の力に変えていきます。心から遊び込める環境だからこそ、自分の気持ちに気づいたり、誰かの思いにそっと寄り添ったり、そんなやりとりが少しずつ芽生えていくのです。
+            .secPanel
+                .kvBox
+                    .kv
+                        img(src=(root_path || '') + "image/visit/important_photo_02_pc.png", class="switch" alt="")
+                    .circle
+                        dl
+                            dt たいせつ<br>にしていること
+                            dd 02
+                    .title
+                        h3 本物にふれて、感性を育む
+                .txt
+                    .ttl
+                        p 本物にふれて、感性を育む
+                    p 子どもたちには、「本物」に出会う機会が大切です。園では、五感を使って感じる体験を大切にしています。たとえば、年少から年長まで取り組む鼓笛隊では、外部の専門講師による指導を定期的に重ねながら、音を奏でる楽しさや、仲間と一緒に演奏する難しさや喜びを味わいます。本物との出会いが、子どもたちの感性と心を育てていきます。
+            .secPanel
+                .kvBox
+                    .kv
+                        img(src=(root_path || '') + "image/visit/important_photo_03_pc.png", class="switch" alt="")
+                    .circle
+                        dl
+                            dt たいせつ<br>にしていること
+                            dd 03
+                    .title
+                        h3 最後までやりぬく力をのばす
+                .txt
+                    .ttl
+                        p 最後までやりぬく力をのばす
+                    p うまくいかなくてもすぐに投げ出さず、自分で考えてみる、工夫してみる。それを繰り返しながら、子どもたちは「最後までやりぬく力」を身につけていきます。鼓笛隊の発表や作品展の制作など、小さなチャレンジを重ねて「できた！」という喜びを味わうことが、大きな自信につながります。子どもたちが前向きにやりとげようとする気持ちを育んでいます。
+    #section__schedule
+        .secTtl
+            h2 園児の1日
+            span えんじのいちにち
+        .scheduleContainer.tabContainer
+            .tabPanel
+                .tabList
+                    ul
+                        li.tabBtn.active 乳児
+                        li.tabBtn 幼児
+                .tabItem
+                    .secContainer
+                        .secPanel
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_1_1.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.am
+                                        p AM 7:30~
+                                    .txt
+                                        p 受け入れ<br>自由遊び
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_1_2.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.am
+                                        p AM 10:00~
+                                    .txt
+                                        p 主活動
+                                        p
+                                            span （2才クラス｜AM10:30〜）
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_1_3.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.am
+                                        p AM 11:00~
+                                    .txt
+                                        p 給食
+                                        p
+                                            span （2才クラス｜AM11:30〜）
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_1_4.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 12:00~
+                                    .txt
+                                        p 午睡
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_1_5.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 14:20~
+                                    .txt
+                                        p おやつ<br>自由遊び
+                                        p
+                                            span （満3才児｜PM14:30降園）
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_1_6.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.multi.pm
+                                        p
+                                            span PM
+                                            em 16:30~<br>18:30
+                                    .txt
+                                        p 順次降園<br>自由保育
+                                        p
+                                            span.spLeft （保護者様の通勤時間と勤務時間を合わせた時間が<br class="pcBreak">お預かりの時間となります。）
+                .tabItem
+                    .secContainer
+                        .secPanel
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_1.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.am
+                                        p AM 7:30~
+                                    .txt
+                                        p 受け入れ
+                                        p
+                                            span （1号認定のお子さまは8:30~）
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_2.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.am
+                                        p AM 10:30~
+                                    .txt
+                                        p 主活動
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_3.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 12:00~
+                                    .txt
+                                        p 給食
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_4.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 13:00~
+                                    .txt
+                                        p 学年ごとに活動<br>自由遊び
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_5.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 14:30~
+                                    .txt
+                                        p 降園<br>ホームルーム
+                                        p
+                                            span （預かり保育開始）
+                            .secBox
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_6.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 14:45~
+                                    .txt
+                                        p おやつ<br>自由遊び
+                            .secBox.note
+                                .photo
+                                    img(src=(root_path || '') + "image/visit/daily_photo_2_7.png", alt="")
+                                .txtBox
+                                    .timeBox.poppins.pm
+                                        p PM 16:30~
+                                    .txt.noWrap
+                                        p
+                                            em ホームルーム
+                                            span (預かり保育終了)
+                                        p 順次降園
+                                        p
+                                            em 自由遊び
+                                            span ※最長PM18:30まで預かり保育
+                                        aside
+                                            p
+                                                span （2号認定のお子さまは保護者様の通勤時間と勤務時間を合わせた時間が<br class="pcBreak">お預かりの時間となります。）
+                                            p
+                                                span （1号認定のお子さまは追加料金が必要です。）
+        .staff
+            img(src=(root_path || '') + "image/visit/schedule_staff.png", alt="")
+    #section__event
+        .secTtl
+            h2 年間スケジュール
+            span ねんかんスケジュール
+        .tabPanel
+            .seasonButtonList
+                ul
+                    li
+                        .seasonButton.spring
+                            div
+                                p 春
+                    li
+                        .seasonButton.summer
+                            div
+                                p 夏
+                    li
+                        .seasonButton.autumn
+                            div
+                                p 秋
+                    li
+                        .seasonButton.winter
+                            div
+                                p 冬
+                    li
+                        .seasonButton.every
+                            div
+                                p 毎月
+            .secContainer
+                .photoList
+                    .photo
+                        img(src=(root_path || '') + "image/support/library_photo_list_sp.png", class="switch" alt="")
+                .eventPanel
+                    .eventItemBox.spring
+                        .ttl
+                            p 春のイベント
+                        .monthlyList
+                            .monthlyBox
+                                dl
+                                    dt 4月
+                                    dd
+                                        ul
+                                            li 入園式
+                            .monthlyBox
+                                dl
+                                    dt 5月
+                                    dd
+                                        ul
+                                            li こどもの日のつどい
+                            .monthlyBox
+                                dl
+                                    dt 6月
+                                    dd
+                                        ul
+                                            li 歯科検診
+                                            li 健康診断
+                        aside
+                            p 「*」は、家族も一緒に楽しむイベントです。
+                    .eventItemBox.summer
+                        .ttl
+                            p 夏のイベント
+                        .monthlyList
+                            .monthlyBox
+                                dl
+                                    dt 7月
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 8月
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 9月
+                                    dd
+                                        ul
+                                            li イベント
+                        aside
+                            p 「*」は、家族も一緒に楽しむイベントです。
+                    .eventItemBox.autumn
+                        .ttl
+                            p 秋のイベント
+                        .monthlyList
+                            .monthlyBox
+                                dl
+                                    dt 10月
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 11月
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 12月
+                                    dd
+                                        ul
+                                            li イベント
+                        aside
+                            p 「*」は、家族も一緒に楽しむイベントです。
+                    .eventItemBox.winter
+                        .ttl
+                            p 秋のイベント
+                        .monthlyList
+                            .monthlyBox
+                                dl
+                                    dt 1月
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 2月
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 3月
+                                    dd
+                                        ul
+                                            li イベント
+                        aside
+                            p 「*」は、家族も一緒に楽しむイベントです。
+                    .eventItemBox.every
+                        .ttl
+                            p 毎月のイベント
+                        .monthlyList
+                            .monthlyBox
+                                dl
+                                    dt 1日
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 10日
+                                    dd
+                                        ul
+                                            li イベント
+                            .monthlyBox
+                                dl
+                                    dt 30日
+                                    dd
+                                        ul
+                                            li イベント
+                        aside
+                            p 「*」は、家族も一緒に楽しむイベントです。
+// △メイン△

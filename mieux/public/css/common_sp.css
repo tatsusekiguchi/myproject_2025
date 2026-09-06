@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+.spBreak {
+  display: block;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header .headWrap .headTtl {
+  top: 40px;
+  left: 20px;
+  padding: 0 0 0 35px;
+  font-size: 12px;
+}
+.header .headWrap .leftIcon {
+  top: 37px;
+  left: 20px;
+  width: 14px;
+  height: 44px;
+}
+.header .headWrap .rightIcon {
+  top: 50px;
+  right: 20px;
+  width: 60px;
+  max-width: 60px;
+  height: 14px;
+}
+
+.fixedNavBox {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+.fixedNavBox ul {
+  display: flex;
+  border-top: 1px solid #ffffff;
+}
+.fixedNavBox ul li {
+  width: 50%;
+}
+.fixedNavBox ul li a {
+  padding: 15px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(255, 233, 229, 0.8);
+}
+.fixedNavBox ul li + li {
+  border-left: 1px solid #ffffff;
+}
+.fixedNavBox ul li + li a {
+  background: none;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  padding: 40px 20px;
+}
+.navBox .navHead {
+  margin: 0 0 40px;
+}
+.navBox .navHead .leftIcon {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.navBox .navHead .rightIcon {
+  width: 60px;
+  max-width: 60px;
+  height: 16px;
+}
+.navBox .navBody {
+  padding: 0 20px;
+}
+.navBox .navContainer {
+  max-width: 1540px;
+  margin: 0 auto;
+}
+.navBox .navContainer .leftPanel {
+  margin: 0 0 40px;
+}
+.navBox .navContainer .leftPanel .navList ul li + li {
+  margin: 20px 0 0;
+}
+.navBox .navContainer .leftPanel .navList ul li a em {
+  margin: 0 10px 0 0;
+  font-size: 26px;
+}
+.navBox .navContainer .leftPanel .navList ul li a span {
+  font-size: 11px;
+}
+.navBox .navContainer .rightPanel .navList {
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+.navBox .navContainer .rightPanel .navList ul li + li {
+  margin: 25px 0 0;
+}
+.navBox .navContainer .rightPanel .bottomBox {
+  margin: auto 0 0;
+}
+.navBox .navContainer .rightPanel .bottomBox .logo {
+  max-width: 180px;
+  width: 180px;
+  margin: 0 0 40px;
+}
+.navBox .navContainer .rightPanel .bottomBox .info .txt {
+  margin: 0 0 10px;
+  font-size: 10px;
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox {
+  display: flex;
+  flex-direction: column;
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox .copy {
+  order: 2;
+  display: block;
+  font-size: 10px;
+}
+.navBox .navContainer .rightPanel .bottomBox .info .copyBox .privacy {
+  display: none;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 70px 0 0;
+}
+.footer .footContact .contactList {
+  max-width: 660px;
+  width: 100%;
+}
+.footer .footContact .contactList ul li + li {
+  margin: 15px 0 0;
+}
+.footer .footContact .contactList ul li .photo {
+  border-radius: 125px;
+}
+.footer .footContact .contactList ul li .txtBox .ttlBox {
+  margin: 0 0 15px;
+}
+.footer .footContact .contactList ul li .txtBox .ttlBox .ttl01 {
+  font-size: 30px;
+}
+.footer .footContact .contactList ul li .txtBox .ttlBox .ttl02 {
+  font-size: 18px;
+}
+.footer .footContact .contactList ul li .txtBox .btnMore span {
+  padding: 0 30px 0 0;
+  font-size: 15px;
+  background: url("../image/common/btn_more_arrow_01_white.png") right center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footPanel {
+  padding: 60px 0 25px;
+}
+.footer .footPanel .footBox {
+  width: 100%;
+}
+.footer .footPanel .infoBox01 {
+  margin: 0 0 70px;
+}
+.footer .footPanel .infoBox01 .logo {
+  width: 187px;
+  max-width: 187px;
+  margin: 0 0 40px;
+}
+.footer .footPanel .infoBox01 .txt {
+  font-size: 10px;
+}
+.footer .footPanel .infoBox02 .sns {
+  margin: 0 0 10px;
+}
+.footer .footPanel .infoBox02 .sns ul li {
+  width: 15px;
+}
+.footer .footPanel .infoBox02 .sns ul li + li {
+  margin: 0 0 0 10px;
+}
+.footer .footPanel .infoBox02 .copyBox {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footPanel .infoBox02 .copyBox .copy {
+  order: 2;
+  display: block;
+  font-size: 10px;
+}
+.footer .footPanel .infoBox02 .copyBox .privacy {
+  display: none;
+}

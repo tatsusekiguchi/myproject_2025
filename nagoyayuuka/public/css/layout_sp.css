@@ -1,0 +1,2840 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topMvContainer {
+  height: 100svh;
+  padding: 100px 0 0;
+}
+#top .topMvContainer .moveCloudArea {
+  display: none;
+}
+#top .topMvContainer .kvBgBlue {
+  position: absolute;
+  top: 100px;
+  right: -120px;
+  max-width: 300px;
+  width: 300%;
+}
+#top .topMvContainer .kvSlidePanel {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 0 50px;
+}
+#top .topMvContainer .kvSlidePanel .kvSlide--pc {
+  display: none;
+}
+#top .topMvContainer .kvSlidePanel .kvSlide {
+  position: relative;
+  right: calc(25vw + 35px);
+  width: 125vw;
+}
+#top .topMvContainer .kvSlidePanel .kvTitleBox {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#top .topMvContainer .kvSlidePanel .kvTitleBox .kvTitle h1 {
+  display: inline;
+  padding: 0.3em;
+  line-height: 2;
+  font-size: 21px;
+}
+#top .topMvContainer .kvSlidePanel .kvTitleBox .copy {
+  margin: 10px 0 0;
+  font-size: 8px;
+}
+#top .topMvContainer .kvIconList {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 20px;
+}
+#top .topMvContainer .kvIconList .kvBgBlack {
+  position: absolute;
+  top: -20px;
+  left: -70px;
+  width: 160px;
+}
+#top .topMvContainer .kvIconList .kvIcon01 {
+  position: relative;
+  top: 30px;
+  width: 115px;
+}
+#top .topMvContainer .kvIconList .kvIcon02 {
+  width: 140px;
+}
+#top #section__concept {
+  overflow: hidden;
+  min-height: 800px;
+  padding: 80px 20px;
+}
+#top #section__concept .bgMountain {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 1180px;
+}
+#top #section__concept .secContainer .secBox .secTtl {
+  margin: 0 0 30px;
+}
+#top #section__concept .secContainer .secBox .secTtl h2 {
+  font-size: 18px;
+}
+#top #section__concept .secContainer .secBox .txt {
+  font-size: 13px;
+  line-height: 2.5;
+}
+#top #section__concept .secContainer .btmBox .btnMorePink {
+  margin: 0 auto;
+}
+#top #section__concept .secContainer .btmBox ul {
+  max-width: 100%;
+  margin: 20px 0 0;
+}
+#top #section__concept .secContainer .btmBox ul li {
+  margin: 0 1.2em 1em 0;
+  padding: 0 0 0 1.3em;
+}
+#top #section__concept .secContainer .btmBox ul li a {
+  font-size: 13px;
+}
+#top #section__concept .moveCarArea .moveCar {
+  width: 110px;
+}
+#top #section__info {
+  margin: 0 0 70px;
+}
+#top #section__info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background: url("../image/top/info_sec_bg_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#top #section__info .secTtl {
+  width: 290px;
+  max-width: 290px;
+  margin: 0 0 50px;
+  padding: 15px 20px;
+  font-size: 28px;
+  border-radius: 0 0 30px 0;
+  background: #f88f87;
+}
+#top #section__info .listPanel {
+  padding: 0;
+}
+#top #section__info .listPanel .infoList .listItem {
+  margin: 0 10px;
+}
+#top #section__info .listPanel .infoList .listItem .inner {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  padding: 25px;
+}
+#top #section__info .listPanel .infoList .listItem .circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+}
+#top #section__info .listPanel .infoList .listItem .photo img {
+  border-radius: 15px;
+}
+#top #section__info .listPanel .infoList .listItem .cate {
+  width: 70%;
+  max-width: 160px;
+  margin: -15px auto 5px;
+  padding: 10px;
+  font-size: 12px;
+}
+#top #section__info .listPanel .infoList .listItem .title {
+  min-height: 50px;
+  font-size: 16px;
+}
+#top #section__info .listPanel .slick-list {
+  padding: 40px 20px 0 !important;
+}
+#top #section__guide {
+  padding: 50px 0 0;
+  background: none;
+}
+#top #section__guide::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 20px);
+  max-width: 500px;
+  height: 100%;
+  z-index: -1;
+  background: url("../image/top/support_house_sp.png") right bottom no-repeat;
+  background-size: 100% auto;
+}
+#top #section__guide .guideContainer {
+  position: relative;
+  padding: 40px 0 0;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .secTtlBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 20px);
+  margin: 0;
+  padding: 10px 20px 10px 30px;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .secTtlBox .secTtl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .secTtlBox .secTtl h2 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.15em;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .secTtlBox .secTtl span {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .inner {
+  padding: 20px 20px 0;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .subTtl {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .txt {
+  margin: 0 0 30px;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .btmBox .btnMore {
+  margin: 0 auto;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .btmBox ul {
+  max-width: 100%;
+  margin: 20px 0 0;
+  text-align: center;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .btmBox ul li {
+  margin: 0 1.2em 1em 0;
+  padding: 0 0 0 1.3em;
+}
+#top #section__guide .guideContainer .secPanel .txtBox .btmBox ul li a {
+  font-size: 11px;
+}
+#top #section__guide .guideContainer01 {
+  margin: 0 0 80px;
+}
+#top #section__guide .guideContainer01 .secPanel .txtBox .secTtlBox {
+  color: #ffffff;
+  border-radius: 10px 0 0 10px;
+  background: #8ac45f;
+}
+#top #section__guide .guideContainer02 .secPanel .txtBox .secTtlBox {
+  color: #ffffff;
+  border-radius: 10px 0 0 10px;
+  background: #84c7e0;
+}
+#top #section__guide .supportContainer {
+  margin: 0;
+  padding: 100px 0 0;
+}
+#top #section__guide .supportContainer .topTitle {
+  position: relative;
+  top: -40px;
+  margin: 0 0 15px;
+  padding: 0 20px;
+}
+#top #section__guide .supportContainer .topTitle h2 {
+  font-size: 35px;
+}
+#top #section__guide .supportContainer .subTitle {
+  position: relative;
+  top: -40px;
+  padding: 0 0 120px;
+}
+#top #section__guide .supportContainer .subTitle h3 {
+  padding: 0.3em 0.8em 0.3em 20px;
+  font-size: 25px;
+  line-height: 1.7;
+}
+#top #section__guide .supportContainer .subTitle h3:after {
+  display: none;
+}
+#top #section__guide .supportContainer .arrow {
+  display: none;
+}
+#top #section__guide .supportContainer .secBox {
+  display: block;
+  padding: 20px 20px 80px 40px;
+}
+#top #section__guide .supportContainer .secBox .inner {
+  max-width: 330px;
+  margin: 0 auto;
+}
+#top #section__guide .supportContainer .secBox .ttl {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+#top #section__guide .supportContainer .secBox .txtBox .btmBox {
+  padding: 50px 0 0;
+}
+#top #section__guide .supportContainer .secBox .txtBox .btmBox .btnMore {
+  margin: 0 auto;
+}
+#top #section__guide .supportContainer .secBox .txtBox .btmBox ul {
+  max-width: 100%;
+  margin: 20px 0 0;
+  text-align: center;
+}
+#top #section__guide .supportContainer .secBox .txtBox .btmBox ul li {
+  margin: 0 1.2em 1em 0;
+  padding: 0 0 0 1.3em;
+}
+#top #section__guide .supportContainer .secBox .txtBox .btmBox ul li a {
+  font-size: 11px;
+}
+#top #section__guide .supportContainer .btmPhoto {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+#guide .topContainer {
+  padding: 190px 0 60px;
+}
+#guide .topContainer .moveCloudArea01,
+#guide .topContainer .moveCloudArea02 {
+  display: none;
+}
+#guide .topContainer .topPanel {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+#guide .topContainer .topPanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 40px);
+  height: 970px;
+  margin: 0 auto;
+  background: url("../image/guide/top_cloud_bg_01_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#guide .topContainer .topPanel .secBox {
+  position: relative;
+}
+#guide .topContainer .topPanel .secBox + .secBox {
+  margin: 50px 0 0;
+}
+#guide .topContainer .topPanel .pTtl {
+  padding: 0 0 30px;
+}
+#guide .topContainer .topPanel .pTtl h1,
+#guide .topContainer .topPanel .pTtl h2 {
+  font-size: 28px;
+}
+#guide .topContainer .topPanel .pTtl span {
+  font-size: 12px;
+}
+#guide .topContainer .topPanel .txt {
+  max-width: calc(100% - 120px);
+  margin: 0 auto;
+}
+#guide .topContainer .flowPanel {
+  padding: 20px 20px 40px;
+}
+#guide .topContainer .flowPanel .stepList {
+  margin: -40px 0 0;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dt {
+  width: 125px;
+  height: 125px;
+  font-size: 16px;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dt span {
+  position: relative;
+  top: -10px;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd {
+  margin: -20px 0 0;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd .txt {
+  font-size: 12px;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd .txt em {
+  font-size: 18px;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd .detail {
+  margin: 20px 0 0;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd .detail dl + dl {
+  margin: 20px 0 0;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd .detail dl dt {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+}
+#guide .topContainer .flowPanel .stepList .stepBox > dl > dd .detail dl dd {
+  font-size: 18px;
+}
+#guide .topContainer .flowPanel .btmBox {
+  padding: 40px 0 0;
+}
+#guide .topContainer .flowPanel .btmBox ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  margin: 0 auto;
+}
+#guide .topContainer .flowPanel .btmBox ul .prev,
+#guide .topContainer .flowPanel .btmBox ul .next {
+  width: 9px;
+  cursor: pointer;
+}
+#guide .topContainer .flowPanel .btmBox ul .pager {
+  margin: 0 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+#guide .topContainer .divisionPanel {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+}
+#guide .topContainer .divisionPanel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  max-width: 332px;
+  height: 1755px;
+  margin: 0 auto;
+  background: url("../image/guide/top_cloud_bg_02_sp.png") no-repeat;
+  background-size: cover;
+}
+#guide .topContainer .divisionPanel .pTtl {
+  margin: 0 0 30px;
+  padding: 40px 0 0;
+}
+#guide .topContainer .divisionPanel .pTtl h1,
+#guide .topContainer .divisionPanel .pTtl h2 {
+  font-size: 28px;
+}
+#guide .topContainer .divisionPanel .pTtl span {
+  font-size: 12px;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox + .divisionBox {
+  margin: 40px 0 0;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox .balloon {
+  width: 196px;
+  padding: 5px;
+  font-size: 20px;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox .balloon:after {
+  bottom: -7px;
+  width: 12px;
+  height: 7px;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox .photo {
+  max-width: 375px;
+  margin: 15px auto;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox .photo03 {
+  margin: 15px auto;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox dl dt {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+#guide .topContainer .divisionPanel .divisionList .divisionBox dl dd {
+  max-width: 250px;
+  font-size: 12px;
+}
+#guide .logoTextContainer {
+  padding: 20px 0;
+}
+#guide .logoTextContainer .slideBox ul li {
+  width: 80%;
+  max-width: 220px;
+  margin: 0 5px;
+}
+#guide #section__recruitment {
+  padding: 40px 0 70px 20px;
+}
+#guide #section__recruitment .secTtl {
+  margin: 0 0 30px;
+}
+#guide #section__recruitment .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#guide #section__recruitment .secTtl span {
+  font-size: 12px;
+}
+#guide #section__recruitment .recruitTablePanel {
+  overflow-x: scroll;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table th,
+#guide #section__recruitment .recruitTablePanel .recruitTable table td {
+  padding: 12px 10px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table thead .sideSpacer {
+  width: 180px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table thead .colHead {
+  font-size: 12px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table tbody .rowHead {
+  font-size: 12px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table tbody .rowHead span {
+  font-size: 12px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table tbody .sideLabel01 {
+  width: 60px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table tbody .sideLabel01 span {
+  width: 25px;
+  font-size: 12px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table tbody .rowHead {
+  width: 120px;
+}
+#guide #section__recruitment .recruitTablePanel .recruitTable table tbody .row {
+  font-size: 12px;
+}
+#guide #section__schedule .scheduleBg {
+  padding: 0 20px;
+}
+#guide #section__schedule .scheduleBg:before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  width: max(140vw, 1128px);
+  aspect-ratio: 1128/1300;
+  margin: 0 auto;
+  background: url("../image/guide/schedule_bg_circle_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#guide #section__schedule .secContainer {
+  top: -90px;
+}
+#guide #section__schedule .secContainer .secPanel {
+  top: -5px;
+  left: -5px;
+  border: 1px solid #eea951;
+}
+#guide #section__schedule .secContainer .secBox01 {
+  padding: 0 20px 25px;
+}
+#guide #section__schedule .secContainer .secBox01 .inner {
+  width: 100%;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox {
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .secTtl {
+  max-width: 200px;
+  margin: 0 auto 20px;
+  padding: 20px 10px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .secTtl h2 {
+  font-size: 28px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .secTtl span {
+  font-size: 12px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .title {
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto 20px;
+  padding: 0 0 8px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .title span {
+  font-size: 8px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .title p {
+  font-size: 14px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .title p::before, #guide #section__schedule .secContainer .secBox01 .txtBox .title p::after {
+  width: 8px;
+  height: 8px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList dl {
+  padding: 5px 20px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList dl + dl {
+  margin: 10px 0 0;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList dl dt {
+  width: 50%;
+  font-size: 12px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList dl dd {
+  display: table-cell;
+  font-size: 12px;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList .time01 {
+  color: #f88f87;
+  background: #f7dfd3;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList .time01 dt {
+  border-right: 1px solid #f88f87;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList .time02 {
+  color: #ffffff;
+  background: #f88f87;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList .time02 dt {
+  border-right: 1px solid #ffffff;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList .time03 {
+  color: #ffffff;
+  background: #eea951;
+}
+#guide #section__schedule .secContainer .secBox01 .txtBox .timeList .time03 dt {
+  border-right: 1px solid #ffffff;
+}
+#guide #section__schedule .secContainer .secBox01 .chartBox {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#guide #section__schedule .secContainer .secBox02 {
+  padding: 0 20px 60px;
+}
+#guide #section__schedule .secContainer .secBox02 .secTtl {
+  max-width: 200px;
+  margin: 0 auto 40px;
+  padding: 20px 10px;
+}
+#guide #section__schedule .secContainer .secBox02 .secTtl h2 {
+  font-size: 28px;
+}
+#guide #section__schedule .secContainer .secBox02 .secTtl span {
+  font-size: 12px;
+}
+#guide #section__schedule .secContainer .secBox02 .inner {
+  width: 100%;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox + .divisionBox {
+  margin: 45px 0 0;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .topBox .division {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .topBox .balloon {
+  position: relative;
+  width: 100%;
+  max-width: 285px;
+  font-size: 18px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .topBox .balloon:after {
+  bottom: -7px;
+  width: 12px;
+  height: 7px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .topBox .term {
+  max-width: 160px;
+  margin: 25px auto 0;
+  font-size: 16px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .title {
+  width: 100%;
+  max-width: 150px;
+  margin: 20px auto 0;
+  padding: 0 0 10px;
+  text-align: center;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .title p {
+  position: relative;
+  font-size: clamp(14px, 2vw, 25px);
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .title p::before, #guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .title p::after {
+  width: 8px;
+  height: 8px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .chart {
+  margin: 30px auto 0;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .chart01 {
+  max-width: 350px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox .chart02 {
+  max-width: 350px;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox aside {
+  max-width: 350px;
+  margin: 15px auto 0;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox aside p {
+  padding: 0 0 0 35px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+#guide #section__schedule .secContainer .secBox02 .divisionPanel .divisionBox aside p + p {
+  margin: 7px 0 0;
+}
+#guide #section__schedule .btmContainer {
+  padding: 0;
+}
+#guide #section__schedule .btmContainer .txtBox {
+  margin: -30px 0 -60px;
+}
+#guide #section__schedule .btmContainer .txtBox dl {
+  text-align: center;
+}
+#guide #section__schedule .btmContainer .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+#guide #section__schedule .btmContainer .txtBox dl dd {
+  font-size: 10px;
+}
+#guide #section__schedule .btmContainer .staff {
+  position: static;
+  width: min(110vw, 650px);
+  margin-left: calc(45% - min(55vw, 325px));
+  margin-right: calc(45% - min(55vw, 325px));
+}
+#guide #section__priceUniform {
+  padding: 0 0 120px;
+}
+#guide #section__priceUniform::before {
+  width: 100%;
+  height: 80%;
+  background: url("../image/guide/uniform_bg_green_sp.png") no-repeat;
+  background-size: cover;
+}
+#guide #section__priceUniform .priceSection {
+  padding: 50px 0 0 20px;
+}
+#guide #section__priceUniform .priceSection .secTtl {
+  margin: 0 0 30px;
+}
+#guide #section__priceUniform .priceSection .secTtl h2 {
+  font-size: 28px;
+}
+#guide #section__priceUniform .priceSection .secTtl span {
+  font-size: 12px;
+}
+#guide #section__priceUniform .uniformSection {
+  padding: 60px 0 0;
+}
+#guide #section__priceUniform .uniformSection .secTtl {
+  margin: 0 0 30px;
+}
+#guide #section__priceUniform .uniformSection .secTtl h2 {
+  font-size: 28px;
+}
+#guide #section__priceUniform .uniformSection .secTtl span {
+  font-size: 12px;
+}
+#guide #section__priceUniform .uniformSection .uniformList {
+  position: relative;
+  width: calc(100vw + 40px);
+  max-width: 640px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+#guide #section__priceUniform .faqSecTtl {
+  width: calc(100% - 40px);
+  max-width: 335px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#guide #section__priceUniform .faqSecTtl h2 {
+  font-size: 28px;
+}
+#guide #section__faq {
+  padding: 60px 20px;
+}
+#guide #section__faq .secBox {
+  width: 100%;
+}
+#guide #section__faq .secBox dl + dl {
+  margin: 10px 0 0;
+}
+#guide #section__faq .secBox dl dt {
+  display: flex;
+  padding: 15px 30px 15px 20px;
+  font-size: 12px;
+  background: url("../image/common/accord_plus.png") right 20px center no-repeat #ffffff;
+  background-size: 10px auto;
+}
+#guide #section__faq .secBox dl dt.active {
+  background: url("../image/common/accord_minus.png") right 20px center no-repeat #ffffff;
+  background-size: 10px auto;
+}
+#guide #section__faq .secBox dl dt span {
+  margin: 0 10px 0 0;
+}
+#guide #section__faq .secBox dl dd {
+  padding: 15px 0;
+  font-size: 12px;
+}
+#guide #section__faq .secBox dl dd .box span {
+  margin: 0 10px 0 0;
+}
+#guide #section__document {
+  padding: 60px 20px;
+}
+#guide #section__document .secTtl {
+  margin: 0 0 40px;
+}
+#guide #section__document .secTtl h2 {
+  font-size: 28px;
+}
+#guide #section__document .secTtl span {
+  font-size: 12px;
+}
+#guide #section__document .bnrBoxList {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#guide #section__document .bnrBoxList .bnrBox + .bnrBox {
+  margin: 15px 0 0;
+}
+#guide #section__visit {
+  padding: 0 0 50px;
+}
+#guide #section__visit .secBox {
+  width: 100%;
+  padding: 40px 50px 0;
+}
+#guide #section__visit .secTtl {
+  margin: 0 0 25px;
+  text-align: center;
+}
+#guide #section__visit .secTtl h2 {
+  font-size: 26px;
+  line-height: 1.7;
+}
+#guide #section__visit .txt {
+  font-size: 12px;
+}
+
+/*////////////////////////////////////////////////////////////
+	visit
+///////////////////////////////////////////////////////////*/
+#visit .topContainer {
+  padding: 190px 0 60px;
+}
+#visit .topContainer .moveCloudArea01,
+#visit .topContainer .moveCloudArea02 {
+  display: none;
+}
+#visit .topContainer .topPanel {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+#visit .topContainer .topPanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 40px);
+  height: 970px;
+  margin: 0 auto;
+  background: url("../image/visit/top_cloud_bg_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#visit .topContainer .topPanel .secBox {
+  position: relative;
+}
+#visit .topContainer .topPanel .secBox + .secBox {
+  margin: 50px 0 0;
+}
+#visit .topContainer .topPanel .pTtl {
+  padding: 0 0 30px;
+}
+#visit .topContainer .topPanel .pTtl h1,
+#visit .topContainer .topPanel .pTtl h2 {
+  font-size: 28px;
+}
+#visit .topContainer .topPanel .pTtl span {
+  font-size: 12px;
+}
+#visit .topContainer .topPanel .txt {
+  max-width: calc(100% - 120px);
+  margin: 0 auto;
+}
+#visit .topContainer .overviewPanel .overviewTable table {
+  width: 100%;
+  max-width: 960px;
+  min-width: 0;
+}
+#visit .topContainer .overviewPanel .overviewTable table th {
+  width: 85px;
+  padding: 10px;
+  font-size: 12px;
+}
+#visit .topContainer .overviewPanel .overviewTable table td {
+  padding: 10px;
+  font-size: 12px;
+}
+#visit #section__important {
+  padding: 0 20px 80px;
+}
+#visit #section__important::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -80px;
+  width: 120%;
+  height: 200px;
+}
+#visit #section__important .secTtl {
+  margin: 0 0 30px;
+}
+#visit #section__important .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#visit #section__important .secTtl span {
+  font-size: 12px;
+}
+#visit #section__important .secContainer {
+  width: 100%;
+}
+#visit #section__important .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+#visit #section__important .secPanel .kvBox {
+  position: relative;
+  margin: 0 0 30px;
+}
+#visit #section__important .secPanel .kvBox .circle {
+  position: absolute;
+  top: auto;
+  left: 20px;
+  right: auto;
+  bottom: 10px;
+  width: 100px;
+  max-width: 100px;
+  height: 100px;
+}
+#visit #section__important .secPanel .kvBox .circle dl dt {
+  font-size: 10px;
+}
+#visit #section__important .secPanel .kvBox .circle dl dd {
+  font-size: 15px;
+}
+#visit #section__important .secPanel .kvBox .title {
+  display: none;
+}
+#visit #section__important .secPanel .txt .ttl {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#visit #section__important .secPanel .txt > p {
+  font-size: 12px;
+}
+#visit #section__schedule {
+  padding: 60px 20px 0;
+}
+#visit #section__schedule .secTtl {
+  margin: 0 0 30px;
+}
+#visit #section__schedule .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#visit #section__schedule .secTtl span {
+  font-size: 12px;
+}
+#visit #section__schedule .scheduleContainer.tabContainer {
+  margin: 0 0 20px;
+}
+#visit #section__schedule .staff {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#visit #section__schedule .secContainer:before {
+  display: none;
+}
+#visit #section__schedule .secContainer .secPanel {
+  width: 100%;
+  padding: 50px 0;
+}
+#visit #section__schedule .secContainer .secPanel .secBox {
+  align-items: stretch;
+  padding: 0 0 35%;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .photo {
+  position: relative;
+  width: calc(100% - 140px);
+}
+#visit #section__schedule .secContainer .secPanel .secBox .photo img {
+  border-radius: 20px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox {
+  position: relative;
+  width: 140px;
+  height: auto;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .timeBox {
+  width: 115px;
+  max-width: 115px;
+  min-width: 115px;
+  padding: 8px 15px;
+  color: #ffffff;
+  text-align: right;
+  border-radius: 30px;
+  background: #1777bf;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .timeBox:before {
+  content: "";
+  width: 54px;
+  height: 54px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .timeBox p {
+  font-size: 12px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .timeBox.multi p {
+  padding: 0 0 0 25px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .txt {
+  padding: 0 15px;
+  font-size: 12px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .txt span {
+  font-size: 10px;
+  white-space: normal;
+}
+#visit #section__schedule .secContainer .secPanel .secBox .txtBox .txt .spLeft {
+  text-align: left;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  width: 60%;
+  height: 90%;
+  background: url("../image/support/schedule_stamp_01_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(odd) .photo img {
+  border-radius: 0 20px 20px 0 !important;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(odd) .txtBox .timeBox {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(odd) .txtBox .timeBox:before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  margin: auto 0;
+  background: url("../image/support/schedule_clock_blue.png") no-repeat;
+  background-size: 100% auto;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  width: 60%;
+  height: 90%;
+  background: url("../image/support/schedule_stamp_02_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(even) .photo img {
+  border-radius: 20px 0 0 20px !important;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(even) .txtBox {
+  align-items: flex-end;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(even) .txtBox .timeBox {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:nth-child(even) .txtBox .timeBox:before {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  margin: auto 0;
+  background: url("../image/support/schedule_clock_pink.png") no-repeat;
+  background-size: 100% auto;
+}
+#visit #section__schedule .secContainer .secPanel .secBox:last-child {
+  padding: 0;
+}
+#visit #section__schedule .secContainer .secPanel .secBox.note {
+  padding: 0 0 30px;
+}
+#visit #section__schedule .secContainer .secPanel .secBox.note .txtBox .txt aside {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: calc(100vw - 30px);
+  padding: 0 20px;
+}
+#visit #section__event {
+  padding: 60px 0;
+}
+#visit #section__event .secTtl {
+  margin: 0 0 30px;
+}
+#visit #section__event .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#visit #section__event .secTtl span {
+  font-size: 12px;
+}
+#visit #section__event .seasonButtonList {
+  width: calc(100% - 40px);
+  max-width: 330px;
+  margin: 0 auto 40px;
+}
+#visit #section__event .seasonButtonList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#visit #section__event .seasonButtonList ul li {
+  width: 95px;
+}
+#visit #section__event .seasonButtonList ul .seasonButton {
+  max-width: 95px;
+  width: 95px;
+}
+#visit #section__event .seasonButtonList ul .seasonButton div {
+  top: -3px;
+  left: -3px;
+  font-size: 14px;
+  padding: 9px 10px;
+  border-radius: 50px;
+}
+#visit #section__event .seasonButtonList ul .seasonButton div::before {
+  right: 10px;
+  width: 17px;
+  height: 17px;
+}
+#visit #section__event .secContainer {
+  padding: 0;
+}
+#visit #section__event .eventPanel {
+  width: calc(100% - 40px);
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+#visit #section__event .eventItemBox .ttl {
+  margin: 0 0 40px;
+  font-size: 20px;
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox + .monthlyBox {
+  margin: 25px 0 0;
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox dl dt {
+  width: 100px;
+  margin: 0;
+  padding: 8px;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox dl dd {
+  width: calc(100% - 115px);
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox dl dd ul li {
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  text-align: left;
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox dl dd ul li::before {
+  width: 12px;
+  height: 12px;
+}
+#visit #section__event .eventItemBox .monthlyList .monthlyBox dl dd ul li + li {
+  margin: 7px 0 0;
+}
+#visit #section__event .eventItemBox aside {
+  margin: 60px 0 0;
+  font-size: 14px;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruit .topContainer .topTitle {
+  position: relative;
+  width: calc(100% - 80px);
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  border-radius: 0 0 30px 30px;
+}
+#recruit .topContainer .topTitle h1 {
+  font-size: 28px;
+}
+#recruit .topContainer .topTitle span {
+  display: block;
+}
+#recruit .recruitmentContainer {
+  padding: 25px 20px 0 30px;
+  background: none;
+}
+#recruit .recruitmentContainer .moveCloudArea01,
+#recruit .recruitmentContainer .moveCloudArea02 {
+  display: none;
+}
+#recruit .recruitmentContainer .recruitmentPanel {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+#recruit .recruitmentContainer .recruitmentPanel .recruitmentInner {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  border-radius: 20px 20px 0 0;
+}
+#recruit .recruitmentContainer .recruitmentPanel .pTtl {
+  padding: 20px;
+  border-bottom: 1px solid #1777bf;
+}
+#recruit .recruitmentContainer .recruitmentPanel .pTtl h2 {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+#recruit .recruitmentContainer .recruitmentPanel .pBody {
+  padding: 40px 20px 70px;
+}
+#recruit .recruitmentContainer .recruitmentPanel .infoBox dl {
+  font-size: 12px;
+}
+#recruit .recruitmentContainer .recruitmentPanel .infoBox dl + dl {
+  margin: 20px 0 0;
+}
+#recruit .recruitmentContainer .recruitmentPanel .infoBox dl dt {
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+#recruit .recruitmentContainer .recruitmentPanel .btnMoreBlueDeep {
+  margin: 50px auto 0;
+}
+#recruit .recruitmentContainer .comingSoon {
+  padding: 40px 20px 100px;
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+#price .topContainer .topTitle {
+  position: relative;
+  width: calc(100% - 80px);
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  border-radius: 0 0 30px 30px;
+}
+#price .topContainer .topTitle h1 {
+  font-size: 28px;
+}
+#price .topContainer .topTitle span {
+  display: block;
+}
+#price .priceSection {
+  padding: 40px 0 50px 20px;
+}
+#price .priceSection .tabItem .icon01,
+#price .priceSection .tabItem .icon02,
+#price .priceSection .tabItem .icon03 {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+#support .topContainer {
+  position: relative;
+}
+#support .topContainer .topTitle {
+  bottom: 15vw;
+}
+#support .topContainer .topTitle h1 {
+  display: inline;
+  padding: 0.3em 0.8em 0.3em 20px;
+  line-height: 2;
+  font-size: 20px;
+}
+#support .topMessageBox {
+  position: relative;
+  margin: -15vw 0 0;
+  padding: 0;
+}
+#support .topTxtBox {
+  width: 100%;
+  padding: 40px 20px;
+  font-size: 12px;
+}
+#support .pagingList {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  z-index: 1;
+}
+#support .pagingList ul {
+  display: block;
+}
+#support .pagingList ul li {
+  width: 100%;
+}
+#support .pagingList ul li + li {
+  margin: 20px 0 0;
+}
+#support .sectionTtl {
+  margin: 0 0 30px;
+}
+#support .sectionTtl h3 {
+  font-size: 28px;
+}
+#support .sectionTtl span {
+  font-size: 12px;
+}
+#support .btnSchedule {
+  width: 100%;
+  max-width: 335px;
+}
+#support .btnSchedule a {
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 60px;
+}
+#support .btnSchedule a p {
+  display: block;
+  padding: 20px 0;
+  background: url("../image/support/Icon_calendar.png") left center no-repeat, url("../image/support/Icon_calendar_arrow.png") right center no-repeat;
+  background-size: 20px auto, 24px auto;
+}
+#support #section__classroom {
+  margin: 0 0 80px;
+}
+#support #section__classroom .topPanel {
+  position: relative;
+  padding: 0 0 20px 20px;
+}
+#support #section__classroom .topPanel .circle {
+  position: absolute;
+  top: -70px;
+  right: -50px;
+  width: 184px;
+  max-width: 184px;
+}
+#support #section__classroom .topPanel .txtBox {
+  padding: 30px 20px 120px;
+  border-radius: 30px 0 0 30px;
+}
+#support #section__classroom .topPanel .txtBox .inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+#support #section__classroom .topPanel .txtBox .secTtl {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0 0 13px;
+}
+#support #section__classroom .topPanel .txtBox .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 233px;
+  height: 20px;
+}
+#support #section__classroom .topPanel .txtBox .secTtl h2 {
+  font-size: 28px;
+}
+#support #section__classroom .topPanel .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#support #section__classroom .topPanel .txtBox dl dd {
+  font-size: 12px;
+}
+#support #section__classroom .topPanel .photo {
+  position: relative;
+  top: 0;
+  right: 20px;
+  margin: -80px 0 0;
+}
+#support #section__classroom .overviewPanel {
+  padding: 0 0 100px;
+}
+#support #section__classroom .overviewPanel:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 160px;
+  background: url("../image/support/classroom_overview_bg_pc.png") center no-repeat;
+  background-size: cover;
+}
+#support #section__classroom .overviewPanel .overviewTable table {
+  width: 100%;
+  max-width: 960px;
+}
+#support #section__classroom .overviewPanel .overviewTable table th {
+  width: 85px;
+  padding: 10px;
+  font-size: 12px;
+}
+#support #section__classroom .overviewPanel .overviewTable table td {
+  padding: 10px;
+  font-size: 12px;
+}
+#support #section__classroom .schedulePanel .secContainer {
+  padding: 0;
+}
+#support #section__classroom .schedulePanel .secContainer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  height: calc(100% - 200px);
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #f7dfd3;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel {
+  width: 100%;
+  padding: 50px 0;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox {
+  align-items: stretch;
+  padding: 0 0 35%;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .photo {
+  position: relative;
+  width: calc(100% - 140px);
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .photo img {
+  border-radius: 20px;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .txtBox {
+  position: relative;
+  width: 140px;
+  height: auto;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .txtBox .timeBox {
+  width: 115px;
+  max-width: 115px;
+  min-width: 115px;
+  padding: 8px 15px;
+  color: #ffffff;
+  text-align: right;
+  border-radius: 30px;
+  background: #1777bf;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .txtBox .timeBox:before {
+  content: "";
+  width: 54px;
+  height: 54px;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .txtBox .timeBox p {
+  font-size: 12px;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox .txtBox .txt {
+  padding: 0 15px;
+  font-size: 12px;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  width: 60%;
+  height: 90%;
+  background: url("../image/support/schedule_stamp_01_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(odd) .photo img {
+  border-radius: 0 20px 20px 0 !important;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(odd) .txtBox .timeBox {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(odd) .txtBox .timeBox:before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  margin: auto 0;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  width: 60%;
+  height: 90%;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(even) .photo img {
+  border-radius: 20px 0 0 20px !important;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(even) .txtBox {
+  align-items: flex-end;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(even) .txtBox .timeBox {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:nth-child(even) .txtBox .timeBox:before {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  margin: auto 0;
+  background: url("../image/support/schedule_clock_pink.png") no-repeat;
+  background-size: 100% auto;
+}
+#support #section__classroom .schedulePanel .secContainer .secPanel .secBox:last-child {
+  padding: 0;
+}
+#support #section__classroom .schedulePanel .bnrEntry {
+  width: 100%;
+  max-width: 375px;
+  border-radius: 0;
+  background: none;
+}
+#support #section__classroom .schedulePanel .bnrEntry .txtBox {
+  height: 270px;
+  padding: 30px 20px;
+  background: url("../image/support/bnr_entry_bg_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#support #section__classroom .schedulePanel .bnrEntry .txtBox dl dt {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+#support #section__classroom .schedulePanel .bnrEntry .txtBox dl dd > p {
+  font-size: 18px;
+}
+#support #section__classroom .schedulePanel .bnrEntry .txtBox dl dd .btnMore {
+  margin: 20px auto 0;
+}
+#support #section__library {
+  margin: 0 0 80px;
+}
+#support #section__library .topPanel {
+  position: relative;
+  padding: 0 20px 20px 0;
+}
+#support #section__library .topPanel .circle {
+  position: absolute;
+  top: -90px;
+  right: -50px;
+  width: 184px;
+  max-width: 184px;
+}
+#support #section__library .topPanel .txtBox {
+  padding: 30px 20px 120px;
+  border-radius: 30px 0 0 30px;
+}
+#support #section__library .topPanel .txtBox .inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+#support #section__library .topPanel .txtBox .secTtl {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0 0 13px;
+}
+#support #section__library .topPanel .txtBox .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 233px;
+  height: 20px;
+}
+#support #section__library .topPanel .txtBox .secTtl h2 {
+  font-size: 28px;
+}
+#support #section__library .topPanel .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#support #section__library .topPanel .txtBox dl dd {
+  font-size: 12px;
+}
+#support #section__library .topPanel .photo {
+  position: relative;
+  top: 0;
+  left: 20px;
+  margin: -80px 0 0;
+}
+#support #section__library .overviewPanel {
+  padding: 0 0 100px;
+}
+#support #section__library .overviewPanel:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 160px;
+  background: url("../image/support/library_overview_bg_pc.png") center no-repeat;
+  background-size: cover;
+}
+#support #section__library .overviewPanel .overviewTable table {
+  width: 100%;
+  max-width: 960px;
+}
+#support #section__library .overviewPanel .overviewTable table th {
+  width: 85px;
+  padding: 10px;
+  font-size: 12px;
+}
+#support #section__library .overviewPanel .overviewTable table td {
+  padding: 10px;
+  font-size: 12px;
+}
+#support #section__library .btnSchedule {
+  margin: -75px auto 40px;
+}
+#support #section__library .photoList .logo {
+  position: static;
+  width: 510px;
+  max-width: 510px;
+  margin: 0 auto;
+}
+#support #section__square .topPanel {
+  position: relative;
+  padding: 0 0 20px 20px;
+}
+#support #section__square .topPanel .circle {
+  position: absolute;
+  top: -70px;
+  right: -50px;
+  width: 184px;
+  max-width: 184px;
+}
+#support #section__square .topPanel .txtBox {
+  padding: 30px 20px 120px;
+  border-radius: 30px 0 0 30px;
+}
+#support #section__square .topPanel .txtBox .inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+#support #section__square .topPanel .txtBox .secTtl {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0 0 13px;
+}
+#support #section__square .topPanel .txtBox .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 233px;
+  height: 20px;
+}
+#support #section__square .topPanel .txtBox .secTtl h2 {
+  font-size: 28px;
+}
+#support #section__square .topPanel .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#support #section__square .topPanel .txtBox dl dd {
+  font-size: 12px;
+}
+#support #section__square .topPanel .photo {
+  position: relative;
+  top: 0;
+  right: 20px;
+  margin: -80px 0 0;
+}
+#support #section__square .overviewPanel {
+  padding: 0 0 60px;
+}
+#support #section__square .overviewPanel .overviewTable table {
+  width: 100%;
+  max-width: 960px;
+}
+#support #section__square .overviewPanel .overviewTable table th {
+  width: 85px;
+  padding: 10px;
+  font-size: 12px;
+}
+#support #section__square .overviewPanel .overviewTable table td {
+  padding: 10px;
+  font-size: 12px;
+}
+#support #section__square .btnSchedule {
+  margin: -75px auto 40px;
+}
+#support #section__square .kvSchedule:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 430px;
+  background: url("../image/support/square_overview_bg_pc.png") center no-repeat;
+  background-size: cover;
+}
+#support #section__square .kvSchedule .info {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+}
+#support #section__square .kvSchedule .info dl {
+  text-align: center;
+}
+#support #section__square .kvSchedule .info dl dt {
+  margin: 0 0 15px;
+  font-size: 15px;
+}
+#support #section__square .kvSchedule .info dl dd {
+  font-size: 8px;
+}
+#support #section__square .monthlySchedule {
+  padding: 0 20px 40px;
+}
+#support #section__square .monthlySchedule:before {
+  top: 40px;
+  border-radius: 400px;
+}
+#support #section__square .monthlySchedule .topTtl {
+  width: 100%;
+  max-width: 280px;
+  min-width: 280px;
+  margin: 0 auto 30px;
+  padding: 15px 5px;
+}
+#support #section__square .monthlySchedule .topTtl span {
+  font-size: 10px;
+}
+#support #section__square .monthlySchedule .topTtl h3 {
+  font-size: 18px;
+}
+#support #section__square .monthlyEventContainer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+#support #section__square .monthlyEventContainer .monthlyEventPanel {
+  max-width: 800px;
+}
+#support #section__square .monthlyEventContainer .monthHeader {
+  margin: 0 0 25px;
+}
+#support #section__square .monthlyEventContainer .monthHeader__left {
+  padding: 0 10px;
+  line-height: 1;
+  border-right: 1px solid #1777bf;
+}
+#support #section__square .monthlyEventContainer .monthHeader__left em {
+  font-size: 20px;
+}
+#support #section__square .monthlyEventContainer .monthHeader__left span {
+  font-size: 10px;
+}
+#support #section__square .monthlyEventContainer .monthHeader__right {
+  padding: 0 10px;
+  font-size: 10px;
+}
+#support #section__square .monthlyEventContainer .monthHeader__right p + p {
+  font-size: 8px;
+}
+#support #section__square .monthlyEventContainer .eventType {
+  display: none;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table th {
+  height: 20px;
+  padding: 5px;
+  font-size: 12px;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table td {
+  position: relative;
+  height: 40px;
+  padding: 3px 5px 6px;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .calendar__date {
+  font-size: 12px;
+  line-height: 1;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .event {
+  display: inline-block;
+  min-width: 10px;
+  min-height: 10px;
+  padding: 0;
+  font-size: 0;
+  vertical-align: middle;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .event::before {
+  width: 10px;
+  height: 10px;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .event + .event {
+  margin: 0 0 0 2px;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox {
+  text-align: center;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox.active {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 135px;
+  padding: 7px 10px;
+  text-align: left;
+  z-index: 1;
+  border-radius: 10px;
+  border: 1px solid #1777bf;
+  background: #ffffff;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox.active .event {
+  display: block;
+  font-size: 12px;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox.active .event + .event {
+  margin: 5px 0 0;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox.active .event::before {
+  position: static;
+  display: block;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  background: none;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox.active .event.blue::before {
+  content: "おもちゃ図書館";
+  color: #84c7e0;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table .timeBox.active .event.green::before {
+  content: "チビッコひろば";
+  color: #c7eb89;
+}
+#support #section__square .monthlyEventContainer .calendarPanel table td:nth-child(n+6) .timeBox.active {
+  left: auto;
+  right: 0;
+}
+#support #section__square .monthlyEventContainer .calendarNav .prev,
+#support #section__square .monthlyEventContainer .calendarNav .next {
+  width: 25px;
+  height: 25px;
+}
+#support #section__square .monthlyEventContainer .calendarNav .prev {
+  left: -12px;
+}
+#support #section__square .monthlyEventContainer .calendarNav .next {
+  right: -12px;
+}
+#support #section__square .monthlyEventContainer .spBalloonText {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+}
+#support #section__square .monthlyEventContainer .spBalloonText__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 82px;
+  margin: auto;
+  font-size: 14px;
+  color: #1777bf;
+  border-radius: 10px;
+  background: rgba(156, 215, 237, 0.7);
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about .topContainer .topKvPanel {
+  padding: 20px 20px 0;
+}
+#about .topContainer .topKvPanel .topTitle h1 {
+  max-width: 250px;
+  min-width: 250px;
+  padding: 12px 10px;
+  font-size: 28px;
+}
+#about #section__philosophy {
+  padding: 30px 0 40px;
+}
+#about #section__philosophy .secTtl {
+  margin: 0 0 180px;
+  padding: 0 20px;
+  text-align: center;
+}
+#about #section__philosophy .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#about #section__philosophy .secTtl span {
+  font-size: 12px;
+}
+#about #section__philosophy .message {
+  width: 100%;
+  max-width: 330px;
+  padding: 0;
+  font-size: 28px;
+  border-radius: 0;
+  background: none;
+}
+#about #section__philosophy .message p {
+  display: inline;
+  padding: 0.2em 0.1em 0.2em 20px;
+  line-height: 1.7;
+  font-size: 28px;
+  border-radius: 0 10px 10px 0;
+  background: #ffffff;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+#about #section__philosophy .txtBox {
+  margin: 20px 0 0;
+  padding: 0 20px;
+}
+#about #section__philosophy .txtBox .txt {
+  font-size: 10px;
+}
+#about #section__philosophy .staff {
+  position: absolute;
+  left: -10px;
+  right: auto;
+  bottom: 105px;
+  width: 105%;
+  max-width: 400px;
+}
+#about #section__policy {
+  margin: 0;
+}
+#about #section__policy .moveCloudArea01,
+#about #section__policy .moveCloudArea02 {
+  display: none;
+}
+#about #section__policy .secTtl {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  padding: 0 40px;
+}
+#about #section__policy .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#about #section__policy .secTtl span {
+  font-size: 12px;
+}
+#about #section__policy .listPanel {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#about #section__policy .listPanel .listBox {
+  width: 48%;
+}
+#about #section__policy .listPanel .listBox .list {
+  width: 100%;
+  margin: 0 auto;
+}
+#about #section__policy .listPanel .listBox .list + .list {
+  margin: 15px auto 0;
+}
+#about #section__greeting .greetingWrap {
+  padding: 30px 20px 80px;
+  border-radius: 0 0 30px 30px;
+}
+#about #section__greeting .secContainer {
+  width: 100%;
+}
+#about #section__greeting .secTtl {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+#about #section__greeting .secTtl h2 {
+  margin: 0 0 3px;
+  font-size: 28px;
+}
+#about #section__greeting .secTtl span {
+  font-size: 12px;
+}
+#about #section__greeting .secBox01 {
+  margin: 0 0 40px;
+}
+#about #section__greeting .secBox01 .txtBox {
+  padding: 40px 0 0;
+}
+#about #section__greeting .secBox01 .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 20px;
+}
+#about #section__greeting .secBox01 .txtBox .txt {
+  font-size: 12px;
+}
+#about #section__greeting .secBox01 .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+#about #section__greeting .secBox02 .txtBox {
+  padding: 40px 0 0;
+}
+#about #section__greeting .secBox02 .txtBox .txt {
+  font-size: 12px;
+}
+#about #section__greeting .secBox02 .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+#about #section__greeting .secBox02 .txtBox .name {
+  margin: 40px 0 0;
+  font-size: 14px;
+}
+#about #section__greeting .btmKv {
+  margin: -50px 0 0;
+}
+#about #section__overview {
+  padding: 60px 20px;
+}
+#about #section__overview .secTtl {
+  margin: 0 0 30px;
+}
+#about #section__overview .secTtl h2 {
+  font-size: 28px;
+}
+#about #section__overview .secTtl span {
+  font-size: 12px;
+}
+#about #section__overview .overviewTable table {
+  width: 100%;
+  max-width: 960px;
+}
+#about #section__overview .overviewTable table th {
+  width: 110px;
+  padding: 10px;
+  font-size: 12px;
+}
+#about #section__overview .overviewTable table td {
+  padding: 10px;
+  font-size: 12px;
+}
+#about #section__access .accessWrap {
+  padding: 0 20px 60px;
+  border-radius: 0 0 30px 30px;
+}
+#about #section__access .secContainer {
+  width: 100%;
+  padding: 0;
+}
+#about #section__access .secTtl {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 40px;
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+}
+#about #section__access .secTtl h2 {
+  margin: 0 0 3px;
+  font-size: 28px;
+}
+#about #section__access .secTtl span {
+  font-size: 12px;
+}
+#about #section__access .secBox .txtBox {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+#about #section__access .secBox .txtBox .logo {
+  position: relative;
+  left: 20px;
+  max-width: 250px;
+  margin: 0 0 20px;
+}
+#about #section__access .secBox .txtBox .info {
+  margin: 0 0 20px;
+  padding: 0 20px;
+}
+#about #section__access .secBox .txtBox .info > p {
+  font-size: 18px;
+}
+#about #section__access .secBox .txtBox .info .telFax {
+  margin: 3px 0 0;
+  font-size: 12px;
+}
+#about #section__access .secBox .txtBox dl {
+  max-width: 340px;
+}
+#about #section__access .secBox .txtBox dl + dl {
+  margin: 20px 0 0;
+}
+#about #section__access .secBox .txtBox dl dt {
+  margin: 0 0 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+#about #section__access .secBox .txtBox dl dd {
+  padding: 0 20px;
+  font-size: 12px;
+}
+#about #section__access .secBox .txtBox dl dd .box p:nth-child(1) {
+  min-width: 40px;
+  margin: 0 5px 0 0;
+}
+#about #section__access .copyPanel {
+  display: none;
+  padding: 30px 20px 60px;
+}
+#about #section__access .copyPanel dl dt {
+  margin: 0 0 15px;
+  font-size: 15px;
+}
+#about #section__access .copyPanel dl dd {
+  font-size: 8px;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+#news .topContainer {
+  margin: 0 0 30px;
+}
+#news .topContainer .topTitle {
+  position: relative;
+  width: calc(100% - 80px);
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  border-radius: 0 0 30px 30px;
+}
+#news .topContainer .topTitle h1 {
+  font-size: 28px;
+}
+#news .topContainer .topTitle span {
+  display: block;
+}
+#news .blogContainer {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+#news .blogContainer--detail {
+  padding-top: 35px;
+}
+#news .catePanel {
+  margin: 0 0 50px;
+}
+#news .catePanel dl dt {
+  margin: 0 0 15px;
+  font-size: 15px;
+}
+#news .catePanel dl dd {
+  max-width: 330px;
+}
+#news .catePanel dl dd ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+#news .catePanel dl dd ul li {
+  width: calc(50% - 5px);
+}
+#news .catePanel dl dd ul li a {
+  display: block;
+  padding: 8px;
+  font-size: 14px;
+}
+#news .blogListPanel {
+  padding: 0 10px;
+}
+#news .blogListPanel .infoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px 20px;
+}
+#news .blogListPanel .infoList .listItem {
+  width: calc(50% - 15px);
+}
+#news .blogListPanel .infoList .listItem a {
+  border-radius: 10px;
+}
+#news .blogListPanel .infoList .listItem .inner {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#news .blogListPanel .infoList .listItem .circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+}
+#news .blogListPanel .infoList .listItem .photo img {
+  border-radius: 10px;
+}
+#news .blogListPanel .infoList .listItem .cate {
+  width: 70%;
+  max-width: 160px;
+  margin: -15px auto 5px;
+  padding: 5px;
+  font-size: 10px;
+}
+#news .blogListPanel .infoList .listItem .title {
+  min-height: 50px;
+  font-size: 12px;
+}
+#news .blogListPanel .list__pagination {
+  width: 88px;
+  margin: 40px auto 0;
+}
+#news .blogListPanel .list__pagination .pagination li a {
+  width: 35px;
+  height: 35px;
+}
+#news .blogDetailPanel {
+  padding: 0 20px 35px;
+  border-radius: 20px;
+  border-width: 2px !important;
+  background: #ffffff;
+}
+#news .blogDetailPanel .blogDetailBox {
+  padding: 65px 0 0;
+}
+#news .blogDetailPanel .blogDetailBox .cate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 155px;
+  min-width: 155px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 0 0 10px 10px;
+}
+#news .blogDetailPanel .blogDetailBox .postPanel .photoBox {
+  margin: 0 0 20px;
+}
+#news .blogDetailPanel .blogDetailBox .postPanel .photoBox .photo + .photo {
+  margin: 7px 0 0;
+}
+#news .blogDetailPanel .blogDetailBox .postPanel .txtBox .time {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+#news .blogDetailPanel .blogDetailBox .postPanel .txtBox .title {
+  margin: 0 0 25px;
+  font-size: 18px;
+}
+#news .blogDetailPanel .blogDetailBox .postPanel .txtBox .postContents .postContentsBox {
+  max-height: 310px;
+  font-size: 12px;
+}
+#news .blogDetailPanel .blogDetailBox .btmPanel {
+  margin: 30px 0 0;
+}
+#news .blogDetailPanel .blogDetailBox .btmPanel .btnAll {
+  width: 165px;
+  margin: 0 auto;
+}
+#news .blogDetailPanel .blogDetailBox .btmPanel .btnAll a {
+  display: block;
+  padding: 13px 10px;
+  font-size: 12px;
+}
+#news .blogDetailPanel .blogDetailBox .btmPanel .prev,
+#news .blogDetailPanel .blogDetailBox .btmPanel .next {
+  width: 34px;
+}
+#news .blogDetailPanel .blogDetailBox .btmPanel .prev a,
+#news .blogDetailPanel .blogDetailBox .btmPanel .next a {
+  width: 34px;
+  height: 34px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact .topContainer .topTitlePanel,
+#contactConfirm .topContainer .topTitlePanel,
+#contactComplete .topContainer .topTitlePanel,
+#privacy .topContainer .topTitlePanel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+  text-align: center;
+}
+#contact .topContainer .topTitlePanel h1,
+#contactConfirm .topContainer .topTitlePanel h1,
+#contactComplete .topContainer .topTitlePanel h1,
+#privacy .topContainer .topTitlePanel h1 {
+  margin: 0 0 40px;
+  font-size: 22px;
+}
+#contact .topContainer .topTitlePanel .txt,
+#contactConfirm .topContainer .topTitlePanel .txt,
+#contactComplete .topContainer .topTitlePanel .txt,
+#privacy .topContainer .topTitlePanel .txt {
+  font-size: 12px;
+}
+#contact .arrow,
+#contactConfirm .arrow,
+#contactComplete .arrow,
+#privacy .arrow {
+  width: 30px;
+  margin: -2px auto 30px;
+}
+#contact .contactContainer,
+#contactConfirm .contactContainer,
+#contactComplete .contactContainer,
+#privacy .contactContainer {
+  width: 100%;
+  padding: 0 20px 20px;
+}
+#contact .contactContainer .contactTabList,
+#contactConfirm .contactContainer .contactTabList,
+#contactComplete .contactContainer .contactTabList,
+#privacy .contactContainer .contactTabList {
+  max-width: 400px;
+  width: 100%;
+}
+#contact .contactContainer .contactTabList ul,
+#contactConfirm .contactContainer .contactTabList ul,
+#contactComplete .contactContainer .contactTabList ul,
+#privacy .contactContainer .contactTabList ul {
+  display: flex;
+  gap: 3px;
+}
+#contact .contactContainer .contactTabList ul li,
+#contactConfirm .contactContainer .contactTabList ul li,
+#contactComplete .contactContainer .contactTabList ul li,
+#privacy .contactContainer .contactTabList ul li {
+  width: calc(50% - 2px);
+  margin: 0 2px 0 0;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px 10px 0 0;
+}
+#contact .contactContainer .contactPanel,
+#contactConfirm .contactContainer .contactPanel,
+#contactComplete .contactContainer .contactPanel,
+#privacy .contactContainer .contactPanel {
+  padding: 40px 25px 60px;
+  border-radius: 0 0 30px 30px;
+}
+#contactConfirm {
+  padding: 100px 0 0;
+}
+#contactConfirm .contactContainer .contactPanel {
+  border-radius: 20px;
+}
+#contactConfirm .contactContainer .secTtl {
+  margin: 0 0 50px;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+#contactConfirm .formConfirm {
+  width: 100%;
+}
+#contactConfirm .formConfirm dl {
+  display: block;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+#contactConfirm .formConfirm dl > * {
+  padding: 0;
+}
+#contactConfirm .formConfirm dl dt {
+  width: 100%;
+  margin: 0 0 5px;
+}
+#contactConfirm .formConfirm dl dd {
+  width: 100%;
+}
+#contactConfirm .formConfirm .submitButton {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+#contactConfirm .formConfirm .send {
+  width: 100%;
+  margin: 0 0 10px;
+  border: 2px solid #f88f87;
+}
+#contactConfirm .formConfirm .send input[type=submit] {
+  height: 50px;
+  font-size: 14px;
+  border: 2px solid #f88f87;
+}
+#contactConfirm .formConfirm .back {
+  width: 100%;
+  border: 2px solid #84c7e0;
+}
+#contactConfirm .formConfirm .back button.btnBack {
+  height: 50px;
+  font-size: 14px;
+  border: 2px solid #84c7e0;
+}
+
+#contactComplete {
+  padding: 100px 0 0;
+}
+#contactComplete .contactContainer .contactPanel {
+  border-radius: 20px;
+}
+#contactComplete .contactContainer .secTtl {
+  margin: 0 0 20px;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+#contactComplete .contactContainer .ttl {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+#contactComplete .contactContainer .txt {
+  font-size: 12px;
+}
+#contactComplete .contactContainer .btnToTop {
+  margin: 30px auto 0;
+}
+#contactComplete .contactContainer .btnToTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 200px;
+}
+#contactComplete .contactContainer .btnToTop a .arrow {
+  max-width: 30px;
+  width: 30px;
+  margin: 0 0 0 10px;
+}
+#contactComplete .contactContainer .btnToTop a span {
+  font-size: 12px;
+}
+
+/*////////////////////////////////////////////////////////////
+	料金案内,園児の1日
+///////////////////////////////////////////////////////////*/
+.priceContainer.tabContainer .tabPanel .tabList,
+.scheduleContainer.tabContainer .tabPanel .tabList {
+  max-width: 400px;
+  width: 100%;
+  padding: 0 20px 0 0;
+}
+.priceContainer.tabContainer .tabPanel .tabList ul,
+.scheduleContainer.tabContainer .tabPanel .tabList ul {
+  display: flex;
+  gap: 3px;
+}
+.priceContainer.tabContainer .tabPanel .tabList ul li,
+.scheduleContainer.tabContainer .tabPanel .tabList ul li {
+  width: calc(33.3333333333% - 2px);
+  margin: 0 2px 0 0;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px 10px 0 0;
+}
+.priceContainer.tabContainer .tabPanel .tabItem,
+.scheduleContainer.tabContainer .tabPanel .tabItem {
+  overflow-x: scroll;
+  padding: 0;
+  border-radius: 0 0 0 30px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel {
+  width: 1160px;
+  padding: 30px 20px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel > dl + dl,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel > dl + dl {
+  margin: 20px 0 0;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel > dl > dt,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel > dl > dt {
+  position: relative;
+  margin: 0 0 8px;
+  padding: 0 0 0 17px;
+  font-size: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel > dl > dt::before,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel > dl > dt::before {
+  width: 11px;
+  height: 11px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl {
+  display: table;
+  width: 100%;
+  max-width: 540px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dt,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dt {
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd {
+  padding: 0 15px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd .box,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd .box {
+  font-size: 14px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd > p,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd > p {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd aside,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .facilityPrice dl dd aside {
+  display: block;
+  font-size: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl {
+  max-width: 570px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dt,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dt,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dt,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dt {
+  width: 100px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dt span,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dt span,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dt span,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dt span {
+  padding: 10px;
+  font-size: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd {
+  padding: 4px 20px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box {
+  max-width: 450px;
+  font-size: 14px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box .left,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box .left,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box .left,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box .left {
+  width: 200px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box .right,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box .right,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box .right,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box .right {
+  width: 85px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box .right::before,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box .right::before,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .extensionPrice dl dd .box .right::before,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .dayPrice dl dd .box .right::before {
+  left: -150px;
+  width: 140px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table th,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table td,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table th,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table td {
+  width: 140px;
+  padding: 10px;
+  font-size: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table thead th span,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table thead th span {
+  font-size: 9px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table tbody td,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table tbody td {
+  padding: 5px 10px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table tbody td span,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable table tbody td span {
+  font-size: 10px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable--01 table,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable--01 table {
+  min-width: 1130px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable--02 table,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable--02 table {
+  min-width: 1130px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable--03 table,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .monthlyTable--03 table {
+  min-width: 950px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table {
+  width: 100%;
+  max-width: 600px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table th,
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table td,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table th,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table td {
+  width: 50%;
+  padding: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table th,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table th {
+  font-size: 12px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table th span,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table th span {
+  font-size: 9px;
+}
+.priceContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table td,
+.scheduleContainer.tabContainer .tabPanel .tabItem .secPanel .purchaseTable table td {
+  font-size: 14px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  width: 100%;
+}
+.formBox form > dl {
+  font-size: 12px;
+}
+.formBox form > dl + dl {
+  margin: 15px 0 0;
+}
+.formBox form > dl dt {
+  margin: 0 0 5px;
+}
+.formBox .age .inputBox {
+  display: inline-block;
+  max-width: 140px;
+  margin: 0 5px 0 0;
+}
+.formBox .radioForm dd {
+  padding: 5px 0 0;
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.formBox textarea {
+  height: 190px;
+  margin: 10px 0 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.formBox .selectBox {
+  max-width: 140px;
+}
+.formBox .selectBox select {
+  height: 35px;
+  padding: 7px 15px;
+  font-size: 11px;
+  border-radius: 5px;
+  background: url("../image/common/form_select_arrow.png") right 15px center no-repeat #f8f5e4;
+  background-size: 9px auto;
+}
+.formBox .birthBox {
+  padding: 0 10px;
+}
+.formBox .birthBox ul li {
+  width: 70px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 15px;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 5px;
+}
+.formBox .checkItem {
+  margin: 20px 0 30px;
+  text-align: center;
+}
+.formBox .itemCheck .mwform-checkbox-field span {
+  padding-left: 15px;
+}
+.formBox form .mwform-radio-field {
+  display: block;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .privacy {
+  max-width: 205px;
+  margin: 35px auto 0;
+}
+.formBox .privacy .agreeBox {
+  height: 80px;
+  padding: 10px;
+  font-size: 10px;
+}
+.formBox .privacy .box + .box {
+  margin: 5px 0 0;
+}
+.formBox .policy {
+  padding: 30px 0 0;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.7;
+}
+.formBox .policy p {
+  white-space: initial;
+}
+.formBox .policy span {
+  display: block;
+}
+.formBox .submitButton {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  border: 2px solid #f88f87;
+}
+.formBox .submitButton input[type=submit] {
+  height: 50px;
+  font-size: 14px;
+  border: 2px solid #f88f87;
+}
+
+/*////////////////////////////////////////////////////////////
+	privacy
+///////////////////////////////////////////////////////////*/
+#privacy {
+  padding: 100px 0 0;
+}
+#privacy .contactContainer .contactPanel {
+  border-radius: 20px;
+}
+#privacy .contactContainer .contactItemBox {
+  width: 100%;
+}
+#privacy .contactContainer .topPanel {
+  margin: 0 0 30px;
+}
+#privacy .contactContainer .topPanel .secTtlBox {
+  margin: 0 0 15px;
+}
+#privacy .contactContainer .topPanel .secTtlBox .secTtl {
+  font-size: 18px;
+  text-align: center;
+}
+#privacy .contactContainer .topPanel .txt {
+  font-size: 12px;
+}
+#privacy .contactContainer .section + .section {
+  margin: 30px 0 0;
+}
+#privacy .contactContainer .section h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+#privacy .contactContainer .section .txt {
+  font-size: 10px;
+}

@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 6px 20px;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .header .logoBox .headTtl {
+    display: none;
+  }
+  .header .logoBox .logo {
+    width: 100px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox .ttl {
+    display: none;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #090908;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+
+  .headRecruit {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    width: 40px;
+    height: 125px;
+  }
+  .headRecruit a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    writing-mode: vertical-lr;
+    background: #1b459a;
+  }
+  .headRecruit a p {
+    padding: 25px 0 0;
+    background: url(https://s-9556564.smooooth.jp/system_panel/uploads/images/top_kv_recruit_icon.png) center top no-repeat;
+    background-size: 20px auto;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 50px;
+  }
+  .navBox .navList .ul .li {
+    border-top: 1px solid #f0e9dc;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .ul .li .pulldown {
+    display: none;
+  }
+  .navBox .navList .ul .li.contact {
+    border-top: 0;
+  }
+  .navBox .navList .ul .li.contact a {
+    color: #ffffff;
+    background: #13317d;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 50px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 175px;
+  }
+  .pageKvPanel .kvTitle {
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .pageSecTtlBox .sub {
+    font-size: 20px;
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .postVideo {
+    padding: 0 0 70%;
+  }
+
+  .pageSlidePanel {
+    padding: 40px 0;
+  }
+  .pageSlidePanel .slideTxt .ul .li {
+    width: 80%;
+    margin: 0 15px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0;
+  }
+  .footer .footContact .contactItem {
+    max-width: 400px;
+    text-align: center;
+  }
+  .footer .footContact .contactItem .telBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactItem .telBox .tel .em {
+    padding: 0 0 0 40px;
+    font-size: 30px;
+    background: url(https://s-9556564.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+    background-size: 25px auto;
+  }
+  .footer .footContact .contactItem .telBox .tel .span {
+    padding: 0 0 0 40px;
+  }
+  .footer .footContact .contactItem .mailBox {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .footer .footPanel {
+    padding: 50px 0 20px;
+    text-align: center;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+    margin: 0 0 60px;
+  }
+  .footer .footPanel .footBox .left .logo {
+    width: 160px;
+    margin: 0 auto 50px;
+  }
+  .footer .footPanel .footBox .left .sns {
+    padding: 0 10px;
+  }
+  .footer .footPanel .footBox .right {
+    display: none;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    width: 50px;
+  }
+}

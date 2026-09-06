@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logoBox p {
+    display: none;
+  }
+  .header .logoBox .logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    z-index: 1000;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .headNav {
+    display: none;
+  }
+  .header .hamburgerBox {
+    top: 25px;
+    right: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    padding: 120px 20px 80px;
+  }
+  .navBox .navInner {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .navBox .navList .dl + .dl {
+    margin: 25px 0 0;
+  }
+  .navBox .navList .dl .dt {
+    width: 45%;
+  }
+  .navBox .navList .dl .dd {
+    width: 45%;
+  }
+  .navBox .btnContact {
+    margin: 40px auto 30px;
+  }
+  .navBox .language .span {
+    margin: 0 5px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+  }
+
+  .pageTitleContainer {
+    padding: 60px 0 0;
+  }
+  .pageTitleContainer .pageTitlePanel .pageTitle {
+    margin: 0 15px 0 0;
+    font-size: 24px;
+  }
+  .pageTitleContainer .pageTitlePanel .subTitle {
+    position: relative;
+    bottom: 2px;
+    font-size: 12px;
+  }
+
+  .pageSecTtl {
+    margin: 0 0 30px;
+    font-size: 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .pagetop {
+    top: 30px;
+    right: 30px;
+    width: 40px;
+  }
+  .footer .footContact .secBox .leftBox {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .secBox .leftBox .tel a .em {
+    font-size: 24px;
+  }
+  .footer .footContact .secBox .rightBox .contactTxt {
+    margin: 0 0 15px;
+  }
+  .footer .footContact .secBox .rightBox .contactTxt .dl .dt {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+  .footer .footContact .secBox .rightBox .contactLink .contactBtn + .contactBtn {
+    margin: 10px 0 0;
+  }
+  .footer .footContact .secBox .rightBox .contactLink .contactBtn a {
+    padding: 10px 20px;
+  }
+  .footer .footPanel {
+    padding: 60px 0 30px;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox {
+    margin: 0 0 40px;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox p {
+    margin: 0 0 10px;
+    font-size: 13px;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox .logo {
+    max-width: 220px;
+  }
+  .footer .footPanel .footBox .leftBox .snsList {
+    margin: 15px 0 0;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+  .footer .footPanel .btnContactBox {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    margin: 40px 0 0;
+    font-size: 13px;
+  }
+}

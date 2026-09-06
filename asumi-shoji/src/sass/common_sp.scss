@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+    transition: 0.6s;
+    .logoBox {
+      .headTtl {
+        display: none;
+      }
+      .logo {
+        width: 120px;
+        a {
+          display: block;
+        }
+      }
+    }
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: fixed;
+      top: 5px;
+      right: 10px;
+      width: 50px;
+      height: 40px;
+      z-index: 10000;
+      .span {
+        background: #000000;
+        position: absolute;
+        left: 50%;
+        width: 30px;
+        height: 1px;
+        transform: translateX(-50%);
+        transition: 0.4s;
+        &:nth-of-type(1) {
+          top: 10px;
+        }
+        &:nth-of-type(2) {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:nth-of-type(3) {
+          bottom: 10px;
+        }
+      }
+      &.is-open {
+        .span:nth-of-type(1) {
+          transform: translate(-50%, 9px) rotate(-45deg);
+        }
+        .span:nth-of-type(2) {
+          opacity: 0;
+        }
+        .span:nth-of-type(3) {
+          transform: translate(-50%, -9px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px;
+    text-align: center;
+    z-index: 999;
+    // background: rgba(0, 0, 0, 0.8);
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+    &.active {
+      top: 47px;
+    }
+    .navList {
+      .ul {
+        .li {
+          + .li {
+            border-top: 1px solid #f0e9dc;
+          }
+          a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background: #fef9f0;
+          }
+          &.recruit {
+            a {
+              color: #ffffff;
+              background: #ad9144;
+            }
+          }
+          &.contact {
+            border-top: 0;
+            a {
+              color: #ffffff;
+              background: #d4a912;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 47px 0 0;
+  }
+  .pageKvPanel {
+    padding: 60px 20px 0;
+    .pageKvTitle {
+      font-size: 34px;
+      h1 {
+        line-height: 0.8;
+      }
+    }
+  }
+  .pageSecTtlBox {
+    .sub {
+      font-size: 15px;
+    }
+    .pageSecTtl {
+      font-size: 24px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .jobSection {
+    padding: 60px 0;
+    background: #f0da9d;
+    .ttlBox {
+      margin: 0 0 20px;
+      .ttl {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .listBox {
+      max-width: 500px;
+      margin: 0 auto;
+      .ul {
+        .li {
+          + .li {
+            margin: 15px 0 0;
+          }
+        }
+        a {
+          padding: 15px 20px;
+        }
+        .dl {
+          .dt {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .secRecruit {
+    padding: 40px 0;
+    .secTtl {
+      margin: 0 0 15px;
+      p {
+        font-size: 15px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+    .contactItem {
+      .itemBox {
+        + .itemBox {
+          margin: 40px 0 0;
+        }
+        .ttl {
+          max-width: 300px;
+          margin: 0 auto 15px;
+        }
+        .btnContact {
+          max-width: 260px;
+        }
+        .qr {
+          width: 90px;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .contactItem {
+        display: flex;
+        justify-content: space-between;
+        .itemBox {
+          width: 45%;
+        }
+        .btnContact {
+          position: relative;
+          top: 20px;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 40px 0 20px;
+    .pagetop {
+      position: absolute;
+      top: -60px;
+      right: 20px;
+      width: 45px;
+      cursor: pointer;
+    }
+    .logo {
+      width: 200px;
+      margin: 0 auto 15px;
+    }
+    .copy {
+      margin: 30px 0 0;
+    }
+  }
+}

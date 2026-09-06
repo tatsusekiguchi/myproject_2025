@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 12px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  z-index: 999;
+  background: #ffffff;
+}
+.header .logoBox {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 180px;
+  z-index: 9999;
+}
+.header .hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #fdf7f0;
+}
+.navBox .navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.navBox .navContainer .navList {
+  padding: 0 20px;
+}
+.navBox .navContainer .navList ul li {
+  position: relative;
+  padding: 0 20px;
+  border-bottom: 1px solid #5d4c38;
+}
+.navBox .navContainer .navList ul li + li {
+  margin: 10px 0 0;
+}
+.navBox .navContainer .navList ul li a {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 20px;
+  font-size: 18px;
+}
+.navBox .navContainer .navList ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: #f5a073;
+}
+.navBox .navContainer .navList ul li a:after {
+  content: "＞";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.navBox .navContainer .navClose {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  cursor: pointer;
+}
+.navBox .navContainer .navItem {
+  padding: 50px 40px;
+}
+.navBox .navContainer .navItem .instaLink {
+  text-align: right;
+}
+.navBox .navContainer .navItem .instaLink a {
+  display: inline-block;
+  width: 130px;
+}
+.navBox .navContainer .navFooter {
+  position: relative;
+  height: 30vh;
+}
+.navBox .navContainer .navFooter dl {
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+.navBox .navContainer .navFooter dl dt {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.navBox .navContainer .navFooter dl dd {
+  font-size: 11px;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.mapBox {
+  padding: 0 0 70%;
+}
+
+.btnMoreBlack {
+  max-width: 330px;
+}
+.btnMoreBlack a {
+  padding: 18px 35px;
+  font-size: 16px;
+}
+.btnMoreBlack a span {
+  font-size: 13px;
+}
+
+.btnMoreOrange {
+  max-width: 350px;
+}
+.btnMoreOrange a {
+  padding: 18px 35px;
+  font-size: 16px;
+}
+.btnMoreOrange a span {
+  font-size: 13px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContainer .txtBox {
+  padding: 40px 20px 80px;
+}
+.footer .footContainer .txtBox .inner {
+  width: 100%;
+}
+.footer .footContainer .txtBox .logo {
+  width: 100%;
+  max-width: 190px;
+  margin: 0 0 30px;
+}
+.footer .footContainer .txtBox .txt {
+  font-size: 12px;
+}
+.footer .footContainer .txtBox .sns {
+  width: 25;
+  max-width: 25px;
+  margin: 20px 0 0;
+}
+.footer .footContainer .txtBox .copy {
+  margin: 60px 0 0;
+  text-align: center;
+  letter-spacing: 0;
+}
+@media (min-width: 1140px) {
+  .footer .footContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer .footContainer .mv {
+    width: 65%;
+  }
+  .footer .footContainer .txtBox {
+    width: 35%;
+  }
+  .footer .footContainer .txtBox .copy {
+    display: none;
+  }
+}

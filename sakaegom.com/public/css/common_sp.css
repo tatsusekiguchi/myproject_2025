@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+    transition: 0.6s;
+  }
+  .header .logoBox .title {
+    display: none;
+  }
+  .header .logoBox .logo {
+    width: 200px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #090908;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 54px;
+  }
+  .navBox .navList .ul .li {
+    border-top: 1px solid #f0e9dc;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .ul .li .pulldown {
+    display: none;
+  }
+  .navBox .navList .ul .li.contact {
+    border-top: 0;
+  }
+  .navBox .navList .ul .li.contact a {
+    color: #ffffff;
+    background: #000000;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 55px 0 0;
+  }
+
+  .pageKvPanel {
+    padding: 40px 20px 30px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore a {
+    padding: 10px 50px 10px 0;
+  }
+  .btnMore a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    border-radius: 50%;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center no-repeat #ffffff;
+    background-size: 12px auto;
+  }
+
+  .btnContact a {
+    padding: 10px 50px 10px 0;
+  }
+  .btnContact a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    border-radius: 50%;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) center no-repeat #ecf5f8;
+    background-size: 12px auto;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    margin: 0 0 40px;
+    padding: 30px 20px;
+  }
+  .footer .footContact .left {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .right .itemBox + .itemBox {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .telFax a .em {
+    font-size: 24px;
+  }
+  .footer .footContact .telFax + p {
+    margin: 5px 0 0;
+  }
+  .footer .footContact .ttl {
+    padding: 15px 0 10px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .footer .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .left {
+    width: 25%;
+  }
+  .footer .right {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .footer .right > * {
+    width: 48%;
+  }
+}
+@media (max-width: 1024px) {
+  .footer .footPanel {
+    padding: 0 0 50px;
+  }
+  .footer .footPanel .left .logo {
+    font-size: 24px;
+  }
+  .footer .footPanel .right {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .footer .copy {
+    text-align: center;
+  }
+}

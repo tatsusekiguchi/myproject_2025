@@ -1,0 +1,206 @@
+// ▽メイン▽
+main#top
+	.topMvContainer
+		.moveCloudArea
+			.moveCloud.scroll-infinity__cloud
+				img(src=(root_path || '') + "image/common/move_cloud.png", alt="")
+		.kvBgBlue
+			img(src=(root_path || '') + "image/top/top_kv_bg_green.png", alt="")
+		.kvSlidePanel
+			.kvSlide.kvSlide--pc
+				.slideBox
+					img(src=(root_path || '') + "image/top/top_kv_01_pc.png", alt="")
+				.slideBox
+					img(src=(root_path || '') + "image/top/top_kv_02_pc.png", alt="")
+				.slideBox
+					img(src=(root_path || '') + "image/top/top_kv_03_pc.png", alt="")
+			.kvSlide.kvSlide--sp
+				.slideBox
+					img(src=(root_path || '') + "image/top/top_kv_01_sp.png", alt="")
+				.slideBox
+					img(src=(root_path || '') + "image/top/top_kv_02_sp.png", alt="")
+				.slideBox
+					img(src=(root_path || '') + "image/top/top_kv_03_sp.png", alt="")
+			.kvTitleBox
+				.kvTitle
+					h1
+						| 子どもたちの成長を
+						br
+						| ともに喜ぶ、
+						br
+						| 家族のような<br class="spBreak">存在でありたい。
+				.copy.poppins
+					p COPYRIGHT &copy; NAGOYA YUUKA KODOMOEN <br class="spBreak">ALL RIGHTS RESERVED.
+		.kvIconList
+			.kvBgBlack
+				img(src=(root_path || '') + "image/top/top_kv_bg_black.png", alt="")
+			.kvIcon01.kvIcon
+				img(src=(root_path || '') + "image/top/top_kv_icon_01.png", alt="")
+			.kvIcon02.kvIcon
+				img(src=(root_path || '') + "image/top/top_kv_icon_02.png", alt="")
+	#section__concept
+		.bgMountain
+			img(src=(root_path || '') + "image/top/concept_bg_mountain_pc.png", class="switch" alt="")
+		.secContainer
+			.secBox
+				.secTtl
+					h2
+						| 子どもたちの成長を
+						br
+						| ともに喜ぶ、
+						br
+						| 家族のような
+						br
+						| 存在でありたい。
+				.txt
+					p 自然と触れあうよろこび。<br>どこまでも自由なこころ。<br>想像して創造するちから。<br>なごや遊花幼稚園では<br>生きることに真摯に向き合う保育を実践し、<br>遊びをとおして夢中になれる大切なものを、<br>ひとつひとつ、こどもたちに手渡します。<br>遊花幼稚園で本物と出会い、<br>本質と向き合った日々は、いつか人生の土台となる。<br>明日につながる“生きるの根っこ”を、<br>みんなで大事に育てています。
+			.btmBox
+				.btnMore.btnMorePink
+					a(href=(root_path || '') + "about")
+						div
+							p くわしく見る
+				ul
+					li
+						a(href=(root_path || '') + "about#section__policy") 保育理念
+					li
+						a(href=(root_path || '') + "about#section__greeting") 園長の挨拶
+					li
+						a(href=(root_path || '') + "about#section__overview") 園概要
+					li
+						a(href=(root_path || '') + "about#section__access") アクセス
+		.moveCarArea
+			.moveCar.scroll-infinity__left
+				img(src=(root_path || '') + "image/common/icon_car.png", alt="")
+	#section__info
+		.infoContainer
+			.secTtl
+				h2 園からのお知らせ
+			.listPanel
+				.infoList
+					.listItem
+						a(href="").recruit
+							.inner
+								.circle
+									p 新着
+								.photo
+									img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+								.cate
+									p 採用情報
+								.title
+									p 令和７年度採用<br>保育士、園見学募集中！
+					.listItem
+						a(href="").lunch
+							.inner
+								.circle
+									p 07.30
+								.photo
+									img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+								.cate
+									p 給食だより
+								.title
+									p 8月の給食だより
+					.listItem
+						a(href="").info
+							.inner
+								.circle
+									p 04.28
+								.photo
+									img(src=(root_path || '') + "image/top/info_sec_img_01.png", alt="")
+								.cate
+									p 情報公開
+								.title
+									p 第15回開催<br>なごや遊花こども園運動会
+	#section__guide
+		.guideContainer01.guideContainer
+			.secPanel
+				.photo
+					img(src=(root_path || '') + "image/top/guide_photo_01.png", alt="")
+				.txtBox
+					.secTtlBox
+						.secTtl
+							h2 入園案内
+							span にゅうえんあんない
+					.inner
+						.subTtl
+							h3 まずは園まで<br>気軽に見学のお問い合わせを
+						.txt
+							p 園内見学では、子どもたちが過ごす保育室や園庭などをご案内いたします。見学後には個別相談の時間もございますので、入園に関することや園生活について気になることなど、お気軽にお話しください。実際の園の雰囲気を感じていただける機会となっております。まずは園へお問い合わせください。
+						.btmBox
+							.btnMore.btnMoreGreen
+								a(href=(root_path || '') + "guide/")
+									div
+										p くわしく見る
+							ul.green
+								li
+									a(href=(root_path || '') + "guide#flowTitle") 入園の流れ
+								li
+									a(href=(root_path || '') + "guide#divisionSection") 認定区分について
+								li
+									a(href=(root_path || '') + "guide#section__schedule") 保育時間
+								li
+									a(href=(root_path || '') + "guide#priceSection") 認定ごとの利用料
+								li
+									a(href=(root_path || '') + "guide#uniformSection") 制服紹介
+								li
+									a(href=(root_path || '') + "guide#faqSecTtl") よくある質問
+		.guideContainer02.guideContainer
+			.secPanel
+				.photo
+					img(src=(root_path || '') + "image/top/guide_photo_02.png", alt="")
+				.txtBox
+					.secTtlBox
+						.secTtl
+							h2 見学案内
+							span けんがくあんない
+					.inner
+						.subTtl
+							h3 子どもたちが主体の<br>寄り添い、見守る保育
+						.txt
+							p なごや遊花幼稚園での活動や遊びは、いつでも子どもたちが主体です。子どもたちの「やりたい！」の気持ち、その心と声に耳を傾けます。いつもやさしい陽の光のように、子どもの成長を優しく見守り、大きな花を咲かせる場所でありたいと願っています。
+						.btmBox
+							.btnMore.btnMoreBlue
+								a(href=(root_path || '') + "visit/")
+									div
+										p くわしく見る
+							ul.blue
+								li
+									a(href=(root_path || '') + "visit#section__important") 園が大切にしていること
+								li
+									a(href=(root_path || '') + "visit#section__schedule") 園児の1日
+								li
+									a(href=(root_path || '') + "visit#section__event") 年間スケジュール
+		.supportContainer
+			.topTitle
+				h2 CHILD<br>CARESUPPORT
+			.subTitle
+				h3 ０歳児からの<br>子育てサポート
+			.arrow
+				img(src=(root_path || '') + "image/top/support_arrow.png", alt="")
+			.secBox
+				.inner
+					.ttl
+						h4 はじめての園生活に、<br>やさしく寄りそう0歳からのサポート
+					.txtBox
+						.txt
+							p はじめての集団生活が、もっと安心であたたかいものであるように。当園では、0歳からのお子さまもお預かりできる保育サポート制度をご用意しています。<br>幼稚園ならではの教育的な関わりを大切にしながら、<br>ご家庭の働き方や子育てのスタイルに合わせて柔軟に対応しています。
+						.btmBox
+							.btnMore.btnMorePink
+								a(href=(root_path || '') + "support/")
+									div
+										p くわしく見る
+							ul
+								li
+									a(href=(root_path || '') + "support#section__classroom") 満3歳からの入園
+								li
+									a(href=(root_path || '') + "support#section__library") おもちゃ図書館
+								li
+									a(href=(root_path || '') + "support#section__square") ちびっこ広場
+			.btmPhoto
+				ul
+					li
+						img(src=(root_path || '') + "image/top/support_btm_children_01.png", alt="")
+					li
+						img(src=(root_path || '') + "image/top/support_btm_children_02.png", alt="")
+					li
+						img(src=(root_path || '') + "image/top/support_btm_children_03.png", alt="")
+// △メイン△

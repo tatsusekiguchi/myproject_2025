@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/split-text.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script src="../js/split-text.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<p>伊豆・伊東の高級別荘・リゾート物件なら</p>
+				<div class="logo"><a href="/">
+						<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+			</div>
+			<div class="headNav">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>ABOUT</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="propertylist">
+							<div>
+								<p>FOR SALE</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="feature">
+							<div>
+								<p>IZU AREA</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="bloglist">
+							<div>
+								<p>NEWS</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="contact">
+							<div>
+								<p>CONTACT</p>
+							</div>
+						</a></div>
+					<div class="li language">
+						<div class="em"><a href="/">
+								<div>
+									<p>JP</p>
+								</div>
+							</a></div>
+						<div class="span">
+							<p>/</p>
+						</div>
+						<div class="em"><a href="en">
+								<div>
+									<p>EN</p>
+								</div>
+							</a></div>
+						<div class="span">
+							<p>/</p>
+						</div>
+						<div class="em"><a href="zh">
+								<div>
+									<p>CN</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navInner">
+				<div class="navList">
+					<div class="dl">
+						<div class="dt"><a href="about">
+								<div>
+									<p>ABOUT</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="about">
+								<div>
+									<p>はじめての方へ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="propertylist">
+								<div>
+									<p>FOR SALE</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="propertylist">
+								<div>
+									<p>物件紹介</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="feature">
+								<div>
+									<p>IZU AREA</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="feature">
+								<div>
+									<p>伊豆の魅力</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="bloglist">
+								<div>
+									<p>NEWS</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="bloglist">
+								<div>
+									<p>お知らせ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="sell">
+								<div>
+									<p>SELL</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="sell">
+								<div>
+									<p>売りたい方へ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="company">
+								<div>
+									<p>COMPANY</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="btnContact"><a href="contact">
+						<div>
+							<p>CONTACT</p>
+						</div>
+					</a></div>
+				<div class="language">
+					<div class="em"><a href="/">
+							<div>
+								<p>JP</p>
+							</div>
+						</a></div>
+					<div class="span">
+						<p>/</p>
+					</div>
+					<div class="em"><a href="en">
+							<div>
+								<p>EN</p>
+							</div>
+						</a></div>
+					<div class="span">
+						<p>/</p>
+					</div>
+					<div class="em"><a href="zh">
+							<div>
+								<p>CN</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="snsList">
+					<div class="ul">
+						<div class="li"><a href="https://www.instagram.com/comhome0557375113/" target="_blank" rel="noopener">
+								<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_insta.png" alt=""></div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_line.png" alt=""></div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburgerBox">
+			<div class="hamburger">
+				<div class="span"></div>
+				<div class="span"></div>
+				<div class="span"></div>
+			</div>
+			<div class="hamburgerTxt">
+				<p>CLOSE</p>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="sellMain main">
+		<div class="pageTitleContainer">
+			<div class="secWrap">
+				<div class="pageTitlePanel">
+					<div class="pageTitle">
+						<p>SELL</p>
+					</div>
+					<div class="subTitle">
+						<h1>売りたい方へ</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topSection">
+			<div class="secWrap">
+				<div class="secBox">
+					<div class="ttl">
+						<h2>伊豆の不動産を直接買取り<br>スピーディに現金化</h2>
+					</div>
+					<div class="txt">
+						<p>買取仲介よりもスピーディに現金化できる当社による直接買取を強みとしています。<br>伊豆の市場動向や相場に精通しており、適切な価格で買取ります。<br>相続による売却でお急ぎの方、遠方にお住まいで時間をかけずに売却したい方、ご相談ください。</p>
+					</div>
+				</div>
+				<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/sell_top_img.png" alt=""></div>
+				<div class="midTxt txt">
+					<p>売却方法には、仲介と買取があります。<br>伊豆での売買仲介は長引く傾向にあり、スピーディに現金化できる買取をお勧めしています。<br>仲介も承っていますので、まずはご相談ください。</p>
+				</div>
+				<div class="listContainer">
+					<div class="listPanel">
+						<div class="listTtl">
+							<h3>仲介</h3>
+						</div>
+						<div class="txt">
+							<p>不動産会社が売主と買主の間に入って、取引をサポートする方法です。伊豆では半年ほどで売れるのが理想ですが、長期間売れないこともあります。時間がかかっても高く売りたい方におすすめです。</p>
+						</div>
+						<div class="meritList">
+							<div class="meritBox">
+								<div class="dl">
+									<div class="dt">
+										<p>メリット</p>
+									</div>
+									<div class="dd">
+										<p>□買取より高く売れる</p>
+										<p>□売却条件の調整が可能</p>
+									</div>
+								</div>
+							</div>
+							<div class="meritBox">
+								<div class="dl">
+									<div class="dt">
+										<p>デメリット</p>
+									</div>
+									<div class="dd">
+										<p>□長期間売れないことがある</p>
+										<p>□仲介手数料が必要</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="listPanel">
+						<div class="listTtl">
+							<h3>買取</h3>
+						</div>
+						<div class="txt">
+							<p>不動産会社が直接物件を買い取る方法です。売れるのを待つ必要がなく、スピーディに現金化できるのが最大のメリットです。<br>仲介の半値ほどになることもあるので、安くなって早く売りたい方におすすめです。</p>
+						</div>
+						<div class="meritList">
+							<div class="meritBox">
+								<div class="dl">
+									<div class="dt">
+										<p>メリット</p>
+									</div>
+									<div class="dd">
+										<p>□売却がスピーディ</p>
+										<p>□契約後すぐ現金化可能</p>
+										<p>□契約が簡単</p>
+										<p>□現状のまま売却可能</p>
+										<p>□仲介手数料不要</p>
+									</div>
+								</div>
+							</div>
+							<div class="meritBox">
+								<div class="dl">
+									<div class="dt">
+										<p>デメリット</p>
+									</div>
+									<div class="dd">
+										<p>□仲介より安くなる</p>
+										<p>□価格交渉ができない</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="pageSecTtl center">
+					<h2>FEATURES</h2>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttl">
+							<h3>自社買取により<br>スピーディに現金化</h3>
+						</div>
+						<div class="txt">
+							<p>当社が買取させていただくことで、スピード感のある現金化が可能です。<br>相続した別荘や土地を早く現金化したい方、遠方に住んでおり売却に時間をかけられない方、使わなくなった別荘を手間なく手放したい方、当社にご相談ください。<br>また、売買仲介を頼んだものの、長期間空いてしまっている場合も一度ご相談ください。<br>ZOOMでのお打ち合わせや郵送での契約により、オンラインでの売却も可能です。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttl">
+							<h3>想定金額で売り出すことで<br>仲介でも早期売却</h3>
+						</div>
+						<div class="txt">
+							<p>媒介契約のために高値をつける不動産会社は多くありますが、相場より高い価格での売り出しは、売却まで1年以上かかるケースがよくあります。長期間の売却は、維持管理費がかかり続け、時間の経過とともに資産価値が下がるだけでなく、お客様の精神的な負担にもなります。<br>仲介での売却で大切なのは、理想価格ではなく、物件が実際に売れる価格（想定価格）での売り出しです。私たちは50年以上の経験をもとに、適切な想定金額で売り出すことで早期売却につなげ、無駄な時間をなくします。<br>ご相談いただければ、事例をお見せしながら詳しくご説明いたします。<br>ZOOMや郵送でのオンライン相談・契約も可能ですので、遠方の方もお気軽にご相談ください。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtl center">
+					<h2>CASE</h2>
+				</div>
+				<div class="secBox">
+					<div class="photo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/sell_sec02_img.png" alt=""></div>
+					<div class="txtBox">
+						<div class="ttl">
+							<h3>仲介で1 年以上売れなかった物件を<br>当社にて買取いたしました</h3>
+						</div>
+						<div class="txt">
+							<p>戸建て別荘の売却について当社へご相談いただいた際、買取をご提案いたしました。しかし、提示した買取価格がご希望を大きく下回ったため、高い査定を提示していた他社さまと仲介で契約されました。<br>ところが1年以上経っても売却には至らず、心身ともにご負担を感じられた状態で、再度当社へご相談いただきました。その場で買取を行い、スムーズに現金化することができました。大切な不動産ですので「できるだけ高く売りたい」と思われるのは当然です。ですが「時間」もまた同じように大切です。<br>売却について迷っていらっしゃる方は、ぜひ一度ご相談ください。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="pagetop linkBtn" data-target="main"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+			<div class="secWrap01">
+				<div class="secBox">
+					<div class="leftBox">
+						<div class="pageSecTtl white">
+							<h2>CONTACT</h2>
+						</div>
+						<div class="tel"><a href="tel:0557375113">
+								<div>
+									<p class="span">TEL.</p>
+									<p class="em">055-737-5113</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="rightBox">
+						<div class="contactTxt">
+							<div class="dl">
+								<div class="dt">
+									<p>内覧予約・ご相談</p>
+								</div>
+								<div class="dd">
+									<p> その他お問い合わせはこちら</p>
+								</div>
+							</div>
+						</div>
+						<div class="contactLink">
+							<div class="contactBtn"><a href="contact">
+									<div class="dl">
+										<div class="dt">
+											<p>MAIL FORM</p>
+										</div>
+										<div class="dd">
+											<p>メールでお問い合わせ</p>
+										</div>
+									</div>
+								</a></div>
+							<div class="contactBtn"><a href="#" target="_blank" rel="noopener">
+									<div class="dl">
+										<div class="dt">
+											<p>LINE</p>
+										</div>
+										<div class="dd">
+											<p>LINEでお問い合わせ</p>
+										</div>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="footBox">
+					<div class="leftBox">
+						<div class="logoBox">
+							<p>伊豆・伊東の高級別荘・リゾート物件なら</p>
+							<div class="logo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						</div>
+						<div class="txt">
+							<p>静岡県伊東市湯川１－７－１１</p>
+						</div>
+						<div class="snsList">
+							<div class="ul">
+								<div class="li"><a href="https://www.instagram.com/comhome0557375113/" target="_blank" rel="noopener">
+										<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_insta.png" alt=""></div>
+									</a></div>
+								<div class="li"><a href="#" target="_blank" rel="noopener">
+										<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_line.png" alt=""></div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="footNav">
+							<div class="navList">
+								<div class="dl">
+									<div class="dt"><a href="about">
+											<div>
+												<p>ABOUT</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="about">
+											<div>
+												<p>はじめての方へ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="propertylist">
+											<div>
+												<p>FOR SALE</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="propertylist">
+											<div>
+												<p>物件紹介</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="feature">
+											<div>
+												<p>IZU AREA</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="feature">
+											<div>
+												<p>伊豆の魅力</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="navList">
+								<div class="dl">
+									<div class="dt"><a href="bloglist">
+											<div>
+												<p>NEWS</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="bloglist">
+											<div>
+												<p>お知らせ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="sell">
+											<div>
+												<p>SELL</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="sell">
+											<div>
+												<p>売りたい方へ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="company">
+											<div>
+												<p>COMPANY</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="company">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btnContactBox">
+					<div class="btnContact"><a href="contact">
+							<div>
+								<p>CONTACT</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="copy">
+					<p>&copy;2025　COM-HOME有限会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

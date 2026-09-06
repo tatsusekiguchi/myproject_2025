@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script>
+		(function(d) {
+			var config = {
+					kitId: 'fmx6ynq',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function() {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function() {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="product">
+	<!-- ▽header▽-->
+	<header class="header">
+		<div class="headWrap">
+			<div class="headTtl">
+				<p>ファンデーションで隠さない <br class="spBreak">よりよい、自分へ。</p>
+			</div>
+			<div class="leftIcon navOpen"></div><a class="rightIcon" href=""></a>
+		</div>
+		<div class="navBox">
+			<div class="navHead">
+				<div class="leftIcon navClose"><img src="../image/common/nav_close.png" alt=""></div>
+				<div class="rightIcon navClose"><a href=""><img src="../image/common/header_icon_right_01.png" alt=""></a></div>
+			</div>
+			<div class="navBody">
+				<div class="navContainer">
+					<div class="leftPanel">
+						<div class="navList">
+							<ul>
+								<li><a href="#section__concept"><em>Concept</em><span>コンセプト</span></a></li>
+								<li><a href="#section__commitment"><em>Commitments</em><span>サロンのこだわり</span></a></li>
+								<li><a href=""><em>Salon List</em><span>全国のサロン一覧</span></a></li>
+								<li><a href=""><em>Menu</em><span>メニュー</span></a></li>
+								<li><a href=""><em>Flow</em><span>施術の流れ</span></a></li>
+								<li><a href=""><em>Program</em><span>mieuxの肌質改善プログラム</span></a></li>
+								<li><a href=""><em>Company</em><span>会社概要</span></a></li>
+								<li><a href=""><em>FAQ</em><span>よくある質問</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="rightPanel">
+						<div class="navList">
+							<ul>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_01_pc.png" alt=""></a></li>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_02_pc.png" alt=""></a></li>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_03_pc.png" alt=""></a></li>
+								<li><a href=""><img class="switch" src="../image/common/nav_link_img_04_pc.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="bottomBox">
+							<div class="logo"><img src="../image/common/nav_logo.png" alt=""></div>
+							<div class="info">
+								<div class="txt">
+									<p>Being beautiful creates smiles.<br>Through beauty, we enable our clients to feel happiness and confidence<br>not only from the outside. but also from the inside.<br>We will continue to be a group of artists who can provide such an experience.</p>
+								</div>
+								<div class="copyBox">
+									<div class="copy">
+										<p>Copyright &copy; YORI Co., Ltd all rights reserved.</p>
+									</div>
+									<div class="privacy"><a href="">プライバシーポリシー</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fixedNavBox">
+			<ul>
+				<li><a href="">Salon List</a></li>
+				<li><a href="">Online Store</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="product">
+		<div class="mvContainer">
+			<div class="mv"><img class="switch" src="../image/product/product_top_mv_pc.png" alt=""></div>
+			<div class="mvTitle">
+				<div class="secTtlBox">
+					<div class="secTtl">
+						<h1>Product</h1>
+					</div>
+					<div class="sub">
+						<p>ホームケア商品</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section__product">
+			<div class="productList">
+				<ul>
+					<li>
+						<div class="photo"><img src="../image/product/product_img_1_1_pc.png" alt=""></div>
+						<div class="infoBox">
+							<div class="ttlBox">
+								<div class="left">
+									<div class="ttl01">
+										<p>CLEANSING GEL</p>
+									</div>
+									<div class="ttl02">
+										<p>クレンジングジェル</p>
+									</div>
+								</div>
+								<div class="price">
+									<p><span>Net.150mL /</span><em>5,500yen</em></p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。</p>
+							</div>
+						</div>
+						<div class="button itemModalOpen" data-modal-id="modal1">
+							<p>View Detail</p>
+						</div>
+					</li>
+					<li>
+						<div class="photo"><img src="../image/product/product_img_1_1_pc.png" alt=""></div>
+						<div class="infoBox">
+							<div class="ttlBox">
+								<div class="left">
+									<div class="ttl01">
+										<p>CLEANSING GEL</p>
+									</div>
+									<div class="ttl02">
+										<p>クレンジングジェル</p>
+									</div>
+								</div>
+								<div class="price">
+									<p><span>Net.150mL /</span><em>5,500yen</em></p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>ミントがさわやかに香る洗顔ウォッシュ。<br>アミノ酸系※1洗浄成分が高配合された洗顔料です。たっぷりの泡で、大人の肌をいたわり不要な角質や皮脂を洗い流し、肌のトーンアップ※2を促します。</p>
+							</div>
+						</div>
+						<div class="button">
+							<p>View Detail</p>
+						</div>
+					</li>
+					<li>
+						<div class="photo"><img src="../image/product/product_img_1_1_pc.png" alt=""></div>
+						<div class="infoBox">
+							<div class="ttlBox">
+								<div class="left">
+									<div class="ttl01">
+										<p>CLEANSING GEL</p>
+									</div>
+									<div class="ttl02">
+										<p>クレンジングジェル</p>
+									</div>
+								</div>
+								<div class="price">
+									<p><span>Net.150mL /</span><em>5,500yen</em></p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>９種類の植物エキス※1と植物幹細胞※2を配合した化粧水です。<br>角質層のすみずみまで水分を行きわたらせ、ハリや潤いのある肌に整え、輝きに満ちた肌印象へと導きます。<br>また、ヒアルロン酸※3によりしっかりと水分をキープします。</p>
+							</div>
+						</div>
+						<div class="button">
+							<p>View Detail</p>
+						</div>
+					</li>
+					<li>
+						<div class="photo"><img src="../image/product/product_img_1_1_pc.png" alt=""></div>
+						<div class="infoBox">
+							<div class="ttlBox">
+								<div class="left">
+									<div class="ttl01">
+										<p>CLEANSING GEL</p>
+									</div>
+									<div class="ttl02">
+										<p>クレンジングジェル</p>
+									</div>
+								</div>
+								<div class="price">
+									<p><span>Net.150mL /</span><em>5,500yen</em></p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。</p>
+							</div>
+						</div>
+						<div class="button">
+							<p>View Detail</p>
+						</div>
+					</li>
+					<li>
+						<div class="photo"><img src="../image/product/product_img_1_1_pc.png" alt=""></div>
+						<div class="infoBox">
+							<div class="ttlBox">
+								<div class="left">
+									<div class="ttl01">
+										<p>CLEANSING GEL</p>
+									</div>
+									<div class="ttl02">
+										<p>クレンジングジェル</p>
+									</div>
+								</div>
+								<div class="price">
+									<p><span>Net.150mL /</span><em>5,500yen</em></p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。</p>
+							</div>
+						</div>
+						<div class="button">
+							<p>View Detail</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="itemModalOverlay overlay">
+				<div class="itemModalContainer">
+					<div class="itemModal" data-modal="modal1">
+						<div class="modalBox">
+							<div class="modalBoxInner">
+								<div class="photoBox">
+									<div class="photo"><img class="switch" src="../image/product/product_img_1_1_pc.png" alt=""></div>
+									<div class="photo"><img class="switch" src="../image/product/product_img_1_2_pc.png" alt=""></div>
+								</div>
+								<div class="infoBox">
+									<div class="ttlBox">
+										<div class="left">
+											<div class="ttl01">
+												<p>CLEANSING GEL</p>
+											</div>
+											<div class="ttl02">
+												<p>クレンジングジェル</p>
+											</div>
+										</div>
+										<div class="price">
+											<p><span>Net.150mL /</span><em>5,500yen</em></p>
+										</div>
+									</div>
+									<div class="txt">
+										<p>ミネラル豊富な海洋深層水をベースに9種類の植物由来のエキスを配合したクレンジング。 9種類の植物由来のエキスにより、メイクオフしながら肌を引き締め、肌のトーンアップを促します。</p>
+										<div class="aside">
+											<p>[※1] ライム果汁、オレンジ果汁、レモン果汁、ナツメ果実エキス、リンゴ果実エキス、 サンザシエキス、グレープフルーツ果実エキス、ヨモギ葉エキス、アロエベラエキス [※2] 肌印象を明るくする</p>
+										</div>
+									</div>
+								</div>
+								<div class="howtoPanel">
+									<dl class="accord">
+										<dt>ご使用方法</dt>
+										<dd>
+											<div class="inner">
+												<div class="box">
+													<div class="txt">
+														<p>ご使用方法説明文</p>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="accord">
+										<dt>成分</dt>
+										<dd>
+											<div class="inner">
+												<div class="box">
+													<div class="txt">
+														<p>水、グリセリン、ヤシ油脂肪酸PEG-7グリセリル、DPG、エタノール、1,2-ヘキサンジオール、異性化糖、加水分解ローヤルゼリータンパク、ライム果汁、オレンジ果汁、レモン果汁、ナツメ果実エキス、リンゴ果実エキス、サンザシエキス、グレープフルーツ果実エキス、ヨモギ葉エキス、アロエベラ葉エキス、グリチルリチン酸2K、アラントイン、オレンジ果皮油、ローマカミツレ花油、BG、（アクリレーツ/アクリル酸アルキル（C10-30））クロスポリマー、ペンチレングリコール、水酸化K、フェノキシエタノール</p>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="buttonPurchase"><a href="#" target="_blank" rel="noopener">購入する</a></div>
+								<div class="photoPanel">
+									<div class="ttl">
+										<p>クレンジングジェルご使用方法</p>
+									</div>
+									<div class="photo"><img src="../image/product/product_modal_mv_01.png" alt=""></div>
+								</div>
+								<div class="modalCloseBtm">
+									<div class="modalClose">
+										<p>Close Page</p>
+									</div>
+								</div>
+							</div>
+							<div class="modalClose">
+								<p>Close Page</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer class="footer">
+		<div class="footContact">
+			<div class="secWrap">
+				<div class="contactList">
+					<ul>
+						<li><a href="#" target="_blank" rel="noopener">
+								<div class="photo"><img class="switch" src="../image/common/footer_bnr_reserve_pc.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>Reserve</p>
+										</div>
+										<div class="ttl02">
+											<p>栄本店のご予約はこちら</p>
+										</div>
+									</div>
+									<div class="btnMore"><span>VIEW MORE</span></div>
+								</div>
+							</a></li>
+						<li><a href="">
+								<div class="photo"><img class="switch" src="../image/common/footer_bnr_franchise_pc.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>Franchise</p>
+										</div>
+										<div class="ttl02">
+											<p>FCオーナー募集中</p>
+										</div>
+									</div>
+									<div class="btnMore"><span>VIEW MORE</span></div>
+								</div>
+							</a></li>
+						<li><a href="">
+								<div class="photo"><img class="switch" src="../image/common/footer_bnr_contact_pc.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>Contact</p>
+										</div>
+										<div class="ttl02">
+											<p>お問い合わせはこちら</p>
+										</div>
+									</div>
+									<div class="btnMore"><span>VIEW MORE</span></div>
+								</div>
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="footBox">
+					<div class="infoBox01">
+						<div class="logo"><img src="../image/common/footer_logo.png" alt=""></div>
+						<div class="txt">
+							<p>Being beautiful creates smiles.<br>Through beauty, we enable our clients to feel happiness and confidence<br>not only from the outside. but also from the inside.<br>We will continue to be a group of artists who can provide such an experience.</p>
+						</div>
+					</div>
+					<div class="infoBox02">
+						<div class="sns">
+							<ul>
+								<li><a href="#" target="_blank" rel="noopener"><img src="../image/common/footer_sns_instagram.png" alt=""></a></li>
+								<li><a href="#" target="_blank" rel="noopener"><img src="../image/common/footer_sns_line.png" alt=""></a></li>
+								<li><a href="#" target="_blank" rel="noopener"><img src="../image/common/footer_sns_twitter.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="copyBox">
+							<div class="copy">
+								<p>Copyright &copy; YORI Co., Ltd all rights reserved.</p>
+							</div>
+							<div class="privacy"><a href="">プライバシーポリシー</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footMv"><img class="switch" src="../image/common/footer_btm_mv_pc.png" alt=""></div>
+	</footer>
+	<!-- △footer△-->
+</body>
+
+</html>

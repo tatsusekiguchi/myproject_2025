@@ -1,0 +1,94 @@
+// ▽メイン▽
+main#contact
+    #section__contact
+        .secWrap02
+            .contactContainer
+                .secTtlBox
+                    .secTtl
+                        h1 Contact
+                    .sub
+                        p お問い合わせ
+                .formBox
+                    form
+                        dl.radioForm
+                            dt
+                                span お問い合わせ内容
+                                em *
+                            dd
+                                .itemCheckPanel
+                                    .itemCheck
+                                        <div class="itemCheck">
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="サロンについて">
+                                                    <span class="mwform-checkbox-field-text">サロンについて</span>
+                                                </label>
+                                            </span>
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="その他">
+                                                    <span class="mwform-checkbox-field-text">その他</span>
+                                                </label>
+                                            </span>
+                                        </div>
+                        dl
+                            dt
+                                span お名前
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl
+                            dt
+                                span フリガナ
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl
+                            dt
+                                span メールアドレス
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="email" placeholder="")
+                        dl
+                            dt
+                                span 電話番号
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl.msg
+                            dt
+                                span お問い合わせ内容
+                            dd
+                                .inputBox
+                                    textarea(placeholder="")
+                                //- <div class="checkItem agreeCheck">
+                                //-     <label>
+                                //-         <span class="mwform-checkbox-field horizontal-item">
+                                //-             <label>
+                                //-                 <input type="checkbox" name="agreeCheck[data][]" value="個人情報の取り扱い">
+                                //-                 <span class="mwform-checkbox-field-text"></span>
+                                //-             </label>
+                                //-         </span>
+                                //-         <a href="">個人情報の取り扱い</a>
+                                //-         <em>について同意する</em>
+                                //-     </label>
+                                //- </div>
+                        <div class="checkItem agreeCheck">
+                            <label>
+                                <span class="mwform-checkbox-field horizontal-item">
+                                    <label>
+                                        <input type="checkbox" name="agreeCheck[data][]" value="個人情報の取り扱い" checked="checked">
+                                        <span class="mwform-checkbox-field-text">個人情報の取り扱い</span>
+                                    </label>
+                                </span>
+                                <input type="hidden" name="agreeCheck[separator]" value=",">
+                                <input type="hidden" name="__children[agreeCheck][]" value="{&quot;\u500b\u4eba\u60c5\u5831\u306e\u53d6\u308a\u6271\u3044&quot;:&quot;\u500b\u4eba\u60c5\u5831\u306e\u53d6\u308a\u6271\u3044&quot;}">
+                            </label>
+                            <a href="https://mieux-cosme.com/wp/privacy/" target="_blank">個人情報の取り扱い</a><span>について同意する</span>
+                        </div>
+                        .submitButton.confirmButton
+                            <input type="submit" value="確 認" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+// △メイン△

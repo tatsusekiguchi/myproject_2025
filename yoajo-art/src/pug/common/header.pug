@@ -1,0 +1,46 @@
+// ▽header▽
+header.header
+    .headWrap
+        .logo
+            a(href="")
+                 img(src=(root_path || '') + "image/common/header_logo.png", alt="")
+        nav.navBox
+            .navList
+                ul
+                    li
+                        a(href="") Gallery
+                    li
+                        a(href="") Profile
+                    li
+                        a(href="") News
+                    li
+                        a(href="") Online Shop
+                    li
+                        a(href="") Contact
+            .navItem
+                ul
+                    li
+                        a(href="https://www.instagram.com/youajyo/", target="_blank", rel="noopener")
+                            img(src=(root_path || '') + "image/common/header_insta.png", alt="")
+                    li
+                        a(href="https://line.me/ti/p/0jVpeZ-qhR", target="_blank", rel="noopener")
+                            img(src=(root_path || '') + "image/common/header_line.png", alt="")
+            .headItem
+                .language
+                    .languageLink
+                        a(href="#", target="_blank", rel="noopener") EN
+                    span /
+                    .languageLink
+                        a(href="#", target="_blank", rel="noopener") CN
+                    span /
+                    .languageLink
+                        a(href="") JA
+                .volumeBox
+                    .volume.on ON
+                    span /
+                    .volume.off OFF
+    .hamburger
+        span
+        span
+        span
+// △header△

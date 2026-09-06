@@ -1,0 +1,106 @@
+{
+  "key": "group_home_care_product",
+  "title": "ホームケア商品",
+  "fields": [
+    {
+      "key": "field_repeater_product",
+      "label": "ホームケア商品リスト",
+      "name": "home_care_products",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "商品を追加",
+      "sub_fields": [
+        {
+          "key": "field_image_1",
+          "label": "商品画像1枚目",
+          "name": "product_image_1",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_image_2",
+          "label": "商品画像2枚目",
+          "name": "product_image_2",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_name_en",
+          "label": "英語商品名",
+          "name": "product_name_en",
+          "type": "text"
+        },
+        {
+          "key": "field_name_ja",
+          "label": "日本語商品名",
+          "name": "product_name_ja",
+          "type": "text"
+        },
+        {
+          "key": "field_volume",
+          "label": "容量",
+          "name": "product_volume",
+          "type": "text"
+        },
+        {
+          "key": "field_price",
+          "label": "金額",
+          "name": "product_price",
+          "type": "text"
+        },
+        {
+          "key": "field_description",
+          "label": "説明文",
+          "name": "product_description",
+          "type": "textarea"
+        },
+        {
+          "key": "field_note",
+          "label": "注釈",
+          "name": "product_note",
+          "type": "textarea"
+        },
+        {
+          "key": "field_purchase_url",
+          "label": "購入リンクURL",
+          "name": "purchase_url",
+          "type": "textarea"
+        },
+        {
+          "key": "field_usage_detail_title",
+          "label": "ご使用方法詳細タイトル",
+          "name": "usage_detail_title",
+          "type": "text"
+        },
+        {
+          "key": "field_usage_detail_description",
+          "label": "ご使用方法詳細説明文",
+          "name": "usage_detail_description",
+          "type": "textarea"
+        },
+        {
+          "key": "field_usage_image",
+          "label": "ご使用方法画像",
+          "name": "usage_image",
+          "type": "image",
+          "return_format": "array"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}

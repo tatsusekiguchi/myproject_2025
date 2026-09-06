@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1139px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script>
+		(function(d) {
+			var config = {
+					kitId: 'jyl2ibs',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function() {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function() {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<!-- title-->
+	<title>なごや遊花幼稚園</title>
+</head>
+
+<body class="page">
+	<!-- ▽header▽-->
+	<header class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="logo logoNormal"><a href="../"><img src="../image/common/header_logo.png" alt=""></a></div>
+				<div class="logo logoWhite"><a href="../"><img src="../image/common/header_logo_white.png" alt=""></a></div>
+				<p class="poppins">Nagoya yuuka<br>kodomoen</p>
+			</div>
+			<div class="navBox">
+				<div class="navList">
+					<ul>
+						<li><a href="../about/">園について</a></li>
+						<li><a href="../newslist/">お知らせ</a></li>
+						<li class="current"><a href="../guide/">入園案内</a></li>
+						<li><a href="../visit/">見学案内</a></li>
+						<li><a href="../support/">0歳からの子育てサポート</a></li>
+						<li><a href="../entry/">見学申し込み</a></li>
+						<li><a href="../recruit/">採用情報</a></li>
+					</ul>
+				</div>
+				<div class="bnrList">
+					<ul>
+						<li><a href="" download><img src="../image/common/nav_bnr_guide.png" alt=""></a></li>
+						<li><a href="" download><img src="../image/common/nav_bnr_recruit.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger"><span></span><span></span></div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="contact">
+		<div class="topContainer">
+			<div class="topKvPanel">
+				<div class="topKv"><img class="switch" src="../image/contact/top_kv_pc.png" alt=""></div>
+			</div>
+			<div class="topTitlePanel">
+				<h1>お問い合わせ／見学申し込み</h1>
+				<div class="txt">
+					<p>ご見学時に気になったことはお気軽にお尋ねください。<br>園長をはじめとした保育者と、直接コミュニケーションしていただくことで、<br>園の雰囲気などを感じていただける貴重な機会です。</p>
+				</div>
+			</div>
+		</div>
+		<div class="arrow"><img src="../image/contact/top_arrow.png" alt=""></div>
+		<div class="contactContainer">
+			<div class="contactTabList">
+				<ul>
+					<li class="active">
+						<p>お問い合わせ</p>
+					</li>
+					<li><a href="../entry/">見学申し込み</a></li>
+				</ul>
+			</div>
+			<div class="contactPanel">
+				<div class="contactItemBox">
+					<div class="formBox">
+						<form>
+							<dl>
+								<dt><span>お問い合わせ項目</span><em>*</em></dt>
+								<dd>
+									<div class="itemCheckPanel">
+										<div class="itemCheck">
+											<div class="itemCheck">
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="保育・教育に関して">
+														<span class="mwform-checkbox-field-text">保育・教育に関して</span>
+													</label>
+												</span>
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="ご意見箱">
+														<span class="mwform-checkbox-field-text">ご意見箱</span>
+													</label>
+												</span>
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="相談">
+														<span class="mwform-checkbox-field-text">相談</span>
+													</label>
+												</span>
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="その他">
+														<span class="mwform-checkbox-field-text">その他</span>
+													</label>
+												</span>
+											</div>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><span>ご希望の連絡方法</span><em>*</em></dt>
+								<dd>
+									<div class="itemCheckPanel">
+										<div class="itemCheck">
+											<div class="itemCheck">
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="メール">
+														<span class="mwform-checkbox-field-text">メール</span>
+													</label>
+												</span>
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="電話">
+														<span class="mwform-checkbox-field-text">電話</span>
+													</label>
+												</span>
+												<span class="mwform-checkbox-field horizontal-item">
+													<label>
+														<input type="checkbox" name="itemCheck[data][]" value="どちらでもよい">
+														<span class="mwform-checkbox-field-text">どちらでもよい</span>
+													</label>
+												</span>
+											</div>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><span>お名前</span><em>*</em></dt>
+								<dd>
+									<div class="inputBox">
+										<input type="text" placeholder="遊花 太郎">
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><span>フリガナ</span><em>*</em></dt>
+								<dd>
+									<div class="inputBox">
+										<input type="text" placeholder="ユウカ タロウ">
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><span>E-mail</span><em>*</em></dt>
+								<dd>
+									<div class="inputBox">
+										<input type="email" placeholder="sample@sample.com">
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><span>電話番号</span><em>*</em></dt>
+								<dd>
+									<div class="inputBox">
+										<input type="text" placeholder="">
+									</div>
+								</dd>
+							</dl>
+							<dl class="msg">
+								<dt><span>ご質問など</span></dt>
+								<dd>
+									<div class="inputBox">
+										<textarea placeholder="お問い合わせ内容をご記入ください。"></textarea>
+									</div>
+									<aside class="policy">
+										<p><span>個人情報の取り扱いに関しては</span><a href="" target="_blank">「プライバシーポリシー」</a><span>をお読みいただき、同意のうえお問い合わせください。</span></p>
+									</aside>
+									<div class="checkItem agreeCheck">
+										<label>
+											<span class="mwform-checkbox-field horizontal-item">
+												<label>
+													<input type="checkbox" name="agreeCheck[data][]" value="個人情報の取り扱い">
+													<span class="mwform-checkbox-field-text">個人情報の取り扱いについて同意する</span>
+												</label>
+											</span>
+										</label>
+									</div>
+								</dd>
+							</dl>
+							<div class="submitButton confirmButton"><input type="submit" value="送信内容確認" class="wpcf7-form-control has-spinner wpcf7-submit" /></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer class="footer">
+		<div class="footContact">
+			<div class="contactContainer">
+				<div class="slidePanel">
+					<div class="slideBox">
+						<ul>
+							<li><img src="../image/common/footer_contact_list_01.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_02.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_03.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_04.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="slideBox right slideBox--sp">
+						<ul>
+							<li><img src="../image/common/footer_contact_list_01.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_02.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_03.png" alt=""></li>
+							<li><img src="../image/common/footer_contact_list_04.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contactPanel">
+					<div class="contactItem">
+						<dl>
+							<dt class="green">見学申し込み</dt>
+							<dd>
+								<div class="txt">
+									<p>入園を検討している方は見学に来ませんか？<br>なごや遊花こども園をぜひ見に来てください。</p>
+								</div>
+								<div class="btnMore btnMoreGreen"><a href="">
+										<div>
+											<p>くわしく見る</p>
+										</div>
+									</a></div>
+							</dd>
+						</dl>
+					</div>
+					<div class="contactItem">
+						<dl>
+							<dt class="pink">お問い合わせ</dt>
+							<dd>
+								<div class="txt">
+									<p>お問い合わせやご意見ございましたら<br>お気軽にご相談ください</p>
+								</div>
+								<div class="btnMore btnMorePink"><a href="tel:0524820200">
+										<div>
+											<p>052-482-0200</p>
+										</div>
+									</a></div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="footBox">
+				<div class="logo"><img src="../image/common/footer_logo.png" alt=""></div>
+				<div class="footNav">
+					<ul>
+						<li><a href="">園について</a></li>
+						<li><a href="">お知らせ</a></li>
+						<li><a href="">入園案内</a></li>
+						<li><a href="">見学案内</a></li>
+						<li><a href="">0歳からの子育てサポート</a></li>
+						<li><a href="">見学申し込み</a></li>
+						<li><a href="">採用情報</a></li>
+						<li><a href="">お問い合わせ</a></li>
+					</ul>
+				</div>
+				<div class="txtBox">
+					<div class="txt">
+						<p>〒453-0033　名古屋市中村区栄生町９-３０</p>
+						<div class="tel"><a href="tel:0524820200">TEL：052-482-0200</a></div>
+						<div class="fax"><a href="#">FAX：052-482-5960</a></div>
+					</div>
+				</div>
+				<div class="copy">
+					<dl class="poppins">
+						<dt>NAGOYA YUUKA YOUCHIEN</dt>
+						<dd>
+							<p>COPYRIGHT &copy; NAGOYA YUUKA YOUCHIEN <br />ALL RIGHTS RESERVED.</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- △footer△-->
+</body>
+
+</html>

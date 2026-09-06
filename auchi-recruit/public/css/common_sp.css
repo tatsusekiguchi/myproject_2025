@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logoBox {
+    width: 130px;
+  }
+  .header .logoBox .logoBox a {
+    display: block;
+  }
+  .header .logoBox > p {
+    display: none;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 3px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .is-open.hamburger .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .is-open.hamburger .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .is-open.hamburger .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 50px;
+  }
+  .navBox .navList {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .navBox .navList .ul {
+    border-top: 1px solid #cccccc;
+  }
+  .navBox .navList .ul > .li {
+    border-bottom: 1px solid #cccccc;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul a.pcBreak {
+    display: none;
+  }
+  .navBox .navList .ul .pulldown > p {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .navBox .navList .ul .pulldown .subList {
+    display: none;
+  }
+  .navBox .navList .ul .entry a {
+    color: #ffffff;
+    background: #f19623;
+  }
+  .navBox .navList .ul .entry a p {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/header_entry.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .navBox .langBox .language {
+    position: relative;
+    width: 120px;
+    margin: 0 auto 20px;
+    text-align: center;
+    z-index: 1;
+  }
+  .navBox .langBox .language .lang {
+    display: inline-block;
+    padding: 0 20px 0 0;
+    cursor: pointer;
+    background: url(https://kenbyu.info/system_panel/uploads/images/header_lang_arrow.png) right center no-repeat;
+    background-size: 13px auto;
+  }
+  .navBox .langBox .language .langList {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+  }
+  .navBox .langBox .language .langList .ul {
+    border: 1px solid #cccccc;
+  }
+  .navBox .langBox .language .langList .ul .li + .li {
+    border-top: 1px solid #cccccc;
+  }
+  .navBox .langBox .language .langList .ul .li a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .langBox .english {
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+  }
+  .navBox .langBox .english a {
+    display: block;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    background: #000000;
+  }
+  .navBox .langBox .english p {
+    position: relative;
+    padding: 0 0 0 10px;
+  }
+  .navBox .langBox .english p:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/header_en_jp.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .navBox .langBox .english .jp {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 50px 0 0;
+  }
+
+  .pageKv {
+    height: 250px;
+    margin: 0 0 40px;
+    padding: 0 0 0 10px;
+  }
+  .pageKv .kvTtl {
+    margin: 0;
+    padding: 90px 10px 0;
+  }
+  .pageKv .kvTtl h1 {
+    font-size: 36px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .sub {
+    font-size: 16px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 0 0;
+  }
+  .footer .footContact {
+    margin: 0 0 60px;
+  }
+  .footer .footContact::before {
+    width: calc(100% - 20px);
+  }
+  .footer .footContact .secContainer {
+    padding: 40px 10px;
+  }
+  .footer .footContact .secContainer .topBox {
+    margin: 0 0 60px;
+    padding: 0 0 60px;
+    background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/footer_contact_icon_01.png) left bottom no-repeat, url(https://s-9687534.smooooth.jp/system_panel/uploads/images/footer_contact_icon_02.png) right bottom no-repeat;
+    background-size: 60px auto, 50px auto;
+  }
+  .footer .footContact .secContainer .topBox .dl .dt p {
+    font-size: 20px;
+  }
+  .footer .footContact .secContainer .contactBox .contactItem {
+    padding: 40px 20px 20px;
+  }
+  .footer .footContact .secContainer .contactBox .contactItem + .contactItem {
+    margin: 50px 0 0;
+  }
+  .footer .footContact .secContainer .contactBox .contactItem .dl {
+    width: 100%;
+  }
+  .footer .footContact .secContainer .contactBox .contactItem .dl .dt {
+    top: -15px;
+    max-width: 300px;
+  }
+  .footer .footContact .secContainer .contactBox .contactItem .dl .dt p {
+    font-size: 18px;
+  }
+  .footer .footPanel {
+    padding: 60px 0 20px;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: -80px;
+    right: 20px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .footer .footPanel .logo {
+    max-width: 240px;
+  }
+  .footer .footPanel .btnRecruit {
+    max-width: 300px;
+    margin: 0 auto 50px;
+  }
+  .footer .footPanel .btnRecruit a {
+    font-size: 20px;
+  }
+}

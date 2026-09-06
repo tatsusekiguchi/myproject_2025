@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    height: 60px;
+    padding: 10px;
+  }
+  .header .logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 90px;
+  }
+  .header .logo::before {
+    display: none;
+  }
+  .header .headNav {
+    display: none;
+  }
+
+  .sideNav .sns {
+    display: none;
+  }
+
+  .hamburgerBox {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+  }
+
+  .navBox {
+    padding: 80px 20px;
+  }
+  .navBox .navContainer {
+    flex-direction: column;
+  }
+  .navBox .leftBox {
+    order: 2;
+    width: 100%;
+    margin: 40px 0 0;
+    text-align: center;
+  }
+  .navBox .leftBox .navLogo {
+    width: 150px;
+    margin: 0 auto 40px;
+  }
+  .navBox .leftBox .snsList {
+    margin: 0 0 20px;
+  }
+  .navBox .leftBox .snsList > div {
+    width: 30px;
+    margin: 0 15px 0 0;
+  }
+  .navBox .leftBox .telFax > div {
+    display: inline-block;
+  }
+  .navBox .leftBox .telFax .tel {
+    margin: 0 10px 0 0;
+  }
+  .navBox .leftBox .telFax a {
+    display: inline-block;
+    color: #f6f1ed;
+  }
+  .navBox .rightBox {
+    order: 1;
+    width: 100%;
+  }
+  .navBox .navList {
+    display: block;
+    text-align: center;
+  }
+  .navBox .navList .ul {
+    width: 100%;
+  }
+  .navBox .navList .ul + .ul {
+    margin: 10px 0 0;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 10px 0 0;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+    padding: 0;
+  }
+
+  .pageKvContainer {
+    height: 200px;
+  }
+  .pageKvContainer .pageKvPanel {
+    padding: 0 20px;
+  }
+  .pageKvContainer .pageKvPanel .pageKvTitle .sub {
+    font-size: 16px;
+  }
+  .pageKvContainer .pageKvPanel .pageKvTitle .title p {
+    font-size: 30px;
+  }
+
+  .pageSecTtlBox {
+    padding: 10px 0 0;
+  }
+  .pageSecTtlBox::before {
+    width: 40px;
+  }
+  .pageSecTtlBox .pageSecTtl p {
+    font-size: 20px;
+  }
+  .pageSecTtlBox .sub {
+    font-size: 14px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .secTtlBox .sub {
+    font-size: 16px;
+  }
+  .footer .footContact .secTtlBox .secTtl p {
+    font-size: 24px;
+  }
+  .footer .footContact .topTxt {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .itemPanel .itemBox {
+    padding: 15px;
+  }
+  .footer .footContact .itemPanel .itemBox + .itemBox {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .itemPanel .itemBox .ttl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .footer .footContact .itemPanel .btnMail {
+    padding: 10px 0 0;
+  }
+  .footer .footContact .itemPanel .btnMail a {
+    max-width: 240px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .logoBox {
+    text-align: center;
+  }
+  .footer .footPanel .logoBox .logo {
+    width: 140px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .itemBox .box .dl .dt .em {
+    font-size: 24px;
+  }
+  .footer .footPanel .copy {
+    padding: 30px 0 0;
+    text-align: center;
+  }
+  .footer .footPanel .pagetop {
+    top: 20px;
+    right: 20px;
+    width: 40px;
+  }
+}

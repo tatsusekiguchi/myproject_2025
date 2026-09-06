@@ -1,0 +1,211 @@
+{
+  "key": "group_salon_info",
+  "title": "サロン情報",
+  "fields": [
+    {
+      "key": "field_salon_list_info",
+      "label": "一覧情報",
+      "name": "salon_list_info",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_thumbnail",
+          "label": "店舗サムネイル",
+          "name": "thumbnail",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_store_name_ja",
+          "label": "店舗名(日本語)",
+          "name": "store_name_ja",
+          "type": "text"
+        },
+        {
+          "key": "field_store_name_en",
+          "label": "店舗名(英語)",
+          "name": "store_name_en",
+          "type": "text"
+        },
+        {
+          "key": "field_address",
+          "label": "住所",
+          "name": "address",
+          "type": "textarea"
+        },
+        {
+          "key": "field_tel",
+          "label": "電話番号",
+          "name": "tel",
+          "type": "text"
+        },
+        {
+          "key": "field_reservation_url",
+          "label": "予約ページURL",
+          "name": "reservation_url",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_staff_group",
+      "label": "スタッフのグループ",
+      "name": "staff_group",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "スタッフを追加",
+      "sub_fields": [
+        {
+          "key": "field_staff_image",
+          "label": "スタッフ画像",
+          "name": "staff_image",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_popup_pc1",
+          "label": "ポップアップ内画像1(PC)",
+          "name": "popup_pc1",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_popup_sp1",
+          "label": "ポップアップ内画像1(SP)",
+          "name": "popup_sp1",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_popup_pc2",
+          "label": "ポップアップ内画像2(PC)",
+          "name": "popup_pc2",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_popup_sp2",
+          "label": "ポップアップ内画像2(SP)",
+          "name": "popup_sp2",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_staff_name_en",
+          "label": "スタッフ名英語",
+          "name": "staff_name_en",
+          "type": "text"
+        },
+        {
+          "key": "field_staff_name_kana",
+          "label": "スタッフ名カナ",
+          "name": "staff_name_kana",
+          "type": "text"
+        },
+        {
+          "key": "field_intro_title",
+          "label": "紹介文タイトル",
+          "name": "intro_title",
+          "type": "text"
+        },
+        {
+          "key": "field_intro_detail",
+          "label": "紹介文詳細",
+          "name": "intro_detail",
+          "type": "textarea"
+        },
+        {
+          "key": "field_staff_instagram",
+          "label": "スタッフインスタリンクURL",
+          "name": "staff_instagram",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_store_info",
+      "label": "店舗情報",
+      "name": "store_info",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_store_full_name",
+          "label": "店舗名",
+          "name": "store_full_name",
+          "type": "text"
+        },
+        {
+          "key": "field_store_address_ja",
+          "label": "住所(日本語)",
+          "name": "store_address_ja",
+          "type": "textarea"
+        },
+        {
+          "key": "field_store_address_en",
+          "label": "住所(英語)",
+          "name": "store_address_en",
+          "type": "textarea"
+        },
+        {
+          "key": "field_access",
+          "label": "アクセス",
+          "name": "access",
+          "type": "textarea"
+        },
+        {
+          "key": "field_map_url",
+          "label": "GooglemapリンクURL",
+          "name": "map_url",
+          "type": "text"
+        },
+        {
+          "key": "field_map_iframe",
+          "label": "Googlemap埋め込みiframe",
+          "name": "map_iframe",
+          "type": "textarea"
+        },
+        {
+          "key": "field_open",
+          "label": "open",
+          "name": "open",
+          "type": "text"
+        },
+        {
+          "key": "field_close",
+          "label": "close",
+          "name": "close",
+          "type": "text"
+        },
+        {
+          "key": "field_instagram_url",
+          "label": "店舗インスタリンクURL",
+          "name": "instagram_url",
+          "type": "text"
+        },
+        {
+          "key": "field_line_url",
+          "label": "店舗LINEリンクURL",
+          "name": "line_url",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}

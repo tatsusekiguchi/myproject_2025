@@ -1,0 +1,405 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #131313;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #131313;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 0 0 5%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .logoBox {
+    width: 20%;
+    padding: 10px 0 0;
+  }
+  .header .logoBox .logo {
+    width: 200px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .navBox {
+    width: 70%;
+    max-width: 700px;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox .navList > .ul {
+    display: flex;
+  }
+  .navBox .navList > .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  .navBox .navList > .ul > .li > a,
+.navBox .navList > .ul > .li > .pulldown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-height: 85px;
+    padding: 0 0 15px;
+    font-size: clamp(12px, 1vw, 16px);
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList > .ul > .li > a p,
+.navBox .navList > .ul > .li > .pulldown p {
+    padding: 0 0 0 15px;
+    background: url(https://s-9907814.smooooth.jp/system_panel/uploads/images/header_nav_arrow.png) left center no-repeat;
+  }
+  .navBox .navList > .ul > .li.line {
+    border-left: 0;
+  }
+  .navBox .navList > .ul > .li.line a {
+    color: #ffffff;
+    background: #ec1f27;
+  }
+  .navBox .navList > .ul > .li.line a p {
+    padding: 25px 0 0;
+    background: url(https://s-9907814.smooooth.jp/system_panel/uploads/images/header_line.png) center top no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navList > .ul > .li.contact {
+    border-left: 0;
+  }
+  .navBox .navList > .ul > .li.contact a {
+    color: #ffffff;
+    background: #3c3c3c;
+  }
+  .navBox .navList > .ul > .li.contact a p {
+    padding: 25px 0 0;
+    background: url(https://s-9907814.smooooth.jp/system_panel/uploads/images/header_mail.png) center top no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 85px 0 0;
+}
+
+.pageKvContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 160px;
+  background: #d9d9d9;
+}
+.pageKvContainer .pageKvTitle {
+  max-width: 1640px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+.pageKvContainer .pageKvTitle h1 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.pageSecTtlBox {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 20px 0 0;
+  text-align: center;
+}
+.pageSecTtlBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background: #ec1f27;
+}
+.pageSecTtlBox .pageSecTtl {
+  font-size: 36px;
+}
+.pageSecTtlBox .pageSecTtl .sub {
+  font-size: 13px;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 35%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 300px;
+}
+.btnMore a {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  background: #ec1f27;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  position: relative;
+  padding: 60px 0 100px;
+  color: #efefef;
+  text-align: center;
+  background: #c1272d;
+}
+.footer .footContact .pageSecTtlBox::before {
+  background: #db4d53;
+}
+.footer .footContact .contactItem .itemBox {
+  padding: 15px 0;
+  border-top: 1px solid #da8d90;
+  border-bottom: 1px solid #da8d90;
+}
+.footer .footContact .contactItem .itemBox .ttl {
+  margin: 0 0 5px;
+  font-size: 24px;
+}
+.footer .footContact .contactItem .itemBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-size: 34px;
+  color: #ffffff;
+  background: url(https://s-9907814.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footContact .contactItem .itemBox .btnContact {
+  max-width: 260px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem .itemBox .btnContact a {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  background: #ec1f27;
+}
+.footer .footContact .contactItem .itemBox .btnContact a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-size: 18px;
+  color: #ffffff;
+  background: url(https://s-9907814.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .contactItem .itemBox {
+    width: 45%;
+  }
+  .footer .footContact .contactItem .btnContact {
+    position: relative;
+    top: 20px;
+  }
+}
+.footer .footPanel {
+  padding: 60px 0 40px;
+  color: #ffffff;
+  background: #3c3c3c;
+}
+.footer .footPanel .logo {
+  max-width: 200px;
+  margin: 0 0 20px;
+}
+.footer .footPanel .ttl {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.footer .footPanel .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .footPanel .copy {
+  margin: 30px 0 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px;
+  }
+  .header .logo {
+    width: 100px;
+  }
+  .header .hamburger {
+    top: 20px;
+    right: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    max-width: 100%;
+    padding: 84px 20px 100px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 84px 0 0;
+  }
+
+  .pageKvContainer {
+    padding: 20px 0 50px;
+  }
+  .pageKvContainer .pageKvTtlBox {
+    margin: 0 0 30px;
+  }
+  .pageKvContainer .pageKvTtlBox .sub p {
+    font-size: 40px;
+  }
+  .pageKvContainer .pageKvTtlBox .sub .em {
+    font-size: 50px;
+  }
+
+  .pageTitleContainer {
+    padding: 20px 0;
+  }
+  .pageTitleContainer .pageTitleBox .sub p {
+    font-size: 40px;
+  }
+  .pageTitleContainer .pageTitleBox .sub .em {
+    font-size: 50px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    padding: 12px 0 0;
+  }
+  .pageSecTtlBox::before {
+    width: 80px;
+  }
+  .pageSecTtlBox .sub p {
+    font-size: 40px;
+  }
+  .pageSecTtlBox .sub .em {
+    font-size: 50px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 16px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .pageSecTtlBox .sub p {
+    font-size: 30px;
+  }
+  .footer .footContact .pageSecTtlBox .sub .em {
+    font-size: 40px;
+  }
+  .footer .footContact .contactPanel {
+    max-width: 600px;
+  }
+  .footer .footContact .contactPanel .contactBox {
+    padding: 40px 20px;
+  }
+  .footer .footContact .contactPanel .contactBox + .contactBox {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .contactPanel .contactBox .dl .dt {
+    font-size: 24px;
+    margin: 0 0 30px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 15px;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 40px;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+  }
+  .footer .footPanel .footBox .logo {
+    width: 120px;
+    margin: 0 auto 40px;
+  }
+  .footer .footPanel .footBox .txtBox {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footPanel .copy {
+    margin: 50px 0 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+.spBreak {
+  display: block;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  padding: 50px 20px 0;
+}
+.header .logo {
+  width: 158px;
+}
+.header .headTitle {
+  display: none;
+}
+.header .headItem ul {
+  display: flex;
+}
+.header .headItem ul li + li {
+  margin: 0 0 0 25px;
+}
+.header .headItem ul li a {
+  display: block;
+}
+.header .headItem ul .insta {
+  width: 20px;
+}
+.header .headItem ul .line {
+  width: 20px;
+}
+.header .headItem ul .youtube {
+  width: 25px;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 100px 20px 40px;
+}
+.footer .logoBox {
+  max-width: 335px;
+  margin: 0 auto 100px;
+}
+.footer .logoBox .sub {
+  max-width: 258px;
+  margin: 20px auto 0;
+}
+.footer .footBox .left {
+  display: block;
+  font-size: 10px;
+}
+.footer .footBox .left .copy {
+  margin: 0 8 5px;
+}
+.footer .footBox .right ul {
+  display: flex;
+}
+.footer .footBox .right ul li + li {
+  margin: 0 0 0 25px;
+}
+.footer .footBox .right ul li a {
+  display: block;
+}
+.footer .footBox .right ul .insta {
+  width: 20px;
+}
+.footer .footBox .right ul .line {
+  width: 20px;
+}
+.footer .footBox .right ul .youtube {
+  width: 25px;
+}

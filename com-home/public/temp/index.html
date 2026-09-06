@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/split-text.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<script src="../js/split-text.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<p>伊豆・伊東の高級別荘・リゾート物件なら</p>
+				<div class="logo"><a href="/">
+						<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+			</div>
+			<div class="headNav">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>ABOUT</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="propertylist">
+							<div>
+								<p>FOR SALE</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="feature">
+							<div>
+								<p>IZU AREA</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="bloglist">
+							<div>
+								<p>NEWS</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="contact">
+							<div>
+								<p>CONTACT</p>
+							</div>
+						</a></div>
+					<div class="li language">
+						<div class="em"><a href="/">
+								<div>
+									<p>JP</p>
+								</div>
+							</a></div>
+						<div class="span">
+							<p>/</p>
+						</div>
+						<div class="em"><a href="en">
+								<div>
+									<p>EN</p>
+								</div>
+							</a></div>
+						<div class="span">
+							<p>/</p>
+						</div>
+						<div class="em"><a href="zh">
+								<div>
+									<p>CN</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navInner">
+				<div class="navList">
+					<div class="dl">
+						<div class="dt"><a href="about">
+								<div>
+									<p>ABOUT</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="about">
+								<div>
+									<p>はじめての方へ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="propertylist">
+								<div>
+									<p>FOR SALE</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="propertylist">
+								<div>
+									<p>物件紹介</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="feature">
+								<div>
+									<p>IZU AREA</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="feature">
+								<div>
+									<p>伊豆の魅力</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="bloglist">
+								<div>
+									<p>NEWS</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="bloglist">
+								<div>
+									<p>お知らせ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="sell">
+								<div>
+									<p>SELL</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="sell">
+								<div>
+									<p>売りたい方へ</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt"><a href="company">
+								<div>
+									<p>COMPANY</p>
+								</div>
+							</a></div>
+						<div class="dd"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="btnContact"><a href="contact">
+						<div>
+							<p>CONTACT</p>
+						</div>
+					</a></div>
+				<div class="language">
+					<div class="em"><a href="/">
+							<div>
+								<p>JP</p>
+							</div>
+						</a></div>
+					<div class="span">
+						<p>/</p>
+					</div>
+					<div class="em"><a href="en">
+							<div>
+								<p>EN</p>
+							</div>
+						</a></div>
+					<div class="span">
+						<p>/</p>
+					</div>
+					<div class="em"><a href="zh">
+							<div>
+								<p>CN</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="snsList">
+					<div class="ul">
+						<div class="li"><a href="https://www.instagram.com/comhome0557375113/" target="_blank" rel="noopener">
+								<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_insta.png" alt=""></div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_line.png" alt=""></div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburgerBox">
+			<div class="hamburger">
+				<div class="span"></div>
+				<div class="span"></div>
+				<div class="span"></div>
+			</div>
+			<div class="hamburgerTxt">
+				<p>CLOSE</p>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="pagetop linkBtn" data-target="main"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+			<div class="secWrap01">
+				<div class="secBox">
+					<div class="leftBox">
+						<div class="pageSecTtl white">
+							<h2>CONTACT</h2>
+						</div>
+						<div class="tel"><a href="tel:0557375113">
+								<div>
+									<p class="span">TEL.</p>
+									<p class="em">055-737-5113</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="rightBox">
+						<div class="contactTxt">
+							<div class="dl">
+								<div class="dt">
+									<p>内覧予約・ご相談</p>
+								</div>
+								<div class="dd">
+									<p> その他お問い合わせはこちら</p>
+								</div>
+							</div>
+						</div>
+						<div class="contactLink">
+							<div class="contactBtn"><a href="contact">
+									<div class="dl">
+										<div class="dt">
+											<p>MAIL FORM</p>
+										</div>
+										<div class="dd">
+											<p>メールでお問い合わせ</p>
+										</div>
+									</div>
+								</a></div>
+							<div class="contactBtn"><a href="#" target="_blank" rel="noopener">
+									<div class="dl">
+										<div class="dt">
+											<p>LINE</p>
+										</div>
+										<div class="dd">
+											<p>LINEでお問い合わせ</p>
+										</div>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="footBox">
+					<div class="leftBox">
+						<div class="logoBox">
+							<p>伊豆・伊東の高級別荘・リゾート物件なら</p>
+							<div class="logo"><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						</div>
+						<div class="txt">
+							<p>静岡県伊東市湯川１－７－１１</p>
+						</div>
+						<div class="snsList">
+							<div class="ul">
+								<div class="li"><a href="https://www.instagram.com/comhome0557375113/" target="_blank" rel="noopener">
+										<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_insta.png" alt=""></div>
+									</a></div>
+								<div class="li"><a href="#" target="_blank" rel="noopener">
+										<div><img src="https://s-6619829.smooooth.jp/system_panel/uploads/images/icon_line.png" alt=""></div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="footNav">
+							<div class="navList">
+								<div class="dl">
+									<div class="dt"><a href="about">
+											<div>
+												<p>ABOUT</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="about">
+											<div>
+												<p>はじめての方へ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="propertylist">
+											<div>
+												<p>FOR SALE</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="propertylist">
+											<div>
+												<p>物件紹介</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="feature">
+											<div>
+												<p>IZU AREA</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="feature">
+											<div>
+												<p>伊豆の魅力</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="navList">
+								<div class="dl">
+									<div class="dt"><a href="bloglist">
+											<div>
+												<p>NEWS</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="bloglist">
+											<div>
+												<p>お知らせ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="sell">
+											<div>
+												<p>SELL</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="sell">
+											<div>
+												<p>売りたい方へ</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt"><a href="company">
+											<div>
+												<p>COMPANY</p>
+											</div>
+										</a></div>
+									<div class="dd"><a href="company">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btnContactBox">
+					<div class="btnContact"><a href="contact">
+							<div>
+								<p>CONTACT</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="copy">
+					<p>&copy;2025　COM-HOME有限会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

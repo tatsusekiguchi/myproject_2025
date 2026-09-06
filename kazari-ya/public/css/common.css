@@ -1,0 +1,573 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #3c3c3c;
+  font-size: 18px;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/main_bg.png);
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 1.7;
+}
+
+/*リンク */
+a {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10px 40px 10px 20px;
+  z-index: 999;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/main_bg.png);
+}
+.header .headWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headWrap .logoBox {
+  display: flex;
+  align-items: center;
+}
+.header .headWrap .logoBox .logo {
+  width: 150px;
+}
+.header .headWrap .logoBox .logo a {
+  display: block;
+}
+.header .headWrap .logoBox .ttl {
+  margin: 0 0 0 30px;
+  font-size: 16px;
+}
+.header .headWrap .rightBox {
+  padding: 0 60px 0 0;
+}
+.header .headWrap .rightBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-size: 24px;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+  background-size: 20px auto;
+}
+
+.hamburgerBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+.hamburgerBox .hamburger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 20px;
+}
+.hamburgerBox .hamburger .span {
+  background: #3c3c3c;
+  position: absolute;
+  left: 50%;
+  width: 40px;
+  height: 1px;
+  transition: 0.4s;
+}
+.hamburgerBox .hamburger .span:nth-of-type(1) {
+  top: 0;
+  transform: translateX(-50%);
+}
+.hamburgerBox .hamburger .span:nth-of-type(2) {
+  opacity: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hamburgerBox .hamburger .span:nth-of-type(3) {
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.hamburgerBox .is-open.hamburger .span:nth-of-type(1) {
+  background: #f6f8f5;
+  transform: translate(-50%, 4px) rotate(-45deg);
+}
+.hamburgerBox .is-open.hamburger .span:nth-of-type(2) {
+  opacity: 0;
+}
+.hamburgerBox .is-open.hamburger .span:nth-of-type(3) {
+  background: #f6f8f5;
+  transform: translate(-50%, -4px) rotate(45deg);
+}
+.hamburgerBox .hamburgerTxt {
+  margin: 0;
+  font-size: 12px;
+}
+.hamburgerBox .is-open.hamburger + .hamburgerTxt {
+  color: #f6f8f5;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: auto;
+    padding: 15px 20px;
+  }
+  .header .headWrap .logoBox .logo {
+    width: 100px;
+  }
+  .header .headWrap .logoBox .ttl {
+    display: none;
+  }
+  .header .headWrap .rightBox {
+    display: none;
+  }
+
+  .hamburgerBox {
+    top: 15px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 200px 20px 100px;
+  color: #f5f3f3;
+  z-index: 999;
+  background: #3f4140;
+}
+.navBox .navPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navBox .navPanel .leftBox {
+  width: 50%;
+  border-right: 1px solid #8e8e8e;
+}
+.navBox .navPanel .leftBox .navList {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.navBox .navPanel .leftBox .navList .ul .li + .li {
+  margin: 20px 0 0;
+}
+.navBox .navPanel .leftBox .navList .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 15px;
+  color: #f5f3f3;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/nav_arrow.png) left center no-repeat;
+}
+.navBox .navPanel .rightBox {
+  width: 50%;
+}
+.navBox .navPanel .rightBox .infoBox {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.navBox .navPanel .rightBox .infoBox .logo {
+  width: 150px;
+  margin: 0 0 20px;
+}
+.navBox .navPanel .rightBox .infoBox .tel > * {
+  display: inline-block;
+}
+.navBox .navPanel .rightBox .infoBox .tel a {
+  color: #f5f3f3;
+}
+.navBox .navPanel .rightBox .infoBox .tel a + p {
+  margin: 0 5px;
+}
+
+@media (max-width: 1024px) {
+  .navBox {
+    padding: 80px 20px 60px;
+  }
+  .navBox .navPanel {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .navBox .navPanel .leftBox {
+    width: 100%;
+    margin: 0 0 20px;
+    border-right: none;
+    border-bottom: 1px solid #8e8e8e;
+  }
+  .navBox .navPanel .leftBox .navList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0 0 20px;
+  }
+  .navBox .navPanel .leftBox .navList .ul {
+    width: 45%;
+  }
+  .navBox .navPanel .leftBox .navList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel .leftBox .navList .ul .li a {
+    color: #f5f3f3;
+  }
+  .navBox .navPanel .rightBox {
+    width: 100%;
+  }
+  .navBox .navPanel .rightBox .infoBox {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .navBox .navPanel .rightBox .infoBox .logo {
+    width: 100px;
+    margin: 0 0 15px;
+  }
+  .navBox .navPanel .rightBox .infoBox .tel > * {
+    display: inline-block;
+  }
+  .navBox .navPanel .rightBox .infoBox .tel a {
+    color: #f5f3f3;
+  }
+  .navBox .navPanel .rightBox .infoBox .tel a + p {
+    margin: 0 5px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 70px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+  }
+}
+.pageMainTtlBox .secWrap {
+  padding: 40px 20px 20px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.pageMainTtlBox .pageMainTtl {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+.pageMainTtlBox .sub {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.pageMainTtlBox .sub:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 1px;
+  margin: auto 0;
+  background: #3c3c3c;
+}
+.pageMainTtlBox.white {
+  color: #f5f3f3;
+}
+.pageMainTtlBox.white .sub:before {
+  background: #f5f3f3;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+}
+.pageSecTtlBox .pageSecTtl {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+.pageSecTtlBox .sub {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.pageSecTtlBox .sub:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 1px;
+  margin: auto 0;
+  background: #3c3c3c;
+}
+.pageSecTtlBox.white {
+  color: #f5f3f3;
+}
+.pageSecTtlBox.white .sub:before {
+  background: #f5f3f3;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  text-align: center;
+}
+.btnMore a {
+  display: inline-block;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.btnMore a p {
+  position: relative;
+  padding: 0 30px 0 40px;
+}
+.btnMore a p:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 1px;
+  margin: auto 0;
+  background: #3c3c3c;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 60px 0 120px;
+}
+.footer .footContact .ttl {
+  margin: 0 0 30px;
+  font-size: 40px;
+  color: #d81515;
+  letter-spacing: 0.1em;
+}
+.footer .footContact .ul {
+  margin: 0 0 30px;
+}
+.footer .footContact .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 40px;
+  font-size: 34px;
+}
+.footer .footContact .ul .li .tel01 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_01.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.footer .footContact .ul .li .tel02 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_02.png) left center no-repeat;
+  background-size: 35px auto;
+}
+.footer .footBlog .secWrap {
+  padding: 100px 20px;
+  border-top: 1px solid #3c3c3c;
+}
+.footer .footBlog .secPanel {
+  max-width: 1200px;
+  margin: 0 0 60px;
+}
+.footer .footBlog .secPanel .blogList .webgene-blog .webgene-header {
+  display: none;
+}
+.footer .footBlog .secPanel .blogList .webgene-blog .webgene-item {
+  border-bottom: 1px solid #a7a7a7;
+}
+.footer .footBlog .secPanel .blogList .webgene-blog .webgene-item a {
+  display: block;
+  padding: 20px 60px 20px 30px;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 20px center no-repeat;
+  background-size: 25px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footBlog .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footBlog .secPanel .pageSecTtlBox {
+    width: 25%;
+  }
+  .footer .footBlog .secPanel .blogList {
+    width: 75%;
+  }
+  .footer .footBlog .secPanel .blogList .webgene-blog .webgene-item a {
+    display: flex;
+  }
+  .footer .footBlog .secPanel .blogList .webgene-blog .webgene-item a .time {
+    margin: 0 30px 0 0;
+  }
+}
+.footer .footPanel {
+  padding: 60px 0 20px;
+  color: #f5f3f3;
+  background: #1c1c1c;
+}
+.footer .footPanel .logo {
+  width: 150px;
+  margin: 0 0 20px;
+}
+.footer .footPanel .txt {
+  margin: 0 0 60px;
+}
+.footer .footPanel .txt a {
+  display: inline-block;
+  color: #f5f3f3;
+}
+.footer .footPanel .copy {
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

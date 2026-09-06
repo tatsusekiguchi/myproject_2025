@@ -1,0 +1,2625 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  position: relative;
+}
+.topMain .topKvPanel .ttlBox {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 100%;
+  z-index: 1;
+}
+.topMain .topKvPanel .ttlBox h1 {
+  display: none;
+}
+.topMain .topKvPanel .ttlBox .ttl {
+  max-width: 300px;
+}
+.topMain .topKvPanel .slidePanel {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  align-self: 1;
+  z-index: 1;
+}
+.topMain .topKvPanel .slidePanel .slideTxt .ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topMain .topKvPanel .slidePanel .slideTxt .ul .li {
+  width: 80%;
+  margin: 0 15px;
+}
+.topMain .topKvPanel .kvSliderPanel {
+  overflow: hidden;
+  width: 100%;
+}
+.topMain .topKvPanel .kvSlider {
+  object-fit: cover;
+}
+.topMain .topKvPanel .add-animation {
+  animation: zoom-fade 10s both;
+}
+.topMain .sec01 {
+  padding: 100px 0;
+}
+.topMain .sec01 .secBox .rightBox .newsBox {
+  overflow-y: scroll;
+  height: 350px;
+}
+.topMain .sec01 .secBox .rightBox .newsBox .dl {
+  padding: 10px 15px;
+  line-height: 2;
+}
+.topMain .sec01 .secBox .rightBox .newsBox .dl + .dl {
+  border-top: 1px dashed #000000;
+}
+.topMain .sec01 .secBox .rightBox .newsBox .dl .dt {
+  color: #1b6ba3;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secBox .leftBox {
+    width: 140px;
+  }
+  .topMain .sec01 .secBox .rightBox {
+    width: 75%;
+  }
+  .topMain .sec01 .secBox .rightBox .newsBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secBox .rightBox .newsBox .dl .dt {
+    width: 120px;
+  }
+  .topMain .sec01 .secBox .rightBox .newsBox .dl .dd {
+    width: calc(100% - 120px);
+  }
+}
+.topMain .sec02 {
+  padding: 100px 0;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .secBox .leftBox .txt {
+  margin: 0 0 40px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .secBox .leftBox {
+    width: 50%;
+  }
+  .topMain .sec02 .secBox .rightBox {
+    width: 48%;
+  }
+}
+.topMain .sec03 {
+  padding: 120px 0;
+}
+.topMain .sec03 .txt {
+  margin: 0 0 40px;
+}
+.topMain .sec03 .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -40px 0 0;
+}
+.topMain .sec03 .listBox .ul .li {
+  width: calc(50% - 35px);
+  margin: 40px 0 0;
+}
+.topMain .sec03 .listBox .ul .li .photo {
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+.topMain .sec03 .listBox .ul .li .photo img {
+  border-radius: 4px;
+  transition: 0.6s;
+}
+.topMain .sec03 .listBox .ul .li .link {
+  margin: 15px 0 0;
+}
+.topMain .sec03 .listBox .ul .li a {
+  display: block;
+  text-align: center;
+}
+.topMain .sec03 .listBox .ul .li a p {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.topMain .sec03 .listBox .ul .li a p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) center no-repeat #ecf5f8;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .listBox .ul .li a .photo {
+    height: 380px;
+  }
+  .topMain .sec03 .listBox .ul .li a .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+  }
+  .topMain .sec03 .listBox .ul .li a:hover {
+    opacity: 1;
+  }
+  .topMain .sec03 .listBox .ul .li a:hover .photo img {
+    transform: scale(1.1);
+  }
+  .topMain .sec03 .listBox .ul .li a:hover p {
+    color: #20a9df;
+  }
+  .topMain .sec03 .listBox .ul .li a:hover p:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+}
+.topMain .sec04 {
+  padding: 150px 0;
+}
+.topMain .sec04 .secBox a {
+  display: block;
+  background: #ebf4f8;
+}
+.topMain .sec04 .secBox a .left {
+  padding: 40px;
+}
+.topMain .sec04 .secBox a .right .photo {
+  overflow: hidden;
+  position: relative;
+}
+.topMain .sec04 .secBox a .right .photo img {
+  transition: 0.6s;
+}
+.topMain .sec04 .secBox .pageSecTtl {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.topMain .sec04 .secBox .pageSecTtl:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center no-repeat #ffffff;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secBox a {
+    display: flex;
+    align-items: center;
+  }
+  .topMain .sec04 .secBox a .left {
+    width: 50%;
+  }
+  .topMain .sec04 .secBox a .right {
+    width: 50%;
+  }
+  .topMain .sec04 .secBox a:hover {
+    opacity: 1;
+  }
+  .topMain .sec04 .secBox a:hover .pageSecTtl:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+  .topMain .sec04 .secBox a:hover .photo img {
+    transform: scale(1.1);
+  }
+}
+.topMain .sec05 {
+  padding: 100px 0;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/top_sec05_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec05 .secBox {
+  margin: 0 0 40px;
+}
+.topMain .sec05 .secBox .leftBox .pageSecTtlBox {
+  margin: 0;
+}
+.topMain .sec05 .secBox .rightBox {
+  padding: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec05 .secBox .leftBox {
+    width: 40%;
+  }
+  .topMain .sec05 .secBox .rightBox {
+    width: 50%;
+  }
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-item .photo {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-item .photo img {
+  border-radius: 4px;
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-item .infoBox {
+  padding: 15px;
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-item .infoBox .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #20a9df;
+}
+.topMain .sec05 .blogPanel .webgene-blog .webgene-item .infoBox .title {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .blogPanel .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -60px;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 60px);
+    margin: 0 0 0 60px;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item .photo img {
+    transition: 0.6s;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item a:hover {
+    opacity: 1;
+  }
+  .topMain .sec05 .blogPanel .webgene-blog .webgene-item a:hover .photo img {
+    transform: scale(1.1);
+  }
+}
+.topMain .sec05 .btnMore {
+  margin: 60px 0 0;
+  text-align: center;
+}
+.topMain .sec06 {
+  padding: 100px 0;
+}
+.topMain .sec06 .secBox .leftBox .list {
+  margin: 30px 0 0;
+}
+.topMain .sec06 .secBox .leftBox .list .ul .li {
+  padding: 20px 40px;
+  border-radius: 4px;
+  background: #ecf5f8;
+}
+.topMain .sec06 .secBox .leftBox .list .ul .li + .li {
+  margin: 5px 0 0;
+}
+.topMain .sec06 .secBox .leftBox .list .ul .li .btnMore a {
+  display: block;
+}
+.topMain .sec06 .secBox .rightBox .photo img {
+  border-radius: 4px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec06 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec06 .secBox .leftBox {
+    width: 45%;
+  }
+  .topMain .sec06 .secBox .rightBox {
+    width: 50%;
+  }
+}
+.topMain .sec07 {
+  padding: 100px 0;
+}
+.topMain .sec07 .secWrap01 {
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/top_sec07_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec07 .secBox .leftBox .txt {
+  margin: 0 0 60px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec07 .secBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 80px;
+  }
+  .topMain .sec07 .secBox .leftBox {
+    width: 45%;
+  }
+  .topMain .sec07 .secBox .rightBox {
+    width: 50%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain .topSection {
+  padding: 0 0 50px;
+}
+.aboutMain .topSection .secContainer {
+  position: relative;
+  top: -60px;
+  padding: 40px 0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #1b6ba3;
+}
+.aboutMain .topSection .secContainer .secTtlBox {
+  margin: 0 0 30px;
+}
+.aboutMain .topSection .secContainer .secTtlBox .secTtl {
+  font-size: 0;
+}
+.aboutMain .topSection .secContainer .secTtlBox .secTtl p {
+  display: inline;
+  font-size: 34px;
+}
+.aboutMain .topSection .secContainer .secTtlBox .secTtl .span {
+  color: #48caf5;
+}
+@media (min-width: 1025px) {
+  .aboutMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+  .aboutMain .topSection .secBox .photo {
+    width: 45%;
+  }
+}
+.aboutMain .sec01 {
+  padding: 0 0 100px;
+}
+.aboutMain .sec01 .topTxt {
+  margin: 0 0 30px;
+}
+.aboutMain .sec01 .videoBox {
+  margin: 0 0 60px;
+}
+.aboutMain .sec01 .secBox {
+  padding: 30px 20px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.aboutMain .sec01 .secBox + .secBox {
+  margin: 20px 0 0;
+}
+.aboutMain .sec01 .secBox .left .num {
+  display: inline-block;
+  width: 60px;
+  margin: 0 0 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #1b6ba3;
+}
+.aboutMain .sec01 .secBox .left .ttl {
+  font-size: 34px;
+}
+.aboutMain .sec01 .secBox .right .btnMore {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+  }
+  .aboutMain .sec01 .secBox .left {
+    width: 40%;
+  }
+  .aboutMain .sec01 .secBox .right {
+    width: 60%;
+  }
+}
+.aboutMain .sec02 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.aboutMain .sec02 .topTxt {
+  margin: 0 0 30px;
+}
+.aboutMain .sec02 .listBox {
+  margin: 0 0 60px;
+}
+.aboutMain .sec02 .listBox .ul .li {
+  position: relative;
+  padding: 20px 10px;
+  border-radius: 4px;
+  background: #ecf5f8;
+}
+.aboutMain .sec02 .listBox .ul .dl {
+  padding: 100px 0 0;
+}
+.aboutMain .sec02 .listBox .ul .dl .dt {
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #cee0e6;
+}
+.aboutMain .sec02 .listBox .ul .dl .dd {
+  padding: 10px 0;
+  line-height: 1.7;
+}
+.aboutMain .sec02 .listBox .ul .icon01 {
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/about_sec02_icon_01.png) center top 10px no-repeat;
+  background-size: 80px auto;
+}
+.aboutMain .sec02 .listBox .ul .icon02 {
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/about_sec02_icon_02.png) center top 10px no-repeat;
+  background-size: 80px auto;
+}
+.aboutMain .sec02 .listBox .ul .icon03 {
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/about_sec02_icon_03.png) center top 10px no-repeat;
+  background-size: 80px auto;
+}
+.aboutMain .sec02 .listBox .ul .icon04 {
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/about_sec02_icon_04.png) center top 10px no-repeat;
+  background-size: 80px auto;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec02 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutMain .sec02 .listBox .ul .li {
+    width: calc(25% - 20px);
+  }
+  .aboutMain .sec02 .listBox .ul .li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/about_sec02_arrow_01.png) no-repeat;
+    background-size: 100% auto;
+  }
+}
+.aboutMain .sec02 .consultPanel {
+  padding: 30px 20px;
+  border-radius: 4px;
+  background: #ebf4f8;
+}
+.aboutMain .sec02 .consultPanel .ttl {
+  margin: 0 0 30px;
+  font-size: 0;
+  text-align: center;
+}
+.aboutMain .sec02 .consultPanel .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.aboutMain .sec02 .consultPanel .ttl .em {
+  color: #1b6ba3;
+}
+.aboutMain .sec02 .consultPanel .txtBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.aboutMain .sec02 .consultPanel .txtBox .ul .li {
+  padding: 0 0 0 20px;
+  line-height: 1.7;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/about_sec02_check.png) left top 5px no-repeat;
+}
+.aboutMain .sec02 .consultPanel .txtBox .ul .li + .li {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec02 .consultPanel .txtBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutMain .sec02 .consultPanel .txtBox .ul {
+    width: 48%;
+  }
+}
+.aboutMain .sec03 {
+  padding: 100px 0;
+}
+.aboutMain .sec03 .topTxt {
+  margin: 0 0 50px;
+}
+.aboutMain .sec03 .listBox .ul .photo {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.aboutMain .sec03 .listBox .ul .photo img {
+  border-radius: 4px;
+}
+.aboutMain .sec03 .listBox .ul .ttl {
+  padding: 10px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec03 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .aboutMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 60px);
+    margin: 40px 0 0 60px;
+  }
+  .aboutMain .sec03 .listBox .ul .photo {
+    height: 280px;
+  }
+  .aboutMain .sec03 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.aboutMain .sec04 {
+  padding: 120px 0;
+}
+.aboutMain .sec04 .secBox a {
+  display: block;
+  background: #ffffff;
+}
+.aboutMain .sec04 .secBox a .left {
+  padding: 40px;
+}
+.aboutMain .sec04 .secBox a .right .photo {
+  overflow: hidden;
+  position: relative;
+}
+.aboutMain .sec04 .secBox a .right .photo img {
+  transition: 0.6s;
+}
+.aboutMain .sec04 .secBox .pageSecTtl {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.aboutMain .sec04 .secBox .pageSecTtl:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center no-repeat #ffffff;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec04 .secBox a {
+    display: flex;
+    align-items: center;
+  }
+  .aboutMain .sec04 .secBox a .left {
+    width: 50%;
+  }
+  .aboutMain .sec04 .secBox a .right {
+    width: 50%;
+  }
+  .aboutMain .sec04 .secBox a:hover {
+    opacity: 1;
+  }
+  .aboutMain .sec04 .secBox a:hover .pageSecTtl:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+  .aboutMain .sec04 .secBox a:hover .photo img {
+    transform: scale(1.1);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+.productMain .topSection {
+  padding: 0 0 50px;
+}
+.productMain .topSection .secContainer {
+  position: relative;
+  top: -60px;
+  padding: 40px 0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #1b6ba3;
+}
+.productMain .topSection .secContainer .secTtlBox {
+  margin: 0 0 30px;
+}
+.productMain .topSection .secContainer .secTtlBox .secTtl {
+  font-size: 0;
+}
+.productMain .topSection .secContainer .secTtlBox .secTtl p {
+  display: inline;
+  font-size: 34px;
+}
+.productMain .topSection .secContainer .secTtlBox .secTtl .span {
+  color: #48caf5;
+}
+@media (min-width: 1025px) {
+  .productMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .productMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+  .productMain .topSection .secBox .photo {
+    width: 45%;
+  }
+}
+.productMain .sec01 {
+  padding: 0 0 100px;
+}
+.productMain .sec01 .secBoxList {
+  margin: 0 0 80px;
+}
+.productMain .sec01 .secBoxList .secBox {
+  padding: 30px 20px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.productMain .sec01 .secBoxList .secBox + .secBox {
+  margin: 20px 0 0;
+}
+.productMain .sec01 .secBoxList .secBox .left .num {
+  display: inline-block;
+  width: 60px;
+  margin: 0 0 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #1b6ba3;
+}
+.productMain .sec01 .secBoxList .secBox .left .ttl {
+  font-size: 34px;
+}
+.productMain .sec01 .secBoxList .secBox .right .btnMore {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .productMain .sec01 .secBoxList .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+  }
+  .productMain .sec01 .secBoxList .secBox .left {
+    width: 40%;
+  }
+  .productMain .sec01 .secBoxList .secBox .right {
+    width: 60%;
+  }
+}
+.productMain .sec01 .secBoxMaterial a {
+  display: block;
+  background: #ffffff;
+}
+.productMain .sec01 .secBoxMaterial a .left {
+  padding: 40px;
+}
+.productMain .sec01 .secBoxMaterial a .right .photo {
+  overflow: hidden;
+  position: relative;
+}
+.productMain .sec01 .secBoxMaterial a .right .photo img {
+  transition: 0.6s;
+}
+.productMain .sec01 .secBoxMaterial .pageSecTtl {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.productMain .sec01 .secBoxMaterial .pageSecTtl:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center no-repeat #ffffff;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .productMain .sec01 .secBoxMaterial a {
+    display: flex;
+    align-items: center;
+  }
+  .productMain .sec01 .secBoxMaterial a .left {
+    width: 50%;
+  }
+  .productMain .sec01 .secBoxMaterial a .right {
+    width: 50%;
+  }
+  .productMain .sec01 .secBoxMaterial a:hover {
+    opacity: 1;
+  }
+  .productMain .sec01 .secBoxMaterial a:hover .pageSecTtl:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+  .productMain .sec01 .secBoxMaterial a:hover .photo img {
+    transform: scale(1.1);
+  }
+}
+.productMain .sec02 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.productMain .sec02 .topTxt {
+  margin: 0 0 50px;
+}
+.productMain .sec02 .listBox .ul .photo {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.productMain .sec02 .listBox .ul .photo img {
+  border-radius: 4px;
+}
+.productMain .sec02 .listBox .ul .ttl {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.productMain .sec02 .listBox .ul .txt {
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .productMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .productMain .sec02 .listBox .ul .li {
+    width: calc(50% - 60px);
+    margin: 40px 0 0 60px;
+  }
+  .productMain .sec02 .listBox .ul .photo {
+    height: 380px;
+  }
+  .productMain .sec02 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.productMain .sec03 {
+  padding: 100px 0;
+}
+.productMain .sec03 .topTxt {
+  margin: 0 0 50px;
+}
+.productMain .sec03 .listBox .ul .photo {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.productMain .sec03 .listBox .ul .photo img {
+  border-radius: 4px;
+}
+.productMain .sec03 .listBox .ul .ttl {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .productMain .sec03 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .productMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 60px);
+    margin: 40px 0 0 60px;
+  }
+  .productMain .sec03 .listBox .ul .photo {
+    height: 280px;
+  }
+  .productMain .sec03 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.productMain .sec03 .photoBox .photo {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.productMain .sec03 .photoBox .photo img {
+  border-radius: 4px;
+}
+.productMain .sec03 .photoBox .ttl {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.productMain .sec04 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.productMain .sec04 .topTxt {
+  margin: 0 0 50px;
+}
+.productMain .sec04 .section + .section {
+  margin: 100px 0 0;
+}
+.productMain .sec04 .section .secTtl {
+  margin: 0 0 30px;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #ecf5f8;
+}
+.productMain .sec04 .listBox .ul .photo {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.productMain .sec04 .listBox .ul .photo img {
+  border-radius: 4px;
+}
+.productMain .sec04 .listBox .ul .dl {
+  display: flex;
+  padding: 15px 10px;
+}
+.productMain .sec04 .listBox .ul .dl .dt {
+  margin: 0 10px 0 0;
+}
+.productMain .sec04 .listBox .ul .dl .dt p {
+  display: inline-block;
+  min-width: 80px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #20a9df;
+}
+.productMain .sec04 .listBox .ul .dl .dd {
+  line-height: 1.7;
+}
+@media (min-width: 1025px) {
+  .productMain .sec04 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .productMain .sec04 .listBox .ul .li {
+    width: calc(33.3333333333% - 60px);
+    margin: 40px 0 0 60px;
+  }
+  .productMain .sec04 .listBox .ul .photo {
+    height: 280px;
+  }
+  .productMain .sec04 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.productMain .sec05 {
+  padding: 100px 0 150px;
+}
+.productMain .sec05 .casePanel {
+  border-radius: 4px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.productMain .sec05 .casePanel + .casePanel {
+  margin: 40px 0 0;
+}
+.productMain .sec05 .casePanel .pHead {
+  padding: 15px 60px;
+  color: #ffffff;
+  border-radius: 4px 4px 0 0;
+  background: #1b6ba3;
+}
+.productMain .sec05 .casePanel .pHead .ttl01 {
+  font-size: 20px;
+  color: #20a9df;
+}
+.productMain .sec05 .casePanel .pHead .ttl02 {
+  font-size: 34px;
+}
+.productMain .sec05 .casePanel .pBody {
+  padding: 20px 60px;
+  border-radius: 0 0 4px 4px;
+  background: #ffffff;
+}
+.productMain .swiperContainer {
+  width: 100%;
+  position: relative;
+  z-index: 6;
+  overflow: hidden;
+  margin: -80px 0 0;
+  padding: 100px 0 0;
+}
+.productMain .swiperContainer .sliderPager {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  z-index: 1;
+}
+.productMain .swiperContainer .sliderPager > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.productMain .swiperContainer .swiper-wrapper {
+  position: relative;
+}
+.productMain .swiperContainer .swiper-slide {
+  position: relative;
+  padding: 0 0 60px;
+}
+.productMain .swiperContainer .swiper-slide .photoBox {
+  position: relative;
+}
+.productMain .swiperContainer .swiper-slide .photoBox .photo {
+  position: relative;
+  height: 280px;
+}
+.productMain .swiperContainer .swiper-slide .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.productMain .blogPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.productMain .blogPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.productMain .blogPanel .webgene-blog .webgene-item .photo {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+}
+.productMain .blogPanel .webgene-blog .webgene-item .photo img {
+  border-radius: 4px;
+}
+.productMain .blogPanel .webgene-blog .webgene-item .infoBox {
+  padding: 15px;
+}
+.productMain .blogPanel .webgene-blog .webgene-item .infoBox .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #20a9df;
+}
+.productMain .blogPanel .webgene-blog .webgene-item .infoBox .title {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .productMain .blogPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 60px);
+    margin: 40px 0 0 60px;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item .photo img {
+    transition: 0.6s;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item a:hover {
+    opacity: 1;
+  }
+  .productMain .blogPanel .webgene-blog .webgene-item a:hover .photo img {
+    transform: scale(1.1);
+  }
+}
+.productMain .equipmentTable .table {
+  border: 1px solid #afdae9;
+}
+.productMain .equipmentTable .table .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #afdae9;
+}
+.productMain .equipmentTable .table .tr > * {
+  display: table-cell;
+  padding: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.productMain .equipmentTable .table .tr > * + * {
+  border-left: 1px solid #afdae9;
+}
+.productMain .equipmentTable .table .tr .name {
+  width: 260px;
+  padding: 10px 30px;
+}
+.productMain .equipmentTable .table .tr .maker {
+  width: 260px;
+  padding: 10px 20px;
+}
+.productMain .equipmentTable .table .tr .specification {
+  width: 240px;
+}
+.productMain .equipmentTable .table .tr .num {
+  width: 60px;
+  text-align: center;
+}
+.productMain .equipmentTable .table .thead {
+  text-align: center;
+}
+.productMain .equipmentTable .table .thead .th {
+  background: #ecf5f8;
+}
+.productMain .equipmentTable .table .tbody .th {
+  color: #ffffff;
+  background: #20a9df;
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .sec01 {
+  padding: 0 0 50px;
+}
+.companyMain .sec01 .secContainer {
+  position: relative;
+  top: -60px;
+  padding: 40px 0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #1b6ba3;
+}
+.companyMain .sec01 .secContainer .pageSecTtlBox .sub {
+  color: #41cdfb;
+}
+.companyMain .sec01 .secContainer .pageSecTtlBox .pageSecTtl .span {
+  color: #41cdfb;
+}
+.companyMain .sec01 .secContainer .photoBox .name {
+  margin: 15px 0 0;
+  text-align: right;
+}
+.companyMain .sec01 .secContainer .photoBox .name p {
+  display: inline-block;
+}
+.companyMain .sec01 .secContainer .photoBox .name .em {
+  margin: 0 0 0 5px;
+  font-size: 24px;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .companyMain .sec01 .secBox .txtBox {
+    width: calc(100% - 340px);
+  }
+  .companyMain .sec01 .secBox .photoBox {
+    width: 300px;
+  }
+}
+.companyMain .sec02 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.companyMain .sec02 .infoBox {
+  margin: 0 0 40px;
+}
+.companyMain .sec02 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.7;
+}
+.companyMain .sec02 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.companyMain .sec02 .infoBox .dl .dt {
+  width: 220px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #1b6ba3;
+}
+.companyMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 230px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+.companyMain .sec02 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .sec02 .listBox {
+  margin: 0 0 60px;
+}
+.companyMain .sec02 .listBox .ul .ttl {
+  padding: 10px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .companyMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 60px);
+    margin: 40px 0 0 60px;
+  }
+}
+.companyMain .sec03 {
+  padding: 100px 0;
+}
+.companyMain .sec03 .historyBox .dl {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-bottom: 1px solid #cfdfe4;
+}
+.companyMain .sec03 .historyBox .dl:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 155px;
+  width: 1px;
+  height: 100%;
+  background: #00b5f1;
+}
+.companyMain .sec03 .historyBox .dl .dt {
+  position: relative;
+  width: 140px;
+  font-size: 18px;
+}
+.companyMain .sec03 .historyBox .dl .dt:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00b5f1;
+}
+.companyMain .sec03 .historyBox .dl .dd {
+  width: calc(100% - 180px);
+  line-height: 1.7;
+}
+.companyMain .sec03 .historyBox:first-child .dl:after {
+  top: auto;
+  bottom: 0;
+  height: 50%;
+}
+.companyMain .sec03 .historyBox:last-child .dl:after {
+  height: 50%;
+}
+.companyMain .sec04 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.companyMain .sec04 .secBox {
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.companyMain .sec04 .secBox + .secBox {
+  margin: 40px 0 0;
+}
+.companyMain .sec04 .secBox .left {
+  padding: 20px;
+  background: #ffffff;
+}
+.companyMain .sec04 .secBox .left .sdgs {
+  max-width: 250px;
+  margin: 0 auto;
+}
+.companyMain .sec04 .secBox .left .ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 380px;
+  margin: -10px auto 0;
+}
+.companyMain .sec04 .secBox .left .ul .li {
+  width: 49%;
+  margin: 10px 0 0;
+}
+.companyMain .sec04 .secBox .right {
+  padding: 20px 40px;
+  color: #ffffff;
+  background: #1b6ba3;
+}
+.companyMain .sec04 .secBox .right .ttl {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+.companyMain .sec04 .secBox .right .btnMore a {
+  color: #ffffff;
+}
+.companyMain .sec04 .secBox .right .txt {
+  max-width: 740px;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec04 .secBox {
+    display: flex;
+  }
+  .companyMain .sec04 .secBox .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+  .companyMain .sec04 .secBox .right {
+    width: 70%;
+  }
+}
+.companyMain + .footer {
+  background: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .topSection {
+  padding: 0 0 50px;
+}
+.recruitMain .topSection .secContainer {
+  position: relative;
+  top: -60px;
+  padding: 40px 0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #1b6ba3;
+}
+.recruitMain .topSection .secContainer .secTtlBox {
+  margin: 0 0 30px;
+}
+.recruitMain .topSection .secContainer .secTtlBox .secTtl {
+  font-size: 0;
+}
+.recruitMain .topSection .secContainer .secTtlBox .secTtl p {
+  display: inline;
+  font-size: 34px;
+}
+.recruitMain .topSection .secContainer .secTtlBox .secTtl .span {
+  color: #48caf5;
+}
+@media (min-width: 1025px) {
+  .recruitMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+  .recruitMain .topSection .secBox .photo {
+    width: 45%;
+  }
+}
+.recruitMain .sec01 {
+  padding: 0 0 100px;
+}
+.recruitMain .sec01 .topTxt {
+  margin: 0 0 30px;
+}
+.recruitMain .sec01 .videoBox {
+  margin: 0 0 20px;
+}
+.recruitMain .sec02 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.recruitMain .sec02 .secBoxList {
+  margin: 0 0 60px;
+}
+.recruitMain .sec02 .secBox {
+  padding: 30px 20px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.recruitMain .sec02 .secBox + .secBox {
+  margin: 20px 0 0;
+}
+.recruitMain .sec02 .secBox .left .num {
+  display: inline-block;
+  width: 60px;
+  margin: 0 0 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #1b6ba3;
+}
+.recruitMain .sec02 .secBox .left .ttl {
+  font-size: 34px;
+}
+.recruitMain .sec02 .secBox .right .btnMore {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+  }
+  .recruitMain .sec02 .secBox .left {
+    width: 40%;
+  }
+  .recruitMain .sec02 .secBox .right {
+    width: 60%;
+  }
+}
+.recruitMain .sec02 .listBox {
+  margin: 0 0 60px;
+}
+.recruitMain .sec02 .listBox .ul .ttl {
+  padding: 10px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .recruitMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 60px);
+    margin: 40px 0 0 60px;
+  }
+}
+.recruitMain .sec03 {
+  padding: 100px 0;
+}
+.recruitMain .sec03 .secBox + .secBox {
+  margin: 40px 0 0;
+}
+.recruitMain .sec03 .secBox .photo {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.recruitMain .sec03 .secBox .photo img {
+  border-radius: 4px;
+}
+.recruitMain .sec03 .secBox .txtBox {
+  padding: 20px 0;
+}
+.recruitMain .sec03 .secBox .txtBox .ttl {
+  margin: 0 0 15px;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec03 .secBox .photo {
+    width: 43%;
+  }
+  .recruitMain .sec03 .secBox .txtBox {
+    width: 52%;
+  }
+}
+.recruitMain .sec04 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.recruitMain .sec04 .tabPanel {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.recruitMain .sec04 .tabPanel .tabList {
+  max-width: 440px;
+  margin: 0 auto 60px;
+}
+.recruitMain .sec04 .tabPanel .tabList .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.recruitMain .sec04 .tabPanel .tabList .ul .li {
+  width: calc(33.3333333333% - 15px);
+  cursor: pointer;
+  opacity: 0.6;
+}
+.recruitMain .sec04 .tabPanel .tabList .ul .li p {
+  position: relative;
+  display: inline-block;
+  padding: 10px 50px 10px 0;
+}
+.recruitMain .sec04 .tabPanel .tabList .ul .li p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) center no-repeat #ecf5f8;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+.recruitMain .sec04 .tabPanel .tabList .ul .active {
+  opacity: 1;
+}
+.recruitMain .sec04 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.7;
+}
+.recruitMain .sec04 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.recruitMain .sec04 .infoBox .dl .dt {
+  width: 220px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #1b6ba3;
+}
+.recruitMain .sec04 .infoBox .dl .dd {
+  width: calc(100% - 230px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+.recruitMain .sec04 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.recruitMain .sec05 {
+  padding: 100px 0;
+}
+.recruitMain .sec05 .topTxt {
+  margin: 0 0 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .sec01 {
+  padding: 100px 0;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 30px;
+}
+.contactMain .sec01 .itemBox {
+  max-width: 320px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.contactMain .sec01 .itemBox .telFax a {
+  display: inline-block;
+}
+.contactMain .sec01 .itemBox .telFax a .span {
+  display: inline-block;
+}
+.contactMain .sec01 .itemBox .telFax a .em {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.contactMain .sec01 .itemBox .telFax + p {
+  margin: 10px 0 0;
+}
+.contactMain .sec01 .itemBox .ttl {
+  padding: 20px 0 10px;
+  font-size: 20px;
+}
+.contactMain .sec01 .contactContainer {
+  margin: 30px 0 0;
+  padding: 40px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  border: 1px solid #ecf5f8;
+  background: #ecf5f8;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm input[type=text].white,
+.formMain .contactForm input[type=email].white,
+.formMain .contactForm input[type=tel].white {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #ecf5f8;
+  background: #ecf5f8;
+  resize: none;
+}
+.formMain .contactForm textarea.white {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .btnSubmitBox {
+  max-width: 240px;
+  margin: 40px auto 0;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 130px;
+  margin: 0 auto;
+  padding: 10px 60px 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  border: none;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/contact_submit_arrow_02.png) right center no-repeat;
+  background-size: 40px auto;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit].white {
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/contact_submit_arrow_01.png) right center no-repeat;
+  background-size: 40px auto;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form {
+  padding: 0 0 60px;
+}
+.formMain .contactForm .form .checkList .ul {
+  padding: 12px 0 0;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #dedede;
+  background: #f5f4f5;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox {
+  padding: 10px 0;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #090908;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #20a9df;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox + input + input {
+  margin: 5px 0;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #deebe4;
+  border-radius: 15px;
+  background: #f7f7f7;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 2px 0 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid #1b6ba3;
+}
+.formMain .contactForm .formBox > .dl > .dt > .span {
+  display: inline-block;
+  min-width: 165px;
+  margin-right: 10px;
+  padding: 0 0 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt > .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: #20a9df;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dt .labelTxt .span {
+  margin: 0 0 5px;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .formBox > .dl > .dt > .span {
+    float: left;
+  }
+  .formMain .contactForm .formBox > .dl > .dt > .em {
+    float: right;
+  }
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 282px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+.formMain .contactForm .formBox .datePanel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.formMain .contactForm .formBox .datePanel + .datePanel {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel > * {
+  display: flex;
+  align-items: center;
+}
+.formMain .contactForm .formBox .datePanel input {
+  width: 70px;
+  border-radius: 15px;
+}
+.formMain .contactForm .formBox .datePanel .selectBox {
+  width: 70px;
+}
+.formMain .contactForm .formBox .datePanel .dateTtl {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel .dateTxt {
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  padding: 10px;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border-radius: 4px;
+  border: 1px solid #e5eaeb;
+  background: #e5eaeb;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox + .fileUploadBox {
+  margin: 5px 0 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #20a9df;
+  background: #20a9df;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox + p {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 60px 0 100px;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	material
+///////////////////////////////////////////////////////////*/
+.materialMain .topSection {
+  padding: 0 0 50px;
+}
+.materialMain .topSection .secContainer {
+  position: relative;
+  top: -60px;
+  padding: 40px 0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #1b6ba3;
+}
+.materialMain .topSection .secContainer .secTtlBox {
+  margin: 0 0 30px;
+}
+.materialMain .topSection .secContainer .secTtlBox .secTtl {
+  font-size: 0;
+}
+.materialMain .topSection .secContainer .secTtlBox .secTtl p {
+  display: inline;
+  font-size: 34px;
+}
+.materialMain .topSection .secContainer .secTtlBox .secTtl .span {
+  color: #48caf5;
+}
+@media (min-width: 1025px) {
+  .materialMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .materialMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+  .materialMain .topSection .secBox .photo {
+    width: 45%;
+  }
+}
+.materialMain .pagingPanel {
+  padding: 100px 0 0;
+}
+.materialMain .pagingPanel .pagingList .ul .li {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.materialMain .pagingPanel .pagingList .ul .li p {
+  padding: 5px 45px;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/material_paging_arrow.png) right center no-repeat;
+  background-size: 35px auto;
+}
+@media (min-width: 1025px) {
+  .materialMain .pagingPanel .pagingList .ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .materialMain .pagingPanel .pagingList .ul .li {
+    width: calc(25% - 20px);
+  }
+}
+.materialMain .section {
+  padding: 100px 0;
+}
+.materialMain .section .btnMore {
+  margin: 30px 0 0;
+  text-align: center;
+}
+.materialMain .sec02,
+.materialMain .sec04 {
+  background: #ffffff;
+}
+.materialMain .materialTable .table {
+  border: 1px solid #afdae9;
+}
+.materialMain .materialTable .table .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #afdae9;
+}
+.materialMain .materialTable .table .tr > * {
+  display: table-cell;
+  padding: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.materialMain .materialTable .table .tr > * + * {
+  border-left: 1px solid #afdae9;
+}
+.materialMain .materialTable .table .tr .name {
+  width: 33%;
+  padding: 10px 30px;
+}
+.materialMain .materialTable .table .tr .maker {
+  width: 33%;
+  padding: 10px 20px;
+}
+.materialMain .materialTable .table .thead {
+  text-align: center;
+}
+.materialMain .materialTable .table .thead .th {
+  background: #f6fafb;
+}
+.materialMain .materialTable .table .tbody .th {
+  color: #ffffff;
+  background: #20a9df;
+}
+.materialMain .materialTable .table .tbody .td {
+  background: #ffffff;
+}
+.materialMain + .footer {
+  background: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	equipment
+///////////////////////////////////////////////////////////*/
+.equipmentMain .sec01 {
+  padding: 100px 0;
+}
+.equipmentMain .sec01 .catePanel {
+  margin: 0 0 40px;
+}
+.equipmentMain .sec01 .catePanel .categoryBox .webgene-blog .webgene-header {
+  display: none;
+}
+.equipmentMain .sec01 .catePanel .categoryBox .webgene-blog .webgene-item a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 60px 10px 0;
+}
+.equipmentMain .sec01 .catePanel .categoryBox .webgene-blog .webgene-item a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  border-radius: 50%;
+  background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center no-repeat #ffffff;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .equipmentMain .sec01 .catePanel .categoryBox .webgene-blog .webgene-item a:hover:after {
+    right: 0;
+    background: url(https://s-3086108.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center no-repeat #20a9df;
+    background-size: 12px auto;
+  }
+}
+@media (min-width: 1025px) {
+  .equipmentMain .sec01 .catePanel .categoryBox .webgene-blog {
+    display: flex;
+    gap: 50px;
+  }
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-header {
+  display: none;
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-item a {
+  display: block;
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-item .photo {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-item .photo img {
+  border-radius: 4px;
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-item .infoBox {
+  padding: 15px;
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-item .infoBox .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #20a9df;
+}
+.equipmentMain .sec01 .blogList .webgene-blog .webgene-item .infoBox .title {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .equipmentMain .sec01 .blogList .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -60px;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item {
+    width: calc(50% - 60px);
+    margin: 40px 0 0 60px;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 380px;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item .photo img {
+    transition: 0.6s;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item a:hover {
+    opacity: 1;
+  }
+  .equipmentMain .sec01 .blogList .webgene-blog .webgene-item a:hover .photo img {
+    transform: scale(1.1);
+  }
+}
+.equipmentMain .sec01 .blogList .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.equipmentMain .sec01 .blogList .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.equipmentMain .sec01 .blogList .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.equipmentMain .sec01 .blogList .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.equipmentMain .sec01 .blogList .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.equipmentMain .sec01 .blogList .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.equipmentMain .sec01 .blogList .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #20a9df;
+}
+@media (min-width: 1025px) {
+  .equipmentMain .sec01 .blogList .webgene-pagination ul .prev {
+    float: left;
+  }
+  .equipmentMain .sec01 .blogList .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.equipmentMain .sec01 .blogDetailContainer {
+  padding: 40px 60px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.equipmentMain .sec01 .webgene-blog .webgene-header {
+  display: none;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .info {
+  margin: 0 0 20px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #20a9df;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .mvPhoto {
+  margin: 0 0 20px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .slickSlide {
+  margin: 0 0 40px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .slick-list {
+  margin: 0 0 10px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .thumb-item {
+  max-width: 1200px;
+  margin: 0 0 10px;
+}
+@media (min-width: 1025px) {
+  .equipmentMain .sec01 .webgene-blog .webgene-item .thumb-item img {
+    display: block;
+    max-height: 550px;
+    object-fit: cover;
+  }
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .photo {
+  margin-bottom: 40px;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .postTxt {
+  line-height: 2;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .postTxt a {
+  display: inline-block;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.equipmentMain .sec01 .webgene-blog .webgene-item .postBox .pdfArea a {
+  color: #2151a3;
+}
+.equipmentMain .sec01 .webgene-blog .infoDetail {
+  border: 1px solid #afdae9;
+}
+.equipmentMain .sec01 .webgene-blog .infoDetail dl {
+  line-height: 2;
+}
+.equipmentMain .sec01 .webgene-blog .infoDetail dl + dl {
+  border-top: 1px solid #afdae9;
+}
+.equipmentMain .sec01 .webgene-blog .infoDetail dl dt {
+  padding: 10px 15px;
+  background: #ecf5f8;
+}
+.equipmentMain .sec01 .webgene-blog .infoDetail dl dd {
+  padding: 10px 15px;
+}
+@media (min-width: 1025px) {
+  .equipmentMain .sec01 .webgene-blog .infoDetail dl {
+    display: table;
+    width: 100%;
+  }
+  .equipmentMain .sec01 .webgene-blog .infoDetail dl dt {
+    display: table-cell;
+    width: 240px;
+    padding: 10px 40px;
+    border-right: 1px solid #afdae9;
+  }
+  .equipmentMain .sec01 .webgene-blog .infoDetail dl dd {
+    display: table-cell;
+    padding: 10px 40px;
+  }
+}
+.equipmentMain .sec01 .btnMore {
+  margin: 60px 0 0;
+  text-align: center;
+}
+.equipmentMain .sec02 {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.equipmentMain .equipmentTable .table {
+  border: 1px solid #afdae9;
+}
+.equipmentMain .equipmentTable .table .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #afdae9;
+}
+.equipmentMain .equipmentTable .table .tr > * {
+  display: table-cell;
+  padding: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.equipmentMain .equipmentTable .table .tr > * + * {
+  border-left: 1px solid #afdae9;
+}
+.equipmentMain .equipmentTable .table .tr .name {
+  width: 260px;
+  padding: 10px 30px;
+}
+.equipmentMain .equipmentTable .table .tr .maker {
+  width: 260px;
+  padding: 10px 20px;
+}
+.equipmentMain .equipmentTable .table .tr .specification {
+  width: 240px;
+}
+.equipmentMain .equipmentTable .table .tr .num {
+  width: 60px;
+  text-align: center;
+}
+.equipmentMain .equipmentTable .table .thead {
+  text-align: center;
+}
+.equipmentMain .equipmentTable .table .thead .th {
+  background: #ecf5f8;
+}
+.equipmentMain .equipmentTable .table .tbody .th {
+  color: #ffffff;
+  background: #20a9df;
+}
+.equipmentListMain + .footer {
+  background: none;
+}

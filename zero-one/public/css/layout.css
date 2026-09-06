@@ -1,0 +1,2616 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+}
+.topMain .topKvContainer .topKvPanel {
+  width: 85%;
+}
+.topMain .topKvContainer .topKvPanel .topKv {
+  overflow: hidden;
+  position: relative;
+  height: 800px;
+}
+.topMain .topKvContainer .topKvPanel .topKv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: translateX(0);
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 1;
+}
+.topMain .topKvContainer .topKvPanel .topKv.reveal::before {
+  transform: translateX(100%);
+}
+.topMain .topKvContainer .kvTitle {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  font-size: 150px;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+}
+.topMain .sec01 {
+  position: relative;
+  padding: 100px 0 200px;
+}
+.topMain .sec01:before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  right: 0;
+  width: 48%;
+  height: 1360px;
+  z-index: -1;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/top_sec01_bg_01.png) no-repeat;
+}
+.topMain .sec01:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75%;
+  height: 1460px;
+  z-index: -1;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/top_sec01_bg_02.png) no-repeat;
+}
+.topMain .sec01 .secPanel01 {
+  margin: 0 0 150px;
+  padding: 0 5%;
+}
+.topMain .sec01 .secPanel01 .photoPanel01 .photoBox {
+  position: relative;
+}
+.topMain .sec01 .secPanel01 .photoPanel01 .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background: #ececec;
+}
+.topMain .sec01 .secPanel01 .photoPanel01 .photoBox:after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  background: #ad2525;
+}
+.topMain .sec01 .secPanel01 .photoPanel01 .photoBox .photo {
+  position: relative;
+  padding: 5px;
+}
+.topMain .sec01 .secPanel01 .photoPanel01 .photoBox .imgBox {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(117, 112, 113, 0.5);
+}
+.topMain .sec01 .secPanel01 .photoPanel01 .photoBox .imgBox img {
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.topMain .sec01 .secPanel01 .photoPanel02 .photoBox {
+  position: relative;
+}
+.topMain .sec01 .secPanel01 .photoPanel02 .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  background: rgba(236, 236, 236, 0.7);
+}
+.topMain .sec01 .secPanel01 .photoPanel02 .photoBox .photo {
+  position: relative;
+  padding: 5px;
+}
+.topMain .sec01 .secPanel01 .photoPanel02 .photoBox .imgBox {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(117, 112, 113, 0.5);
+}
+.topMain .sec01 .secPanel01 .photoPanel02 .photoBox .imgBox img {
+  position: relative;
+  top: -5px;
+  right: -5px;
+}
+.topMain .sec01 .secPanel01 .txtPanel .inner {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.topMain .sec01 .secPanel01 .txtPanel .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secPanel01 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secPanel01 .photoPanel01 {
+    position: relative;
+    top: 120px;
+    width: 20%;
+  }
+  .topMain .sec01 .secPanel01 .txtPanel {
+    width: 45%;
+    padding: 0 3%;
+  }
+  .topMain .sec01 .secPanel01 .photoPanel02 {
+    position: relative;
+    top: -200px;
+    width: 30%;
+  }
+}
+.topMain .sec01 .secPanel02 {
+  margin: 0 0 200px;
+}
+.topMain .sec01 .secPanel02 .photoPanel01 .photoBox {
+  position: relative;
+}
+.topMain .sec01 .secPanel02 .photoPanel01 .photoBox .photo {
+  position: relative;
+  padding: 5px;
+}
+.topMain .sec01 .secPanel02 .photoPanel01 .photoBox .imgBox {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(117, 112, 113, 0.5);
+}
+.topMain .sec01 .secPanel02 .photoPanel01 .photoBox .imgBox img {
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.topMain .sec01 .secPanel02 .photoPanel02 .photoBox {
+  position: relative;
+}
+.topMain .sec01 .secPanel02 .photoPanel02 .photoBox:before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: -60px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  background: #003461;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secPanel02 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secPanel02 .photoPanel01 {
+    position: relative;
+    top: 250px;
+    width: 42%;
+  }
+  .topMain .sec01 .secPanel02 .photoPanel02 {
+    width: 50%;
+  }
+}
+.topMain .sec01 .secPanel03 {
+  padding: 120px 40px 0;
+}
+.topMain .sec01 .secPanel03 .photoPanel01 {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.topMain .sec01 .secPanel03 .photoPanel01 .photoBox {
+  position: relative;
+  max-width: 900px;
+}
+.topMain .sec01 .secPanel03 .photoPanel01 .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background: #c0b085;
+}
+.topMain .sec01 .secPanel03 .photoPanel01 .photoBox:after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  background: #ad2525;
+}
+.topMain .sec01 .secPanel03 .photoPanel01 .photoBox .photo {
+  position: relative;
+  padding: 5px;
+}
+.topMain .sec01 .secPanel03 .photoPanel01 .photoBox .imgBox {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(117, 112, 113, 0.5);
+}
+.topMain .sec01 .secPanel03 .photoPanel01 .photoBox .imgBox img {
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.topMain .sec02 {
+  padding: 120px 0;
+  background: #f2f0ec;
+}
+.topMain .sec02 .secWrap {
+  padding: 0 5%;
+}
+.topMain .sec02 .listSectionContainer {
+  padding: 40px 0 0;
+}
+.topMain .sec02 .listSection + .listSection {
+  margin: 120px 0 0;
+}
+.topMain .sec02 .listSection .photoContainer .photoPanel {
+  position: relative;
+  max-width: 850px;
+}
+.topMain .sec02 .listSection .photoContainer .photoPanel .num {
+  font-size: 150px;
+  font-weight: 400;
+  color: #a78f45;
+  line-height: 1;
+  z-index: 2;
+}
+.topMain .sec02 .listSection .photoContainer .photoPanel .photoBox {
+  position: relative;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px 20px;
+  background: #ffffff;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .pTt {
+  margin: 0 0 20px;
+  font-size: 30px;
+  color: #a78f45;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featureLink {
+  max-width: 400px;
+  margin: 40px 0 0;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featureLink a {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 1px solid #21110d;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featureLink a > div {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  padding: 10px 20px;
+  border: 1px solid #21110d;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featureLink a > div p {
+  padding: 3px 10px 0;
+  font-size: 14px;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/top_sec02_link_arrow.png) right center no-repeat;
+  background-size: 6px auto;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox {
+  margin: 40px 0 0;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .ttl {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list {
+  max-width: 650px;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list + .list {
+  margin: 5px 0 0;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -5px;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list .ul .li {
+  width: calc(25% - 5px);
+  margin: 0 0 0 5px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list01 .ul .li:nth-child(odd) {
+  background: #e1e1e0;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list01 .ul .li:nth-child(even) {
+  background: #f4f4ee;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list02 .ul .li:nth-child(odd) {
+  background: #f4f4ee;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .featuresBox .list02 .ul .li:nth-child(even) {
+  background: #e1e1e0;
+}
+.topMain .sec02 .listSection .txtContainer .txtPanel .btnMore {
+  margin: 30px 0 0;
+}
+.topMain .sec02 .listSection:nth-child(odd) .photoContainer .photoPanel::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: -60px;
+  width: 100%;
+  height: 100%;
+  background: #c8ad5a;
+}
+.topMain .sec02 .listSection:nth-child(even) .photoContainer .photoPanel::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: -60px;
+  width: 100%;
+  height: 100%;
+  background: #c8ad5a;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listSection .txtContainer {
+    margin: -15vw 0 0;
+  }
+  .topMain .sec02 .listSection:nth-child(odd) .photoContainer .photoPanel .num {
+    position: absolute;
+    top: 80px;
+    right: -80px;
+  }
+  .topMain .sec02 .listSection:nth-child(odd) .txtContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .topMain .sec02 .listSection:nth-child(even) .photoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .topMain .sec02 .listSection:nth-child(even) .photoContainer .photoPanel .num {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+  }
+}
+.topMain .sec03 {
+  position: relative;
+  padding: 120px 0 240px;
+}
+.topMain .sec03::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  width: 95%;
+  height: 250px;
+  background: #fafaf5;
+}
+.topMain .sec03 .pageSecTtlBox .pageSecTtl {
+  display: none;
+}
+.topMain .sec03 .secContainer {
+  position: relative;
+}
+.topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-item .photo {
+  position: relative;
+  border: 1px solid #e5e5db;
+}
+.topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-item .title {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .topMain .sec03 .secContainer .newsPanel {
+    width: calc(100% - 300px);
+  }
+  .topMain .sec03 .secContainer .newsPanel .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -5vw;
+  }
+  .topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 5vw);
+    margin: 0 0 0 5vw;
+  }
+  .topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-item .photo {
+    height: 200px;
+  }
+  .topMain .sec03 .secContainer .newsPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec03 .secContainer .btnPanel {
+    width: 180px;
+  }
+  .topMain .sec03 .secContainer .btnPanel .btnMore {
+    position: relative;
+    top: 40px;
+  }
+}
+.topMain .sec04 {
+  position: relative;
+  padding: 120px 0;
+}
+.topMain .sec04::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  z-index: -1;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .pageSecTtlBox .pageSecTtl {
+  display: none;
+}
+.topMain .sec04 .instaPanel {
+  padding: 5px;
+  background: #ffffff;
+}
+.topMain .sec04 .instaPanel .webgene-blog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -1px;
+}
+.topMain .sec04 .instaPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec04 .instaPanel .webgene-blog .webgene-item {
+  width: calc(33.3333333333% - 1px);
+  margin: 0 0 0 1px;
+}
+.topMain .sec04 .instaPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec04 .instaPanel .webgene-blog .webgene-item .photo {
+  position: relative;
+  height: 0;
+  padding: 0 0 120%;
+}
+.topMain .sec04 .instaPanel .webgene-blog .webgene-item .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+.featureMain .sec01 {
+  padding: 100px 0 200px;
+}
+.featureMain .sec01 .photoPanel .photoBox {
+  position: relative;
+}
+.featureMain .sec01 .photoPanel .photoBox .photo {
+  position: relative;
+  padding: 5px;
+}
+.featureMain .sec01 .photoPanel .photoBox .imgBox {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(117, 112, 113, 0.5);
+}
+.featureMain .sec01 .photoPanel .photoBox .imgBox img {
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.featureMain .sec01 .topContainer .leftPanel .message {
+  font-size: 30px;
+  color: #003461;
+  line-height: 1.7;
+}
+.featureMain .sec01 .topContainer .rightPanel .photoPanel {
+  margin: 60px 0 0;
+}
+.featureMain .sec01 .topContainer .rightPanel .photoPanel .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  background: rgba(236, 236, 236, 0.7);
+}
+@media (min-width: 1025px) {
+  .featureMain .sec01 .topContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .featureMain .sec01 .topContainer .leftPanel {
+    width: 35%;
+  }
+  .featureMain .sec01 .topContainer .rightPanel {
+    width: 55%;
+  }
+}
+.featureMain .sec01 .txtContainer .leftPanel .photoPanel .photoBox {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.featureMain .sec01 .txtContainer .leftPanel .photoPanel .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background: #ececec;
+}
+.featureMain .sec01 .txtContainer .leftPanel .photoPanel .photoBox:after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  background: #ad2525;
+}
+.featureMain .sec01 .txtContainer .rightPanel {
+  padding: 60px 0 0;
+}
+.featureMain .sec01 .txtContainer .rightPanel .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 30px;
+  color: #003461;
+}
+@media (min-width: 1025px) {
+  .featureMain .sec01 .txtContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .featureMain .sec01 .txtContainer .leftPanel {
+    position: relative;
+    top: -10vw;
+    width: 35%;
+  }
+  .featureMain .sec01 .txtContainer .rightPanel {
+    width: 55%;
+  }
+}
+.featureMain .sec01 .photoContainer .leftPanel .photoPanel .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background: #c0b085;
+}
+.featureMain .sec01 .photoContainer .leftPanel .photoPanel .photoBox:after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  background: #003461;
+}
+.featureMain .sec01 .photoContainer .rightPanel .photoPanel .photoBox:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  background: rgba(236, 236, 236, 0.7);
+}
+@media (min-width: 1025px) {
+  .featureMain .sec01 .photoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: -3vw 0 0;
+  }
+  .featureMain .sec01 .photoContainer .leftPanel {
+    width: 60%;
+  }
+  .featureMain .sec01 .photoContainer .rightPanel {
+    position: relative;
+    top: -10vw;
+    width: 30%;
+  }
+}
+.featureMain .sec02 {
+  padding: 120px 0;
+  background: #ffffff;
+}
+.featureMain .sec02 .listSection {
+  position: relative;
+  padding: 0 0 120px;
+}
+.featureMain .sec02 .listSection::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  height: 80%;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/feature_sec02_panel_bg.png) no-repeat;
+  background-size: cover;
+}
+.featureMain .sec02 .listSection + .listSection {
+  margin: 120px 0 0;
+}
+.featureMain .sec02 .listSection .mvPanel {
+  position: relative;
+  margin: 0 0 60px;
+}
+.featureMain .sec02 .listSection .mvPanel .ttlBox {
+  padding: 80px 50px;
+  color: #ffffff;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/feature_sec02_mv_bg.png) no-repeat;
+  background-size: cover;
+}
+.featureMain .sec02 .listSection .mvPanel .ttlBox .ttl01 {
+  position: relative;
+  margin: 0 0 50px;
+  border: 1px solid #ffffff;
+}
+.featureMain .sec02 .listSection .mvPanel .ttlBox .ttl01 .inner {
+  position: relative;
+  top: -4px;
+  left: -4px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+.featureMain .sec02 .listSection .mvPanel .ttlBox .ttl02 {
+  position: relative;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .featureMain .sec02 .listSection .mvPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .mvBox {
+    width: calc(100% - 500px);
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .mvBox .mv {
+    position: relative;
+    height: 400px;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .mvBox .mv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .ttlBox {
+    width: 500px;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .ttlBox .ttl01.large {
+    width: 480px;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .ttlBox .ttl01.large .inner {
+    width: 480px;
+  }
+  .featureMain .sec02 .listSection .mvPanel .mvWrap .ttlBox .ttl02 {
+    white-space: nowrap;
+  }
+}
+.featureMain .sec02 .listSection .listPanel {
+  position: relative;
+  padding: 0 20px;
+}
+.featureMain .sec02 .listSection .listPanel .listBox {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.featureMain .sec02 .listSection .listPanel .listBox .ul .dl {
+  margin: 10px 0 0;
+}
+.featureMain .sec02 .listSection .listPanel .listBox .ul .dl .dt {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.featureMain .sec02 .listSection .listPanel .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .featureMain .sec02 .listSection .listPanel .listBox .ul {
+    display: flex;
+    margin: 0 0 0 -50px;
+  }
+  .featureMain .sec02 .listSection .listPanel .listBox .ul .li {
+    width: calc(33.3333333333% - 50px);
+    margin: 0 0 0 50px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	hotel
+///////////////////////////////////////////////////////////*/
+.hotelMain .hotelListSection {
+  padding: 120px 0 180px;
+}
+.hotelMain .hotelListSection .secPanelList {
+  position: relative;
+}
+.hotelMain .hotelListSection .secPanelList::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background: #003461;
+}
+.hotelMain .hotelListSection .secPanelList::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -80px;
+  width: 160px;
+  height: 160px;
+  background: #c8ad5a;
+}
+.hotelMain .hotelListSection .secPanel {
+  position: relative;
+  padding: 60px 20px;
+  z-index: 1;
+}
+.hotelMain .hotelListSection .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.hotelMain .hotelListSection .secPanel:nth-child(odd) {
+  background: #f4f4ee;
+}
+.hotelMain .hotelListSection .secPanel:nth-child(even) {
+  background: #ffffff;
+}
+.hotelMain .hotelListSection .secPanel .secBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hotelMain .hotelListSection .secPanel .secBox .photoBox .photo {
+  position: relative;
+  height: 0;
+  padding: 0 0 62%;
+}
+.hotelMain .hotelListSection .secPanel .secBox .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hotelMain .hotelListSection .secPanel .secBox .photoBox .ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .photoBox .ul .li {
+  position: relative;
+  width: 49%;
+  height: 0;
+  padding: 0 0 32%;
+}
+.hotelMain .hotelListSection .secPanel .secBox .photoBox .ul .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead {
+  display: flex;
+  justify-content: space-between;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead .nameBox {
+  font-size: 30px;
+  font-weight: 400;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead .numBox .dl {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #21110d;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead .numBox .dl .dt {
+  margin: 0 20px 0 0;
+  font-size: 14px;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead .numBox .dl .dd {
+  font-size: 0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead .numBox .dl .dd p {
+  display: inline;
+  font-size: 20px;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .ttlHead .numBox .dl .dd .em {
+  font-size: 30px;
+  line-height: 1;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .addressBox {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 2;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .descriptionBox {
+  margin: 15px 0 0;
+  line-height: 2;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox {
+  margin: 20px 0 0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .ttl {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list {
+  max-width: 600px;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list + .list {
+  margin: 5px 0 0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -5px;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list .ul .li {
+  width: calc(25% - 5px);
+  margin: 0 0 0 5px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list01 .ul .li:nth-child(odd) {
+  background: #fcfcfc;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list01 .ul .li:nth-child(even) {
+  background: #e1e1e0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list02 .ul .li:nth-child(odd) {
+  background: #e1e1e0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list02 .ul .li:nth-child(even) {
+  background: #fcfcfc;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list03 .ul .li:nth-child(odd) {
+  background: #f4f4ee;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list03 .ul .li:nth-child(even) {
+  background: #e1e1e0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list04 .ul .li:nth-child(odd) {
+  background: #e1e1e0;
+}
+.hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .list04 .ul .li:nth-child(even) {
+  background: #f4f4ee;
+}
+@media (min-width: 1025px) {
+  .hotelMain .hotelListSection .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hotelMain .hotelListSection .secPanel .secBox .photoBox {
+    width: 25%;
+  }
+  .hotelMain .hotelListSection .secPanel .secBox .txtBox {
+    width: 70%;
+  }
+  .hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .hotelMain .hotelListSection .secPanel .secBox .txtBox .featuresBox .inner .listBox {
+    width: calc(100% - 160px);
+  }
+}
+.hotelMain .hotelDetailSection .titleContainer {
+  padding: 40px 0;
+}
+.hotelMain .hotelDetailSection .titleContainer .secBox .leftBox .nameBox {
+  font-size: 0;
+}
+.hotelMain .hotelDetailSection .titleContainer .secBox .leftBox .nameBox p {
+  display: inline;
+  font-size: 60px;
+}
+.hotelMain .hotelDetailSection .titleContainer .secBox .leftBox .nameBox .em {
+  font-size: 120px;
+  line-height: 1;
+}
+.hotelMain .hotelDetailSection .titleContainer .secBox .rightBox .reserve {
+  max-width: 220px;
+}
+.hotelMain .hotelDetailSection .titleContainer .secBox .rightBox .reserve a {
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+  border: 1px solid #1d1d1d;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .hotelMain .hotelDetailSection .titleContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .hotelMain .hotelDetailSection .titleContainer .secBox .leftBox {
+    width: calc(100% - 280px);
+  }
+  .hotelMain .hotelDetailSection .titleContainer .secBox .rightBox {
+    width: 220px;
+  }
+}
+.hotelMain .hotelDetailSection .slideContainer {
+  position: relative;
+  margin: 0 0 120px;
+}
+.hotelMain .hotelDetailSection .slideContainer .topSlider {
+  overflow: hidden;
+}
+.hotelMain .hotelDetailSection .slideContainer .topSlider .sliderTrack {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+.hotelMain .hotelDetailSection .slideContainer .topSlider .sliderTrack .slide {
+  flex: none;
+  margin-right: 10px;
+}
+.hotelMain .hotelDetailSection .slideContainer .topSlider .sliderTrack .slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hotelMain .hotelDetailSection .slideContainer .topSlider .sliderTrack .slide:last-child {
+  margin-right: 0;
+}
+@media (min-width: 1025px) {
+  .hotelMain .hotelDetailSection .slideContainer .topSlider .sliderTrack .slide {
+    width: calc((100% - 20px) / 3);
+  }
+}
+@media (max-width: 1024px) {
+  .hotelMain .hotelDetailSection .slideContainer .topSlider .sliderTrack .slide {
+    width: 100%;
+  }
+}
+.hotelMain .hotelDetailSection .slideContainer .slidePager {
+  margin: 50px 0 0;
+}
+.hotelMain .hotelDetailSection .slideContainer .slidePager .pagerBox {
+  display: flex;
+  align-items: center;
+}
+.hotelMain .hotelDetailSection .slideContainer .slidePager .pagerBox > * {
+  width: 70px;
+  cursor: pointer;
+}
+.hotelMain .hotelDetailSection .slideContainer .slidePager .pagerBox > * + * {
+  margin: 0 0 0 30px;
+}
+.hotelMain .hotelDetailSection .slideContainer .slidePager .pagerBox > *.inActive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.hotelMain .hotelDetailSection .topSection {
+  margin: 0 0 120px;
+}
+.hotelMain .hotelDetailSection .topSection .secBox .leftBox .ttl {
+  font-size: 30px;
+  color: #003461;
+}
+@media (min-width: 1025px) {
+  .hotelMain .hotelDetailSection .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hotelMain .hotelDetailSection .topSection .secBox .leftBox {
+    width: 50%;
+  }
+  .hotelMain .hotelDetailSection .topSection .secBox .rightBox {
+    width: 48%;
+  }
+}
+.hotelMain .hotelDetailSection .topSection .listBox {
+  margin: 60px 0 0;
+}
+.hotelMain .hotelDetailSection .topSection .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.hotelMain .hotelDetailSection .topSection .listBox .ul .li {
+  width: calc(25% - 10px);
+  margin: 10px 0 0 10px;
+}
+.hotelMain .hotelDetailSection .featuresSection {
+  position: relative;
+  padding: 0 0 120px;
+}
+.hotelMain .hotelDetailSection .featuresSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #ffffff;
+}
+.hotelMain .hotelDetailSection .featuresSection .secTtl {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  font-size: 0;
+}
+.hotelMain .hotelDetailSection .featuresSection .secTtl p {
+  display: inline;
+  font-size: 30px;
+  color: #a78f45;
+}
+.hotelMain .hotelDetailSection .featuresSection .secTtl .em {
+  font-size: 50px;
+}
+.hotelMain .hotelDetailSection .featuresSection .secPanel {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f4f4ee;
+}
+.hotelMain .hotelDetailSection .featuresSection .secPanel .secBoxList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hotelMain .hotelDetailSection .featuresSection .secPanel .secBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.hotelMain .hotelDetailSection .featuresSection .secPanel .secBox .dl .dt {
+  font-size: 20px;
+}
+.hotelMain .hotelDetailSection .featuresSection .secPanel .secBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .hotelMain .hotelDetailSection .featuresSection .secPanel .secBox .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hotelMain .hotelDetailSection .featuresSection .secPanel .secBox .dl .dt {
+    width: 35%;
+  }
+  .hotelMain .hotelDetailSection .featuresSection .secPanel .secBox .dl .dd {
+    width: 65%;
+    padding: 0 0 0 5%;
+    border-left: 1px solid #21110d;
+  }
+}
+.hotelMain .hotelDetailSection .serviceSection {
+  position: relative;
+  padding: 80px 0;
+  background: #f2f0ec;
+}
+.hotelMain .hotelDetailSection .serviceSection::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  bottom: -100px;
+  width: 180px;
+  height: 180px;
+  z-index: 1;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_detail_service_square_02.png) no-repeat;
+  background-size: 100% auto;
+}
+.hotelMain .hotelDetailSection .serviceSection .secWrap01 {
+  position: relative;
+}
+.hotelMain .hotelDetailSection .serviceSection .secWrap01::before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: -160px;
+  width: 160px;
+  height: 160px;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_detail_service_square_01.png) no-repeat;
+  background-size: 100% auto;
+}
+.hotelMain .hotelDetailSection .serviceSection .secTtl {
+  margin: 0 0 30px;
+  font-size: 0;
+}
+.hotelMain .hotelDetailSection .serviceSection .secTtl p {
+  display: inline;
+  font-size: 30px;
+  color: #a78f45;
+}
+.hotelMain .hotelDetailSection .serviceSection .secTtl p + .em {
+  margin: 0 0 0 5px;
+}
+.hotelMain .hotelDetailSection .serviceSection .secTtl .em {
+  font-size: 50px;
+}
+.hotelMain .hotelDetailSection .serviceSection .infoBox .dl {
+  line-height: 2;
+}
+.hotelMain .hotelDetailSection .serviceSection .infoBox .dl + .dl {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .hotelMain .hotelDetailSection .serviceSection .infoBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hotelMain .hotelDetailSection .serviceSection .infoBox .dl .dt {
+    width: 20%;
+  }
+  .hotelMain .hotelDetailSection .serviceSection .infoBox .dl .dd {
+    width: 75%;
+  }
+}
+.hotelMain .hotelDetailSection .accessSection {
+  padding: 150px 0;
+  background: #ffffff;
+}
+.hotelMain .hotelDetailSection .accessSection .secTtl {
+  margin: 0 0 30px;
+  font-size: 0;
+}
+.hotelMain .hotelDetailSection .accessSection .secTtl p {
+  display: inline;
+  font-size: 30px;
+  color: #a78f45;
+}
+.hotelMain .hotelDetailSection .accessSection .secTtl p + .em {
+  margin: 0 0 0 5px;
+}
+.hotelMain .hotelDetailSection .accessSection .secTtl .em {
+  font-size: 50px;
+}
+.hotelMain .hotelDetailSection .accessSection .mapPanel {
+  max-width: 1400px;
+  margin: 20px auto 0;
+}
+.hotelMain .hotelDetailSection .accessSection .btnReserve {
+  margin: 60px 0 0;
+}
+.hotelMain .hotelDetailSection .accessSection .btnReserve a {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_detail_reserve_btn_bg.png) no-repeat;
+  background-size: cover;
+}
+.hotelMain .hotel-detail-header {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	eternityHotelShinagawa
+///////////////////////////////////////////////////////////*/
+.eternityHotelShinagawaMain .sec01 {
+  position: relative;
+  padding: 100px 0 200px;
+}
+.eternityHotelShinagawaMain .sec01::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35%;
+  background: #ffffff;
+}
+.eternityHotelShinagawaMain .sec01 .topContainer {
+  position: relative;
+}
+.eternityHotelShinagawaMain .sec01 .topContainer .leftPanel .pageSecTtlBox {
+  margin: 0 0 20px;
+}
+.eternityHotelShinagawaMain .sec01 .topContainer .leftPanel .pageSecTtlBox .pageSecTtl {
+  display: none;
+}
+.eternityHotelShinagawaMain .sec01 .topContainer .leftPanel .message {
+  font-size: 30px;
+  color: #003461;
+  line-height: 1.7;
+}
+.eternityHotelShinagawaMain .sec01 .topContainer .rightPanel .txt {
+  max-width: 800px;
+}
+@media (min-width: 1025px) {
+  .eternityHotelShinagawaMain .sec01 .topContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eternityHotelShinagawaMain .sec01 .topContainer .leftPanel {
+    width: 30%;
+  }
+  .eternityHotelShinagawaMain .sec01 .topContainer .leftPanel .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .eternityHotelShinagawaMain .sec01 .topContainer .rightPanel {
+    width: 65%;
+    padding: 5% 0 0;
+  }
+}
+.eternityHotelShinagawaMain .sec01 .slideContainer {
+  position: relative;
+  margin: 60px 0 0;
+}
+.eternityHotelShinagawaMain .sec01 .slideContainer .slidePanel {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #a78f45;
+  background: #ffffff;
+}
+.eternityHotelShinagawaMain .sec01 .slideContainer .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.eternityHotelShinagawaMain .sec01 .slideContainer .slidePanel .slideBox .ul .li {
+  width: 33.3333333333%;
+  margin: 0 5px;
+}
+.eternityHotelShinagawaMain .sec02 {
+  position: relative;
+  padding: 100px 0;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/eternityHotelShinagawa_concept_bg.png) no-repeat;
+  background-size: cover;
+}
+.eternityHotelShinagawaMain .sec02::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  bottom: -20px;
+  width: 180px;
+  height: 180px;
+  z-index: 1;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_detail_service_square_02.png) no-repeat;
+  background-size: 100% auto;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 {
+  position: relative;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_detail_service_square_01.png) no-repeat;
+  background-size: 100% auto;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 .listBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 .listBox .ul .li {
+  position: relative;
+  width: 280px;
+  height: 0;
+  padding-bottom: 280px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 .listBox .ul .li .dl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px);
+  text-align: center;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 .listBox .ul .li .dl .dt {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0 0 5px;
+  font-size: 30px;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 .listBox .ul .li .dl .dt:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #c22c2a;
+}
+.eternityHotelShinagawaMain .sec02 .secWrap01 .listBox .ul .li .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .eternityHotelShinagawaMain .sec02 .secWrap01 .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eternityHotelShinagawaMain .sec02 .secWrap01 .ul .li {
+    width: calc(33.3333333333% - 40px);
+    height: 0;
+    padding-bottom: calc(33.3333333333% - 40px);
+    margin: 0 0 0;
+  }
+}
+.eternityHotelShinagawaMain .sec02 .pageSecTtlBox .pageSecTtl {
+  display: none;
+}
+.eternityHotelShinagawaMain .sec03 {
+  padding: 150px 0;
+  background: #ffffff;
+}
+.eternityHotelShinagawaMain .sec03 .pageSecTtlBox .pageSecTtl {
+  display: none;
+}
+.eternityHotelShinagawaMain .sec03 .listSection {
+  position: relative;
+  padding: 0 0 80px;
+}
+.eternityHotelShinagawaMain .sec03 .listSection::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  height: 80%;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/feature_sec02_panel_bg.png) no-repeat;
+  background-size: cover;
+}
+.eternityHotelShinagawaMain .sec03 .listSection + .listSection {
+  margin: 120px 0 0;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .mvPanel {
+  position: relative;
+  margin: 0 0 60px;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .mvPanel .ttlBox {
+  padding: 80px 50px;
+  color: #ffffff;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/feature_sec02_mv_bg.png) no-repeat;
+  background-size: cover;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .mvPanel .ttlBox .ttl01 {
+  position: relative;
+  margin: 0 0 50px;
+  border: 1px solid #ffffff;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .mvPanel .ttlBox .ttl01 .inner {
+  position: relative;
+  top: -4px;
+  left: -4px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .mvPanel .ttlBox .ttl02 {
+  position: relative;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .mvBox {
+    width: calc(100% - 500px);
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .mvBox .mv {
+    position: relative;
+    height: 400px;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .mvBox .mv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .ttlBox {
+    width: 500px;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .ttlBox .ttl01.large {
+    width: 480px;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .ttlBox .ttl01.large .inner {
+    width: 480px;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .mvPanel .mvWrap .ttlBox .ttl02 {
+    white-space: nowrap;
+  }
+}
+.eternityHotelShinagawaMain .sec03 .listSection .listPanel {
+  position: relative;
+  padding: 0 20px;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .listPanel .listBox {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .listPanel .listBox .ul .dl {
+  margin: 10px 0 0;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .listPanel .listBox .ul .dl .dt {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.eternityHotelShinagawaMain .sec03 .listSection .listPanel .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .eternityHotelShinagawaMain .sec03 .listSection .listPanel .listBox .ul {
+    display: flex;
+    margin: 0 0 0 -50px;
+  }
+  .eternityHotelShinagawaMain .sec03 .listSection .listPanel .listBox .ul .li {
+    width: calc(33.3333333333% - 50px);
+    margin: 0 0 0 50px;
+  }
+}
+.eternityHotelShinagawaMain .sec04 {
+  padding: 50px 0 150px;
+  background: #ffffff;
+}
+.eternityHotelShinagawaMain .sec04 .pageSecTtlBox .pageSecTtl {
+  display: none;
+}
+.eternityHotelShinagawaMain .sec04 .secContainer {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.eternityHotelShinagawaMain .sec04 .secContainer::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background: #003461;
+}
+.eternityHotelShinagawaMain .sec04 .secContainer::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -80px;
+  width: 160px;
+  height: 160px;
+  background: #c8ad5a;
+}
+.eternityHotelShinagawaMain .sec04 .listBox {
+  position: relative;
+  z-index: 1;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .li {
+  padding: 20px 20px 40px;
+  background: #f4f4ee;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .photo {
+  margin: 0 0 15px;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .roomNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #21110d;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .title {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #c22c2a;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .capacity {
+  margin: 0 0 10px;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .capacity p {
+  display: inline-block;
+  padding: 2px 15px;
+  background: #e1e1e0;
+}
+.eternityHotelShinagawaMain .sec04 .listBox .ul .txt {
+  margin: 0 0 20px;
+}
+@media (min-width: 1025px) {
+  .eternityHotelShinagawaMain .sec04 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+  }
+  .eternityHotelShinagawaMain .sec04 .listBox .ul .li {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .eternityHotelShinagawaMain .sec04 .listBox .ul .btnMore {
+    margin: auto 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+.guideMain .pageTitleContainer {
+  background: #ffffff;
+}
+.guideMain .pageTitleContainer .linkList {
+  padding: 60px 0 30px;
+}
+.guideMain .pageTitleContainer .linkList .ul {
+  display: flex;
+  justify-content: center;
+}
+.guideMain .pageTitleContainer .linkList .ul .li {
+  padding: 0 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  cursor: pointer;
+}
+.guideMain .pageTitleContainer .linkList .ul .li + .li {
+  border-left: 2px solid #21110d;
+}
+.guideMain .sec01 {
+  padding: 60px 0;
+}
+.guideMain .sec01 .topPanel {
+  margin: 0 0 100px;
+}
+.guideMain .sec01 .topPanel .list {
+  margin: 0 0 40px;
+}
+.guideMain .sec01 .topPanel .list .ul .li {
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .guideMain .sec01 .topPanel .list .ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 3vw;
+  }
+  .guideMain .sec01 .topPanel .list .ul .li {
+    width: calc(33.3333333333% - 3vw);
+  }
+}
+.guideMain .sec01 .section + .section {
+  margin: 80px 0 0;
+}
+.guideMain .sec01 .section .secTtl {
+  margin: 0 0 50px;
+  padding: 0 0 0 20px;
+  font-size: 24px;
+  border-left: 2px solid #21110d;
+}
+.guideMain .sec01 .section .aside {
+  padding: 0 0 0 1em;
+}
+.guideMain .sec01 .cancelPanel {
+  border: 1px solid #d5dadf;
+}
+.guideMain .sec01 .cancelPanel .dl .dt {
+  padding: 15px 10px;
+  text-align: center;
+  background: #f0f3f7;
+}
+.guideMain .sec01 .cancelPanel .dl .dd .col {
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #d5dadf;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .guideMain .sec01 .cancelPanel {
+    display: flex;
+  }
+  .guideMain .sec01 .cancelPanel .dl {
+    width: 50%;
+  }
+  .guideMain .sec01 .cancelPanel .dl + .dl {
+    border-left: 1px solid #d5dadf;
+  }
+}
+.guideMain .sec02 {
+  padding: 60px 0 120px;
+}
+.guideMain .sec02 .faqPanel {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+.guideMain .sec02 .faqPanel + .txt {
+  margin: 50px 0 0;
+  text-align: center;
+}
+.guideMain .sec02 .secBoxList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.guideMain .sec02 .secBoxList .secBox + .secBox {
+  margin: 60px 0 0;
+}
+.guideMain .sec02 .secBoxList .secBox .dl .dt {
+  display: flex;
+  align-items: center;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #21110d;
+}
+.guideMain .sec02 .secBoxList .secBox .dl .dt .icon {
+  width: 30px;
+  margin: 0 15px 0 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+.guideMain .sec02 .secBoxList .secBox .dl .dt .ttl {
+  font-size: 20px;
+}
+.guideMain .sec02 .secBoxList .secBox .dl .dd {
+  padding: 15px 0 0 45px;
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .sec01 {
+  padding: 120px 0 0;
+}
+.companyMain .sec01 .infoBox {
+  padding: 0 0 80px;
+}
+.companyMain .sec01 .infoBox .dl {
+  line-height: 2;
+}
+.companyMain .sec01 .infoBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.companyMain .sec01 .infoBox .dl .dt {
+  padding: 15px;
+  border-bottom: 1px solid #c22c2a;
+}
+.companyMain .sec01 .infoBox .dl .dd {
+  padding: 15px;
+  border-bottom: 1px solid #21110d;
+}
+.companyMain .sec01 .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .infoBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec01 .infoBox .dl .dt {
+    width: 220px;
+  }
+  .companyMain .sec01 .infoBox .dl .dd {
+    width: calc(100% - 225px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .sec01 {
+  padding: 100px 0 120px;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 40px;
+}
+.contactMain .sec02 {
+  padding: 120px 0;
+  background: #ffffff;
+}
+.contactMain .sec02 .linePanel {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #515964;
+}
+.contactMain .sec02 .linePanel .ttl {
+  margin: 0 0 40px;
+  font-size: 20px;
+}
+.contactMain .sec02 .linePanel .qrBox {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.contactMain .sec02 .linePanel .qrBox .qr {
+  width: 70px;
+}
+.contactMain .sec02 .linePanel .qrBox .qr a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec02 .linePanel .qrBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: #e1e1e0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: #e1e1e0;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .btnSubmitBox {
+  max-width: 330px;
+  margin: 40px auto 0;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 16px;
+  color: #21110d;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  background: #e1e1e0;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form {
+  padding: 0 0 60px;
+}
+.formMain .contactForm .form .checkList .ul {
+  padding: 12px 0 0;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  background: #e1e1e0;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #c22c2a;
+  border-right: 3px solid #c22c2a;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox {
+  padding: 10px 0;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #090908;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #ee7800;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 13px;
+}
+.formMain .contactForm .form .postalBox + input + input {
+  margin: 5px 0;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #deebe4;
+  border-radius: 15px;
+  background: #f7f7f7;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 2px 0 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid #c22c2a;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  min-width: 165px;
+  margin-right: 10px;
+  padding: 0 0 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #c22c2a;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    float: left;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    float: right;
+  }
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 282px);
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid #21110d;
+}
+.formMain .contactForm .formBox .datePanel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.formMain .contactForm .formBox .datePanel + .datePanel {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel > * {
+  display: flex;
+  align-items: center;
+}
+.formMain .contactForm .formBox .datePanel input {
+  width: 70px;
+  border-radius: 15px;
+}
+.formMain .contactForm .formBox .datePanel .selectBox {
+  width: 70px;
+}
+.formMain .contactForm .formBox .datePanel .dateTtl {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel .dateTxt {
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  padding: 10px;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ffffff;
+  background: #e1e1e0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  max-width: 500px;
+  padding: 15px 10px;
+  margin: 40px auto;
+  text-align: center;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 60px 0 100px;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 2.5;
+}
+.complete .btnMoreBox {
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .blogSection {
+  padding: 0 0 120px;
+}
+.blogMain .catePanel {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+.blogMain .catePanel .webgene-blog {
+  display: flex;
+  margin: 0 0 0 -10px;
+}
+.blogMain .catePanel .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .catePanel .webgene-blog .webgene-item {
+  width: calc(25% - 10px);
+  margin: 0 0 0 10px;
+}
+.blogMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .blogMain .catePanel .webgene-blog .webgene-item a:hover {
+    opacity: 1;
+    color: #ffffff;
+    background: #003461;
+  }
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .title {
+  min-height: 30px;
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .more {
+  padding: 0 0 5px;
+  border-bottom: 1px solid #21110d;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .more p {
+  display: block;
+  padding: 0 22px 0 0;
+  font-family: "EB Garamond";
+  font-weight: 700;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/blog_list_arrow.png) right 5px center no-repeat;
+  background-size: 20px auto;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -40px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 40px);
+    margin: 50px 0 0 40px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 260px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #ffffff;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #21110d;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 30px;
+  padding: 0 30px 10px;
+  font-size: 30px;
+  border-bottom: 1px solid #21110d;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .thumb-item {
+  max-width: 850px;
+  margin: 0 0 10px;
+  padding: 0 30px;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item img {
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox {
+  padding: 0 30px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .blogPanel--detail .webgene-blog .videoBox {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .btnBackBox {
+  margin: 80px 0 0;
+  text-align: center;
+}
+.blogMain .blogPanel--detail .btnContact {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .btnContact a {
+  display: block;
+  padding: 10px;
+  font-family: "EB Garamond";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  background: #e1e1e0;
+}
+.blogMain .blogPanel--detail .btnContact a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://s-10057340.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.blogMain .blogPanel--detail .btnBack {
+  max-width: 330px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+.blogMain .blogPanel--detail .btnBack a {
+  display: block;
+  padding: 10px;
+  font-family: "EB Garamond";
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  background: #200905;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink {
+  display: inline-block;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink a {
+  display: block;
+  width: 40px;
+  color: #ffffff;
+  line-height: 44px;
+  border-radius: 20px;
+  background: #d10b14;
+}

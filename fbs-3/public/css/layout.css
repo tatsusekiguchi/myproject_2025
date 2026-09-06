@@ -1,0 +1,1806 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  height: 800px;
+  padding: 20px 0;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center bottom no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvTitlePanel {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.topMain .topKvContainer .kvTitlePanel .kvTitle {
+  margin: 0 20px 0 0;
+  font-size: clamp(30px, 3vw, 50px);
+}
+.topMain .topKvContainer .kvTitlePanel .kvTitle span {
+  border-bottom: 2px solid #01009a;
+}
+.topMain .topKvContainer .kvTitlePanel .sub {
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .topKvContainer .kvTitlePanel .inner {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .topMain .topKvContainer .kvTitlePanel .kvTitle {
+    width: 50%;
+  }
+  .topMain .topKvContainer .kvTitlePanel .sub {
+    width: 46%;
+  }
+}
+.topMain .topKvContainer .kvItemPanel {
+  position: relative;
+  max-width: 1060px;
+  margin: -20px auto 0;
+}
+.topMain .topKvContainer .kvItemPanel .centerBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 360px;
+  height: 360px;
+  margin: auto;
+  z-index: 1;
+}
+.topMain .topKvContainer .kvItemPanel .list .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.topMain .topKvContainer .kvItemPanel .list .ul .li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid #b4babb;
+  background: #effcf7;
+}
+.topMain .topKvContainer .kvItemPanel .list .ul .li .icon {
+  margin: 0 auto 10px;
+}
+.topMain .topKvContainer .kvItemPanel .list .ul .li .icon01 {
+  width: 100px;
+}
+.topMain .topKvContainer .kvItemPanel .list .ul .li .icon02 {
+  width: 120px;
+}
+.topMain .topKvContainer .kvItemPanel .list .ul .li .ttl {
+  font-size: 30px;
+}
+.topMain .sec01 {
+  background: #e7f4f1;
+}
+.topMain .sec01 .bg {
+  padding: 60px 0 120px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secBox .photo {
+  padding: 40px 0 0;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox {
+  margin: 0 0 30px;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox .sub {
+  font-size: 20px;
+  color: #55bba4;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 34px;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox .ttl .em {
+  color: #d4b615;
+}
+.topMain .sec01 .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secBox .photo {
+    width: 45%;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+  .topMain .sec01 .secBox .txtBox .txt {
+    max-width: 720px;
+  }
+  .topMain .sec01 .secBox .txtBox .btnList {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+  }
+}
+.topMain .sec02 {
+  padding: 60px 0 120px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .txtBox {
+  margin: 0 0 60px;
+  padding: 30px 20px;
+  background: #ffffff;
+}
+.topMain .sec02 .txtBox .txt {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.topMain .sec02 .profileContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.topMain .sec02 .profilePanel + .profilePanel {
+  margin: 40px 0 0;
+}
+.topMain .sec02 .profilePanel .left .iconBox {
+  margin: 0 auto;
+}
+.topMain .sec02 .profilePanel .left .iconBox .name {
+  margin: 20px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+.topMain .sec02 .profilePanel .left .iconBox01 {
+  width: 180px;
+}
+.topMain .sec02 .profilePanel .left .iconBox02 {
+  width: 200px;
+}
+.topMain .sec02 .profilePanel .right .profileInfo .dl {
+  line-height: 2;
+  border-bottom: 1px solid #f0f0f0;
+}
+.topMain .sec02 .profilePanel .right .profileInfo .dl .dt {
+  padding: 15px;
+  color: #ffffff;
+}
+.topMain .sec02 .profilePanel .right .profileInfo .dl .dd {
+  padding: 15px 40px;
+  background: #ffffff;
+}
+.topMain .sec02 .profilePanel .right .profileInfo.blue .dt {
+  background: #166bbe;
+}
+.topMain .sec02 .profilePanel .right .profileInfo.red .dt {
+  background: #ff4564;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .profilePanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec02 .profilePanel .left {
+    width: 40%;
+  }
+  .topMain .sec02 .profilePanel .right {
+    width: 60%;
+  }
+  .topMain .sec02 .profilePanel .right .profileInfo .dl {
+    display: flex;
+  }
+  .topMain .sec02 .profilePanel .right .profileInfo .dl .dt {
+    width: 150px;
+  }
+  .topMain .sec02 .profilePanel .right .profileInfo .dl .dd {
+    width: calc(100% - 150px);
+  }
+}
+.topMain .serviceSec .serviceContainer {
+  position: relative;
+  padding: 30px 0;
+}
+.topMain .serviceSec .serviceContainer .txtBox .ttl01 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  color: #18322c;
+}
+.topMain .serviceSec .serviceContainer .txtBox .ttl02 {
+  margin: 0 0 30px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+.topMain .serviceSec .serviceContainer .txtBox .ttl02.green {
+  color: #85bcaf;
+}
+.topMain .serviceSec .serviceContainer .txtBox .ttl02.blue {
+  color: #72bbe1;
+}
+.topMain .serviceSec .serviceContainer .txtBox .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .serviceSec .serviceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .topMain .serviceSec .serviceContainer .photo {
+    position: relative;
+    width: 48%;
+    height: 450px;
+  }
+  .topMain .serviceSec .serviceContainer .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .serviceSec .serviceContainer .txtBox {
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    width: 100%;
+  }
+  .topMain .serviceSec .serviceContainer .txtBox .txt {
+    width: 45%;
+  }
+}
+.topMain .serviceSec .serviceContainer01 {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/top_service_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .serviceSec .serviceContainer02 {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/top_service_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .blogSec {
+  margin: 60px 0;
+  padding: 60px 0;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/top_blog_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .blogSec .secPanel {
+  position: relative;
+}
+.topMain .blogSec .secBox .right .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .blogSec .secBox .right .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .blogSec .secBox .right .webgene-blog .webgene-item .title {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .blogSec .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .blogSec .secBox .left {
+    width: 250px;
+  }
+  .topMain .blogSec .secBox .right {
+    width: calc(100% - 320px);
+  }
+  .topMain .blogSec .secBox .right .webgene-blog {
+    display: flex;
+    gap: 0 40px;
+  }
+  .topMain .blogSec .secBox .right .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+  }
+  .topMain .blogSec .secBox .right .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .topMain .blogSec .secBox .right .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .blogSec .btnMore {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.strengthMain .sec01 {
+  padding: 80px 0 200px;
+}
+.strengthMain .sec01 .topContainer {
+  margin: 0 0 50px;
+}
+.strengthMain .sec01 .topContainer .ttlBox {
+  margin: 0 0 30px;
+}
+.strengthMain .sec01 .topContainer .ttlBox .sub {
+  font-size: 20px;
+  color: #55bba4;
+}
+.strengthMain .sec01 .topContainer .ttlBox .ttl {
+  font-size: 0;
+}
+.strengthMain .sec01 .topContainer .ttlBox .ttl p {
+  display: inline;
+  font-size: 34px;
+}
+.strengthMain .sec01 .topContainer .ttlBox .ttl .em {
+  color: #d4b615;
+}
+.strengthMain .sec01 .topContainer .txtBox p {
+  display: inline;
+}
+.strengthMain .sec01 .topContainer .txtBox .em {
+  color: #55bba4;
+}
+.strengthMain .sec01 .secBox {
+  background: #ffffff;
+}
+.strengthMain .sec01 .secBox .txtBox .ttlBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.strengthMain .sec01 .secBox .txtBox .ttlBox .ttl {
+  display: inline-block;
+  padding: 25px 100px;
+  font-size: 34px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_sec01_icon_01.png) left center no-repeat, url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_sec01_icon_02.png) right center no-repeat;
+  background-size: 100px auto, 100px auto;
+}
+.strengthMain .sec01 .secBox .txtBox .list {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.strengthMain .sec01 .secBox .txtBox .list .ul .li {
+  padding: 5px 0 5px 35px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_sec01_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.strengthMain .sec01 .secBox .txtBox .list .ul .li + .li {
+  margin: 15px 0 0;
+}
+@media (min-width: 1025px) {
+  .strengthMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .strengthMain .sec01 .secBox .photo {
+    position: relative;
+    width: 48%;
+    height: 550px;
+  }
+  .strengthMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .strengthMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.strengthMain .sec02 {
+  margin: 0 0 160px;
+}
+.strengthMain .sec02 .section {
+  position: relative;
+  margin: -120px 0 0;
+  padding: 0 0 0 100px;
+}
+.strengthMain .sec02 .secContainer {
+  padding: 60px 20px;
+  background: #f4fcfb;
+}
+.strengthMain .sec02 .secContainer .cntWrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.strengthMain .sec02 .secBox01 {
+  margin: 0 0 60px;
+}
+.strengthMain .sec02 .secBox01 .ttlBox {
+  margin: 0 0 30px;
+}
+.strengthMain .sec02 .secBox01 .ttlBox .ttl {
+  font-size: 0;
+}
+.strengthMain .sec02 .secBox01 .ttlBox .ttl p {
+  display: inline;
+  font-size: 34px;
+}
+.strengthMain .sec02 .secBox01 .ttlBox .ttl .em {
+  color: #d4b615;
+}
+@media (min-width: 1025px) {
+  .strengthMain .sec02 .secBox01 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .strengthMain .sec02 .secBox01 .chart {
+    width: 30%;
+  }
+  .strengthMain .sec02 .secBox01 .txtBox {
+    width: 68%;
+  }
+  .strengthMain .sec02 .secBox01 .txtBox .txt {
+    max-width: 800px;
+  }
+}
+.strengthMain .sec02 .listBox .ul .li {
+  padding: 20px 40px;
+  background: #ebfbf5;
+}
+.strengthMain .sec02 .listBox .ul .dl .dt {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0 0 10px;
+  font-size: 34px;
+  text-align: center;
+}
+.strengthMain .sec02 .listBox .ul .dl .dt:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 1px;
+  margin: 0 auto;
+  background: #000000;
+}
+.strengthMain .sec02 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .strengthMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .strengthMain .sec02 .listBox .ul .li {
+    width: calc(50% - 20px);
+  }
+}
+.strengthMain .sec03 .section {
+  position: relative;
+  margin: -120px 0 0;
+  padding: 0 0 0 100px;
+}
+.strengthMain .sec03 .secContainer {
+  padding: 60px 20px;
+  background: #f4fcfb;
+}
+.strengthMain .sec03 .secContainer .cntWrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.strengthMain .sec03 .listBox .ul .li {
+  padding: 20px 40px;
+  background: #ebfbf5;
+}
+.strengthMain .sec03 .listBox .ul .dl .dt {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0 0 10px;
+  font-size: 34px;
+  text-align: center;
+}
+.strengthMain .sec03 .listBox .ul .dl .dt:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 1px;
+  margin: 0 auto;
+  background: #000000;
+}
+.strengthMain .sec03 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+.strengthMain .sec03 .listBox .ul .btnMore {
+  margin: 30px auto 0;
+}
+@media (min-width: 1025px) {
+  .strengthMain .sec03 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .strengthMain .sec03 .listBox .ul .li {
+    width: calc(50% - 20px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/service_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .topContainer {
+  padding: 80px 0 160px;
+}
+.serviceMain .topContainer .txt {
+  margin: 0 0 40px;
+}
+.serviceMain .topContainer .chartPanel {
+  padding: 20px;
+  background: #ffffff;
+}
+.serviceMain .topContainer .chartPanel .chart {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.serviceMain .section {
+  position: relative;
+  margin: -120px 0 0;
+  padding: 0 0 100px 100px;
+}
+.serviceMain .secContainer {
+  padding: 60px 20px;
+  background: #f5fdfb;
+}
+.serviceMain .secContainer + .secContainer {
+  margin: 60px 0 0;
+}
+.serviceMain .secContainer .cntWrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.serviceMain .topTtl {
+  margin: 0 0 30px;
+}
+.serviceMain .topTtl .ttlBox .ttl01 {
+  font-size: 30px;
+}
+.serviceMain .topTtl .ttlBox .ttl02 {
+  font-size: 20px;
+  color: #55bba4;
+}
+.serviceMain .topTtl .balloonBox {
+  display: flex;
+  align-items: center;
+  width: 600px;
+}
+.serviceMain .topTtl .balloonBox .icon {
+  width: 90px;
+  margin: 0 30px 0 0;
+}
+.serviceMain .topTtl .balloonBox .balloon {
+  position: relative;
+  width: calc(100% - 120px);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #b3ebe0;
+  background: #ffffff;
+}
+.serviceMain .topTtl .balloonBox .balloon::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 20px;
+  width: 25px;
+  height: 30px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/service_balloon.png) no-repeat;
+  background-size: 100% auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .topTtl {
+    display: flex;
+    align-items: center;
+  }
+  .serviceMain .topTtl .ttlBox {
+    margin: 0 20px 0 0;
+  }
+}
+.serviceMain .topTxt {
+  margin: 0 0 30px;
+}
+.serviceMain .listBox {
+  max-width: 1100px;
+}
+.serviceMain .listBox .ul .dl {
+  padding: 15px 0 0;
+}
+.serviceMain .listBox .ul .dl .dt {
+  margin: 0 0 10px;
+  text-align: center;
+}
+.serviceMain .listBox .ul .dl .dt p {
+  display: inline;
+  font-size: 20px;
+}
+.serviceMain .listBox .ul .dl .dt .span {
+  font-size: 16px;
+}
+.serviceMain .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .serviceMain .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .serviceMain .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+.serviceMain .bnrBox {
+  margin: 80px 0 0;
+}
+.serviceMain .bnrBox .bnr a {
+  position: relative;
+  display: block;
+}
+.serviceMain .bnrBox .bnr .ttl {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  padding: 10px 30px;
+  color: #f5fdfb;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/service_bnr_band.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .bnrBox .bnr .ttl p {
+  padding: 0 40px 0 0;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/service_bnr_arrow.png) right center no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .bnrBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .bnrBox .bnr {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+.productMain {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/product_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.productMain .topContainer {
+  padding: 80px 0 120px;
+}
+.productMain .topContainer .txt {
+  margin: 0 0 60px;
+}
+.productMain .topContainer .linkList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.productMain .topContainer .linkList .ul .li {
+  position: relative;
+  width: 220px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid #1c95d4;
+  background: #f3faf8;
+}
+.productMain .topContainer .linkList .ul .li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  width: 1px;
+  height: 25px;
+  margin: 0 auto;
+  background: #1c95d4;
+}
+@media (min-width: 1025px) {
+  .productMain .topContainer .linkList .ul {
+    display: flex;
+    gap: 0 80px;
+  }
+}
+.productMain .section {
+  position: relative;
+  margin: -120px 0 0;
+  padding: 0 0 100px 100px;
+}
+.productMain .secContainer {
+  position: relative;
+  padding: 60px 20px 300px;
+  background: #f5fdfb;
+}
+.productMain .secContainer + .secContainer {
+  margin: 60px 0 0;
+}
+.productMain .secContainer .cntWrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.productMain .topTtl {
+  margin: 0 0 30px;
+}
+.productMain .topTtl .ttlBox .ttl01 {
+  font-size: 30px;
+}
+.productMain .topTtl .ttlBox .ttl02 {
+  font-size: 20px;
+  color: #55bba4;
+}
+.productMain .topTtl .balloonBox {
+  width: 90px;
+}
+@media (min-width: 1025px) {
+  .productMain .topTtl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .productMain .topTtl .ttlBox {
+    margin: 0 20px 0 0;
+  }
+}
+.productMain .topTxt {
+  margin: 0 0 30px;
+}
+.productMain .listBox {
+  margin: 0 0 60px;
+}
+.productMain .listBox .ul {
+  display: flex;
+  gap: 0 20px;
+}
+.productMain .listBox .ul .li {
+  position: relative;
+  height: 0;
+  padding: 0 0 35%;
+}
+.productMain .listBox .ul .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.productMain .listBox .ul .li.list01 {
+  width: 65%;
+}
+.productMain .listBox .ul .li.list02 {
+  width: 35%;
+}
+.productMain .slidePanel {
+  position: absolute;
+  left: -160px;
+  width: 100vw;
+}
+.productMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productMain .slidePanel .slideBox .ul .li {
+  position: relative;
+  width: 20%;
+  margin: 0 5px;
+}
+@media (min-width: 1025px) {
+  .productMain .slidePanel .slideBox .ul .li {
+    height: 250px;
+  }
+  .productMain .slidePanel .slideBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.productMain .bnrContainer {
+  margin: 0 !important;
+  padding: 0 20px 60px;
+}
+.productMain .bnrContainer .bnrBox .bnr a {
+  position: relative;
+  display: block;
+}
+.productMain .bnrContainer .bnrBox .bnr .ttl {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  padding: 10px 30px;
+  color: #f5fdfb;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/service_bnr_band.png) no-repeat;
+  background-size: cover;
+}
+.productMain .bnrContainer .bnrBox .bnr .ttl p {
+  padding: 0 40px 0 0;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/service_bnr_arrow.png) right center no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .productMain .bnrContainer .bnrBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .productMain .bnrContainer .bnrBox .bnr {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/company_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 {
+  padding: 100px 0 200px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/company_sec01_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 .txt p + p {
+  margin: 20px 0 0;
+}
+.companyMain .sec01 .nameBox {
+  margin: 30px 0 0;
+  text-align: right;
+  line-height: 2;
+}
+.companyMain .sec01 .nameBox p {
+  display: inline-block;
+}
+.companyMain .sec01 .nameBox .em {
+  font-size: 20px;
+}
+.companyMain .sec02 {
+  padding: 30px 0 120px;
+}
+.companyMain .sec02 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.companyMain .sec02 .infoBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.companyMain .sec02 .infoBox .dl .dt {
+  width: 200px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #1c95d4;
+}
+.companyMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 205px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+.companyMain .sec02 .telFax > * {
+  display: inline-block;
+}
+.companyMain .sec02 .telFax a {
+  display: inline-block;
+}
+.companyMain .sec02 .mapPanel {
+  padding: 100px 0 0 100px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/contact_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 {
+  padding: 80px 0 60px;
+}
+.contactMain .sec01 .secBox {
+  background: #ffffff;
+}
+.contactMain .sec01 .secBox .txtBox .ttlBox {
+  margin: 40px 0 0;
+  text-align: center;
+}
+.contactMain .sec01 .secBox .txtBox .ttlBox .ttl {
+  display: inline-block;
+  padding: 25px 100px;
+  font-size: 34px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_sec01_icon_01.png) left center no-repeat, url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_sec01_icon_02.png) right center no-repeat;
+  background-size: 100px auto, 100px auto;
+}
+.contactMain .sec01 .secBox .txtBox .list {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.contactMain .sec01 .secBox .txtBox .list .ul .li {
+  padding: 5px 0 5px 35px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/strength_sec01_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.contactMain .sec01 .secBox .txtBox .list .ul .li + .li {
+  margin: 15px 0 0;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contactMain .sec01 .secBox .photo {
+    position: relative;
+    width: 48%;
+    height: 550px;
+  }
+  .contactMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contactMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.contactMain .sec01 .secTxt {
+  margin: 50px 0 0;
+  text-align: center;
+}
+.contactMain .sec02 {
+  padding: 60px 0;
+}
+.contactMain .sec03 {
+  padding: 60px 0 100px;
+}
+.contactMain .sec03 .telPanel {
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+.contactMain .sec03 .telPanel .tel {
+  max-width: 260px;
+  margin: 0 auto 10px;
+}
+.contactMain .sec03 .telPanel .tel a {
+  display: block;
+  padding: 15px;
+  font-size: 24px;
+  color: #ddedf6;
+  border-radius: 30px;
+  background: #0b6898;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  border: 1px solid #5caad3;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #5caad3;
+  background: #ffffff;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .btnSubmitBox {
+  max-width: 220px;
+  margin: 40px auto 0;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 13px 10px;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  border: 1px solid #5caad3;
+  background: #f3faf8;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit]:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  bottom: 0;
+  width: 50px;
+  height: 1px;
+  margin: auto 0;
+  background: #1c95d4;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form {
+  padding: 0 0 60px;
+}
+.formMain .contactForm .form .checkList .ul {
+  padding: 12px 0 0;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #5caad3;
+  background: #ffffff;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #1c95d4;
+  border-right: 3px solid #1c95d4;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox {
+  padding: 10px 0;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #090908;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #ee7800;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox + input + input {
+  margin: 5px 0;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #deebe4;
+  border-radius: 15px;
+  background: #f7f7f7;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 2px 0 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid #1c95d4;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  min-width: 165px;
+  margin-right: 10px;
+  padding: 0 0 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #72bbe1;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    float: left;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    float: right;
+  }
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 285px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+.formMain .contactForm .formBox .datePanel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.formMain .contactForm .formBox .datePanel + .datePanel {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel > * {
+  display: flex;
+  align-items: center;
+}
+.formMain .contactForm .formBox .datePanel input {
+  width: 70px;
+  border-radius: 15px;
+}
+.formMain .contactForm .formBox .datePanel .selectBox {
+  width: 70px;
+}
+.formMain .contactForm .formBox .datePanel .dateTtl {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel .dateTxt {
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  padding: 10px;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #5caad3;
+  background: #effaf8;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 60px 0 100px;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .blogSection {
+  padding: 80px 0 120px;
+  background: url(https://s-8233964.smooooth.jp/system_panel/uploads/images/blog_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.blogMain .catePanel {
+  padding: 0 0 80px;
+  text-align: center;
+}
+.blogMain .catePanel .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .catePanel .webgene-blog .webgene-item {
+  display: inline-block;
+  width: 220px;
+  margin: 0 20px 0 0;
+}
+.blogMain .catePanel .webgene-blog .webgene-item a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid #1c95d4;
+  background: #f3faf8;
+}
+.blogMain .catePanel .webgene-blog .webgene-item a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  width: 1px;
+  height: 25px;
+  margin: 0 auto;
+  background: #1c95d4;
+}
+.blogMain .blogPanel--list {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .title {
+  min-height: 30px;
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .more p {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #67aa9a;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -50px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 50px);
+    margin: 50px 0 0 50px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 260px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  background: #cdcdcd;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #0f0b09;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .blogPanel--detail {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 30px;
+  border-bottom: 1px solid #67aa9a;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 0 10px;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item img {
+    display: block;
+    max-height: 650px;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .blogPanel--detail .btnBackBox {
+  margin: 80px 0 0;
+  text-align: center;
+}
+.blogMain .blogPanel--detail .btnContact {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .btnContact a {
+  display: block;
+  padding: 12px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: #0b6898;
+}
+.blogMain .blogPanel--detail .btnBack {
+  max-width: 220px;
+  margin: 100px auto 0;
+}
+.blogMain .blogPanel--detail .btnBack a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #1c95d4;
+  background: rgba(255, 255, 255, 0.5);
+}
+.blogMain .blogPanel--detail .btnBack a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  bottom: 0;
+  width: 50px;
+  height: 1px;
+  margin: auto 0;
+  background: #1c95d4;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink {
+  display: inline-block;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink a {
+  display: block;
+  width: 40px;
+  color: #ffffff;
+  line-height: 44px;
+  border-radius: 20px;
+  background: #d10b14;
+}

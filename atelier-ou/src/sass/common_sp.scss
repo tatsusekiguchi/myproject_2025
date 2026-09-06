@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: $SPfontSize;
+}
+a:hover {
+  text-decoration: none;
+}
+/*改行*/
+.pcBreak {
+  display: none;
+}
+.spBreak {
+  display: block;
+}
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+.spHidden {
+  display: none;
+}
+#sideBtn {
+  display: none;
+}
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  padding: 20px;
+  .headWrap {
+    .logoBox {
+      .logo {
+        max-width: 118px;
+        width: 118px;
+        margin: 0;
+      }
+      .headTitle {
+        display: none;
+      }
+    }
+    .headItem {
+      display: flex;
+      align-items: center;
+      width: auto;
+      .insta {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px 0 0;
+        padding: 0;
+        border-bottom: none;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          font-size: 0;
+          background: url("../image/common/header_insta.png") left center
+            no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .contact {
+        width: 150px;
+        max-width: 150px;
+        a {
+          padding: 12px 15px;
+          font-size: 13px;
+          span {
+            padding: 0 20px 0 0;
+            background: url("../image/common/header_contact_arrow.png") right
+              center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 40px 20px;
+  .topPanel {
+    margin: 0 auto 30px;
+    padding: 0;
+    .logo {
+      width: 65px;
+      max-width: 65px;
+    }
+    .headItem {
+      display: flex;
+      align-items: center;
+      width: auto;
+      .insta {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px 0 0;
+        padding: 0;
+        border-bottom: none;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          font-size: 0;
+          background: url("../image/common/footer_insta.png") left center
+            no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .contact {
+        width: 150px;
+        max-width: 150px;
+        a {
+          padding: 12px 15px;
+          font-size: 13px;
+          span {
+            padding: 0 20px 0 0;
+            background: url("../image/common/footer_contact_arrow.png") right
+              center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+    }
+  }
+  .mvPanel {
+    .mv {
+      position: relative;
+      height: 170px;
+      img {
+        @include cover-image;
+      }
+    }
+    .mvLogo {
+      width: 190px;
+      max-width: 190px;
+      height: 30px;
+    }
+  }
+  .bottomPanel {
+    position: relative;
+    display: block;
+    padding: 20px 0;
+    .navigationBox {
+      display: block;
+      ul {
+        + ul {
+          margin: 10px 0 0;
+        }
+        li {
+          + li {
+            margin: 10px 0 0;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .copyBox {
+      display: block;
+      margin: 25px 0 0;
+    }
+    .info {
+      font-size: 12px;
+    }
+    .copy {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      font-size: 8px;
+    }
+  }
+}

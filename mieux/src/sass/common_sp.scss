@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: $SPfontSize;
+}
+a:hover {
+  text-decoration: none;
+}
+/*改行*/
+.pcBreak {
+  display: none;
+}
+.spBreak {
+  display: block;
+}
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+.spHidden {
+  display: none;
+}
+#sideBtn {
+  display: none;
+}
+.topicPath {
+  display: none;
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  // padding: 40px 20px;
+  .headWrap {
+    .headTtl {
+      top: 40px;
+      left: 20px;
+      padding: 0 0 0 35px;
+      font-size: 12px;
+    }
+    .leftIcon {
+      top: 37px;
+      left: 20px;
+      width: 14px;
+      height: 44px;
+    }
+    .rightIcon {
+      top: 50px;
+      right: 20px;
+      width: 60px;
+      max-width: 60px;
+      height: 14px;
+    }
+  }
+}
+.fixedNavBox {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  ul {
+    display: flex;
+    border-top: 1px solid #ffffff;
+    li {
+      width: 50%;
+      a {
+        padding: 15px;
+        font-size: 13px;
+        color: #ffffff;
+        text-align: center;
+        background: rgba(255, 233, 229, 0.8);
+      }
+      + li {
+        border-left: 1px solid #ffffff;
+        a {
+          background: none;
+        }
+      }
+    }
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  padding: 40px 20px;
+  .navHead {
+    margin: 0 0 40px;
+    .leftIcon {
+      width: 40px;
+      max-width: 40px;
+      min-width: 40px;
+      height: 40px;
+    }
+    .rightIcon {
+      width: 60px;
+      max-width: 60px;
+      height: 16px;
+    }
+  }
+  .navBody {
+    padding: 0 20px;
+  }
+  .navContainer {
+    max-width: 1540px;
+    margin: 0 auto;
+    .leftPanel {
+      margin: 0 0 40px;
+      .navList {
+        ul {
+          li {
+            + li {
+              margin: 20px 0 0;
+            }
+            a {
+              em {
+                margin: 0 10px 0 0;
+                font-size: 26px;
+              }
+              span {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rightPanel {
+      .navList {
+        max-width: 600px;
+        margin: 0 auto 60px;
+        ul {
+          li {
+            + li {
+              margin: 25px 0 0;
+            }
+          }
+        }
+      }
+      .bottomBox {
+        margin: auto 0 0;
+        .logo {
+          max-width: 180px;
+          width: 180px;
+          margin: 0 0 40px;
+        }
+        .info {
+          .txt {
+            margin: 0 0 10px;
+            font-size: 10px;
+          }
+          .copyBox {
+            display: flex;
+            flex-direction: column;
+            .copy {
+              order: 2;
+              display: block;
+              // margin: 10px 0 0;
+              font-size: 10px;
+            }
+            .privacy {
+              display: none;
+              // order: 1;
+              // display: inline-block;
+              // font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    padding: 70px 0 0;
+    .contactList {
+      max-width: 660px;
+      width: 100%;
+      ul {
+        li {
+          + li {
+            margin: 15px 0 0;
+          }
+          .photo {
+            border-radius: 125px;
+          }
+          .txtBox {
+            .ttlBox {
+              margin: 0 0 15px;
+              .ttl01 {
+                font-size: 30px;
+              }
+              .ttl02 {
+                font-size: 18px;
+              }
+            }
+            .btnMore {
+              span {
+                padding: 0 30px 0 0;
+                font-size: 15px;
+                background: url("../image/common/btn_more_arrow_01_white.png")
+                  right center no-repeat;
+                background-size: 20px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 60px 0 25px;
+    .footBox {
+      width: 100%;
+    }
+    .infoBox01 {
+      margin: 0 0 70px;
+      .logo {
+        width: 187px;
+        max-width: 187px;
+        margin: 0 0 40px;
+      }
+      .txt {
+        font-size: 10px;
+      }
+    }
+    .infoBox02 {
+      .sns {
+        margin: 0 0 10px;
+        ul {
+          li {
+            width: 15px;
+            + li {
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
+      .copyBox {
+        display: flex;
+        flex-direction: column;
+        .copy {
+          order: 2;
+          display: block;
+          // margin: 10px 0 0;
+          font-size: 10px;
+        }
+        .privacy {
+          display: none;
+          // order: 1;
+          // display: inline-block;
+          // font-size: 10px;
+        }
+      }
+    }
+  }
+}

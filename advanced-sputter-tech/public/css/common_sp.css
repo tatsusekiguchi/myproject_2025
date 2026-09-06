@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel .titleBox .pageKvTitleBox {
+    padding: 30px 20px;
+    background: url(https://s-9937637.smooooth.jp/system_panel/uploads/images/page_kv_logo.png) right center no-repeat;
+    background-size: auto 100%;
+  }
+  .pageKvPanel .titleBox .pageKvTitleBox .pageKvTitle {
+    font-size: 28px;
+  }
+  .pageKvPanel .titleBox .pageKvTitleBox .sub {
+    font-size: 20px;
+  }
+
+  .pageSecTtlBox .sub {
+    font-size: 16px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 40px 0 80px;
+  }
+  .footer .footContact .secTtl {
+    margin: 0 0 15px;
+  }
+  .footer .footContact .secTtl p {
+    font-size: 15px;
+  }
+  .footer .footContact .secTtl h2 {
+    font-size: 24px;
+  }
+  .footer .footContact .contactItem .itemBox + .itemBox {
+    margin: 40px 0 0;
+  }
+  .footer .footContact .contactItem .itemBox .ttl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .footer .footContact .contactItem .itemBox .tel a {
+    font-size: 26px;
+  }
+  .footer .footContact .contactItem .itemBox .btnContact {
+    max-width: 260px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .logo {
+    max-width: 150px;
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .logo + .ttl {
+    font-size: 20px;
+  }
+  .footer .footPanel .co2Panel .inner {
+    display: block;
+  }
+  .footer .footPanel .co2Panel .co2Logo {
+    width: 150px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .co2Panel .txtBox {
+    width: 100%;
+  }
+  .footer .footPanel .co2Panel .txtBox .ttl {
+    font-size: 20px;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+    font-size: 13px;
+    text-align: center;
+  }
+}

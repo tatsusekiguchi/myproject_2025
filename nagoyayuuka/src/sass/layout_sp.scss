@@ -1,0 +1,3087 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topMvContainer {
+    height: 100svh;
+    padding: 100px 0 0;
+    .moveCloudArea {
+      display: none;
+    }
+    .kvBgBlue {
+      position: absolute;
+      top: 100px;
+      right: -120px;
+      max-width: 300px;
+      width: 300%;
+    }
+    .kvSlidePanel {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 0 50px;
+      .kvSlide--pc {
+        display: none;
+      }
+      .kvSlide {
+        position: relative;
+        right: calc(25vw + 35px);
+        width: 125vw;
+      }
+      .kvTitleBox {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        .kvTitle {
+          h1 {
+            display: inline;
+            padding: 0.3em;
+            line-height: 2;
+            font-size: 21px;
+          }
+        }
+        .copy {
+          margin: 10px 0 0;
+          font-size: 8px;
+        }
+      }
+    }
+    .kvIconList {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      padding: 0 20px;
+      .kvBgBlack {
+        position: absolute;
+        top: -20px;
+        left: -70px;
+        width: 160px;
+      }
+      .kvIcon01 {
+        position: relative;
+        top: 30px;
+        width: 115px;
+      }
+      .kvIcon02 {
+        width: 140px;
+      }
+    }
+  }
+  #section {
+    &__concept {
+      overflow: hidden;
+      min-height: 800px;
+      padding: 80px 20px;
+      .bgMountain {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 1180px;
+      }
+      .secContainer {
+        .secBox {
+          .secTtl {
+            margin: 0 0 30px;
+            h2 {
+              font-size: 18px;
+            }
+          }
+          .txt {
+            font-size: 13px;
+            line-height: 2.5;
+          }
+        }
+        .btmBox {
+          .btnMorePink {
+            margin: 0 auto;
+          }
+          ul {
+            max-width: 100%;
+            margin: 20px 0 0;
+            li {
+              margin: 0 1.2em 1em 0;
+              padding: 0 0 0 1.3em;
+              a {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .moveCarArea {
+        .moveCar {
+          width: 110px;
+        }
+      }
+    }
+    &__info {
+      margin: 0 0 70px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65%;
+        background: url("../image/top/info_sec_bg_sp.png") no-repeat;
+        background-size: 100% auto;
+      }
+      .secTtl {
+        width: 290px;
+        max-width: 290px;
+        margin: 0 0 50px;
+        padding: 15px 20px;
+        font-size: 28px;
+        border-radius: 0 0 30px 0;
+        background: #f88f87;
+      }
+      .listPanel {
+        padding: 0;
+        .infoList {
+          .listItem {
+            margin: 0 10px;
+            .inner {
+              position: relative;
+              top: -5px;
+              left: -5px;
+              padding: 25px;
+              // border: 2px solid #f88f87;
+            }
+            .circle {
+              position: absolute;
+              top: -20px;
+              left: -20px;
+              width: 50px;
+              height: 50px;
+              font-size: 12px;
+            }
+            .photo {
+              img {
+                border-radius: 15px;
+              }
+            }
+            .cate {
+              width: 70%;
+              max-width: 160px;
+              margin: -15px auto 5px;
+              padding: 10px;
+              font-size: 12px;
+            }
+            .title {
+              min-height: 50px;
+              font-size: 16px;
+            }
+          }
+        }
+        .slick-list {
+          padding: 40px 20px 0 !important;
+        }
+      }
+    }
+    &__guide {
+      padding: 50px 0 0;
+      background: none;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 20px);
+        max-width: 500px;
+        height: 100%;
+        z-index: -1;
+        background: url("../image/top/support_house_sp.png") right bottom
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .guideContainer {
+        position: relative;
+        padding: 40px 0 0;
+        .secPanel {
+          .txtBox {
+            .secTtlBox {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: calc(100% - 20px);
+              margin: 0;
+              padding: 10px 20px 10px 30px;
+              .secTtl {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h2 {
+                  margin: 0;
+                  font-size: 28px;
+                  letter-spacing: 0.15em;
+                }
+                span {
+                  font-size: 12px;
+                  letter-spacing: 0.15em;
+                }
+              }
+            }
+            .inner {
+              padding: 20px 20px 0;
+            }
+            .subTtl {
+              margin: 0 0 20px;
+              font-size: 16px;
+            }
+            .txt {
+              margin: 0 0 30px;
+            }
+            .btmBox {
+              .btnMore {
+                margin: 0 auto;
+              }
+              ul {
+                max-width: 100%;
+                margin: 20px 0 0;
+                text-align: center;
+                li {
+                  margin: 0 1.2em 1em 0;
+                  padding: 0 0 0 1.3em;
+                  a {
+                    font-size: 11px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .guideContainer01 {
+        margin: 0 0 80px;
+        .secPanel {
+          .txtBox {
+            .secTtlBox {
+              color: #ffffff;
+              border-radius: 10px 0 0 10px;
+              background: #8ac45f;
+            }
+          }
+        }
+      }
+      .guideContainer02 {
+        .secPanel {
+          .txtBox {
+            .secTtlBox {
+              color: #ffffff;
+              border-radius: 10px 0 0 10px;
+              background: #84c7e0;
+            }
+          }
+        }
+      }
+      .supportContainer {
+        margin: 0;
+        padding: 100px 0 0;
+        .topTitle {
+          position: relative;
+          top: -40px;
+          margin: 0 0 15px;
+          padding: 0 20px;
+          h2 {
+            font-size: 35px;
+          }
+        }
+        .subTitle {
+          position: relative;
+          top: -40px;
+          padding: 0 0 120px;
+          h3 {
+            padding: 0.3em 0.8em 0.3em 20px;
+            font-size: 25px;
+            line-height: 1.7;
+            &:after {
+              display: none;
+            }
+          }
+        }
+        .arrow {
+          display: none;
+        }
+        .secBox {
+          display: block;
+          padding: 20px 20px 80px 40px;
+          .inner {
+            max-width: 330px;
+            margin: 0 auto;
+          }
+          .ttl {
+            margin: 0 0 20px;
+            font-size: 16px;
+          }
+          .txtBox {
+            .btmBox {
+              padding: 50px 0 0;
+              .btnMore {
+                margin: 0 auto;
+              }
+              ul {
+                max-width: 100%;
+                margin: 20px 0 0;
+                text-align: center;
+                li {
+                  margin: 0 1.2em 1em 0;
+                  padding: 0 0 0 1.3em;
+                  a {
+                    font-size: 11px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btmPhoto {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+#guide {
+  .topContainer {
+    padding: 190px 0 60px;
+    .moveCloudArea01,
+    .moveCloudArea02 {
+      display: none;
+    }
+    .topPanel {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 0 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: calc(100% - 40px);
+        height: 970px;
+        margin: 0 auto;
+        background: url("../image/guide/top_cloud_bg_01_sp.png") no-repeat;
+        background-size: 100% auto;
+      }
+      .secBox {
+        position: relative;
+        + .secBox {
+          margin: 50px 0 0;
+        }
+      }
+      .pTtl {
+        padding: 0 0 30px;
+        h1,
+        h2 {
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .txt {
+        max-width: calc(100% - 120px);
+        margin: 0 auto;
+      }
+    }
+    .flowPanel {
+      padding: 20px 20px 40px;
+      .stepList {
+        margin: -40px 0 0;
+        .stepBox {
+          > dl {
+            > dt {
+              width: 125px;
+              height: 125px;
+              font-size: 16px;
+              span {
+                position: relative;
+                top: -10px;
+              }
+            }
+            > dd {
+              margin: -20px 0 0;
+              .txt {
+                font-size: 12px;
+                em {
+                  font-size: 18px;
+                }
+              }
+              .detail {
+                margin: 20px 0 0;
+                dl {
+                  + dl {
+                    margin: 20px 0 0;
+                  }
+                  dt {
+                    position: relative;
+                    max-width: 320px;
+                    margin: 0 auto 20px;
+                    padding: 10px;
+                    font-size: 18px;
+                  }
+                  dd {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .btmBox {
+        padding: 40px 0 0;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 110px;
+          margin: 0 auto;
+          .prev,
+          .next {
+            width: 9px;
+            cursor: pointer;
+          }
+          .pager {
+            margin: 0 20px;
+            font-size: 16px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .divisionPanel {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 0 80px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        width: calc(100% - 40px);
+        max-width: 332px;
+        height: 1755px;
+        margin: 0 auto;
+        background: url("../image/guide/top_cloud_bg_02_sp.png") no-repeat;
+        background-size: cover;
+      }
+      .pTtl {
+        margin: 0 0 30px;
+        padding: 40px 0 0;
+        h1,
+        h2 {
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .divisionList {
+        .divisionBox {
+          + .divisionBox {
+            margin: 40px 0 0;
+          }
+          .balloon {
+            width: 196px;
+            padding: 5px;
+            font-size: 20px;
+            &:after {
+              bottom: -7px;
+              width: 12px;
+              height: 7px;
+            }
+          }
+          .photo {
+            max-width: 375px;
+            margin: 15px auto;
+          }
+          .photo03 {
+            margin: 15px auto;
+          }
+          dl {
+            dt {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+            dd {
+              max-width: 250px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .logoTextContainer {
+    padding: 20px 0;
+    .slideBox {
+      ul {
+        li {
+          width: 80%;
+          max-width: 220px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  #section {
+    &__recruitment {
+      padding: 40px 0 70px 20px;
+      .secTtl {
+        margin: 0 0 30px;
+        h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .recruitTablePanel {
+        overflow-x: scroll;
+        .recruitTable {
+          table {
+            th,
+            td {
+              padding: 12px 10px;
+            }
+            thead {
+              .sideSpacer {
+                width: 180px;
+              }
+              .colHead {
+                font-size: 12px;
+              }
+            }
+            tbody {
+              .rowHead {
+                font-size: 12px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .sideLabel01 {
+                width: 60px;
+                span {
+                  width: 25px;
+                  font-size: 12px;
+                }
+              }
+              .rowHead {
+                width: 120px;
+              }
+              .row {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__schedule {
+      .scheduleBg {
+        padding: 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 100px;
+          width: max(140vw, 1128px);
+          aspect-ratio: 1128 / 1300;
+          //height: 1300px;
+          margin: 0 auto;
+          background: url("../image/guide/schedule_bg_circle_sp.png") no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .secContainer {
+        top: -90px;
+        .secPanel {
+          top: -5px;
+          left: -5px;
+          border: 1px solid #eea951;
+        }
+        .secBox01 {
+          padding: 0 20px 25px;
+          .inner {
+            width: 100%;
+          }
+          .txtBox {
+            max-width: 300px;
+            margin: 0 auto 20px;
+            .secTtl {
+              max-width: 200px;
+              margin: 0 auto 20px;
+              padding: 20px 10px;
+              h2 {
+                font-size: 28px;
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+            .title {
+              max-width: 150px;
+              width: 100%;
+              margin: 0 auto 20px;
+              padding: 0 0 8px;
+              span {
+                font-size: 8px;
+              }
+              p {
+                font-size: 14px;
+                &::before,
+                &::after {
+                  width: 8px;
+                  height: 8px;
+                }
+              }
+            }
+            .timeList {
+              dl {
+                padding: 5px 20px;
+                + dl {
+                  margin: 10px 0 0;
+                }
+                dt {
+                  width: 50%;
+                  font-size: 12px;
+                }
+                dd {
+                  display: table-cell;
+                  font-size: 12px;
+                }
+              }
+              .time01 {
+                color: #f88f87;
+                background: #f7dfd3;
+                dt {
+                  border-right: 1px solid #f88f87;
+                }
+              }
+              .time02 {
+                color: #ffffff;
+                background: #f88f87;
+                dt {
+                  border-right: 1px solid #ffffff;
+                }
+              }
+              .time03 {
+                color: #ffffff;
+                background: #eea951;
+                dt {
+                  border-right: 1px solid #ffffff;
+                }
+              }
+            }
+          }
+          .chartBox {
+            max-width: 300px;
+            margin: 0 auto;
+          }
+        }
+        .secBox02 {
+          padding: 0 20px 60px;
+          .secTtl {
+            max-width: 200px;
+            margin: 0 auto 40px;
+            padding: 20px 10px;
+            h2 {
+              font-size: 28px;
+            }
+            span {
+              font-size: 12px;
+            }
+          }
+          .inner {
+            width: 100%;
+          }
+          .divisionPanel {
+            .divisionBox {
+              + .divisionBox {
+                margin: 45px 0 0;
+              }
+              .topBox {
+                .division {
+                  margin: 0 0 8px;
+                  font-size: 14px;
+                }
+                .balloon {
+                  position: relative;
+                  width: 100%;
+                  max-width: 285px;
+                  font-size: 18px;
+                  &:after {
+                    bottom: -7px;
+                    width: 12px;
+                    height: 7px;
+                  }
+                }
+                .term {
+                  max-width: 160px;
+                  margin: 25px auto 0;
+                  font-size: 16px;
+                }
+              }
+              .title {
+                width: 100%;
+                max-width: 150px;
+                margin: 20px auto 0;
+                padding: 0 0 10px;
+                text-align: center;
+                p {
+                  position: relative;
+                  font-size: clamp(14px, 2vw, 25px);
+                  &::before,
+                  &::after {
+                    width: 8px;
+                    height: 8px;
+                  }
+                }
+              }
+              .chart {
+                margin: 30px auto 0;
+              }
+              .chart01 {
+                max-width: 350px;
+              }
+              .chart02 {
+                max-width: 350px;
+              }
+              aside {
+                max-width: 350px;
+                margin: 15px auto 0;
+                p {
+                  padding: 0 0 0 35px;
+                  font-size: 12px;
+                  letter-spacing: 0.05em;
+                  + p {
+                    margin: 7px 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .btmContainer {
+        padding: 0;
+        .txtBox {
+          margin: -30px 0 -60px;
+          dl {
+            text-align: center;
+            dt {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+            dd {
+              font-size: 10px;
+            }
+          }
+        }
+        .staff {
+          position: static;
+          width: min(110vw, 650px);
+          margin-left: calc(45% - min(55vw, 325px));
+          margin-right: calc(45% - min(55vw, 325px));
+        }
+      }
+    }
+    &__priceUniform {
+      padding: 0 0 120px;
+      &::before {
+        width: 100%;
+        height: 80%;
+        // max-height: 1000px;
+        background: url("../image/guide/uniform_bg_green_sp.png") no-repeat;
+        background-size: cover;
+      }
+      .priceSection {
+        padding: 50px 0 0 20px;
+        .secTtl {
+          margin: 0 0 30px;
+          h2 {
+            font-size: 28px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+      .uniformSection {
+        padding: 60px 0 0;
+        .secTtl {
+          margin: 0 0 30px;
+          h2 {
+            font-size: 28px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+        .uniformList {
+          position: relative;
+          width: calc(100vw + 40px);
+          max-width: calc(600px + 40px);
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 0;
+        }
+      }
+      .faqSecTtl {
+        width: calc(100% - 40px);
+        max-width: 335px;
+        margin: 0 auto;
+        padding: 20px;
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+    &__faq {
+      padding: 60px 20px;
+      .secBox {
+        width: 100%;
+        dl {
+          + dl {
+            margin: 10px 0 0;
+          }
+          dt {
+            display: flex;
+            padding: 15px 30px 15px 20px;
+            font-size: 12px;
+            background: url("../image/common/accord_plus.png") right 20px center
+              no-repeat #ffffff;
+            background-size: 10px auto;
+            &.active {
+              background: url("../image/common/accord_minus.png") right 20px
+                center no-repeat #ffffff;
+              background-size: 10px auto;
+            }
+            span {
+              margin: 0 10px 0 0;
+            }
+          }
+          dd {
+            padding: 15px 0;
+            font-size: 12px;
+            .box {
+              span {
+                margin: 0 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__document {
+      padding: 60px 20px;
+      .secTtl {
+        margin: 0 0 40px;
+        h2 {
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .bnrBoxList {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        .bnrBox {
+          + .bnrBox {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    &__visit {
+      padding: 0 0 50px;
+      .secBox {
+        width: 100%;
+        padding: 40px 50px 0;
+      }
+      .secTtl {
+        margin: 0 0 25px;
+        text-align: center;
+        h2 {
+          font-size: 26px;
+          line-height: 1.7;
+        }
+      }
+      .txt {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	visit
+///////////////////////////////////////////////////////////*/
+#visit {
+  .topContainer {
+    padding: 190px 0 60px;
+    .moveCloudArea01,
+    .moveCloudArea02 {
+      display: none;
+    }
+    .topPanel {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: calc(100% - 40px);
+        height: 970px;
+        margin: 0 auto;
+        background: url("../image/visit/top_cloud_bg_sp.png") no-repeat;
+        background-size: 100% auto;
+      }
+      .secBox {
+        position: relative;
+        + .secBox {
+          margin: 50px 0 0;
+        }
+      }
+      .pTtl {
+        padding: 0 0 30px;
+        h1,
+        h2 {
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .txt {
+        max-width: calc(100% - 120px);
+        margin: 0 auto;
+      }
+    }
+    .overviewPanel {
+      .overviewTable {
+        table {
+          width: 100%;
+          max-width: 960px;
+          min-width: 0;
+          th {
+            width: 85px;
+            padding: 10px;
+            font-size: 12px;
+          }
+          td {
+            padding: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  #section {
+    &__important {
+      padding: 0 20px 80px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -80px;
+        width: 120%;
+        height: 200px;
+      }
+      .secTtl {
+        margin: 0 0 30px;
+        h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .secContainer {
+        width: 100%;
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 50px 0 0;
+        }
+        .kvBox {
+          position: relative;
+          margin: 0 0 30px;
+          .circle {
+            position: absolute;
+            top: auto;
+            left: 20px;
+            right: auto;
+            bottom: 10px;
+            width: 100px;
+            max-width: 100px;
+            height: 100px;
+            dl {
+              dt {
+                font-size: 10px;
+              }
+              dd {
+                font-size: 15px;
+              }
+            }
+          }
+          .title {
+            display: none;
+          }
+        }
+        .txt {
+          .ttl {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+          > p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__schedule {
+      padding: 60px 20px 0;
+      .secTtl {
+        margin: 0 0 30px;
+        h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .scheduleContainer.tabContainer {
+        margin: 0 0 20px;
+      }
+      .staff {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .secContainer {
+        &:before {
+          display: none;
+        }
+        .secPanel {
+          width: 100%;
+          padding: 50px 0;
+          .secBox {
+            align-items: stretch;
+            padding: 0 0 35%;
+            .photo {
+              position: relative;
+              width: calc(100% - 140px);
+              img {
+                border-radius: 20px;
+              }
+            }
+            .txtBox {
+              position: relative;
+              width: 140px;
+              height: auto;
+              .timeBox {
+                width: 115px;
+                max-width: 115px;
+                min-width: 115px;
+                padding: 8px 15px;
+                color: #ffffff;
+                text-align: right;
+                border-radius: 30px;
+                background: #1777bf;
+                &:before {
+                  content: "";
+                  width: 54px;
+                  height: 54px;
+                }
+                p {
+                  font-size: 12px;
+                }
+                &.multi {
+                  p {
+                    padding: 0 0 0 25px;
+                  }
+                }
+              }
+              .txt {
+                padding: 0 15px;
+                font-size: 12px;
+                span {
+                  font-size: 10px;
+                  white-space: normal;
+                }
+                .spLeft {
+                  text-align: left;
+                }
+              }
+            }
+            &:nth-child(odd) {
+              &:before {
+                content: "";
+                position: absolute;
+                top: 30px;
+                right: 80px;
+                width: 60%;
+                height: 90%;
+                background: url("../image/support/schedule_stamp_01_sp.png")
+                  no-repeat;
+                background-size: 100% auto;
+              }
+              .photo {
+                img {
+                  border-radius: 0 20px 20px 0 !important;
+                }
+              }
+              .txtBox {
+                .timeBox {
+                  position: absolute;
+                  top: -15px;
+                  left: -15px;
+                  &:before {
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    bottom: 0;
+                    margin: auto 0;
+                    background: url("../image/support/schedule_clock_blue.png")
+                      no-repeat;
+                    background-size: 100% auto;
+                  }
+                }
+              }
+            }
+            &:nth-child(even) {
+              &:before {
+                content: "";
+                position: absolute;
+                top: 30px;
+                left: 80px;
+                width: 60%;
+                height: 90%;
+                background: url("../image/support/schedule_stamp_02_sp.png")
+                  no-repeat;
+                background-size: 100% auto;
+              }
+              .photo {
+                img {
+                  border-radius: 20px 0 0 20px !important;
+                }
+              }
+              .txtBox {
+                align-items: flex-end;
+                .timeBox {
+                  position: absolute;
+                  top: -15px;
+                  right: -15px;
+                  &:before {
+                    position: absolute;
+                    top: 0;
+                    right: -20px;
+                    bottom: 0;
+                    margin: auto 0;
+                    background: url("../image/support/schedule_clock_pink.png")
+                      no-repeat;
+                    background-size: 100% auto;
+                  }
+                }
+              }
+            }
+            &:last-child {
+              padding: 0;
+            }
+            &.note {
+              padding: 0 0 30px;
+              .txtBox {
+                .txt {
+                  aside {
+                    position: absolute;
+                    right: 0;
+                    bottom: -50px;
+                    width: calc(100vw - 30px);
+                    padding: 0 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__event {
+      padding: 60px 0;
+      .secTtl {
+        margin: 0 0 30px;
+        h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .seasonButtonList {
+        width: calc(100% - 40px);
+        max-width: 330px;
+        margin: 0 auto 40px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          li {
+            width: 95px;
+          }
+          .seasonButton {
+            max-width: 95px;
+            width: 95px;
+            div {
+              top: -3px;
+              left: -3px;
+              font-size: 14px;
+              padding: 9px 10px;
+              border-radius: 50px;
+              &::before {
+                right: 10px;
+                width: 17px;
+                height: 17px;
+              }
+            }
+          }
+        }
+      }
+      .secContainer {
+        padding: 0;
+      }
+      .eventPanel {
+        width: calc(100% - 40px);
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 50px 20px;
+      }
+      .eventItemBox {
+        .ttl {
+          margin: 0 0 40px;
+          font-size: 20px;
+        }
+        .monthlyList {
+          .monthlyBox {
+            + .monthlyBox {
+              margin: 25px 0 0;
+            }
+            dl {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              dt {
+                width: 100px;
+                margin: 0;
+                padding: 8px;
+                font-size: 20px;
+                letter-spacing: 0.15em;
+              }
+              dd {
+                width: calc(100% - 115px);
+                ul {
+                  li {
+                    padding: 0 0 0 20px;
+                    font-size: 14px;
+                    text-align: left;
+                    &::before {
+                      width: 12px;
+                      height: 12px;
+                    }
+                    + li {
+                      margin: 7px 0 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        aside {
+          margin: 60px 0 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruit {
+  .topContainer {
+    .topTitle {
+      position: relative;
+      width: calc(100% - 80px);
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 15px 10px;
+      border-radius: 0 0 30px 30px;
+      h1 {
+        font-size: 28px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  .recruitmentContainer {
+    padding: 25px 20px 0 30px;
+    background: none;
+    .moveCloudArea01,
+    .moveCloudArea02 {
+      display: none;
+    }
+    .recruitmentPanel {
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      .recruitmentInner {
+        position: relative;
+        top: -10px;
+        left: -10px;
+        border-radius: 20px 20px 0 0;
+      }
+      .pTtl {
+        padding: 20px;
+        border-bottom: 1px solid #1777bf;
+        h2 {
+          font-size: 24px;
+          letter-spacing: 0.1em;
+        }
+      }
+      .pBody {
+        padding: 40px 20px 70px;
+      }
+      .infoBox {
+        dl {
+          font-size: 12px;
+          + dl {
+            margin: 20px 0 0;
+          }
+          dt {
+            margin: 0;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+      .btnMoreBlueDeep {
+        margin: 50px auto 0;
+      }
+    }
+    .comingSoon {
+      padding: 40px 20px 100px;
+      font-size: 20px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+#price {
+  .topContainer {
+    .topTitle {
+      position: relative;
+      width: calc(100% - 80px);
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 15px 10px;
+      border-radius: 0 0 30px 30px;
+      h1 {
+        font-size: 28px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  .priceSection {
+    padding: 40px 0 50px 20px;
+    .tabItem {
+      .icon01,
+      .icon02,
+      .icon03 {
+        display: none;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+#support {
+  .topContainer {
+    position: relative;
+    .topTitle {
+      bottom: 15vw;
+      h1 {
+        display: inline;
+        padding: 0.3em 0.8em 0.3em 20px;
+        line-height: 2;
+        font-size: 20px;
+      }
+    }
+  }
+  .topMessageBox {
+    position: relative;
+    margin: -15vw 0 0;
+    padding: 0;
+  }
+  .topTxtBox {
+    width: 100%;
+    padding: 40px 20px;
+    font-size: 12px;
+  }
+  .pagingList {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    z-index: 1;
+    ul {
+      display: block;
+      li {
+        width: 100%;
+        + li {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  .sectionTtl {
+    margin: 0 0 30px;
+    h3 {
+      font-size: 28px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  .btnSchedule {
+    width: 100%;
+    max-width: 335px;
+    a {
+      padding: 0 20px;
+      font-size: 14px;
+      border-radius: 60px;
+      p {
+        display: block;
+        padding: 20px 0;
+        background:
+          url("../image/support/Icon_calendar.png") left center no-repeat,
+          url("../image/support/Icon_calendar_arrow.png") right center no-repeat;
+        background-size:
+          20px auto,
+          24px auto;
+      }
+    }
+  }
+  #section {
+    &__classroom {
+      margin: 0 0 80px;
+      .topPanel {
+        position: relative;
+        padding: 0 0 20px 20px;
+        .circle {
+          position: absolute;
+          top: -70px;
+          right: -50px;
+          width: 184px;
+          max-width: 184px;
+        }
+        .txtBox {
+          padding: 30px 20px 120px;
+          border-radius: 30px 0 0 30px;
+          .inner {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .secTtl {
+            position: relative;
+            display: inline-block;
+            margin: 0 0 15px;
+            padding: 0 0 13px;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 233px;
+              height: 20px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          dl {
+            dt {
+              margin: 0 0 15px;
+              font-size: 16px;
+            }
+            dd {
+              font-size: 12px;
+            }
+          }
+        }
+        .photo {
+          position: relative;
+          top: 0;
+          right: 20px;
+          margin: -80px 0 0;
+        }
+      }
+      .overviewPanel {
+        padding: 0 0 100px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 10px;
+          width: 100%;
+          height: 160px;
+          background: url("../image/support/classroom_overview_bg_pc.png")
+            center no-repeat;
+          background-size: cover;
+        }
+        .overviewTable {
+          table {
+            width: 100%;
+            max-width: 960px;
+            th {
+              width: 85px;
+              padding: 10px;
+              font-size: 12px;
+            }
+            td {
+              padding: 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .schedulePanel {
+        .secContainer {
+          padding: 0;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: calc(100% - 40px);
+            max-width: 1000px;
+            height: calc(100% - 200px);
+            margin: 0 auto;
+            border-radius: 30px;
+            background: #f7dfd3;
+          }
+          .secPanel {
+            width: 100%;
+            padding: 50px 0;
+            .secBox {
+              align-items: stretch;
+              padding: 0 0 35%;
+              .photo {
+                position: relative;
+                width: calc(100% - 140px);
+                img {
+                  border-radius: 20px;
+                }
+              }
+              .txtBox {
+                position: relative;
+                width: 140px;
+                height: auto;
+                .timeBox {
+                  width: 115px;
+                  max-width: 115px;
+                  min-width: 115px;
+                  padding: 8px 15px;
+                  color: #ffffff;
+                  text-align: right;
+                  border-radius: 30px;
+                  background: #1777bf;
+                  &:before {
+                    content: "";
+                    width: 54px;
+                    height: 54px;
+                  }
+                  p {
+                    font-size: 12px;
+                  }
+                }
+                .txt {
+                  padding: 0 15px;
+                  font-size: 12px;
+                }
+              }
+              &:nth-child(odd) {
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 30px;
+                  right: 80px;
+                  width: 60%;
+                  height: 90%;
+                  background: url("../image/support/schedule_stamp_01_sp.png")
+                    no-repeat;
+                  background-size: 100% auto;
+                }
+                .photo {
+                  img {
+                    border-radius: 0 20px 20px 0 !important;
+                  }
+                }
+                .txtBox {
+                  .timeBox {
+                    position: absolute;
+                    top: -15px;
+                    left: -15px;
+                    &:before {
+                      position: absolute;
+                      top: 0;
+                      left: -20px;
+                      bottom: 0;
+                      margin: auto 0;
+                      // background: url("../image/support/schedule_clock_blue.png")
+                      //   no-repeat;
+                      // background-size: 100% auto;
+                    }
+                  }
+                }
+              }
+              &:nth-child(even) {
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 30px;
+                  left: 80px;
+                  width: 60%;
+                  height: 90%;
+                  // background: url("../image/support/schedule_stamp_02_sp.png")
+                  //   no-repeat;
+                  // background-size: 100% auto;
+                }
+                .photo {
+                  img {
+                    border-radius: 20px 0 0 20px !important;
+                  }
+                }
+                .txtBox {
+                  align-items: flex-end;
+                  .timeBox {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    &:before {
+                      position: absolute;
+                      top: 0;
+                      right: -20px;
+                      bottom: 0;
+                      margin: auto 0;
+                      background: url("../image/support/schedule_clock_pink.png")
+                        no-repeat;
+                      background-size: 100% auto;
+                    }
+                  }
+                }
+              }
+              &:last-child {
+                padding: 0;
+              }
+            }
+          }
+        }
+        .bnrEntry {
+          width: 100%;
+          max-width: 375px;
+          border-radius: 0;
+          background: none;
+          .photo {
+          }
+          .txtBox {
+            height: 270px;
+            padding: 30px 20px;
+            background: url("../image/support/bnr_entry_bg_sp.png") no-repeat;
+            background-size: 100% auto;
+            dl {
+              dt {
+                margin: 0 0 10px;
+                font-size: 12px;
+              }
+              dd {
+                > p {
+                  font-size: 18px;
+                }
+                .btnMore {
+                  margin: 20px auto 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__library {
+      margin: 0 0 80px;
+      .topPanel {
+        position: relative;
+        padding: 0 20px 20px 0;
+        .circle {
+          position: absolute;
+          top: -90px;
+          right: -50px;
+          width: 184px;
+          max-width: 184px;
+        }
+        .txtBox {
+          padding: 30px 20px 120px;
+          border-radius: 30px 0 0 30px;
+          .inner {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .secTtl {
+            position: relative;
+            display: inline-block;
+            margin: 0 0 15px;
+            padding: 0 0 13px;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 233px;
+              height: 20px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          dl {
+            dt {
+              margin: 0 0 15px;
+              font-size: 16px;
+            }
+            dd {
+              font-size: 12px;
+            }
+          }
+        }
+        .photo {
+          position: relative;
+          top: 0;
+          left: 20px;
+          margin: -80px 0 0;
+        }
+      }
+      .overviewPanel {
+        padding: 0 0 100px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 10px;
+          width: 100%;
+          height: 160px;
+          background: url("../image/support/library_overview_bg_pc.png") center
+            no-repeat;
+          background-size: cover;
+        }
+        .overviewTable {
+          table {
+            width: 100%;
+            max-width: 960px;
+            th {
+              width: 85px;
+              padding: 10px;
+              font-size: 12px;
+            }
+            td {
+              padding: 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .btnSchedule {
+        margin: -75px auto 40px;
+      }
+      .photoList {
+        .logo {
+          position: static;
+          width: 510px;
+          max-width: 510px;
+          margin: 0 auto;
+        }
+      }
+    }
+    &__square {
+      .topPanel {
+        position: relative;
+        padding: 0 0 20px 20px;
+        .circle {
+          position: absolute;
+          top: -70px;
+          right: -50px;
+          width: 184px;
+          max-width: 184px;
+        }
+        .txtBox {
+          padding: 30px 20px 120px;
+          border-radius: 30px 0 0 30px;
+          .inner {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .secTtl {
+            position: relative;
+            display: inline-block;
+            margin: 0 0 15px;
+            padding: 0 0 13px;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 233px;
+              height: 20px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          dl {
+            dt {
+              margin: 0 0 15px;
+              font-size: 16px;
+            }
+            dd {
+              font-size: 12px;
+            }
+          }
+        }
+        .photo {
+          position: relative;
+          top: 0;
+          right: 20px;
+          margin: -80px 0 0;
+        }
+      }
+      .overviewPanel {
+        padding: 0 0 60px;
+        .overviewTable {
+          table {
+            width: 100%;
+            max-width: 960px;
+            th {
+              width: 85px;
+              padding: 10px;
+              font-size: 12px;
+            }
+            td {
+              padding: 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .btnSchedule {
+        margin: -75px auto 40px;
+      }
+      .kvSchedule {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 430px;
+          background: url("../image/support/square_overview_bg_pc.png") center
+            no-repeat;
+          background-size: cover;
+        }
+        .info {
+          position: absolute;
+          left: 0;
+          bottom: 40px;
+          dl {
+            text-align: center;
+            dt {
+              margin: 0 0 15px;
+              font-size: 15px;
+            }
+            dd {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+      .monthlySchedule {
+        padding: 0 20px 40px;
+        &:before {
+          top: 40px;
+          border-radius: 400px;
+        }
+        .topTtl {
+          width: 100%;
+          max-width: 280px;
+          min-width: 280px;
+          margin: 0 auto 30px;
+          padding: 15px 5px;
+          span {
+            font-size: 10px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+      .monthlyEventContainer {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 30px 20px;
+        border-radius: 10px;
+        .monthlyEventPanel {
+          max-width: 800px;
+        }
+        .monthHeader {
+          margin: 0 0 25px;
+          &__left {
+            padding: 0 10px;
+            line-height: 1;
+            border-right: 1px solid #1777bf;
+            em {
+              font-size: 20px;
+            }
+            span {
+              font-size: 10px;
+            }
+          }
+          &__right {
+            padding: 0 10px;
+            font-size: 10px;
+            p + p {
+              font-size: 8px;
+            }
+          }
+        }
+        .eventType {
+          display: none;
+        }
+        .calendarPanel {
+          table {
+            th {
+              height: 20px;
+              padding: 5px;
+              font-size: 12px;
+            }
+            td {
+              position: relative;
+              height: 40px;
+              padding: 3px 5px 6px;
+            }
+            .calendar__date {
+              font-size: 12px;
+              line-height: 1;
+            }
+            .event {
+              display: inline-block;
+              min-width: 10px;
+              min-height: 10px;
+              padding: 0;
+              font-size: 0;
+              vertical-align: middle;
+              &::before {
+                width: 10px;
+                height: 10px;
+              }
+              + .event {
+                margin: 0 0 0 2px;
+              }
+            }
+            .timeBox {
+              text-align: center;
+              &.active {
+                position: absolute;
+                top: 17px;
+                left: 0;
+                width: 135px;
+                padding: 7px 10px;
+                text-align: left;
+                z-index: 1;
+                border-radius: 10px;
+                border: 1px solid #1777bf;
+                background: #ffffff;
+                .event {
+                  display: block;
+                  font-size: 12px;
+                  + .event {
+                    margin: 5px 0 0;
+                  }
+                  &::before {
+                    position: static;
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    font-size: 12px;
+                    background: none;
+                  }
+                  &.blue {
+                    &::before {
+                      content: "おもちゃ図書館";
+                      color: #84c7e0;
+                    }
+                  }
+                  &.green {
+                    &::before {
+                      content: "チビッコひろば";
+                      color: #c7eb89;
+                    }
+                  }
+                }
+              }
+            }
+            td:nth-child(n + 6) {
+              .timeBox {
+                &.active {
+                  left: auto;
+                  right: 0;
+                }
+              }
+            }
+          }
+        }
+        .calendarNav {
+          .prev,
+          .next {
+            width: 25px;
+            height: 25px;
+          }
+          .prev {
+            left: -12px;
+          }
+          .next {
+            right: -12px;
+          }
+        }
+        .spBalloonText {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          z-index: 2;
+          &__inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 82px;
+            margin: auto;
+            font-size: 14px;
+            color: #1777bf;
+            border-radius: 10px;
+            background: rgba(156, 215, 237, 0.7);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about {
+  .topContainer {
+    .topKvPanel {
+      padding: 20px 20px 0;
+      .topTitle {
+        h1 {
+          max-width: 250px;
+          min-width: 250px;
+          padding: 12px 10px;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  #section {
+    &__philosophy {
+      padding: 30px 0 40px;
+      .secBox {
+      }
+      .secTtl {
+        margin: 0 0 180px;
+        padding: 0 20px;
+        text-align: center;
+        h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .message {
+        width: 100%;
+        max-width: 330px;
+        padding: 0;
+        font-size: 28px;
+        border-radius: 0;
+        background: none;
+        p {
+          display: inline;
+          padding: 0.2em 0.1em 0.2em 20px;
+          line-height: 1.7;
+          font-size: 28px;
+          border-radius: 0 10px 10px 0;
+          background: #ffffff;
+          box-decoration-break: clone;
+          -webkit-box-decoration-break: clone;
+        }
+      }
+      .txtBox {
+        margin: 20px 0 0;
+        padding: 0 20px;
+        .txt {
+          font-size: 10px;
+        }
+      }
+      .staff {
+        position: absolute;
+        left: -10px;
+        right: auto;
+        bottom: 105px;
+        width: 105%;
+        max-width: 400px;
+      }
+    }
+    &__policy {
+      margin: 0;
+      .moveCloudArea01,
+      .moveCloudArea02 {
+        display: none;
+      }
+      .secTtl {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        padding: 0 40px;
+        h2 {
+          margin: 0 0 5px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .listPanel {
+        position: absolute;
+        top: 6%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .listBox {
+          width: 48%;
+          .list {
+            width: 100%;
+            margin: 0 auto;
+            + .list {
+              margin: 15px auto 0;
+            }
+          }
+        }
+      }
+    }
+    &__greeting {
+      .greetingWrap {
+        padding: 30px 20px 80px;
+        border-radius: 0 0 30px 30px;
+      }
+      .secContainer {
+        width: 100%;
+      }
+      .secTtl {
+        position: absolute;
+        top: -110px;
+        left: 0;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        h2 {
+          margin: 0 0 3px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .secBox01 {
+        margin: 0 0 40px;
+        .txtBox {
+          padding: 40px 0 0;
+          .ttl {
+            margin: 0 0 30px;
+            font-size: 20px;
+          }
+          .txt {
+            font-size: 12px;
+            p {
+              + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .secBox02 {
+        .txtBox {
+          padding: 40px 0 0;
+          .txt {
+            font-size: 12px;
+            p {
+              + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+          .name {
+            margin: 40px 0 0;
+            font-size: 14px;
+          }
+        }
+      }
+      .btmKv {
+        margin: -50px 0 0;
+      }
+    }
+    &__overview {
+      padding: 60px 20px;
+      .secTtl {
+        margin: 0 0 30px;
+        h2 {
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .overviewTable {
+        table {
+          width: 100%;
+          max-width: 960px;
+          th {
+            width: 110px;
+            padding: 10px;
+            font-size: 12px;
+          }
+          td {
+            padding: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__access {
+      .accessWrap {
+        padding: 0 20px 60px;
+        border-radius: 0 0 30px 30px;
+      }
+      .secContainer {
+        width: 100%;
+        padding: 0;
+      }
+      .secTtl {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto 40px;
+        padding: 15px 20px;
+        border-radius: 0 0 20px 20px;
+        h2 {
+          margin: 0 0 3px;
+          font-size: 28px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .secBox {
+        .txtBox {
+          max-width: 340px;
+          margin: 0 auto;
+          padding: 0 0 30px;
+          .logo {
+            position: relative;
+            left: 20px;
+            max-width: 250px;
+            margin: 0 0 20px;
+          }
+          .info {
+            margin: 0 0 20px;
+            padding: 0 20px;
+            > p {
+              font-size: 18px;
+            }
+            .telFax {
+              margin: 3px 0 0;
+              font-size: 12px;
+            }
+          }
+          dl {
+            max-width: 340px;
+            + dl {
+              margin: 20px 0 0;
+            }
+            dt {
+              margin: 0 0 10px;
+              padding: 5px;
+              font-size: 14px;
+            }
+            dd {
+              padding: 0 20px;
+              font-size: 12px;
+              .box {
+                p {
+                  &:nth-child(1) {
+                    min-width: 40px;
+                    margin: 0 5px 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .copyPanel {
+        display: none;
+        padding: 30px 20px 60px;
+        dl {
+          dt {
+            margin: 0 0 15px;
+            font-size: 15px;
+          }
+          dd {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+#news {
+  .topContainer {
+    margin: 0 0 30px;
+    .topTitle {
+      position: relative;
+      width: calc(100% - 80px);
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 15px 10px;
+      border-radius: 0 0 30px 30px;
+      h1 {
+        font-size: 28px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  .blogContainer {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    &--detail {
+      padding-top: 35px;
+    }
+  }
+  .catePanel {
+    margin: 0 0 50px;
+    dl {
+      dt {
+        margin: 0 0 15px;
+        font-size: 15px;
+      }
+      dd {
+        max-width: 330px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 10px;
+          li {
+            width: calc((100% / 2) - 5px);
+            a {
+              display: block;
+              padding: 8px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blogListPanel {
+    padding: 0 10px;
+    .infoList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 50px 20px;
+      .listItem {
+        width: calc((100% / 2) - 15px);
+        a {
+          border-radius: 10px;
+        }
+        .inner {
+          position: relative;
+          top: -5px;
+          left: -5px;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        .circle {
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+        }
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .cate {
+          width: 70%;
+          max-width: 160px;
+          margin: -15px auto 5px;
+          padding: 5px;
+          font-size: 10px;
+        }
+        .title {
+          min-height: 50px;
+          font-size: 12px;
+        }
+      }
+    }
+    .list__pagination {
+      width: 88px;
+      margin: 40px auto 0;
+      .pagination {
+        li {
+          a {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+  .blogDetailPanel {
+    padding: 0 20px 35px;
+    border-radius: 20px;
+    border-width: 2px !important;
+    background: #ffffff;
+    .blogDetailBox {
+      padding: 65px 0 0;
+      .cate {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 155px;
+        min-width: 155px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 0 0 10px 10px;
+      }
+      .postPanel {
+        .photoBox {
+          margin: 0 0 20px;
+          .photo {
+            + .photo {
+              margin: 7px 0 0;
+            }
+          }
+        }
+        .txtBox {
+          .time {
+            margin: 0 0 10px;
+            font-size: 12px;
+          }
+          .title {
+            margin: 0 0 25px;
+            font-size: 18px;
+          }
+          .postContents {
+            .postContentsBox {
+              max-height: 310px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .btmPanel {
+        margin: 30px 0 0;
+        .btnAll {
+          width: 165px;
+          margin: 0 auto;
+          a {
+            display: block;
+            padding: 13px 10px;
+            font-size: 12px;
+          }
+        }
+        .prev,
+        .next {
+          width: 34px;
+          a {
+            width: 34px;
+            height: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact,
+#contactConfirm,
+#contactComplete,
+#privacy {
+  .topContainer {
+    .topTitlePanel {
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+      text-align: center;
+      h1 {
+        margin: 0 0 40px;
+        font-size: 22px;
+      }
+      .txt {
+        font-size: 12px;
+      }
+    }
+  }
+  .arrow {
+    width: 30px;
+    margin: -2px auto 30px;
+  }
+  .contactContainer {
+    width: 100%;
+    padding: 0 20px 20px;
+    .contactTabList {
+      max-width: 400px;
+      width: 100%;
+      ul {
+        display: flex;
+        gap: 3px;
+        li {
+          width: calc((100% / 2) - 2px);
+          margin: 0 2px 0 0;
+          padding: 10px;
+          font-size: 15px;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+    }
+    .contactPanel {
+      padding: 40px 25px 60px;
+      border-radius: 0 0 30px 30px;
+    }
+    .contactItemBox {
+    }
+  }
+}
+
+#contactConfirm {
+  padding: 100px 0 0;
+  .contactContainer {
+    .contactPanel {
+      border-radius: 20px;
+    }
+    .secTtl {
+      margin: 0 0 50px;
+      font-size: 28px;
+      letter-spacing: 0.1em;
+    }
+  }
+  .formConfirm {
+    width: 100%;
+    dl {
+      display: block;
+      padding: 10px 0;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      > * {
+        padding: 0;
+      }
+      dt {
+        width: 100%;
+        margin: 0 0 5px;
+      }
+      dd {
+        width: 100%;
+      }
+    }
+    .submitButton {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 40px 0 0;
+    }
+    .send {
+      width: 100%;
+      margin: 0 0 10px;
+      border: 2px solid #f88f87;
+      input[type="submit"] {
+        height: 50px;
+        font-size: 14px;
+        border: 2px solid #f88f87;
+      }
+    }
+    .back {
+      width: 100%;
+      border: 2px solid #84c7e0;
+      button.btnBack {
+        height: 50px;
+        font-size: 14px;
+        border: 2px solid #84c7e0;
+      }
+    }
+  }
+}
+
+#contactComplete {
+  padding: 100px 0 0;
+  .contactContainer {
+    .contactPanel {
+      border-radius: 20px;
+    }
+    .secTtl {
+      margin: 0 0 20px;
+      font-size: 28px;
+      letter-spacing: 0.1em;
+    }
+    .ttl {
+      margin: 0 0 20px;
+      font-size: 16px;
+    }
+    .txt {
+      font-size: 12px;
+    }
+    .btnToTop {
+      margin: 30px auto 0;
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        max-width: 200px;
+        .arrow {
+          max-width: 30px;
+          width: 30px;
+          margin: 0 0 0 10px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	料金案内,園児の1日
+///////////////////////////////////////////////////////////*/
+.priceContainer.tabContainer,
+.scheduleContainer.tabContainer {
+  .tabPanel {
+    .tabList {
+      max-width: 400px;
+      width: 100%;
+      padding: 0 20px 0 0;
+      ul {
+        display: flex;
+        gap: 3px;
+        li {
+          width: calc((100% / 3) - 2px);
+          margin: 0 2px 0 0;
+          padding: 10px;
+          font-size: 15px;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+    }
+    .tabItem {
+      overflow-x: scroll;
+      padding: 0;
+      border-radius: 0 0 0 30px;
+      .secPanel {
+        width: 1160px;
+        padding: 30px 20px;
+        > dl {
+          + dl {
+            margin: 20px 0 0;
+          }
+          > dt {
+            position: relative;
+            margin: 0 0 8px;
+            padding: 0 0 0 17px;
+            font-size: 12px;
+            &::before {
+              width: 11px;
+              height: 11px;
+            }
+          }
+        }
+        .facilityPrice {
+          dl {
+            display: table;
+            width: 100%;
+            max-width: 540px;
+            dt {
+              width: 100px;
+              padding: 5px 10px;
+              font-size: 12px;
+            }
+            dd {
+              padding: 0 15px;
+              .box {
+                font-size: 14px;
+              }
+              > p {
+                display: block;
+                margin: 0;
+                font-size: 14px;
+              }
+              aside {
+                display: block;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .extensionPrice,
+        .dayPrice {
+          dl {
+            max-width: 570px;
+            dt {
+              width: 100px;
+              span {
+                padding: 10px;
+                font-size: 12px;
+              }
+            }
+            dd {
+              padding: 4px 20px;
+              .box {
+                max-width: 450px;
+                font-size: 14px;
+                .left {
+                  width: 200px;
+                }
+                .right {
+                  width: 85px;
+                  &::before {
+                    left: -150px;
+                    width: 140px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .monthlyTable {
+          table {
+            th,
+            td {
+              width: 140px;
+              padding: 10px;
+              font-size: 12px;
+            }
+            thead {
+              th {
+                span {
+                  font-size: 9px;
+                }
+              }
+            }
+            tbody {
+              td {
+                padding: 5px 10px;
+                span {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          &--01 {
+            table {
+              min-width: 1130px;
+            }
+          }
+          &--02 {
+            table {
+              min-width: 1130px;
+            }
+          }
+          &--03 {
+            table {
+              min-width: 950px;
+            }
+          }
+        }
+        .purchaseTable {
+          table {
+            width: 100%;
+            max-width: 600px;
+            th,
+            td {
+              width: 50%;
+              padding: 12px;
+            }
+            th {
+              font-size: 12px;
+              span {
+                font-size: 9px;
+              }
+            }
+            td {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  width: 100%;
+  form > dl {
+    font-size: 12px;
+    + dl {
+      margin: 15px 0 0;
+    }
+    dt {
+      margin: 0 0 5px;
+    }
+  }
+  .age {
+    .inputBox {
+      display: inline-block;
+      max-width: 140px;
+      margin: 0 5px 0 0;
+    }
+  }
+  .radioForm {
+    dd {
+      padding: 5px 0 0;
+    }
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    height: 35px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 190px;
+    margin: 10px 0 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .selectBox {
+    max-width: 140px;
+    select {
+      height: 35px;
+      padding: 7px 15px;
+      font-size: 11px;
+      border-radius: 5px;
+      background: url("../image/common/form_select_arrow.png") right 15px center
+        no-repeat #f8f5e4;
+      background-size: 9px auto;
+    }
+  }
+  .birthBox {
+    padding: 0 10px;
+    ul {
+      li {
+        width: 70px;
+        + li {
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 5px;
+    }
+  }
+  .checkItem {
+    margin: 20px 0 30px;
+    text-align: center;
+  }
+  .itemCheck {
+    .mwform-checkbox-field {
+      span {
+        padding-left: 15px;
+      }
+    }
+  }
+  form .mwform-radio-field {
+    display: block;
+    + .mwform-radio-field {
+      margin: 10px 0 0;
+    }
+  }
+  .privacy {
+    max-width: 205px;
+    margin: 35px auto 0;
+    .agreeBox {
+      height: 80px;
+      padding: 10px;
+      font-size: 10px;
+    }
+    .box {
+      + .box {
+        margin: 5px 0 0;
+      }
+    }
+  }
+  .policy {
+    padding: 30px 0 0;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.7;
+    p {
+      white-space: initial;
+    }
+    span {
+      display: block;
+    }
+  }
+  .submitButton {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    border: 2px solid #f88f87;
+    input[type="submit"] {
+      height: 50px;
+      font-size: 14px;
+      border: 2px solid #f88f87;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	privacy
+///////////////////////////////////////////////////////////*/
+#privacy {
+  padding: 100px 0 0;
+  .contactContainer {
+    .contactPanel {
+      border-radius: 20px;
+    }
+    .contactItemBox {
+      width: 100%;
+    }
+    .topPanel {
+      margin: 0 0 30px;
+      .secTtlBox {
+        margin: 0 0 15px;
+        .secTtl {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      .txt {
+        font-size: 12px;
+      }
+    }
+    .section {
+      + .section {
+        margin: 30px 0 0;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 15px;
+      }
+      .txt {
+        font-size: 10px;
+      }
+    }
+  }
+}

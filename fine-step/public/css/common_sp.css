@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .header .headWrap {
+    padding: 15px 20px;
+  }
+  .header .logo a {
+    display: block;
+    width: 150px;
+  }
+  .header .hamburger {
+    top: 17px;
+    right: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvContainer {
+    height: 200px;
+  }
+  .pageKvContainer .pageKvTitle {
+    padding: 0 15px 20px;
+  }
+  .pageKvContainer .pageKvTitle h1 {
+    font-size: 30px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .sub {
+    font-size: 18px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0;
+  }
+  .footer .footContact .txt {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .list {
+    max-width: 500px;
+  }
+  .footer .footContact .list .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .list .ul .tel a {
+    padding: 15px 20px;
+    font-size: 34px;
+  }
+  .footer .footContact .list .ul .tel a p {
+    padding: 0 0 0 30px;
+    background: url(https://s-9897018.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left bottom 5px no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footContact .list .ul .contact a {
+    padding: 30px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #27a9b8;
+  }
+  .footer .footContact .list .ul .contact a p {
+    padding: 0 0 0 30px;
+    background: url(https://s-9897018.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footPanel {
+    padding: 50px 0 20px;
+    text-align: center;
+  }
+  .footer .footPanel .logo {
+    max-width: 250px;
+    margin: 0 auto 15px;
+  }
+  .footer .footPanel .txt {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .insta a {
+    width: 25px;
+  }
+  .footer .footPanel .btnPartner {
+    position: static;
+    width: 100%;
+    max-width: 280px;
+    margin: 40px auto 0;
+  }
+  .footer .footPanel .btnPartner a div {
+    padding: 15px;
+    border: 1px solid #ffffff;
+  }
+  .footer .footPanel .btnPartner a div p {
+    padding: 0 0 0 40px;
+    background: url(https://s-9897018.smooooth.jp/system_panel/uploads/images/footer_icon_partner.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+  }
+}

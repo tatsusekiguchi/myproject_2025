@@ -1,0 +1,1073 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+  padding: 8px;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+.topMain .topKvContainer .topKv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+.topMain .topKvContainer .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvContainer .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvContainer .topKv .kvBox .kv01 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKv .kvBox .kv02 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKv .kvBox .kv03 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvTitleBox {
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.topMain .topKvContainer .kvTitleBox h1 {
+  display: none;
+}
+.topMain .topKvContainer .kvTitleBox .kvTitle {
+  margin: 0 0 20px;
+}
+.topMain .topKvContainer .kvTitleBox .kvTitle .ttl {
+  font-size: 0;
+}
+.topMain .topKvContainer .kvTitleBox .kvTitle .ttl p {
+  display: inline;
+  font-size: 50px;
+  line-height: 1.3;
+}
+.topMain .topKvContainer .kvTitleBox .kvTitle .ttl .em {
+  color: #d81515;
+}
+.topMain .topNavPanel {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.topMain .topNavPanel .scroll {
+  width: 15px;
+}
+.topMain .topNavPanel .topNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: calc(100% - 20px);
+}
+.topMain .topNavPanel .topNav .ul {
+  width: 100%;
+  min-width: 900px;
+  text-align: right;
+}
+.topMain .topNavPanel .topNav .ul .li {
+  display: inline-block;
+}
+.topMain .topNavPanel .topNav .ul .li + .li {
+  margin: 0 0 0 3%;
+}
+.topMain .topNavPanel .topNav .ul .li a {
+  display: block;
+  font-size: clamp(14px, 1.1vw, 18px);
+}
+.topMain .sec01 {
+  padding: 120px 0;
+  color: #f5f3f3;
+  background: #1c1c1c;
+}
+.topMain .sec01 .listBox .ul .dl {
+  margin: 20px 0 0;
+}
+.topMain .sec01 .listBox .ul .dl .dt {
+  margin: 0 0 10px;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+.topMain .sec01 .listBox .ul .dl .dd .more {
+  margin: 30px 0 0;
+  text-align: right;
+}
+.topMain .sec01 .listBox .ul .dl .dd .more a {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px 0 0;
+  color: #f5f3f3;
+}
+.topMain .sec01 .listBox .ul .dl .dd .more a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 1px;
+  margin: auto 0;
+  background: #f5f3f3;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+  .topMain .sec01 .listBox .ul .li {
+    width: calc(33.3333333333% - 25px);
+  }
+  .topMain .sec01 .listBox .ul .dl .dd .txt {
+    min-height: 180px;
+  }
+}
+.topMain .slideSection {
+  padding: 100px 20px 100px 0;
+}
+.topMain .slideSection .slidePanel {
+  width: 80%;
+  padding: 5px 5px 5px 0;
+  border: 1px solid #1a1a1a;
+}
+.topMain .slideSection .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topMain .slideSection .slidePanel .slideBox .ul .li {
+  width: 33.3333333333%;
+}
+.topMain .sec02 {
+  padding: 40px 0 120px;
+}
+.topMain .sec02 .txt p + p {
+  margin: 30px 0 0;
+}
+.topMain .sec03 .secContainer {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+.topMain .sec03 .secBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.topMain .sec03 .secBox .mapPanel .mapBox iframe {
+  filter: grayscale(100%);
+}
+.topMain .sec03 .secBox .txtBox .list {
+  margin: 0 0 30px;
+}
+.topMain .sec03 .secBox .txtBox .list .ul .li {
+  border-bottom: 1px solid #a7a7a7;
+}
+.topMain .sec03 .secBox .txtBox .list .ul .li a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 0;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 20px center no-repeat;
+  background-size: 25px auto;
+}
+.topMain .sec03 .secBox .txtBox .list .ul .li a p {
+  display: inline;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+.topMain .sec03 .secBox .txtBox .list .ul .li a .em {
+  color: #d81515;
+}
+.topMain .sec03 .secBox .txtBox .info .dl {
+  display: flex;
+  line-height: 2;
+}
+.topMain .sec03 .secBox .txtBox .info .dl .dt {
+  width: 100px;
+}
+.topMain .sec03 .secBox .txtBox .info .dl + .dl {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec03 .secBox .mapPanel {
+    width: 50%;
+  }
+  .topMain .sec03 .secBox .mapPanel .mapBox {
+    padding: 0 0 50%;
+  }
+  .topMain .sec03 .secBox .txtBox {
+    width: 45%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	commitment
+///////////////////////////////////////////////////////////*/
+.commitmentMain .sec01 {
+  padding: 60px 0;
+}
+.commitmentMain .sec01 .secContainer {
+  position: relative;
+}
+.commitmentMain .sec01 .secContainer .secPanel .secBox .ttl01 {
+  margin: 0 0 30px;
+  font-size: 50px;
+}
+.commitmentMain .sec01 .secContainer .secPanel .secBox .ttl02 {
+  margin: 0 0 30px;
+  font-size: 30px;
+}
+.commitmentMain .sec01 .secContainer .photoPanel .photoBox {
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+@media (min-width: 1025px) {
+  .commitmentMain .sec01 .secContainer .secPanel {
+    width: 50%;
+  }
+  .commitmentMain .sec01 .secContainer .photoPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+  }
+  .commitmentMain .sec01 .secContainer .photoPanel .photo {
+    position: relative;
+    height: 550px;
+  }
+  .commitmentMain .sec01 .secContainer .photoPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.commitmentMain .sec02 {
+  padding: 60px 0;
+}
+.commitmentMain .sec02 .listBox .ul .li {
+  padding: 30px;
+  background: #ffffff;
+}
+.commitmentMain .sec02 .listBox .ul .ttl01 {
+  width: 90px;
+  margin: 0 auto 20px;
+  padding: 5px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: #d92a1a;
+}
+.commitmentMain .sec02 .listBox .ul .ttl02 {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+.commitmentMain .sec02 .listBox .ul .icon01 {
+  width: 100px;
+  margin: 0 auto 40px;
+}
+.commitmentMain .sec02 .listBox .ul .icon02 {
+  width: 80px;
+  margin: 0 auto 40px;
+}
+.commitmentMain .sec02 .listBox .ul .icon03 {
+  width: 60px;
+  margin: 0 auto 40px;
+}
+@media (min-width: 1025px) {
+  .commitmentMain .sec02 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .commitmentMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 40px);
+  }
+}
+.commitmentMain .sec03 {
+  padding: 60px 0;
+}
+.commitmentMain .sec03 .casePanel .webgene-blog .webgene-header {
+  display: none;
+}
+.commitmentMain .sec03 .casePanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.commitmentMain .sec03 .casePanel .webgene-blog .webgene-item .photo {
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+.commitmentMain .sec03 .casePanel .webgene-blog .webgene-item .title {
+  padding: 5px 10px;
+}
+@media (min-width: 1025px) {
+  .commitmentMain .sec03 .casePanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .commitmentMain .sec03 .casePanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 50px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .sec01 {
+  padding: 60px 0;
+}
+.serviceMain .sec01 .secContainer01 {
+  margin: 0 0 60px;
+}
+.serviceMain .sec01 .secContainer01 .ttlBox {
+  margin: 0 0 30px;
+}
+.serviceMain .sec01 .secContainer01 .ttlBox .ttl {
+  font-size: 0;
+}
+.serviceMain .sec01 .secContainer01 .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+.serviceMain .sec01 .secContainer01 .ttlBox .ttl .em {
+  color: #d81515;
+}
+.serviceMain .sec01 .secContainer01 .txtBox {
+  padding: 10px;
+  border: 1px solid #1a1a1a;
+}
+.serviceMain .sec01 .secContainer01 .txtBox .txt {
+  padding: 40px;
+  background: #ffffff;
+}
+.serviceMain .sec01 .secContainer02 {
+  position: relative;
+}
+.serviceMain .sec01 .secContainer02 .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+.serviceMain .sec01 .secContainer02 .photoPanel .photoBox {
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+.serviceMain .sec01 .secContainer02 .chartPanel .chartBox {
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .secContainer02 {
+    min-height: 400px;
+  }
+  .serviceMain .sec01 .secContainer02 .txtBox {
+    width: 50%;
+    padding: 20px 0 0 50px;
+  }
+  .serviceMain .sec01 .secContainer02 .photoPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+  }
+  .serviceMain .sec01 .secContainer02 .photoPanel .photo {
+    position: relative;
+    height: 400px;
+  }
+  .serviceMain .sec01 .secContainer02 .photoPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serviceMain .sec01 .secContainer02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+  }
+  .serviceMain .sec01 .secContainer02 .chartPanel {
+    width: 40%;
+  }
+}
+.serviceMain .sec02 {
+  padding: 60px 0;
+}
+.serviceMain .sec02 .listBox .ul .li {
+  padding: 30px;
+  background: #ffffff;
+}
+.serviceMain .sec02 .listBox .ul .ttl01 {
+  width: 90px;
+  margin: 0 auto 20px;
+  padding: 5px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: #d92a1a;
+}
+.serviceMain .sec02 .listBox .ul .ttl02 {
+  margin: 0 0 20px;
+  font-size: 34px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px 0 0 -40px;
+  }
+  .serviceMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 40px);
+    margin: 30px 0 0 40px;
+  }
+  .serviceMain .sec02 .listBox .ul .ttl02 {
+    min-height: 105px;
+  }
+}
+.serviceMain .sec03 {
+  padding: 60px 0;
+}
+.serviceMain .sec03 .listBox > .ul > .li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px 10px;
+}
+.serviceMain .sec03 .listBox > .ul .inner {
+  width: 100%;
+}
+.serviceMain .sec03 .listBox > .ul .ttl01 {
+  width: 90px;
+  margin: 0 auto 20px;
+  padding: 5px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: #d92a1a;
+}
+.serviceMain .sec03 .listBox > .ul .ttl02 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  text-align: center;
+}
+.serviceMain .sec03 .listBox > .ul .contact .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 40px;
+  font-size: 30px;
+}
+.serviceMain .sec03 .listBox > .ul .contact .ul .li .tel01 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_01.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.serviceMain .sec03 .listBox > .ul .contact .ul .li .tel02 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_02.png) left center no-repeat;
+  background-size: 35px auto;
+}
+@media (min-width: 1391px) {
+  .serviceMain .sec03 .listBox > .ul {
+    display: flex;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li {
+    width: 33.3333333333%;
+    min-height: 350px;
+    background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/service_sec03_list_bg_01.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li + .li {
+    margin: 0 0 0 -20px;
+    background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/service_sec03_list_bg_02.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .serviceMain .sec03 .listBox > .ul .inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .serviceMain .sec03 .listBox > .ul .txt {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .serviceMain .sec03 .listBox > .ul .contact {
+    width: 98%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1390px) {
+  .serviceMain .sec03 .listBox > .ul > .li {
+    padding: 5px;
+    border: 1px solid #1a1a1a;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li + .li {
+    margin: 30px 0 0;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .inner {
+    padding: 20px;
+    background: #ffffff;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .ttl02 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .txt {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .contact {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .contact .ul .li a {
+    padding: 0 0 0 35px;
+    font-size: 24px;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .contact .ul .li .tel01 {
+    background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_01.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .serviceMain .sec03 .listBox > .ul > .li .contact .ul .li .tel02 {
+    background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_02.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	area
+///////////////////////////////////////////////////////////*/
+.areaMain .sec01 {
+  padding: 60px 0;
+}
+.areaMain .sec01 .topBox {
+  margin: 0 0 60px;
+}
+.areaMain .sec01 .topBox .ttlBox {
+  margin: 0 0 30px;
+}
+.areaMain .sec01 .topBox .ttlBox .ttl {
+  font-size: 0;
+}
+.areaMain .sec01 .topBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+.areaMain .sec01 .topBox .ttlBox .ttl .em {
+  color: #d81515;
+}
+.areaMain .sec01 .secContainer .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.areaMain .sec01 .secContainer .secPanel .pTtl {
+  margin: 0 0 20px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.areaMain .sec01 .secContainer .secPanel .pTtl h3 {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 0 15px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #c8c8c8;
+}
+.areaMain .sec01 .secContainer .secPanel .areaBox .dl {
+  line-height: 1.7;
+}
+.areaMain .sec01 .secContainer .secPanel .areaBox .dl + .dl {
+  border-top: 1px solid #3c3c3c;
+}
+.areaMain .sec01 .secContainer .secPanel .areaBox .dl .dt {
+  padding: 20px;
+  text-align: center;
+  color: #ededed;
+  background: #727272;
+}
+.areaMain .sec01 .secContainer .secPanel .areaBox .dl .dd {
+  padding: 20px;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .areaMain .sec01 .secContainer .secPanel .areaBox .dl {
+    display: table;
+    width: 100%;
+  }
+  .areaMain .sec01 .secContainer .secPanel .areaBox .dl .dt {
+    display: table-cell;
+    width: 350px;
+    vertical-align: middle;
+  }
+  .areaMain .sec01 .secContainer .secPanel .areaBox .dl .dd {
+    display: table-cell;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+.shopMain .sec01 {
+  padding: 60px 0;
+}
+.shopMain .sec01 .txt {
+  margin: 0 0 30px;
+}
+.shopMain .sec01 .photoBox {
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+@media (min-width: 1025px) {
+  .shopMain .sec01 .photoBox .photo {
+    position: relative;
+    height: 500px;
+  }
+  .shopMain .sec01 .photoBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.shopMain .sec02 {
+  padding: 60px 0;
+}
+.shopMain .sec02 .txtBox {
+  padding: 20px 30px;
+  background: #ffffff;
+}
+.shopMain .sec03 {
+  padding: 60px 0;
+}
+.shopMain .sec03 .infoBox .dl + .dl {
+  margin: 5px 0 0;
+}
+.shopMain .sec03 .infoBox .dl .dt {
+  padding: 10px 30px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #c8c8c8;
+}
+.shopMain .sec03 .infoBox .dl .dd {
+  padding: 10px 40px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.shopMain .sec03 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.shopMain .sec03 .infoBox .dl .dd a + p {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .shopMain .sec03 .infoBox .dl {
+    display: table;
+    width: 100%;
+  }
+  .shopMain .sec03 .infoBox .dl > * {
+    display: table-cell;
+  }
+  .shopMain .sec03 .infoBox .dl .dt {
+    width: 330px;
+  }
+}
+.shopMain .slidePanel {
+  margin: 100px 0;
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+.shopMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shopMain .slidePanel .slideBox .ul .li {
+  width: 25%;
+}
+.shopMain .mapContainer .mapPanel {
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .sec01 {
+  padding: 60px 0;
+}
+.companyMain .sec01 .infoBox .dl + .dl {
+  margin: 5px 0 0;
+}
+.companyMain .sec01 .infoBox .dl .dt {
+  padding: 10px 30px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #c8c8c8;
+}
+.companyMain .sec01 .infoBox .dl .dd {
+  padding: 10px 40px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.companyMain .sec01 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .sec01 .infoBox .dl .dd a + p {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .infoBox .dl {
+    display: table;
+    width: 100%;
+  }
+  .companyMain .sec01 .infoBox .dl > * {
+    display: table-cell;
+  }
+  .companyMain .sec01 .infoBox .dl .dt {
+    width: 330px;
+  }
+}
+.companyMain .mapContainer {
+  margin: 100px 0 0;
+}
+.companyMain .mapContainer .mapPanel {
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .sec01 {
+  padding: 60px 0;
+}
+.contactMain .sec01 .topList {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+.contactMain .sec01 .topList .ul .li {
+  padding: 10px;
+  font-size: 16px;
+  color: #f7f7f7;
+  text-align: center;
+  background: #1c1c1c;
+}
+.contactMain .sec01 .topList .ul .li a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec01 .topList .ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+  .contactMain .sec01 .topList .ul .li {
+    width: calc(25% - 20px);
+  }
+}
+.contactMain .sec01 .secBox {
+  text-align: center;
+}
+.contactMain .sec01 .secBox .ttl {
+  margin: 0 0 20px;
+  font-size: 40px;
+  color: #da1414;
+  letter-spacing: 0.1em;
+}
+.contactMain .sec01 .secBox .txt {
+  margin: 0 0 40px;
+}
+.contactMain .sec01 .contact .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 40px;
+  font-size: 30px;
+}
+.contactMain .sec01 .contact .ul .li .tel01 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_01.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .sec01 .contact .ul .li .tel02 {
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/footer_tel_02.png) left center no-repeat;
+  background-size: 35px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .blogSection {
+  padding: 60px 0;
+}
+@media (min-width: 1025px) {
+  .blogMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blogMain .postContainer .catePanel {
+    width: 230px;
+  }
+  .blogMain .postContainer .blogPanel {
+    width: calc(100% - 300px);
+  }
+}
+.blogMain .catePanel {
+  margin: 0 0 60px;
+}
+.blogMain .catePanel .categoryBox {
+  padding: 15px 0;
+}
+.blogMain .catePanel .webgene-header {
+  display: none;
+}
+.blogMain .catePanel .pageSecTtlBox {
+  margin: 0 0 20px;
+}
+.blogMain .catePanel .pageSecTtlBox .pageSecTtl {
+  font-size: 40px;
+}
+.blogMain .catePanel .allItem + .webgene-item,
+.blogMain .catePanel .webgene-item + .webgene-item {
+  margin: 5px 0 0;
+}
+.blogMain .catePanel .allItem a,
+.blogMain .catePanel .webgene-item a {
+  display: block;
+  padding: 10px 20px;
+}
+@media (min-width: 1025px) {
+  .blogMain .catePanel .categoryBox .allItem,
+.blogMain .catePanel .categoryBox .webgene-item,
+.blogMain .catePanel .webgene-blog .allItem,
+.blogMain .catePanel .webgene-blog .webgene-item {
+    width: 200px;
+  }
+}
+.blogMain .blogPanel {
+  padding: 10px 0 0;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item {
+  border-bottom: 1px solid #a7a7a7;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  padding: 20px 60px 20px 30px;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 20px center no-repeat;
+  background-size: 25px auto;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-blog .webgene-item a {
+    display: flex;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item a .time {
+    margin: 0 30px 0 0;
+  }
+}
+.blogMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  background: #cdcdcd;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev a {
+  height: 45px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next a {
+  height: 45px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #0f0b09;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  background: #674f43;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #3c3c3c;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox h3 {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 0 15px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #c8c8c8;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 auto 10px;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item img {
+    display: block;
+    width: auto;
+    max-height: 600px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 70%;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .btnContact {
+  max-width: 280px;
+  margin: 60px auto 0;
+}
+.blogMain .btnContact a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background: #1c1c1c;
+}
+.blogMain .btnBackBox {
+  margin: 60px 0 0;
+  text-align: center;
+}
+.blogMain .btnBack {
+  width: 240px;
+  margin: 0 auto;
+}
+.blogMain .btnBack a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #1c1c1c;
+  background: url(https://s-2676856.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left 20px center no-repeat;
+}

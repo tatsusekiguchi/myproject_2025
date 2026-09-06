@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .header .headBox {
+    max-width: calc(100% - 80px);
+    padding: 10px 20px;
+    background: #0b2a56;
+  }
+  .header .logoBox .logo01 {
+    width: 100px;
+  }
+  .header .logoBox .logo02 {
+    display: none;
+  }
+  .header .hamburger {
+    top: 10px;
+    right: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox .navWrap {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 120px 20px;
+  }
+  .navBox .logo01 {
+    position: static;
+    width: 120px;
+    margin: 0 auto;
+  }
+  .navBox .navList {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 20px;
+  }
+  .navBox .navInfoPanel {
+    position: static;
+  }
+  .navBox .navInfoPanel .navInfoBox {
+    display: block;
+    text-align: center;
+  }
+  .navBox .navInfoPanel .logo02 {
+    width: 220px;
+    margin: 0 auto 10px;
+  }
+  .navBox .navInfoPanel .txt a {
+    display: inline-block;
+    color: #ffffff;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    margin: 80px 0 0;
+  }
+  .pageKvPanel::before {
+    display: none;
+  }
+  .pageKvPanel .pageKvBox {
+    padding: 20px 20px;
+  }
+  .pageKvPanel .pageKvBox .ttl01 {
+    margin: 0 15px 0 0;
+    font-size: 30px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .pageSecTtlBox .sub {
+    min-width: 120px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .secContainer {
+    padding: 30px 20px;
+  }
+  .footer .footContact .secBox {
+    max-width: 500px;
+    text-align: center;
+  }
+  .footer .footContact .secBox .ttlBox {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .secBox .ttlBox .ttl02 {
+    font-size: 24px;
+  }
+  .footer .footPanel {
+    padding: 60px 0 20px;
+    text-align: center;
+  }
+  .footer .footPanel .logoBox {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .logoBox .logo01 {
+    width: 120px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .logoBox .logo02 {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .txt {
+    margin: 50px 0;
+  }
+  .footer .footPanel .copy {
+    font-size: 12px;
+    text-align: center;
+  }
+}

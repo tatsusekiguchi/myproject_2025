@@ -1,0 +1,89 @@
+// ▽メイン▽
+main#contact
+    .mainSection.section
+       .secWrap01
+            .pageSecTtlBox
+                .pageSecTtl
+                    h1 お問い合わせ
+            .contactItem
+                .telBox
+                    dl
+                        dt
+                            | お電話でのお問い合わせ
+                        dd
+                            p 下記電話番号までご連絡ください。
+                            a(href="tel:0120990716") 0120-990-716
+                            p ◎営業時間／10:00～17:30◎定休日／水・木・第4土
+                .reserveBox
+                    dl
+                        dt
+                            | 24時間お手軽WEB予約
+                        dd
+                            a(href="#", target="_blank", rel="noopener")  ご来店予約はこちらから
+                            p ご希望の日時をご選択いただきご予約ください。
+            .secPanel
+                .ttlBox
+                    h2 インターネットからのお問い合わせ
+                .topTxt.txt
+                    p
+                        | 下記フォームに必要事項をご記入の上送信してください。折り返しご連絡差し上げます。
+                        em ※
+                        | 印は入力必須項目です。
+                .formBox
+                    form
+                        dl
+                            dt
+                                span お名前
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl
+                            dt
+                                span フリガナ
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl
+                            dt
+                                span メールアドレス
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="email" placeholder="")
+                        dl
+                            dt
+                                span メールアドレス(確認)
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="email" placeholder="")
+                        dl
+                            dt
+                                span 電話番号
+                            dd
+                                .inputBox
+                                    input(type="tel" placeholder="")
+                        dl
+                            dt
+                                span 郵便番号
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl
+                            dt
+                                span 住所
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl.msg
+                            dt
+                                span お問い合わせ内容
+                                em ※
+                            dd
+                                .inputBox
+                                    textarea
+                        .submitButton
+                            <input type="submit" value="確認画面へ" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+// △メイン△

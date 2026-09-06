@@ -1,0 +1,626 @@
+// ▽メイン▽
+main#guide
+	.topContainer
+		.topKv
+			img(src=(root_path || '') + "image/guide/top_kv_pc.png", class="switch" alt="")
+		.secContainer
+			.moveCloudArea01
+				.moveCloud.scroll-infinity__cloud
+					img(src=(root_path || '') + "image/common/move_cloud.png", alt="")
+			.moveCloudArea02
+				.moveCloud.scroll-infinity__cloud.delay
+					img(src=(root_path || '') + "image/common/move_cloud.png", alt="")
+			.topPanel
+				.secBox
+					.pTtl.pink
+						h1 入園案内
+						span にゅうえんあんない
+					.txt
+						p なごや遊花幼稚園では、子どもたちが心も体も健やかな「つよいこ」、<br>友だちや周りに思いやりをもつ「よいこ」、<br>自分で考え工夫する「かしこいこ」として育つことを願っています。<br>そして、1人ひとりが自分らしい花を咲かせ、<br>みんなで「笑顔の花を咲かせよう」という思いを大切に、<br>安心できる温かな環境の中で、その歩みを見守り支えています。
+				.secBox#flowTitle
+					.pTtl.green
+						h2 入園の流れ
+						span にゅうえんのながれ
+			.flowPanel
+				.kv
+					img(src=(root_path || '') + "image/guide/flow_kv_pc.png", class="switch" alt="")
+				.stepList
+					.stepBox
+						dl
+							dt
+								span STEP1
+							dd
+								.txt.left
+									p なごや遊花幼稚園（幼保連携認定こども園）に入園する場合、まずお住いの市町村より認定を受ける必要があります。<br>お子さまが１・２・３号認定の「どの認定区分」に該当するかご確認ください。
+					.stepBox
+						dl
+							dt
+								span STEP2
+							dd
+								.txt.left
+									p 認定区分が確認されましたら下記内容に沿って入園の申込みを行います。
+								.detail
+									dl
+										dt.pink 1号認定区分のご家庭
+										dd
+											p なごや遊花幼稚園
+									dl
+										dt.blue 2・3号認定区分のご家庭
+										dd
+											p お住いの市町村へ
+					.stepBox
+						dl
+							dt
+								span STEP3
+							dd
+								.txt.left
+									p 入園内定のお知らせは、当園から、または各市町村からご連絡いたします。
+								.detail
+									dl
+										dt.pink 1号認定区分のご家庭
+										dd
+											p なごや遊花幼稚園
+									dl
+										dt.blue 2・3号認定区分のご家庭
+										dd
+											p お住いの市町村へ
+					.stepBox
+						dl
+							dt
+								span STEP4
+							dd
+								.txt
+									p
+										em 面談を行い<br>入園となります
+				.btmBox
+					ul
+						li.prev
+							img(src=(root_path || '') + "image/guide/step_slide_prev.png", alt="")
+						li.pager 1/4
+						li.next
+							img(src=(root_path || '') + "image/guide/step_slide_next.png", alt="")
+			.divisionPanel#divisionSection
+				.secBox
+					.pTtl.green
+						h2 認定区分について
+						span にんていくぶんについて
+					.divisionList
+						.divisionBox
+							.balloon.blue
+								p 1号認定
+							.photo.photo01
+								img(src=(root_path || '') + "image/guide/division_img_01.png", alt="")
+							dl
+								dt.blue 教育を希望する<br>満３歳以上
+								dd お子様が満3歳以上で、教育を希望される方。満3歳以上の方は、全ての方が１号認定を受けることができます。
+						.divisionBox
+							.balloon.green
+								p 2号認定
+							.photo.photo02
+								img(src=(root_path || '') + "image/guide/division_img_02.png", alt="")
+							dl
+								dt.green 保育を希望する<br>満３歳以上
+								dd お子様が満3歳以上で、「保育の必要な事由」に該当し、保育を希望される方。
+						.divisionBox
+							.balloon.pink
+								p 3号認定
+							.photo.photo03
+								img(src=(root_path || '') + "image/guide/division_img_03.png", alt="")
+							dl
+								dt.pink 保育を希望する<br>満３歳未満
+								dd お子様が満3歳未満で、「保育の必要な事由」に該当し、保育を希望される方。
+	.logoTextContainer.slidePanel
+		.slideBox
+			ul
+				li
+					img(src=(root_path || '') + "image/guide/logo_icon_text.png", alt="")
+				li
+					img(src=(root_path || '') + "image/guide/logo_icon_text.png", alt="")
+	#section__recruitment
+		.secTtl
+			h2 募集要項
+			span ぼしゅうようこう
+		.recruitTablePanel
+			.recruitTable
+				table.recruitTable__table
+					thead
+						tr
+							th.sideSpacer(colspan="2") &nbsp;
+							th.colHead.colHead--blue 1号認定
+							th.colHead.colHead--green 2号認定
+							th.colHead.colHead--pink 3号認定
+					tbody
+						//- 年齢ブロック（6行）--- dotted 区切り
+						tr.ageRow
+							th.sideLabel01(rowspan="6")
+								.title
+									span 募集人数
+							th.rowHead
+								| 0歳
+								span （6カ月〜）
+							td.row.row--blue −
+							td.row.row--green −
+							td.row.row--pink 00名
+						tr.ageRow
+							th.rowHead 1歳児
+							td.row.row--blue −
+							td.row.row--green −
+							td.row.row--pink 00名
+						tr.ageRow
+							th.rowHead 2歳児
+							td.row.row--blue 00名
+							td.row.row--green 00名
+							td.row.row--pink 00名
+						tr.ageRow
+							th.rowHead 3歳児（年少）
+							td.row.row--blue 00名
+							td.row.row--green −
+							td.row.row--pink −
+						tr.ageRow
+							th.rowHead 4歳児（年中）
+							td.row.row--blue 00名
+							td.row.row--green −
+							td.row.row--pink −
+						tr.ageRow
+							th.rowHead 5歳児（年長）
+							td.row.row--blue 00名
+							td.row.row--green −
+							td.row.row--pink −
+						//- 以降は実線で区切り
+						tr.sectionRow
+							th.sideLabel02(rowspan="3")
+							th.rowHead 就労
+							td.row.row--blue 不問
+							td.row.row--green あり
+							td.row.row--pink あり
+						tr.sectionRow
+							th.rowHead 教育・保育時間
+							td.row.row--blue 9:00〜13:30
+							td.row.row--green
+								p 7:00〜18:00（標準時間）
+								p 8:30〜16:30（短時間）
+							td.row.row--pink 7:00〜18:00
+						tr.sectionRow
+							th.rowHead 休日
+							td.row.row--blue
+								p 土曜日・日曜日・祝祭日
+								p 夏季休暇・冬休暇・春季休暇
+							td.row.row--green 日曜日・祝祭日・年末年始
+							td.row.row--pink 日曜日・祝祭日・年末年始
+	#section__schedule
+		.topPhoto
+			.photo
+				img(src=(root_path || '') + "image/guide/schedule_top_photo_01_pc.png", alt="")
+			.photo
+				img(src=(root_path || '') + "image/guide/schedule_top_photo_02_pc.png", alt="")
+		.scheduleBg
+			.secContainer
+				.secPanel
+					//- .secBox01
+					//- 	.inner
+					//- 		.txtBox
+					//- 			.secTtl
+					//- 				h2 保育時間
+					//- 				span ほいくじかん
+					//- 			.title
+					//- 				span ようび
+					//- 				p 月曜日〜金曜日
+					//- 			.timeList
+					//- 				dl.time01
+					//- 					dt AM 8:30-10:00
+					//- 					dd 登園
+					//- 				dl.time02
+					//- 					dt AM 10:30-14:30
+					//- 					dd 保育
+					//- 				dl.time03
+					//- 					dt AM 14:30-18:30
+					//- 					dd 延長保育
+					//- 		.chartBox
+					//- 			.chart
+					//- 				img(src=(root_path || '') + "image/guide/schedule_chart_top_pc.png", class="switch" alt="")
+					.secBox02
+						.secTtl
+							h2 保育時間
+							span ほいくじかん
+						.inner
+							.divisionPanel
+								.divisionBox01.divisionBox
+									.topBox
+										.division.blue
+											p 認定区分
+										.balloon.blue
+											p 1号認定
+										.term.blue
+											p 3才〜5才
+									//- .title.blue
+									//- 	p 長期休み
+									.chart.chart01
+										img(src=(root_path || '') + "image/guide/schedule_chart_01_pc.png", class="switch", alt="")
+									aside
+										p
+											span ※1…
+											em 新2号認定のお子様は預かり保育に<br class="spBreak">償還補助があります。
+										p
+											span ※2…
+											em 早朝・延長・特別保育（春・夏・冬休み）の保育は可能ですが別途料金がかかります。
+								//- .divisionBox02.divisionBox
+								//- 	.topBox
+								//- 		.division.green
+								//- 			p 認定区分
+								//- 		.balloon.green
+								//- 			p 2号認定
+								//- 		.term.green
+								//- 			p 標準時間
+								//- 	.title.green
+								//- 		p 月曜日〜土曜日
+								//- 	.chart
+								//- 		img(src=(root_path || '') + "image/guide/schedule_chart_02.png", alt="")
+								.divisionBox02.divisionBox
+									.topBox
+										.division.pink
+											p 認定区分
+										.balloon.pink
+											p 2・3号認定
+										.term.pink
+											p 0才〜5才
+									//- .title.pink
+									//- 	p 月曜日〜土曜日
+									.chart.chart02
+										img(src=(root_path || '') + "image/guide/schedule_chart_02_pc.png", class="switch", alt="")
+									aside
+										p
+											span ※1…
+											em 通勤時間と勤務時間を合わせた時間の<br class="spBreak">受け入れとなります。<br>短時間保育の方は保育時間が短縮になります。
+										p
+											span ※2…
+											em 短時間保育のお子様の場合、<br class="spBreak">早朝・延長の時間の場合は<br>別途料金がかかる場合がございます。
+			.btmContainer
+				.txtBox
+					dl.poppins
+						dt NAGOYA YUUKA YOUCHIEN
+						dd 9-30 SAKOU-CHO, NAKAMUTRA-KU,<br>NAGOYA-SHI, AICHI 453-0033
+				.staff
+					img(src=(root_path || '') + "image/guide/schedule_staff_photo.png", alt="")
+	#section__priceUniform
+		.topKv
+			img(src=(root_path || '') + "image/guide/price_top_kv_pc.png", class="switch" alt="")
+		.priceSection#priceSection
+			.secTtl
+				h2 認定ごとの利用料
+				span りようりょう
+			.priceContainer.tabContainer
+				.tabPanel
+					.tabList
+						ul
+							li.tabBtn.active 1号認定
+							li.tabBtn 2・3号認定
+							//- li.tabBtn 3号認定
+					.tabItem
+						.secPanel
+							dl
+								dt 施設維持費について
+								dd
+									.facilityPrice
+										dl
+											dt
+												span 施設維持費
+											dd
+												.box
+													p 検定料：3,000円
+												p 入園料：30,000円
+												aside
+													p ※願書提出時にいただきます。
+							dl
+								dt 月々の利用料について
+								dd
+									.monthlyTable.monthlyTable--01
+										table
+											thead
+												tr
+													th 階層区分
+													th 保育料
+													th 教育協力費
+													th
+														| 給食費
+														//- span （主食費）
+													th 保護者会費
+													th バス送迎費
+											tbody
+												tr
+													th 全階層
+													td
+														span 幼児教育・保育の<br>無償化により0円
+													td
+														p 1,500円/月
+													td
+														p 5,500円/月
+													td
+														p 400円/月
+													td
+														p  3,500円/月
+														span （利用者のみ）
+							dl
+								dt ホームルーム（預かり保育）
+								dd
+									.extensionPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（14:30〜16:30）
+													.right
+														p 450円
+												aside
+													p ※16:30以降の保育は1時間ごとに300円追加の保育料が加算されます。
+							dl
+								dt 特別保育（夏・冬・春休み）
+								dd
+									.dayPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（8:30〜14:30）
+													.right
+														p 1,800円
+												aside
+													p ※14:30以降の保育は1時間ごとに300円追加の保育料が加算されます。
+													p ※詳しくは園にご相談ください。
+							dl
+								dt ご購入いただく用品について
+								dd
+									p 制服一式/カバン等／体操服／スモック／新年度用品
+									//- .purchaseTable
+									//- 	table
+									//- 		tbody
+									//- 			tr
+									//- 				th
+									//- 					| 制服一式
+									//- 					span （夏冬用・カバン等）
+									//- 				td 00,0000円〜
+									//- 			tr
+									//- 				th
+									//- 					| 体操服・スモック一式
+									//- 					span （夏冬用）
+									//- 				td 00,0000円〜
+									//- 			tr
+									//- 				th 新年度用品
+									//- 				td 00,0000円〜
+					.tabItem
+						.secPanel
+							dl
+								dt 施設維持費について
+								dd
+									.facilityPrice
+										dl
+											dt
+												span 施設維持費
+											dd
+												.box
+													p 検定料：3000円
+												p 入園料：30000円
+												aside
+													p ※願書提出時にいただきます。
+							dl
+								dt 月々の利用料について
+								dd
+									.monthlyTable.monthlyTable--02
+										table
+											thead
+												tr
+													th 認定区分
+													th 保育料
+													th 教育協力費
+													th
+														| 給食費
+														//- span （主食費）
+													th 保護者会費
+													th バス送迎費
+											tbody
+												tr
+													th 3号認定
+													td
+														p
+															| 各ご家庭で徴収
+													td
+														p ありません
+														span (年少クラスからあります)
+													td
+														p ありません
+														span (年少クラスからあります)
+													td
+														p ありません
+														span (年少クラスからあります)
+													td
+														p ありません
+														span (年少クラスから利用者のみあります)
+												tr
+													th 2号認定
+													td
+														span 幼児教育・保育の<br>無償化により0円
+													td
+														p 1,500円/月
+													td
+														p 7,000円/月
+													td
+														p 1,500円/月
+													td
+														p 3,500円/月
+														span （利用者のみ）
+							dl
+								dt ホームルーム（預かり保育）
+								dd
+									.extensionPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（14:30〜16:30）
+													.right
+														p 450円
+												aside
+													p ※16:30以降は1時間あたり300追加で保育料が発生します。
+							dl
+								dt ご購入いただく用品について
+								dd
+									p 制服一式/カバン等／体操服／スモック／新年度用品
+					//- .tabItem
+					//- 	.secPanel
+					//- 		dl
+					//- 			dt 施設維持費について
+					//- 			dd
+					//- 				.facilityPrice
+					//- 					dl
+					//- 						dt
+					//- 							span 施設維持費
+					//- 						dd
+					//- 							p 00,0000円
+					//- 							aside
+					//- 								p ※入園時にいただきます
+					//- 		dl
+					//- 			dt 月々の利用料について
+					//- 			dd
+					//- 				.monthlyTable.monthlyTable--03
+					//- 					table
+					//- 						thead
+					//- 							tr
+					//- 								th 階層区分
+					//- 								th 保育料
+					//- 								th 教育充実費
+					//- 								th 保健衛生費
+					//- 								th 口座振替手数料
+					//- 						tbody
+					//- 							tr
+					//- 								th 全階層
+					//- 								td
+					//- 									span 所得に応じ市町村が利用者負担額を決定
+					//- 								td
+					//- 									p  0,000円/月
+					//- 								td
+					//- 									p  0,000円/月
+					//- 								td
+					//- 									p  0,000円/月
+					//- 		dl
+					//- 			dt 延長保育について
+					//- 			dd
+					//- 				.extensionPrice
+					//- 					dl
+					//- 						dt
+					//- 							span 利用料
+					//- 						dd
+					//- 							.box
+					//- 								.left
+					//- 									p ・早朝（7:30〜8:30）
+					//- 								.right
+					//- 									p 00,0000円
+					//- 							.box
+					//- 								.left
+					//- 									p ・延長（16:30〜18:30）
+					//- 								.right
+					//- 									p 00,0000円
+					//- 		dl
+					//- 			dt 一日預かりについて
+					//- 			dd
+					//- 				.dayPrice
+					//- 					dl
+					//- 						dt
+					//- 							span 利用料
+					//- 						dd
+					//- 							.box
+					//- 								.left
+					//- 									p ・月～金（14:30〜18:30）
+					//- 								.right
+					//- 									p 00,0000円
+					//- 		dl
+					//- 			dt ご購入いただく用品について
+					//- 			dd
+					//- 				.purchaseTable
+					//- 					table
+					//- 						tbody
+					//- 							tr
+					//- 								th
+					//- 									| エプロン等
+					//- 								td 00,0000円〜
+					//- 							tr
+					//- 								th
+					//- 									| 体操服・スモック一式
+					//- 									span （夏冬用）
+					//- 								td 00,0000円〜
+		.uniformSection#uniformSection
+			.secTtl
+				h2 制服紹介
+				span せいふくしょうかい
+			.uniformList
+				img(src=(root_path || '') + "image/guide/uniform_list_pc.png", class="switch" alt="")
+		.faqSecTtl#faqSecTtl
+			h2 よくある質問
+	#section__faq
+		.secBox
+			dl.accord
+				dt
+					span Q.
+					em 給食やおやつはどのように提供されていますか？
+				dd
+					.box
+						.answer
+							p 栄養士の献立に基づき、園内で調理した温かい給食を提供しています。<br>アレルギーのあるお子さまは個別に対応を行っていますのでご相談ください。
+			dl.accord
+				dt
+					span Q.
+					em 体調が悪い時や、熱が出た場合はどうなりますか？
+				dd
+					.box
+						.answer
+							p 登園後に発熱や体調不良が見られた場合は、保護者の方にご連絡いたします。<br>お迎えをお願いすることがありますので、緊急連絡先の確認をお願いします。
+			dl.accord
+				dt
+					span Q.
+					em 駐車場・駐輪場はありますか？
+				dd
+					.box
+						.answer
+							p 送迎用の駐車場・駐輪場をご用意しております。<br>限られた台数のため短時間でのご利用にご協力をお願いいたします。
+			dl.accord
+				dt
+					span Q.
+					em 毎日どんな持ち物が必要ですか？
+				dd
+					.box
+						.answer
+							p 着替え、お手拭きタオル、給食セット、おたより帳などをご用意ください。<br>季節や年齢により持ち物が変わることがありますので、詳しくは入園説明資料をご確認ください。
+			dl.accord
+				dt
+					span Q.
+					em バス運行はありますか？
+				dd
+					.box
+						.answer
+							p はい、園では送迎バスを運行しています。<br>ルートや停留所はお子さまの通園区域や利用希望をもとに、園で検討のうえ決定しています。<br>運行の時間についても、安全面や交通状況を考慮して園で設定しています。<br>ご希望に添えない場合もございます。ご理解とご協力をお願いいたします。
+	.faqKv
+		img(src=(root_path || '') + "image/guide/faq_kv_pc.png", class="switch" alt="")
+	#section__document
+		.secTtl
+			h2 入園資料ダウンロード
+			span にゅうえんしりょうダウンロード
+		.bnrBoxList
+			.bnrBox
+				a(href="" download)
+					img(src=(root_path || '') + "image/guide/pdf_bnr_02_pc.png", class="switch" alt="")
+			.bnrBox
+				a(href="" download)
+					img(src=(root_path || '') + "image/guide/pdf_bnr_01_pc.png", class="switch" alt="")
+	#section__visit
+		.photo
+			img(src=(root_path || '') + "image/guide/visit_photo.png", alt="")
+		.secBox
+			.secTtl
+				h2 なごや遊花幼稚園に<br>見学に来ませんか？
+			.txt
+				p ご入園をお考えの方は、まずは一度園見学にお越しください。<br>保育の様子や園内の雰囲気や職員の関わり方、設備など、気になる点を保護者の方。ご自身の目でご覧いただき、<br>安心してご入園いただければと思っております。温かく、のびのびとした遊花の毎日を、どうぞ体感しにいらしてください。
+// △メイン△

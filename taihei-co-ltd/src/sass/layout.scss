@@ -1,0 +1,2390 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    .topKvPanel {
+      .topKvBox {
+        position: relative;
+        a {
+          display: block;
+        }
+        .topKv {
+          position: relative;
+          height: 100vh;
+          img {
+            @include cover-image;
+          }
+        }
+        .linkLabel {
+          position: absolute;
+          left: 0;
+          bottom: 50px;
+          width: 100%;
+          padding: 20px 10px;
+          font-size: clamp(14px, 1.2vw, 20px);
+          color: #ffffff;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .topKvPanel {
+        display: flex;
+        .topKvBox {
+          width: 20%;
+        }
+      }
+    }
+  }
+  .secTtlBox {
+    margin: 0 0 60px;
+    .sub {
+      font-size: 34px;
+    }
+    .secTt {
+      margin: 5px 0 0;
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    .secBox {
+      .leftBox {
+      }
+      .rightBox {
+        .webgene-blog {
+          .webgene-header {
+            display: none;
+          }
+          .webgene-item {
+            a {
+              display: block;
+            }
+            .photo {
+              position: relative;
+            }
+            .title {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .leftBox {
+          width: 140px;
+        }
+        .rightBox {
+          width: calc(100% - 240px);
+          .webgene-blog {
+            display: flex;
+            margin: 0 0 0 -30px;
+            .webgene-item {
+              width: calc((100% / 3) - 30px);
+              margin: 0 0 0 30px;
+              .photo {
+                height: 200px;
+                img {
+                  @include cover-image;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    background: url(https://taihei-co-ltd.com/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .ttl {
+      margin: 0 0 20px;
+      font-size: 34px;
+      color: #97ae51;
+    }
+    .txt {
+      margin: 0 0 40px;
+    }
+    .list {
+      .ul {
+        .li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 190px;
+          height: 190px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 50%;
+          background: #97ae51;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            line-height: 1;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          max-width: 700px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    .secTtlBox {
+      text-align: center;
+    }
+    .section {
+      + .section {
+        margin: 80px 0 0;
+      }
+      .photoContainer {
+        .photoPanel {
+          max-width: 750px;
+          width: 100%;
+          .photoBox {
+            position: relative;
+            .num {
+              font-size: 120px;
+              line-height: 1;
+              color: transparent;
+              -webkit-text-stroke: 2px #000000;
+            }
+          }
+        }
+      }
+      .txtContainer {
+        .txtPanel {
+          max-width: 770px;
+          width: 100%;
+          padding: 30px 50px;
+          background: #ffffff;
+          .txtBox {
+            .ttl {
+              margin: 0 0 15px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 700;
+              font-size: 30px;
+            }
+            .txt {
+              margin: 0 0 20px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .section {
+        .txtContainer {
+          position: relative;
+          margin: -220px 0 0;
+        }
+        &:nth-child(odd) {
+          .photoContainer {
+            .photoPanel {
+              .photoBox {
+                .num {
+                  position: absolute;
+                  top: 100px;
+                  right: -50px;
+                  width: 120px;
+                }
+              }
+            }
+          }
+          .txtContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+          }
+        }
+        &:nth-child(even) {
+          .photoContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .photoPanel {
+              .photoBox {
+                .num {
+                  position: absolute;
+                  top: 100px;
+                  left: -120px;
+                  width: 120px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 60px 0 120px;
+    .sectionList {
+      .section {
+        a {
+          display: block;
+          color: #ffffff;
+        }
+        .secBox {
+          display: flex;
+          flex-direction: column;
+          max-width: 740px;
+          height: 400px;
+          margin: 0 auto;
+          padding: 60px 20px;
+          .dl {
+            width: 100%;
+            margin: auto 0 0;
+            .dt {
+              margin: 0 0 15px;
+              font-size: clamp(20px, 2vw, 30px);
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      .section01 {
+        a {
+          background: url(https://taihei-co-ltd.com/system_panel/uploads/images/top_sec04_bg_01.png)
+            no-repeat;
+          background-size: cover;
+        }
+      }
+      .section02 {
+        a {
+          background: url(https://taihei-co-ltd.com/system_panel/uploads/images/top_sec04_bg_02.png)
+            no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .sectionList {
+        display: flex;
+        .section {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 0 0 100px;
+    .secTtlBox {
+      text-align: center;
+    }
+    .instaPanel {
+      padding: 5px;
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 0 -1px;
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          width: calc((100% / 3) - 1px);
+          margin: 0 0 0 1px;
+          a {
+            display: block;
+          }
+          .photo {
+            position: relative;
+            height: 0;
+            padding: 0 0 120%;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	welfare
+///////////////////////////////////////////////////////////*/
+.welfareMain {
+  .sec01 {
+    padding: 100px 0 120px;
+    .photoContainer {
+      max-width: 1000px;
+    }
+    .txtContainer {
+      .txtBox {
+        max-width: 770px;
+        width: 100%;
+        padding: 40px;
+        background: #ffffff;
+        .ttl {
+          margin: 0 0 20px;
+          font-family: "Zen Kaku Gothic New";
+          font-weight: 500;
+          font-size: 30px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .txtContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: -200px 0 0;
+      }
+    }
+    .aboutContainer {
+      max-width: 1000px;
+      margin: 40px auto 0;
+      padding: 40px 20px;
+      border: 1px solid #000000;
+      background: #f4f4f4;
+      .dl {
+        max-width: 800px;
+        margin: 0 auto;
+        .dt {
+          position: relative;
+          margin: 0 0 30px;
+          text-align: center;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #000000;
+            transform: translateY(-50%);
+          }
+          p {
+            position: relative;
+            display: inline-block;
+            padding: 0 40px;
+            font-family: "Zen Kaku Gothic New";
+            font-weight: 500;
+            font-size: 24px;
+            background: #f4f4f4;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    background: #f4f6f8;
+    .photoList {
+      margin: 0 0 80px;
+      .ul {
+        .photo {
+          margin: 0 0 20px;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-family: "Zen Kaku Gothic New";
+            font-weight: 500;
+            font-size: 24px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+    .examplePanel {
+      .ttl {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto 50px;
+        text-align: center;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #000000;
+          transform: translateY(-50%);
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 40px;
+          font-size: 24px;
+          background: #f4f4f4;
+        }
+      }
+      .list {
+        .ul {
+          .li {
+            .box {
+              position: relative;
+              padding: 15px 10px;
+              font-size: 20px;
+              text-align: center;
+              border: 1px solid #000000;
+              background: #ffffff;
+              + p {
+                margin: 5px 0 0;
+                font-size: 14px;
+                line-height: 1.7;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 4) - 20px);
+              &:not(:last-child) {
+                .box {
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -16px;
+                    bottom: 0;
+                    width: 15px;
+                    height: 20px;
+                    margin: auto 0;
+                    background: url(https://taihei-co-ltd.com/system_panel/uploads/images/welfare_sec02_list_arrow.png)
+                      no-repeat;
+                    background-size: 100% auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 100px 0;
+    .secBox {
+      .txtBox {
+        .txt {
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+        .name {
+          margin: 40px 0 0;
+          text-align: right;
+          p {
+            display: inline-block;
+          }
+          .em {
+            margin: 0 0 0 10px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 35%;
+        }
+        .txtBox {
+          width: 60%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 100px 0;
+    background: #f4f6f8;
+    .pricePanel {
+      border: 1px solid #000000;
+      .dl {
+        line-height: 2;
+        + .dl {
+          border-top: 1px solid #000000;
+        }
+        .dt {
+          padding: 20px 40px;
+          background: #eef3f8;
+        }
+        .dd {
+          padding: 20px 40px;
+          background: #ffffff;
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: table;
+          width: 100%;
+          .dt {
+            display: table-cell;
+            width: 200px;
+            + .dd {
+              width: 280px;
+            }
+          }
+          .dd {
+            display: table-cell;
+            border-left: 1px solid #000000;
+          }
+        }
+      }
+    }
+  }
+  .secBnr {
+    padding: 100px 0;
+    .bnrPanel {
+      max-width: 950px;
+      margin: 0 auto;
+      .bnrBox {
+        padding: 40px 20px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://taihei-co-ltd.com/system_panel/uploads/images/welfare_bnr_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .pageSecTtlBox {
+        margin: 0 0 20px;
+      }
+      .telTxt {
+        margin: 0 0 10px;
+      }
+      .tel {
+        a {
+          display: inline-block;
+          color: #ffffff;
+          p {
+            display: inline;
+            font-size: 24px;
+          }
+          .em {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	construction
+///////////////////////////////////////////////////////////*/
+.constructionMain {
+  .sec01 {
+    padding: 100px 0 120px;
+    .photoContainer {
+      max-width: 1000px;
+    }
+    .txtContainer {
+      .txtBox {
+        max-width: 770px;
+        width: 100%;
+        padding: 40px;
+        background: #ffffff;
+        .ttl {
+          margin: 0 0 20px;
+          font-family: "Zen Kaku Gothic New";
+          font-weight: 500;
+          font-size: 30px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .txtContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: -200px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    .secContainer01 {
+      padding: 100px 0;
+      background: #f4f6f8;
+      .list {
+        .ul {
+          .li {
+            padding: 30px 20px;
+            background: #ffffff;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 500;
+              font-size: 24px;
+              text-align: center;
+              p {
+                display: inline-block;
+                padding: 0 0 15px;
+                border-bottom: 1px solid #000000;
+              }
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 3) - 20px);
+            }
+          }
+        }
+      }
+    }
+    .secContainer02 {
+      padding: 100px 0;
+      .aboutContainer {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        border: 1px solid #000000;
+        background: #f4f4f4;
+        .dl {
+          max-width: 800px;
+          margin: 0 auto;
+          .dt {
+            position: relative;
+            margin: 0 0 30px;
+            text-align: center;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #000000;
+              transform: translateY(-50%);
+            }
+            p {
+              position: relative;
+              display: inline-block;
+              padding: 0 40px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 500;
+              font-size: 24px;
+              background: #f4f4f4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	sales
+///////////////////////////////////////////////////////////*/
+.salesMain {
+  .sec01 {
+    padding: 100px 0 120px;
+    .photoContainer {
+      max-width: 1000px;
+    }
+    .txtContainer {
+      .txtBox {
+        max-width: 770px;
+        width: 100%;
+        padding: 40px;
+        background: #ffffff;
+        .ttl {
+          margin: 0 0 20px;
+          font-family: "Zen Kaku Gothic New";
+          font-weight: 500;
+          font-size: 30px;
+        }
+        .txt {
+          margin: 0 0 20px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .txtContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: -200px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    .secContainer01 {
+      padding: 100px 0;
+      background: #f4f6f8;
+      .sectionList {
+        padding: 40px 0 0;
+      }
+      .section {
+        + .section {
+          margin: 100px 0 0;
+        }
+        .photoContainer {
+          .photoPanel {
+            max-width: 750px;
+            width: 100%;
+            .photoBox {
+              position: relative;
+              .num {
+                font-size: 120px;
+                line-height: 1;
+                color: transparent;
+                -webkit-text-stroke: 2px #000000;
+              }
+            }
+          }
+        }
+        .txtContainer {
+          .txtPanel {
+            max-width: 770px;
+            width: 100%;
+            background: #ffffff;
+            .txtBox {
+              .ttl {
+                padding: 5px 30px;
+                font-family: "Zen Kaku Gothic New";
+                font-weight: 500;
+                font-size: 30px;
+                color: #ffffff;
+                background: #27a9b8;
+              }
+              .txt {
+                padding: 20px 30px;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .section {
+          .photoContainer {
+            .photoPanel {
+              .photoBox {
+                .num {
+                  position: absolute;
+                  top: -50px;
+                  left: 30px;
+                  width: 120px;
+                }
+              }
+            }
+          }
+          .txtContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: -220px 0 0;
+            .txtPanel {
+              .txtBox {
+                .txt {
+                  min-height: 170px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .secContainer02 {
+      padding: 100px 0;
+      .aboutContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        border: 1px solid #000000;
+        background: #f4f4f4;
+        .dl {
+          max-width: 1000px;
+          margin: 0 auto;
+          .dt {
+            position: relative;
+            margin: 0 0 30px;
+            text-align: center;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #000000;
+              transform: translateY(-50%);
+            }
+            p {
+              position: relative;
+              display: inline-block;
+              padding: 0 40px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 500;
+              font-size: 24px;
+              background: #f4f4f4;
+            }
+          }
+          .dd {
+            .ttl {
+              margin: 0 0 30px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 500;
+              font-size: 24px;
+              color: #97ae51;
+              text-align: center;
+            }
+            @media (min-width: 1025px) {
+              .secBox {
+                display: flex;
+                justify-content: space-between;
+                .photo {
+                  width: 40%;
+                }
+                .txtBox {
+                  width: 55%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+.transportMain {
+  .sec01 {
+    padding: 100px 0 120px;
+    .photoContainer {
+      max-width: 1000px;
+    }
+    .txtContainer {
+      .txtBox {
+        max-width: 770px;
+        width: 100%;
+        padding: 40px;
+        background: #ffffff;
+        .ttl {
+          margin: 0 0 20px;
+          font-family: "Zen Kaku Gothic New";
+          font-weight: 500;
+          font-size: 30px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .txtContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: -200px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    .secContainer01 {
+      padding: 100px 0;
+      background: #f4f6f8;
+      .sectionList {
+        padding: 40px 0 0;
+      }
+      .section {
+        + .section {
+          margin: 100px 0 0;
+        }
+        .photoContainer {
+          .photoPanel {
+            max-width: 750px;
+            width: 100%;
+            .photoBox {
+              position: relative;
+              .num {
+                font-size: 120px;
+                line-height: 1;
+                color: transparent;
+                -webkit-text-stroke: 2px #000000;
+              }
+            }
+          }
+        }
+        .txtContainer {
+          .txtPanel {
+            max-width: 770px;
+            width: 100%;
+            background: #ffffff;
+            .txtBox {
+              .ttl {
+                padding: 5px 30px;
+                font-family: "Zen Kaku Gothic New";
+                font-weight: 500;
+                font-size: 30px;
+                color: #ffffff;
+                background: #27a9b8;
+              }
+              .txt {
+                padding: 20px 30px;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .section {
+          .photoContainer {
+            .photoPanel {
+              .photoBox {
+                .num {
+                  position: absolute;
+                  top: -50px;
+                  left: 30px;
+                  width: 120px;
+                }
+              }
+            }
+          }
+          .txtContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: -220px 0 0;
+            .txtPanel {
+              .txtBox {
+                .txt {
+                  min-height: 170px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 100px 0;
+    .secBoxList {
+      margin: 0 0 100px;
+      .secBox {
+        + .secBox {
+          margin: 100px 0 0;
+        }
+        .photo {
+          position: relative;
+          z-index: 1;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl {
+            position: relative;
+            width: 90%;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              height: 1px;
+              margin: auto 0;
+              background: #000000;
+            }
+            h3 {
+              position: relative;
+              display: inline-block;
+              padding: 0 30px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 500;
+              font-size: 34px;
+              background: #ffffff;
+            }
+          }
+          .box {
+            margin: 30px 0 0;
+            padding: 30px;
+            background: #f4f6f8;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          .photo {
+            width: 50%;
+          }
+          .txtBox {
+            position: relative;
+            width: 50%;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -100px;
+              width: 100px;
+              height: 100%;
+              background: #f4f6f8;
+            }
+            .txt {
+              min-height: 280px;
+            }
+          }
+        }
+      }
+    }
+    .message {
+      text-align: center;
+      p {
+        display: inline-block;
+        padding: 0 80px;
+        font-family: "Zen Kaku Gothic New";
+        font-weight: 500;
+        font-size: 30px;
+        color: #97ae51;
+        background: url(https://taihei-co-ltd.com/system_panel/uploads/images/transport_sec03_slash_01.png)
+            left center no-repeat,
+          url(https://taihei-co-ltd.com/system_panel/uploads/images/transport_sec03_slash_02.png)
+            right center no-repeat;
+        background-size: 60px auto, 60px auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain {
+  .sec01 {
+    padding: 100px 0;
+    background: url(https://taihei-co-ltd.com/system_panel/uploads/images/recruit_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .ttl {
+      margin: 0 0 40px;
+      font-family: "Zen Kaku Gothic New";
+      font-weight: 500;
+      font-size: 34px;
+      text-align: center;
+    }
+    .secBox {
+      .photoBox {
+        .name {
+          margin: 20px 0 0;
+          text-align: right;
+          p {
+            display: inline-block;
+          }
+          .em {
+            margin: 0 0 0 20px;
+            font-size: 22px;
+          }
+        }
+      }
+      .txtBox {
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        .photoBox {
+          width: 300px;
+        }
+        .txtBox {
+          width: calc(100% - 380px);
+        }
+      }
+    }
+  }
+  .sec02 {
+    position: relative;
+    padding: 100px 0;
+    background: #f4f6f8;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -80px;
+      width: 150px;
+      height: 80px;
+      margin: 0 auto;
+      background: url(https://taihei-co-ltd.com/system_panel/uploads/images/recruit_sec02_arrow.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .list {
+      .ul {
+        .li {
+          padding: 30px 20px;
+          background: #ffffff;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-family: "Zen Kaku Gothic New";
+            font-weight: 500;
+            font-size: 24px;
+            text-align: center;
+            p {
+              display: inline-block;
+              padding: 0 0 15px;
+              border-bottom: 1px solid #000000;
+            }
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    .topTtl {
+      margin: 0 0 40px;
+      font-family: "Zen Kaku Gothic New";
+      font-weight: 500;
+      font-size: 34px;
+      text-align: center;
+    }
+    .subTtl {
+      position: relative;
+      max-width: 340px;
+      margin: 0 0 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        margin: auto 0;
+        background: #000000;
+      }
+      h4 {
+        position: relative;
+        display: inline-block;
+        padding: 0 20px 0 0;
+        font-family: "Zen Kaku Gothic New";
+        font-weight: 500;
+        font-size: 34px;
+        background: #ffffff;
+      }
+    }
+    .section {
+      + .section {
+        margin: 50px 0 0;
+      }
+      .secTtl {
+        margin: 0 0 30px;
+        padding: 10px 30px;
+        font-family: "Zen Kaku Gothic New";
+        font-weight: 500;
+        font-size: 30px;
+        background: #f4f6f8;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 44%;
+          }
+          .txtBox {
+            width: 52%;
+          }
+        }
+      }
+      .photoList {
+        .ul {
+          .photo {
+            margin: 0 0 20px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 15px;
+              font-family: "Zen Kaku Gothic New";
+              font-weight: 500;
+              font-size: 24px;
+              text-align: center;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 3) - 20px);
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 80px 0 0;
+    .tabList {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 5) - 10px);
+          padding: 10px;
+          font-family: "Zen Kaku Gothic New";
+          font-weight: 500;
+          font-size: clamp(14px, 1.2vw, 20px);
+          text-align: center;
+          background: #f4f6f8;
+          cursor: pointer;
+          opacity: 0.3;
+          &.active {
+            opacity: 1;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+    .tabItemBox {
+      padding: 60px 0 120px;
+      background: #f4f6f8;
+      .tabItem {
+        > p {
+          padding: 10px;
+          text-align: center;
+        }
+      }
+    }
+    .infoBox {
+      .dl {
+        line-height: 2;
+        .dt {
+          padding: 15px 20px;
+          color: #97ae51;
+          border-bottom: 1px solid #abbd7a;
+        }
+        .dd {
+          padding: 15px 5px;
+          border-bottom: 1px solid #000000;
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          .dt {
+            width: 200px;
+          }
+          .dd {
+            width: calc(100% - 201px);
+          }
+        }
+      }
+    }
+    .contactSection {
+      padding: 120px 0 0;
+      .topTxt {
+        margin: 0 0 40px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid #464646;
+    background: #f4f4f4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #464646;
+    background: #f4f4f4;
+    resize: none;
+    // box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .btnSubmitBox {
+    max-width: 160px;
+    margin: 40px auto 0;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: url(https://taihei-co-ltd.com/system_panel/uploads/images/btn_more_arrow.png)
+      right center no-repeat;
+    background-size: 30px auto;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    padding: 0 0 60px;
+    .checkList {
+      .ul {
+        padding: 12px 0 0;
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 25px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #464646;
+        background: #f4f4f4;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #97ae51;
+        border-right: 3px solid #97ae51;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      padding: 10px 0;
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #464646;
+        background: #f4f4f4;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #97ae51;
+      }
+    }
+
+    .postalBox {
+      margin: 0 0 5px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 13px;
+      }
+      + input {
+        + input {
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .selectBox {
+      display: inline-block;
+      width: 200px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 20px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 0;
+        border: 1px solid #deebe4;
+        border-radius: 15px;
+        background: #f7f7f7;
+        background-size: 10px auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        position: relative;
+        display: flex;
+        width: 100%;
+        &.line {
+          > .dt {
+            vertical-align: top;
+          }
+        }
+
+        > .dt {
+          overflow: hidden;
+          width: 280px;
+          margin: 0 2px 0 0;
+          padding: 20px 10px;
+          border-bottom: 1px solid #abbd7a;
+          .span {
+            display: inline-block;
+            min-width: 165px;
+            margin-right: 10px;
+            padding: 0 0 0 5px;
+            color: #97ae51;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 7px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #97ae51;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+
+          @media (min-width: 1025px) {
+            .span {
+              float: left;
+            }
+            .em {
+              float: right;
+            }
+          }
+        }
+
+        > .dd {
+          position: relative;
+          width: calc(100% - 282px);
+          padding: 10px 20px;
+          border-bottom: 1px solid #000000;
+        }
+      }
+      .datePanel {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        + .datePanel {
+          margin: 10px 0 0;
+        }
+        > * {
+          display: flex;
+          align-items: center;
+        }
+        input {
+          width: 70px;
+          border-radius: 15px;
+        }
+        .selectBox {
+          width: 70px;
+        }
+        .dateTtl {
+          margin: 0 10px 0 0;
+        }
+        .dateTxt {
+          margin: 0 5px;
+        }
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        padding: 10px;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          text-align: left;
+          border: 1px solid #464646;
+          background: #eaeaea;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 60px 0 100px;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+  .btnMoreBox {
+    text-align: center;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .sec01 {
+    padding: 100px 0;
+    .imgBox {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    .infoBox {
+      margin: 0 0 60px;
+      .dl {
+        line-height: 2;
+        .dt {
+          padding: 15px 20px;
+          color: #97ae51;
+          border-bottom: 1px solid #abbd7a;
+        }
+        .dd {
+          padding: 15px 5px;
+          border-bottom: 1px solid #000000;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          .dt {
+            width: 200px;
+          }
+          .dd {
+            width: calc(100% - 201px);
+          }
+        }
+      }
+    }
+    .listBox {
+      padding: 0 0 100px;
+      .list {
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .listBox {
+        display: flex;
+        justify-content: space-between;
+        .list {
+          width: calc((100% / 3) - 30px);
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .topSection {
+    padding: 80px 0;
+    .secPanel {
+      width: calc(100% - 30px);
+      padding: 20px;
+      background: #f3f3f3;
+    }
+    .secBox {
+      .logoBox {
+        .logo {
+          max-width: 650px;
+          margin: 0 auto;
+        }
+      }
+      .txtBox {
+        .list {
+          margin: 0 0 20px;
+          .ul {
+            .li {
+              padding: 0 20px;
+              background: #ffffff;
+              + .li {
+                margin: 5px 0 0;
+              }
+              p {
+                padding: 20px 0 20px 40px;
+                background: url(https://taihei-co-ltd.com/system_panel/uploads/images/contact_top_check.png)
+                  left center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+        }
+        .message {
+          width: calc(100% + 50px);
+          padding: 10px 20px;
+          font-family: "Zen Kaku Gothic New";
+          font-weight: 500;
+          font-size: 24px;
+          color: #ffffff;
+          line-height: 1.7;
+          background: #97ae51;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .logoBox {
+          width: 50%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 60px 0;
+    background: #f4f6f8;
+    .telPanel {
+      padding: 30px 20px;
+      text-align: center;
+      background: #ffffff;
+      .tel {
+        margin: 0 0 10px;
+        a {
+          display: inline-block;
+          p {
+            display: inline;
+            font-size: 20px;
+          }
+          .em {
+            font-size: 34px;
+          }
+        }
+      }
+      .aside {
+        display: inline-block;
+        color: #ff0000;
+        text-align: left;
+        line-height: 1.7;
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  blog
+///////////////////////////////////////////////////////////*/
+.blogMain {
+  .blogSection {
+    padding: 80px 0 120px;
+  }
+  .catePanel {
+    padding: 40px 0 80px;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        display: inline-block;
+        width: 180px;
+        margin: 0 10px 0 0;
+        vertical-align: top;
+        a {
+          display: block;
+          padding: 9px 15px;
+          font-size: 14px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 30px;
+          background: #97ae51;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      max-width: 1000px;
+      margin: 0 auto;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+          }
+          .photo {
+            margin: 0 0 20px;
+          }
+          .title {
+            min-height: 30px;
+            margin: 0 0 10px;
+          }
+          .more {
+            padding: 0 0 5px;
+            border-bottom: 1px solid #4f4f4f;
+            p {
+              display: block;
+              padding: 0 25px 0 0;
+              background: url(https://taihei-co-ltd.com/system_panel/uploads/images/blog_list_arrow.png)
+                right center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -50px 0 0 -40px;
+          .webgene-item {
+            width: calc((100% / 3) - 40px);
+            margin: 50px 0 0 40px;
+            .photo {
+              position: relative;
+              height: 240px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              color: #ffffff;
+              line-height: 45px;
+              text-align: center;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              background: #97ae51;
+            }
+          }
+          @media (min-width: 1025px) {
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      max-width: 1100px;
+      margin: 0 auto;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 10px 0 0;
+            padding: 0 10px;
+            color: #ffffff;
+            text-align: center;
+            background: #171a1c;
+          }
+          .time {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 30px;
+          padding: 0 0 10px;
+          font-size: 30px;
+          border-bottom: 1px solid #090908;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          max-width: 800px;
+          margin: 0 0 10px;
+          @media (min-width: 1025px) {
+            img {
+              display: block;
+              // width: auto;
+              max-height: 600px;
+              // margin: 0 auto;
+              object-fit: cover;
+            }
+          }
+        }
+        .slick-slide {
+        }
+        .slideNav {
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 40px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+          .pdfArea {
+            margin: 40px 0 0;
+            a {
+              color: #2151a3;
+            }
+          }
+        }
+        .videoBox {
+          margin: 40px 0 0;
+        }
+      }
+      .btnBackBox {
+        margin: 80px 0 0;
+        text-align: center;
+      }
+      .btnContact {
+        max-width: 280px;
+        margin: 0 auto;
+        a {
+          display: block;
+          padding: 10px;
+          font-size: 16px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 30px;
+          background: #97ae51;
+        }
+      }
+      .btnMore {
+        margin: 40px 0 0;
+      }
+      .btnBack {
+        max-width: 260px;
+        margin: 100px auto 0;
+        a {
+          display: block;
+          padding: 10px;
+          color: #26518a;
+          text-align: center;
+          border-radius: 30px;
+          border: 1px solid #5fadab;
+          background: url(https://s-9937637.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+            left 15px center no-repeat #f6f8fa;
+          background-size: 15px auto;
+        }
+      }
+      .webgene-item-aroundPageLink {
+        display: inline-block;
+        a {
+          display: block;
+          width: 40px;
+          color: #ffffff;
+          line-height: 44px;
+          border-radius: 20px;
+          background: #d10b14;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,829 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top #loading__image {
+  width: 136px;
+  max-width: 136px;
+  margin: 0 auto 40px;
+}
+#top #loading__progress {
+  max-width: 180px;
+}
+#top .topKvPanel {
+  overflow: hidden;
+  display: block;
+  height: calc(100svh - 30px);
+}
+#top .topKvPanel__left {
+  width: 100%;
+  height: 50%;
+}
+#top .topKvPanel__right {
+  width: 100%;
+  height: 50%;
+}
+#top .topKvPanel__right .kvSlider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: calc(50svh - 10px);
+}
+#top .topKvPanel__right .kv02 {
+  display: none;
+}
+#top .topKvPanel .logo {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  width: 30%;
+  max-width: 135px;
+  height: 135px;
+  margin: 0 auto;
+}
+#top .topKvPanel .textPanel {
+  position: absolute;
+  top: -20px;
+  bottom: auto;
+  height: 40px;
+  padding: 10px 0;
+}
+#top .topKvPanel .textPanel .loop01 {
+  width: 100%;
+  animation: loop 10s linear infinite;
+}
+#top .topKvPanel .textPanel .loop02 {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  animation: loop 10s -5s linear infinite;
+}
+#top .topKvPanel .kvScroll {
+  right: 20px;
+  bottom: 60px;
+  width: 30px;
+  padding: 15px 5px;
+  font-size: 13px;
+}
+#top .topKvPanel .kvTitle {
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+}
+#top .navigationPanel {
+  position: relative;
+  min-height: 30px;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+#top #section__concept .mvContainer {
+  max-height: none;
+  min-height: 0;
+  padding: 60px 20px;
+  border-radius: 0 0 0 40px;
+}
+#top #section__concept .mvContainer .secBox {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#top #section__concept .mvContainer .secBox .ttlBox {
+  margin: 0 0 10px;
+}
+#top #section__concept .mvContainer .secBox .ttlBox h2 {
+  font-size: 26px;
+}
+#top #section__concept .mvContainer .secBox .txtBox {
+  padding: 0 0 0 60px;
+}
+#top #section__concept .mvContainer .secBox .txtBox .subTtl {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#top #section__concept .mvContainer .secBox .txtBox .txt {
+  max-width: 575px;
+}
+#top #section__concept .mvContainer .secBox .txtBox .txt p + p {
+  margin: 25px 0 0;
+}
+#top #section__concept .subContainer {
+  padding: 50px 20px;
+}
+#top #section__concept .subContainer .secBox {
+  position: relative;
+}
+#top #section__concept .subContainer .secBox .photoList {
+  width: calc(100% - 60px);
+}
+#top #section__concept .subContainer .secBox .photoList ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#top #section__concept .subContainer .secBox .photoList ul li {
+  width: 50%;
+}
+#top #section__concept .subContainer .secBox .txtBox {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+#top #section__concept .subContainer .secBox .txtBox .txt {
+  font-size: 10px;
+  writing-mode: vertical-rl;
+}
+@media (min-width: 1140px) {
+  #top #section__concept .subContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #top #section__concept .subContainer .secBox .photoList {
+    width: calc(100% - 350px);
+  }
+  #top #section__concept .subContainer .secBox .txtBox {
+    width: 240px;
+  }
+}
+#top #section__points .progressBox--sticky {
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  width: calc(100% - 40px);
+}
+#top #section__points .pointsContainer {
+  max-height: 100svh;
+}
+#top #section__points .pointsContainer .pointsPanel .photoBox .photo {
+  position: relative;
+  height: 240px;
+}
+#top #section__points .pointsContainer .pointsPanel .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox {
+  padding: 0;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox__inner {
+  position: relative;
+  max-width: 100%;
+  padding: 70px 20px 40px;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .secTtl {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  margin: 0;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .secTtl h2 {
+  font-size: 26px;
+  writing-mode: vertical-rl;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .numBox {
+  margin: 0 0 20px;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .numBox .num {
+  margin: 0 10px 0 0;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .numBox .num p {
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .numBox .ttl {
+  font-size: 10px;
+  line-height: 1.1;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .numBox .pager {
+  display: none;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox dl {
+  padding: 0 0 50px;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox dl dd {
+  min-height: 150px;
+  line-height: 2;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .progressBox {
+  display: none;
+  height: 1px;
+  background: #000000;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .progressbar {
+  position: relative;
+  top: -1px;
+  height: 3px;
+  border-radius: 6px;
+  background: #000000;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .progressbar--01 {
+  width: 25%;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .progressbar--02 {
+  width: 50%;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .progressbar--03 {
+  width: 75%;
+}
+#top #section__points .pointsContainer .pointsPanel .txtBox .progressbar--04 {
+  width: 100%;
+}
+@media (min-width: 1140px) {
+  #top #section__points .pointsContainer .pointsPanel {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #top #section__points .pointsContainer .pointsPanel > * {
+    width: 50%;
+  }
+}
+#top #section__support .supportContainer {
+  padding: 0 0 50px;
+  border-radius: 0 0 30px 0;
+}
+#top #section__support .supportHeader {
+  padding: 60px 20px 30px;
+  border-bottom: 1px solid #ffffff;
+}
+#top #section__support .supportHeader .secBox .secTtl {
+  margin: 0 0 30px;
+  text-align: center;
+}
+#top #section__support .supportHeader .secBox .secTtl h2 {
+  font-size: 26px;
+}
+#top #section__support .supportHeader .secBox .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#top #section__support .supportHeader .secBox .txtBox dl dd {
+  line-height: 2;
+  letter-spacing: -0.04em;
+}
+#top #section__support .supportBody {
+  padding: 0;
+}
+#top #section__support .supportBody .listPanel {
+  padding: 40px 20px;
+}
+#top #section__support .supportBody .listPanel ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+#top #section__support .supportBody .listPanel ul li {
+  width: 50%;
+  font-size: 15px;
+}
+#top #section__support .supportBody .listPanel ul .last {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: left;
+  border: none;
+}
+#top #section__support .supportBody .photoPanel .leftBox {
+  margin: 0 0 8px;
+}
+#top #section__support .supportBody .photoPanel .rightBox {
+  display: flex;
+  justify-content: space-between;
+}
+#top #section__support .supportBody .photoPanel .rightBox > * {
+  width: calc(50% - 3px);
+}
+#top #section__support .supportBody .photoPanel .rightBox .photo02 {
+  margin: 0;
+}
+@media (min-width: 1140px) {
+  #top #section__support .supportBody .photoPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  #top #section__support .supportBody .photoPanel .leftBox {
+    width: 59%;
+  }
+  #top #section__support .supportBody .photoPanel .leftBox .photo01 {
+    position: relative;
+    height: 100%;
+  }
+  #top #section__support .supportBody .photoPanel .leftBox .photo01 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #top #section__support .supportBody .photoPanel .rightBox {
+    width: 40%;
+  }
+}
+#top #section__support .supportMv {
+  position: relative;
+  height: 326px;
+  margin: -50px 0 0;
+}
+#top #section__support .supportMv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top #section__voice {
+  border-top: 0;
+}
+#top #section__voice .voiceHeader {
+  padding: 60px 20px 30px;
+}
+#top #section__voice .voiceHeader .secBox .secTtl {
+  margin: 0 0 30px;
+}
+#top #section__voice .voiceHeader .secBox .secTtl h2 {
+  font-size: 26px;
+}
+#top #section__voice .voiceHeader .secBox .txtBox dl dt {
+  font-size: 12px;
+}
+#top #section__voice .voiceHeader .secBox .txtBox dl dd {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+#top #section__voice .voiceBody .secBox {
+  padding: 20px 20px 60px;
+}
+#top #section__voice .voiceBody .secBox .photoBox .more {
+  width: 200px;
+  height: 50px;
+  padding: 16px 10px;
+  font-size: 12px;
+}
+#top #section__voice .voiceBody .secBox .ttlBox {
+  height: 158px;
+  padding: 25px 20px;
+}
+#top #section__voice .voiceBody .secBox .ttlBox dl {
+  max-width: 100%;
+}
+#top #section__voice .voiceBody .secBox .ttlBox dl dt {
+  margin: 0 0 5px;
+}
+#top #section__voice .voiceBody .secBox .ttlBox dl dt span {
+  font-size: 12px;
+}
+#top #section__voice .voiceBody .secBox .ttlBox dl dd {
+  font-size: 16px;
+}
+#top #section__voice .voiceBody .secBox.secBoxBg .photoBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#top #section__voice .voiceBody .secBox.secBoxBg .photoBox .photo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#top #section__voice .voiceBody .secBox.secBoxBg .photoBox .photo img {
+  height: 100%;
+}
+#top #section__voice .voiceBody .secBox .logoBox__inner {
+  max-width: 190px;
+}
+#top #section__voice .voiceBody .secBox .logoBox p {
+  font-size: 10px;
+  text-align: center;
+}
+#top #section__flow {
+  padding: 40px 20px;
+}
+#top #section__flow .flowContainer .titlePhoto {
+  margin: 0 0 30px;
+}
+#top #section__flow .flowContainer .titlePhoto .photo {
+  position: relative;
+  height: 230px;
+}
+#top #section__flow .flowContainer .titlePhoto .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top #section__flow .flowContainer .titlePhoto .ttlBox h2 {
+  font-size: 26px;
+}
+#top #section__flow .flowContainer .titlePhoto .ttlBox p {
+  font-size: 10px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox {
+  min-height: 0;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .flowTtl {
+  width: 80px;
+  padding: 0 15px 0 5px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .flowTtl p {
+  position: relative;
+  top: -7px;
+  font-size: 12px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .txtBox {
+  width: calc(100% - 80px);
+  padding: 20px 0 20px 20px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .txtBox dl dt {
+  margin: 0 0 10px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .txtBox dl dt span {
+  font-size: 18px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .txtBox dl dt em {
+  font-size: 14px;
+}
+#top #section__flow .flowContainer .flowPanel .flowBox .txtBox dl dd {
+  line-height: 2;
+}
+#top #section__flow .flowContainer .flowPanel .message {
+  margin: 0 -20px;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-align: left;
+}
+@media (min-width: 1140px) {
+  #top #section__flow .flowContainer {
+    display: flex;
+  }
+  #top #section__flow .flowContainer .titlePhoto {
+    width: 780px;
+  }
+  #top #section__flow .flowContainer .flowPanel {
+    overflow-y: auto;
+    width: calc(100% - 780px);
+    height: 964px;
+  }
+  #top #section__flow .flowContainer .flowPanel .flowBox .txtBox {
+    padding: clamp(20px, 1.7vw, 50px);
+  }
+}
+@media (min-width: 1141px) and (max-width: 1380px) {
+  #top #section__flow .flowContainer .titlePhoto {
+    width: 650px;
+  }
+  #top #section__flow .flowContainer .flowPanel {
+    width: calc(100% - 650px);
+    height: 795px;
+  }
+  #top #section__flow .flowContainer .flowPanel .flowBox {
+    height: 239px;
+  }
+  #top #section__flow .flowContainer .flowPanel .flowBox .txtBox {
+    padding: 20px;
+  }
+  #top #section__flow .flowContainer .flowPanel .flowBox .txtBox dl dd {
+    font-size: clamp(14px, 1.1vw, 18px);
+  }
+}
+#top #section__news {
+  padding: 60px 20px;
+}
+#top #section__news .secBox .ttlBox {
+  margin: 0 0 30px;
+  text-align: center;
+}
+#top #section__news .secBox .ttlBox h2 {
+  font-size: 26px;
+}
+#top #section__news .secBox .txtBox .newsList ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px;
+}
+#top #section__news .secBox .txtBox .newsList ul li + li {
+  margin: 10px 0 0;
+}
+#top #section__news .secBox .txtBox .newsList ul li .newsLabel {
+  min-width: 70px;
+  margin: 0 10px 0 0;
+  font-size: 12px;
+}
+#top #section__news .secBox .txtBox .newsList ul li .time {
+  margin: 0;
+}
+#top #section__news .secBox .txtBox .newsList ul li .newsTxt {
+  width: 100%;
+  margin: 4px 0 0;
+  font-size: 11px;
+}
+@media (min-width: 1140px) {
+  #top #section__news .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  #top #section__news .secBox .ttlBox {
+    width: 230px;
+  }
+  #top #section__news .secBox .txtBox {
+    width: calc(100% - 330px);
+  }
+}
+#top #section__faq .faqContainer {
+  padding: 80px 20px 60px;
+  border-radius: 80px 0 80px 0;
+}
+#top #section__faq .secBox .ttlBox {
+  margin: 0 0 15px;
+  text-align: center;
+}
+#top #section__faq .secBox .ttlBox h2 {
+  font-size: 26px;
+}
+#top #section__faq .secBox .txtBox dl + dl {
+  margin: 10px 0 0;
+}
+#top #section__faq .secBox .txtBox dl dt {
+  display: flex;
+  padding: 15px 50px 15px 20px;
+  background: url("../image/common/accord_down.png") right 30px center no-repeat #383e40;
+  background-size: 12px auto;
+}
+#top #section__faq .secBox .txtBox dl dt.active {
+  background: url("../image/common/accord_up.png") right 30px center no-repeat #383e40;
+  background-size: 12px auto;
+}
+#top #section__faq .secBox .txtBox dl dt span {
+  margin: 0 8px 0 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+#top #section__faq .secBox .txtBox dl dd {
+  padding: 20px 0;
+}
+#top #section__slide .slidePanel .slideBox ul li {
+  width: 100%;
+}
+#top #section__contact {
+  padding: 40px 20px 60px;
+}
+#top #section__contact .contactContainer {
+  position: relative;
+  padding: 80px 20px 40px;
+}
+#top #section__contact .contactContainer .secTtl {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+#top #section__contact .contactContainer .secTtl h2 {
+  font-size: 26px;
+}
+#top #section__contact .contactContainer .topTxt {
+  margin: 0 0 40px;
+  font-size: 16px;
+}
+
+/* --------------------------------------------------
+	modal
+-------------------------------------------------- */
+.modalBox {
+  max-height: calc(100vh - 80px);
+  padding: 50px 24px 40px;
+}
+
+.itemModal {
+  padding: 50px 20px;
+}
+
+.modalBoxInner .photoPanel {
+  margin: 0 0 36px;
+}
+.modalBoxInner .photoPanel .photoList {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto 0;
+}
+.modalBoxInner .detailPanel .staffBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.modalBoxInner .detailPanel .staffBox .photo {
+  width: 50%;
+}
+.modalBoxInner .detailPanel .staffBox dl {
+  width: 45%;
+  margin: 0;
+}
+.modalBoxInner .detailPanel .staffBox dl dt {
+  margin: 0 0 5px;
+}
+.modalBoxInner .detailPanel .staffBox dl dd {
+  font-size: 12px;
+}
+.modalBoxInner .detailPanel .commentBox dl {
+  padding: 0 0 30px;
+}
+.modalBoxInner .detailPanel .commentBox dl + dl {
+  padding: 30px 0;
+}
+.modalBoxInner .detailPanel .commentBox dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+.modalBoxInner .detailPanel .commentBox dl dd {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.modalClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+}
+
+.modalScroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 125px;
+  height: 115px;
+  margin: auto;
+  z-index: 99;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox form > dl {
+  font-size: 12px;
+}
+.formBox form > dl + dl {
+  margin: 15px 0 0;
+}
+.formBox form > dl dt {
+  margin: 0;
+}
+.formBox .radioForm dd {
+  padding: 5px 0 0;
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  font-size: 16px;
+}
+.formBox textarea {
+  height: 190px;
+  margin: 10px 0 0;
+  padding: 10px;
+  font-size: 16px;
+}
+.formBox .birthBox {
+  padding: 0 10px;
+}
+.formBox .birthBox ul li {
+  width: 70px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 15px;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 5px;
+}
+.formBox .checkItem {
+  margin: 30px 0;
+}
+.formBox form .mwform-radio-field {
+  display: block;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .privacy {
+  max-width: 205px;
+  margin: 35px auto 0;
+}
+.formBox .privacy .agreeBox {
+  height: 80px;
+  padding: 10px;
+  font-size: 10px;
+}
+.formBox .privacy .box + .box {
+  margin: 5px 0 0;
+}
+.formBox .submitButton {
+  max-width: 300px;
+}
+.formBox .submitButton .submitTxt {
+  font-size: 14px;
+}
+.formBox .submitButton input[type=submit] {
+  height: 50px;
+  font-size: 14px;
+}
+
+#contactConfirm #section__contact,
+#contactComplete #section__contact {
+  padding: 110px 20px 60px;
+}
+#contactConfirm #section__contact .contactContainer,
+#contactComplete #section__contact .contactContainer {
+  position: relative;
+  padding: 80px 20px 40px;
+}
+#contactConfirm #section__contact .contactContainer .secTtl,
+#contactComplete #section__contact .contactContainer .secTtl {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+#contactConfirm #section__contact .contactContainer .secTtl h2,
+#contactComplete #section__contact .contactContainer .secTtl h2 {
+  font-size: 26px;
+}
+#contactConfirm #section__contact .contactContainer .topTxt,
+#contactComplete #section__contact .contactContainer .topTxt {
+  margin: 0 0 40px;
+  font-size: 16px;
+}
+#contactConfirm #section__contact .contactContainer .topComplete,
+#contactComplete #section__contact .contactContainer .topComplete {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+#contactConfirm .formConfirm dl,
+#contactComplete .formConfirm dl {
+  display: block;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+#contactConfirm .formConfirm dl > *,
+#contactComplete .formConfirm dl > * {
+  padding: 0;
+}
+#contactConfirm .formConfirm dl dt,
+#contactComplete .formConfirm dl dt {
+  width: 100%;
+  margin: 0 0 5px;
+}
+#contactConfirm .formConfirm dl dd,
+#contactComplete .formConfirm dl dd {
+  width: 100%;
+}
+#contactConfirm .formConfirm .submitButton,
+#contactComplete .formConfirm .submitButton {
+  padding: 30px 0 0;
+}
+#contactConfirm .formConfirm input[type=submit],
+#contactComplete .formConfirm input[type=submit] {
+  width: 49%;
+  height: 50px;
+  font-size: 14px;
+}
+#contactConfirm .formConfirm button.btnBack,
+#contactComplete .formConfirm button.btnBack {
+  width: 49%;
+  height: 50px;
+  font-size: 14px;
+}

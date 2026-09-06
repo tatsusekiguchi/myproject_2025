@@ -1,0 +1,551 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    height: 100svh;
+    background: url("../image/top/top_kv_sp.png") center no-repeat;
+    background-size: cover;
+    .topKvTitle {
+      padding: 40px 0 0;
+      .topTxt {
+        top: -30px;
+        max-width: 200px;
+      }
+      .logo {
+        width: calc(100% - 40px);
+        margin: 0 auto 15px;
+      }
+      .title {
+        width: calc(100% - 100px);
+        margin: 0 auto;
+      }
+    }
+    .topKvEntry {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+      }
+      em {
+        margin: 0 15px 0 0;
+        font-size: 20px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+    .kvScroll {
+      display: none;
+    }
+    .textPanel {
+      width: 100%;
+      height: 50px;
+      .loopText {
+        font-size: 16px;
+      }
+    }
+    .slidePanel {
+      top: 140px;
+      bottom: auto;
+      .slideTxt {
+        ul {
+          height: 50px;
+          li {
+            width: 150vw;
+            max-width: 900px;
+            min-width: 800px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  #section {
+    &__about {
+      padding: 0;
+      text-align: left;
+      .slidePanel {
+        > .secTtl {
+          display: block;
+          padding: 60px 20px 30px;
+          font-family: $enFont;
+          font-size: 30px;
+          letter-spacing: 0.1em;
+        }
+        .slideBox {
+          ul {
+            li {
+              width: calc(100% / 2);
+            }
+          }
+        }
+      }
+      .txtPanel {
+        .txtBox {
+          padding: 40px 20px 80px;
+        }
+        .secTtl {
+          display: none;
+          // margin: 0 0 40px;
+          // font-size: 42px;
+        }
+        .txt01 {
+          font-size: 18px;
+        }
+        .txt02 {
+          margin: 30px 0 0;
+        }
+        .txt03 {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    &__problem {
+      padding: 60px 20px 20px;
+      &::before {
+        height: calc(100% - 240px);
+      }
+      .problemContainer {
+        .problemMvBox {
+          .title {
+            width: 75%;
+          }
+        }
+        .problemTxtBox {
+          padding: 40px 20px 50px;
+          &::before {
+            width: 30px;
+            height: 30px;
+          }
+          .title {
+            max-width: 240px;
+            margin: 0 0 30px;
+          }
+          .checkList {
+            ul {
+              li {
+                .left {
+                  width: 35px;
+                  min-height: 65px;
+                  .check {
+                    width: 13px;
+                  }
+                }
+                .right {
+                  width: calc(100% - 35px);
+                  padding: 10px 0 10px 20px;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .message {
+            max-width: 200px;
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    &__point {
+      position: relative;
+      padding: 120px 0 120px 40px;
+      &::before {
+        width: 20px;
+      }
+      .secBoxList {
+        .secBox {
+          + .secBox {
+            margin: 60px 0 0;
+          }
+          .txtBox {
+            margin: 25px 0 0;
+            padding: 15px 0 0;
+            .point {
+              margin: 0 0 15px;
+              padding: 2px 4px;
+              font-size: 13px;
+            }
+            .txt {
+              font-size: 14px;
+              letter-spacing: 0.05em;
+            }
+          }
+          .photo {
+            position: relative;
+            height: 180px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+    &__curriculum {
+      padding: 60px 20px 100px;
+      &::before {
+        height: calc(100% - 400px);
+      }
+      .secTtlBox {
+        display: none;
+      }
+      .topTxt {
+        margin: 0 0 60px;
+        font-size: 15px;
+      }
+      .secPanelList {
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 70px 0 0;
+        }
+        .pHead {
+          padding: 20px;
+          .num {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 30px;
+          }
+          .pTtl {
+            font-size: 18px;
+            letter-spacing: 0.1em;
+          }
+        }
+        .pBody {
+          padding: 30px 20px;
+          .ttlEn {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            font-size: 10px;
+          }
+          .ttl {
+            margin: 0 0 25px;
+            font-size: 14px;
+          }
+          .box {
+            dl {
+              + dl {
+                margin: 30px 0 0;
+              }
+              dt {
+                margin: 0 0 10px;
+              }
+            }
+          }
+        }
+      }
+      .copy {
+        margin: 80px 0 0;
+      }
+    }
+    &__teacher {
+      padding: 0 20px;
+      &::before {
+        width: 20px;
+        height: calc(100% - 440px);
+      }
+      &::after {
+        width: 20px;
+        height: calc(100% - 440px);
+      }
+      .teacherContainer {
+        padding: 80px 20px;
+        .secTtlBox {
+          margin: 0 0 90px;
+          text-align: center;
+          .secTtl {
+            margin: 0 0 5px;
+            font-size: 42px;
+          }
+          .sub {
+            font-size: 15px;
+            em {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+      .teacherListContainer {
+        margin: 0 0 80px;
+      }
+      .teacherListPanel {
+        .pTtl {
+          margin: 0;
+          padding: 0 0 10px;
+          font-size: 20px;
+        }
+        .teacherList {
+          &--01 {
+            padding: 30px 20px 0;
+            ul {
+              li {
+                position: relative;
+                + li {
+                  margin: 30px 0 0;
+                }
+              }
+            }
+          }
+          &--02 {
+            padding: 0;
+            ul {
+              li {
+                position: relative;
+              }
+            }
+            .col1 {
+              padding: 80px 20px 0;
+            }
+            .col2,
+            .col3 {
+              overflow-x: scroll;
+              display: flex;
+              gap: 0 40px;
+              padding: 80px 0 0 20px;
+              li {
+                min-width: calc(100vw - 150px);
+              }
+            }
+            .col2 {
+            }
+            .col3 {
+            }
+          }
+          ul {
+            .area {
+              top: -40px;
+              width: 100%;
+              font-size: 14px;
+              text-align: center;
+            }
+            .name {
+              left: -20px;
+              font-size: 10px;
+            }
+            dl {
+              padding: 10px 0 0;
+              text-align: left;
+              dt {
+                margin: 0 0 5px;
+                font-size: 13px;
+              }
+              dd {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .morePanel {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl01 {
+            margin: 0 0 10px;
+            font-size: 13px;
+          }
+          .ttl02 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    &__case {
+      .titlePanel {
+        padding: 80px 20px 30px;
+        .secTtlBox {
+          .secTtl {
+            font-size: 42px;
+          }
+          .sub {
+            font-size: 15px;
+          }
+        }
+      }
+      .casePanel {
+        .secBox {
+          padding: 75px 0;
+          .left {
+            width: 100%;
+            padding: 30px 20px;
+            dl {
+              display: flex;
+              align-items: center;
+              dt {
+                margin: 0 20px 0 0;
+                font-size: 30px;
+              }
+              dd {
+                font-size: 10px;
+              }
+            }
+          }
+          .center {
+          }
+          .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background: none;
+            .txt {
+              width: 100%;
+              padding: 20px;
+              font-size: 14px;
+              background: #faff81;
+            }
+          }
+        }
+      }
+      .caseContainer {
+        display: flex;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 0;
+        // height: calc(100vh - 345px);
+        // min-height: 500px;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .casePanel {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        // height: calc(100vh - 345px);
+        // min-height: 500px;
+        scroll-snap-stop: always;
+      }
+    }
+    &__info {
+      padding: 20px;
+      .infoSection {
+        padding: 100px 20px 60px;
+        background: url("../image/top/info_sec_bg_sp.png") center no-repeat;
+        background-size: cover;
+      }
+      .secTtlBox {
+        margin: 0 0 40px;
+        padding: 0 0 30px;
+        &:after {
+          width: 30px;
+        }
+        .secTtl {
+          font-size: 30px;
+        }
+        .sub {
+          font-size: 14px;
+        }
+      }
+      .txt {
+        max-width: 275px;
+        margin: 0 auto 50px;
+        font-size: 12px;
+      }
+      .link {
+        a {
+          width: 60px;
+        }
+        p {
+          letter-spacing: 0.1em;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    &__follow {
+      padding: 80px 20px 0;
+      .secBox {
+        .txtBox {
+          margin: 0 0 30px;
+          .secTtlBox {
+            margin: 0 0 30px;
+            .secTtl {
+              font-size: 30px;
+            }
+            .sub {
+              font-size: 14px;
+            }
+          }
+          .txt01 {
+            margin: 0 0 30px;
+          }
+        }
+      }
+    }
+    &__recommend {
+      padding: 70px 20px 20px;
+      &::before {
+        height: calc(100% - 280px);
+      }
+      .recommendContainer {
+        .recommendMvBox {
+          .title {
+            width: 75%;
+          }
+        }
+        .recommendTxtBox {
+          padding: 40px 20px 50px;
+          .overview {
+            position: absolute;
+            top: 0;
+            right: -30px;
+            font-size: 10px;
+          }
+          .title {
+            width: 215px;
+            margin: 0 0 30px;
+          }
+          .checkList {
+            ul {
+              li {
+                .left {
+                  width: 35px;
+                  min-height: 65px;
+                  .check {
+                    width: 13px;
+                  }
+                }
+                .right {
+                  width: calc(100% - 35px);
+                  padding: 10px 0 10px 20px;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .btnEntry {
+            margin: 35px 0 0;
+            a {
+              padding: 20px 10px;
+              em {
+                margin: 0 20px 0 0;
+                font-size: 20px;
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

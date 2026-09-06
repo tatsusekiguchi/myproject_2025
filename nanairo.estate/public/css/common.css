@@ -1,0 +1,852 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Kiwi Maru", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 106px;
+    padding: 0 100px;
+    z-index: 999;
+  }
+  .header .headWrap {
+    position: relative;
+  }
+  .header .headTtl {
+    padding: 10px 0 0;
+    font-size: 14px;
+  }
+  .header .headBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+  }
+  .header .logoBox {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    max-width: 300px;
+    width: 25%;
+    padding: 5px 20px 20px;
+    border-radius: 0 0 20px 0;
+  }
+  .header .headNav {
+    width: 100%;
+  }
+  .header .headNav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .header .headNav ul li + li {
+    margin: 0 0 0 3%;
+  }
+  .header .headNav ul li a {
+    display: inline-block;
+  }
+  .header .headItem {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    font-size: 13px;
+  }
+  .header .headItem a {
+    display: inline-block;
+    margin: 3px 0;
+    padding: 0 0 0 20px;
+    font-size: 24px;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    background: url("../image/common/header_tel.png") left center no-repeat;
+    background-size: 18px auto;
+  }
+
+  .sideReserve {
+    position: fixed;
+    top: 30%;
+    right: -5px;
+    width: 160px;
+  }
+  .sideReserve a {
+    display: block;
+  }
+}
+.header.topHeader {
+  background: #fffbf3;
+}
+.header.topHeader .logoBox {
+  background: #fffbf3;
+}
+.header.pageHeader {
+  background: #ffffff;
+}
+.header.pageHeader .logoBox {
+  background: #ffffff;
+}
+.header .hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 10px;
+  width: 50px;
+  height: 40px;
+  z-index: 10000;
+}
+.header .hamburger span {
+  background: #1d1d1d;
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 1px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburger span:nth-of-type(1) {
+  top: 10px;
+}
+.header .hamburger span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburger span:nth-of-type(3) {
+  bottom: 10px;
+}
+.header .hamburger.is-open span:nth-of-type(1) {
+  transform: translate(-50%, 9px) rotate(-45deg);
+}
+.header .hamburger.is-open span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .hamburger.is-open span:nth-of-type(3) {
+  transform: translate(-50%, -9px) rotate(45deg);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 120px 20px;
+  z-index: 999;
+  background: #fffbf3;
+}
+.navBox .navContainer {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.navBox .navPanel01 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+.navBox .navPanel01 .leftBox {
+  width: 320px;
+}
+.navBox .navPanel01 .leftBox .logo {
+  max-width: 300px;
+}
+.navBox .navPanel01 .rightBox {
+  width: 50%;
+}
+.navBox .navPanel01 .rightBox .navList {
+  display: flex;
+}
+.navBox .navPanel01 .rightBox .navList ul {
+  width: 48%;
+}
+.navBox .navPanel01 .rightBox .navList ul li + li {
+  margin: 30px 0 0;
+}
+.navBox .navPanel01 .rightBox .navList ul li a {
+  display: inline-block;
+  padding: 0 0 0 15px;
+  background: url("../image/common/nav_arrow.png") left center no-repeat;
+  background-size: 4px auto;
+}
+.navBox .navPanel02 {
+  display: flex;
+  justify-content: space-between;
+}
+.navBox .navPanel02 .leftBox {
+  width: 320px;
+}
+.navBox .navPanel02 .leftBox .logo {
+  max-width: 200px;
+  margin: 0 0 20px;
+}
+.navBox .navPanel02 .rightBox {
+  width: calc(100% - 380px);
+  padding: 40px 0 0;
+}
+.navBox .navPanel02 .rightBox .contactItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.navBox .navPanel02 .rightBox .contactItem > * {
+  width: 33%;
+}
+.navBox .navPanel02 .rightBox .contactItem > * + * {
+  border-left: 1px dashed #000000;
+}
+.navBox .navPanel02 .rightBox .contactItem dl dt {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+.navBox .navPanel02 .rightBox .contactItem .reserveBox a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #a46305;
+}
+.navBox .navPanel02 .rightBox .contactItem .telBox a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 30px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  background: url("../image/common/header_tel.png") left center no-repeat;
+  background-size: 25px auto;
+}
+.navBox .navPanel02 .rightBox .contactItem .mailBox a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #77bd5a;
+}
+.navBox .navPanel02 .rightBox .contactItem .mailBox a span {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  background: url("../image/common/header_mail.png") left center no-repeat;
+  background-size: 15px auto;
+}
+.navBox .navPanel02 .rightBox .insta {
+  margin: 20px 0 0;
+  text-align: right;
+}
+.navBox .navPanel02 .rightBox .insta a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url("../image/common/header_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+
+@media (max-width: 1360px) {
+  .navBox .navPanel02 {
+    display: block;
+  }
+  .navBox .navPanel02 .rightBox {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .navBox {
+    padding: 60px 20px;
+  }
+  .navBox .navPanel01 {
+    display: block;
+  }
+  .navBox .navPanel01 .leftBox {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .navBox .navPanel01 .leftBox .logo {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .navBox .navPanel01 .rightBox {
+    width: 100%;
+    text-align: center;
+  }
+  .navBox .navPanel01 .rightBox .navList {
+    display: block;
+    max-width: 330px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .navBox .navPanel01 .rightBox .navList ul {
+    width: 100%;
+  }
+  .navBox .navPanel01 .rightBox .navList ul + ul {
+    margin: 20px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList ul li + li {
+    margin: 20px 0 0;
+  }
+  .navBox .navPanel02 .leftBox {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .navBox .navPanel02 .leftBox .logo {
+    max-width: 150px;
+    margin: 0 auto 20px;
+  }
+  .navBox .navPanel02 .rightBox .contactItem {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .navBox .navPanel02 .rightBox .contactItem > * {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .navBox .navPanel02 .rightBox .contactItem > * + * {
+    border-left: none;
+    border-top: 1px dashed #000000;
+  }
+  .navBox .navPanel02 .rightBox .contactItem dl dt {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .navBox .navPanel02 .rightBox .contactItem .reserveBox a {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 13px;
+    color: #ffffff;
+    border-radius: 30px;
+    background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #a46305;
+  }
+  .navBox .navPanel02 .rightBox .contactItem .telBox a {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 30px;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    background: url("../image/common/header_tel.png") left center no-repeat;
+    background-size: 25px auto;
+  }
+  .navBox .navPanel02 .rightBox .contactItem .mailBox a {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 13px;
+    color: #ffffff;
+    border-radius: 30px;
+    background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #77bd5a;
+  }
+  .navBox .navPanel02 .rightBox .contactItem .mailBox a span {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background: url("../image/common/header_mail.png") left center no-repeat;
+    background-size: 15px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+  margin: 106px 0 0;
+}
+
+.section {
+  padding: 0 5%;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.pageSecTtlBox .pageSecTtl {
+  padding: 70px 0 0;
+  font-size: 30px;
+  background: url("../image/common/page_sec_ttl_icon_pc.png") center top no-repeat;
+  background-size: 80px auto;
+}
+
+.secWrap {
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 250px;
+  margin: 0 auto;
+}
+.btnMore a {
+  display: block;
+  padding: 13px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 20px center no-repeat #a46305;
+}
+
+.list__pagination {
+  margin: 60px 0 0;
+}
+.list__pagination .pagination {
+  display: flex;
+  justify-content: center;
+}
+.list__pagination .pagination li {
+  margin: 0 10px;
+}
+.list__pagination .pagination li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #c7e4bb;
+  background: #c7e4bb;
+}
+.list__pagination .pagination li.current a {
+  background: #77bd5a;
+}
+.list__pagination .pagination li.previous a {
+  border: none;
+  background: none;
+}
+.list__pagination .pagination li.previous a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 14px;
+  margin: auto;
+  background: url("../image/common/pagination_prev.png") no-repeat;
+  background-size: 100%;
+}
+.list__pagination .pagination li.next a {
+  border: none;
+  background: none;
+}
+.list__pagination .pagination li.next a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 14px;
+  margin: auto;
+  background: url("../image/common/pagination_next.png") no-repeat;
+  background-size: 100%;
+}
+
+.caseSliderPanel {
+  position: relative;
+  margin: 0 0 120px;
+}
+.caseSliderPanel .caseSlider .slick-list {
+  overflow: visible;
+}
+.caseSliderPanel .caseSlider .slick-slide {
+  position: relative;
+  padding: 20px 0;
+  border: 6px solid transparent;
+  transition: all 0.2s linear;
+}
+.caseSliderPanel .caseSlider .slick-slide img {
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+  opacity: 0.3;
+  transform: scale(0.8);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.caseSliderPanel .caseSlider .slick-slide .txt {
+  padding: 10px 0 0;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.caseSliderPanel .caseSlider .slick-current .txt {
+  opacity: 1;
+}
+.caseSliderPanel .caseSlider .slick-current img {
+  opacity: 1;
+  transform: scale(1);
+}
+.caseSliderPanel .caseSlider .slick-dots {
+  bottom: -80px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 100px 0 50px;
+  background: url("../image/common/footer_contact_bg.png") center top no-repeat;
+  background-size: cover;
+}
+.footer .footContact .secWrap01 {
+  position: relative;
+}
+.footer .footContact .icons {
+  position: absolute;
+  top: -98px;
+  left: 0;
+  right: 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.footer .footContact .contactItem > * {
+  width: 33%;
+}
+.footer .footContact .contactItem > * + * {
+  border-left: 1px dashed #000000;
+}
+.footer .footContact .contactItem dl dt {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+.footer .footContact .contactItem dl dd > p {
+  margin: 10px 0 0;
+}
+.footer .footContact .contactItem .reserveBox a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #a46305;
+}
+.footer .footContact .contactItem .telBox a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 30px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  background: url("../image/common/header_tel.png") left center no-repeat;
+  background-size: 25px auto;
+}
+.footer .footContact .contactItem .mailBox a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #77bd5a;
+}
+.footer .footContact .contactItem .mailBox a span {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  background: url("../image/common/header_mail.png") left center no-repeat;
+  background-size: 15px auto;
+}
+.footer .footPanel {
+  padding: 60px 0 30px;
+}
+.footer .footPanel .footBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+.footer .footPanel .footBox .left .logo {
+  width: 250px;
+  margin: 0 0 15px;
+}
+.footer .footPanel .footBox .right .bnr {
+  width: 300px;
+}
+.footer .footPanel .footBox .right .bnr a {
+  display: block;
+}
+.footer .footPanel .insta a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url("../image/common/header_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footPanel .copy {
+  text-align: right;
+}
+.footer .btmLinkPanel {
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+}
+.footer .btmLinkPanel ul {
+  display: flex;
+  width: 130px;
+  gap: 10px;
+}
+.footer .btmLinkPanel ul li {
+  width: 60px;
+}
+.footer .btmLinkPanel ul li a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .footer .btmLinkPanel {
+    display: none !important;
+  }
+}
+
+/*   モーダルウインドウ
+-------------------------------------------------- */
+.modalOverlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modalBoxWrap {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px 10px;
+  z-index: 10000;
+}
+
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 250px;
+}
+.modalContent > div {
+  overflow: auto;
+  height: 100%;
+}
+.modalContent .mdlBody {
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+.modalContent .mdlBody .ttl {
+  margin: 0 0 60px;
+  font-size: 30px;
+}
+.modalContent .mdlBody .photo {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.modalContent .mdlBody .txt {
+  max-width: 740px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+.modalContent .mdlClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+.modalContent .mdlClose .mdlCloseBtn {
+  display: inline-block;
+  width: 25px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

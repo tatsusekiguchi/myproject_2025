@@ -1,0 +1,147 @@
+// ▽メイン▽
+main#contact
+    .topContainer
+        .topKvPanel
+            .topKv
+                img(src=(root_path || '') + "image/contact/top_kv_pc.png", class="switch" alt="")
+        .topTitlePanel
+            h1 お問い合わせ／見学申し込み
+            .txt
+                p ご見学時に気になったことはお気軽にお尋ねください。<br>園長をはじめとした保育者と、直接コミュニケーションしていただくことで、<br>園の雰囲気などを感じていただける貴重な機会です。
+    .arrow
+        img(src=(root_path || '') + "image/contact/top_arrow.png", alt="")
+    .contactContainer
+        .contactTabList
+            ul
+                li.active
+                    p お問い合わせ
+                li
+                    a(href=(root_path || '') + "entry/") 見学申し込み
+        .contactPanel
+            .contactItemBox
+                .formBox
+                    form
+                        dl
+                            dt
+                                span お問い合わせ項目
+                                em *
+                            dd
+                                .itemCheckPanel
+                                    .itemCheck
+                                        <div class="itemCheck">
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="保育・教育に関して">
+                                                    <span class="mwform-checkbox-field-text">保育・教育に関して</span>
+                                                </label>
+                                            </span>
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="ご意見箱">
+                                                    <span class="mwform-checkbox-field-text">ご意見箱</span>
+                                                </label>
+                                            </span>
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="相談">
+                                                    <span class="mwform-checkbox-field-text">相談</span>
+                                                </label>
+                                            </span>
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="その他">
+                                                    <span class="mwform-checkbox-field-text">その他</span>
+                                                </label>
+                                            </span>
+                                        </div>
+                        dl
+                            dt
+                                span ご希望の連絡方法
+                                em *
+                            dd
+                                .itemCheckPanel
+                                    .itemCheck
+                                        <div class="itemCheck">
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="メール">
+                                                    <span class="mwform-checkbox-field-text">メール</span>
+                                                </label>
+                                            </span>
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="電話">
+                                                    <span class="mwform-checkbox-field-text">電話</span>
+                                                </label>
+                                            </span>
+                                            <span class="mwform-checkbox-field horizontal-item">
+                                                <label>
+                                                    <input type="checkbox" name="itemCheck[data][]" value="どちらでもよい">
+                                                    <span class="mwform-checkbox-field-text">どちらでもよい</span>
+                                                </label>
+                                            </span>
+                                        </div>
+                        dl
+                            dt
+                                span お名前
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="遊花 太郎")
+                        dl
+                            dt
+                                span フリガナ
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="ユウカ タロウ")
+                        dl
+                            dt
+                                span E-mail
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="email" placeholder="sample@sample.com")
+                        dl
+                            dt
+                                span 電話番号
+                                em *
+                            dd
+                                .inputBox
+                                    input(type="text" placeholder="")
+                        dl.msg
+                            dt
+                                span ご質問など
+                            dd
+                                .inputBox
+                                    textarea(placeholder="お問い合わせ内容をご記入ください。")
+                                aside.policy
+                                    p
+                                        span 個人情報の取り扱いに関しては
+                                        a(href="" target="_blank") 「プライバシーポリシー」
+                                        span をお読みいただき、同意のうえお問い合わせください。
+                                <div class="checkItem agreeCheck">
+                                    <label>
+                                        <span class="mwform-checkbox-field horizontal-item">
+                                            <label>
+                                                <input type="checkbox" name="agreeCheck[data][]" value="個人情報の取り扱い">
+                                                <span class="mwform-checkbox-field-text">個人情報の取り扱いについて同意する</span>
+                                            </label>
+                                        </span>
+                                    </label>
+                                </div>
+                        //- <div class="checkItem agreeCheck">
+                        //-     <label>
+                        //-         <span class="mwform-checkbox-field horizontal-item">
+                        //-             <label>
+                        //-                 <input type="checkbox" name="agreeCheck[data][]" value="個人情報の取り扱い" checked="checked">
+                        //-                 <span class="mwform-checkbox-field-text">個人情報の取り扱いについて同意する</span>
+                        //-             </label>
+                        //-         </span>
+                        //-         <input type="hidden" name="agreeCheck[separator]" value=",">
+                        //-         <input type="hidden" name="__children[agreeCheck][]" value="{&quot;\u500b\u4eba\u60c5\u5831\u306e\u53d6\u308a\u6271\u3044&quot;:&quot;\u500b\u4eba\u60c5\u5831\u306e\u53d6\u308a\u6271\u3044&quot;}">
+                        //-     </label>
+                        //- </div>
+                        .submitButton.confirmButton
+                            <input type="submit" value="送信内容確認" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+// △メイン△

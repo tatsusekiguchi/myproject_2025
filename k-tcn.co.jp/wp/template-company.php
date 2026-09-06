@@ -1,0 +1,60 @@
+<?php
+/*
+Template Name: 会社概要
+*/
+?>
+
+<?php get_header(); ?>
+
+<!-- ▽メイン▽-->
+<main id="company">
+	<div class="kv">
+		<div class="ttlBox">
+			<h1><span>COMPANY</span><em>会社概要</em></h1>
+		</div>
+		<div class="imgBox"></div>
+	</div>
+	<section id="secTop">
+		<h2><em>Company</em><span>会社概要</span></h2>
+		<section id="sec01">
+			<div class="cntWrap">
+				<h3>会社概要</h3>
+				<div class="infoBox">
+					<dl>
+						<dt>社名</dt>
+						<dd>共和テクニカル株式会社</dd>
+					</dl>
+					<dl>
+						<dt>住所</dt>
+						<dd>〒474-0057　愛知県大府市共和町炭焼7-1</dd>
+					</dl>
+					<dl>
+						<dt>電話/FAX</dt>
+						<dd>TEL 0562-45-4488　FAX 0562-45-4401</dd>
+					</dl>
+					<dl>
+						<dt>代表</dt>
+						<dd>大坪　健治</dd>
+					</dl>
+					<dl>
+						<dt>設立</dt>
+						<dd>平成20年11月</dd>
+					</dl>
+					<dl>
+						<dt>事業内容</dt>
+						<dd>平成20店舗・施設の椅子の張替・製造/メーカー既製品の販売</dd>
+					</dl>
+					<dl>
+						<dt>取扱いメーカー</dt>
+						<dd>クレス・プロシード・クオン・チェリー・マルカツ・他</dd>
+					</dl>
+				</div>
+				<div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.5387259700888!2d136.93863582921605!3d35.05286609663018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037c577866f44d%3A0x341231c07779f8be!2z5YWx5ZKM44OG44Kv44OL44Kr44Or77yI5qCq77yJ!5e0!3m2!1sja!2sus!4v1583662754130!5m2!1sja!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+				<div class="viewBox"><iframe src="https://www.google.com/maps/embed?pb=!4v1583662948451!6m8!1m7!1sF%3A-0t4Q7s3w2CU%2FXGp9ejBdhFI%2FAAAAAAADHL0%2FZ4mSl3AoESM4mDD4ewi_Hpcy7Rr9-e6YACLIBGAYYCw!2m2!1d35.05297833584223!2d136.9389385104614!3f20!4f0!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+			</div>
+		</section>
+	</section>
+</main>
+<!-- △メイン△-->
+
+<?php get_footer(); ?>

@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  padding: 11px 20px;
+  .headWrap {
+    display: block;
+  }
+  .logo {
+    width: 50px;
+  }
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 40px;
+    z-index: 10000;
+    span {
+      background: #ffffff;
+      position: absolute;
+      left: 50%;
+      width: 25px;
+      height: 2px;
+      transform: translateX(-50%);
+      transition: 0.4s;
+      &:nth-of-type(1) {
+        top: 10px;
+      }
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-of-type(3) {
+        bottom: 10px;
+      }
+    }
+    &.is-open {
+      span:nth-of-type(1) {
+        transform: translate(-50%, 9px) rotate(-45deg);
+      }
+      span:nth-of-type(2) {
+        opacity: 0;
+      }
+      span:nth-of-type(3) {
+        transform: translate(-50%, -9px) rotate(45deg);
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 80px 20px 120px;
+  font-size: 18px;
+  text-align: center;
+  background: #a4baaf;
+  transition: 0.6s;
+  &.active {
+    top: 0;
+  }
+  .navList {
+    width: 100%;
+    margin: 0 0 30px;
+    ul {
+      display: block;
+      li {
+        + li {
+          margin: 10px 0 0;
+        }
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .navItem {
+    margin: 0 0 20px;
+    ul {
+      li {
+        display: inline-block;
+        width: 25px;
+        + li {
+          margin: 0 0 0 15px;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  .headItem {
+    position: static;
+    display: block;
+    margin: 0 0 20px;
+    .language {
+      margin: 0 0 20px;
+      > * {
+        display: inline-block;
+        margin: 0 3px;
+      }
+      .languageLink {
+        a {
+          display: inline-block;
+        }
+      }
+    }
+    .volumeBox {
+      display: inline-block;
+      padding: 0 0 0 25px;
+      background: url("../image/common/header_volume.png") left center no-repeat;
+      background-size: 20px auto;
+      > * {
+        display: inline-block;
+        margin: 0 2px;
+      }
+      .volume {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  padding: 61px 0 0;
+}
+.pageTitle {
+  padding: 60px 0 40px;
+  h1 {
+    font-size: 40px;
+  }
+}
+.pageSecTtl {
+  margin: 0 0 40px;
+  h2 {
+    font-size: 40px;
+  }
+  .sub {
+    font-size: 30px;
+  }
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+.btnMore {
+  a {
+    padding: 8px 45px 8px 0;
+    background: url("../image/common/btn_more_arrow.png") right center no-repeat;
+    background-size: 25px auto;
+  }
+}
+.btnBack {
+  a {
+    padding: 8px 0 8px 45px;
+    background: url("../image/common/btn_back_arrow.png") left center no-repeat;
+    background-size: 25px auto;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+  }
+}

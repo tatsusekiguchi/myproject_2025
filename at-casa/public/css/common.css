@@ -1,0 +1,638 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #121c11;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #121c11;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.fontEn {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header .hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  width: 50px;
+  height: 40px;
+  z-index: 10000;
+}
+.header .hamburger .span {
+  background: #1c234d;
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburger .span:nth-of-type(1) {
+  top: 15px;
+}
+.header .hamburger .span:nth-of-type(2) {
+  opacity: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburger .span:nth-of-type(3) {
+  bottom: 15px;
+}
+.header .hamburger.is-open .span {
+  background: #ffffff;
+}
+.header .hamburger.is-open .span:nth-of-type(1) {
+  transform: translate(-50%, 4px) rotate(-45deg);
+}
+.header .hamburger.is-open .span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .hamburger.is-open .span:nth-of-type(3) {
+  transform: translate(-50%, -4px) rotate(45deg);
+}
+
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .header .headWrap > .logoBox {
+    width: 20%;
+    text-align: center;
+  }
+  .header .headWrap > .logoBox .ttl {
+    margin: 0 0 20px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0;
+  }
+  .header .headWrap > .logoBox .logo {
+    width: 95%;
+    max-width: 140px;
+    margin: 0 auto;
+  }
+  .header .headWrap > .logoBox .logo a {
+    display: block;
+  }
+  .header .headItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+    padding: 0 100px 0 20px;
+  }
+  .header .headItem .ul .li {
+    display: inline-block;
+    margin: 10px 15px 0 0;
+  }
+  .header .headItem .ul .li a {
+    display: inline-block;
+    font-size: clamp(12px, 1vw, 16px);
+    color: #ffffff;
+    letter-spacing: 0.02em;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+  }
+  .header.pageHeader {
+    background: #ffffff;
+  }
+  .header.pageHeader:not(.fixed) .headWrap {
+    align-items: center;
+    padding: 4px 0;
+  }
+  .header.pageHeader:not(.fixed) .logoBox .logo {
+    position: absolute;
+    left: 5%;
+    bottom: -40px;
+  }
+  .header.pageHeader:not(.fixed) .headItem .ul .li a {
+    color: #121c11;
+  }
+  .header.pageHeader:not(.fixed) .hamburger {
+    top: 20px;
+  }
+  .header.pageHeader:not(.fixed) .hamburger .span {
+    background: #1c234d;
+  }
+  .header.pageHeader:not(.fixed) .hamburger.is-open .span {
+    background: #ffffff;
+  }
+  .header.fixed {
+    background: #ffffff;
+  }
+  .header.fixed .headWrap {
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header.fixed .logoBox .ttl {
+    display: none;
+  }
+  .header.fixed .headItem .ul .li a {
+    color: #121c11;
+  }
+  .header.fixed .hamburger {
+    top: 20px;
+  }
+  .header.fixed .hamburger .span {
+    background: #1c234d;
+  }
+  .header.fixed .hamburger.is-open .span {
+    background: #ffffff;
+  }
+  .header.pageHeader.fixed .headWrap {
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header.pageHeader.fixed .logoBox .ttl {
+    display: none;
+  }
+  .header.pageHeader.fixed .headItem .ul .li a {
+    color: #121c11;
+  }
+  .header.pageHeader.fixed .hamburger {
+    top: 20px;
+  }
+  .header.pageHeader.fixed .hamburger .span {
+    background: #1c234d;
+  }
+  .header.pageHeader.fixed .hamburger.is-open .span {
+    background: #ffffff;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px 60px;
+  z-index: 999;
+  background: rgba(13, 15, 12, 0.8);
+  transition: 0.8s;
+}
+.navBox.active {
+  top: 0;
+  opacity: 1;
+}
+.navBox .navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  color: #ffffff;
+  letter-spacing: 0em;
+}
+.navBox .navPanel01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navBox .navPanel01 .leftBox {
+  width: 50%;
+}
+.navBox .navPanel01 .leftBox .logoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 0 0 120px;
+}
+.navBox .navPanel01 .leftBox .logoBox .logo {
+  width: 120px;
+}
+.navBox .navPanel01 .leftBox .info {
+  font-size: 14px;
+}
+.navBox .navPanel01 .leftBox .info .txt + .txt {
+  margin: 30px 0 0;
+}
+.navBox .navPanel01 .leftBox .info .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+.navBox .navPanel01 .leftBox .info .txt .telFax > * {
+  display: inline-block;
+}
+.navBox .navPanel01 .leftBox .info .txt .telFax .tel {
+  margin: 0 10px 0 0;
+}
+.navBox .navPanel01 .leftBox .info .txt .telFax a {
+  display: inline-block;
+}
+.navBox .navPanel01 .rightBox {
+  width: 50%;
+}
+.navBox .navPanel01 .rightBox .navList {
+  display: flex;
+}
+.navBox .navPanel01 .rightBox .navList .ul {
+  width: 45%;
+}
+.navBox .navPanel01 .rightBox .navList .ul .li + .li {
+  margin: 30px 0 0;
+}
+.navBox .navPanel01 .rightBox .navList .ul .li a {
+  display: inline-block;
+  color: #ffffff;
+}
+.navBox .navPanel01 .rightBox .navList .ul .subList {
+  padding: 30px 0 30px 15px;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageMain {
+  margin: 76px 0 0;
+}
+
+.pageKvPanel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.pageKvPanel .titleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 0 0 20px;
+  z-index: 1;
+}
+.pageKvPanel .titleBox .kvTitle p {
+  color: #65372c;
+}
+.pageKvPanel .titleBox .kvTitle h1 {
+  font-size: 36px;
+}
+.pageKvPanel .titleBox .logo {
+  position: absolute;
+  left: 4%;
+  bottom: -30px;
+  width: 100px;
+}
+.pageKvPanel .pageKv {
+  position: relative;
+  width: 80%;
+  height: 300px;
+}
+.pageKvPanel .pageKv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.pageSecTtlBox .sub {
+  margin: 0 0 5px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #121c11;
+}
+.pageSecTtlBox .pageSecTtl {
+  font-size: 40px;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 40%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 200px;
+}
+.btnMore a {
+  display: block;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #121c11;
+  background: #ffffff;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .mv {
+  position: relative;
+  height: 400px;
+}
+.footer .mv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer .footContact {
+  position: relative;
+  margin: -100px 0 60px;
+}
+.footer .footContact .secContainer {
+  padding: 40px 20px;
+  color: #ffffff;
+  background: #65372c;
+}
+.footer .footContact .secContainer .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer .footContact .secContainer .secBox .ttlBox .ttl01 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #edf1ec;
+}
+.footer .footContact .secContainer .secBox .ttlBox .ttl02 {
+  font-size: 34px;
+  color: #ffffff;
+}
+.footer .footContact .secContainer .secBox .txtBox .btnContact {
+  max-width: 260px;
+}
+.footer .footContact .secContainer .secBox .txtBox .btnContact a {
+  display: block;
+  padding: 0 60px 0 0;
+  color: #ffffff;
+  background: url(https://andone-architect.com/system_panel/uploads/images/footer_contact_arrow.png) right center no-repeat;
+  background-size: 50px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .secContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer .footContact .secContainer .secBox .ttlBox {
+    width: 35%;
+  }
+  .footer .footContact .secContainer .secBox .txtBox {
+    width: 65%;
+    padding: 0 0 15px;
+  }
+}
+.footer .footPanel {
+  position: relative;
+  padding: 0 0 20px;
+}
+.footer .footPanel .pagetop {
+  position: absolute;
+  bottom: 200px;
+  right: 5%;
+  width: 40px;
+  z-index: 99;
+  cursor: pointer;
+}
+.footer .footPanel .logoBox {
+  margin: 0 0 20px;
+}
+.footer .footPanel .logoBox .logo {
+  width: 100px;
+}
+.footer .footPanel .txt {
+  margin: 0 0 30px;
+}
+.footer .footPanel .txt .telFax > * {
+  display: inline-block;
+}
+.footer .footPanel .txt .telFax .tel {
+  margin: 0 10px 0 0;
+}
+.footer .footPanel .txt .telFax a {
+  display: inline-block;
+}
+.footer .footPanel .sns a {
+  display: inline-block;
+  width: 35px;
+}
+.footer .footPanel .copy {
+  margin: 40px 0 0;
+  text-align: right;
+}
+
+/*   モーダルウインドウ
+-------------------------------------------------- */
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 250px;
+}
+.modalContent > div {
+  overflow: auto;
+  height: 100%;
+}
+.modalContent .mdlBody {
+  padding: 30px 60px;
+  background: #ffffff;
+}
+.modalContent .mdlBody .dl .dt {
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+.modalContent .mdlBody .dl .dd + .dd {
+  margin: 20px 0 0;
+}
+.modalContent .mdlBody .dl .dd .txt {
+  line-height: 2;
+}
+.modalContent .mdlBody .dl .dd .span {
+  display: inline-block;
+}
+.modalContent .mdlBody .dl .dd a {
+  display: inline-block;
+}
+.modalContent .mdlClose {
+  position: relative;
+  right: -20px;
+  text-align: right;
+}
+.modalContent .mdlClose .mdlCloseBtn {
+  display: inline-block;
+  width: 25px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::before {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

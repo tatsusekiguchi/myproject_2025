@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logo"><a href="/">
+					<div><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+				</a></div>
+			<div class="navBox">
+				<div class="navList">
+					<div class="ul">
+						<div class="li"><a href="/">
+								<div>
+									<p>Home</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="feature">
+								<div>
+									<p>Feature</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="hotellist">
+								<div>
+									<p>Hotel List</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="special">
+								<div>
+									<p>Eternity HOTEL SHINAGAWA</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="ul">
+						<div class="li"><a href="guide">
+								<div>
+									<p>Guide</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="bloglist">
+								<div>
+									<p>News</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="company">
+								<div>
+									<p>About Us</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="contact">
+								<div>
+									<p>Contact</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="navItem">
+					<div class="dl accord">
+						<div class="dt">
+							<p>EN｜ZH｜KO｜JP</p>
+						</div>
+						<div class="dd">
+							<div class="ul">
+								<div class="li"><a href="https://translate.google.com/translate?sl=ja&amp;tl=en&amp;u=https://s-10057340.smooooth.jp" target="_blank" rel="noopener">
+										<div>
+											<p>EN</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="https://translate.google.com/translate?sl=ja&amp;tl=zh&amp;u=https://s-10057340.smooooth.jp" target="_blank" rel="noopener">
+										<div>
+											<p>ZH</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="https://translate.google.com/translate?sl=ja&amp;tl=ko&amp;u=https://s-10057340.smooooth.jp" target="_blank" rel="noopener">
+										<div>
+											<p>KO</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="https://s-10057340.smooooth.jp" target="_blank" rel="noopener">
+										<div>
+											<p>JP</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="dl accord">
+						<div class="dt">
+							<p>SNS</p>
+						</div>
+						<div class="dd">
+							<div class="ul">
+								<div class="li"><a href="https://www.instagram.com/eternity8hotel/" target="_blank" rel="noopener">
+										<div>
+											<p>INSTAGRAM</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="https://www.tiktok.com/@eternityhotel?lang=ja" target="_blank" rel="noopener">
+										<div>
+											<p>TIKTOK</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="https://www.facebook.com/EternityHotelSeries/" target="_blank" rel="noopener">
+										<div>
+											<p>Facebook</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="https://x.com/EternityHotel" target="_blank" rel="noopener">
+										<div>
+											<p>X</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navReserve"><a href="https://etenity8hotel.airhost.co/ja/houses/" target="_blank" rel="noopener">
+						<div>
+							<p>Make a Reservation</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="hotelMain main bgBlue">
+		<div class="pageTitleContainer">
+			<div class="secWrap">
+				<div class="pageTitleBox">
+					<div class="sub garamond">
+						<p class="em">H</p>
+						<p>otel List</p>
+					</div>
+					<div class="pageTitle">
+						<h1>ホテル一覧</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hotelListSection">
+			<div class="secWrap">
+				<div class="secPanelList">
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_1_1.png" alt=""></div>
+								<div class="ul">
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_1_2.png" alt=""></div>
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_1_3.png" alt=""></div>
+								</div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlHead">
+									<div class="nameBox garamond">
+										<h2>Eternity HOTEL SHINAGAWA</h2>
+									</div>
+									<div class="numBox">
+										<div class="dl">
+											<div class="dt">
+												<p>ご利用人数</p>
+											</div>
+											<div class="dd">
+												<p class="em">1</p>
+												<p>名 ～</p>
+												<p class="em">12</p>
+												<p>名</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="addressBox">
+									<p>〒140-0015 東京都品川区西大井１丁目７-３４</p>
+								</div>
+								<div class="descriptionBox">
+									<p>【西大井駅徒歩1分】<br>品川エリアの駅チカホテル。恵比寿・渋谷・新宿アクセス抜群です。</p>
+								</div>
+								<div class="featuresBox">
+									<div class="ttl garamond">
+										<p>■ Features</p>
+									</div>
+									<div class="inner">
+										<div class="listBox">
+											<div class="list list01">
+												<div class="ul">
+													<div class="li">
+														<p>大人数OK</p>
+													</div>
+													<div class="li">
+														<p>駅の近く</p>
+													</div>
+													<div class="li">
+														<p>Wifi</p>
+													</div>
+													<div class="li">
+														<p>水洗トイレ</p>
+													</div>
+												</div>
+											</div>
+											<div class="list list02">
+												<div class="ul">
+													<div class="li">
+														<p>キッチン</p>
+													</div>
+													<div class="li">
+														<p>洗濯機</p>
+													</div>
+													<div class="li">
+														<p>電子レンジあり</p>
+													</div>
+													<div class="li">
+														<p>冷蔵庫</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btnMore garamond"><a href="special">
+												<div>
+													<p>Read More</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_2_1.png" alt=""></div>
+								<div class="ul">
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_2_2.png" alt=""></div>
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_2_3.png" alt=""></div>
+								</div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlHead">
+									<div class="nameBox garamond">
+										<h2>Eternity Marina HOUSE ONJUKU</h2>
+									</div>
+									<div class="numBox">
+										<div class="dl">
+											<div class="dt">
+												<p>ご利用人数</p>
+											</div>
+											<div class="dd">
+												<p class="em">1</p>
+												<p>名 ～</p>
+												<p class="em">16</p>
+												<p>名</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="addressBox">
+									<p>〒299-5106 千葉県夷隅郡御宿町須賀５０３-２</p>
+								</div>
+								<div class="descriptionBox">
+									<p>【御宿駅徒歩5分】<br>駐車場付き！最大16名様ご利用可能の海近くの魅力溢れるサーファーズハウス！</p>
+								</div>
+								<div class="featuresBox">
+									<div class="ttl garamond">
+										<p>■ Features</p>
+									</div>
+									<div class="inner">
+										<div class="listBox">
+											<div class="list list03">
+												<div class="ul">
+													<div class="li">
+														<p>一軒家貸切</p>
+													</div>
+													<div class="li">
+														<p>大人数OK</p>
+													</div>
+													<div class="li">
+														<p>駅の近く</p>
+													</div>
+													<div class="li">
+														<p>駐車場あり</p>
+													</div>
+												</div>
+											</div>
+											<div class="list list04">
+												<div class="ul">
+													<div class="li">
+														<p>Wifi</p>
+													</div>
+													<div class="li">
+														<p>キッチン</p>
+													</div>
+													<div class="li">
+														<p>シャワールーム</p>
+													</div>
+													<div class="li">
+														<p>電子レンジ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btnMore garamond"><a href="marinaHouseOnjuku">
+												<div>
+													<p>Read More</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_3_1.png" alt=""></div>
+								<div class="ul">
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_3_2.png" alt=""></div>
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_3_3.png" alt=""></div>
+								</div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlHead">
+									<div class="nameBox garamond">
+										<h2>GrAce HOTEL HANEDA</h2>
+									</div>
+									<div class="numBox">
+										<div class="dl">
+											<div class="dt">
+												<p>ご利用人数</p>
+											</div>
+											<div class="dd">
+												<p class="em">1</p>
+												<p>名 ～</p>
+												<p class="em">6</p>
+												<p>名</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="addressBox">
+									<p>〒144-0043 東京都大田区羽田３丁目２１-１４</p>
+								</div>
+								<div class="descriptionBox">
+									<p>【穴守稲荷駅徒歩10分】<br>羽田空港近くにあるペットも一緒に泊まれるモダンな一軒家。</p>
+								</div>
+								<div class="featuresBox">
+									<div class="ttl garamond">
+										<p>■ Features</p>
+									</div>
+									<div class="inner">
+										<div class="listBox">
+											<div class="list list02">
+												<div class="ul">
+													<div class="li">
+														<p>一棟貸し</p>
+													</div>
+													<div class="li">
+														<p>ペットOK</p>
+													</div>
+													<div class="li">
+														<p>駅の近く</p>
+													</div>
+													<div class="li">
+														<p>ダブルベッドx3</p>
+													</div>
+												</div>
+											</div>
+											<div class="list list01">
+												<div class="ul">
+													<div class="li">
+														<p>Wifi</p>
+													</div>
+													<div class="li">
+														<p>キッチン</p>
+													</div>
+													<div class="li">
+														<p>シャワールーム</p>
+													</div>
+													<div class="li">
+														<p>電子レンジ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btnMore garamond"><a href="graceHotelHaneda">
+												<div>
+													<p>Read More</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_4_1.png" alt=""></div>
+								<div class="ul">
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_4_2.png" alt=""></div>
+									<div class="li"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/hotel_list_4_3.png" alt=""></div>
+								</div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlHead">
+									<div class="nameBox garamond">
+										<h2>GrAce HOUSE EDOGAWA</h2>
+									</div>
+									<div class="numBox">
+										<div class="dl">
+											<div class="dt">
+												<p>ご利用人数</p>
+											</div>
+											<div class="dd">
+												<p class="em">1</p>
+												<p>名 ～</p>
+												<p class="em">10</p>
+												<p>名</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="addressBox">
+									<p>〒132-0015 東京都江戸川区西瑞江３丁目３０-１６０</p>
+								</div>
+								<div class="descriptionBox">
+									<p>【一之江駅徒歩9分】<br>成田空港やディズニーから約28分とアクセス良好！</p>
+								</div>
+								<div class="featuresBox">
+									<div class="ttl garamond">
+										<p>■ Features</p>
+									</div>
+									<div class="inner">
+										<div class="listBox">
+											<div class="list list04">
+												<div class="ul">
+													<div class="li">
+														<p>一軒家貸切</p>
+													</div>
+													<div class="li">
+														<p>大人数OK</p>
+													</div>
+													<div class="li">
+														<p>駅の近く</p>
+													</div>
+													<div class="li">
+														<p>ダブルベッドx4</p>
+													</div>
+												</div>
+											</div>
+											<div class="list list03">
+												<div class="ul">
+													<div class="li">
+														<p>着物無料</p>
+													</div>
+													<div class="li">
+														<p>キッチン</p>
+													</div>
+													<div class="li">
+														<p>お風呂</p>
+													</div>
+													<div class="li">
+														<p>電子レンジ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btnMore garamond"><a href="graceHouseEdogawa">
+												<div>
+													<p>Read More</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox center">
+					<div class="sub garamond">
+						<p class="em">C</p>
+						<p>ontact</p>
+						<p class="span">/</p>
+						<p class="em">R</p>
+						<p>eservation</p>
+					</div>
+					<div class="pageSecTtl">
+						<h2>お問い合わせ・ご予約</h2>
+					</div>
+				</div>
+				<div class="contactPanel">
+					<div class="contactBox">
+						<div class="dl">
+							<div class="dt garamond">
+								<p>Contact</p>
+							</div>
+							<div class="dd">
+								<div class="btnContact garamond"><a href="contact">
+										<div>
+											<p>Contact Form</p>
+										</div>
+									</a></div>
+								<div class="tel">
+									<p>お電話でのお問い合わせ</p><a class="garamond" href="tel:0368217070">
+										<div>
+											<p>03-6821-7070</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contactBox">
+						<div class="dl">
+							<div class="dt garamond">
+								<p>Reservation</p>
+							</div>
+							<div class="dd">
+								<div class="btnReservation garamond"><a href="https://etenity8hotel.airhost.co/ja/houses/" target="_blank" rel="noopener">
+										<div>
+											<p>Make a Reservation</p>
+										</div>
+									</a></div>
+								<div class="txt">
+									<p>ご予約はこちらのページより<br>お受けしております。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="logo"><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txtBox">
+						<div class="footNav">
+							<div class="ul">
+								<div class="li"><a href="company">
+										<div>
+											<p>About Us</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="guide">
+										<div>
+											<p>Guide/Faq</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="txt">
+							<p>東京都品川区大井2-3-1 　フォーレストビル2F</p><a href="tel:0368217070">
+								<div>
+									<p>TEL:03-6821-7070</p>
+								</div>
+							</a>
+						</div>
+						<div class="sns">
+							<div class="ul">
+								<div class="li"><a href="https://www.instagram.com/eternity8hotel/" target="_blank" rel="noopener">
+										<div><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/icon_instagram.png" alt=""></div>
+									</a></div>
+								<div class="li"><a href="https://www.tiktok.com/@eternityhotel?lang=ja" target="_blank" rel="noopener">
+										<div><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/icon_tiktok.png" alt=""></div>
+									</a></div>
+								<div class="li"><a href="https://www.facebook.com/EternityHotelSeries/" target="_blank" rel="noopener">
+										<div><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/icon_facebook.png" alt=""></div>
+									</a></div>
+								<div class="li"><a href="https://x.com/EternityHotel" target="_blank" rel="noopener">
+										<div><img src="https://s-10057340.smooooth.jp/system_panel/uploads/images/icon_x.png" alt=""></div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2025 Zero.One合同会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: $SPfontSize;
+}
+a:hover {
+  text-decoration: none;
+}
+/*改行*/
+.pcBreak {
+  display: none;
+}
+.spBreak {
+  display: block;
+}
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+.spHidden {
+  display: none;
+}
+#sideBtn {
+  display: none;
+}
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  padding: 50px 20px 0;
+  .logo {
+    width: 158px;
+  }
+  .headTitle {
+    display: none;
+  }
+  .headItem {
+    ul {
+      display: flex;
+      li {
+        + li {
+          margin: 0 0 0 25px;
+        }
+        a {
+          display: block;
+        }
+      }
+      .insta {
+        width: 20px;
+      }
+      .line {
+        width: 20px;
+      }
+      .youtube {
+        width: 25px;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 100px 20px 40px;
+  .logoBox {
+    max-width: 335px;
+    margin: 0 auto 100px;
+    .sub {
+      max-width: 258px;
+      margin: 20px auto 0;
+    }
+  }
+  .footBox {
+    .left {
+      display: block;
+      font-size: 10px;
+      .copy {
+        margin: 0 8 5px;
+      }
+    }
+    .right {
+      ul {
+        display: flex;
+        li {
+          + li {
+            margin: 0 0 0 25px;
+          }
+          a {
+            display: block;
+          }
+        }
+        .insta {
+          width: 20px;
+        }
+        .line {
+          width: 20px;
+        }
+        .youtube {
+          width: 25px;
+        }
+      }
+    }
+  }
+}

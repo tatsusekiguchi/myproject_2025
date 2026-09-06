@@ -1,0 +1,141 @@
+// ▽メイン▽
+main#contactConfirm
+     #section__contact
+        .contactSection
+            .sectionTtl
+                h1 お問い合わせ
+            .contactStep
+                ol
+                    li
+                        span.Outfit 01
+                        em 入力
+                    li.current
+                        span.Outfit 02
+                        em 確認
+                    li
+                        span.Outfit 03
+                        em 送信
+            .contactPanel
+                .formConfirm
+                    <form method="post" action="" enctype="multipart/form-data">
+                        <dl class="radioForm">
+                        <dt><span>応募種別*</span></dt>
+                        <dd>
+                        <div class="radioArea">新卒採用
+                        <input type="hidden" name="radio_kind" value="新卒採用">
+
+                        <input type="hidden" name="__children[radio_kind][]" value="{&quot;\u65b0\u5352\u63a1\u7528&quot;:&quot;\u65b0\u5352\u63a1\u7528&quot;,&quot;\u4e2d\u9014\u63a1\u7528&quot;:&quot;\u4e2d\u9014\u63a1\u7528&quot;}">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl class="radioForm">
+                        <dt><span>希望職種*</span></dt>
+                        <dd>
+                        <div class="radioArea">アシスタント
+                        <input type="hidden" name="radio_job" value="アシスタント">
+
+                        <input type="hidden" name="__children[radio_job][]" value="{&quot;\u30b9\u30bf\u30a4\u30ea\u30b9\u30c8&quot;:&quot;\u30b9\u30bf\u30a4\u30ea\u30b9\u30c8&quot;,&quot;\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8&quot;:&quot;\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8&quot;,&quot;\u305d\u306e\u4ed6&quot;:&quot;\u305d\u306e\u4ed6&quot;}">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>お名前※</span></dt>
+                        <dd>
+                        <div class="inputBox">お名前
+                        <input type="hidden" name="name" value="お名前">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>在籍校/出身校*</span></dt>
+                        <dd>
+                        <div class="inputBox">在籍校/出身校
+                        <input type="hidden" name="school" value="在籍校/出身校">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>卒業見込み年度</span></dt>
+                        <dd>
+                        <div class="inputBox">卒業見込み年度
+                        <input type="hidden" name="graduation" value="卒業見込み年度">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>経験年数</span></dt>
+                        <dd>
+                        <div class="inputBox">2
+                        <input type="hidden" name="exp" value="2">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>生年月日</span></dt>
+                        <dd>
+                        <div class="birthBox">
+                        <ul>
+                        <li>
+                                            1986
+                        <input type="hidden" name="year" value="1986">
+
+                                        </li>
+                        <li>
+                                            3
+                        <input type="hidden" name="month" value="3">
+
+                                        </li>
+                        <li>
+                                            20
+                        <input type="hidden" name="day" value="20">
+
+                                        </li>
+                        </ul></div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>メールアドレス*</span></dt>
+                        <dd>
+                        <div class="inputBox">tatsu.sekiguchi@gmail.com
+                        <input type="hidden" name="mail" value="tatsu.sekiguchi@gmail.com">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>電話番号*</span></dt>
+                        <dd>
+                        <div class="inputBox">00012223333
+                        <input type="hidden" name="tel" value="00012223333">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>ご住所</span></dt>
+                        <dd>
+                        <div class="inputBox">住所
+                        <input type="hidden" name="address" value="住所">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl>
+                        <dt><span>SNSアカウント(任意)</span></dt>
+                        <dd>
+                        <div class="inputBox">SNSアカウント
+                        <input type="hidden" name="sis" value="SNSアカウント">
+                        </div>
+                        </dd>
+                        </dl>
+                        <dl class="msg">
+                        <dt><span>備考</span></dt>
+                        <dd>
+                        <div class="inputBox">備考備考備考備考備考備考備考備考備考備考備考
+                        <input type="hidden" name="msg" value="備考備考備考備考備考備考備考備考備考備考備考">
+                        </div>
+                        </dd>
+                        </dl>
+                        <div class="submitButton">
+                            <div class="send"><input type="submit" name="mwform_submitButton" value="送信"></div>
+                            <div class="back"><button type="submit" name="submitBack" value="" class="btnBack">修正</button></div>
+                        </div>
+                        <input type="hidden" id="mw_wp_form_token" name="mw_wp_form_token" value="0bac259e45"><input type="hidden" name="_wp_http_referer" value="/wacca_recruit_confirm/"><input type="hidden" name="mw-wp-form-form-id" value="137"><input type="hidden" name="mw-wp-form-form-verify-token" value="b7cf7293657980f99b05759f94933746597e7545"></form>
+// △メイン△

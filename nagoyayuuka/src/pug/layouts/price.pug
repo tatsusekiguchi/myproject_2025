@@ -1,0 +1,293 @@
+// ▽メイン▽
+main#price
+	.topContainer
+		.topKv
+			img(src=(root_path || '') + "image/price/top_kv_pc.png", class="switch" alt="")
+		.topTitle
+			h1 料金案内
+			span りょうきんあんない
+	.priceSection
+		.priceContainer.tabContainer
+				.tabPanel
+					.tabList
+						ul
+							li.tabBtn.active 1号認定
+							li.tabBtn 2号認定
+							li.tabBtn 3号認定
+					.tabItem
+						.icon01
+							img(src=(root_path || '') + "image/price/bg_icon_01.png", alt="")
+						.secPanel
+							dl
+								dt 施設維持費について
+								dd
+									.facilityPrice
+										dl
+											dt
+												span 施設維持費
+											dd
+												p 00,0000円
+												aside
+													p ※入園時にいただきます
+							dl
+								dt 月々の利用料について
+								dd
+									.monthlyTable.monthlyTable--01
+										table
+											thead
+												tr
+													th 階層区分
+													th 保育料
+													th 教育充実費
+													th
+														| 給食費
+														span （主食費）
+													th
+														| 給食費
+														span （副食費）
+													th 保健衛生費
+													th バス送迎費
+													th 口座振替手数料
+											tbody
+												tr
+													th 全階層
+													td
+														span 幼児教育・保育の無償化により0円
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+													td
+														p 0円
+													td
+														p  0,000円/月
+														span （利用者のみ）
+													td
+														p  0,000円/月
+							dl
+								dt 延長保育について
+								dd
+									.extensionPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（14:30〜18:30）
+													.right
+														p 00,0000円
+							dl
+								dt 一日預かりについて
+								dd
+									.dayPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（14:30〜18:30）
+													.right
+														p 00,0000円
+							dl
+								dt ご購入いただく用品について
+								dd
+									.purchaseTable
+										table
+											tbody
+												tr
+													th
+														| 制服一式
+														span （夏冬用・カバン等）
+													td 00,0000円〜
+												tr
+													th
+														| 体操服・スモック一式
+														span （夏冬用）
+													td 00,0000円〜
+												tr
+													th 新年度用品
+													td 00,0000円〜
+					.tabItem
+						.icon02
+							img(src=(root_path || '') + "image/price/bg_icon_02.png", alt="")
+						.secPanel
+							dl
+								dt 施設維持費について
+								dd
+									.facilityPrice
+										dl
+											dt
+												span 施設維持費
+											dd
+												p 00,0000円
+												aside
+													p ※入園時にいただきます
+							dl
+								dt 月々の利用料について
+								dd
+									.monthlyTable.monthlyTable--02
+										table
+											thead
+												tr
+													th 階層区分
+													th 保育料
+													th 教育充実費
+													th
+														| 給食費
+														span （主食費）
+													th
+														| 給食費
+														span （副食費）
+													th 口座振替手数料
+											tbody
+												tr
+													th 全階層
+													td
+														span 幼児教育・保育の無償化により0円
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+							dl
+								dt 延長保育について
+								dd
+									.extensionPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・早朝（7:30〜8:30）
+													.right
+														p 00,0000円
+												.box
+													.left
+														p ・延長（16:30〜18:30）
+													.right
+														p 00,0000円
+							dl
+								dt 一日預かりについて
+								dd
+									.dayPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（14:30〜18:30）
+													.right
+														p 00,0000円
+							dl
+								dt ご購入いただく用品について
+								dd
+									.purchaseTable
+										table
+											tbody
+												tr
+													th
+														| 制服一式
+														span （夏冬用・カバン等）
+													td 00,0000円〜
+												tr
+													th
+														| 体操服・スモック一式
+														span （夏冬用）
+													td 00,0000円〜
+												tr
+													th 新年度用品
+													td 00,0000円〜
+					.tabItem
+						.icon03
+							img(src=(root_path || '') + "image/price/bg_icon_03.png", alt="")
+						.secPanel
+							dl
+								dt 施設維持費について
+								dd
+									.facilityPrice
+										dl
+											dt
+												span 施設維持費
+											dd
+												p 00,0000円
+												aside
+													p ※入園時にいただきます
+							dl
+								dt 月々の利用料について
+								dd
+									.monthlyTable.monthlyTable--03
+										table
+											thead
+												tr
+													th 階層区分
+													th 保育料
+													th 教育充実費
+													th 保健衛生費
+													th 口座振替手数料
+											tbody
+												tr
+													th 全階層
+													td
+														span 所得に応じ市町村が利用者負担額を決定
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+													td
+														p  0,000円/月
+							dl
+								dt 延長保育について
+								dd
+									.extensionPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・早朝（7:30〜8:30）
+													.right
+														p 00,0000円
+												.box
+													.left
+														p ・延長（16:30〜18:30）
+													.right
+														p 00,0000円
+							dl
+								dt 一日預かりについて
+								dd
+									.dayPrice
+										dl
+											dt
+												span 利用料
+											dd
+												.box
+													.left
+														p ・月～金（14:30〜18:30）
+													.right
+														p 00,0000円
+							dl
+								dt ご購入いただく用品について
+								dd
+									.purchaseTable
+										table
+											tbody
+												tr
+													th
+														| エプロン等
+													td 00,0000円〜
+												tr
+													th
+														| 体操服・スモック一式
+														span （夏冬用）
+													td 00,0000円〜
+// △メイン△

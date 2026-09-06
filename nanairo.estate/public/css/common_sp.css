@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+.spBreak {
+  display: block;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 999;
+}
+.header .headTtl,
+.header .headNav,
+.header .headItem {
+  display: none;
+}
+.header .logoBox {
+  width: 120px;
+}
+.header .hamburger {
+  top: 5px;
+}
+.header .sideReserve {
+  display: none;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 48px 0 0;
+}
+
+.section {
+  padding: 0;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 40px;
+}
+.pageSecTtlBox .pageSecTtl {
+  padding: 30px 0 0;
+  font-size: 24px;
+  background: url("../image/common/page_sec_ttl_icon_sp.png") center top no-repeat;
+  background-size: 30px auto;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+.btnMore {
+  max-width: 200px;
+}
+
+.list__pagination {
+  margin: 40px 0 0;
+}
+
+.caseSliderPanel {
+  margin: 0 0 60px;
+}
+.caseSliderPanel .caseSlider .slick-slide {
+  margin: 0;
+  padding: 0;
+}
+.caseSliderPanel .caseSlider .slick-slide img {
+  height: 60vw;
+}
+.caseSliderPanel .caseSlider .slick-dots {
+  bottom: -30px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 60px 0 40px;
+}
+.footer .footContact .secWrap01 {
+  position: relative;
+}
+.footer .footContact .icons {
+  display: none;
+}
+.footer .footContact .contactItem {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .footContact .contactItem > * {
+  width: 100%;
+  padding: 20px 0;
+}
+.footer .footContact .contactItem > * + * {
+  border-left: none;
+  border-top: 1px dashed #000000;
+}
+.footer .footContact .contactItem dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+.footer .footContact .contactItem .reserveBox a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #a46305;
+}
+.footer .footContact .contactItem .telBox a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 30px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  background: url("../image/common/header_tel.png") left center no-repeat;
+  background-size: 25px auto;
+}
+.footer .footContact .contactItem .mailBox a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: url("../image/common/btn_more_arrow_white.png") right 15px center no-repeat #77bd5a;
+}
+.footer .footContact .contactItem .mailBox a span {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  background: url("../image/common/header_mail.png") left center no-repeat;
+  background-size: 15px auto;
+}
+.footer .footPanel {
+  padding: 40px 0 20px;
+}
+.footer .footPanel .footBox {
+  display: block;
+  margin: 0 0 15px;
+}
+.footer .footPanel .footBox .left {
+  margin: 0 0 20px;
+}
+.footer .footPanel .footBox .left .logo {
+  width: 200px;
+  margin: 0 0 15px;
+}
+.footer .footPanel .footBox .right .bnr {
+  width: 240px;
+}
+.footer .footPanel .copy {
+  margin: 10px 0 0;
+}
+.footer .btmLinkPanel {
+  display: none;
+}
+
+/*   モーダルウインドウ
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .modalBoxWrap {
+    padding: 50px 10px;
+  }
+
+  .modalContent {
+    max-width: 580px;
+  }
+  .modalContent .mdlBody {
+    padding: 20px;
+  }
+  .modalContent .mdlBody .ttl {
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+  .modalContent .mdlClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

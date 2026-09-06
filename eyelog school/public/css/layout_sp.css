@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvPanel {
+  height: 100svh;
+  background: url("../image/top/top_kv_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top .topKvPanel .topKvTitle {
+  padding: 40px 0 0;
+}
+#top .topKvPanel .topKvTitle .topTxt {
+  top: -30px;
+  max-width: 200px;
+}
+#top .topKvPanel .topKvTitle .logo {
+  width: calc(100% - 40px);
+  margin: 0 auto 15px;
+}
+#top .topKvPanel .topKvTitle .title {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+#top .topKvPanel .topKvEntry {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+#top .topKvPanel .topKvEntry a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+#top .topKvPanel .topKvEntry em {
+  margin: 0 15px 0 0;
+  font-size: 20px;
+}
+#top .topKvPanel .topKvEntry span {
+  font-size: 12px;
+}
+#top .topKvPanel .kvScroll {
+  display: none;
+}
+#top .topKvPanel .textPanel {
+  width: 100%;
+  height: 50px;
+}
+#top .topKvPanel .textPanel .loopText {
+  font-size: 16px;
+}
+#top .topKvPanel .slidePanel {
+  top: 140px;
+  bottom: auto;
+}
+#top .topKvPanel .slidePanel .slideTxt ul {
+  height: 50px;
+}
+#top .topKvPanel .slidePanel .slideTxt ul li {
+  width: 150vw;
+  max-width: 900px;
+  min-width: 800px;
+  margin: 0 10px;
+}
+#top #section__about {
+  padding: 0;
+  text-align: left;
+}
+#top #section__about .slidePanel > .secTtl {
+  display: block;
+  padding: 60px 20px 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+#top #section__about .slidePanel .slideBox ul li {
+  width: 50%;
+}
+#top #section__about .txtPanel .txtBox {
+  padding: 40px 20px 80px;
+}
+#top #section__about .txtPanel .secTtl {
+  display: none;
+}
+#top #section__about .txtPanel .txt01 {
+  font-size: 18px;
+}
+#top #section__about .txtPanel .txt02 {
+  margin: 30px 0 0;
+}
+#top #section__about .txtPanel .txt03 {
+  margin: 40px 0 0;
+}
+#top #section__problem {
+  padding: 60px 20px 20px;
+}
+#top #section__problem::before {
+  height: calc(100% - 240px);
+}
+#top #section__problem .problemContainer .problemMvBox .title {
+  width: 75%;
+}
+#top #section__problem .problemContainer .problemTxtBox {
+  padding: 40px 20px 50px;
+}
+#top #section__problem .problemContainer .problemTxtBox::before {
+  width: 30px;
+  height: 30px;
+}
+#top #section__problem .problemContainer .problemTxtBox .title {
+  max-width: 240px;
+  margin: 0 0 30px;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li .left {
+  width: 35px;
+  min-height: 65px;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li .left .check {
+  width: 13px;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li .right {
+  width: calc(100% - 35px);
+  padding: 10px 0 10px 20px;
+  font-size: 13px;
+}
+#top #section__problem .problemContainer .problemTxtBox .message {
+  max-width: 200px;
+  margin: 30px 0 0;
+}
+#top #section__point {
+  position: relative;
+  padding: 120px 0 120px 40px;
+}
+#top #section__point::before {
+  width: 20px;
+}
+#top #section__point .secBoxList .secBox + .secBox {
+  margin: 60px 0 0;
+}
+#top #section__point .secBoxList .secBox .txtBox {
+  margin: 25px 0 0;
+  padding: 15px 0 0;
+}
+#top #section__point .secBoxList .secBox .txtBox .point {
+  margin: 0 0 15px;
+  padding: 2px 4px;
+  font-size: 13px;
+}
+#top #section__point .secBoxList .secBox .txtBox .txt {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+#top #section__point .secBoxList .secBox .photo {
+  position: relative;
+  height: 180px;
+}
+#top #section__point .secBoxList .secBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top #section__curriculum {
+  padding: 60px 20px 100px;
+}
+#top #section__curriculum::before {
+  height: calc(100% - 400px);
+}
+#top #section__curriculum .secTtlBox {
+  display: none;
+}
+#top #section__curriculum .topTxt {
+  margin: 0 0 60px;
+  font-size: 15px;
+}
+#top #section__curriculum .secPanel + .secPanel {
+  margin: 70px 0 0;
+}
+#top #section__curriculum .secPanel .pHead {
+  padding: 20px;
+}
+#top #section__curriculum .secPanel .pHead .num {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 30px;
+}
+#top #section__curriculum .secPanel .pHead .pTtl {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+#top #section__curriculum .secPanel .pBody {
+  padding: 30px 20px;
+}
+#top #section__curriculum .secPanel .pBody .ttlEn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 10px;
+}
+#top #section__curriculum .secPanel .pBody .ttl {
+  margin: 0 0 25px;
+  font-size: 14px;
+}
+#top #section__curriculum .secPanel .pBody .box dl + dl {
+  margin: 30px 0 0;
+}
+#top #section__curriculum .secPanel .pBody .box dl dt {
+  margin: 0 0 10px;
+}
+#top #section__curriculum .copy {
+  margin: 80px 0 0;
+}
+#top #section__teacher {
+  padding: 0 20px;
+}
+#top #section__teacher::before {
+  width: 20px;
+  height: calc(100% - 440px);
+}
+#top #section__teacher::after {
+  width: 20px;
+  height: calc(100% - 440px);
+}
+#top #section__teacher .teacherContainer {
+  padding: 80px 20px;
+}
+#top #section__teacher .teacherContainer .secTtlBox {
+  margin: 0 0 90px;
+  text-align: center;
+}
+#top #section__teacher .teacherContainer .secTtlBox .secTtl {
+  margin: 0 0 5px;
+  font-size: 42px;
+}
+#top #section__teacher .teacherContainer .secTtlBox .sub {
+  font-size: 15px;
+}
+#top #section__teacher .teacherContainer .secTtlBox .sub em {
+  font-size: 26px;
+}
+#top #section__teacher .teacherListContainer {
+  margin: 0 0 80px;
+}
+#top #section__teacher .teacherListPanel .pTtl {
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 20px;
+}
+#top #section__teacher .teacherListPanel .teacherList--01 {
+  padding: 30px 20px 0;
+}
+#top #section__teacher .teacherListPanel .teacherList--01 ul li {
+  position: relative;
+}
+#top #section__teacher .teacherListPanel .teacherList--01 ul li + li {
+  margin: 30px 0 0;
+}
+#top #section__teacher .teacherListPanel .teacherList--02 {
+  padding: 0;
+}
+#top #section__teacher .teacherListPanel .teacherList--02 ul li {
+  position: relative;
+}
+#top #section__teacher .teacherListPanel .teacherList--02 .col1 {
+  padding: 80px 20px 0;
+}
+#top #section__teacher .teacherListPanel .teacherList--02 .col2,
+#top #section__teacher .teacherListPanel .teacherList--02 .col3 {
+  overflow-x: scroll;
+  display: flex;
+  gap: 0 40px;
+  padding: 80px 0 0 20px;
+}
+#top #section__teacher .teacherListPanel .teacherList--02 .col2 li,
+#top #section__teacher .teacherListPanel .teacherList--02 .col3 li {
+  min-width: calc(100vw - 150px);
+}
+#top #section__teacher .teacherListPanel .teacherList ul .area {
+  top: -40px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+#top #section__teacher .teacherListPanel .teacherList ul .name {
+  left: -20px;
+  font-size: 10px;
+}
+#top #section__teacher .teacherListPanel .teacherList ul dl {
+  padding: 10px 0 0;
+  text-align: left;
+}
+#top #section__teacher .teacherListPanel .teacherList ul dl dt {
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+#top #section__teacher .teacherListPanel .teacherList ul dl dd {
+  font-size: 20px;
+}
+#top #section__teacher .morePanel .txtBox {
+  padding: 20px 0 0;
+}
+#top #section__teacher .morePanel .txtBox .ttl01 {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+#top #section__teacher .morePanel .txtBox .ttl02 {
+  font-size: 20px;
+}
+#top #section__case .titlePanel {
+  padding: 80px 20px 30px;
+}
+#top #section__case .titlePanel .secTtlBox .secTtl {
+  font-size: 42px;
+}
+#top #section__case .titlePanel .secTtlBox .sub {
+  font-size: 15px;
+}
+#top #section__case .casePanel .secBox {
+  padding: 75px 0;
+}
+#top #section__case .casePanel .secBox .left {
+  width: 100%;
+  padding: 30px 20px;
+}
+#top #section__case .casePanel .secBox .left dl {
+  display: flex;
+  align-items: center;
+}
+#top #section__case .casePanel .secBox .left dl dt {
+  margin: 0 20px 0 0;
+  font-size: 30px;
+}
+#top #section__case .casePanel .secBox .left dl dd {
+  font-size: 10px;
+}
+#top #section__case .casePanel .secBox .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: none;
+}
+#top #section__case .casePanel .secBox .right .txt {
+  width: 100%;
+  padding: 20px;
+  font-size: 14px;
+  background: #faff81;
+}
+#top #section__case .caseContainer {
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
+  scrollbar-width: none;
+}
+#top #section__case .caseContainer::-webkit-scrollbar {
+  display: none;
+}
+#top #section__case .casePanel {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+#top #section__info {
+  padding: 20px;
+}
+#top #section__info .infoSection {
+  padding: 100px 20px 60px;
+  background: url("../image/top/info_sec_bg_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top #section__info .secTtlBox {
+  margin: 0 0 40px;
+  padding: 0 0 30px;
+}
+#top #section__info .secTtlBox:after {
+  width: 30px;
+}
+#top #section__info .secTtlBox .secTtl {
+  font-size: 30px;
+}
+#top #section__info .secTtlBox .sub {
+  font-size: 14px;
+}
+#top #section__info .txt {
+  max-width: 275px;
+  margin: 0 auto 50px;
+  font-size: 12px;
+}
+#top #section__info .link a {
+  width: 60px;
+}
+#top #section__info .link p {
+  letter-spacing: 0.1em;
+}
+#top #section__info .link p br {
+  display: none;
+}
+#top #section__follow {
+  padding: 80px 20px 0;
+}
+#top #section__follow .secBox .txtBox {
+  margin: 0 0 30px;
+}
+#top #section__follow .secBox .txtBox .secTtlBox {
+  margin: 0 0 30px;
+}
+#top #section__follow .secBox .txtBox .secTtlBox .secTtl {
+  font-size: 30px;
+}
+#top #section__follow .secBox .txtBox .secTtlBox .sub {
+  font-size: 14px;
+}
+#top #section__follow .secBox .txtBox .txt01 {
+  margin: 0 0 30px;
+}
+#top #section__recommend {
+  padding: 70px 20px 20px;
+}
+#top #section__recommend::before {
+  height: calc(100% - 280px);
+}
+#top #section__recommend .recommendContainer .recommendMvBox .title {
+  width: 75%;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox {
+  padding: 40px 20px 50px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .overview {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  font-size: 10px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .title {
+  width: 215px;
+  margin: 0 0 30px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li .left {
+  width: 35px;
+  min-height: 65px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li .left .check {
+  width: 13px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li .right {
+  width: calc(100% - 35px);
+  padding: 10px 0 10px 20px;
+  font-size: 13px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry {
+  margin: 35px 0 0;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry a {
+  padding: 20px 10px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry a em {
+  margin: 0 20px 0 0;
+  font-size: 20px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry a span {
+  font-size: 12px;
+}

@@ -1,0 +1,272 @@
+// ▽メイン▽
+main
+    .kv
+        .ttlBox
+            h1
+                span CONTACT
+                em 御見積・お問い合わせ
+        .imgBox
+    section#secTop
+        h2
+            em Contact
+            span 御見積・お問い合わせ
+        p
+            | 愛知県大府市の共和テクニカル株式会社への
+            br
+            | 御見積のご依頼・お問い合わせは電話・メールにて承っております。
+            br
+            | お気軽にお問い合わせください。
+        //- section#sec01
+        //-     .cntWrap
+        //-         h3 Catalog
+        //-         p
+        //-             | 生地の一覧はこちらからご確認頂けます（シンコーデジタルカタログ）
+        //-             br
+        //-             | 御見積のご相談の前にご覧ください。
+        //-         ul.list
+        //-             li
+        //-                 a(href="https://www.sincol-group.jp/digitalcatalog/leather2015/" target="_blank")
+        //-                     p
+        //-                         em レザーカタログ
+        //-                         span leather
+        //-             li
+        //-                 a(href="https://www.sincol-group.jp/digitalcatalog/upholstery2015/#page1" target="_blank")
+        //-                     p
+        //-                         em 布生地カタログ
+        //-                         span Cloth fabric
+        //-             li
+        //-                 a(href="https://contents.sangetsu.co.jp/digital_book/up16/#page=1" target="_blank")
+        //-                     p
+        //-                         em サンゲツカタログ
+        //-                         span Sangetsu
+        section#sec02
+            .cntWrap
+                h3 お電話
+                .telBox
+                    .tel
+                        p
+                            span TEL
+                            a(href="tel:0120932444") 0120-932-444
+                    .txt
+                        p
+                            | 電話受付時間：
+                            br
+                            | 平日　9:00 ～ 17:00
+                            br
+                            | 定休日：
+                            br
+                            | 土・日・祝
+        section#entryForm
+            h3 メール
+            p
+                | メールでの御見積・お問い合わせは、こちらのフォームよりご予約ください。
+                br
+                | 下記に必要事項を入力の上、送信してください。
+                br
+                | ※返信までお時間をいただくことがございます。あらかじめご了承ください。
+                br
+                | お急ぎの方はお電話にてご連絡ください。
+                br
+                | ※は必須項目です。
+            form(action="")
+                .cntWrap
+                    #customer.formBox
+                        p.ttl □ お客様情報
+                        ul.formList
+                            li
+                                .formTtl
+                                    p お名前※
+                                .formInput
+                                    input(type="text")
+                            li
+                                .formTtl
+                                    p ふりがな※
+                                .formInput
+                                    input(type="text")
+                            li
+                                .formTtl
+                                    p 会社名
+                                .formInput
+                                    input(type="text")
+                            li
+                                .formTtl
+                                    p メールアドレス※
+                                .formInput
+                                    input(type="text")
+                            li
+                                .formTtl
+                                    p お電話番号
+                                .formInput
+                                    input(type="text")
+                            li.address
+                                .formTtl
+                                    p ご住所
+                                .formInput
+                                    dl
+                                        dt 郵便番号
+                                        dd.postal
+                                            input(type="text")
+                                            div.bar -
+                                            input(type="text")
+                                    dl
+                                        dt 住所１
+                                        dd
+                                            input(type="text")
+                                    dl
+                                        dt 住所2
+                                        dd
+                                            input(type="text")
+                    #estimate.formBox
+                        p.ttl □ 御見積情報
+                        p ※お見積りご希望の方はご入力ください。
+                        ul.formList
+                            li.fileForm
+                                .formTtl
+                                    p 依頼品画像アップロード
+                                    p
+                                        | ※張替ご希望の依頼品写真を１枚以上添付して下さい。
+                                        br
+                                        | 画像が無い場合お見積りが行えない場合がございます。
+                                        br
+                                        | 予めご了承ください。
+                                .formInput
+                                    .isValid
+                                        .upBox
+                                            div.photoTxt 写真１
+                                            .inputFile.req
+                                                div
+                                                    label(for='file-1') ファイルを選択
+                                                    span.wpcf7-form-control-wrap.file-1
+                                                        <input type="file" name="file-1" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" id="file-1" accept=".jpg,.jpeg,.png,.gif,.webp" aria-required="true" aria-invalid="false">
+                                                        //- input#file-1.wpcf7-form-control.wpcf7-file.wpcf7-validates-as-required(type='file', name='file-1', size='40', accept='.doc,.docx,.xls,.xlsx,.pdf,.zip', aria-required='true', aria-invalid='false')
+                                            .filename
+                                                span.filetxt 選択されていません。
+                                                span.delete
+                                        span.wpcf7-custom-item-error.file-1
+                                    .isValid
+                                        .upBox
+                                            div.photoTxt 写真２
+                                            .inputFile
+                                                div
+                                                    label(for='file-2') ファイルを選択
+                                                    span.wpcf7-form-control-wrap.file-2
+                                                        input#file-2.wpcf7-form-control.wpcf7-file(type='file', name='file-2', size='40', accept='.doc,.docx,.xls,.xlsx,.pdf,.zip', aria-invalid='false')
+                                            .filename
+                                                span.filetxt 選択されていません。
+                                                span.delete
+                                        span.wpcf7-custom-item-error.file-2
+                                    .isValid
+                                        .upBox
+                                            div.photoTxt 写真３
+                                            .inputFile
+                                                div
+                                                    label(for='file-3') ファイルを選択
+                                                    span.wpcf7-form-control-wrap.file-3
+                                                        input#file-3.wpcf7-form-control.wpcf7-file(type='file', name='file-3', size='40', accept='.doc,.docx,.xls,.xlsx,.pdf,.zip', aria-invalid='false')
+                                            .filename
+                                                span.filetxt 選択されていません。
+                                                span.delete
+                                        span.wpcf7-custom-item-error.file-3
+                            li.fileForm
+                                .formTtl
+                                    p PDFアップロード
+                                    p
+                                        | ※PDFをお送りいただく際はこちらからアップロードしてください。
+                                .formInput
+                                    .isValid
+                                        .upBox
+                                            div.photoTxt 写真１
+                                            .inputFile.req
+                                                div
+                                                    label(for='file-1') ファイルを選択
+                                                    span.wpcf7-form-control-wrap.file-1
+                                                        input#file-1.wpcf7-form-control.wpcf7-file.wpcf7-validates-as-required(type='file', name='file-1', size='40', accept='.doc,.docx,.xls,.xlsx,.pdf,.zip', aria-required='true', aria-invalid='false')
+                                            .filename
+                                                span.filetxt 選択されていません。
+                                                span.delete
+                                        span.wpcf7-custom-item-error.file-1
+                            li.chair
+                                .formTtl
+                                    p 椅子の台数
+                                    p
+                                        | ※複数種類がある場合は備考欄にご入力ください。
+                                .formInput
+                                    input(type="text")
+                                    div.bar 台
+                            li#sec01
+                                p
+                                    | 生地の一覧はこちらからご確認頂けます（シンコーデジタルカタログ）
+                                    br
+                                    | 御見積のご相談の前にご覧ください。
+                                ul.list
+                                    li
+                                        a(href="https://www.sincol-group.jp/digitalcatalog/leather2015/" target="_blank")
+                                            p
+                                                em レザーカタログ
+                                                span leather
+                                    li
+                                        a(href="https://www.sincol-group.jp/digitalcatalog/upholstery2015/#page1" target="_blank")
+                                            p
+                                                em 布生地カタログ
+                                                span Cloth fabric
+                                    li
+                                        a(href="https://contents.sangetsu.co.jp/digital_book/up16/#page=1" target="_blank")
+                                            p
+                                                em サンゲツカタログ
+                                                span Sangetsu
+                        ul.formList
+                            li.cloth
+                                .formTtl
+                                    p 希望する生地
+                                    p
+                                        | ※複数可
+                                .formInput
+                                    textarea
+                    #other.formBox
+                        p.ttl □ その他
+                        p その他、事前に相談しておきたいこと、ご不明な点等がございましたらご記入ください。
+                        ul.formList
+                            li
+                                .formTtl
+                                    p お問い合わせ内容
+                                .formInput
+                                    textarea
+                .agreeBox
+                    .agreeTxt
+                        div
+                            p
+                                | 共和テクニカル株式会社（以下、「当方」）は、各種サービスのご提供にあたり、お客様の個人情報をお預かりしております。
+                                br
+                                | 当方は、個人情報に関する法令を遵守し、個人情報の適切な取り扱いを実現致します。
+                                br
+                                | 個人情報の取得について
+                                br
+                                | 当方は、偽りその他不正の手段によらず適正に個人情報を取得致します。
+                                br
+                                | 個人情報の利用について
+                                br
+                                | 当方は、個人情報を以下の利用目的の達成に必要な範囲内で、利用致します。
+                                br
+                                | 以下に定めのない目的で個人情報を利用する場合、あらかじめご本人の同意を得た上で行ないます。
+                                br
+                                | ・お問い合せ・お見積のご依頼に対する回答及び資料送付
+                                br
+                                | ・必要に応じてお客様に連絡を行なうため
+                                br
+                                | ・必要に応じてお客様に連絡を行なうため
+                                br
+                                | ・必要に応じてお客様に連絡を行なうため
+                                br
+                                | ・必要に応じてお客様に連絡を行なうため
+                                br
+                                | ・必要に応じてお客様に連絡を行なうため
+                                br
+                                | ・必要に応じてお客様に連絡を行なうため
+                .checkAgree
+                    label
+                        input(type="checkbox")
+                        | 個人情報の取り扱いについて同意する
+                .btnBox
+                    input(type="submit")
+
+// △メイン△

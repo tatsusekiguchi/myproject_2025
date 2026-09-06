@@ -1,0 +1,992 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background: url("../image/top/top_kv_pc.png") center no-repeat;
+  background-size: cover;
+}
+#top .topKvPanel .topKvTitle {
+  position: relative;
+  padding: 80px 0 0;
+}
+#top .topKvPanel .topKvTitle .topTxt {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#top .topKvPanel .topKvTitle .logo {
+  max-width: 815px;
+  margin: 0 auto 30px;
+}
+#top .topKvPanel .topKvTitle .title {
+  max-width: 515px;
+  margin: 0 auto;
+}
+#top .topKvPanel .topKvEntry {
+  position: absolute;
+  right: 30px;
+  bottom: 40%;
+}
+#top .topKvPanel .topKvEntry a {
+  display: block;
+  background: #15ff42;
+}
+#top .topKvPanel .topKvEntry em {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+}
+#top .topKvPanel .topKvEntry span {
+  letter-spacing: 0.05em;
+}
+@media (min-width: 1140px) {
+  #top .topKvPanel .topKvEntry a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 300px;
+  }
+  #top .topKvPanel .topKvEntry em {
+    margin: 0 0 30px;
+    font-size: 28px;
+    writing-mode: vertical-lr;
+  }
+  #top .topKvPanel .topKvEntry span {
+    writing-mode: vertical-lr;
+  }
+}
+#top .topKvPanel .kvScroll {
+  position: absolute;
+  left: 70px;
+  bottom: 170px;
+  width: 25px;
+  padding: 190px 0 0;
+}
+#top .topKvPanel .kvScroll::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 150px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+}
+#top .topKvPanel .kvScroll::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 150px;
+  margin: 0 auto;
+  background: #ffffff;
+  animation: scroll 2s infinite;
+}
+#top .topKvPanel .kvScroll .scrollTxt {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  writing-mode: vertical-lr;
+}
+#top .topKvPanel .textPanel {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 88px;
+  background: #000000;
+  overflow: hidden;
+}
+#top .topKvPanel .textPanel .loopWrap {
+  display: flex;
+}
+#top .topKvPanel .textPanel .loopText {
+  padding: 0 10px;
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+#top .topKvPanel .textPanel .loopText01 {
+  animation: loop 16s -8s linear infinite;
+}
+#top .topKvPanel .textPanel .loopText02 {
+  animation: loop2 16s linear infinite;
+}
+#top .topKvPanel .slidePanel {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #000000;
+}
+#top .topKvPanel .slidePanel .slideTxt ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+}
+#top .topKvPanel .slidePanel .slideTxt ul li {
+  width: 60%;
+  margin: 0 15px;
+}
+#top #section__about {
+  padding: 190px 0;
+  color: #ffffff;
+  text-align: center;
+  background: #777777;
+}
+#top #section__about .slidePanel {
+  position: relative;
+}
+#top #section__about .slidePanel > .secTtl {
+  display: none;
+}
+#top #section__about .slidePanel .slideBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#top #section__about .slidePanel .slideBox ul li {
+  width: 16.6666666667%;
+  margin: 0 7px;
+}
+#top #section__about .txtPanel .txtBox {
+  padding: 0 20px;
+}
+#top #section__about .txtPanel .secTtl {
+  margin: 0 0 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+}
+#top #section__about .txtPanel .secTtl h2 {
+  line-height: 1;
+}
+#top #section__about .txtPanel .txt01 {
+  font-size: 28px;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+}
+#top #section__about .txtPanel .txt02 {
+  margin: 40px 0 0;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+#top #section__about .txtPanel .txt03 {
+  margin: 60px 0 0;
+  letter-spacing: 0.05em;
+}
+@media (min-width: 1140px) {
+  #top #section__about .slidePanel {
+    min-height: 400px;
+  }
+  #top #section__about .slidePanel .slideBox ul li {
+    position: relative;
+    height: 450px;
+  }
+  #top #section__about .slidePanel .slideBox ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #top #section__about .txtPanel .txtBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1070px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    background: #777777;
+  }
+}
+@media (min-width: 1140px) {
+  #top #section__photo .photoBox {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #top #section__photo .photoBox .photo {
+    width: 50%;
+  }
+}
+#top #section__problem {
+  position: relative;
+  padding: 60px;
+}
+#top #section__problem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 530px;
+  z-index: -1;
+  background: #faff81;
+}
+#top #section__problem .problemContainer .problemMvBox {
+  position: relative;
+}
+#top #section__problem .problemContainer .problemMvBox .title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  max-width: 670px;
+  width: 80%;
+  margin: 0 auto;
+}
+#top #section__problem .problemContainer .problemTxtBox {
+  position: relative;
+  padding: 100px 20px;
+  background: #777777;
+}
+#top #section__problem .problemContainer .problemTxtBox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 85px;
+  height: 85px;
+  z-index: 1;
+  background: url("../image/top/problem_tri.png") no-repeat;
+  background-size: 100% auto;
+}
+#top #section__problem .problemContainer .problemTxtBox .inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+#top #section__problem .problemContainer .problemTxtBox .title {
+  max-width: 460px;
+  margin: 0 0 60px;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul {
+  border-top: 1px solid #ffffff;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  min-height: 90px;
+  border-right: 1px solid #ffffff;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li .left .check {
+  width: 35px;
+}
+#top #section__problem .problemContainer .problemTxtBox .checkList ul li .right {
+  width: calc(100% - 85px);
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+#top #section__problem .problemContainer .problemTxtBox .message {
+  max-width: 650px;
+  margin: 70px 0 0;
+}
+@media (min-width: 1140px) {
+  #top #section__problem .problemContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #top #section__problem .problemContainer .problemMvBox {
+    width: 50%;
+  }
+  #top #section__problem .problemContainer .problemMvBox .mv {
+    position: relative;
+    min-height: 890px;
+  }
+  #top #section__problem .problemContainer .problemMvBox .mv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #top #section__problem .problemContainer .problemTxtBox {
+    width: 50%;
+  }
+}
+#top #section__point {
+  position: relative;
+  padding: 90px 60px 90px 160px;
+}
+#top #section__point::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: url("../image/top/point_sec_bg.png") no-repeat;
+  background-size: cover;
+}
+#top #section__point .secBoxList .secBox + .secBox {
+  margin: 40px 0 0;
+}
+#top #section__point .secBoxList .secBox .txtBox {
+  padding: 20px 0;
+  border-top: 1px solid #000000;
+}
+#top #section__point .secBoxList .secBox .txtBox .point {
+  display: inline-block;
+  margin: 0 0 60px;
+  padding: 2px 4px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  color: #ffffff;
+  background: #000000;
+}
+#top #section__point .secBoxList .secBox .txtBox .txt {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+@media (min-width: 1140px) {
+  #top #section__point .secBoxList .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  #top #section__point .secBoxList .secBox .photo {
+    position: relative;
+    width: 50%;
+    height: 400px;
+  }
+  #top #section__point .secBoxList .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #top #section__point .secBoxList .secBox .txtBox {
+    width: 45%;
+  }
+}
+#top #section__curriculum {
+  position: relative;
+  padding: 120px 120px 190px;
+}
+#top #section__curriculum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 480px);
+  z-index: -1;
+  background: url("../image/top/curriculum_sec_bg.png") no-repeat;
+  background-size: cover;
+}
+#top #section__curriculum .secTtlBox {
+  position: absolute;
+  top: 120px;
+  left: -30px;
+  display: flex;
+}
+#top #section__curriculum .secTtlBox .secTtl {
+  font-family: "Lato", sans-serif;
+  font-size: 100px;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-lr;
+}
+#top #section__curriculum .secTtlBox .secTtl h2 {
+  line-height: 1;
+}
+#top #section__curriculum .secTtlBox .sub {
+  padding: 15px 0 0 10px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-lr;
+}
+#top #section__curriculum .topTxt {
+  margin: 0 0 100px;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+#top #section__curriculum .secPanel {
+  background: #faff81;
+}
+#top #section__curriculum .secPanel + .secPanel {
+  margin: 55px 0 0;
+}
+#top #section__curriculum .secPanel .pHead {
+  position: relative;
+  padding: 30px 50px;
+  border-bottom: 1px solid #c6c6c6;
+}
+#top #section__curriculum .secPanel .pHead .num {
+  position: absolute;
+  top: -20px;
+  right: -100px;
+  font-family: "Lato", sans-serif;
+  font-size: 90px;
+  line-height: 1;
+}
+#top #section__curriculum .secPanel .pHead .pTtl {
+  font-size: 35px;
+  letter-spacing: 0.1em;
+}
+#top #section__curriculum .secPanel .pBody {
+  position: relative;
+  padding: 30px 50px;
+}
+#top #section__curriculum .secPanel .pBody .ttlEn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-lr;
+}
+#top #section__curriculum .secPanel .pBody .ttl {
+  margin: 0 0 40px;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+#top #section__curriculum .secPanel .pBody .box dl {
+  letter-spacing: 0.1em;
+}
+#top #section__curriculum .secPanel .pBody .box dl dt {
+  margin: 0 0 15px;
+}
+#top #section__curriculum .secPanel .pBody .box dl dd {
+  line-height: 2;
+}
+@media (min-width: 1140px) {
+  #top #section__curriculum .secPanel .pBody .box {
+    display: flex;
+  }
+  #top #section__curriculum .secPanel .pBody .box dl + dl {
+    margin: 0 0 0 80px;
+  }
+}
+#top #section__curriculum .copy {
+  margin: 100px 0 0;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher {
+  position: relative;
+  padding: 0 60px;
+  background: #000000;
+}
+#top #section__teacher::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: calc(100% - 480px);
+  background: url("../image/top/teacher_sec_bg_01.png") no-repeat;
+  background-size: cover;
+}
+#top #section__teacher::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: calc(100% - 480px);
+  background: url("../image/top/teacher_sec_bg_02.png") no-repeat;
+  background-size: cover;
+}
+#top #section__teacher .teacherContainer {
+  padding: 200px 50px 150px;
+  color: #ffffff;
+  background: #777777;
+}
+#top #section__teacher .teacherContainer .secTtlBox {
+  margin: 0 0 100px;
+}
+#top #section__teacher .teacherContainer .secTtlBox .secTtl {
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher .teacherContainer .secTtlBox .sub {
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher .teacherContainer .secTtlBox .sub em {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 1140px) {
+  #top #section__teacher .teacherContainer .secTtlBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#top #section__teacher .teacherListContainer {
+  margin: 0 0 120px;
+}
+#top #section__teacher .teacherListPanel + .teacherListPanel {
+  margin: 70px 0 0;
+}
+#top #section__teacher .teacherListPanel .pTtl {
+  margin: 0 0 40px;
+  padding: 0 0 15px;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid #ffffff;
+}
+#top #section__teacher .teacherListPanel .teacherList--01 {
+  padding: 30px 0 0;
+}
+@media (min-width: 1140px) {
+  #top #section__teacher .teacherListPanel .teacherList--01 ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -70px;
+  }
+  #top #section__teacher .teacherListPanel .teacherList--01 ul li {
+    position: relative;
+    width: calc(33.3333333333% - 70px);
+    margin: 50px 0 0 70px;
+  }
+}
+#top #section__teacher .teacherListPanel .teacherList--02 {
+  padding: 50px 0 0;
+}
+@media (min-width: 1140px) {
+  #top #section__teacher .teacherListPanel .teacherList--02 .col3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -100px 0 0 -70px;
+  }
+  #top #section__teacher .teacherListPanel .teacherList--02 .col3 li {
+    position: relative;
+    width: calc(33.3333333333% - 70px);
+    margin: 100px 0 0 70px;
+  }
+}
+@media (min-width: 1140px) {
+  #top #section__teacher .teacherListPanel .teacherList--multi {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 100px 0 0;
+  }
+  #top #section__teacher .teacherListPanel .teacherList--multi .col1 {
+    width: calc(33.3333333333% - 47px);
+  }
+  #top #section__teacher .teacherListPanel .teacherList--multi .col1 li {
+    position: relative;
+  }
+  #top #section__teacher .teacherListPanel .teacherList--multi .col2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    width: calc(66.6666666667% - 30px);
+  }
+  #top #section__teacher .teacherListPanel .teacherList--multi .col2 li {
+    position: relative;
+    width: calc(50% - 35px);
+  }
+}
+#top #section__teacher .teacherListPanel .teacherList ul .area {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher .teacherListPanel .teacherList ul .name {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-lr;
+}
+#top #section__teacher .teacherListPanel .teacherList ul dl {
+  padding: 30px 0 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher .teacherListPanel .teacherList ul dl dt {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+#top #section__teacher .teacherListPanel .teacherList ul dl dd {
+  font-size: 25px;
+}
+#top #section__teacher .morePanel .txtBox .ttl01 {
+  margin: 0 0 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher .morePanel .txtBox .ttl02 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+#top #section__teacher .morePanel .txtBox .txt {
+  letter-spacing: 0.1em;
+}
+@media (min-width: 1140px) {
+  #top #section__teacher .morePanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #top #section__teacher .morePanel .photo {
+    width: 50%;
+  }
+  #top #section__teacher .morePanel .txtBox {
+    width: 45%;
+  }
+}
+#top #section__case {
+  background: #000000;
+}
+#top #section__case .titlePanel {
+  padding: 180px 20px 60px;
+  text-align: center;
+}
+#top #section__case .titlePanel .secTtlBox {
+  color: #ffffff;
+}
+#top #section__case .titlePanel .secTtlBox .secTtl {
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+}
+#top #section__case .titlePanel .secTtlBox .sub {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+#top #section__case .casePanel .secBox .left {
+  background: #faff81;
+}
+#top #section__case .casePanel .secBox .left dl {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+}
+#top #section__case .casePanel .secBox .left dl dt {
+  font-size: 40px;
+}
+#top #section__case .casePanel .secBox .right {
+  letter-spacing: 0.1em;
+  background: #faff81;
+}
+#top #section__case .casePanel01 {
+  background: url("../image/top/case_bg_01.png") center no-repeat;
+  background-size: cover;
+}
+#top #section__case .casePanel02 {
+  background: url("../image/top/case_bg_02.png") center no-repeat;
+  background-size: cover;
+}
+#top #section__case .casePanel03 {
+  background: url("../image/top/case_bg_03.png") center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1140px) {
+  #top #section__case .caseContainer {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 345px);
+    min-height: 500px;
+  }
+  #top #section__case .casePanel {
+    scroll-snap-align: start;
+    height: calc(100vh - 345px);
+    min-height: 500px;
+  }
+  #top #section__case .casePanel .secBox {
+    display: flex;
+    align-items: center;
+  }
+  #top #section__case .casePanel .secBox .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    min-height: 240px;
+    padding: 15px 20px;
+  }
+  #top #section__case .casePanel .secBox .left dl {
+    display: flex;
+    align-items: center;
+  }
+  #top #section__case .casePanel .secBox .left dl dt {
+    margin: 0 30px 0 0;
+  }
+  #top #section__case .casePanel .secBox .center {
+    width: 30%;
+  }
+  #top #section__case .casePanel .secBox .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    min-height: 240px;
+    padding: 15px 20px;
+    font-size: clamp(20px, 1vw, 25px);
+  }
+}
+#top #section__info {
+  padding: 60px;
+}
+#top #section__info .infoSection {
+  padding: 120px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: url("../image/top/info_sec_bg_pc.png") center no-repeat;
+  background-size: cover;
+}
+#top #section__info .secTtlBox {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 0 0 40px;
+  color: #ffffff;
+}
+#top #section__info .secTtlBox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+#top #section__info .secTtlBox .secTtl {
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  letter-spacing: 0.1em;
+}
+#top #section__info .secTtlBox .sub {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+#top #section__info .txt {
+  margin: 0 0 60px;
+  letter-spacing: 0.1em;
+}
+#top #section__info .link a {
+  display: block;
+  width: 130px;
+  margin: 0 auto 15px;
+}
+#top #section__info .link p {
+  letter-spacing: 0.1em;
+}
+#top #section__follow {
+  padding: 100px 60px 120px;
+  color: #ffffff;
+  background: #777777;
+}
+#top #section__follow .secBox .txtBox .secTtlBox {
+  position: relative;
+  margin: 0 0 50px;
+}
+#top #section__follow .secBox .txtBox .secTtlBox .secTtl {
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  letter-spacing: 0.1em;
+}
+#top #section__follow .secBox .txtBox .secTtlBox .sub {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+#top #section__follow .secBox .txtBox .txt01 {
+  margin: 0 0 50px;
+  letter-spacing: 0.1em;
+}
+#top #section__follow .secBox .txtBox .txt02 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+}
+@media (min-width: 1140px) {
+  #top #section__follow .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #top #section__follow .secBox .txtBox {
+    width: 48%;
+    padding: 0 15px 0 100px;
+  }
+  #top #section__follow .secBox .photo {
+    width: 50%;
+  }
+}
+#top #section__recommend {
+  position: relative;
+  background: #777777;
+  padding: 0 60px;
+}
+#top #section__recommend::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #000000;
+}
+#top #section__recommend .recommendContainer {
+  position: relative;
+}
+#top #section__recommend .recommendContainer .recommendMvBox {
+  position: relative;
+}
+#top #section__recommend .recommendContainer .recommendMvBox .title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  width: 70%;
+  margin: 0 auto;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox {
+  position: relative;
+  padding: 100px 20px;
+  background: #faff81;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .inner {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .overview {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-lr;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .title {
+  max-width: 480px;
+  margin: 0 0 60px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul {
+  border-top: 1px solid #000000;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  min-height: 90px;
+  border-right: 1px solid #000000;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li .left .check {
+  width: 35px;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .checkList ul li .right {
+  width: calc(100% - 85px);
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry {
+  margin: 60px 0 0;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry a {
+  display: block;
+  padding: 25px 10px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background: #000000;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry a em {
+  display: inline-block;
+  margin: 0 25px 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  vertical-align: middle;
+}
+#top #section__recommend .recommendContainer .recommendTxtBox .btnEntry a span {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+@media (min-width: 1140px) {
+  #top #section__recommend .recommendContainer {
+    display: flex;
+    align-items: center;
+    background: #faff81;
+  }
+  #top #section__recommend .recommendContainer .recommendMvBox {
+    width: 50%;
+  }
+  #top #section__recommend .recommendContainer .recommendMvBox .mv {
+    position: relative;
+    min-height: 890px;
+  }
+  #top #section__recommend .recommendContainer .recommendMvBox .mv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #top #section__recommend .recommendContainer .recommendTxtBox {
+    width: 50%;
+  }
+}

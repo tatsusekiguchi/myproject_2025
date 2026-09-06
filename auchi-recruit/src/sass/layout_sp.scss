@@ -1,0 +1,657 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKv {
+      height: 400px;
+      margin: 0 0 60px;
+      padding: 0;
+      .kvArea {
+        position: relative;
+        height: 100%;
+        border-radius: 20px;
+        background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+          center no-repeat;
+        background-size: cover;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -60px;
+          width: 20px;
+          height: 120px;
+          margin: 0 auto;
+          background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/top_kv_scroll.png)
+            no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .kvTtl {
+        margin: 0;
+        padding: 120px 10px 0;
+        .ttl {
+          p {
+            font-size: 40px;
+          }
+        }
+        > p {
+          font-size: 16px;
+        }
+      }
+    }
+    .sec01 {
+      margin: 60px 0;
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px 0;
+        .img {
+          position: static;
+          width: 100%;
+          max-width: 280px;
+          margin: 20px auto 0;
+        }
+      }
+    }
+    .sec02 {
+      .workingList {
+        padding: 0 10px;
+        .ul {
+          max-width: 500px;
+          margin: 0 auto;
+
+          + .ul {
+            margin: 40px auto 0;
+          }
+
+          .li {
+            &:before {
+              content: "";
+              position: absolute;
+              top: -15px;
+              left: -15px;
+              width: 30px;
+              height: 30px;
+              background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/top_sec02_band.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+
+          .dl {
+            .dt {
+              padding: 15px 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .secPanel {
+        padding: 60px 0;
+      }
+    }
+    .sec03 {
+      padding: 40px 0 0;
+      &::before {
+        display: none;
+      }
+      .secPanel {
+        margin: 20px 0 0;
+        padding: 30px 0 60px;
+        .listBox {
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            a {
+              padding: 20px 0 0;
+            }
+            .img01 {
+              width: 120px;
+              margin: 0 auto 10px;
+            }
+            .img02 {
+              width: 100px;
+              margin: 0 auto 10px;
+            }
+            .img03 {
+              width: 100px;
+              margin: 0 auto 10px;
+            }
+            .dl {
+              .dt {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .sec01 {
+      padding: 50px 0 60px;
+      .slidePanel {
+        padding: 40px 0 0;
+        .slideBox {
+          .ul {
+            .li {
+              width: calc(100% / 2);
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 60px;
+      padding: 0 0 0 20px;
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px;
+      }
+      .messageBox {
+        margin: 0 0 30px;
+        .message {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      .topTtl {
+        margin: 0 0 40px;
+        padding: 10px 30px;
+        font-size: 20px;
+      }
+      .secPanel {
+        .pTtl {
+          padding: 12px 40px;
+          font-size: 20px;
+        }
+        .secBox {
+          padding: 20px;
+          .photo {
+            max-width: 340px;
+            margin: 0 auto 20px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      .infoBox {
+        margin: 0 auto 50px;
+        .dl {
+          + .dl {
+            margin: 10px 0 0;
+          }
+          .dt {
+            padding: 5px 15px;
+          }
+          .dd {
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	works
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .worksMain {
+    .sec01 {
+      margin: 60px 0;
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px;
+        .ttl {
+          margin: 0 0 25px;
+          font-size: 20px;
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 60px;
+      padding: 0 0 0 20px;
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px;
+      }
+      .workingList {
+        padding: 0 10px;
+        .ul {
+          max-width: 500px;
+          margin: 0 auto;
+          .li {
+            &:before {
+              content: "";
+              position: absolute;
+              top: -15px;
+              left: -15px;
+              width: 40px;
+              height: 40px;
+              background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/top_sec02_band.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              padding: 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 0 0 60px;
+      .secContainer {
+        .secPanel {
+          + .secPanel {
+            margin: 20px 0 0;
+          }
+          .time {
+            width: 70px;
+            height: 70px;
+          }
+          .dl {
+            width: calc(100% - 80px);
+
+            .dt {
+              padding: 5px 5px;
+              font-size: 18px;
+            }
+            .dd {
+              padding: 5px 5px;
+            }
+          }
+        }
+        .photoList {
+          max-width: 340px;
+          margin: 30px auto 0;
+          .photo {
+            + .photo {
+              margin: 15px 0 0;
+            }
+            img {
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px;
+      }
+      .secPanelList {
+        padding: 60px 20px;
+        .secPanel {
+          + .secPanel {
+            margin: 30px 0 0;
+          }
+          .ttl {
+            margin: 0 0 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+          }
+          .txt {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .sec01 {
+      margin: 0 0 60px;
+      .infoBox {
+        margin: 0 auto 50px;
+        .dl {
+          + .dl {
+            margin: 10px 0 0;
+          }
+          .dt {
+            padding: 5px 15px;
+          }
+          .dd {
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px;
+      }
+      .listBox {
+        max-width: 280px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            height: 100px;
+            font-size: 20px;
+            &:not(:last-child):after {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -40px;
+              width: 20px;
+              height: 35px;
+              margin: 0 auto;
+              background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/recruit_sec02_arrow_02.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+        }
+      }
+      .messageBox {
+        .message {
+          display: block;
+          padding: 0 0 80px;
+          text-align: center;
+          background: url(https://s-9687534.smooooth.jp/system_panel/uploads/images/recruit_sec02_icon_01.png)
+              left bottom no-repeat,
+            url(https://s-9687534.smooooth.jp/system_panel/uploads/images/recruit_sec02_icon_02.png)
+              right bottom no-repeat;
+          background-size: 60px auto, 50px auto;
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      margin: 0 0 60px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+    }
+    .sec02 {
+      &::before {
+        width: calc(100% - 20px);
+      }
+      .secContainer {
+        padding: 50px 10px;
+      }
+      .secBox {
+        max-width: 600px;
+        padding: 20px;
+        .txtBox {
+          text-align: center;
+          .ttl {
+            p {
+              font-size: 18px;
+            }
+          }
+          .txt {
+            display: inline-block;
+            text-align: left;
+          }
+        }
+        .qrBox {
+          width: 120px;
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .form {
+        .checkList {
+          .ul {
+            padding: 0;
+          }
+        }
+      }
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          border-bottom: 1px solid #000000;
+          &::before {
+            display: none;
+          }
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              min-width: 0;
+              margin-right: 10px;
+              padding: 0;
+              font-size: 16px;
+              text-align: left;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 0;
+            border-bottom: none;
+          }
+        }
+        .radioBox {
+          padding: 0;
+        }
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

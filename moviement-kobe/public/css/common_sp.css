@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 8px 20px;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .header .logoBox .headTtl {
+    display: none;
+  }
+  .header .logoBox .logo {
+    width: 110px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox .ttl {
+    display: none;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 50px;
+  }
+  .navBox .navList .ul .li {
+    border-top: 1px solid #f0e9dc;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .ul .li.tel {
+    width: 100%;
+  }
+  .navBox .navList .ul .li.tel a {
+    display: inline-block;
+  }
+  .navBox .navList .ul .li.tel p {
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    background: url(https://moviement-kobe.com/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList .ul .li.contact {
+    border-top: 0;
+  }
+  .navBox .navList .ul .li.contact a {
+    color: #ffffff;
+    background: #050000;
+  }
+  .navBox .navList .ul .li.contact a p {
+    padding: 15px 0 0;
+    background: url(https://moviement-kobe.com/system_panel/uploads/images/header_mail.png) center top no-repeat;
+    background-size: 15px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 50px 0 0;
+  }
+
+  .pageMainTitlePanel {
+    padding: 0 20px;
+  }
+  .pageMainTitlePanel .pageMainTitleBox {
+    padding: 30px 0 15px;
+  }
+  .pageMainTitlePanel .pageMainTitle01 {
+    font-size: 30px;
+  }
+  .pageMainTitlePanel .pageMainTitle02 {
+    margin: 0 0 0 20px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .pageSecTtlBox .secTtl01 {
+    padding: 0 0 10px;
+  }
+  .pageSecTtlBox .secTtl01:after {
+    width: 80px;
+  }
+  .pageSecTtlBox .secTtl01 p {
+    font-size: 24px;
+  }
+  .pageSecTtlBox .secTtl02 {
+    margin: 5px 0 0;
+  }
+
+  .mainWrap {
+    padding: 0;
+  }
+
+  .secWrap {
+    padding: 0 20px;
+  }
+
+  .secWrap01 {
+    padding: 0 20px;
+  }
+
+  .secWrap02 {
+    padding: 0 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .secTtlBox {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+  }
+  .footer .footContact .secTtlBox:after {
+    width: 80px;
+  }
+  .footer .footContact .secTtlBox p {
+    font-size: 24px;
+  }
+  .footer .footContact .contactItem {
+    max-width: 600px;
+    margin: 40px auto 0;
+  }
+  .footer .footContact .contactItem .itemBox {
+    padding: 15px;
+  }
+  .footer .footContact .contactItem .itemBox + .itemBox {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .contactItem .itemBox .dl .dt {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .footer .footContact .contactItem .itemBox .dl .dd .tel a {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 30px;
+    line-height: 1;
+    background: url(https://moviement-kobe.com/system_panel/uploads/images/footer_contact_tel.png) left top 8px no-repeat;
+    background-size: 18px auto;
+  }
+  .footer .footContact .contactItem .itemBox .dl .dd .mail a {
+    display: inline-block;
+    font-size: 0;
+  }
+  .footer .footContact .contactItem .itemBox .dl .dd .mail a div {
+    padding: 0 0 0 30px;
+    background: url(https://moviement-kobe.com/system_panel/uploads/images/footer_contact_mail.png) left top 8px no-repeat;
+    background-size: 18px auto;
+  }
+  .footer .footContact .contactItem .itemBox .dl .dd .mail a p {
+    display: inline;
+    font-size: 26px;
+    line-height: 1;
+  }
+  .footer .footContact .contactItem .itemBox .dl .dd .mail a .em {
+    color: #ff5759;
+  }
+  .footer .footPanel {
+    padding: 50px 0 15px;
+  }
+  .footer .footPanel .logo {
+    max-width: 200px;
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .txt {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .sns a {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    color: #ffffff;
+    background: url(https://moviement-kobe.com/system_panel/uploads/images/footer_insta.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+  }
+}

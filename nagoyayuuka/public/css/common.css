@@ -1,0 +1,653 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "dnp-shuei-gothic-gin-std", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #6c6c6c;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  background: #f8f5e4;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #6c6c6c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.poppins {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+@keyframes infinity-scroll-cloud {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-30vw);
+  }
+}
+.scroll-infinity__cloud {
+  animation: infinity-scroll-cloud 20s infinite linear 0.5s both;
+  will-change: transform;
+}
+
+.scroll-infinity__cloud.delay {
+  animation: infinity-scroll-cloud 20s infinite linear;
+  animation-delay: 10s;
+  animation-fill-mode: both;
+}
+
+@keyframes infinity-scroll-left {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-12vw);
+  }
+}
+.scroll-infinity__left {
+  animation: infinity-scroll-left 20s infinite linear 0.5s both;
+  will-change: transform;
+}
+
+@keyframes katakata01 {
+  0% {
+    transform: rotateZ(0);
+  }
+  84% {
+    transform: rotateZ(0);
+  }
+  88% {
+    transform: rotateZ(4deg);
+  }
+  92% {
+    transform: rotateZ(0);
+  }
+  96% {
+    transform: rotateZ(-4deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+.cStoneKatakata1.is-active {
+  animation: katakata01 2s infinite var(--stone-delay);
+}
+
+@keyframes katakata02 {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(-3deg);
+  }
+  10% {
+    transform: rotate(3deg);
+  }
+  15% {
+    transform: rotate(-3deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.cStoneKatakata2.is-active {
+  animation: katakata02 var(--e-in-out-expo) infinite 4.5s forwards var(--stone-delay);
+}
+
+@keyframes katakata03 {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  5% {
+    transform: translate(0, 2px) rotate(3deg);
+  }
+  10% {
+    transform: translate(0, 0) rotate(-3deg);
+  }
+  15% {
+    transform: translate(3px, 0) rotate(3deg);
+  }
+  20% {
+    transform: translate(0, 0) rotate(0);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+.cStoneKatakata3.is-active {
+  animation: katakata03 var(--e-in-out-expo) infinite 2.5s forwards var(--stone-delay);
+}
+
+@keyframes katakata04 {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 8px);
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(6px, 0);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.cStoneKatakata4.is-active {
+  animation: katakata04 var(--e-in-out-expo) infinite 3s forwards var(--stone-delay);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header .logoBox {
+  max-width: 320px;
+  width: 15%;
+}
+.header .logoBox .logo a {
+  display: block;
+}
+.header .logoBox p {
+  margin: 10px 0 0;
+  font-size: clamp(10px, 1vw, 15px);
+  letter-spacing: 0.1em;
+}
+.header.topHeader .logoBox .logoWhite {
+  display: none;
+}
+.header.pageHeader .logoBox .logoNormal {
+  display: none;
+}
+.header.pageHeader .logoBox p {
+  color: #ffffff;
+}
+
+@media (min-width: 1140px) {
+  .header .logoBox {
+    position: fixed;
+    top: clamp(30px, -0.865rem + 3.85vw, 60px);
+    left: 50px;
+    z-index: 999;
+  }
+  .header .navBox {
+    position: fixed;
+    top: clamp(30px, -0.865rem + 3.85vw, 60px);
+    right: 50px;
+    z-index: 999;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1140px) {
+  .navBox .navList {
+    padding: 0 30px;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+  .navBox .navList ul {
+    display: table;
+    width: 100%;
+  }
+  .navBox .navList ul li {
+    display: table-cell;
+  }
+  .navBox .navList ul li a {
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: clamp(12px, 1vw, 18px);
+    letter-spacing: 0.1em;
+    line-height: 1;
+  }
+  .navBox .navList ul li a:hover {
+    opacity: 1;
+    color: #f88f87;
+  }
+  .navBox .navList ul li.current a {
+    color: #f88f87;
+  }
+  .navBox .bnrList {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 50%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 340px;
+  width: 20vw;
+}
+.btnMore a {
+  display: block;
+  text-align: center;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.btnMore a div {
+  position: relative;
+  top: -0.3vw;
+  left: -0.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(13px, 1vw, 20px);
+  padding: 1vw 10px;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+@media (min-width: 1140px) {
+  .btnMore a:hover {
+    opacity: 1;
+  }
+  .btnMore a:hover div {
+    top: 0;
+    left: 0;
+  }
+}
+
+.btnMorePink a {
+  color: #ffffff;
+  border: 3px solid #f88f87;
+}
+.btnMorePink a div {
+  border: 3px solid #f88f87;
+  background: #f88f87;
+}
+
+.btnMoreGreen a {
+  color: #ffffff;
+  border: 3px solid #8ac45f;
+}
+.btnMoreGreen a div {
+  border: 3px solid #8ac45f;
+  background: #8ac45f;
+}
+
+.btnMoreBlue a {
+  color: #ffffff;
+  border: 3px solid #84c7e0;
+}
+.btnMoreBlue a div {
+  border: 3px solid #84c7e0;
+  background: #84c7e0;
+}
+
+.btnMoreBlueDeep a {
+  color: #ffffff;
+  border: 3px solid #1777bf;
+}
+.btnMoreBlueDeep a div {
+  border: 3px solid #1777bf;
+  background: #1777bf;
+}
+
+.btnPager {
+  max-width: 100%;
+  width: 100%;
+}
+.btnPager a div {
+  position: relative;
+  font-size: clamp(18px, 1vw, 24px);
+}
+.btnPager a div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+}
+@media (min-width: 1140px) {
+  .btnPager a div {
+    text-indent: -1.5em;
+  }
+}
+.btnPager.btnPagerPink a div::before {
+  background: url("../image/common/paging_arrow_pink.png") no-repeat;
+  background-size: 100% auto;
+}
+.btnPager.btnPagerBlue a div::before {
+  background: url("../image/common/paging_arrow_blue.png") no-repeat;
+  background-size: 100% auto;
+}
+.btnPager.btnPagerGreen a div::before {
+  background: url("../image/common/paging_arrow_green.png") no-repeat;
+  background-size: 100% auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+}
+.footer.arrow:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 46px;
+  margin: 0 auto;
+  z-index: 2;
+  background: url("../image/guide/visit_arrow.png") no-repeat;
+  background-size: 100% auto;
+}
+.footer .footContact .contactContainer {
+  position: relative;
+}
+.footer .footContact .slidePanel {
+  position: relative;
+}
+.footer .footContact .slidePanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+.footer .footContact .slidePanel .slideBox ul li {
+  width: 25%;
+}
+@media (min-width: 1140px) {
+  .footer .footContact .slidePanel .slideBox--sp {
+    display: none;
+  }
+}
+.footer .footContact .contactPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 1;
+}
+.footer .footContact .contactPanel .contactItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48%;
+  background: #f8f5e4;
+}
+.footer .footContact .contactPanel .contactItem dl {
+  text-align: center;
+}
+.footer .footContact .contactPanel .contactItem dl dt {
+  margin: 0 0 15px;
+  font-size: clamp(30px, 2vw, 45px);
+  letter-spacing: 0.1em;
+}
+.footer .footContact .contactPanel .contactItem dl dt.green {
+  color: #8ac45f;
+}
+.footer .footContact .contactPanel .contactItem dl dt.pink {
+  color: #f88f87;
+}
+.footer .footContact .contactPanel .contactItem dl dd .txt {
+  font-size: clamp(12px, 1vw, 16px);
+}
+.footer .footContact .contactPanel .contactItem dl dd .btnMore {
+  margin: 30px auto 0;
+}
+@media (min-width: 1140px) {
+  .footer .footContact .contactPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footContact .contactPanel .contactItem {
+    width: 45%;
+    height: 23vw;
+    max-height: 420px;
+  }
+}
+.footer .footPanel {
+  padding: 100px 20px;
+  background: url("../image/common/footer_panel_bg_pc.png") right center no-repeat;
+  background-size: auto 100%;
+}
+.footer .footPanel .footBox {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.footer .footPanel .footBox .logo {
+  width: 25%;
+  max-width: 500px;
+  margin: 0 0 40px;
+}
+.footer .footPanel .footBox .footNav {
+  width: 90%;
+  max-width: 1135px;
+  padding: 0 30px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.footer .footPanel .footBox .footNav ul {
+  display: table;
+  width: 100%;
+}
+.footer .footPanel .footBox .footNav ul li {
+  display: table-cell;
+}
+.footer .footPanel .footBox .footNav ul li a {
+  display: inline-block;
+  padding: 15px 10px;
+  font-size: clamp(12px, 1vw, 18px);
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.footer .footPanel .footBox .footNav ul li a:hover {
+  opacity: 1;
+  color: #f88f87;
+}
+.footer .footPanel .footBox .footNav ul li.current a {
+  color: #f88f87;
+}
+.footer .footPanel .footBox .txtBox {
+  margin: 40px 0 0;
+  font-size: clamp(12px, 1vw, 18px);
+}
+.footer .footPanel .footBox .txtBox a {
+  display: inline-block;
+}
+.footer .footPanel .copy {
+  display: none;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
