@@ -29,11 +29,14 @@ Template Name: 見学案内
 							</div>
 						</a></div>
 					</div>
-					<!-- <div class="secBox">
+					<div class="secBox">
 						<div class="pTtl blue">
 							<h2>概要</h2><span>がいよう</span>
 						</div>
-					</div> -->
+						<div class="comingSoon">
+							<p>COMING SOON...</p>
+						</div>
+					</div>
 				</div>
 				<!-- <div class="overviewPanel">
 					<div class="overviewTable">

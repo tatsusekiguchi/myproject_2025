@@ -1,5 +1,6 @@
 	<!-- ▽footer▽-->
 	<footer class="footer">
+		<?php if (!is_page('recruit')): ?>
 		<div class="footContact">
 			<div class="contactContainer">
 				<div class="slidePanel">
@@ -54,6 +55,7 @@
 				</div>
 			</div>
 		</div>
+		<?php endif; ?>
 		<div class="footPanel">
 			<div class="footBox">
 				<div class="logo"><img src="<?php bloginfo('template_url'); ?>/image/common/footer_logo.png" alt=""></div>
@@ -62,9 +64,9 @@
 						<li class="<?php if (is_page('about')) echo 'current'; ?>">
 							<a href="<?php echo home_url(); ?>/about">園について</a>
 						</li>
-						<li class="<?php if (is_page('newslist')) echo 'current'; ?>">
+						<!-- <li class="<?php if (is_page('newslist')) echo 'current'; ?>">
 							<a href="<?php echo home_url(); ?>/newslist">お知らせ</a>
-						</li>
+						</li> -->
 						<li class="<?php if (is_page('guide')) echo 'current'; ?>">
 							<a href="<?php echo home_url(); ?>/guide">入園案内</a>
 						</li>

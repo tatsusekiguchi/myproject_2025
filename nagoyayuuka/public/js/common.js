@@ -1,5 +1,35 @@
 /* Javascript */
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = Array.from(document.querySelectorAll("#recruit .recruitmentTabs [role='tab']"));
+  function selectTab(selectedTab) {
+    tabs.forEach(function (tab) {
+      const selected = tab === selectedTab;
+      tab.setAttribute("aria-selected", String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      document.getElementById(tab.getAttribute("aria-controls")).hidden = !selected;
+    });
+  }
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      selectTab(tab);
+    });
+    tab.addEventListener("keydown", function (event) {
+      let nextIndex;
+      switch (event.key) {
+        case "ArrowRight": nextIndex = (index + 1) % tabs.length; break;
+        case "ArrowLeft": nextIndex = (index + tabs.length - 1) % tabs.length; break;
+        case "Home": nextIndex = 0; break;
+        case "End": nextIndex = tabs.length - 1; break;
+        default: return;
+      }
+      event.preventDefault();
+      selectTab(tabs[nextIndex]);
+      tabs[nextIndex].focus();
+    });
+  });
+});
+
 window.onpageshow = function (event) {
   if (event.persisted) {
     window.location.reload();
@@ -478,7 +508,7 @@ function scrollAnim(elem) {
 }
 
 $(function () {
-  const $form = $("#contact");
+  const $form = $("#contact:not(.recruitmentApplicationPage)");
   const $submit = $form.find(".submitButton");
   const $checkbox = $form.find(".agreeCheck input");
   const storageKey = "agreeChecked";
@@ -498,5 +528,22 @@ $(function () {
   // フォーム送信時、チェック状態をクリア
   $('.formConfirm input[name="mwform_submitButton"]').on("click", function () {
     localStorage.removeItem(storageKey);
+  });
+});
+
+// 採用応募の同意状態は、専用フォーム内のチェック状態だけで判定する。
+// 見学フォームで保存したlocalStorageの同意状態を引き継がない。
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".recruitmentApplicationPage .mw_wp_form_input form").forEach(function (form) {
+    if (form.hasAttribute("data-preview")) return;
+    const agreement = form.querySelector(".agreeCheck input[type='checkbox']");
+    const submit = form.querySelector(".submitButton input[type='submit']");
+    if (!agreement || !submit) return;
+    function updateAgreement() {
+      submit.disabled = !agreement.checked;
+      submit.closest(".submitButton").classList.toggle("disabled", !agreement.checked);
+    }
+    agreement.addEventListener("change", updateAgreement);
+    updateAgreement();
   });
 });

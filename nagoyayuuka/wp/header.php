@@ -70,7 +70,7 @@
 			<div class="logoBox">
 				<div class="logo logoNormal"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/image/common/header_logo.png" alt=""></a></div>
 				<div class="logo logoWhite"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/image/common/header_logo_white.png" alt=""></a></div>
-				<p class="poppins">Nagoya yuuka<br>kodomoen</p>
+				<p class="poppins">Nagoya yuuka<br>youchien</p>
 			</div>
 			<div class="navBox">
 				<div class="navList">
@@ -78,9 +78,9 @@
 						<li class="<?php if (is_page('about')) echo 'current'; ?>">
 							<a href="<?php echo home_url(); ?>/about">園について</a>
 						</li>
-						<li class="<?php if (is_page('newslist')) echo 'current'; ?>">
+						<!-- <li class="<?php if (is_page('newslist')) echo 'current'; ?>">
 							<a href="<?php echo home_url(); ?>/newslist">お知らせ</a>
-						</li>
+						</li> -->
 						<li class="<?php if (is_page('guide')) echo 'current'; ?>">
 							<a href="<?php echo home_url(); ?>/guide">入園案内</a>
 						</li>

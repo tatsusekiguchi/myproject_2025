@@ -71,13 +71,12 @@
 			<div class="logoBox">
 				<div class="logo logoNormal"><a href="../"><img src="../image/common/header_logo.png" alt=""></a></div>
 				<div class="logo logoWhite"><a href="../"><img src="../image/common/header_logo_white.png" alt=""></a></div>
-				<p class="poppins">Nagoya yuuka<br>kodomoen</p>
+				<p class="poppins">Nagoya yuuka<br>youchien</p>
 			</div>
 			<div class="navBox">
 				<div class="navList">
 					<ul>
 						<li><a href="../about/">園について</a></li>
-						<li><a href="../newslist/">お知らせ</a></li>
 						<li class="current"><a href="../guide/">入園案内</a></li>
 						<li><a href="../visit/">見学案内</a></li>
 						<li><a href="../support/">0歳からの子育てサポート</a></li>
@@ -111,8 +110,9 @@
 			<div class="moveCloudArea02">
 				<div class="moveCloud scroll-infinity__cloud delay"><img src="../image/common/move_cloud.png" alt=""></div>
 			</div>
-			<div class="comingSoon">
-				<p>COMING SOON...</p>
+			<div class="recruitmentTabs" role="tablist" aria-label="雇用形態">
+				<button id="recruitment-tab-full_time" type="button" role="tab" aria-controls="recruitment-panel-full_time" aria-selected="true" tabindex="0">正社員</button>
+				<button id="recruitment-tab-part_time" type="button" role="tab" aria-controls="recruitment-panel-part_time" aria-selected="false" tabindex="-1">パート</button>
 			</div>
 			<div class="recruitmentPanel">
 				<div class="recruitmentInner">
@@ -120,49 +120,54 @@
 						<h2>募集要項</h2>
 					</div>
 					<div class="pBody">
-						<div class="infoBox">
-							<dl>
-								<dt>募集職種</dt>
-								<dd>幼稚園教諭</dd>
-							</dl>
-							<dl>
-								<dt>雇用形態</dt>
-								<dd>正社員</dd>
-							</dl>
-							<dl>
-								<dt>応募資格</dt>
-								<dd>幼稚園免許もしくは保育士資格をお持ちの方</dd>
-							</dl>
-							<dl>
-								<dt>勤務地</dt>
-								<dd>愛知県名古屋市中村区栄生町9-30</dd>
-							</dl>
-							<dl>
-								<dt>給　　与</dt>
-								<dd>時給1,100円</dd>
-							</dl>
-							<dl>
-								<dt>勤務時間</dt>
-								<dd>11:30～15:30<br>・勤務時間応相談　・週3日可能<br>・学校や家庭の予定にも柔軟に対応可能</dd>
-							</dl>
-							<dl>
-								<dt>休日休暇</dt>
-								<dd>土日祝／ＧＷ／お盆／年末年始／有給休暇</dd>
-							</dl>
-							<dl>
-								<dt>福利厚生</dt>
-								<dd>社会保険完備／交通費全額支給／服装自由／社員登用有／試用期間1ヶ月／同条件</dd>
-							</dl>
-							<dl>
-								<dt>備考</dt>
-								<dd>未経験ＯＫ／ブランクＯＫ／ＷワークＯＫ／扶養内ＯＫ／フリーター歓迎主婦(夫)歓迎</dd>
-							</dl>
+						<div class="recruitmentTabPanel" id="recruitment-panel-full_time" role="tabpanel" aria-labelledby="recruitment-tab-full_time" tabindex="0">
+							<div class="infoBox">
+								<dl>
+									<dt>募集職種</dt>
+									<dd>幼稚園教諭</dd>
+								</dl>
+								<dl>
+									<dt>雇用形態</dt>
+									<dd>正社員</dd>
+								</dl>
+								<dl>
+									<dt>応募資格</dt>
+									<dd>幼稚園免許もしくは保育士資格をお持ちの方</dd>
+								</dl>
+								<dl>
+									<dt>勤務地</dt>
+									<dd>愛知県名古屋市中村区栄生町9-30</dd>
+								</dl>
+								<dl>
+									<dt>給　　与</dt>
+									<dd>時給1,100円</dd>
+								</dl>
+								<dl>
+									<dt>勤務時間</dt>
+									<dd>11:30～15:30<br>・勤務時間応相談　・週3日可能<br>・学校や家庭の予定にも柔軟に対応可能</dd>
+								</dl>
+								<dl>
+									<dt>休日休暇</dt>
+									<dd>土日祝／ＧＷ／お盆／年末年始／有給休暇</dd>
+								</dl>
+								<dl>
+									<dt>福利厚生</dt>
+									<dd>社会保険完備／交通費全額支給／服装自由／社員登用有／試用期間1ヶ月／同条件</dd>
+								</dl>
+								<dl>
+									<dt>備考</dt>
+									<dd>未経験ＯＫ／ブランクＯＫ／ＷワークＯＫ／扶養内ＯＫ／フリーター歓迎主婦(夫)歓迎</dd>
+								</dl>
+							</div>
+							<div class="btnMore btnMoreBlueDeep"><a href="../recruit-application/">
+									<div>
+										<p>ご応募はこちら</p>
+									</div>
+								</a></div>
 						</div>
-						<div class="btnMore btnMoreBlueDeep"><a href="">
-								<div>
-									<p>ご応募はこちら</p>
-								</div>
-							</a></div>
+						<div class="recruitmentTabPanel" id="recruitment-panel-part_time" role="tabpanel" aria-labelledby="recruitment-tab-part_time" tabindex="0" hidden>
+							<p class="recruitmentEmpty">現在、募集情報を準備中です。</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -231,13 +236,11 @@
 				<div class="footNav">
 					<ul>
 						<li><a href="">園について</a></li>
-						<li><a href="">お知らせ</a></li>
 						<li><a href="">入園案内</a></li>
 						<li><a href="">見学案内</a></li>
 						<li><a href="">0歳からの子育てサポート</a></li>
 						<li><a href="">見学申し込み</a></li>
 						<li><a href="">採用情報</a></li>
-						<li><a href="">お問い合わせ</a></li>
 					</ul>
 				</div>
 				<div class="txtBox">

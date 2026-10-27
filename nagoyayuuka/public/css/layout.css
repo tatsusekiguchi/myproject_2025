@@ -168,6 +168,7 @@
   width: 10%;
 }
 #top #section__info {
+  display: none;
   position: relative;
   margin: 0 0 5vw;
 }
@@ -334,7 +335,6 @@
 }
 #top #section__guide {
   position: relative;
-  padding: 100px 0 0;
 }
 #top #section__guide::before {
   content: "";
@@ -1059,6 +1059,11 @@
   background-size: cover;
   transform: translateX(-50%);
 }
+@media (min-width: 1140px) {
+  #guide #section__schedule .scheduleBg:before {
+    display: none;
+  }
+}
 #guide #section__schedule .secContainer {
   position: relative;
   top: -140px;
@@ -1416,11 +1421,12 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60%;
+  height: 35%;
   background: url("../image/guide/uniform_bg_green_pc.png") no-repeat;
   background-size: cover;
 }
 #guide #section__priceUniform .priceSection {
+  display: none;
   position: relative;
   padding: 120px 50px 0;
 }
@@ -1438,6 +1444,7 @@
   letter-spacing: 0.15em;
 }
 #guide #section__priceUniform .uniformSection {
+  display: none;
   position: relative;
   padding: 120px 0 0;
 }
@@ -1518,6 +1525,7 @@
   margin: 0 13px 0 0;
 }
 #guide #section__document {
+  display: none;
   padding: 120px 20px;
   background: #ffffff;
 }
@@ -2282,22 +2290,56 @@
 #recruit .recruitmentContainer .moveCloudArea02 .moveCloud {
   width: 35vw;
 }
+#recruit .recruitmentContainer .recruitmentTabs {
+  position: relative;
+  left: -10px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3px;
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#recruit .recruitmentContainer .recruitmentTabs button {
+  flex: 0 0 auto;
+  min-width: clamp(240px, 18vw, 300px);
+  margin: 0 5px 0 0;
+  padding: 10px 28px;
+  border: 0;
+  border-radius: 16px 16px 0 0;
+  background: #e9ebef;
+  color: #9f9f9f;
+  font: inherit;
+  font-size: clamp(18px, 2vw, 35px);
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+#recruit .recruitmentContainer .recruitmentTabs button[aria-selected=true] {
+  cursor: default;
+  background: #1777bf;
+  color: #ffffff;
+}
+#recruit .recruitmentContainer .recruitmentTabs button:focus-visible {
+  outline: 3px solid #eea951;
+  outline-offset: 3px;
+}
 #recruit .recruitmentContainer .recruitmentPanel {
   position: relative;
-  bottom: -20px;
+  bottom: -10px;
   width: 75%;
   max-width: 1000px;
   margin: 0 auto;
   z-index: 2;
-  border-radius: 30px 30px 0 0;
+  border-radius: 0 30px 0 0;
   background: #1777bf;
 }
 #recruit .recruitmentContainer .recruitmentPanel .recruitmentInner {
-  display: none;
+  display: block;
   position: relative;
   top: -10px;
   left: -10px;
-  border-radius: 30px 30px 0 0;
+  border-radius: 0 30px 0 0;
   background: #ffffff;
 }
 #recruit .recruitmentContainer .recruitmentPanel .pTtl {
@@ -2312,6 +2354,14 @@
 }
 #recruit .recruitmentContainer .recruitmentPanel .pBody {
   padding: 50px 70px 80px;
+}
+#recruit .recruitmentContainer .recruitmentPanel .recruitmentTabPanel[hidden] {
+  display: none;
+}
+#recruit .recruitmentContainer .recruitmentPanel .recruitmentEmpty {
+  color: #1777bf;
+  text-align: center;
+  line-height: 1.8;
 }
 #recruit .recruitmentContainer .recruitmentPanel .infoBox dl {
   font-size: clamp(12px, 1.3vw, 18px);
@@ -2522,6 +2572,7 @@
   left: -20px;
   bottom: 0;
   width: 120%;
+  max-width: 460px;
   height: 40px;
   background: url("../image/support/classroom_ttl_line.png") no-repeat;
   background-size: 100% auto;
@@ -2826,6 +2877,7 @@
   left: -20px;
   bottom: 0;
   width: 120%;
+  max-width: 460px;
   height: 40px;
   background: url("../image/support/library_ttl_line.png") no-repeat;
   background-size: 100% auto;
@@ -2964,6 +3016,7 @@
   left: -20px;
   bottom: 0;
   width: 120%;
+  max-width: 460px;
   height: 40px;
   background: url("../image/support/square_ttl_line.png") no-repeat;
   background-size: 100% auto;
@@ -4722,6 +4775,19 @@
   margin: 0 auto;
   /*テキストエリア*/
 }
+.formBox > .contactTelInfo {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.formBox > .contactTelInfo p {
+  line-height: 1.8;
+}
+.formBox > .contactTelInfo a {
+  display: inline-block;
+  margin: 10px 0 0;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+}
 .formBox form > dl {
   letter-spacing: 0.1em;
 }
@@ -5079,6 +5145,248 @@
   .formBox .submitButton:hover input[type=submit] {
     top: 0;
     left: 0;
+  }
+}
+
+/* 採用応募：既存フォームのレイアウトを使用し、追加項目のみ調整 */
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitRequiredNote,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitRequiredNote,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitRequiredNote {
+  margin: 0 0 30px;
+  font-size: 13px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitFormHeading,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitFormHeading,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitFormHeading {
+  margin: 40px 0 20px;
+  font-size: 22px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl.radioForm,
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl:has(.qualifications),
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl.radioForm,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl:has(.qualifications),
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl.radioForm,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl:has(.qualifications) {
+  align-items: flex-start;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl.radioForm > dt,
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl:has(.qualifications) > dt,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl.radioForm > dt,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl:has(.qualifications) > dt,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl.radioForm > dt,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input form > dl:has(.qualifications) > dt {
+  padding-top: 0;
+  line-height: 1.5;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea {
+  padding: 0;
+  border: 0;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea .mwform-radio-field-text,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea .mwform-radio-field-text,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea .mwform-radio-field-text {
+  position: relative;
+  padding-left: 26px;
+  background: none;
+  line-height: 1.5;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea .mwform-radio-field-text::before,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea .mwform-radio-field-text::before,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea .mwform-radio-field-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid #454545;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text {
+  background: none;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text::before,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text::before,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text::before {
+  border-color: #1777bf;
+  background: #1777bf;
+  box-shadow: inset 0 0 0 3px #ffffff;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text::after,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text::after,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input[type=radio]:checked + .mwform-radio-field-text::after {
+  content: none;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input:focus-visible + .mwform-radio-field-text::before,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input:focus-visible + .mwform-radio-field-text::before,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .radioArea input:focus-visible + .mwform-radio-field-text::before {
+  outline: 2px solid #1777bf;
+  outline-offset: 2px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .qualifications .mwform-checkbox-field,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .qualifications .mwform-checkbox-field,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .qualifications .mwform-checkbox-field {
+  display: block;
+  margin: 0 0 10px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field label,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field label,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field label {
+  position: relative;
+  display: inline-block;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input {
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field .mwform-checkbox-field-text,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field .mwform-checkbox-field-text,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field .mwform-checkbox-field-text {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field .mwform-checkbox-field-text::before,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field .mwform-checkbox-field-text::before,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field .mwform-checkbox-field-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #454545;
+  transform: translateY(-50%);
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input:checked + .mwform-checkbox-field-text::after,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input:checked + .mwform-checkbox-field-text::after,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input:checked + .mwform-checkbox-field-text::after {
+  top: 50%;
+  left: 4px;
+  width: 6px;
+  height: 12px;
+  transform: translateY(-65%) rotate(40deg);
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input:focus-visible + .mwform-checkbox-field-text::before,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input:focus-visible + .mwform-checkbox-field-text::before,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .agreeCheck .mwform-checkbox-field input:focus-visible + .mwform-checkbox-field-text::before {
+  outline: 2px solid #1777bf;
+  outline-offset: 2px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDateFields,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDateFields,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDateFields {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart:first-child,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart:first-child,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart:first-child {
+  flex: 1.4;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox {
+  flex: 1;
+  min-width: 0;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox select,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox select,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox select {
+  padding: 10px 22px 10px 10px;
+  background-position: right 7px center;
+  background-size: 8px auto;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart label,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart label,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart label {
+  flex-shrink: 0;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields {
+  justify-content: flex-start;
+  gap: 6px;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields .recruitDatePart,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields .recruitDatePart,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields .recruitDatePart {
+  flex: 0 0 auto;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields .selectBox,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields .selectBox,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitDateFields .selectBox {
+  flex: 0 0 auto;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitApplicationInputOnly,
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .recruitApplicationConfirmOnly,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitApplicationInputOnly,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .recruitApplicationConfirmOnly,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_confirm .recruitApplicationInputOnly,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .recruitApplicationConfirmOnly {
+  display: none;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .submitButton.disabled,
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .submitButton:has(input:disabled),
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .submitButton.disabled,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .submitButton:has(input:disabled),
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .submitButton.disabled,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input .submitButton:has(input:disabled) {
+  opacity: 0.6;
+  pointer-events: none;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input input[type=submit]:disabled,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input input[type=submit]:disabled,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .mw_wp_form_input input[type=submit]:disabled {
+  opacity: 1;
+}
+#contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitmentFormNotice,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitmentFormNotice,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitmentFormNotice {
+  text-align: center;
+  line-height: 2;
+}
+@media (max-width: 1139px) {
+  #contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitFormHeading,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitFormHeading,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitFormHeading {
+    font-size: 18px;
+  }
+  #contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDateFields,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDateFields,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDateFields {
+    gap: 6px;
+  }
+  #contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart {
+    gap: 3px;
+  }
+  #contact.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox select,
+#contactConfirm.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox select,
+#contactComplete.recruitmentApplicationPage .recruitmentApplicationForm .recruitDatePart .selectBox select {
+    padding-left: 5px;
   }
 }
 

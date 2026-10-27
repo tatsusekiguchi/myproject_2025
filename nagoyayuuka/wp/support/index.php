@@ -145,11 +145,11 @@ Template Name: 0歳児からの子育てサポート
 							<dt>親子で自由に遊べる「おもちゃ図書館」</dt>
 							<dd>幼稚園を地域の皆さまに開放する「おもちゃ図書館」では、親子で安心して遊べる空間をご提供しています。年齢に合わせたおもちゃをそろえ、絵本や手遊びも楽しめるほっとできる場所です。<br>開催日は決まり次第、ホームページやお知らせ欄でご案内しています。<br></dd>
 						</dl>
-						<div class="btnMore btnMoreBlueDeep"><a href="">
+						<!-- <div class="btnMore btnMoreBlueDeep"><a href="">
 								<div>
 									<p>詳しくはこちら</p>
 								</div>
-							</a></div>
+							</a></div> -->
 					</div>
 				</div>
 				<div class="photo"><img class="switch" src="<?php bloginfo('template_url'); ?>/image/support/library_top_photo_pc.png" alt=""></div>
@@ -176,11 +176,11 @@ Template Name: 0歳児からの子育てサポート
 							<dt>はじめの一歩は「チビッコひろば」から</dt>
 							<dd>未就園児とその保護者を対象にした「チビッコひろば」では、季節のあそびや親子ふれあい活動を楽しんでいただけます。<br>はじめて幼稚園に来る方でも安心して参加できるよう、スタッフが丁寧にサポートいたします。<br>開催日時や申込方法は、下記をご覧ください。</dd>
 						</dl>
-						<div class="btnMore btnMoreBlueDeep"><a href="">
+						<!-- <div class="btnMore btnMoreBlueDeep"><a href="">
 								<div>
 									<p>詳しくはこちら</p>
 								</div>
-							</a></div>
+							</a></div> -->
 					</div>
 				</div>
 				<div class="photo"><img class="switch" src="<?php bloginfo('template_url'); ?>/image/support/square_top_photo_pc.png" alt=""></div>

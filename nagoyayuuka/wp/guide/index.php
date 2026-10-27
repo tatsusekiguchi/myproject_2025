@@ -253,7 +253,7 @@ Template Name: 入園案内
 			<div class="scheduleBg">
 				<div class="secContainer">
 					<div class="secPanel">
-						<!-- <div class="secBox01">
+						<div class="secBox01">
 							<div class="inner">
 								<div class="txtBox">
 									<div class="secTtl">
@@ -264,8 +264,8 @@ Template Name: 入園案内
 									</div>
 									<div class="timeList">
 										<dl class="time01">
-											<dt>AM 8:30-10:00</dt>
-											<dd>登園</dd>
+											<dt>AM 8:30-10:30</dt>
+											<dd>順次登園</dd>
 										</dl>
 										<dl class="time02">
 											<dt>AM 10:30-14:30</dt>
@@ -281,8 +281,8 @@ Template Name: 入園案内
 									<div class="chart"><img class="switch" src="<?php bloginfo('template_url'); ?>/image/guide/schedule_chart_top_pc.png" alt=""></div>
 								</div>
 							</div>
-						</div> -->
-						<div class="secBox02">
+						</div>
+						<!-- <div class="secBox02">
 							<div class="secTtl">
 								<h2>保育時間</h2><span>ほいくじかん</span>
 							</div>
@@ -326,7 +326,7 @@ Template Name: 入園案内
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="btmContainer">
@@ -912,7 +912,7 @@ Template Name: 入園案内
 					<h2>なごや遊花幼稚園に<br>見学に来ませんか？</h2>
 				</div>
 				<div class="txt">
-					<p>ご入園をお考えの方は、まずは一度園見学にお越しください。<br>保育の様子や園内の雰囲気や職員の関わり方、設備など、気になる点を保護者の方。ご自身の目でご覧いただき、<br>安心してご入園いただければと思っております。温かく、のびのびとした遊花の毎日を、どうぞ体感しにいらしてください。</p>
+					<p>ご入園をお考えの方は、まずは一度園見学にお越しください。<br>保育の様子や園内の雰囲気や職員の関わり方、設備など、気になる点を保護者の方ご自身の目でご覧いただき、<br>安心してご入園いただければと思っております。温かく、のびのびとした遊花の毎日を、どうぞ体感しにいらしてください。</p>
 				</div>
 			</div>
 		</div>

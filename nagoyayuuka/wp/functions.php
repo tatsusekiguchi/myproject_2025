@@ -194,4 +194,7 @@ function is404_redirect_home() {
   }
 }
 
+// 採用応募フォーム（既存の見学・お問い合わせフォームとは独立）。
+require_once __DIR__ . '/inc/recruitment-application.php';
+
 ?>

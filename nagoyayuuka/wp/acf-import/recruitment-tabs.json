@@ -1,0 +1,121 @@
+[
+  {
+    "key": "group_recruitment_tabs",
+    "title": "採用情報：正社員・パートの募集要項",
+    "fields": [
+      {
+        "key": "field_recruitment_tab_full_time",
+        "label": "正社員",
+        "name": "",
+        "type": "tab",
+        "placement": "top",
+        "endpoint": 0
+      },
+      {
+        "key": "field_recruitment_requirements_full_time",
+        "label": "正社員の募集要項",
+        "name": "recruitment_requirements_full_time",
+        "type": "repeater",
+        "instructions": "募集職種・応募資格・給与・勤務時間などを項目ごとに入力してください。",
+        "required": 0,
+        "min": 0,
+        "max": 0,
+        "layout": "table",
+        "button_label": "募集項目を追加",
+        "sub_fields": [
+          {
+            "key": "field_recruitment_full_time_label",
+            "label": "項目名",
+            "name": "label",
+            "type": "text",
+            "required": 1,
+            "wrapper": {
+              "width": "30"
+            },
+            "default_value": "",
+            "placeholder": "例：勤務時間"
+          },
+          {
+            "key": "field_recruitment_full_time_value",
+            "label": "内容",
+            "name": "value",
+            "type": "textarea",
+            "required": 1,
+            "wrapper": {
+              "width": "70"
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          }
+        ]
+      },
+      {
+        "key": "field_recruitment_tab_part_time",
+        "label": "パート",
+        "name": "",
+        "type": "tab",
+        "placement": "top",
+        "endpoint": 0
+      },
+      {
+        "key": "field_recruitment_requirements_part_time",
+        "label": "パートの募集要項",
+        "name": "recruitment_requirements_part_time",
+        "type": "repeater",
+        "instructions": "募集職種・応募資格・給与・勤務時間などを項目ごとに入力してください。",
+        "required": 0,
+        "min": 0,
+        "max": 0,
+        "layout": "table",
+        "button_label": "募集項目を追加",
+        "sub_fields": [
+          {
+            "key": "field_recruitment_part_time_label",
+            "label": "項目名",
+            "name": "label",
+            "type": "text",
+            "required": 1,
+            "wrapper": {
+              "width": "30"
+            },
+            "default_value": "",
+            "placeholder": "例：勤務時間"
+          },
+          {
+            "key": "field_recruitment_part_time_value",
+            "label": "内容",
+            "name": "value",
+            "type": "textarea",
+            "required": 1,
+            "wrapper": {
+              "width": "70"
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "recruit/index.php"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": true,
+    "description": "採用情報ページの雇用形態別募集要項を管理します。応募先は共通の採用応募ページです。",
+    "show_in_rest": 0,
+    "modified": 1792986904
+  }
+]

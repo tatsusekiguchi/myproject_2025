@@ -11,7 +11,7 @@ Template Name: お問い合わせ
 				<div class="topKv"><img class="switch" src="<?php bloginfo('template_url'); ?>/image/contact/top_kv_pc.png" alt=""></div>
 			</div>
 			<div class="topTitlePanel">
-				<h1>お問い合わせ／見学申し込み</h1>
+				<h1>お問い合わせ</h1>
 				<div class="txt">
 					<p>ご見学時に気になったことはお気軽にお尋ねください。<br>園長をはじめとした保育者と、直接コミュニケーションしていただくことで、<br>園の雰囲気などを感じていただける貴重な機会です。</p>
 				</div>
@@ -30,7 +30,10 @@ Template Name: お問い合わせ
 			<div class="contactPanel">
 				<div class="contactItemBox">
 					<div class="formBox">
-						<?php echo do_shortcode('[mwform_formkey key="29"]'); ?>
+						<div class="contactTelInfo">
+							<p>気になったことは、お気軽にお尋ねください。</p>
+							<a href="tel:0524820200">TEL：052-482-0200</a>
+						</div>
 					</div>
 				</div>
 			</div>

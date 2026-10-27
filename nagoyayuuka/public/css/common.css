@@ -577,25 +577,29 @@ main {
   margin: 0 0 40px;
 }
 .footer .footPanel .footBox .footNav {
-  width: 90%;
-  max-width: 1135px;
+  width: 80%;
+  max-width: 1000px;
   padding: 0 30px;
   border-radius: 30px;
   background: #ffffff;
 }
 .footer .footPanel .footBox .footNav ul {
-  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   width: 100%;
 }
 .footer .footPanel .footBox .footNav ul li {
-  display: table-cell;
+  flex: 0 0 auto;
 }
 .footer .footPanel .footBox .footNav ul li a {
-  display: inline-block;
+  display: block;
   padding: 15px 10px;
   font-size: clamp(12px, 1vw, 18px);
   letter-spacing: 0.1em;
   line-height: 1;
+  white-space: nowrap;
 }
 .footer .footPanel .footBox .footNav ul li a:hover {
   opacity: 1;

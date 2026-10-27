@@ -2,6 +2,10 @@
 /*
 Template Name: 採用情報
 */
+$recruitment_types = array(
+	'full_time' => '正社員',
+	'part_time' => 'パート',
+);
 ?>
 
 <?php get_header(); ?>
@@ -19,8 +23,10 @@ Template Name: 採用情報
 			<div class="moveCloudArea02">
 				<div class="moveCloud scroll-infinity__cloud delay"><img src="<?php bloginfo('template_url'); ?>/image/common/move_cloud.png" alt=""></div>
 			</div>
-			<div class="comingSoon">
-				<p>COMING SOON...</p>
+			<div class="recruitmentTabs" role="tablist" aria-label="雇用形態">
+				<?php foreach ($recruitment_types as $type => $title): ?>
+					<button type="button" id="recruitment-tab-<?php echo esc_attr($type); ?>" role="tab" aria-controls="recruitment-panel-<?php echo esc_attr($type); ?>" aria-selected="<?php echo $type === 'full_time' ? 'true' : 'false'; ?>" tabindex="<?php echo $type === 'full_time' ? '0' : '-1'; ?>"><?php echo esc_html($title); ?></button>
+				<?php endforeach; ?>
 			</div>
 			<div class="recruitmentPanel">
 				<div class="recruitmentInner">
@@ -28,24 +34,27 @@ Template Name: 採用情報
 						<h2>募集要項</h2>
 					</div>
 					<div class="pBody">
-						<div class="infoBox">
-							<?php if( have_rows('recruitment_requirements') ): ?>
-								<?php while( have_rows('recruitment_requirements') ): the_row();
-									$label = get_sub_field('label');
-									$value = get_sub_field('value');
-								?>
-								<dl>
-									<dt><?php echo esc_html($label); ?></dt>
-									<dd><?php echo wp_kses_post($value); ?></dd>
-								</dl>
-								<?php endwhile; ?>
-							<?php endif; ?>
-						</div>
-						<div class="btnMore btnMoreBlueDeep"><a href="<?php echo home_url(); ?>/entry">
-								<div>
-									<p>ご応募はこちら</p>
-								</div>
-							</a></div>
+						<?php foreach ($recruitment_types as $type => $title):
+							$requirements = get_field('recruitment_requirements_' . $type);
+						?>
+							<div class="recruitmentTabPanel" id="recruitment-panel-<?php echo esc_attr($type); ?>" role="tabpanel" aria-labelledby="recruitment-tab-<?php echo esc_attr($type); ?>" tabindex="0"<?php if ($type !== 'full_time') echo ' hidden'; ?>>
+								<?php if (!empty($requirements)): ?>
+									<div class="infoBox">
+										<?php foreach ($requirements as $requirement): ?>
+											<dl>
+												<dt><?php echo esc_html($requirement['label']); ?></dt>
+												<dd><?php echo wp_kses_post($requirement['value']); ?></dd>
+											</dl>
+										<?php endforeach; ?>
+									</div>
+									<div class="btnMore btnMoreBlueDeep"><a href="<?php echo esc_url(home_url('/recruit-application/')); ?>">
+										<div><p>ご応募はこちら</p></div>
+									</a></div>
+								<?php else: ?>
+									<p class="recruitmentEmpty">現在、募集情報を準備中です。</p>
+								<?php endif; ?>
+							</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>

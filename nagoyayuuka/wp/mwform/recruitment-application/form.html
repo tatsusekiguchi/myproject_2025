@@ -1,0 +1,81 @@
+<p class="recruitRequiredNote recruitApplicationInputOnly">※「*」は必須項目です。</p>
+
+<dl class="radioForm">
+  <dt><span id="label-application_purpose">応募内容</span><em>*</em></dt>
+  <dd><div class="radioArea" role="group" aria-labelledby="label-application_purpose">[mwform_radio name="application_purpose" children="園見学,資料請求,面接希望" post_raw="true"]</div></dd>
+</dl>
+
+<dl class="radioForm">
+  <dt><span id="label-application_type">応募種別</span><em>*</em></dt>
+  <dd><div class="radioArea" role="group" aria-labelledby="label-application_type">[mwform_radio name="application_type" children="新卒採用,中途採用,パートタイム" post_raw="true"]</div></dd>
+</dl>
+
+<h2 class="recruitFormHeading">応募者情報</h2>
+
+<dl class="recruitField">
+  <dt><label for="applicant_name">氏名</label><em>*</em></dt>
+  <dd><div class="inputBox">[mwform_text name="applicant_name" id="applicant_name" placeholder="遊花 太郎"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="applicant_kana">カナ氏名</label><em>*</em></dt>
+  <dd><div class="inputBox">[mwform_text name="applicant_kana" id="applicant_kana" placeholder="ユウカ タロウ"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><span id="label-birth_date">生年月日</span><em>*</em></dt>
+  <dd><div class="recruitDateFields"><div class="recruitDatePart"><div class="selectBox">[mwform_select name="birth_year" id="birth-year" children=":選択" post_raw="true" show_error="false"]</div><label for="birth-year">年</label></div><div class="recruitDatePart"><div class="selectBox">[mwform_select name="birth_month" id="birth-month" children=":選択" post_raw="true" show_error="false"]</div><label for="birth-month">月</label></div><div class="recruitDatePart"><div class="selectBox">[mwform_select name="birth_day" id="birth-day" children=":選択" post_raw="true" show_error="false"]</div><label for="birth-day">日</label></div></div><div class="recruitDateErrors">[mwform_error keys="birth_year,birth_month,birth_day"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="school">在籍校／出身校</label></dt>
+  <dd><div class="inputBox">[mwform_text name="school" id="school" placeholder=""]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="graduation_date">卒業見込年月</label></dt>
+  <dd><div class="inputBox">[mwform_text name="graduation_date" id="graduation_date" placeholder="例：2027年3月"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><span id="label-qualifications">保有資格</span><em>*</em></dt>
+  <dd><div class="itemCheck qualifications" role="group" aria-labelledby="label-qualifications">[mwform_checkbox name="qualifications" children="保育士,保育士取得見込み,幼稚園教諭,幼稚園教諭取得見込み,なし" post_raw="true" separator=","]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="postal_code">郵便番号</label><em>*</em></dt>
+  <dd><div class="inputBox">[mwform_text name="postal_code" id="postal_code" placeholder="例：453-0033"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="address">住所</label><em>*</em></dt>
+  <dd><div class="inputBox">[mwform_text name="address" id="address" placeholder="都道府県・市区町村・番地・建物名"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="email">メールアドレス</label><em>*</em></dt>
+  <dd><div class="inputBox">[mwform_email name="email" id="email" placeholder="sample@example.com"]</div></dd>
+</dl>
+
+<dl class="recruitField">
+  <dt><label for="phone">電話番号</label><em>*</em></dt>
+  <dd><div class="inputBox">[mwform_text name="phone" id="phone" placeholder="例：090-1234-5678"]</div></dd>
+</dl>
+
+<dl class="msg">
+  <dt><label for="remarks">備考</label></dt>
+  <dd>
+    <div class="inputBox">[mwform_textarea name="remarks" id="remarks" placeholder="ご質問などがございましたらご記入ください。" rows="6"]</div>
+    <aside class="policy recruitApplicationInputOnly"><p>[ny_recruitment_privacy_link]をお読みいただき、同意の上送信してください。</p></aside>
+    <div class="checkItem agreeCheck recruitApplicationInputOnly">[mwform_checkbox name="privacy_agreement" children="同意します:個人情報の取り扱いについて同意します" post_raw="true"]</div>
+  </dd>
+</dl>
+
+<div class="submitButton confirmButton recruitApplicationInputOnly">
+  [mwform_confirmButton value="送信内容確認"]
+</div>
+
+<div class="submitButton recruitApplicationConfirmOnly">
+  <div class="send">[mwform_submit name="mwform_submitButton" value="送信"]</div>
+  <div class="back">[mwform_bback class="btnBack" value="back"]修正[/mwform_bback]</div>
+</div>

@@ -40,7 +40,7 @@
 						<h1>子どもたちの成長を<br>ともに喜ぶ、<br>家族のような<br class="spBreak">存在でありたい。</h1>
 					</div>
 					<div class="copy poppins">
-						<p>COPYRIGHT &copy; NAGOYA YUUKA KODOMOEN <br class="spBreak">ALL RIGHTS RESERVED.</p>
+						<p>COPYRIGHT &copy; NAGOYA YUUKA YOUCHIEN <br class="spBreak">ALL RIGHTS RESERVED.</p>
 					</div>
 				</div>
 			</div>
@@ -189,8 +189,8 @@
 									<li><a href="<?php echo home_url(); ?>/guide#flowTitle">入園の流れ</a></li>
 									<li><a href="<?php echo home_url(); ?>/guide#divisionSection">認定区分について</a></li>
 									<li><a href="<?php echo home_url(); ?>/guide#section__schedule">保育時間</a></li>
-									<li><a href="<?php echo home_url(); ?>/guide#priceSection">認定ごとの利用料</a></li>
-									<li><a href="<?php echo home_url(); ?>/guide#uniformSection">制服紹介</a></li>
+									<!-- <li><a href="<?php echo home_url(); ?>/guide#priceSection">認定ごとの利用料</a></li>
+									<li><a href="<?php echo home_url(); ?>/guide#uniformSection">制服紹介</a></li> -->
 									<li><a href="guide#faqSecTtl">よくある質問</a></li>
 								</ul>
 							</div>

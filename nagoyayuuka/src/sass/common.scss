@@ -29,8 +29,9 @@ body {
   position: relative;
   overflow-x: hidden;
   //font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  font-family: "dnp-shuei-gothic-gin-std", "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+  font-family:
+    "dnp-shuei-gothic-gin-std", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
     "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
   font-weight: 600;
   line-height: 1.5;
@@ -668,22 +669,28 @@ main {
         margin: 0 0 40px;
       }
       .footNav {
-        width: 90%;
-        max-width: 1135px;
+        // width: 90%;
+        // max-width: 1135px;
+        width: 80%;
+        max-width: 1000px;
         padding: 0 30px;
         border-radius: 30px;
         background: #ffffff;
         ul {
-          display: table;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
           width: 100%;
           li {
-            display: table-cell;
+            flex: 0 0 auto;
             a {
-              display: inline-block;
+              display: block;
               padding: 15px 10px;
               font-size: clamp(12px, 1vw, 18px);
               letter-spacing: 0.1em;
               line-height: 1;
+              white-space: nowrap;
               &:hover {
                 opacity: 1;
                 color: #f88f87;

@@ -5,21 +5,24 @@ main#contact
             .topKv
                 img(src=(root_path || '') + "image/contact/top_kv_pc.png", class="switch" alt="")
         .topTitlePanel
-            h1 お問い合わせ／見学申し込み
+            h1 お問い合わせ
             .txt
                 p ご見学時に気になったことはお気軽にお尋ねください。<br>園長をはじめとした保育者と、直接コミュニケーションしていただくことで、<br>園の雰囲気などを感じていただける貴重な機会です。
     .arrow
         img(src=(root_path || '') + "image/contact/top_arrow.png", alt="")
     .contactContainer
-        .contactTabList
-            ul
-                li.active
-                    p お問い合わせ
-                li
-                    a(href=(root_path || '') + "entry/") 見学申し込み
+        //- .contactTabList
+        //-     ul
+        //-         li.active
+        //-             p お問い合わせ
+        //-         li
+        //-             a(href=(root_path || '') + "entry/") 見学申し込み
         .contactPanel
             .contactItemBox
                 .formBox
+                    .contactTelInfo
+                        p 気になったことは、お気軽にお尋ねください。
+                        a(href="tel:0524820200") TEL：052-482-0200
                     form
                         dl
                             dt

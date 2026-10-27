@@ -1,0 +1,18 @@
+main#contact.recruitmentApplicationPage
+    .topContainer
+        .topKvPanel
+            .topKv
+                img.switch(src=(root_path || '') + "image/contact/top_kv_pc.png" alt="")
+        .topTitlePanel
+            h1 採用応募
+            .txt
+                p なごや遊花幼稚園への園見学・資料請求・面接のご希望を受け付けています。<br>必要事項をご入力のうえ、確認画面へお進みください。
+    .arrow
+        img(src=(root_path || '') + "image/contact/top_arrow.png" alt="")
+    .contactContainer
+        .contactPanel
+            .contactItemBox
+                .formBox.recruitmentApplicationForm
+                    .mw_wp_form.mw_wp_form_input
+                        form(data-preview="true" onsubmit="return false")
+                            include ../includes/recruitment-application-form.html
